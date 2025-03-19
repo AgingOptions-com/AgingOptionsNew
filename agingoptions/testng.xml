@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener
+			class-name="com.nspl.agingoptions.webUtil.MyAnnotationTransformer"></listener>
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class
+				name="com.nspl.agingoptions.login_registrationpage.testcases.LoginPageTestCases"> </class>
+			<class
+				name="com.nspl.agingoptions.login_registrationpage.testcases.SignUpPageTestCases"> </class>
+			<class
+				name="com.nspl.agingoptions.Intakeform.testcases.ActivationFormTestCases"></class>
+		</classes>
+	</test>
+</suite> 
+
