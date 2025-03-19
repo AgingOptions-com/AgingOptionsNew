@@ -51,6 +51,14 @@ public class CommonCodeOR   {
 	@FindBy(xpath="//span[text()='Paralegal']")
 	protected WebElement paralegalOption;
 
+	@FindBy(xpath = "//div[@class='d-flex align-items-center col-9']//input[@class='header-search p-1']")
+	protected WebElement paralegalSearchTB;
+	
+	@FindBy(xpath="//span[@class='paraData']")
+	protected WebElement paralegalSearchedUser;
+	
+	@FindBy(xpath="(//span[text()='Family'])[1]")
+	protected WebElement familySideIcon;
 
 }
 

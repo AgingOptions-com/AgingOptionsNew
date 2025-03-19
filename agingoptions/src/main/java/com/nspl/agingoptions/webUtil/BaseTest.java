@@ -20,13 +20,14 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class BaseTest {
 
-	public static ExtentReports extReports ;
-	protected  WebUtil util= new WebUtil();;
+	public static ExtentReports extReports;
+	protected WebUtil util = new WebUtil();;
 
 	@BeforeSuite
 	public void beforeSuite() {
 		extReports = new ExtentReports();
-		ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir")+"\\test-output\\extentReport\\"+util.GetDateAndTime()+"_extentReport.html");
+		ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir")
+				+ "\\test-output\\extentReport\\" + util.GetDateAndTime() + "_extentReport.html");
 		extReports.attachReporter(spark);
 		spark.config().setDocumentTitle("AgingOptions Report");
 		spark.config().setReportName("AgingOptions Automation Report");
@@ -37,37 +38,44 @@ public class BaseTest {
 		extReports.setSystemInfo("Browser", "ChromeBrowser");
 		extReports.setSystemInfo("Java-Verison", System.getProperty("java.version"));
 	}
+
 	@BeforeTest
 	public void beforeTest() {
 
 	}
+
 	@BeforeClass
 	public void beforeClass() {
 		util.launchBrowser(util.getProperty("browserName"));
 	}
+
 	@BeforeMethod
 	public void beforeMethod(Method mt) {
 		util.hitUrl(util.getProperty("url"));
-		ExtentTest	extTest = extReports.createTest(mt.getName());
+		ExtentTest extTest = extReports.createTest(mt.getName());
 		util.setExtent(extTest);
 	}
+
 	@AfterMethod
 	public void afterMethod(ITestResult result, Method mt) {
-		if(result.getStatus()==result.FAILURE) {
-			String path=	util.takeSchreenshot(mt.getName());
+		if (result.getStatus() == result.FAILURE) {
+			String path = util.takeSchreenshot(mt.getName());
 			util.getExtentTestObj().addScreenCaptureFromPath(path);
 		}
 		extReports.flush();
 	}
+
 	@AfterClass
 	public void afterClass() {
-		//util.quitBrowser();
+		// util.quitBrowser();
 		extReports.flush();
 	}
+
 	@AfterTest
 	public void afterTest() {
 
 	}
+
 	@AfterSuite
 	public void afterSuite() {
 		extReports.flush();

@@ -210,8 +210,9 @@ public class WebUtil {
 	public void sendValueWithEnter(WebElement weEle, String value, String elementName) {
 		try {
 			clearTextBox(weEle);
-			actObj.sendKeys(value, Keys.ENTER).build().perform();
-			;
+		     actObj.click(weEle).build().perform();
+			actObj.sendKeys(value).build().perform();
+			actObj.sendKeys(Keys.ENTER).build().perform();
 			extTest.log(Status.PASS,
 					elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
 			print(elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");

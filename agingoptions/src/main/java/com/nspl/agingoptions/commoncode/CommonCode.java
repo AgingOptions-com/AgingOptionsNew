@@ -51,6 +51,20 @@ public class CommonCode extends CommonCodeOR{
 		util.sendValue(otpTB, otp, "OTP");
 		util.click(clickVerifyOtpBT,"Verify Otp button");
 		util.click(paralegalOption, "Paralegal Drop Down");
+
+	}
+	public void searchUserParaGotoLPO(String userEmail) {
+		util.sendValueWithEnter(paralegalSearchTB, userEmail,"Paralegal Search");
+		util.click(paralegalSearchedUser, "Paralegal screen searched user");
+	}
+	public void clickFamilySideIcon() {
+		util.click(familySideIcon, "Family Side Icon");
+	}
+	public void gotoFamilyIcon(String userEmail) {
+		loginAttorneyEmailPassword();
+		searchUserParaGotoLPO(userEmail);
+		clickFamilySideIcon();
+
 	}
 
 }
