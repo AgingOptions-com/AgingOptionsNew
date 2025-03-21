@@ -1,12 +1,12 @@
-package com.agingoptions.family;
+package com.agingoptions.health;
 
 import org.openqa.selenium.support.PageFactory;
 
 import com.nspl.agingoptions.webUtil.WebUtil;
 
-public class AddFamilyOR {
+public class HealthInfoPageOR {
 
-	public AddFamilyOR(WebUtil util) {
+	public HealthInfoPageOR(WebUtil util) {
 		PageFactory.initElements(util.getDriver(), this);
 	}
 	

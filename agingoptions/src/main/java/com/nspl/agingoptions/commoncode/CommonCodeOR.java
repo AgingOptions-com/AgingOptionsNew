@@ -60,6 +60,38 @@ public class CommonCodeOR   {
 	@FindBy(xpath="(//span[text()='Family'])[1]")
 	protected WebElement familySideIcon;
 
+	@FindBy(xpath="//button[contains(text(),'+ New Registration')]")
+	protected WebElement newRegistrationBT;
+	
+	@FindBy(xpath="//input[@id='firstName']")
+	protected WebElement firstNameTB;
+	
+	@FindBy(xpath="//input[@id='lastName']")
+	protected WebElement lastNameTB;
+	
+	@FindBy(xpath="//input[@id='email']")
+	protected WebElement emailNameTB;
+	
+	@FindBy(xpath="//select[@id='plans']")
+	protected WebElement planDropDown;
+	
+	@FindBy(xpath="//input[@id='phoneNumber']")
+	protected WebElement phoneNumberTB;
+	
+	@FindBy(xpath="//button[text()='Register']")
+	protected WebElement registerBT;
+	
+	@FindBy(xpath="//button[@class='btn-close bt']")
+	protected WebElement registrationCloseIcon;
+	
+	@FindBy(xpath="//img[@class='cursor-pointer mt-0 p-2 mx-2']")
+	protected WebElement searchIcon;
+	
+	@FindBy(xpath="//strong[contains(text(),'Intake Form Registration')]")
+	protected WebElement intakeFormRegistration;
+	
+	@FindBy(xpath="//div[text()='Send intake form link']/preceding-sibling::div/input[@type='checkbox']")
+	protected WebElement sendIntakeLinkCheckBox;
 }
 
 

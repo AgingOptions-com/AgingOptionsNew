@@ -17,11 +17,13 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.nspl.agingoptions.commoncode.CommonCode;
 
 public class BaseTest {
 
 	public static ExtentReports extReports;
 	protected WebUtil util = new WebUtil();;
+	ExtentTest extTest;
 
 	@BeforeSuite
 	public void beforeSuite() {
@@ -46,13 +48,18 @@ public class BaseTest {
 
 	@BeforeClass
 	public void beforeClass() {
+		extReports = new ExtentReports(); // Initialize ExtentReports
+		extTest = extReports.createTest("Before Class Execution");
+		util.setExtent(extTest);
 		util.launchBrowser(util.getProperty("browserName"));
+		util.hitUrl(util.getProperty("url"));
+		new CommonCode(util).loginAttorneyEmailPassword();
 	}
 
 	@BeforeMethod
 	public void beforeMethod(Method mt) {
-		util.hitUrl(util.getProperty("url"));
-		ExtentTest extTest = extReports.createTest(mt.getName());
+		extTest = extReports.createTest(mt.getName());
+		util.setExtent(extTest);
 		util.setExtent(extTest);
 	}
 

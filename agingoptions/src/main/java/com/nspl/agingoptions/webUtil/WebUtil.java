@@ -144,7 +144,7 @@ public class WebUtil {
 			ChromeOptions opt = new ChromeOptions();
 			HashMap<String, Object> prefs = new HashMap<>();
 			prefs.put("profile.default_content_setting_values.notifications", 2);// this will block the browser
-																					// notification
+			// notification
 			prefs.put("credentials_enable_service", false);// this and below code will block the save password pop-up
 			prefs.put("profile.password_manager_enabled", false);
 			opt.setExperimentalOption("prefs", prefs);
@@ -210,7 +210,7 @@ public class WebUtil {
 	public void sendValueWithEnter(WebElement weEle, String value, String elementName) {
 		try {
 			clearTextBox(weEle);
-		     actObj.click(weEle).build().perform();
+			actObj.click(weEle).build().perform();
 			actObj.sendKeys(value).build().perform();
 			actObj.sendKeys(Keys.ENTER).build().perform();
 			extTest.log(Status.PASS,
@@ -232,16 +232,16 @@ public class WebUtil {
 
 	// ===========================================send value with Actions class
 	// method===============================
-	public void sendValueActions(WebElement weEle, String value, String elementName) {
+	public void sendValueJs(WebElement weEle, String value, String elementName) {
 		try {
-			clearTextBox(weEle);
+			//clearTextBox(weEle);
 			// actObj.sendKeys(weEle, value).build().perform();
 			js.executeScript("arguments[0].value='" + value + "'", weEle);
 			extTest.log(Status.PASS,
 					elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
 			print(elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
 		} catch (ElementNotInteractableException e) {
-			weEle.clear();
+			//weEle.clear();
 			js.executeScript("arguments[0].value='" + value + "'", weEle);
 			extTest.log(Status.PASS,
 					elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
@@ -255,10 +255,10 @@ public class WebUtil {
 		}
 	}
 
-	public void sendValueWithJs(WebElement weEle, String value, String elementName) {
+	public void sendValueWithAct(WebElement weEle, String value, String elementName) {
 		try {
 			clearTextBox(weEle);
-			js.executeScript("arguments[0].value='" + value + "'", weEle);
+			actObj.click().sendKeys(weEle, value).build().perform();
 			extTest.log(Status.PASS,
 					elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
 			print(elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
@@ -300,7 +300,7 @@ public class WebUtil {
 	// method===============================
 	public void clickActions(WebElement we, String elementName) {
 		try {
-			actObj.click(we).build().perform();
+			actObj.moveToElement(we).click(we).build().perform();
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
 		} catch (ElementClickInterceptedException e) {
@@ -317,7 +317,7 @@ public class WebUtil {
 
 	public void clickJavaScript(WebElement we, String elementName) {
 		try {
-			js.executeScript("arguments[0].click()");
+			js.executeScript("arguments[0].click()",we);
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
 		} catch (Exception e) {
@@ -1462,10 +1462,10 @@ public class WebUtil {
 		System.out.println(message);
 	}
 
-	public void waitUntilPresentInUI(String xpath, String elementName) {
+	public void waitUntilPresentInUI(WebElement we, String elementName) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+			wait.until(ExpectedConditions.visibilityOf(we));
 			extTest.log(Status.PASS, " Successfull Waited for  " + elementName + "element");
 		} catch (Exception e) {
 			extTest.log(Status.FAIL, elementName + " Failed not waited for particular element ");
@@ -1595,11 +1595,42 @@ public class WebUtil {
 		SearchContext shadowRoot = (SearchContext) js.executeScript("return arguments[0].shadowRoot", shadowHost);
 		return shadowRoot.findElement(elementInsideShadow);
 	}
-
 	public String extractOTP(WebElement element) {
 		String text = element.getText();
 		Pattern pattern = Pattern.compile("\\b\\d{6}\\b");
 		Matcher matcher = pattern.matcher(text);
 		return matcher.find() ? matcher.group() : "OTP not found";
 	}
+	public void waitUntilElementClickableAndClick(WebElement we) {
+		try {
+			WebDriverWait wait=	new WebDriverWait(driver, Duration.ofSeconds(20));
+			WebElement element=		wait.until(ExpectedConditions.elementToBeClickable(we));
+			element.click();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public void waitUntilElementToBeClickable(WebElement we) {
+		try {
+			WebDriverWait wait=	new WebDriverWait(driver, Duration.ofSeconds(20));
+			wait.until(ExpectedConditions.elementToBeClickable(we));
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public void pressSpaceButton() {
+		try {
+			actObj.sendKeys(Keys.SPACE).build().perform();;
+		}catch(Exception e) {
+		e.printStackTrace();	
+		}
+	}
+	public void pressBackSpaceButton() {
+		try {
+			actObj.sendKeys(Keys.BACK_SPACE).build().perform();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 }

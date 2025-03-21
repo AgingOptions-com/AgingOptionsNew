@@ -1,9 +1,9 @@
 package com.nspl.agingoptions.login_registrationpage.testcases;
 
+
 import java.util.Map;
 
 import org.testng.annotations.Test;
-
 import com.nspl.agingoptions.commoncode.CommonCode;
 import com.nspl.agingoptions.webUtil.BaseTest;
 import com.nspl.agingoptions.webUtil.DataUtil;
@@ -11,17 +11,15 @@ import com.nspl.agingoptions.webUtil.DataUtil;
 public class MarriedUserFamilyInfoTestCases extends BaseTest {
 
 	@Test(priority = 1)
-	public void Family_TC001_ElementPresenceFamilyInfo() {
-
-		util.printDataInReport(
-				"Family_TC001_ElementPresenceFamilyInfo :-Verify In the Family Info add child page all element is displayed - Test Case is Started");
-
-		DataUtil data = new DataUtil();
-		Map<String, String> mapData = data.getTestCaseData("Family_TC002");
+	public void Health_001_Personal_MedicalHistory_ElementPresence() {
+		DataUtil data=	new DataUtil();
+		Map<String,String>	mapData=data.getTestCaseData("Health_001");
+		String firstName=	mapData.get("firstName");
+		String lastName=	mapData.get("lastName");
 		CommonCode common = new CommonCode(util);
-		common.gotoFamilyIcon(util.getProperty("paralegalSearchUser"));
-		util.printDataInReport(
-				"Family_TC001_ElementPresenceFamilyInfo :-Verify In the Family Info add child page all element is displayed - Test Case is completed");
+		String email=	common.createLifePlanningUser();
+		common.searchUserParaGotoLPO(email);
+		common.inputMarriedUserAcitvationPageDetails("1", "1999-12-28", "565", "Neelam", "1999-09-27");
 	}
 
 }
