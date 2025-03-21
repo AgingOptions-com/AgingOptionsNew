@@ -21,6 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
+import java.util.concurrent.TimeoutException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -29,6 +30,7 @@ import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -1588,7 +1590,6 @@ public class WebUtil {
 			throw e;
 		}
 	}
-
 	public WebElement getShadowElement(By shadowHostSelector, By elementInsideShadow) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement shadowHost = driver.findElement(shadowHostSelector);
@@ -1633,4 +1634,30 @@ public class WebUtil {
 		}
 	}
 
+	public  void clickButtonCheckingEnable(WebElement we) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            if (we.isEnabled()) {
+                System.out.println("Button is enabled, clicking...");
+                we.click();
+            } else {
+                System.out.println("Button is disabled, waiting...");
+                wait.until(ExpectedConditions.elementToBeClickable(we)).click();
+            }
+        } catch (org.openqa.selenium.TimeoutException e) {
+            System.out.println("Button was not clickable within the wait time. Trying JavaScript click...");
+            try {
+                JavascriptExecutor js = (JavascriptExecutor) driver;
+                js.executeScript("arguments[0].click();", we);
+            } catch (NoSuchElementException ex) {
+                System.out.println("Button not found on the page.");
+                e.printStackTrace();
+            }
+        } catch (Exception e) {
+            System.out.println("An error occurred while clicking the submit button: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+	
 }
