@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
 import com.nspl.agingoptions.webUtil.WebUtil;
 
 public class CommonCodeOR   {
@@ -60,7 +61,68 @@ public class CommonCodeOR   {
 	@FindBy(xpath="(//span[text()='Family'])[1]")
 	protected WebElement familySideIcon;
 
-}
+		@FindBy(xpath="//input[@id='login']")
+		protected WebElement yopmailSearchBox; 
+		
+		@FindBy (xpath="//i[@class='material-icons-outlined f36']")
+		protected WebElement YopmailSearchIcon;
+			
+		
+		@FindBy(xpath="//p//strong")
+		protected WebElement otpText; 
+			
+		@FindBy(xpath="//iframe[@id='ifmail']")
+		protected WebElement iFrame; 
+		
+		@FindBy (xpath="//input[@id='first']")
+		protected WebElement otpInputBox;
+			
+	    @FindBy(xpath="//button[@type='submit']")
+	    protected WebElement verifybutton;
+	    
+	    @FindBy(xpath="//a[text()='Sign Up']")
+	    protected  WebElement SignUpLink;
+	    
+	    @FindBy(xpath="//div[@class='roleOptions']//span[text()='Paralegal']")
+	    protected WebElement paralegalrole;
+	    
+	    @FindBy(xpath="//div[@class='roleOptions']//span[text()='Firm Administrator']")
+	    protected WebElement AdminRole;
+	    
+	    @FindBy(xpath="//div[@class='roleOptions']//span[text()='Event Coordinator']")
+	    protected WebElement EventCoordinatiorRole;
+	    
+	    @FindBy(xpath="//div[@class='roleOptions']//span[text()='Sign-In On App']")
+	    protected WebElement SignOnRole;
+	    
+	    @FindBy(xpath="//p[text()='View portal users here.']")
+	    protected WebElement welcomemessagetextofSignOn;
+	    
+	    @FindBy(xpath="//p[text()='Accounts switcher']")
+	    protected WebElement SelecteRolesText;
+	    
+	    @FindBy(xpath="//h2[text()='Intake / LPO Member List']")
+	    protected WebElement ParalegalInnertext;
+	    
+	    @FindBy(xpath="//p[text()='Sign up']")
+	    protected WebElement SignUpText;
+	    
+	    @FindBy(xpath="//div[@class='toaster_T']/following-sibling::h6")
+	    protected WebElement toasterMessage;
+	    
+	    @FindBy(xpath="//p[text()='Back to log in']")
+	    protected WebElement BackTologinLink;
+	    
+	    @FindBy(xpath="//p[text()='Login']")
+	    protected WebElement LoginText;
+	    
+	    @FindBy(xpath="(//span[text()='Housing'])[2]")
+	    protected WebElement HousingButtonUnderSetUp; 
+	    
+	    @FindBy(xpath="//h1[text()='Personal Information']")
+	    protected WebElement PersonalInformationIcon;
+	}
+
 
 
 

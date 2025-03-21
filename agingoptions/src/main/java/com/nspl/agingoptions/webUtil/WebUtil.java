@@ -34,6 +34,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
+import org.openqa.selenium.WebDriver.Navigation;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -60,7 +61,7 @@ import net.sourceforge.tess4j.TesseractException;
 
 public class WebUtil {
 
-	private WebDriver driver;
+	public WebDriver driver;
 	private Actions actObj;
 	private JavascriptExecutor js;
 	private ExtentTest extTest;
@@ -144,7 +145,7 @@ public class WebUtil {
 			ChromeOptions opt = new ChromeOptions();
 			HashMap<String, Object> prefs = new HashMap<>();
 			prefs.put("profile.default_content_setting_values.notifications", 2);// this will block the browser
-																					// notification
+			// notification
 			prefs.put("credentials_enable_service", false);// this and below code will block the save password pop-up
 			prefs.put("profile.password_manager_enabled", false);
 			opt.setExperimentalOption("prefs", prefs);
@@ -188,7 +189,7 @@ public class WebUtil {
 	// method===============================
 	public void sendValue(WebElement weEle, String value, String elementName) {
 		try {
-			clearTextBox(weEle);
+			
 			weEle.sendKeys(value);
 			extTest.log(Status.PASS,
 					elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
@@ -210,7 +211,7 @@ public class WebUtil {
 	public void sendValueWithEnter(WebElement weEle, String value, String elementName) {
 		try {
 			clearTextBox(weEle);
-		     actObj.click(weEle).build().perform();
+			actObj.click(weEle).build().perform();
 			actObj.sendKeys(value).build().perform();
 			actObj.sendKeys(Keys.ENTER).build().perform();
 			extTest.log(Status.PASS,
@@ -228,6 +229,33 @@ public class WebUtil {
 			e.printStackTrace();
 			throw e;
 		}
+		
+	}
+	public void verifyString( String ActualText, String ExpectedText) {
+		if (ActualText.equalsIgnoreCase(ExpectedText) || ActualText.contains(ExpectedText)) {
+			System.out.println(
+					"passed: Actual text " + (ActualText) + " is matching with expected text " + (ExpectedText));
+		} else {
+			System.out.println("failed." + ActualText + " is not got as inertext");
+		}
+	}
+	public void verifyInnerText(WebElement we ,String expectedInnerText ,String PageName ) {
+		String actualInnerText=	we.getText();
+	  
+		verifyString( actualInnerText, expectedInnerText);
+		 Assert.assertEquals(actualInnerText, expectedInnerText);
+		 extTest.log(Status.INFO, "Inner text-" + actualInnerText + " , So we are now "+ PageName + " page" );
+		}
+	public void toasterverification(WebElement we ,String ExpectedToasterText) {
+
+	     String Toaster = new WebDriverWait(driver, Duration.ofSeconds(8)).until(ExpectedConditions.elementToBeClickable(we)).getText();
+	     if (Toaster.contains(ExpectedToasterText)) {
+	    	 extTest.log(Status.PASS, "Toaster message verified as-" + Toaster );
+	         System.out.println("Login Failed: " + Toaster);
+	     } else {
+	    	 extTest.log(Status.FAIL, "Toaster message verified as-" + Toaster );
+	         System.out.println("Login Success:" + Toaster);
+	     }
 	}
 
 	// ===========================================send value with Actions class
@@ -298,6 +326,19 @@ public class WebUtil {
 
 	// ===========================================click Actions
 	// method===============================
+
+
+
+	public void nevigetUrl(String url, String urlName ) {
+		driver.navigate().to(url);
+		extTest.log(Status.PASS, urlName +" url hitted succesfully");
+
+	}
+	public Navigation nevigateAction(String PageName) {
+		Navigation nevigateobj=	driver.navigate();
+		extTest.log(Status.PASS, "Focus navigate on" + PageName);
+		return nevigateobj;
+	}
 	public void clickActions(WebElement we, String elementName) {
 		try {
 			actObj.click(we).build().perform();
@@ -848,6 +889,14 @@ public class WebUtil {
 	// ===========================================By this method we can quit
 	// browser===============================
 
+	
+	   public void verifyUrl(String expectedUrl,String pageName) {
+			  String ActualUrl= getUrl();
+			  ActualUrl.contains(expectedUrl);
+//			 // wt.verifyString(ActualUrl, expectedUrl);
+//			  Assert.assertEquals(ActualUrl, expectedUrl);
+			  extTest.log(Status.PASS,  pageName + " Url 👉 " + ActualUrl + " matching with expected URL 👉" + expectedUrl );
+	   }
 	public void quitBrowser() {
 		try {
 			driver.quit();

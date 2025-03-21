@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases">
+      <class name="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="Family_TC001_ElementPresenceFamilyInfo"/>
           <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="LoginWithClientAndverifypersonainformationPage"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases -->
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingInfoTestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
