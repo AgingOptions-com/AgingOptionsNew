@@ -8,9 +8,7 @@ import org.testng.annotations.Test;
 
 import com.agingoptions.health.PersonalMedicalHistory;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
-import com.nspl.agingoptions.commoncode.CommonCode;
 import com.nspl.agingoptions.webUtil.BaseTest;
-import com.nspl.agingoptions.webUtil.DataUtil;
 
 public class MarriedUserFamilyInfoTestCases extends BaseTest {
 
@@ -108,11 +106,6 @@ public class MarriedUserFamilyInfoTestCases extends BaseTest {
 		personal.checkSpouseElevatedCholesterolCheckbox();
 		personal.checkPrimaryMemberGlaucomaCheckbox();
 		personal.checkSpouseGlaucomaCheckbox();
-
-
-
-
-
 
 
 	}
