@@ -75,26 +75,23 @@ public class CommonCode extends CommonCodeOR {
 		searchUserParaGotoLPO(userEmail);
 		clickFamilySideIcon();
 	}
-	public String createLifePlanningUser() {
-		String firstNameValue=	util.getProperty("firstName");
-		String lastName=	util.getProperty("lastName");
-		String phoneNum=	util.getProperty("phoneNumber");
-		String formattedNumber = "(" + phoneNum.substring(0, 3) + ")" + phoneNum.substring(3, 6) + "-" + phoneNum.substring(6);
-		String email=	util.getProperty("email")+util.getRandomText(8)+"@maildrop.cc";
+	public String createLifePlanningUser(String firstName,String lastName,String email, String phoneNumber) {
+		String formattedNumber = "(" + phoneNumber.substring(0, 3) + ")" + phoneNumber.substring(3, 6) + "-" + phoneNumber.substring(6);
+		String userEmail=	email+util.getRandomText(8)+"@maildrop.cc";
 		util.holdOn(Duration.ofSeconds(3));
 		util.click(newRegistrationBT,"New Registration Button");
 		util.holdOn(Duration.ofSeconds(2));
 		util.sendValueWithAct(phoneNumberTB, formattedNumber, "Phone Number");
-		util.sendValue(firstNameTB, firstNameValue, "First Name");
+		util.sendValue(firstNameTB, firstName, "First Name");
 		util.sendValue(lastNameTB, lastName, "Last Name");
-		util.sendValueWithAct(emailNameTB, email, "email");
+		util.sendValueWithAct(emailNameTB, userEmail, "email");
 		util.selectDropDownByVisibleText(planDropDown, "Life Planning", "Life Planning");
 		util.holdOn(Duration.ofSeconds(1));
         util.waitUntilElementToBeClickable(registerBT);
 		util.clickJavaScript(registerBT, "Registration Name Button");
 		util.holdOn(Duration.ofSeconds(1));
 		util.click(registrationCloseIcon, "Registration Close Icon");
-		return email;
+		return userEmail;
 	}
 	public void inputMarriedUserAcitvationPageDetails(String noOfChild,String primaryMemberDob,String address,String spouseFirstName,String spouseDob ) {
 		ActivationPage actObj=	new ActivationPage(util);
@@ -106,7 +103,23 @@ public class CommonCode extends CommonCodeOR {
 		actObj.inputSpouseFirstName(spouseFirstName);
 		actObj.inputSpouseDob(spouseDob);
 		actObj.clickProceedSubmitButton();
-		
+	}
+	public void LoginWithNewMarriedUser() {
+		DataUtil data=	new DataUtil();
+		Map<String,String>	mapData=data.getTestCaseData("Health_001");
+		String firstName=	mapData.get("firstName");
+		String lastName=	mapData.get("lastName");
+		String email=	mapData.get("userEmail");
+		String phoneNumber=	mapData.get("phoneNumber");
+		String noOfChild=	mapData.get("noOfChild");
+		String primaryMemberDob=	mapData.get("primaryMemberDob");
+		String spouseFirstName=	mapData.get("spouseFirstName");
+		String spouseDob=	mapData.get("spouseDob");
+		String address=	mapData.get("address");
+		CommonCode common = new CommonCode(util);
+		String UserEmail=	common.createLifePlanningUser(firstName,lastName,email,phoneNumber);
+		common.searchUserParaGotoLPO(UserEmail);
+		common.inputMarriedUserAcitvationPageDetails(noOfChild, primaryMemberDob, address, spouseFirstName, spouseDob);
 	}
 
 }

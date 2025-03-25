@@ -87,7 +87,7 @@ public class ActivationPage {
 		util.sendValueJs(spouseDobTB, primaryMemberDob, "Primary member Date Of Birth");
 	}
 	public void clickProceedSubmitButton() {
-		util.clickButtonCheckingEnable(submitProceedBT);
+		util.clickButtonAfterCheckingEnable(submitProceedBT);
 	}
 
 

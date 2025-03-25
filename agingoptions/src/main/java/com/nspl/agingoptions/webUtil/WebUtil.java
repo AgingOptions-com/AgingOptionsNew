@@ -54,6 +54,7 @@ import com.aventstack.extentreports.Status;
 import com.google.common.io.Files;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.StaleElementReferenceException;
 
 import net.bytebuddy.utility.RandomString;
 import net.sourceforge.tess4j.ITesseract;
@@ -113,7 +114,7 @@ public class WebUtil {
 			opt.addArguments("--start-maximized");
 			driver = new FirefoxDriver();
 		}
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 		actObj = new Actions(driver);
 		js = (JavascriptExecutor) driver;
 	}
@@ -134,7 +135,7 @@ public class WebUtil {
 			opt.addArguments("--headless");
 			driver = new FirefoxDriver(opt);
 		}
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 		actObj = new Actions(driver);
 		js = (JavascriptExecutor) driver;
 	}
@@ -165,7 +166,7 @@ public class WebUtil {
 			// "enable-automation" });
 			driver = new FirefoxDriver(opt);
 		}
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 		actObj = new Actions(driver);
 		js = (JavascriptExecutor) driver;
 	}
@@ -1095,9 +1096,11 @@ public class WebUtil {
 	///////////// for IsDisplay ///////////////
 	public void isDisplayed(WebElement weEle, String elementName) {
 		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOf(weEle));
 			boolean status = weEle.isDisplayed();
 			if (status) {
-				extTest.log(Status.PASS, "-" + elementName + "- is displayed on the UI");
+				extTest.log(Status.PASS, "" + elementName + "- is displayed on the UI");
 				print(elementName + " Element is displayed");
 			} else {
 				extTest.log(Status.FAIL, elementName + " is not displayed on the UI");
@@ -1623,7 +1626,7 @@ public class WebUtil {
 		try {
 			actObj.sendKeys(Keys.SPACE).build().perform();;
 		}catch(Exception e) {
-		e.printStackTrace();	
+			e.printStackTrace();	
 		}
 	}
 	public void pressBackSpaceButton() {
@@ -1634,30 +1637,101 @@ public class WebUtil {
 		}
 	}
 
-	public  void clickButtonCheckingEnable(WebElement we) {
-        try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            if (we.isEnabled()) {
-                System.out.println("Button is enabled, clicking...");
-                we.click();
-            } else {
-                System.out.println("Button is disabled, waiting...");
-                wait.until(ExpectedConditions.elementToBeClickable(we)).click();
-            }
-        } catch (org.openqa.selenium.TimeoutException e) {
-            System.out.println("Button was not clickable within the wait time. Trying JavaScript click...");
-            try {
-                JavascriptExecutor js = (JavascriptExecutor) driver;
-                js.executeScript("arguments[0].click();", we);
-            } catch (NoSuchElementException ex) {
-                System.out.println("Button not found on the page.");
-                e.printStackTrace();
-            }
-        } catch (Exception e) {
-            System.out.println("An error occurred while clicking the submit button: " + e.getMessage());
-            e.printStackTrace();
-        }
-    }
+	public  void clickButtonAfterCheckingEnable(WebElement we) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			if (we.isEnabled()) {
+				System.out.println("Button is enabled, clicking...");
+				we.click();
+			} else {
+				System.out.println("Button is disabled, waiting...");
+				wait.until(ExpectedConditions.elementToBeClickable(we)).click();
+			}
+		} catch (org.openqa.selenium.TimeoutException e) {
+			System.out.println("Button was not clickable within the wait time. Trying JavaScript click...");
+			try {
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript("arguments[0].click();", we);
+			} catch (NoSuchElementException ex) {
+				System.out.println("Button not found on the page.");
+				e.printStackTrace();
+			}
+		} catch (Exception e) {
+			System.out.println("An error occurred while clicking the submit button: " + e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	public void selectRadioButton(WebElement we,String elementName) {
+		try {
+			if (we.isSelected()==false) {
+				we.click();
+				extTest.pass("Successfully selected the 'Yes' radio button of "+elementName);
+			}}
+		catch(Exception e) {
+			extTest.fail("Failed to select the 'Yes' radio button. Exception: " + e.getMessage());
+		}
+	}
+	public void deselectRadioButton(WebElement we,String elementName) {
+		try {
+			if (we.isSelected()==true) {
+				we.click();
+				extTest.pass("Successfully deselected the radio button of "+elementName);
+			}}
+		catch(Exception e) {
+			extTest.fail("Failed to De-Select the radio button. Exception: " + e.getMessage());
+		}
+	}
+	public void openAccordion(WebElement accordion, String elementName) {
+		try {
+			// Check if the accordion is already open using the "aria-expanded" attribute
+			String expanded = accordion.getAttribute("aria-expanded");
+			if (expanded != null && expanded.equals("true")) {
+				System.out.println(elementName + " accordion is already open.");
+				extTest.log(Status.INFO, elementName + " accordion is already open.");
+				return;
+			}
+			accordion.click();  // Click the accordion to open
+			System.out.println("Clicked on the " + elementName + " accordion to open it.");
+			extTest.log(Status.PASS, "Clicked on the " + elementName + " accordion to open it.");
+			// Wait for the accordion to expand
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.attributeToBe(accordion, "aria-expanded", "true"));
+			System.out.println(elementName + " accordion opened successfully.");
+			extTest.log(Status.PASS, elementName + " accordion opened successfully.");
+		} catch (StaleElementReferenceException e) {
+			System.out.println("StaleElementReferenceException for " + elementName + ". Retrying...");
+			extTest.log(Status.WARNING, "StaleElementReferenceException for " + elementName + ". Retrying...");
+			openAccordion(accordion, elementName);  // Retry opening
+		} catch (Exception e) {
+			System.out.println("Failed to open " + elementName + " accordion: " + e.getMessage());
+			extTest.log(Status.FAIL, "Failed to open " + elementName + " accordion: " + e.getMessage());
+		}
+	}
+	public void checkCheckBox(WebElement we,String checkboxName) {
+		try {
+			if(we.isSelected()==false) {
+				we.click();
+				System.out.println("Successfully checked checkbox: " + checkboxName);
+				extTest.log(Status.PASS, "Successfully checked checkbox: " + checkboxName);
+			}
+		}catch(Exception e) {
+			System.out.println("Checkbox '" + checkboxName + "' is already selected.");
+			extTest.log(Status.INFO, "Checkbox '" + checkboxName + "' is already selected.");
+		}
+	}
+	public void unCheckCheckBox(WebElement we, String checkboxName) {
+		try {
+			if(we.isSelected()==true) {
+				we.click();
+				System.out.println("Successfully Unchecked checkbox: " + checkboxName);
+				extTest.log(Status.PASS, "Successfully Unchecked checkbox: " + checkboxName);
+			}
+		}catch(Exception e) {
+			System.out.println("Checkbox '" + checkboxName + "' is already unchecked.");
+			extTest.log(Status.INFO, "Checkbox '" + checkboxName + "' is already unchecked.");
+		}
+	}
 
-	
+
+
 }
