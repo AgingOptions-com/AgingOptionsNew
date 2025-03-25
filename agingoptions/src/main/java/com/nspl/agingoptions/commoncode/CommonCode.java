@@ -54,6 +54,7 @@ public class CommonCode extends CommonCodeOR {
 		util.sendValue(otpTB, otp, "OTP");
 		util.click(clickVerifyOtpBT, "Verify Otp button");
 		util.holdOn(Duration.ofSeconds(5));
+		util.waitUntilPresentInUI(selectAccountText, "Select Account Text");
 		util.waitUntilElementClickableAndClick(paralegalOption);
 
 	}
@@ -63,7 +64,7 @@ public class CommonCode extends CommonCodeOR {
 		util.sendValueWithEnter(paralegalSearchTB, userEmail, "Paralegal Search");
 		util.holdOn(Duration.ofSeconds(5));
 		util.click(paralegalSearchedUser, "Paralegal screen searched user");
-		util.holdOn(Duration.ofSeconds(1));
+		util.holdOn(Duration.ofSeconds(3));
 	}
 
 	public void clickFamilySideIcon() {
@@ -87,7 +88,7 @@ public class CommonCode extends CommonCodeOR {
 		util.sendValueWithAct(emailNameTB, userEmail, "email");
 		util.selectDropDownByVisibleText(planDropDown, "Life Planning", "Life Planning");
 		util.holdOn(Duration.ofSeconds(1));
-        util.waitUntilElementToBeClickable(registerBT);
+		util.waitUntilElementToBeClickable(registerBT);
 		util.clickJavaScript(registerBT, "Registration Name Button");
 		util.holdOn(Duration.ofSeconds(1));
 		util.click(registrationCloseIcon, "Registration Close Icon");

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 25 09:35:28 IST 2025</td>
+<td>Started on:</td><td>Tue Mar 25 17:24:24 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>107 seconds (107878 ms)</td>
+<tr><td>Total time:</td><td>194 seconds (194336 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_002_MedicalConditionsElementVisibility()'><b>Health_002_MedicalConditionsElementVisibility</b><br>Test class: com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (bf0cf65b170810f82183fefa03ace6d8)] -&gt; xpath: (//p[text()=&apos;Dementia/Alzheimer’s&apos;])[2]] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52307}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52307/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bf0cf65b170810f82183fefa03ace6d8
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.nspl.agingoptions.webUtil.WebUtil.isDisplayed(WebUtil.java:1100)
-	at com.agingoptions.health.PersonalMedicalHistory.spouseDementiaAlzheimerStatus(PersonalMedicalHistory.java:68)
-	at com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_002_MedicalConditionsElementVisibility(MarriedUserFamilyInfoTestCases.java:41)
+<td title='com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_005_MedicalConditionElement()'><b>Health_005_MedicalConditionElement</b><br>Test class: com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases</td>
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 8 out of bounds for length 8
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_005_MedicalConditionElement(MarriedUserFamilyInfoTestCases.java:164)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -114,18 +110,14 @@ Session ID: bf0cf65b170810f82183fefa03ace6d8
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1662312252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1662312252'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (bf0cf65b170810f82183fefa03ace6d8)] -&gt; xpath: (//p[text()=&apos;Dementia/Alzheimer’s&apos;])[2]] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52307}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52307/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bf0cf65b170810f82183fefa03ace6d8
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.nspl.agingoptions.webUtil.WebUtil.isDisplayed(WebUtil.java:1100)
-	at com.agingoptions.health.PersonalMedicalHistory.spouseDementiaAlzheimerStatus(PersonalMedicalHistory.java:68)
-	at com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_002_MedicalConditionsElementVisibility(MarriedUserFamilyInfoTestCases.java:41)
+</pre></div><a href='#' onClick='toggleBox("stack-trace838187299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace838187299'><pre>java.lang.IndexOutOfBoundsException: Index 8 out of bounds for length 8
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_005_MedicalConditionElement(MarriedUserFamilyInfoTestCases.java:164)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -153,8 +145,8 @@ Session ID: bf0cf65b170810f82183fefa03ace6d8
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>11</td>
-<td>com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases@6f4a47c7</td></tr>
+<td>22</td>
+<td>com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases@69453e37</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -165,25 +157,30 @@ Session ID: bf0cf65b170810f82183fefa03ace6d8
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_004_BloodTypeSelection()'><b>Health_004_BloodTypeSelection</b><br>Test class: com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases</td>
-<td></td>
-<td>9</td>
-<td>com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases@6f4a47c7</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_005_MedicalConditionElement()'><b>Health_005_MedicalConditionElement</b><br>Test class: com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases</td>
-<td></td>
-<td>1</td>
-<td>com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases@6f4a47c7</td></tr>
-<tr>
 <td title='com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_001_Personal_MedicalHistoryPage()'><b>Health_001_Personal_MedicalHistoryPage</b><br>Test class: com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases</td>
 <td></td>
-<td>16</td>
-<td>com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases@6f4a47c7</td></tr>
+<td>22</td>
+<td>com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases@69453e37</td></tr>
+<tr>
+<td title='com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_002_MedicalConditionsElementVisibility()'><b>Health_002_MedicalConditionsElementVisibility</b><br>Test class: com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases</td>
+<td></td>
+<td>17</td>
+<td>com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases@69453e37</td></tr>
 <tr>
 <td title='com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_003_EnvironmentalLifeStyleFactorsElementVisibility()'><b>Health_003_EnvironmentalLifeStyleFactorsElementVisibility</b><br>Test class: com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases</td>
 <td></td>
 <td>11</td>
-<td>com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases@6f4a47c7</td></tr>
+<td>com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases@69453e37</td></tr>
+<tr>
+<td title='com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_004_BloodTypeSelection()'><b>Health_004_BloodTypeSelection</b><br>Test class: com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases</td>
+<td></td>
+<td>39</td>
+<td>com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases@69453e37</td></tr>
+<tr>
+<td title='com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases.Health_006_EnvironmentalLifestyleFactorsDetails()'><b>Health_006_EnvironmentalLifestyleFactorsDetails</b><br>Test class: com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases</td>
+<td></td>
+<td>6</td>
+<td>com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases@69453e37</td></tr>
 </table><p>
 </body>
 </html>

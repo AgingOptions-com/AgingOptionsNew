@@ -1,7 +1,11 @@
 package com.agingoptions.health;
 
+import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 import com.nspl.agingoptions.webUtil.WebUtil;
@@ -59,12 +63,13 @@ public class PersonalMedicalHistory {
 		util.isDisplayed(environmentalLifestyleFactorsAccordian, "Environmental & Lifestyle Factors Accordian");
 	}
 	public void clickMedicalConditionAccordian() {
-		util.waitUntilElementClickableAndClick(medicalConditionsAccordian);
+		util.clickJavaScript(medicalConditionsAccordian,"Medical Condition Accordian");
 	}
 	public void primaryMemberDementiaAlzheimerStatus() {
 		util.isDisplayed(primaryMemberDementiaAlzheimer, "Primary member Dementia/Alzheimer’s text");
 	}
 	public void spouseDementiaAlzheimerStatus() {
+		util.waitUntilPresentInUI(spouseDementiaAlzheimer, "spouse Dementia/Alzheimer’s text");
 		util.isDisplayed(spouseDementiaAlzheimer, "spouse Dementia/Alzheimer’s text");
 	}
 
@@ -306,8 +311,10 @@ public class PersonalMedicalHistory {
 	@FindBy(xpath="(//div[@class=' dropdown-selected'])[2]")
 	private WebElement spouseDropDownSelectedOptions;
 
-	public String getSpouseDropDownSelectedOptions() {
-		String spouseBloodTypeSelectedOptions=	util.getInnerText(spouseDropDownSelectedOptions);
+	public String getSpouseDropDownSelectedOptions(String text) {
+		String spouseBloodTypeSelectedOptions;
+		util.waitUntilTextPresentInUI(spouseDropDownSelectedOptions,text);
+		spouseBloodTypeSelectedOptions=	util.getInnerText(spouseDropDownSelectedOptions);
 		return spouseBloodTypeSelectedOptions;
 	}
 
@@ -322,7 +329,9 @@ public class PersonalMedicalHistory {
 	private WebElement personalMedicalHistorySideBarLink;
 
 	public void clickpersonalMedicalHistorySideBarLink() {
-		util.clickButtonAfterCheckingEnable(personalMedicalHistorySideBarLink);
+		util.waitUntilPresentInUI(personalMedicalHistorySideBarLink, "Personal Medical History Side Bar Link");
+		util.waitUntilElementToBeClickable(personalMedicalHistorySideBarLink);
+		util.clickActions(personalMedicalHistorySideBarLink,"Personal Medical History");
 	}
 
 	public void openMedicalConditionAccordian() {
@@ -408,7 +417,7 @@ public class PersonalMedicalHistory {
 
 	@FindBy(xpath="(//input[@name='Blood pressure issues'])[2]")
 	private WebElement spouseBloodTypePressureIssueCheckbox;
-	
+
 	public void checkSpouseBloodPressureIssueCheckbox() {
 		util.checkCheckBox(spouseBloodTypePressureIssueCheckbox, "Spouse Diabetes");
 	}
@@ -419,17 +428,17 @@ public class PersonalMedicalHistory {
 	public void checkPrimaryMemberElevatedCholesterolCheckbox() {
 		util.checkCheckBox(PrimaryMemberElevatedCholesterolCheckbox, "Primary Member Elevated cholesterol");
 	}
-	
+
 	@FindBy(xpath="(//input[@name='Elevated cholesterol'])[2]")
 	private WebElement spouseElevatedCholesterolCheckbox;
-	
+
 	public void checkSpouseElevatedCholesterolCheckbox() {
 		util.checkCheckBox(spouseElevatedCholesterolCheckbox, "Spouse Elevated cholesterol");
 	}
 
 	@FindBy(xpath="(//input[@name='Glaucoma'])[1]")
 	private WebElement primaryMemberGlaucomaCheckbox;
-	
+
 	public void checkPrimaryMemberGlaucomaCheckbox() {
 		util.checkCheckBox(primaryMemberGlaucomaCheckbox, "Primary Member Glaucoma");
 	}
@@ -440,5 +449,109 @@ public class PersonalMedicalHistory {
 	public void checkSpouseGlaucomaCheckbox() {
 		util.checkCheckBox(spouseGlaucomaCheckbox, "Spouse Glaucoma");
 	}
+
+	@FindBys(@FindBy(xpath = "//div[@id='custom-input-field']//input"))
+	private List<WebElement> medicalConditionsTextBoxList;
+
+	public List<WebElement> medicalConditionsTextBoxList() {
+		List<WebElement> medicalList=	util.getWebElements(medicalConditionsTextBoxList);
+		return medicalList;
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Did you grow up in a smoking household or work in a smoking environment?')]/parent::div//p[text()='Yes'])[1]")
+	private WebElement primaryMemberDidYouGrowUpYesRadioBT;
+
+	public void clickYesprimaryMemberDidYouGrowUpRadioBT() {
+		util.click(primaryMemberDidYouGrowUpYesRadioBT, "Primary Member Did you grow up Yes Radio Button");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Did you grow up in a smoking household or work in a smoking environment?')]/parent::div//p[text()='Yes'])[2]")
+	private WebElement spouseDidYouGrowUpYesRadioBT;
+
+	public void clickYesspouseDidYouGrowUpRadioBT() {
+		util.click(spouseDidYouGrowUpYesRadioBT, "Spouse Did you grow up Yes Radio Button");
+	}
+
+
+
+	//	@FindBy(xpath="(//div[@id='custom-textarea-field']/textarea[@class='textareaStyling'])[1]")
+	//	private WebElement didYouGrowUpCommentTB;
+	//
+	//	public void sendDidYouGrowUpComment(String didYouGrowUpText) {
+	//		util.sendValue(didYouGrowUpCommentTB, didYouGrowUpText, "Did you grow up in a smoking household or work in a smoking environment?");
+	//	}
+
+	@FindBy(xpath="(//p[contains(text(),'Did you grow up in a smoking household or work in a smoking environment?')]/parent::div/following-sibling::div//textarea)[1]")
+	private WebElement primaryMemberDidYouGrowUpCommentTB;
+
+	public void sendPrimaryMemberDidYouGrowUpCommentText(String primaryMemberdidYouGrowUp) {
+		util.sendValue(primaryMemberDidYouGrowUpCommentTB,primaryMemberdidYouGrowUp , "Primary Member Did you grow up comment");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Did you grow up in a smoking household or work in a smoking environment?')]/parent::div/following-sibling::div//textarea)[2]")
+	private WebElement spouseDidYouGrowUpCommentTB;
+
+	public void sendSpouseDidYouGrowUpCommentText(String spousedidYouGrowUp) {
+		util.sendValue(spouseDidYouGrowUpCommentTB,spousedidYouGrowUp , "Spouse Did you grow up comment");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Do you have conditions that limit physical ability?')]/parent::div//p[text()='Yes'])[1]")
+	private WebElement primaryMemberDoYouHaveConditionYesRadioButton;
+
+	public void clickPrimaryMemberDoYouHaveConditionYesRadioButton() {
+		util.click(primaryMemberDoYouHaveConditionYesRadioButton, "Primary Member Do you have conditions that limit physical ability?");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Do you have conditions that limit physical ability?')]/parent::div//p[text()='Yes'])[2]")
+	private WebElement spouseDoYouHaveConditionYesRadioButton;
+
+	public void clickspouseDoYouHaveConditionYesRadioButton() {
+		util.click(spouseDoYouHaveConditionYesRadioButton, "Spouse Do you have conditions that limit physical ability?");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Do you have conditions that limit physical ability?')]/parent::div/following-sibling::div//textarea)[1]")
+	private WebElement primaryMemberDoYouHaveConditionCommentTB;
+
+	public void sendPrimaryMemberDoYouHaveConditionCommentTextBox(String primaryMemberDoYouHaveCondition) {
+		util.sendValue(primaryMemberDoYouHaveConditionCommentTB,primaryMemberDoYouHaveCondition , "primary Member Do you have conditions that limit physical ability?");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Do you have conditions that limit physical ability?')]/parent::div/following-sibling::div//textarea)[2]")
+	private WebElement spouseDoYouHaveConditionCommentTB;
+
+	public void sendSpouseDoYouHaveConditionCommentTextBox(String primaryMemberDoYouHaveCondition) {
+		util.sendValue(spouseDoYouHaveConditionCommentTB,primaryMemberDoYouHaveCondition , "Spouse Do you have conditions that limit physical ability?");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Do you have difficulty with gait, balance, or ambulation?')]/parent::div//p[text()='Yes'])[1]")
+	private WebElement primaryMemberDoYouDifficultyYesRadioBT;
+
+	public void clickPrimaryMemberYesRadioButtonDoYouDiffcultyWithGait() {
+		util.click(primaryMemberDoYouDifficultyYesRadioBT,"Primary Member Do you Have Difficulty with gait Radio Button");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Do you have difficulty with gait, balance, or ambulation?')]/parent::div//p[text()='Yes'])[2]")
+	private WebElement spouseDoYouDifficultyYesRadioBT;
+
+	public void clickSpouseYesRadioButtonDoYouDiffcultyWithGait() {
+		util.click(spouseDoYouDifficultyYesRadioBT, "Spouse Do you have difficulty with gait, balance, or ambulation?");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Do you have difficulty with gait, balance, or ambulation?')]/parent::div/following-sibling::div//textarea)[1]")
+	private WebElement primaryMemberDoYouHaveDifficultyGaitCommentTB;
+
+	public void sendPrimaryMemberDoYouHaveDifficultyGaitCommentText(String comment) {
+		util.sendValue(primaryMemberDoYouHaveDifficultyGaitCommentTB, comment, "Primary Member Do you have difficulty with gait, balance, or ambulation?");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Do you have difficulty with gait, balance, or ambulation?')]/parent::div/following-sibling::div//textarea)[2]")
+	private WebElement spouseDoYouHaveDifficultyGaitCommentTB;
+
+	public void sendSpouseDoYouHaveDifficultyGaitCommentText(String comment) {
+		util.sendValue(spouseDoYouHaveDifficultyGaitCommentTB, comment, "Primary Member Do you have difficulty with gait, balance, or ambulation?");
+	}
+
+
+
 
 }

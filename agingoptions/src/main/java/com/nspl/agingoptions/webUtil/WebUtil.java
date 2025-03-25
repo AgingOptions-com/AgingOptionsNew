@@ -307,7 +307,7 @@ public class WebUtil {
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
 		} catch (ElementClickInterceptedException e) {
-			js.executeScript("arguments[0].click()");
+			js.executeScript("arguments[0].click()",we);
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
 		} catch (Exception e) {
@@ -1099,7 +1099,7 @@ public class WebUtil {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOf(weEle));
 			boolean status = weEle.isDisplayed();
-			if (status) {
+			if (status==true) {
 				extTest.log(Status.PASS, "" + elementName + "- is displayed on the UI");
 				print(elementName + " Element is displayed");
 			} else {
@@ -1610,6 +1610,8 @@ public class WebUtil {
 			WebDriverWait wait=	new WebDriverWait(driver, Duration.ofSeconds(20));
 			WebElement element=		wait.until(ExpectedConditions.elementToBeClickable(we));
 			element.click();
+		}catch(StaleElementReferenceException e) {
+			we.click();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -1647,7 +1649,7 @@ public class WebUtil {
 				System.out.println("Button is disabled, waiting...");
 				wait.until(ExpectedConditions.elementToBeClickable(we)).click();
 			}
-		} catch (org.openqa.selenium.TimeoutException e) {
+		} catch (org.openqa.selenium.ElementClickInterceptedException e) {
 			System.out.println("Button was not clickable within the wait time. Trying JavaScript click...");
 			try {
 				JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -1729,6 +1731,17 @@ public class WebUtil {
 		}catch(Exception e) {
 			System.out.println("Checkbox '" + checkboxName + "' is already unchecked.");
 			extTest.log(Status.INFO, "Checkbox '" + checkboxName + "' is already unchecked.");
+		}
+	}
+	public void waitUntilTextPresentInUI(WebElement we, String text) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			wait.until(ExpectedConditions.textToBePresentInElement(we,text));
+			extTest.log(Status.PASS, " Successfull Waited for  " + text + "element");
+		} catch (Exception e) {
+			extTest.log(Status.FAIL, text + " Failed not waited for particular element ");
+			e.printStackTrace();
+			throw e;
 		}
 	}
 
