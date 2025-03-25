@@ -8,12 +8,13 @@
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
+          <include name="Health_002_MedicalConditionsElementVisibility"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
+          <include name="Health_001_Personal_MedicalHistoryPage"/>
           <include name="beforeMethod"/>
-          <include name="Health_001_Personal_MedicalHistory_ElementPresence"/>
         </methods>
       </class> <!-- com.nspl.agingoptions.login_registrationpage.testcases.MarriedUserFamilyInfoTestCases -->
     </classes>

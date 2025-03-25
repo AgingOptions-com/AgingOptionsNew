@@ -23,13 +23,12 @@ public class BaseTest {
 
 	public static ExtentReports extReports;
 	protected WebUtil util = new WebUtil();;
-	ExtentTest extTest;
+	static	ExtentTest extTest;
 
 	@BeforeSuite
 	public void beforeSuite() {
 		extReports = new ExtentReports();
-		ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir")
-				+ "\\test-output\\extentReport\\" + util.GetDateAndTime() + "_extentReport.html");
+		ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir")+ "\\test-output\\extentReport\\" + util.GetDateAndTime() + "_extentReport.html");
 		extReports.attachReporter(spark);
 		spark.config().setDocumentTitle("AgingOptions Report");
 		spark.config().setReportName("AgingOptions Automation Report");
@@ -43,23 +42,26 @@ public class BaseTest {
 
 	@BeforeTest
 	public void beforeTest() {
-
+		extTest = extReports.createTest("Dummy");
+		util.setExtent(extTest);
+		util.launchBrowser(util.getProperty("browserName"));
+		util.hitUrl(util.getProperty("url"));
+		CommonCode common=	new CommonCode(util);
+		common.loginAttorneyEmailPassword();
+		common.LoginWithNewMarriedUser();
+		extReports.removeTest(extTest);
+		extTest = null;
 	}
 
 	@BeforeClass
 	public void beforeClass() {
-		extReports = new ExtentReports(); // Initialize ExtentReports
-		extTest = extReports.createTest("Before Class Execution");
-		util.setExtent(extTest);
-		util.launchBrowser(util.getProperty("browserName"));
-		util.hitUrl(util.getProperty("url"));
-		new CommonCode(util).loginAttorneyEmailPassword();
+		
+		
 	}
 
 	@BeforeMethod
 	public void beforeMethod(Method mt) {
 		extTest = extReports.createTest(mt.getName());
-		util.setExtent(extTest);
 		util.setExtent(extTest);
 	}
 
