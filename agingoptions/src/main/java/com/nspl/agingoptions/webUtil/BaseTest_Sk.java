@@ -40,10 +40,10 @@ public class BaseTest_Sk {
 		spark.config().setReportName("AgingOptions Automation Report");
 		spark.config().setTheme(Theme.DARK);
 	
-//		extReports.setSystemInfo("OS", System.getProperty("os.name"));
-//		extReports.setSystemInfo("User Name", System.getProperty("user.name"));
-//		extReports.setSystemInfo("Browser", "ChromeBrowser");
-//		extReports.setSystemInfo("Java-Verison", System.getProperty("java.version"));
+		extReports.setSystemInfo("OS", System.getProperty("os.name"));
+		extReports.setSystemInfo("User Name", System.getProperty("user.name"));
+		extReports.setSystemInfo("Browser", "ChromeBrowser");
+		extReports.setSystemInfo("Java-Verison", System.getProperty("java.version"));
 	}
 
 	@BeforeTest

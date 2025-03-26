@@ -121,6 +121,8 @@ public class CommonCodeOR   {
 	    
 	    @FindBy(xpath="//h1[text()='Personal Information']")
 	    protected WebElement PersonalInformationIcon;
+	    
+	   
 	}
 
 

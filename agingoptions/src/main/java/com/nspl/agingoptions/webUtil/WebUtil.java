@@ -189,7 +189,7 @@ public class WebUtil {
 	// method===============================
 	public void sendValue(WebElement weEle, String value, String elementName) {
 		try {
-			
+			weEle.clear();
 			weEle.sendKeys(value);
 			extTest.log(Status.PASS,
 					elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
@@ -244,7 +244,7 @@ public class WebUtil {
 	  
 		verifyString( actualInnerText, expectedInnerText);
 		 Assert.assertEquals(actualInnerText, expectedInnerText);
-		 extTest.log(Status.INFO, "Inner text-" + actualInnerText + " , So we are now "+ PageName + " page" );
+		 extTest.log(Status.INFO, "Inner text-" + actualInnerText + " , So we are now "+ PageName + " " );
 		}
 	public void toasterverification(WebElement we ,String ExpectedToasterText) {
 
@@ -1138,6 +1138,15 @@ public class WebUtil {
 		}
 
 	}
+	
+	public void verifyIsselected(WebElement We , String Elementname) {
+	   if (We.isSelected()==true) {
+		   
+		   
+		   
+		   
+	   }
+	}
 
 	///////////// for IsDisplay ///////////////
 	public void isDisplayed(WebElement weEle, String elementName) {
@@ -1158,6 +1167,16 @@ public class WebUtil {
 			e.printStackTrace();
 			throw e;
 		}
+	}
+	
+	public void isNotDisplayed(WebElement we , String elementName) {
+		if(we.isDisplayed()==false) {
+			extTest.log(Status.PASS, "-" + elementName + "- is not displayed on the UI");
+			
+		}else {
+			extTest.log(Status.FAIL, "-" + elementName + "- is displayed on the UI");
+		}
+		
 	}
 
 	// ===========================================By this method we can get
@@ -1294,6 +1313,21 @@ public class WebUtil {
 		return otpText;
 	}
 
+	
+	public void clickRadioButton(WebElement we ,String ElementName) {
+		if (we.isSelected()==false ) {
+			extTest.log(Status.INFO, "Radio button is selected");
+			click(we, ElementName);
+			click(we, ElementName);
+
+		}else {
+			if (we.isSelected()==true ) {
+				extTest.log(Status.INFO, "Radio button is not selected");
+				click(we, ElementName);
+			}
+		}
+		
+	}
 	// ===========================================By this method we can check on all
 	// check boxes===============================
 	public void checkAllCheckBoxes(List<WebElement> weList, String elementName) {

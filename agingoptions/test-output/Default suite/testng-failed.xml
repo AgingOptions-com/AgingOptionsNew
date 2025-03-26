@@ -13,7 +13,7 @@
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="beforeClass"/>
-          <include name="LoginWithClientAndverifypersonainformationPage"/>
+          <include name="SaveTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive"/>
         </methods>
       </class> <!-- com.nspl.HousingInfoPageTestcase.HousingInfoTestScript -->
     </classes>

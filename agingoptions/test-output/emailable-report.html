@@ -8,23 +8,48 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">40,568</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">536,576</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td><td><a href="#m0">LoginWithClientAndverifypersonainformationPage</a></td><td rowspan="1">1742553817762</td><td rowspan="1">34769</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td><td><a href="#m0">VerifyOnTheScaleOfOneTwoFive_Select1</a></td><td rowspan="1">1742986211337</td><td rowspan="1">71344</td></tr><tr class="failedeven"><td><a href="#m1">verifySelecctYesorNotSureCheckBox_IsYourHouseLivingIn____</a></td><td rowspan="1">1742985993059</td><td rowspan="1">73849</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td><td><a href="#m2">LoginWithClientAndverifypersonainformationPage</a></td><td rowspan="1">1742985895137</td><td rowspan="1">35130</td></tr><tr class="passedeven"><td><a href="#m3">VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection</a></td><td rowspan="1">1742986128533</td><td rowspan="1">82665</td></tr><tr class="passedeven"><td><a href="#m4">VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</a></td><td rowspan="1">1742986282930</td><td rowspan="1">71826</td></tr><tr class="passedeven"><td><a href="#m5">VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</a></td><td rowspan="1">1742986355071</td><td rowspan="1">72004</td></tr><tr class="passedeven"><td><a href="#m6">VerifySelectNoCheckBox_IsYourHousingLivingIn___</a></td><td rowspan="1">1742986067215</td><td rowspan="1">61217</td></tr><tr class="passedeven"><td><a href="#m7">verifyHousingInformation</a></td><td rowspan="1">1742985930779</td><td rowspan="1">62136</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript#LoginWithClientAndverifypersonainformationPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Accounts switcher&apos;]&quot;}
-  (Session info: chrome=134.0.6998.118)
+<h2>Test</h2><h3 id="m0">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript#VerifyOnTheScaleOfOneTwoFive_Select1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Caregiver Suitability&apos;]&quot;}
+  (Session info: chrome=134.0.6998.165)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d32b3f4c5198efa81d4a98805b2014df, findElement {using=xpath, value=//p[text()=&apos;Accounts switcher&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58612/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d32b3f4c5198efa81d4a98805b2014df
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+Command: [6c2d4c2f2316e7cc0756fb1112753012, findElement {using=xpath, value=//button[text()=&apos;Caregiver Suitability&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59747}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59747/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c2d4c2f2316e7cc0756fb1112753012
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.isNotDisplayed(WebUtil.java:1173)
+	at com.nspl.agingoptions.commoncode.HousingInfo.OntheScaleOfOneToFive_select1(HousingInfo.java:108)
+	at com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyOnTheScaleOfOneTwoFive_Select1(HousingInfoTestScript.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript#verifySelecctYesorNotSureCheckBox_IsYourHouseLivingIn____</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&apos;On a scale of 1 to 5, how likely is it that you will remain in your current home? 1-Not at all, 5-Will be in my &apos;)]&quot;}
+  (Session info: chrome=134.0.6998.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c2d4c2f2316e7cc0756fb1112753012, findElement {using=xpath, value=//p[contains(text(),&apos;On a scale of 1 to 5, how likely is it that you will remain in your current home? 1-Not at all, 5-Will be in my &apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59747}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59747/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c2d4c2f2316e7cc0756fb1112753012
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -40,34 +65,15 @@ Session ID: d32b3f4c5198efa81d4a98805b2014df
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
 	at com.nspl.agingoptions.webUtil.WebUtil.verifyInnerText(WebUtil.java:243)
-	at com.nspl.agingoptions.commoncode.CommonCode.GoToClickVerifyButton(CommonCode.java:121)
-	at com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.LoginWithClientAndverifypersonainformationPage(HousingInfoTestScript.java:21)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at com.nspl.agingoptions.commoncode.HousingInfo.verifyCheckYes_NotSure_IsYourHousingLivingIn(HousingInfo.java:30)
+	at com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.verifySelecctYesorNotSureCheckBox_IsYourHouseLivingIn____(HousingInfoTestScript.java:49)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript#LoginWithClientAndverifypersonainformationPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript#VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript#VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript#VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript#VerifySelectNoCheckBox_IsYourHousingLivingIn___</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript#verifyHousingInformation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

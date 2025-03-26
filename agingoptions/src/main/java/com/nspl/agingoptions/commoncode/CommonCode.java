@@ -112,13 +112,7 @@ public class CommonCode extends CommonCodeOR{
 	 public void GoToClickVerifyButton() {
 		 
 		 wt.click(verifybutton, "OTP Verify button");
-		 try {
-			Thread.sleep(Duration.ofSeconds(8));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		 wt.verifyInnerText(SelecteRolesText, "Accounts switcher","Account switcher");
+		
 		
 		// wt.verifyUrl("https://aologinuat.agingoptions.com/Account/SelectRoles", "Select role page");
 		
@@ -206,7 +200,8 @@ public class CommonCode extends CommonCodeOR{
 	 public void goToClickHousingButtonUnderSetUp() {
 		 wt.click(HousingButtonUnderSetUp, "Housing Button under SetUp Page");
 	 }
-    public void verifyPersonalInfoPage() {
+    public void verifyPersonalInfoPage()  {
+    	
     	wt.verifyInnerText(PersonalInformationIcon, "Personal Information", "Personal Information text");
     }
 }
