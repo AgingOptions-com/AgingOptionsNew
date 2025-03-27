@@ -17,7 +17,7 @@ public class LpoLandingPage {
 		this.util=ut;
 	}
 
-	@FindBy(xpath="(//span[text()='Health'])[1]")
+	@FindBy(xpath="(//span[text()='Health'])[1]/parent::div")
 	private WebElement healthModule;
 
 	public void clickHealthModule() {

@@ -9,11 +9,8 @@
 	<test name="Test">
 		<classes>
 			<class
-				name="com.nspl.agingoptions.login_registrationpage.testcases.LoginPageTestCases"> </class>
-			<class
-				name="com.nspl.agingoptions.login_registrationpage.testcases.SignUpPageTestCases"> </class>
-			<class
-				name="com.nspl.agingoptions.Intakeform.testcases.ActivationFormTestCases"></class>
+				name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyInfoTestCases">
+				</class>
 		</classes>
 	</test>
 </suite> 

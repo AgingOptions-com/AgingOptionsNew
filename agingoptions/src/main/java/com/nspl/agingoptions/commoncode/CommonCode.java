@@ -96,6 +96,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 	public void inputMarriedUserAcitvationPageDetails(String noOfChild,String primaryMemberDob,String address,String spouseFirstName,String spouseDob ) {
 		ActivationPage actObj=	new ActivationPage(util);
+		util.holdOn(Duration.ofSeconds(3));
 		actObj.selectMarriedRelationshipOptions();
 		actObj.selectMaleAsPrimaryMember();
 		actObj.inputNoOfChildren(noOfChild);
@@ -104,6 +105,7 @@ public class CommonCode extends CommonCodeOR {
 		actObj.inputSpouseFirstName(spouseFirstName);
 		actObj.inputSpouseDob(spouseDob);
 		actObj.clickProceedSubmitButton();
+		util.holdOn(Duration.ofSeconds(5));
 	}
 	public void LoginWithNewMarriedUser() {
 		DataUtil data=	new DataUtil();
@@ -120,6 +122,7 @@ public class CommonCode extends CommonCodeOR {
 		CommonCode common = new CommonCode(util);
 		String UserEmail=	common.createLifePlanningUser(firstName,lastName,email,phoneNumber);
 		common.searchUserParaGotoLPO(UserEmail);
+		Duration.ofSeconds(2);
 		common.inputMarriedUserAcitvationPageDetails(noOfChild, primaryMemberDob, address, spouseFirstName, spouseDob);
 	}
 

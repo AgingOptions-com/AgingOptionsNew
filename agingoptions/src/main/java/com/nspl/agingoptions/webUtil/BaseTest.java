@@ -55,8 +55,9 @@ public class BaseTest {
 
 	@BeforeClass
 	public void beforeClass() {
+
 		
-		
+
 	}
 
 	@BeforeMethod

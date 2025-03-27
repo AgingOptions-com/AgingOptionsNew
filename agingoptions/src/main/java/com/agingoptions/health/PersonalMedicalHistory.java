@@ -551,7 +551,76 @@ public class PersonalMedicalHistory {
 		util.sendValue(spouseDoYouHaveDifficultyGaitCommentTB, comment, "Primary Member Do you have difficulty with gait, balance, or ambulation?");
 	}
 
+	@FindBy(xpath="(//p[contains(text(),'Are you allergic to any medications?')]/parent::div//p[text()='Yes'])[1]")
+	private WebElement primaryMemberAreYouAllergicToYesRadioBT;
 
+	public void clickprimaryMemberAreYouAllergicToYesRadioBT() {
+		util.holdOn(Duration.ofSeconds(1));
+		util.scrollIntoElement(primaryMemberAreYouAllergicToYesRadioBT,"Are You Allergic To medications" );
+		util.holdOn(Duration.ofSeconds(1));
+		util.click(primaryMemberAreYouAllergicToYesRadioBT, "Primary Member Are you allergic to any medications?");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Are you allergic to any medications?')]/parent::div//p[text()='Yes'])[2]")
+	private WebElement spouseAreYouAllergicToYesRadioBT;
+
+	public void clickSpouseAreYouAllergicToYesRadioBT() {
+		util.clickActions(spouseAreYouAllergicToYesRadioBT, "Spouse Are you allergic to any medications?");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Which medications ?')])[1]/following-sibling::textarea")
+	private WebElement primaryMemberWhichMedicationCommentTB;
+
+	public void sendValuePrimaryMemberWhichMedicationCommentTB(String comment) {
+		util.sendValue(primaryMemberWhichMedicationCommentTB, comment, "Primary Member Which medications ?");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Which medications ?')])[2]/following-sibling::textarea")
+	private WebElement spouseWhichMedicationCommentTB;
+
+	public void sendValueSpouseWhichMedicationCommentTB(String comment) {
+		util.sendValue(spouseWhichMedicationCommentTB, comment, "Spouse Which medications ?");
+	}
+
+	public String getPrimaryMemberDidYouGrowUpCommentInputText() {
+		String value=	util.GetAttributevalue(primaryMemberDidYouGrowUpCommentTB, "value");
+		return value;
+	}
+
+	public String getSpouseDidYouGrowUpCommentInputText() {
+		String value=	util.GetAttributevalue(spouseDidYouGrowUpCommentTB, "value");
+		return value;
+	}
+
+	public String getPrimaryMemberDoYouHaveConditionCommentText() {
+		String value=	util.GetAttributevalue(primaryMemberDoYouHaveConditionCommentTB, "value");
+		return value;
+	}
+	
+	public String getSpouseDoYouHaveConditionCommentText() {
+		String value=	util.GetAttributevalue(spouseDoYouHaveConditionCommentTB, "value");
+		return value;
+	}
+	
+	public String getPrimaryMemberDoYouHaveDifficultyCommentText() {
+		String value=	util.GetAttributevalue(primaryMemberDoYouHaveDifficultyGaitCommentTB, "value");
+		return value;
+	}
+	
+	public String getSpouseDoYouHaveDifficultyCommentText() {
+		String value=	util.GetAttributevalue(spouseDoYouHaveDifficultyGaitCommentTB, "value");
+		return value;
+	}
+	
+	public String getPrimaryMemberWhichMedicationCommentText() {
+		String value=	util.GetAttributevalue(primaryMemberWhichMedicationCommentTB, "value");
+		return value;
+	}
+	
+	public String getSpouseWhichMedicationCommentText() {
+		String value=	util.GetAttributevalue(spouseWhichMedicationCommentTB, "value");
+		return value;
+	}
 
 
 }
