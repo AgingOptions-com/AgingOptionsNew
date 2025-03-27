@@ -307,7 +307,7 @@ public class WebUtil {
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
 		} catch (ElementClickInterceptedException e) {
-			js.executeScript("arguments[0].click()");
+			js.executeScript("arguments[0].click()",we);
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
 		} catch (Exception e) {
@@ -1080,26 +1080,26 @@ public class WebUtil {
 	}
 
 	/////////////// FOR IS SELECTED //////////////
-	public void isSelected(WebElement weEle, String xpath) {
-
-		boolean status = weEle.isSelected();
-		if (status == true) {
-			extTest.log(Status.PASS, "Element is not selected");
-			print("Element is selected");
-		} else {
-			extTest.log(Status.FAIL, "Element is not selected");
-			print("Faile Element is not selected");
-		}
-
+	public void isSelected(WebElement weEle, String radioButtonName) {
+		try {
+			boolean status = weEle.isSelected();
+			if (status == true) {
+				extTest.log(Status.PASS, radioButtonName+" is selected");
+				print(radioButtonName+" is selected");
+			} else {
+				extTest.log(Status.FAIL, radioButtonName+" is not selected");
+				print(radioButtonName+" Failed Element is not selected");
+			}}catch(Exception e) {
+				e.printStackTrace();
+			}
 	}
-
 	///////////// for IsDisplay ///////////////
 	public void isDisplayed(WebElement weEle, String elementName) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOf(weEle));
 			boolean status = weEle.isDisplayed();
-			if (status) {
+			if (status==true) {
 				extTest.log(Status.PASS, "" + elementName + "- is displayed on the UI");
 				print(elementName + " Element is displayed");
 			} else {
@@ -1471,7 +1471,7 @@ public class WebUtil {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 			wait.until(ExpectedConditions.visibilityOf(we));
-			extTest.log(Status.PASS, " Successfull Waited for  " + elementName + "element");
+			extTest.log(Status.PASS, " Successfull Waited for  " + elementName + " element");
 		} catch (Exception e) {
 			extTest.log(Status.FAIL, elementName + " Failed not waited for particular element ");
 			e.printStackTrace();
@@ -1610,6 +1610,8 @@ public class WebUtil {
 			WebDriverWait wait=	new WebDriverWait(driver, Duration.ofSeconds(20));
 			WebElement element=		wait.until(ExpectedConditions.elementToBeClickable(we));
 			element.click();
+		}catch(StaleElementReferenceException e) {
+			we.click();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -1647,7 +1649,7 @@ public class WebUtil {
 				System.out.println("Button is disabled, waiting...");
 				wait.until(ExpectedConditions.elementToBeClickable(we)).click();
 			}
-		} catch (org.openqa.selenium.TimeoutException e) {
+		} catch (org.openqa.selenium.ElementClickInterceptedException e) {
 			System.out.println("Button was not clickable within the wait time. Trying JavaScript click...");
 			try {
 				JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -1731,6 +1733,53 @@ public class WebUtil {
 			extTest.log(Status.INFO, "Checkbox '" + checkboxName + "' is already unchecked.");
 		}
 	}
+	public void waitUntilTextPresentInUI(WebElement we, String text) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			wait.until(ExpectedConditions.textToBePresentInElement(we,text));
+			extTest.log(Status.PASS, " Successfull Waited for  " + text + "element");
+		} catch (Exception e) {
+			extTest.log(Status.FAIL, text + " Failed not waited for particular element ");
+			e.printStackTrace();
+			throw e;
+		}
+	}
+	public void verifyElementRadioButtonSelected(WebElement element, String elementName) {
+		try {
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			boolean isChecked = (boolean) js.executeScript("return arguments[0].checked;", element);
+			if (isChecked) {
+				extTest.log(Status.PASS, elementName + " is selected");
+				System.out.println(elementName + " is selected");
+			} else {
+				extTest.log(Status.FAIL, elementName + " is NOT selected");
+				System.out.println(elementName + " is NOT selected");
+			}
+		} catch (Exception e) {
+			extTest.log(Status.FAIL, "Failed to verify selection state of " + elementName);
+			e.printStackTrace();
+		}
+	}
+	public boolean isRadioButtonChecked(WebElement element, String elementName) {
+	    try {
+	        String checkedAttribute = element.getAttribute("checked");
+	        boolean isChecked = (checkedAttribute != null);
+	        
+	        if (isChecked) {
+	            extTest.log(Status.PASS, elementName + " is selected");
+	            System.out.println(elementName + " is selected");
+	        } else {
+	            extTest.log(Status.FAIL, elementName + " is NOT selected");
+	            System.out.println(elementName + " is NOT selected");
+	        }
+	        return isChecked;
+	    } catch (Exception e) {
+	        extTest.log(Status.FAIL, "Failed to check the status of " + elementName);
+	        e.printStackTrace();
+	        return false;
+	    }
+	}
+
 
 
 

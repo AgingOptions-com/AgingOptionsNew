@@ -49,9 +49,11 @@ public class CommonCodeOR   {
 	@FindBy(xpath="//button[@title='Trash']//div")
 	protected WebElement deleteIcon;
 	
-	@CacheLookup
-	@FindBy(xpath="//span[text()='Paralegal']")
+	@FindBy(xpath="//div[@class='roleOptions']//span[text()='Paralegal']")
 	protected WebElement paralegalOption;
+	
+	@FindBy(xpath="//p[text()='Select account']")
+	protected WebElement selectAccountText;
 
 	@FindBy(xpath = "//div[@class='d-flex align-items-center col-9']//input[@class='header-search p-1']")
 	protected WebElement paralegalSearchTB;
