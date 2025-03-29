@@ -36,7 +36,6 @@ public class CommonCode extends CommonCodeOR {
 		return getTutaOtpAlreadyOpenUrl();
 
 	}
-
 	public String getTutaOtpAlreadyOpenUrl() {
 		WebElement element = util.getShadowElement(shadowHost, shadowElement);
 		String otp = util.extractOTP(element);
@@ -77,6 +76,7 @@ public class CommonCode extends CommonCodeOR {
 		searchUserParaGotoLPO(userEmail);
 		clickFamilySideIcon();
 	}
+
 	public String createLifePlanningUser(String firstName,String lastName,String email, String phoneNumber) {
 		String formattedNumber = "(" + phoneNumber.substring(0, 3) + ")" + phoneNumber.substring(3, 6) + "-" + phoneNumber.substring(6);
 		String userEmail=	email+util.getRandomText(8)+"@maildrop.cc";
@@ -127,7 +127,7 @@ public class CommonCode extends CommonCodeOR {
 		Duration.ofSeconds(2);
 		common.inputMarriedUserAcitvationPageDetails(noOfChild, primaryMemberDob, address, spouseFirstName, spouseDob);
 	}
-	
+
 	public void waitParalegalScreenOldDesignUntilLoaderRandering() {
 		util.waitForLoaderToDisappear(By.xpath("//div[@class='spinner-border text-primary blockuiloader']"),1);
 	}
@@ -135,4 +135,131 @@ public class CommonCode extends CommonCodeOR {
 		util.waitForLoaderToDisappear(By.xpath("//div[@id='customLoader']"),5);
 	}
 
+	//////////////////////////////////////////////////////////////////////////////////////////
+
+	public void hiturlOfYopmail() {
+		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		util.nevigetUrl("https://yopmail.com/en/", "yopmail");
+		util.verifyUrl("https://yopmail.com/en/","Yopmail" );
+
+	}
+	public void Gotosearchemail(String email) {
+
+		util.clearTextBox(yopmailSearchBox);
+		util.sendValue(yopmailSearchBox, email, "Email");
+
+		util.click(YopmailSearchIcon, "Search icon");
+		try {
+			Thread.sleep(Duration.ofSeconds(4));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public String GoTofindtextOfOTP() {
+		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		util.switchToFrameByWebElement(iFrame);
+		String text= util.getInnerText(otpText);
+		util.nevigateAction("Otp Page").back();
+		util.nevigateAction("").back();
+		return text;
+	}
+	public void returntoframe() {
+		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+		util.nevigateAction("Otp Page").back();
+		util.nevigateAction("").back();
+
+	}
+
+	public void gotoinputotp(String otp) {
+		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		util.sendValue(otpInputBox, otp, "OTP box");
+	}
+	public void GoToClickVerifyButton() {
+		util.click(verifybutton, "OTP Verify button");
+	}
+
+	public void GoToClickSignUpLinkAndVerifySignUpPage() {
+		util.click(SignUpLink, "SignUp Link");
+		try {
+			Thread.sleep(Duration.ofSeconds(4));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		util.verifyInnerText(SignUpText, "Sign up","Sign Up");
+		//wt.verifyUrl("https://aologinuat.agingoptions.com/Account/Signup", "SignUp");
+	}
+	public void gotoClickParalegalOptions() {
+
+		util.click(paralegalrole, "Paralegal Role options");
+		try {
+			Thread.sleep(Duration.ofSeconds(7));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		util.verifyTitle("Paralegal ", "Aging Options");
+		util.verifyInnerText(ParalegalInnertext,"Intake / LPO Member List","Paralegal screen" );
+		// wt.verifyUrl("https://aointakeformuat.agingoptions.com/paralegal", "Paralegal page");
+	}
+	public void GotoclickAdminRoleoptions() {
+
+		util.click(AdminRole, "Admin Role");
+		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+		util.verifyTitle("Admin", "AO Admin");
+	}
+	public void GoTOClickEventCoordinatorRole() {
+
+		util.click(EventCoordinatiorRole, "Event Coordinator");
+		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+		util.verifyTitle("Counter Coordinator", "Counter-Coordinator");
+
+	}
+	public void GoToClickSignOnRole() {
+		util.click(SignOnRole, "Sign On");
+		try {
+			Thread.sleep(Duration.ofSeconds(8));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		util.verifyInnerText(welcomemessagetextofSignOn, "View portal users here." ,"Sign on");
+	}
+	public void gotoClickVerifyButtonLoginAfterSignUp() {
+
+		util.click(verifybutton, "OTP Verify button");
+		try {
+			Thread.sleep(Duration.ofSeconds(8));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public void gotoclickOtpButton() {
+		util.click(verifybutton, "OTP Verify button"); 
+	}
+	public void verifyToasterMessage(String Message) {
+		util.toasterverification(toasterMessage, Message);
+	}
+	public void VerifyBackToLogin() {
+		util.click(BackTologinLink, "Back To Login Link");
+		try {
+			Thread.sleep(Duration.ofSeconds(4));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		util.verifyInnerText(LoginText, "Login", "Login Page");
+	}
+	public void ToasterMessage(String WarningMessage) {
+		util.toasterverification(toasterMessage, WarningMessage);
+	}
+
+	public void goToClickHousingButtonUnderSetUp() {
+		util.click(HousingButtonUnderSetUp, "Housing Button under SetUp Page");
+	}
+	public void verifyPersonalInfoPage()  {
+		util.verifyInnerText(PersonalInformationIcon, "Personal Information", "Personal Information text");
+	}
 }

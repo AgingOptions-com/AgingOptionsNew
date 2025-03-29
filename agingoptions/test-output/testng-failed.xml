@@ -1,57 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.nspl.agingoptions.webUtil.MyAnnotationTransformer"/>
   </listeners>
-  <test thread-count="3" parallel="classes" name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases">
+      <class name="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript">
         <methods>
-          <include name="afterClass"/>
+          <include name="verifyHousingInformation"/>
+          <include name="VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="Health_InputSocialHabitsDetails_TC_09"/>
           <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="Health_InputSubstanceUseDetails_TC_008"/>
-          <include name="LifeStyleGeneralHealthNutritionDetailsHealth_TC_007"/>
-        </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases -->
-      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases">
-        <methods>
+          <include name="VerifySelectNoCheckBox_IsYourHousingLivingIn___"/>
+          <include name="VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive"/>
+          <include name="VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave"/>
+          <include name="verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____"/>
           <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="Personal_MedicalHistoryPage_Health_001"/>
+          <include name="VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive"/>
           <include name="beforeTest"/>
-          <include name="afterMethod"/>
           <include name="afterSuite"/>
-          <include name="personal_Medical_History_BloodTypeSelection_Health_004_"/>
+          <include name="VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked"/>
+          <include name="VerifyHowManyStoriesDoesItHaveDropdownContent"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="personal_Medical_History_MedicalConditionsElementVisibility_Health_002"/>
-          <include name="personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility_Health_003"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases -->
-      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="familyMedicalHistoryNonLivingParentInfoDetails_TC_011"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="familyMedicalHistoryNonLivingParentInfoDetails_TC_012"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="familyMedicalHistoryLivingParentInfoDetails_TC_010"/>
-        </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases -->
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingInfoTestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

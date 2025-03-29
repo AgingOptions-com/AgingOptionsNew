@@ -26,5 +26,15 @@ public class LpoLandingPage {
 		util.waitUntilElementToBeClickable(healthModule);
 		util.click(healthModule, "Health Module");
 	}
+	
+	@FindBy(xpath="(//span[text()='Housing'])[1]")
+	private WebElement housingModule;
+	
+	public void clickHousingModule() {
+		util.holdOn(Duration.ofSeconds(3));
+		util.waitUntilPresentInUI(housingModule, "Housing Module");
+		util.waitUntilElementToBeClickable(housingModule);
+		util.click(housingModule, "Housing Module");
+	}
 
 }

@@ -3,19 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
+      <class name="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="afterMethod"/>
+          <include name="VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="afterSuite"/>
+          <include name="VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked"/>
           <include name="beforeClass"/>
+          <include name="VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive"/>
           <include name="beforeMethod"/>
-          <include name="familyMedicalHistoryLivingParentInfoDetails_TC_010"/>
+          <include name="VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases -->
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingInfoTestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
