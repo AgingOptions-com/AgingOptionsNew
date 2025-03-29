@@ -155,10 +155,15 @@ public class WebUtil {
 			opt.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
 			driver = new ChromeDriver(opt);
 		} else if (browserName.contains("edge")) {
-			EdgeOptions opt = new EdgeOptions();
-			opt.addArguments("--start-maximized");
-			opt.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
-			driver = new EdgeDriver(opt);
+			EdgeOptions options = new EdgeOptions();
+			HashMap<String, Object> prefs = new HashMap<>();
+			prefs.put("profile.default_content_setting_values.notifications", 2); // Block browser notifications
+			prefs.put("credentials_enable_service", false); // Disable password saving prompt
+			prefs.put("profile.password_manager_enabled", false);
+			options.setExperimentalOption("prefs", prefs);
+			options.addArguments("--start-maximized");
+			options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+			driver=new EdgeDriver(options);
 		} else if (browserName.contains("firefox")) {
 			FirefoxOptions opt = new FirefoxOptions();
 			opt.addArguments("--start-maximized");
@@ -1473,7 +1478,7 @@ public class WebUtil {
 			wait.until(ExpectedConditions.visibilityOf(we));
 			extTest.log(Status.PASS, " Successfull Waited for  " + elementName + " element");
 		} catch (Exception e) {
-			extTest.log(Status.FAIL, elementName + " Failed not waited for particular element ");
+			extTest.log(Status.FAIL, elementName + " Failed not waited for "+elementName +" element ");
 			e.printStackTrace();
 			throw e;
 		}
@@ -1761,23 +1766,46 @@ public class WebUtil {
 		}
 	}
 	public boolean isRadioButtonChecked(WebElement element, String elementName) {
-	    try {
-	        String checkedAttribute = element.getAttribute("checked");
-	        boolean isChecked = (checkedAttribute != null);
-	        
-	        if (isChecked) {
-	            extTest.log(Status.PASS, elementName + " is selected");
-	            System.out.println(elementName + " is selected");
-	        } else {
-	            extTest.log(Status.FAIL, elementName + " is NOT selected");
-	            System.out.println(elementName + " is NOT selected");
-	        }
-	        return isChecked;
-	    } catch (Exception e) {
-	        extTest.log(Status.FAIL, "Failed to check the status of " + elementName);
-	        e.printStackTrace();
-	        return false;
-	    }
+		try {
+			String checkedAttribute = element.getAttribute("checked");
+			boolean isChecked = (checkedAttribute != null);
+
+			if (isChecked) {
+				extTest.log(Status.PASS, elementName + " is selected");
+				System.out.println(elementName + " is selected");
+			} else {
+				extTest.log(Status.FAIL, elementName + " is NOT selected");
+				System.out.println(elementName + " is NOT selected");
+			}
+			return isChecked;
+		} catch (Exception e) {
+			extTest.log(Status.FAIL, "Failed to check the status of " + elementName);
+			e.printStackTrace();
+			return false;
+		}
+	}
+	/**
+	 * Waits until the loader disappears before proceeding.
+	 * 
+	 * @param loaderLocator The By locator for the loader (id, class, xpath, etc.)
+	 * @param timeoutInSeconds Maximum time to wait before failing
+	 */
+	public void waitForLoaderToDisappear(By loaderLocator, int timeoutInSeconds) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+			// Wait until the loader is invisible or not present in the DOM
+			wait.until(driver -> {
+				try {
+					WebElement loader = driver.findElement(loaderLocator);
+					return !loader.isDisplayed(); // Check if the loader is hidden
+				} catch (NoSuchElementException | StaleElementReferenceException e) {
+					return true; // If the loader is not found or removed from DOM, proceed
+				}
+			});
+			System.out.println("Loader disappeared. Proceeding with next steps.");
+		} catch (Exception e) {
+			System.out.println("Loader is still visible after " + timeoutInSeconds + " seconds. " + e.getMessage());
+		}
 	}
 
 
