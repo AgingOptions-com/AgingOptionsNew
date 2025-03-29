@@ -36,12 +36,26 @@ public class BaseTest {
 		util.loadProperty();
 		extReports.setSystemInfo("OS", System.getProperty("os.name"));
 		extReports.setSystemInfo("User Name", System.getProperty("user.name"));
-		extReports.setSystemInfo("Browser", "ChromeBrowser");
+		extReports.setSystemInfo("Browser", util.getProperty("browserName"));
+		extReports.setSystemInfo("Tester", "Indrajeet Bind");
 		extReports.setSystemInfo("Java-Verison", System.getProperty("java.version"));
 	}
 
 	@BeforeTest
 	public void beforeTest() {
+//		extTest = extReports.createTest("Dummy");
+//		util.setExtent(extTest);
+//		util.launchBrowser(util.getProperty("browserName"));
+//		util.hitUrl(util.getProperty("url"));
+//		CommonCode common=	new CommonCode(util);
+//		common.loginAttorneyEmailPassword();
+//		common.LoginWithNewMarriedUser();
+//		extReports.removeTest(extTest);
+//		extTest = null;
+	}
+
+	@BeforeClass
+	public void beforeClass() {
 		extTest = extReports.createTest("Dummy");
 		util.setExtent(extTest);
 		util.launchBrowser(util.getProperty("browserName"));
@@ -51,13 +65,7 @@ public class BaseTest {
 		common.LoginWithNewMarriedUser();
 		extReports.removeTest(extTest);
 		extTest = null;
-	}
-
-	@BeforeClass
-	public void beforeClass() {
-
-		
-
+       
 	}
 
 	@BeforeMethod

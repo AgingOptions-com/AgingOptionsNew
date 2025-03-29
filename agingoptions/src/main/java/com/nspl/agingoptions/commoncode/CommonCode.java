@@ -60,9 +60,10 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void searchUserParaGotoLPO(String userEmail) {
-		util.holdOn(Duration.ofSeconds(3));
+		util.holdOn(Duration.ofSeconds(2));
 		util.sendValueWithEnter(paralegalSearchTB, userEmail, "Paralegal Search");
-		util.holdOn(Duration.ofSeconds(5));
+		waitParalegalScreenOldDesignUntilLoaderRandering();
+		util.holdOn(Duration.ofSeconds(3));
 		util.click(paralegalSearchedUser, "Paralegal screen searched user");
 		util.holdOn(Duration.ofSeconds(3));
 	}
@@ -121,9 +122,17 @@ public class CommonCode extends CommonCodeOR {
 		String address=	mapData.get("address");
 		CommonCode common = new CommonCode(util);
 		String UserEmail=	common.createLifePlanningUser(firstName,lastName,email,phoneNumber);
+		util.holdOn(Duration.ofSeconds(1));
 		common.searchUserParaGotoLPO(UserEmail);
 		Duration.ofSeconds(2);
 		common.inputMarriedUserAcitvationPageDetails(noOfChild, primaryMemberDob, address, spouseFirstName, spouseDob);
+	}
+	
+	public void waitParalegalScreenOldDesignUntilLoaderRandering() {
+		util.waitForLoaderToDisappear(By.xpath("//div[@class='spinner-border text-primary blockuiloader']"),1);
+	}
+	public void waitNewDesignIntakeScreenUntilLoaderRandering() {
+		util.waitForLoaderToDisappear(By.xpath("//div[@id='customLoader']"),5);
 	}
 
 }

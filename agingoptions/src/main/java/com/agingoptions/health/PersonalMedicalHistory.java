@@ -335,7 +335,7 @@ public class PersonalMedicalHistory {
 	}
 
 	public void openMedicalConditionAccordian() {
-		util.click(medicalConditionsAccordian, "Medical Condition Accordian");
+		util.openAccordion(medicalConditionsAccordian, "Medical Condition Accordian");
 	}
 
 	@FindBy(xpath="(//input[@name='Dementia/Alzheimer’s'])[1]")
@@ -492,6 +492,7 @@ public class PersonalMedicalHistory {
 	private WebElement spouseDidYouGrowUpCommentTB;
 
 	public void sendSpouseDidYouGrowUpCommentText(String spousedidYouGrowUp) {
+		 util.waitUntilPresentInUI(spouseDidYouGrowUpCommentTB, "Spouse Did you grow up comment");
 		util.sendValue(spouseDidYouGrowUpCommentTB,spousedidYouGrowUp , "Spouse Did you grow up comment");
 	}
 
