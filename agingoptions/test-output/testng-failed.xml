@@ -10,11 +10,10 @@
           <include name="afterTest"/>
           <include name="beforeSuite"/>
           <include name="afterClass"/>
-          <include name="VerifyOnTheScaleOfOneTwoFive_Select1"/>
-          <include name="verifySelecctYesorNotSureCheckBox_IsYourHouseLivingIn____"/>
-          <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="beforeTest"/>
           <include name="beforeClass"/>
+          <include name="VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave"/>
         </methods>
       </class> <!-- com.nspl.HousingInfoPageTestcase.HousingInfoTestScript -->
     </classes>

@@ -1,120 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-26T16:14:50 IST" name="Suite" finished-at="2025-03-26T16:23:47 IST" duration-ms="536576">
+  <suite started-at="2025-03-28T17:30:14 IST" name="Suite" finished-at="2025-03-28T17:35:28 IST" duration-ms="314146">
     <groups>
     </groups>
-    <test started-at="2025-03-26T16:14:50 IST" name="Test" finished-at="2025-03-26T16:23:47 IST" duration-ms="536576">
+    <test started-at="2025-03-28T17:30:14 IST" name="Test" finished-at="2025-03-28T17:35:28 IST" duration-ms="314146">
       <class name="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:14:50 IST" name="beforeSuite" finished-at="2025-03-26T16:14:50 IST" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:30:14 IST" name="beforeSuite" finished-at="2025-03-28T17:30:14 IST" duration-ms="323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:14:50 IST" name="beforeTest" finished-at="2025-03-26T16:14:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:30:14 IST" name="beforeTest" finished-at="2025-03-28T17:30:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:14:50 IST" name="beforeClass" finished-at="2025-03-26T16:14:52 IST" duration-ms="1858" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:30:14 IST" name="beforeClass" finished-at="2025-03-28T17:30:17 IST" duration-ms="2824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:14:52 IST" name="beforeMethod" finished-at="2025-03-26T16:14:55 IST" duration-ms="2711" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:30:17 IST" name="beforeMethod" finished-at="2025-03-28T17:30:20 IST" duration-ms="2635" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.LoginWithClientAndverifypersonainformationPage()]]>
+                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="LoginWithClientAndverifypersonainformationPage()[pri:1, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:14:55 IST" name="LoginWithClientAndverifypersonainformationPage" finished-at="2025-03-26T16:15:30 IST" duration-ms="35130" status="PASS">
+        <test-method signature="VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked()[pri:9, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:30:20 IST" name="VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked" finished-at="2025-03-28T17:31:35 IST" duration-ms="75651" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithClientAndverifypersonainformationPage -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:15:30 IST" name="afterMethod" finished-at="2025-03-26T16:15:30 IST" duration-ms="433" status="PASS">
+        </test-method> <!-- VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:31:35 IST" name="afterMethod" finished-at="2025-03-28T17:31:36 IST" duration-ms="508" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginWithClientAndverifypersonainformationPage status=SUCCESS method=HousingInfoTestScript.LoginWithClientAndverifypersonainformationPage()[pri:1, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked status=SUCCESS method=HousingInfoTestScript.VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked()[pri:9, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.LoginWithClientAndverifypersonainformationPage()]]>
+                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:15:30 IST" name="beforeMethod" finished-at="2025-03-26T16:15:30 IST" duration-ms="78" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:31:36 IST" name="beforeMethod" finished-at="2025-03-28T17:31:36 IST" duration-ms="122" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.verifyHousingInformation()]]>
+                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyHousingInformation()[pri:2, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:15:30 IST" name="verifyHousingInformation" finished-at="2025-03-26T16:16:32 IST" duration-ms="62136" status="PASS">
+        <test-method signature="VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked()[pri:10, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:31:36 IST" name="VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked" finished-at="2025-03-28T17:32:53 IST" duration-ms="77274" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHousingInformation -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:16:32 IST" name="afterMethod" finished-at="2025-03-26T16:16:32 IST" duration-ms="47" status="PASS">
+        </test-method> <!-- VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:32:53 IST" name="afterMethod" finished-at="2025-03-28T17:32:53 IST" duration-ms="81" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyHousingInformation status=SUCCESS method=HousingInfoTestScript.verifyHousingInformation()[pri:2, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4] output={null}]]]>
+                <![CDATA[[TestResult name=VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked status=SUCCESS method=HousingInfoTestScript.VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked()[pri:10, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.verifyHousingInformation()]]>
+                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:16:32 IST" name="beforeMethod" finished-at="2025-03-26T16:16:33 IST" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:32:53 IST" name="beforeMethod" finished-at="2025-03-28T17:32:54 IST" duration-ms="127" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.verifySelecctYesorNotSureCheckBox_IsYourHouseLivingIn____()]]>
+                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyHowManyStoriesDoesItHaveDropdownContent() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySelecctYesorNotSureCheckBox_IsYourHouseLivingIn____()[pri:3, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:16:33 IST" name="verifySelecctYesorNotSureCheckBox_IsYourHouseLivingIn____" finished-at="2025-03-26T16:17:46 IST" duration-ms="73849" status="FAIL">
+        <test-method signature="VerifyHowManyStoriesDoesItHaveDropdownContent()[pri:11, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:32:54 IST" name="VerifyHowManyStoriesDoesItHaveDropdownContent" finished-at="2025-03-28T17:34:12 IST" duration-ms="78269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHowManyStoriesDoesItHaveDropdownContent -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:34:12 IST" name="afterMethod" finished-at="2025-03-28T17:34:12 IST" duration-ms="77" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyHowManyStoriesDoesItHaveDropdownContent status=SUCCESS method=HousingInfoTestScript.VerifyHowManyStoriesDoesItHaveDropdownContent()[pri:11, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyHowManyStoriesDoesItHaveDropdownContent() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:34:12 IST" name="beforeMethod" finished-at="2025-03-28T17:34:12 IST" duration-ms="116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave()[pri:12, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:34:12 IST" name="VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave" finished-at="2025-03-28T17:35:28 IST" duration-ms="76037" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'On a scale of 1 to 5, how likely is it that you will remain in your current home? 1-Not at all, 5-Will be in my ')]"}
-  (Session info: chrome=134.0.6998.165)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='ownhome']"}
+  (Session info: chrome=134.0.6998.166)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c2d4c2f2316e7cc0756fb1112753012, findElement {using=xpath, value=//p[contains(text(),'On a scale of 1 to 5, how likely is it that you will remain in your current home? 1-Not at all, 5-Will be in my ')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59747}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59747/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6c2d4c2f2316e7cc0756fb1112753012]]>
+Command: [bae62d254eeb13373e68e8997d64369c, findElement {using=xpath, value=//div[@id='ownhome']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62050}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62050/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bae62d254eeb13373e68e8997d64369c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'On a scale of 1 to 5, how likely is it that you will remain in your current home? 1-Not at all, 5-Will be in my ')]"}
-  (Session info: chrome=134.0.6998.165)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='ownhome']"}
+  (Session info: chrome=134.0.6998.166)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c2d4c2f2316e7cc0756fb1112753012, findElement {using=xpath, value=//p[contains(text(),'On a scale of 1 to 5, how likely is it that you will remain in your current home? 1-Not at all, 5-Will be in my ')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59747}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59747/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6c2d4c2f2316e7cc0756fb1112753012
+Command: [bae62d254eeb13373e68e8997d64369c, findElement {using=xpath, value=//div[@id='ownhome']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62050}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62050/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bae62d254eeb13373e68e8997d64369c
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -131,10 +162,10 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-at com.nspl.agingoptions.webUtil.WebUtil.verifyInnerText(WebUtil.java:243)
-at com.nspl.agingoptions.commoncode.HousingInfo.verifyCheckYes_NotSure_IsYourHousingLivingIn(HousingInfo.java:30)
-at com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.verifySelecctYesorNotSureCheckBox_IsYourHouseLivingIn____(HousingInfoTestScript.java:49)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:312)
+at com.nspl.agingoptions.commoncode.HousingInfo.VerifyWhenWeSelectTWoThreeAndMore_HowManyStoryDoesItHave(HousingInfo.java:201)
+at com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave(HousingInfoTestScript.java:162)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -166,258 +197,32 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySelecctYesorNotSureCheckBox_IsYourHouseLivingIn____ -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:17:46 IST" name="afterMethod" finished-at="2025-03-26T16:17:47 IST" duration-ms="183" status="PASS">
+        </test-method> <!-- VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:35:28 IST" name="afterMethod" finished-at="2025-03-28T17:35:28 IST" duration-ms="316" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySelecctYesorNotSureCheckBox_IsYourHouseLivingIn____ status=FAILURE method=HousingInfoTestScript.verifySelecctYesorNotSureCheckBox_IsYourHouseLivingIn____()[pri:3, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave status=FAILURE method=HousingInfoTestScript.VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave()[pri:12, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.verifySelecctYesorNotSureCheckBox_IsYourHouseLivingIn____()]]>
+                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:17:47 IST" name="beforeMethod" finished-at="2025-03-26T16:17:47 IST" duration-ms="108" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifySelectNoCheckBox_IsYourHousingLivingIn___()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifySelectNoCheckBox_IsYourHousingLivingIn___()[pri:4, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:17:47 IST" name="VerifySelectNoCheckBox_IsYourHousingLivingIn___" finished-at="2025-03-26T16:18:48 IST" duration-ms="61217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySelectNoCheckBox_IsYourHousingLivingIn___ -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:18:48 IST" name="afterMethod" finished-at="2025-03-26T16:18:48 IST" duration-ms="27" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifySelectNoCheckBox_IsYourHousingLivingIn___ status=SUCCESS method=HousingInfoTestScript.VerifySelectNoCheckBox_IsYourHousingLivingIn___()[pri:4, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifySelectNoCheckBox_IsYourHousingLivingIn___()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:18:48 IST" name="beforeMethod" finished-at="2025-03-26T16:18:48 IST" duration-ms="73" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection()[pri:5, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:18:48 IST" name="VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection" finished-at="2025-03-26T16:20:11 IST" duration-ms="82665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:20:11 IST" name="afterMethod" finished-at="2025-03-26T16:20:11 IST" duration-ms="47" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection status=SUCCESS method=HousingInfoTestScript.VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection()[pri:5, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:20:11 IST" name="beforeMethod" finished-at="2025-03-26T16:20:11 IST" duration-ms="92" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyOnTheScaleOfOneTwoFive_Select1()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifyOnTheScaleOfOneTwoFive_Select1()[pri:6, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:20:11 IST" name="VerifyOnTheScaleOfOneTwoFive_Select1" finished-at="2025-03-26T16:21:22 IST" duration-ms="71344" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Caregiver Suitability']"}
-  (Session info: chrome=134.0.6998.165)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c2d4c2f2316e7cc0756fb1112753012, findElement {using=xpath, value=//button[text()='Caregiver Suitability']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59747}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59747/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6c2d4c2f2316e7cc0756fb1112753012]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Caregiver Suitability']"}
-  (Session info: chrome=134.0.6998.165)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c2d4c2f2316e7cc0756fb1112753012, findElement {using=xpath, value=//button[text()='Caregiver Suitability']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.165, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59747}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59747/devtoo..., se:cdpVersion: 134.0.6998.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6c2d4c2f2316e7cc0756fb1112753012
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
-at com.nspl.agingoptions.webUtil.WebUtil.isNotDisplayed(WebUtil.java:1173)
-at com.nspl.agingoptions.commoncode.HousingInfo.OntheScaleOfOneToFive_select1(HousingInfo.java:108)
-at com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyOnTheScaleOfOneTwoFive_Select1(HousingInfoTestScript.java:85)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyOnTheScaleOfOneTwoFive_Select1 -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:21:22 IST" name="afterMethod" finished-at="2025-03-26T16:21:22 IST" duration-ms="154" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyOnTheScaleOfOneTwoFive_Select1 status=FAILURE method=HousingInfoTestScript.VerifyOnTheScaleOfOneTwoFive_Select1()[pri:6, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyOnTheScaleOfOneTwoFive_Select1()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:21:22 IST" name="beforeMethod" finished-at="2025-03-26T16:21:22 IST" duration-ms="95" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive()[pri:7, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:21:22 IST" name="VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive" finished-at="2025-03-26T16:22:34 IST" duration-ms="71826" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:22:34 IST" name="afterMethod" finished-at="2025-03-26T16:22:34 IST" duration-ms="47" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive status=SUCCESS method=HousingInfoTestScript.VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive()[pri:7, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:22:34 IST" name="beforeMethod" finished-at="2025-03-26T16:22:35 IST" duration-ms="267" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive()[pri:8, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:22:35 IST" name="VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive" finished-at="2025-03-26T16:23:47 IST" duration-ms="72004" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:23:47 IST" name="afterMethod" finished-at="2025-03-26T16:23:47 IST" duration-ms="27" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive status=SUCCESS method=HousingInfoTestScript.VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive()[pri:8, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:23:47 IST" name="afterClass" finished-at="2025-03-26T16:23:47 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:35:28 IST" name="afterClass" finished-at="2025-03-28T17:35:28 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:23:47 IST" name="afterTest" finished-at="2025-03-26T16:23:47 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:35:28 IST" name="afterTest" finished-at="2025-03-28T17:35:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@71e9ddb4]" started-at="2025-03-26T16:23:47 IST" name="afterSuite" finished-at="2025-03-26T16:23:47 IST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@ed7f8b4]" started-at="2025-03-28T17:35:29 IST" name="afterSuite" finished-at="2025-03-28T17:35:29 IST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

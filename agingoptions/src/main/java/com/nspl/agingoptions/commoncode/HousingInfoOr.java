@@ -190,5 +190,7 @@ protected WebElement SaveAndNextProfessional;
 @FindBy(xpath="//div[@class='i-dont-have-one']//p")
 protected WebElement IDoNotHaveRealtorInnerText;
 
+@FindBy(xpath="//img[@alt='accordion']")
+protected WebElement accordian;
 
 }

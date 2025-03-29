@@ -816,6 +816,8 @@ public class WebUtil {
 		List<WebElement> listDropDownWebEle = null;
 		try {
 			select = new Select(weEle);
+			
+			
 			listDropDownWebEle = select.getOptions();
 			extTest.log(Status.PASS, "all selected option found in drop down");
 			print("all selected option found in drop down");
@@ -1318,6 +1320,7 @@ public class WebUtil {
 		if (we.isSelected()==false ) {
 			extTest.log(Status.INFO, "Radio button is selected");
 			click(we, ElementName);
+			
 			click(we, ElementName);
 
 		}else {
@@ -1326,6 +1329,15 @@ public class WebUtil {
 				click(we, ElementName);
 			}
 		}
+		
+	
+	 
+	
+	}
+	
+	public void ListSize(List<WebElement > listObj) {
+		int size =listObj.size();
+		extTest.log(Status.INFO,  size + " option is there in dropdown");
 		
 	}
 	// ===========================================By this method we can check on all
