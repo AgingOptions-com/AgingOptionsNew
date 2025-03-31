@@ -19,7 +19,7 @@ import com.nspl.agingoptions.webUtil.DataUtil;
 public class MarriedUserHealthInfoTestCases extends BaseTest {
 
 	@Test(priority = 1)
-	public void Personal_MedicalHistoryPage_Health_001() {
+	public void TC_001_Health_Personal_MedicalHistoryPage() {
 
 		LpoLandingPage lpoLanding = new LpoLandingPage(util);
 		util.holdOn(Duration.ofSeconds(10));
@@ -37,8 +37,8 @@ public class MarriedUserHealthInfoTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(2));
 	}
 
-	@Test(priority = 2, dependsOnMethods = "Personal_MedicalHistoryPage_Health_001")
-	public void personal_Medical_History_MedicalConditionsElementVisibility_Health_002() {
+	@Test(priority = 2, dependsOnMethods = "Health_001_Personal_MedicalHistoryPage",enabled=true)
+	public void TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility() {
 
 		PersonalMedicalHistory personal = new PersonalMedicalHistory(util);
 		personal.primaryMemberDementiaAlzheimerStatus();
@@ -59,8 +59,8 @@ public class MarriedUserHealthInfoTestCases extends BaseTest {
 		personal.spouseGlaucomaTextStatus();
 	}
 
-	@Test(priority = 3, dependsOnMethods = "Personal_MedicalHistoryPage_Health_001")
-	public void personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility_Health_003() {
+	@Test(priority = 3, dependsOnMethods = "Health_001_Personal_MedicalHistoryPage",enabled=true)
+	public void TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility() {
 
 		PersonalMedicalHistory personal = new PersonalMedicalHistory(util);
 		personal.primaryMemberDidYouGrowUpTextStatus();
@@ -77,8 +77,8 @@ public class MarriedUserHealthInfoTestCases extends BaseTest {
 		//		personal.spouseWhichMedicationText();
 	}
 
-	@Test(priority = 4, dependsOnMethods = "Personal_MedicalHistoryPage_Health_001")
-	public void personal_Medical_History_BloodTypeSelection_Health_004_() {
+	@Test(priority = 4, dependsOnMethods = "Health_001_Personal_MedicalHistoryPage",enabled=true)
+	public void TC_004_Health_personal_Medical_History_BloodTypeSelection() {
 		PersonalMedicalHistory personal = new PersonalMedicalHistory(util);
 		personal.clickPrimaryMeberBloodTypeDropDownIcon();
 		personal.clickABPlusDropDownOption();
@@ -96,8 +96,8 @@ public class MarriedUserHealthInfoTestCases extends BaseTest {
 
 	}
 
-	@Test(priority = 5)
-	public void personal_Medical_History_MedicalConditionElement_Health_005_() {
+	@Test(priority = 5,enabled=true)
+	public void TC_005_Health_personal_Medical_History_MedicalConditionElement() {
 		LpoLandingPage lpo=	new LpoLandingPage(util);
 		lpo.clickHealthModule();
 		PersonalMedicalHistory personal = new PersonalMedicalHistory(util);
@@ -171,8 +171,8 @@ public class MarriedUserHealthInfoTestCases extends BaseTest {
 		}
 	}
 
-	@Test(priority = 6)
-	public void personal_Medical_History_EnvironmentalLifestyleFactorsDetails_Health_006_() {
+	@Test(priority = 6,enabled=true)
+	public void TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails() {
 
 		PersonalMedicalHistory personal = new PersonalMedicalHistory(util);
 		LpoLandingPage lpoLanding = new LpoLandingPage(util);
@@ -267,14 +267,14 @@ public class MarriedUserHealthInfoTestCases extends BaseTest {
 		lifeSt.clickSaveProceedToFamilyMedicalHistoryButton();
 		util.holdOn(Duration.ofSeconds(3));
 		lifeSt.clickLifeStyleSideBarLink();
-		/*
-		 * lifeSt.checkPrimaryMemberDoYouConsiderRadioButtonYesIsSelected();
-		 * lifeSt.checkSpouseDoYouConsiderRadioButtonYesIsSelected();
-		 * lifeSt.checkPrimaryMemberDoYouConsiderRadioButtonYesIsSelected();
-		 * lifeSt.checkSpouseDoYouConsiderRadioButtonYesIsSelected();
-		 * lifeSt.isPrimaryMemberSedentaryRadioButtonIsSelected();
-		 * lifeSt.isSpouseRegularExerciseRadioButtonIsSelected();
-		 */
+		
+		  lifeSt.checkPrimaryMemberDoYouConsiderRadioButtonYesIsSelected();
+		  lifeSt.checkSpouseDoYouConsiderRadioButtonYesIsSelected();
+		  lifeSt.checkPrimaryMemberDoYouConsiderRadioButtonYesIsSelected();
+		  lifeSt.checkSpouseDoYouConsiderRadioButtonYesIsSelected();
+		  lifeSt.isPrimaryMemberSedentaryRadioButtonIsSelected();
+		  lifeSt.isSpouseRegularExerciseRadioButtonIsSelected();
+		 
 		String actualHowOftenSelectedValue=	lifeSt.getHowOftenDoYouExerciseDropDownSelectedText();
 		String primaryMemberActualDescribeText=     lifeSt.getPrimaryMemberDescribeText();
 		String spouseActualDescribeText=     lifeSt.getSpouseDescribeText();

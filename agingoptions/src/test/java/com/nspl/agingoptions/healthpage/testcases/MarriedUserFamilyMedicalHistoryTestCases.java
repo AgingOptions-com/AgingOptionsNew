@@ -12,9 +12,10 @@ public class MarriedUserFamilyMedicalHistoryTestCases extends BaseTest{
 
 
 	@Test(priority=1)
-	public void familyMedicalHistoryLivingParentInfoDetails_TC_010() {
+	public void TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails() {
 
 		LpoLandingPage lpoLanding=	new LpoLandingPage(util);
+		util.holdOn(Duration.ofSeconds(10));
 		lpoLanding.clickHealthModule();
 		FamilyMedicalHistory familyMedical=    new FamilyMedicalHistory(util);
 		util.holdOn(Duration.ofSeconds(5));
@@ -45,7 +46,7 @@ public class MarriedUserFamilyMedicalHistoryTestCases extends BaseTest{
 	}
 
 	@Test(priority=2)
-	public void familyMedicalHistoryNonLivingParentInfoDetails_TC_011() {
+	public void TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails() {
 
 		LpoLandingPage lpoLanding=	new LpoLandingPage(util);
 		lpoLanding.clickHealthModule();
@@ -99,7 +100,7 @@ public class MarriedUserFamilyMedicalHistoryTestCases extends BaseTest{
 	}
 
 	@Test(priority=3)
-	public void familyMedicalHistoryNonLivingParentInfoDetails_TC_012() {
+	public void TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails() {
 
 		LpoLandingPage lpoLanding=	new LpoLandingPage(util);
 		lpoLanding.clickHealthModule();

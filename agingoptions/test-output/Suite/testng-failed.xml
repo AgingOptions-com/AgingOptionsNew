@@ -6,11 +6,24 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="Health_001_Personal_MedicalHistoryPage"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases -->
       <class name="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript">
         <methods>
           <include name="verifyHousingInformation"/>
-          <include name="VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked"/>
           <include name="beforeSuite"/>
+          <include name="VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked"/>
           <include name="afterTest"/>
           <include name="afterMethod"/>
           <include name="VerifySelectNoCheckBox_IsYourHousingLivingIn___"/>
@@ -27,6 +40,36 @@
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.nspl.HousingInfoPageTestcase.HousingInfoTestScript -->
+      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Health_TC_09_Health_InputSocialHabitsDetails"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="Health_TC_008_Health_InputSubstanceUseDetails"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="Health_TC_007_LifeStyleGeneralHealthNutritionDetails"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases -->
+      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="familyMedicalHistoryNonLivingParentInfoDetails_TC_011"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="familyMedicalHistoryNonLivingParentInfoDetails_TC_012"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="familyMedicalHistoryLivingParentInfoDetails_TC_010"/>
+        </methods>
+      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

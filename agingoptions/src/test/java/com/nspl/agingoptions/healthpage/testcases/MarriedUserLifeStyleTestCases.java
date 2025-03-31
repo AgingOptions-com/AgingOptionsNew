@@ -11,10 +11,10 @@ import com.nspl.agingoptions.webUtil.BaseTest;
 public class MarriedUserLifeStyleTestCases extends BaseTest {
 
 	@Test(priority=1)
-	public void LifeStyleGeneralHealthNutritionDetailsHealth_TC_007() {
+	public void TC_007_Health_LifeStyleGeneralHealthNutritionDetails() {
 
 		LpoLandingPage lpoLanding=	 new LpoLandingPage(util);
-		util.holdOn(Duration.ofSeconds(5));
+		util.holdOn(Duration.ofSeconds(10));
 		lpoLanding.clickHealthModule();
 		LifeStyle lifeSt=	new LifeStyle(util);
 		lifeSt.clickLifeStyleSideBarLink();
@@ -50,14 +50,14 @@ public class MarriedUserLifeStyleTestCases extends BaseTest {
 		lifeSt.clickSaveProceedToFamilyMedicalHistoryButton();
 		util.holdOn(Duration.ofSeconds(3));
 		lifeSt.clickLifeStyleSideBarLink();
-		/*
-		 * lifeSt.checkPrimaryMemberDoYouConsiderRadioButtonYesIsSelected();
-		 * lifeSt.checkSpouseDoYouConsiderRadioButtonYesIsSelected();
-		 * lifeSt.checkPrimaryMemberDoYouConsiderRadioButtonYesIsSelected();
-		 * lifeSt.checkSpouseDoYouConsiderRadioButtonYesIsSelected();
-		 * lifeSt.isPrimaryMemberSedentaryRadioButtonIsSelected();
-		 * lifeSt.isSpouseRegularExerciseRadioButtonIsSelected();
-		 */
+		
+//		  lifeSt.checkPrimaryMemberDoYouConsiderRadioButtonYesIsSelected();
+//		  lifeSt.checkSpouseDoYouConsiderRadioButtonYesIsSelected();
+//		  lifeSt.checkPrimaryMemberDoYouConsiderRadioButtonYesIsSelected();
+//		  lifeSt.checkSpouseDoYouConsiderRadioButtonYesIsSelected();
+//		  lifeSt.isPrimaryMemberSedentaryRadioButtonIsSelected();
+//		  lifeSt.isSpouseRegularExerciseRadioButtonIsSelected();
+		 
 		String actualHowOftenSelectedValue=	lifeSt.getHowOftenDoYouExerciseDropDownSelectedText();
 		String primaryMemberActualDescribeText=     lifeSt.getPrimaryMemberDescribeText();
 		String spouseActualDescribeText=     lifeSt.getSpouseDescribeText();
@@ -81,7 +81,7 @@ public class MarriedUserLifeStyleTestCases extends BaseTest {
 	}
 
 	@Test(priority=2)
-	public void Health_InputSubstanceUseDetails_TC_008() {
+	public void TC_008_Health_InputSubstanceUseDetails() {
 
 		LpoLandingPage lpo=	new LpoLandingPage(util);
 		util.holdOn(Duration.ofSeconds(5));
@@ -129,7 +129,7 @@ public class MarriedUserLifeStyleTestCases extends BaseTest {
 	}
 
 	@Test(priority=3)
-	public void Health_InputSocialHabitsDetails_TC_09() {
+	public void TC_09_Health_InputSocialHabitsDetails() {
 		LpoLandingPage lpoLanding=	new LpoLandingPage(util);
 		lpoLanding.clickHealthModule();
 		LifeStyle lifeSt=	new LifeStyle(util);
@@ -142,7 +142,7 @@ public class MarriedUserLifeStyleTestCases extends BaseTest {
 		String spouseExpectedOutSideOfWorkText="We stay socially engaged by being part of local community groups and attending events.";
 		lifeSt.inputSpouseOutSideOfWorkHowDoYouSociallyEngaged(spouseExpectedOutSideOfWorkText);
 		lifeSt.clickSaveProceedToFamilyMedicalHistoryButton();
-		util.holdOn(Duration.ofSeconds(3));
+		util.holdOn(Duration.ofSeconds(5));
 		lifeSt.clickLifeStyleSideBarLink();
 		util.holdOn(Duration.ofSeconds(1));
 		lifeSt.OpenSocialHabitsAccordian();
