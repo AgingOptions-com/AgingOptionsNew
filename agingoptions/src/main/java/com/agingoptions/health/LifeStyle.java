@@ -155,7 +155,7 @@ public class LifeStyle {
 
 	public void clickLifeStyleSideBarLink() {
 		util.waitUntilPresentInUI(lifeStyleSideBarLink, "Life Style Module");
-		util.waitUntilElementToBeClickable(lifeStyleSideBarLink);
+		util.waitUntilElementClickableAndClick(lifeStyleSideBarLink);
 		util.click(lifeStyleSideBarLink, "Life Style Module");
 	}
 

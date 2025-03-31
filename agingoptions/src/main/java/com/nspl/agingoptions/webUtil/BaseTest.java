@@ -22,7 +22,7 @@ import com.nspl.agingoptions.commoncode.CommonCode;
 public class BaseTest {
 
 	public static ExtentReports extReports;
-	protected WebUtil util = new WebUtil();;
+	protected WebUtil util =  WebUtil.getObject();;
 	static	ExtentTest extTest;
 
 	@BeforeSuite
@@ -43,19 +43,6 @@ public class BaseTest {
 
 	@BeforeTest
 	public void beforeTest() {
-//		extTest = extReports.createTest("Dummy");
-//		util.setExtent(extTest);
-//		util.launchBrowser(util.getProperty("browserName"));
-//		util.hitUrl(util.getProperty("url"));
-//		CommonCode common=	new CommonCode(util);
-//		common.loginAttorneyEmailPassword();
-//		common.LoginWithNewMarriedUser();
-//		extReports.removeTest(extTest);
-//		extTest = null;
-	}
-
-	@BeforeClass
-	public void beforeClass() {
 		extTest = extReports.createTest("Dummy");
 		util.setExtent(extTest);
 		util.launchBrowser(util.getProperty("browserName"));
@@ -65,7 +52,14 @@ public class BaseTest {
 		common.LoginWithNewMarriedUser();
 		extReports.removeTest(extTest);
 		extTest = null;
-       
+	}
+
+	@BeforeClass
+	public void beforeClass() {
+		extTest = extReports.createTest(getClass().getSimpleName()); // Set test name
+        util.setExtent(extTest);
+        extReports.removeTest(extTest);
+		extTest = null;
 	}
 
 	@BeforeMethod

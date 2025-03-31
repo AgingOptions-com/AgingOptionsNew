@@ -8,7 +8,6 @@ import com.agingoptions.lpolandingpage.LpoLandingPage;
 import com.nspl.agingoptions.commoncode.HousingInfo;
 import com.nspl.agingoptions.commoncode.LoginPage;
 import com.nspl.agingoptions.webUtil.BaseTest;
-import com.nspl.agingoptions.webUtil.BaseTest_Sk;
 
 public class HousingInfoTestScript extends BaseTest {
 

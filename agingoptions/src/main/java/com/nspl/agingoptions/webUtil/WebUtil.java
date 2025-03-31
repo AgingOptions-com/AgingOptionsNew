@@ -70,18 +70,18 @@ public class WebUtil {
 	private ExtentTest extTest;
 	private static Properties prop;
 
-	// private static WebUtil util=new WebUtil();
-	//
-	// private WebUtil() {
-	//
-	// }
-	//
-	// public static WebUtil getObject() {
-	// if(util==null) {
-	// util=new WebUtil();
-	// }
-	// return util;
-	// }
+	 private static WebUtil util=new WebUtil();
+	
+	 private WebUtil() {
+	
+	 }
+	
+	 public static WebUtil getObject() {
+	 if(util==null) {
+	 util=new WebUtil();
+	 }
+	 return util;
+	 }
 	public void setExtent(ExtentTest ext) {
 		this.extTest = ext;
 	}
