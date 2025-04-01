@@ -1,7 +1,11 @@
 package com.agingoptions.health;
 
+import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 import com.nspl.agingoptions.webUtil.WebUtil;
@@ -55,6 +59,9 @@ public class FamilyMedicalHistory {
 	private WebElement familyMedicalHistorySideBarLink;
 
 	public void clickFamilyMedicalHistorySideBarLink() {
+		util.waitUntilElementToBeClickable(familyMedicalHistorySideBarLink);
+		util.holdOn(Duration.ofSeconds(1));
+		util.waitUntilElementClickableAndClick(familyMedicalHistorySideBarLink);
 		util.clickActions(familyMedicalHistorySideBarLink, "Family Medical History Side Bar Link");
 	}
 
@@ -264,7 +271,187 @@ public class FamilyMedicalHistory {
 		return text;
 	}
 
+	@FindBy(xpath="(//p[contains(text(),'Are you adopted?')]/parent::div//label//p[text()='Yes'])[1]/preceding-sibling::input")
+	private WebElement primaryMemberAreYouAdoptedYesRadioBT;
 
+	public void clickPrimaryMemberAreYouAdoptedYesRadioBT() {
+		util.click(primaryMemberAreYouAdoptedYesRadioBT,"Primary Member Are You Adopted Yes Radio Button" );
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Are you adopted?')]/parent::div//label//p[text()='Yes'])[2]/preceding-sibling::input")
+	private WebElement spouseAreYouAdoptedYesRadioBT;
+
+	public void clickSpouseAreYouAdoptedYesRadioBT() {
+		util.click(spouseAreYouAdoptedYesRadioBT,"Spouse Are You Adopted Yes Radio Button" );
+	}
+
+	@FindBy(xpath="//button[text()='My Family Medical History']")
+	private WebElement myFamilyMedicalHistoryAccordianBT;
+
+	public void openMyFamilyMedcialHistoryAccordian() {
+		util.waitUntilPresentInUI(myFamilyMedicalHistoryAccordianBT,"My Family Medical History Accordian" );
+		util.openAccordion(myFamilyMedicalHistoryAccordianBT, "My Family Medical History Accordian");
+	}
+
+	public void PrimaryMemberAreYouAdoptedYesRadioButtonSelectionStatus() {
+		util.isSelected(primaryMemberAreYouAdoptedYesRadioBT,"Primary Member Are You Adopted Yes Radio button");
+	}
+
+	public void spouseAreYouAdoptedYesRadioButtonSelectionStatus() {
+		util.isSelected(spouseAreYouAdoptedYesRadioBT,"Spouse Are You Adopted Yes Radio button");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Are you adopted?')]/parent::div//label//p[text()='No'])[1]")
+	private WebElement primaryMemberAreYouAdoptedNoRadioBT;
+
+	public void clickprimaryMemberAreYouAdoptedNoRadioBT() {
+		util.click(primaryMemberAreYouAdoptedNoRadioBT, "Primary Member Are You Adopted No Radio Button");
+	}
+
+	@FindBy(xpath="(//p[contains(text(),'Are you adopted?')]/parent::div//label//p[text()='No'])[2]")
+	private WebElement spouseAreYouAdoptedNoRadioBT;
+
+	public void clickSpouseAreYouAdoptedNoRadioBT() {
+		util.click(spouseAreYouAdoptedNoRadioBT, "Spouse Are You Adopted No Radio Button");
+	}
+
+	@FindBy(xpath="//button[text()='Save']")
+	private WebElement saveBT;
+
+	@FindBys(@FindBy(xpath="//input[contains(@name,'Dementia/Alzheimer')]"))
+	private List<WebElement> dementiaAlzheimerCheckBoxes;
+
+	public void clickdementiaCheckboxes() {
+		for(int i=0; i<=dementiaAlzheimerCheckBoxes.size()-1; i++) {
+			WebElement ele=		dementiaAlzheimerCheckBoxes.get(i);
+			ele.click();
+			util.holdOn(Duration.ofMillis(500));
+			util.clickJavaScript(saveBT, "Save Pop Up");
+		}
+	}
+
+	@FindBys(@FindBy(xpath="//input[contains(@name,'Parkinson’s')]"))
+	private List<WebElement> parkinsonsCheckBoxes;
+
+	public void clickParkinsonsCheckboxes() {
+		for(int i=0; i<=parkinsonsCheckBoxes.size()-1; i++) {
+			WebElement ele=		parkinsonsCheckBoxes.get(i);
+			ele.click();
+			util.holdOn(Duration.ofMillis(500));
+			util.clickJavaScript(saveBT, "Save Pop Up");
+		}
+	}
+
+	@FindBys(@FindBy(xpath="//input[contains(@name,'Heart disease')]"))
+	private List<WebElement> heartDiseaseCheckBoxes;
+
+	public void clickHeartDiseaaseCheckboxes() {
+		for(int i=0; i<=heartDiseaseCheckBoxes.size()-1; i++) {
+			WebElement ele=heartDiseaseCheckBoxes.get(i);
+			ele.click();
+		}
+	}
+
+	@FindBys(@FindBy(xpath="//input[contains(@name,'Stroke')]"))
+	private List<WebElement> strokeCheckBoxes;
+
+	public void clickStrokeCheckboxes() {
+		for(int i=0; i<=strokeCheckBoxes.size()-1; i++) {
+			WebElement ele=strokeCheckBoxes.get(i);
+			ele.click();
+		}
+	}
+
+	@FindBys(@FindBy(xpath="//input[contains(@name,'Diabetes')]"))
+	private List<WebElement> diabetesCheckBoxes;
+
+	public void clickDiabetesCheckboxes() {
+		for(int i=0; i<=diabetesCheckBoxes.size()-1; i++) {
+			WebElement ele=diabetesCheckBoxes.get(i);
+			ele.click();
+		}
+	}
+
+	@FindBys(@FindBy(xpath="//input[contains(@name,'Blood pressure issues')]"))
+	private List<WebElement> bloodPressureCheckBoxes;
+
+	public void clickBloodPressureCheckboxes() {
+		for(int i=0; i<=bloodPressureCheckBoxes.size()-1; i++) {
+			WebElement ele=bloodPressureCheckBoxes.get(i);
+			ele.click();
+		}
+	}
+
+	@FindBys(@FindBy(xpath="//input[contains(@name,'Elevated cholesterol')]"))
+	private List<WebElement> elevatedCholesterolCheckBoxes;
+
+	public void clickElevatedCholesterolCheckboxes() {
+		for(int i=0; i<=elevatedCholesterolCheckBoxes.size()-1; i++) {
+			WebElement ele=elevatedCholesterolCheckBoxes.get(i);
+			ele.click();
+		}
+	}
+
+	@FindBys(@FindBy(xpath="//input[contains(@name,'Glaucoma')]"))
+	private List<WebElement> glaucomeCheckBoxes;
+
+	public void clickglaucomaCheckboxes() {
+		for(int i=0; i<=glaucomeCheckBoxes.size()-1; i++) {
+			WebElement ele=glaucomeCheckBoxes.get(i);
+			ele.click();
+		}
+	}
+
+	public void dementiaCheckBoxStatus() {
+		for(int i=0; i<=dementiaAlzheimerCheckBoxes.size()-1; i++) {
+			WebElement ele=	dementiaAlzheimerCheckBoxes.get(i);
+			util.isSelected(ele, "Dementia Alzheimer checkbox");
+		}
+	}
+
+	public void parkinsonsCheckBoxStatus() {
+		for(int i=0; i<=parkinsonsCheckBoxes.size()-1; i++) {
+			WebElement ele=	parkinsonsCheckBoxes.get(i);
+			util.isSelected(ele, "Parkinson’ checkbox");
+		}
+	}
+
+	public void heartDiseaseCheckBoxStatus() {
+		for(int i=0; i<=heartDiseaseCheckBoxes.size()-1; i++) {
+			WebElement ele=	heartDiseaseCheckBoxes.get(i);
+			util.isSelected(ele, "Heart Disease checkbox");
+		}}
+
+	public void strokeCheckBoxStatus() {
+		for(int i=0; i<=strokeCheckBoxes.size()-1; i++) {
+			WebElement ele=	strokeCheckBoxes.get(i);
+			util.isSelected(ele, "Stroke checkbox");
+		}}
+
+	public void diabetesCheckBoxStatus() {
+		for(int i=0; i<=diabetesCheckBoxes.size()-1; i++) {
+			WebElement ele=	diabetesCheckBoxes.get(i);
+			util.isSelected(ele, "Diabetes checkbox");
+		}}
+
+	public void bloodPressureCheckBoxStatus() {
+		for(int i=0; i<=bloodPressureCheckBoxes.size()-1; i++) {
+			WebElement ele=	bloodPressureCheckBoxes.get(i);
+			util.isSelected(ele, "Blood Pressure checkbox");
+		}}
+
+	public void elevatedCheckBoxStatus() {
+		for(int i=0; i<=elevatedCholesterolCheckBoxes.size()-1; i++) {
+			WebElement ele=	elevatedCholesterolCheckBoxes.get(i);
+			util.isSelected(ele, "Elevated Cholesterol checkbox");
+		}}
+	
+	public void glaucomeCheckBoxStatus() {
+		for(int i=0; i<=glaucomeCheckBoxes.size()-1; i++) {
+			WebElement ele=	glaucomeCheckBoxes.get(i);
+			util.isSelected(ele, "Glaucome checkbox");
+		}}
+	
 
 
 }

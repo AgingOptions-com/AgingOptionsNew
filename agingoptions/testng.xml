@@ -10,7 +10,7 @@
 	<test name="Test">
 		<classes>
 			<class
-				name="com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases">
+				name="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases">
 			</class>
 			<class
 				name="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases">
@@ -19,8 +19,14 @@
 				name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
 			</class>
 			<class
-				name="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript">
+				name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
 			</class>
+			<class
+				name="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases">
+			</class>
+			<!--<class
+				name="com.nspl.HousingInfoPageTestcase.PrimaryCarePhysicianTestCase">
+			</class>-->
 		</classes>
 	</test>
 </suite> 

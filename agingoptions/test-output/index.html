@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,10 +92,29 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods,  16 skipped,  </span>
+                    <span class="method-stats">19 methods, 2 failed,  2 skipped,  15 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases" class="method navigator-link" hash-for-method="TC_007_Health_LifeStyleGeneralHealthNutritionDetails">TC_007_Health_LifeStyleGeneralHealthNutritionDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases" class="method navigator-link" hash-for-method="TC_017_inputPrimaryMemberCarePhysicianAndSave">TC_017_inputPrimaryMemberCarePhysicianAndSave</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
                     <span class="show-or-hide-methods skipped">
                       <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
                       <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
@@ -103,85 +122,99 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases" class="method navigator-link" hash-for-method="Health_001_Personal_MedicalHistoryPage">Health_001_Personal_MedicalHistoryPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases" class="method navigator-link" hash-for-method="TC_007_Health_LifeStyleGeneralHealthNutritionDetails">TC_007_Health_LifeStyleGeneralHealthNutritionDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases" class="method navigator-link" hash-for-method="Health_TC_007_LifeStyleGeneralHealthNutritionDetails">Health_TC_007_LifeStyleGeneralHealthNutritionDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases" class="method navigator-link" hash-for-method="Health_TC_008_Health_InputSubstanceUseDetails">Health_TC_008_Health_InputSubstanceUseDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases" class="method navigator-link" hash-for-method="Health_TC_09_Health_InputSocialHabitsDetails">Health_TC_09_Health_InputSocialHabitsDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript" class="method navigator-link" hash-for-method="VerifyHowManyStoriesDoesItHaveDropdownContent">VerifyHowManyStoriesDoesItHaveDropdownContent</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript" class="method navigator-link" hash-for-method="VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive">VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript" class="method navigator-link" hash-for-method="VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked">VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript" class="method navigator-link" hash-for-method="VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive">VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript" class="method navigator-link" hash-for-method="VerifySelectNoCheckBox_IsYourHousingLivingIn___">VerifySelectNoCheckBox_IsYourHousingLivingIn___</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript" class="method navigator-link" hash-for-method="VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked">VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript" class="method navigator-link" hash-for-method="VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave">VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases" class="method navigator-link" hash-for-method="familyMedicalHistoryLivingParentInfoDetails_TC_010">familyMedicalHistoryLivingParentInfoDetails_TC_010</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases" class="method navigator-link" hash-for-method="familyMedicalHistoryNonLivingParentInfoDetails_TC_011">familyMedicalHistoryNonLivingParentInfoDetails_TC_011</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases" class="method navigator-link" hash-for-method="familyMedicalHistoryNonLivingParentInfoDetails_TC_012">familyMedicalHistoryNonLivingParentInfoDetails_TC_012</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript" class="method navigator-link" hash-for-method="verifyHousingInformation">verifyHousingInformation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript" class="method navigator-link" hash-for-method="verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____">verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases" class="method navigator-link" hash-for-method="TC_017_inputPrimaryMemberCarePhysicianAndSave">TC_017_inputPrimaryMemberCarePhysicianAndSave</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases" class="method navigator-link" hash-for-method="TC_001_Health_Personal_MedicalHistoryPage">TC_001_Health_Personal_MedicalHistoryPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases" class="method navigator-link" hash-for-method="TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility">TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases" class="method navigator-link" hash-for-method="TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility">TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases" class="method navigator-link" hash-for-method="TC_004_Health_personal_Medical_History_BloodTypeSelection">TC_004_Health_personal_Medical_History_BloodTypeSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases" class="method navigator-link" hash-for-method="TC_005_Health_personal_Medical_History_MedicalConditionElement">TC_005_Health_personal_Medical_History_MedicalConditionElement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases" class="method navigator-link" hash-for-method="TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails">TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases" class="method navigator-link" hash-for-method="TC_008_Health_InputSubstanceUseDetails">TC_008_Health_InputSubstanceUseDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases" class="method navigator-link" hash-for-method="TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails">TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases" class="method navigator-link" hash-for-method="TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails">TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases" class="method navigator-link" hash-for-method="TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails">TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases" class="method navigator-link" hash-for-method="TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton">TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases" class="method navigator-link" hash-for-method="TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton">TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases" class="method navigator-link" hash-for-method="TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian">TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases" class="method navigator-link" hash-for-method="TC_016_SpouseIDontHavePrimaryCarePhyscian">TC_016_SpouseIDontHavePrimaryCarePhyscian</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases" class="method navigator-link" hash-for-method="TC_09_Health_InputSocialHabitsDetails">TC_09_Health_InputSocialHabitsDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -193,27 +226,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Health_001_Personal_MedicalHistoryPage">
-                  </a> <!-- Health_001_Personal_MedicalHistoryPage -->
-                  <span class="method-name">Health_001_Personal_MedicalHistoryPage</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+                  <a name="TC_007_Health_LifeStyleGeneralHealthNutritionDetails">
+                  </a> <!-- TC_007_Health_LifeStyleGeneralHealthNutritionDetails -->
+                  <span class="method-name">TC_007_Health_LifeStyleGeneralHealthNutritionDetails</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;label104&apos;]/preceding-sibling::div/span&quot;}
   (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
+Command: [81e9983377fbf68db9286e9c6510d531, findElement {using=xpath, value=//div[@id=&apos;label104&apos;]/preceding-sibling::div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51188/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81e9983377fbf68db9286e9c6510d531
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -221,41 +253,43 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
+	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:331)
+	at com.agingoptions.health.LifeStyle.selectSpouseHowOftenDoYouExerciseDropDown7Options(LifeStyle.java:63)
+	at com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails(MarriedUserLifeStyleTestCases.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyHowManyStoriesDoesItHaveDropdownContent">
-                  </a> <!-- VerifyHowManyStoriesDoesItHaveDropdownContent -->
-                  <span class="method-name">VerifyHowManyStoriesDoesItHaveDropdownContent</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+                  <a name="TC_017_inputPrimaryMemberCarePhysicianAndSave">
+                  </a> <!-- TC_017_inputPrimaryMemberCarePhysicianAndSave -->
+                  <span class="method-name">TC_017_inputPrimaryMemberCarePhysicianAndSave</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Save &amp; Proceed to Radha&apos;)]&quot;}
   (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
+Command: [81e9983377fbf68db9286e9c6510d531, findElement {using=xpath, value=//button[contains(text(),&apos;Save &amp; Proceed to Radha&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51188/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81e9983377fbf68db9286e9c6510d531
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -263,292 +297,23 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive">
-                  </a> <!-- VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive -->
-                  <span class="method-name">VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked">
-                  </a> <!-- VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked -->
-                  <span class="method-name">VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive">
-                  </a> <!-- VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive -->
-                  <span class="method-name">VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifySelectNoCheckBox_IsYourHousingLivingIn___">
-                  </a> <!-- VerifySelectNoCheckBox_IsYourHousingLivingIn___ -->
-                  <span class="method-name">VerifySelectNoCheckBox_IsYourHousingLivingIn___</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked">
-                  </a> <!-- VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked -->
-                  <span class="method-name">VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave">
-                  </a> <!-- VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave -->
-                  <span class="method-name">VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHousingInformation">
-                  </a> <!-- verifyHousingInformation -->
-                  <span class="method-name">verifyHousingInformation</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____">
-                  </a> <!-- verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____ -->
-                  <span class="method-name">verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
+	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:331)
+	at com.agingoptions.health.PrimaryCarePhysician.clickSaveAndProceedToSpouseBT(PrimaryCarePhysician.java:218)
+	at com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_017_inputPrimaryMemberCarePhysicianAndSave(PrimaryCarePhysicianTestCases.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -557,103 +322,14 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Health_TC_007_LifeStyleGeneralHealthNutritionDetails">
-                  </a> <!-- Health_TC_007_LifeStyleGeneralHealthNutritionDetails -->
-                  <span class="method-name">Health_TC_007_LifeStyleGeneralHealthNutritionDetails</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Health_TC_008_Health_InputSubstanceUseDetails">
-                  </a> <!-- Health_TC_008_Health_InputSubstanceUseDetails -->
-                  <span class="method-name">Health_TC_008_Health_InputSubstanceUseDetails</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Health_TC_09_Health_InputSocialHabitsDetails">
-                  </a> <!-- Health_TC_09_Health_InputSocialHabitsDetails -->
-                  <span class="method-name">Health_TC_09_Health_InputSocialHabitsDetails</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
+                  <a name="TC_007_Health_LifeStyleGeneralHealthNutritionDetails">
+                  </a> <!-- TC_007_Health_LifeStyleGeneralHealthNutritionDetails -->
+                  <span class="method-name">TC_007_Health_LifeStyleGeneralHealthNutritionDetails</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [There is no sedentary] but found [Yes I regular Exercise]
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedText(WebUtil.java:869)
+	at com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails(MarriedUserLifeStyleTestCases.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -662,24 +338,23 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</span>
+              <span class="class-name">com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="familyMedicalHistoryLivingParentInfoDetails_TC_010">
-                  </a> <!-- familyMedicalHistoryLivingParentInfoDetails_TC_010 -->
-                  <span class="method-name">familyMedicalHistoryLivingParentInfoDetails_TC_010</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+                  <a name="TC_017_inputPrimaryMemberCarePhysicianAndSave">
+                  </a> <!-- TC_017_inputPrimaryMemberCarePhysicianAndSave -->
+                  <span class="method-name">TC_017_inputPrimaryMemberCarePhysicianAndSave</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
   (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
+Command: [81e9983377fbf68db9286e9c6510d531, clearElement {id=f.424FCDAB6533C118C4394626FECD94D2.d.E223E0811931F4A080C123E4C6AE1B5C.e.2704}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51188/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (81e9983377fbf68db9286e9c6510d531)] -&gt; xpath: //input[@id=&apos;fName&apos;]]
+Session ID: 81e9983377fbf68db9286e9c6510d531
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -688,87 +363,156 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:130)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="familyMedicalHistoryNonLivingParentInfoDetails_TC_011">
-                  </a> <!-- familyMedicalHistoryNonLivingParentInfoDetails_TC_011 -->
-                  <span class="method-name">familyMedicalHistoryNonLivingParentInfoDetails_TC_011</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="familyMedicalHistoryNonLivingParentInfoDetails_TC_012">
-                  </a> <!-- familyMedicalHistoryNonLivingParentInfoDetails_TC_012 -->
-                  <span class="method-name">familyMedicalHistoryNonLivingParentInfoDetails_TC_012</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames
+	at jdk.proxy2/jdk.proxy2.$Proxy20.clear(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.sendValue(WebUtil.java:201)
+	at com.agingoptions.health.PrimaryCarePhysician.inputFirstName(PrimaryCarePhysician.java:84)
+	at com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_017_inputPrimaryMemberCarePhysicianAndSave(PrimaryCarePhysicianTestCases.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_008_Health_InputSubstanceUseDetails">
+                  </a> <!-- TC_008_Health_InputSubstanceUseDetails -->
+                  <span class="method-name">TC_008_Health_InputSubstanceUseDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_09_Health_InputSocialHabitsDetails">
+                  </a> <!-- TC_09_Health_InputSocialHabitsDetails -->
+                  <span class="method-name">TC_09_Health_InputSocialHabitsDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_001_Health_Personal_MedicalHistoryPage">
+                  </a> <!-- TC_001_Health_Personal_MedicalHistoryPage -->
+                  <span class="method-name">TC_001_Health_Personal_MedicalHistoryPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility">
+                  </a> <!-- TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility -->
+                  <span class="method-name">TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility">
+                  </a> <!-- TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility -->
+                  <span class="method-name">TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_004_Health_personal_Medical_History_BloodTypeSelection">
+                  </a> <!-- TC_004_Health_personal_Medical_History_BloodTypeSelection -->
+                  <span class="method-name">TC_004_Health_personal_Medical_History_BloodTypeSelection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_005_Health_personal_Medical_History_MedicalConditionElement">
+                  </a> <!-- TC_005_Health_personal_Medical_History_MedicalConditionElement -->
+                  <span class="method-name">TC_005_Health_personal_Medical_History_MedicalConditionElement</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails">
+                  </a> <!-- TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails -->
+                  <span class="method-name">TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails">
+                  </a> <!-- TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails -->
+                  <span class="method-name">TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails">
+                  </a> <!-- TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails -->
+                  <span class="method-name">TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails">
+                  </a> <!-- TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails -->
+                  <span class="method-name">TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton">
+                  </a> <!-- TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton -->
+                  <span class="method-name">TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton">
+                  </a> <!-- TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton -->
+                  <span class="method-name">TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian">
+                  </a> <!-- TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian -->
+                  <span class="method-name">TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_016_SpouseIDontHavePrimaryCarePhyscian">
+                  </a> <!-- TC_016_SpouseIDontHavePrimaryCarePhyscian -->
+                  <span class="method-name">TC_016_SpouseIDontHavePrimaryCarePhyscian</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -784,10 +528,11 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases&quot;/&gt;
+      &lt;class name=&quot;com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases&quot;/&gt;
       &lt;class name=&quot;com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases&quot;/&gt;
       &lt;class name=&quot;com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases&quot;/&gt;
-      &lt;class name=&quot;com.nspl.HousingInfoPageTestcase.HousingInfoTestScript&quot;/&gt;
+      &lt;class name=&quot;com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases&quot;/&gt;
+      &lt;class name=&quot;com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -801,7 +546,7 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -827,76 +572,88 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(16);
+data.addRows(19);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'familyMedicalHistoryNonLivingParentInfoDetails_TC_012')
-data.setCell(0, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases')
-data.setCell(0, 3, 3);
+data.setCell(0, 1, 'TC_017_inputPrimaryMemberCarePhysicianAndSave')
+data.setCell(0, 2, 'com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases')
+data.setCell(0, 3, 188671);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked')
-data.setCell(1, 2, 'com.nspl.HousingInfoPageTestcase.HousingInfoTestScript')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton')
+data.setCell(1, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases')
+data.setCell(1, 3, 91802);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'familyMedicalHistoryLivingParentInfoDetails_TC_010')
-data.setCell(2, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'TC_007_Health_LifeStyleGeneralHealthNutritionDetails')
+data.setCell(2, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases')
+data.setCell(2, 3, 61177);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive')
-data.setCell(3, 2, 'com.nspl.HousingInfoPageTestcase.HousingInfoTestScript')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton')
+data.setCell(3, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases')
+data.setCell(3, 3, 42113);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____')
-data.setCell(4, 2, 'com.nspl.HousingInfoPageTestcase.HousingInfoTestScript')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails')
+data.setCell(4, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases')
+data.setCell(4, 3, 35578);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'VerifySelectNoCheckBox_IsYourHousingLivingIn___')
-data.setCell(5, 2, 'com.nspl.HousingInfoPageTestcase.HousingInfoTestScript')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails')
+data.setCell(5, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases')
+data.setCell(5, 3, 32440);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'familyMedicalHistoryNonLivingParentInfoDetails_TC_011')
+data.setCell(6, 1, 'TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails')
 data.setCell(6, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases')
-data.setCell(6, 3, 0);
+data.setCell(6, 3, 32148);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Health_001_Personal_MedicalHistoryPage')
-data.setCell(7, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases')
-data.setCell(7, 3, 0);
+data.setCell(7, 1, 'TC_007_Health_LifeStyleGeneralHealthNutritionDetails')
+data.setCell(7, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases')
+data.setCell(7, 3, 30407);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Health_TC_008_Health_InputSubstanceUseDetails')
-data.setCell(8, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases')
-data.setCell(8, 3, 0);
+data.setCell(8, 1, 'TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian')
+data.setCell(8, 2, 'com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases')
+data.setCell(8, 3, 25319);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive')
-data.setCell(9, 2, 'com.nspl.HousingInfoPageTestcase.HousingInfoTestScript')
-data.setCell(9, 3, 0);
+data.setCell(9, 1, 'TC_016_SpouseIDontHavePrimaryCarePhyscian')
+data.setCell(9, 2, 'com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases')
+data.setCell(9, 3, 25176);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave')
-data.setCell(10, 2, 'com.nspl.HousingInfoPageTestcase.HousingInfoTestScript')
-data.setCell(10, 3, 0);
+data.setCell(10, 1, 'TC_008_Health_InputSubstanceUseDetails')
+data.setCell(10, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases')
+data.setCell(10, 3, 24846);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyHousingInformation')
-data.setCell(11, 2, 'com.nspl.HousingInfoPageTestcase.HousingInfoTestScript')
-data.setCell(11, 3, 0);
+data.setCell(11, 1, 'TC_005_Health_personal_Medical_History_MedicalConditionElement')
+data.setCell(11, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases')
+data.setCell(11, 3, 24305);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'Health_TC_09_Health_InputSocialHabitsDetails')
-data.setCell(12, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases')
-data.setCell(12, 3, 0);
+data.setCell(12, 1, 'TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails')
+data.setCell(12, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases')
+data.setCell(12, 3, 22076);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'VerifyHowManyStoriesDoesItHaveDropdownContent')
-data.setCell(13, 2, 'com.nspl.HousingInfoPageTestcase.HousingInfoTestScript')
-data.setCell(13, 3, 0);
+data.setCell(13, 1, 'TC_09_Health_InputSocialHabitsDetails')
+data.setCell(13, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases')
+data.setCell(13, 3, 21959);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked')
-data.setCell(14, 2, 'com.nspl.HousingInfoPageTestcase.HousingInfoTestScript')
-data.setCell(14, 3, 0);
+data.setCell(14, 1, 'TC_001_Health_Personal_MedicalHistoryPage')
+data.setCell(14, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases')
+data.setCell(14, 3, 21835);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'Health_TC_007_LifeStyleGeneralHealthNutritionDetails')
-data.setCell(15, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases')
-data.setCell(15, 3, 0);
+data.setCell(15, 1, 'TC_004_Health_personal_Medical_History_BloodTypeSelection')
+data.setCell(15, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases')
+data.setCell(15, 3, 20035);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TC_017_inputPrimaryMemberCarePhysicianAndSave')
+data.setCell(16, 2, 'com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases')
+data.setCell(16, 3, 18646);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility')
+data.setCell(17, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases')
+data.setCell(17, 3, 17330);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility')
+data.setCell(18, 2, 'com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases')
+data.setCell(18, 3, 8656);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 ms</span>
+              <span class="suite-total-time">Total running time: 12 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -911,64 +668,45 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">19 ignored methods</span>
+            <span class="header-content">12 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-                <span class="ignored-method-name">VerifyOnTheScaleOfOneTwoFive_Select1</span>
-                <br/>
-                <span class="ignored-method-name">VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection</span>
-                <br/>
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">Health_002_personal_Medical_History_MedicalConditionsElementVisibility</span>
-                <br/>
-                <span class="ignored-method-name">Health_003_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility</span>
-                <br/>
-                <span class="ignored-method-name">Health_005_personal_Medical_History_MedicalConditionElement</span>
-                <br/>
-                <span class="ignored-method-name">Health_004_personal_Medical_History_BloodTypeSelection</span>
-                <br/>
-                <span class="ignored-method-name">personal_Medical_History_EnvironmentalLifestyleFactorsDetails_Health_006_</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
                 <span class="ignored-method-name">beforeTest</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
-                <span class="ignored-method-name">beforeTest</span>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
                 <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -980,17 +718,299 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">263 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">69044 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC...)</span>
+                <span class="method-start">69060 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_001_Health_Personal_MedicalHistoryPage</span>
+                <span class="method-start">69064 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_001_Health_Personal_MedicalHistoryPage status=SUCCESS method=MarriedUserPersonal...)</span>
+                <span class="method-start">90907 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC...)</span>
+                <span class="method-start">91254 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility</span>
+                <span class="method-start">91254 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility status=SU...)</span>
+                <span class="method-start">108588 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility</span>
+                <span class="method-start">108650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC...)</span>
+                <span class="method-start">108650 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibili...)</span>
+                <span class="method-start">117309 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC_004_Health_personal_Medical_History_BloodTypeSelection</span>
+                <span class="method-start">117351 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC...)</span>
+                <span class="method-start">117351 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_004_Health_personal_Medical_History_BloodTypeSelection status=SUCCESS method=Mar...)</span>
+                <span class="method-start">137388 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC...)</span>
+                <span class="method-start">137423 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_005_Health_personal_Medical_History_MedicalConditionElement</span>
+                <span class="method-start">137424 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_005_Health_personal_Medical_History_MedicalConditionElement status=SUCCESS metho...)</span>
+                <span class="method-start">161730 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC...)</span>
+                <span class="method-start">161755 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails</span>
+                <span class="method-start">161755 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails status=...)</span>
+                <span class="method-start">183832 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">183869 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC_007_Health_LifeStyleGeneralHealthNutritionDetails</span>
+                <span class="method-start">183881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">183881 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_L...)</span>
+                <span class="method-start">183881 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_007_Health_LifeStyleGeneralHealthNutritionDetails status=SKIP method=MarriedUser...)</span>
+                <span class="method-start">214289 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">280 ms</span>
-              </div> <!-- configuration-test before -->
+                <span class="method-name">TC_007_Health_LifeStyleGeneralHealthNutritionDetails</span>
+                <span class="method-start">214314 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_L...)</span>
+                <span class="method-start">214314 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_007_Health_LifeStyleGeneralHealthNutritionDetails status=FAILURE method=MarriedU...)</span>
+                <span class="method-start">275497 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_008_Health_I...)</span>
+                <span class="method-start">275720 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_008_Health_InputSubstanceUseDetails</span>
+                <span class="method-start">275720 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_008_Health_InputSubstanceUseDetails status=SUCCESS method=MarriedUserLifeStyleTe...)</span>
+                <span class="method-start">300567 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC_09_Health_InputSocialHabitsDetails</span>
+                <span class="method-start">300592 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_09_Health_In...)</span>
+                <span class="method-start">300592 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_09_Health_InputSocialHabitsDetails status=SUCCESS method=MarriedUserLifeStyleTes...)</span>
+                <span class="method-start">322552 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">322576 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">322585 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails</span>
+                <span class="method-start">322586 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_0...)</span>
+                <span class="method-start">322586 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails status=SUCCESS method=Mar...)</span>
+                <span class="method-start">358165 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_0...)</span>
+                <span class="method-start">358201 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails</span>
+                <span class="method-start">358202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails status=SUCCESS method=...)</span>
+                <span class="method-start">390351 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails</span>
+                <span class="method-start">390374 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_0...)</span>
+                <span class="method-start">390374 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails status=SUCCESS method=Married...)</span>
+                <span class="method-start">422815 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_0...)</span>
+                <span class="method-start">422847 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton</span>
+                <span class="method-start">422849 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton status=SUCCESS meth...)</span>
+                <span class="method-start">514653 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_0...)</span>
+                <span class="method-start">514691 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton</span>
+                <span class="method-start">514691 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton status=SUCCESS metho...)</span>
+                <span class="method-start">556805 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">556825 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">556833 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_015_PrimaryM...)</span>
+                <span class="method-start">556833 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian</span>
+                <span class="method-start">556834 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian status=SUCCESS method=PrimaryCareP...)</span>
+                <span class="method-start">582154 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC_016_SpouseIDontHavePrimaryCarePhyscian</span>
+                <span class="method-start">582175 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_016_SpouseID...)</span>
+                <span class="method-start">582175 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_016_SpouseIDontHavePrimaryCarePhyscian status=SUCCESS method=PrimaryCarePhysicia...)</span>
+                <span class="method-start">607352 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_017_inputPri...)</span>
+                <span class="method-start">607374 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_017_inputPrimaryMemberCarePhysicianAndSave</span>
+                <span class="method-start">607375 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_017_inputPrimaryMemberCarePhysicianAndSave status=SKIP method=PrimaryCarePhysici...)</span>
+                <span class="method-start">626024 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_017_inputPri...)</span>
+                <span class="method-start">626045 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_017_inputPrimaryMemberCarePhysicianAndSave</span>
+                <span class="method-start">626046 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC_017_inputPrimaryMemberCarePhysicianAndSave status=FAILURE method=PrimaryCarePhys...)</span>
+                <span class="method-start">814722 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">815040 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">815047 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">815095 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
