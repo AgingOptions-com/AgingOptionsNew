@@ -119,7 +119,7 @@ public class CommonCodeOR   {
 	@FindBy(xpath="//a[text()='Sign Up']")
 	protected  WebElement SignUpLink;
 
-	@FindBy(xpath="//div[@class='roleOptions']//span[text()='Paralegal']")
+	@FindBy(xpath="(//div[@id='mainBody']//div[@class='roleOptions'])[1]")
 	protected WebElement paralegalrole;
 
 	@FindBy(xpath="//div[@class='roleOptions']//span[text()='Firm Administrator']")
@@ -157,7 +157,8 @@ public class CommonCodeOR   {
 
 	@FindBy(xpath="//h1[text()='Personal Information']")
 	protected WebElement PersonalInformationIcon;
-
+	@FindBy(xpath="//button[text()='Click to resend']")
+	   protected WebElement clicltoresendInnertext;
 }
 
 

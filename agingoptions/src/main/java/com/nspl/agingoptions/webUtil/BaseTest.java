@@ -61,7 +61,8 @@ public class BaseTest {
 		util.launchBrowser(util.getProperty("browserName"));
 		util.hitUrl(util.getProperty("url"));
 		CommonCode common=	new CommonCode(util);
-		common.loginAttorneyEmailPassword();
+		//common.loginAttorneyEmailPassword();
+		common.loginWithParalegalYopmail();
 		common.LoginWithNewMarriedUser();
 		extReports.removeTest(extTest);
 		extTest = null;

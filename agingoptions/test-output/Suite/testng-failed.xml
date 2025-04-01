@@ -3,6 +3,22 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="verifyToggleButton"/>
+          <include name="afterTest"/>
+          <include name="VerifyClickIDoNotHaveRealtorCheckBox"/>
+          <include name="VerifyIdONotHaveRealtorCheckBoxFunctionality"/>
+          <include name="verifyRealtorPageOnHousingProfessional"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript -->
       <class name="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript">
         <methods>
           <include name="afterClass"/>
@@ -14,6 +30,7 @@
           <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
+          <include name="VerifyUpdateAndContinue_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive"/>
         </methods>
       </class> <!-- com.nspl.HousingInfoPageTestcase.HousingInfoTestScript -->
     </classes>

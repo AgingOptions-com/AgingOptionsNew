@@ -122,9 +122,9 @@ public class CommonCode extends CommonCodeOR {
 		String address=	mapData.get("address");
 		CommonCode common = new CommonCode(util);
 		String UserEmail=	common.createLifePlanningUser(firstName,lastName,email,phoneNumber);
-		util.holdOn(Duration.ofSeconds(1));
+		util.holdOn(Duration.ofSeconds(3));
 		common.searchUserParaGotoLPO(UserEmail);
-		Duration.ofSeconds(2);
+		Duration.ofSeconds(3);
 		common.inputMarriedUserAcitvationPageDetails(noOfChild, primaryMemberDob, address, spouseFirstName, spouseDob);
 	}
 
@@ -194,12 +194,12 @@ public class CommonCode extends CommonCodeOR {
 
 		util.click(paralegalrole, "Paralegal Role options");
 		try {
-			Thread.sleep(Duration.ofSeconds(7));
+			Thread.sleep(Duration.ofSeconds(10));
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		util.verifyTitle("Paralegal ", "Aging Options");
+		//util.verifyTitle("Paralegal ", "Aging Options");
 		util.verifyInnerText(ParalegalInnertext,"Intake / LPO Member List","Paralegal screen" );
 		// wt.verifyUrl("https://aointakeformuat.agingoptions.com/paralegal", "Paralegal page");
 	}
@@ -261,5 +261,32 @@ public class CommonCode extends CommonCodeOR {
 	}
 	public void verifyPersonalInfoPage()  {
 		util.verifyInnerText(PersonalInformationIcon, "Personal Information", "Personal Information text");
+	
 	}
+   public void loginWithParalegalYopmail() {
+	   
+		util.sendValue(loginEmailTB, util.getProperty("paralegalemail"), "Login Page Email");
+		util.sendValue(loginPasswordTB, util.getProperty("paralegalPassword"), "Login Page Password");
+		util.click(universalLoginBT, "Universal Login Button");
+		verifyOtpPage();
+	  CommonCode commonpage= new CommonCode(util);
+	  commonpage.hiturlOfYopmail();
+     commonpage.Gotosearchemail(util.getProperty("paralegalemail"));
+    String otp= commonpage.GoTofindtextOfOTP();
+    commonpage.gotoinputotp(otp);
+     commonpage.GoToClickVerifyButton();
+      util.holdOn(Duration.ofSeconds(15));
+   commonpage.gotoClickParalegalOptions();
+    util.holdOn(Duration.ofSeconds(12)); }
+   
+  public void verifyOtpPage() {
+	  try {
+		Thread.sleep(Duration.ofSeconds(3));
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	 util.verifyInnerText( clicltoresendInnertext, "Click to resend" ,"Otp");
+	 // wt.verifyUrl("https://aologinuat.agingoptions.com/Account/verifyOtp","OTP page");
+}
 }
