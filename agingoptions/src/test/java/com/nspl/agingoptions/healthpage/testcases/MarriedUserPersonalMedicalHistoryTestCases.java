@@ -16,7 +16,7 @@ import com.nspl.agingoptions.commoncode.CommonCode;
 import com.nspl.agingoptions.webUtil.BaseTest;
 import com.nspl.agingoptions.webUtil.DataUtil;
 
-public class MarriedUserHealthInfoTestCases extends BaseTest {
+public class MarriedUserPersonalMedicalHistoryTestCases extends BaseTest {
 
 	@Test(priority = 1)
 	public void TC_001_Health_Personal_MedicalHistoryPage() {
@@ -37,7 +37,7 @@ public class MarriedUserHealthInfoTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(2));
 	}
 
-	@Test(priority = 2, dependsOnMethods = "Health_001_Personal_MedicalHistoryPage",enabled=true)
+	@Test(priority = 2, dependsOnMethods = "TC_001_Health_Personal_MedicalHistoryPage",enabled=true)
 	public void TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility() {
 
 		PersonalMedicalHistory personal = new PersonalMedicalHistory(util);
@@ -59,7 +59,7 @@ public class MarriedUserHealthInfoTestCases extends BaseTest {
 		personal.spouseGlaucomaTextStatus();
 	}
 
-	@Test(priority = 3, dependsOnMethods = "Health_001_Personal_MedicalHistoryPage",enabled=true)
+	@Test(priority = 3, dependsOnMethods = "TC_001_Health_Personal_MedicalHistoryPage",enabled=true)
 	public void TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility() {
 
 		PersonalMedicalHistory personal = new PersonalMedicalHistory(util);
@@ -77,7 +77,7 @@ public class MarriedUserHealthInfoTestCases extends BaseTest {
 		//		personal.spouseWhichMedicationText();
 	}
 
-	@Test(priority = 4, dependsOnMethods = "Health_001_Personal_MedicalHistoryPage",enabled=true)
+	@Test(priority = 4, dependsOnMethods = "TC_001_Health_Personal_MedicalHistoryPage",enabled=true)
 	public void TC_004_Health_personal_Medical_History_BloodTypeSelection() {
 		PersonalMedicalHistory personal = new PersonalMedicalHistory(util);
 		personal.clickPrimaryMeberBloodTypeDropDownIcon();

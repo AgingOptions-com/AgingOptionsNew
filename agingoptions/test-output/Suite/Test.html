@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/16</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/2/2</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 31 23:09:39 IST 2025</td>
+<td>Started on:</td><td>Tue Apr 01 17:32:03 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>63 seconds (63665 ms)</td>
+<tr><td>Total time:</td><td>814 seconds (814791 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,17 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases.beforeTest()'><b>beforeTest</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+<td title='com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_017_inputPrimaryMemberCarePhysicianAndSave()'><b>TC_017_inputPrimaryMemberCarePhysicianAndSave</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Save &amp; Proceed to Radha&apos;)]&quot;}
   (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
+Command: [81e9983377fbf68db9286e9c6510d531, findElement {using=xpath, value=//button[contains(text(),&apos;Save &amp; Proceed to Radha&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51188/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81e9983377fbf68db9286e9c6510d531
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -94,25 +93,27 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2120063568", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2120063568'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:331)
+	at com.agingoptions.health.PrimaryCarePhysician.clickSaveAndProceedToSpouseBT(PrimaryCarePhysician.java:218)
+	at com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_017_inputPrimaryMemberCarePhysicianAndSave(PrimaryCarePhysicianTestCases.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace913298379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace913298379'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Save &amp; Proceed to Radha&apos;)]&quot;}
   (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
+Command: [81e9983377fbf68db9286e9c6510d531, findElement {using=xpath, value=//button[contains(text(),&apos;Save &amp; Proceed to Radha&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51188/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81e9983377fbf68db9286e9c6510d531
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -123,25 +124,29 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
+	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:331)
+	at com.agingoptions.health.PrimaryCarePhysician.clickSaveAndProceedToSpouseBT(PrimaryCarePhysician.java:218)
+	at com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_017_inputPrimaryMemberCarePhysicianAndSave(PrimaryCarePhysicianTestCases.java:88)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -156,11 +161,99 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>63</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases@126253fd</td></tr>
+<td>188</td>
+<td>com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@7530ad9c</td></tr>
+<tr>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails()'><b>TC_007_Health_LifeStyleGeneralHealthNutritionDetails</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;label104&apos;]/preceding-sibling::div/span&quot;}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [81e9983377fbf68db9286e9c6510d531, findElement {using=xpath, value=//div[@id=&apos;label104&apos;]/preceding-sibling::div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51188/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81e9983377fbf68db9286e9c6510d531
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:331)
+	at com.agingoptions.health.LifeStyle.selectSpouseHowOftenDoYouExerciseDropDown7Options(LifeStyle.java:63)
+	at com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails(MarriedUserLifeStyleTestCases.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace676275686", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace676275686'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;label104&apos;]/preceding-sibling::div/span&quot;}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [81e9983377fbf68db9286e9c6510d531, findElement {using=xpath, value=//div[@id=&apos;label104&apos;]/preceding-sibling::div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51188/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81e9983377fbf68db9286e9c6510d531
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:331)
+	at com.agingoptions.health.LifeStyle.selectSpouseHowOftenDoYouExerciseDropDown7Options(LifeStyle.java:63)
+	at com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails(MarriedUserLifeStyleTestCases.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>61</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@1e66f1f5</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -168,210 +261,80 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_001_Health_Personal_MedicalHistoryPage()'><b>TC_001_Health_Personal_MedicalHistoryPage</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@71687585</td></tr>
+<td>21</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@7d8704ef</td></tr>
 <tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails()'><b>TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases@126253fd</td></tr>
+<td>35</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@4e50c791</td></tr>
 <tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_016_SpouseIDontHavePrimaryCarePhyscian()'><b>TC_016_SpouseIDontHavePrimaryCarePhyscian</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
+<td>25</td>
+<td>com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@7530ad9c</td></tr>
 <tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.beforeClass()'><b>beforeClass</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails()'><b>TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@71687585</td></tr>
+<td>32</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@4e50c791</td></tr>
 <tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton()'><b>TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
+<td>42</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@4e50c791</td></tr>
 <tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian()'><b>TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@1807f5a7</td></tr>
+<td>25</td>
+<td>com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@7530ad9c</td></tr>
 <tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails()'><b>TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
+<td>32</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@4e50c791</td></tr>
 <tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_005_Health_personal_Medical_History_MedicalConditionElement()'><b>TC_005_Health_personal_Medical_History_MedicalConditionElement</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@1807f5a7</td></tr>
+<td>24</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@7d8704ef</td></tr>
 <tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_008_Health_InputSubstanceUseDetails()'><b>TC_008_Health_InputSubstanceUseDetails</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@71687585</td></tr>
+<td>24</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@1e66f1f5</td></tr>
 <tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases.afterClass()'><b>afterClass</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility()'><b>TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases@126253fd</td></tr>
+<td>17</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@7d8704ef</td></tr>
 <tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_09_Health_InputSocialHabitsDetails()'><b>TC_09_Health_InputSocialHabitsDetails</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
+<td>21</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@1e66f1f5</td></tr>
 <tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases.beforeClass()'><b>beforeClass</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton()'><b>TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases@126253fd</td></tr>
+<td>91</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@4e50c791</td></tr>
 <tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility()'><b>TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
+<td>8</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@7d8704ef</td></tr>
 <tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_004_Health_personal_Medical_History_BloodTypeSelection()'><b>TC_004_Health_personal_Medical_History_BloodTypeSelection</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
+<td>20</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@7d8704ef</td></tr>
 <tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails()'><b>TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases</td>
 <td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@71687585</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@71687585</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases@126253fd</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@71687585</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@1807f5a7</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.beforeClass()'><b>beforeClass</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@1807f5a7</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@1807f5a7</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@1807f5a7</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.beforeClass()'><b>beforeClass</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@1807f5a7</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.afterClass()'><b>afterClass</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@1807f5a7</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.afterClass()'><b>afterClass</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@71687585</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@71687585</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases.afterTest()'><b>afterTest</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases@126253fd</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.afterClass()'><b>afterClass</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
+<td>22</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@7d8704ef</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -382,17 +345,16 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked()'><b>VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+<td title='com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_017_inputPrimaryMemberCarePhysicianAndSave()'><b>TC_017_inputPrimaryMemberCarePhysicianAndSave</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases</td>
+<td><div><pre>org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
   (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
+Command: [81e9983377fbf68db9286e9c6510d531, clearElement {id=f.424FCDAB6533C118C4394626FECD94D2.d.E223E0811931F4A080C123E4C6AE1B5C.e.2704}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51188/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (81e9983377fbf68db9286e9c6510d531)] -&gt; xpath: //input[@id=&apos;fName&apos;]]
+Session ID: 81e9983377fbf68db9286e9c6510d531
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -401,24 +363,23 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:130)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace795308615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace795308615'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+	at jdk.proxy2/jdk.proxy2.$Proxy20.clear(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.sendValue(WebUtil.java:201)
+	at com.agingoptions.health.PrimaryCarePhysician.inputFirstName(PrimaryCarePhysician.java:84)
+	at com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_017_inputPrimaryMemberCarePhysicianAndSave(PrimaryCarePhysicianTestCases.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace425149044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace425149044'><pre>org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
   (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
+Command: [81e9983377fbf68db9286e9c6510d531, clearElement {id=f.424FCDAB6533C118C4394626FECD94D2.d.E223E0811931F4A080C123E4C6AE1B5C.e.2704}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51188/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (81e9983377fbf68db9286e9c6510d531)] -&gt; xpath: //input[@id=&apos;fName&apos;]]
+Session ID: 81e9983377fbf68db9286e9c6510d531
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -430,24 +391,27 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:130)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.clear(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.sendValue(WebUtil.java:201)
+	at com.agingoptions.health.PrimaryCarePhysician.inputFirstName(PrimaryCarePhysician.java:84)
+	at com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_017_inputPrimaryMemberCarePhysicianAndSave(PrimaryCarePhysicianTestCases.java:66)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -462,75 +426,37 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
+<td>18</td>
+<td>com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@7530ad9c</td></tr>
 <tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.familyMedicalHistoryLivingParentInfoDetails_TC_010()'><b>familyMedicalHistoryLivingParentInfoDetails_TC_010</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1042366725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1042366725'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
+<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails()'><b>TC_007_Health_LifeStyleGeneralHealthNutritionDetails</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
+<td><div><pre>java.lang.AssertionError: expected [There is no sedentary] but found [Yes I regular Exercise]
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedText(WebUtil.java:869)
+	at com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails(MarriedUserLifeStyleTestCases.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace597531831", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace597531831'><pre>java.lang.AssertionError: expected [There is no sedentary] but found [Yes I regular Exercise]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedText(WebUtil.java:869)
+	at com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails(MarriedUserLifeStyleTestCases.java:72)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -545,1170 +471,8 @@ Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@1807f5a7</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive()'><b>VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace480645280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace480645280'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____()'><b>verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1958242673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1958242673'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifySelectNoCheckBox_IsYourHousingLivingIn___()'><b>VerifySelectNoCheckBox_IsYourHousingLivingIn___</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1032656803", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1032656803'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.familyMedicalHistoryNonLivingParentInfoDetails_TC_011()'><b>familyMedicalHistoryNonLivingParentInfoDetails_TC_011</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1744190758", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1744190758'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@1807f5a7</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases.Health_001_Personal_MedicalHistoryPage()'><b>Health_001_Personal_MedicalHistoryPage</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1008934993", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1008934993'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserHealthInfoTestCases@126253fd</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.Health_TC_008_Health_InputSubstanceUseDetails()'><b>Health_TC_008_Health_InputSubstanceUseDetails</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977972728", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace977972728'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@71687585</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive()'><b>VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1006297128", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1006297128'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave()'><b>VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace598569407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace598569407'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.verifyHousingInformation()'><b>verifyHousingInformation</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace509522442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace509522442'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.Health_TC_09_Health_InputSocialHabitsDetails()'><b>Health_TC_09_Health_InputSocialHabitsDetails</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace250144767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace250144767'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@71687585</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifyHowManyStoriesDoesItHaveDropdownContent()'><b>VerifyHowManyStoriesDoesItHaveDropdownContent</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1509715205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1509715205'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.HousingInfoPageTestcase.HousingInfoTestScript.VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked()'><b>VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace690035101", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace690035101'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.HousingInfoPageTestcase.HousingInfoTestScript@1b919693</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.Health_TC_007_LifeStyleGeneralHealthNutritionDetails()'><b>Health_TC_007_LifeStyleGeneralHealthNutritionDetails</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace36205461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace36205461'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@71687585</td></tr>
-<tr>
-<td title='com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.familyMedicalHistoryNonLivingParentInfoDetails_TC_012()'><b>familyMedicalHistoryNonLivingParentInfoDetails_TC_012</b><br>Test class: com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace966005897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace966005897'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a7c5501cf4a3390160fcf7f0636abb5, clickElement {id=f.13C2C39AAAF4E50E7884ED1CF921BCF2.d.D98E92DD940F8B20E9A8914A6F7104C1.e.326}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0a7c5501cf4a3390160fcf7f0636abb5)] -&gt; xpath: //span[@class=&apos;paraData&apos;]]
-Session ID: 0a7c5501cf4a3390160fcf7f0636abb5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:320)
-	at com.nspl.agingoptions.commoncode.CommonCode.searchUserParaGotoLPO(CommonCode.java:66)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:126)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-	at org.testng.TestRunner.run(TestRunner.java:612)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@1807f5a7</td></tr>
+<td>30</td>
+<td>com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@1e66f1f5</td></tr>
 </table><p>
 </body>
 </html>

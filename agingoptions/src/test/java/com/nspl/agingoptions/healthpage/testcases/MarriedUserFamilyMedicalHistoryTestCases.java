@@ -103,6 +103,7 @@ public class MarriedUserFamilyMedicalHistoryTestCases extends BaseTest{
 	public void TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails() {
 
 		LpoLandingPage lpoLanding=	new LpoLandingPage(util);
+		util.holdOn(Duration.ofSeconds(5));
 		lpoLanding.clickHealthModule();
 		FamilyMedicalHistory familyMedical=    new FamilyMedicalHistory(util);
 		util.holdOn(Duration.ofSeconds(5));
@@ -133,6 +134,63 @@ public class MarriedUserFamilyMedicalHistoryTestCases extends BaseTest{
 
 	}
 
-	
+	@Test(priority=4)
+	public void TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton() {
+		LpoLandingPage lpoLanding=    new LpoLandingPage(util);
+		lpoLanding.clickHealthModule();
+		FamilyMedicalHistory familyMedi=	new FamilyMedicalHistory(util);
+		familyMedi.clickFamilyMedicalHistorySideBarLink();
+		familyMedi.openMyFamilyMedcialHistoryAccordian();
+		familyMedi.clickPrimaryMemberAreYouAdoptedYesRadioBT();
+		familyMedi.clickSpouseAreYouAdoptedYesRadioBT();
+		familyMedi.clickSaveProceedToPrimaryCarePhysicianBT();
+		util.holdOn(Duration.ofSeconds(2));
+		familyMedi.clickFamilyMedicalHistorySideBarLink();
+		familyMedi.openMyFamilyMedcialHistoryAccordian();
+		familyMedi.PrimaryMemberAreYouAdoptedYesRadioButtonSelectionStatus();
+		familyMedi.spouseAreYouAdoptedYesRadioButtonSelectionStatus();
+	}
+
+	@Test(priority=5)
+	public void TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton() {
+		LpoLandingPage lpoLanding=    new LpoLandingPage(util);
+		util.holdOn(Duration.ofSeconds(3));
+		lpoLanding.clickHealthModule();
+		FamilyMedicalHistory familyMedi=	new FamilyMedicalHistory(util);
+		util.holdOn(Duration.ofSeconds(5));
+		familyMedi.clickFamilyMedicalHistorySideBarLink();
+		familyMedi.openMyFamilyMedcialHistoryAccordian();
+		util.holdOn(Duration.ofSeconds(3));
+		familyMedi.clickprimaryMemberAreYouAdoptedNoRadioBT();
+		util.holdOn(Duration.ofSeconds(1));
+		familyMedi.clickSpouseAreYouAdoptedNoRadioBT();
+		familyMedi.clickdementiaCheckboxes();
+		familyMedi.clickParkinsonsCheckboxes();
+		familyMedi.clickHeartDiseaaseCheckboxes();
+		familyMedi.clickStrokeCheckboxes();
+		familyMedi.clickDiabetesCheckboxes();
+		familyMedi.clickBloodPressureCheckboxes();
+		familyMedi.clickElevatedCholesterolCheckboxes();
+		familyMedi.clickglaucomaCheckboxes();
+		familyMedi.clickSaveProceedToPrimaryCarePhysicianBT();
+		util.holdOn(Duration.ofSeconds(4));
+		familyMedi.clickFamilyMedicalHistorySideBarLink();
+		familyMedi.openMyFamilyMedcialHistoryAccordian();
+		familyMedi.dementiaCheckBoxStatus();
+		familyMedi.parkinsonsCheckBoxStatus();
+		familyMedi.heartDiseaseCheckBoxStatus();
+		familyMedi.strokeCheckBoxStatus();
+		familyMedi.diabetesCheckBoxStatus();
+		familyMedi.bloodPressureCheckBoxStatus();
+		familyMedi.elevatedCheckBoxStatus();
+		familyMedi.glaucomeCheckBoxStatus();
+	}
+
+
+
+
+
+
+
 }
 
