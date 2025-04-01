@@ -1,4 +1,4 @@
-package com.nspl.agingoptions.commoncode;
+package com.Ao.HousingPage;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.asserts.SoftAssert;
 
+import com.nspl.agingoptions.commoncode.CommonCode;
 import com.nspl.agingoptions.webUtil.WebUtil;
 
 public class HousingInfo extends HousingInfoOr{
@@ -176,10 +177,71 @@ public class HousingInfo extends HousingInfoOr{
 		wt.click(HowManyStoryDoesItHave_OptionMore, "Option More");
 		wt.isDisplayed(IsThereBedRoomOnMainFloor_InnerText, "Is there bed room On main floor text box");
 		wt.isDisplayed(WhatFloorIsLaundryOn_InnerText, "What floor is laundry on text box");
+	}  
+   public void VerifyUpdateAndContinueWhenSelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive(String ClosestrelativeDistance) {
+	   wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in");
+	   wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On the scale of five own dropdown");
+	   wt.click(OntheScaledropDown_option2, "Option 2");
+	   wt.click(accordian, "Parent Accordian");
+	   wt.click(ClosestRelativeDropdown, "Closest relative dropdown");
+	   wt.click(ClosestrelativeContent, "Closest relataive");
+	   wt.sendValue(HowManyMilesToClosestRelative, ClosestrelativeDistance, "Closest relative textbox");
+	   wt.click(WouldYouConsiderLivingWithAChildCheckBox_No, "Would you consider living with child and family member No radio button");
+	   wt.click(WouldYouConsiderMovingToCondoniumCheckBox_No, "Would you consider to moving to condonium No radio button");
+	   wt.click(WouldYouConsiderMovingToLifeStyleComunity_No, "Would you consider to moving Lifestylke community No radio button");
+	   wt.click(WouldYouConsiderMovingRetirementCommunity_No, "Would you consider to moving retirement community");
+	   wt.click(AreYouComfortableHavingCareGiverCheckBox_No, "Are you comfortable to having caregiver No radio button");
+	   wt.click(IsYourHomeSuitableForLiveACareGiverCheckBox_No, "Is your home suitable to live No Radio button");
+	   wt.sendValue(WhatYearWasYourHomeBuiltTB, "2024", "What year was home built");
+	   wt.sendValue(whatIsTheMaintainedYardSizeTB, "34 feet", "What is the Maintained yard size? Text Box" );
+	   wt.sendValue(WhatIsYourHomeSquareFootageTB, "52 foot", "What is your home square footage?");
+	   wt.sendValue(WhatAreTheDoorWidthTB, "67 feet", "What are the door widths");
+	   wt.click(HowManyStoryDoesItHave_DropDown, "How many story does it have dropdown");
+	   wt.click(HowManyStoryDoesItHave_Option2, "Option 2");
+	   wt.sendValue(WhatAreTheHallwayWidthTB, "34 feet","What are the hallway widths?");
+	   wt.sendValue(HowManyStepDoYouHaveToClimbToGetFrontDoorTB, "45 ", "How many steps do you have to climb to get to the front door");
+	   wt.sendValue(HowManyStepsDoYouHaveToNevigateToBackYardTB, "53", "How many steps do you have to navigate to get to the backyard?");
+	   wt.sendValue(HowManyStepsDoYouhaveToNavigateHouseFromGarageTB, "78", "How many steps do you have to navigate to get in to the house from the garage (if house has a built-in garage)?");
+	   wt.click(IsItSplitLevelCheckBox_No, "Is it split level? No radio button");
+	   wt.sendValue(IsThereBedRoomOnMainFloor_TB, "No", "Is there a bedroom on the main floor(reachable without stairs)?");
+	   wt.sendValue(WhatFloorIslaundryOn_TB, "5th", "What floor is laundry on");
+	   wt.click(updateAndContinueButton, "Update and continue button");
+	   CommonCode cmc=new CommonCode(wt);
+		cmc.verifyToasterMessage("Your data have been updated successfully");
 
-	}
+   }
+   public void VerifySaveAndProceedToProfessionalWhenSelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive() {
+	   wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in");
+	   wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On the scale of five own dropdown");
+	   wt.click(OntheScaledropDown_option2, "Option 2");
+	   wt.click(accordian, "Parent Accordian");
+	   wt.click(ClosestRelativeDropdown, "Closest relative dropdown");
+	   wt.click(ClosestrelativeContent, "Closest relataive");
+	   wt.sendValue(HowManyMilesToClosestRelative, "53", "Closest relative textbox");
+	   wt.click(WouldYouConsiderLivingWithAChildCheckBox_NotSure, "Would you consider living with child and family member Not sure radio button");
+	   wt.click(WouldYouConsidermovingToCondoniumCheckBox_NotSure, "Would you consider to moving to condonium Not sure radio button");
+	   wt.click(WouldyouConsiderMovingToLifeStyleCommunity_NotSure, "Would you consider to moving Lifestylke community Not sure radio button");
+	   wt.click(WouldYouConsiderToMovingRetirementComunity_NotSure, "Would you consider to moving retirement community");
+	   wt.click(AreYouComfortablehavingCareGiverCheckBox_NotSure, "Are you comfortable to having caregiver Not sure radio button");
+	   wt.click(IsYourHomeSuitableForLiveACareGiverCheckBox_NotSure, "Is your home suitable to live Not sure Radio button");
+	   wt.sendValue(WhatYearWasYourHomeBuiltTB, "2024", "What year was home built");
+	   wt.sendValue(whatIsTheMaintainedYardSizeTB, "34 feet", "What is the Maintained yard size? Text Box" );
+	   wt.sendValue(WhatIsYourHomeSquareFootageTB, "52 foot", "What is your home square footage?");
+	   wt.sendValue(WhatAreTheDoorWidthTB, "67 feet", "What are the door widths");
+	   wt.click(HowManyStoryDoesItHave_DropDown, "How many story does it have dropdown");
+	   wt.click(HowManyStoryDoesItHave_Option3, "Option 3");
+	   wt.sendValue(WhatAreTheHallwayWidthTB, "34 feet","What are the hallway widths?");
+	   wt.sendValue(HowManyStepDoYouHaveToClimbToGetFrontDoorTB, "45 ", "How many steps do you have to climb to get to the front door");
+	   wt.sendValue(HowManyStepsDoYouHaveToNevigateToBackYardTB, "53", "How many steps do you have to navigate to get to the backyard?");
+	   wt.sendValue(HowManyStepsDoYouhaveToNavigateHouseFromGarageTB, "78", "How many steps do you have to navigate to get in to the house from the garage (if house has a built-in garage)?");
+	   wt.click(IsItSplitLevelCheckBox_Yes, "Is it split level? Yes radio button");
+	   wt.sendValue(IsThereBedRoomOnMainFloor_TB, "No", "Is there a bedroom on the main floor(reachable without stairs)?");
+	   wt.sendValue(WhatFloorIslaundryOn_TB, "5th", "What floor is laundry on");  
+	   wt.click(SaveAndNextProfessional, "Save and next: professional button");
+	   CommonCode cmc=new CommonCode(wt);
+		cmc.verifyToasterMessage("Your data have been updated successfully");
 
-
+   }
 }
 
 

@@ -247,6 +247,10 @@ public class WebUtil {
 			System.out.println("failed." + ActualText + " is not got as inertext");
 		}
 	}
+	public void verifyColor(String xPath ) {
+	
+		
+	}
 	public void verifyInnerText(WebElement we ,String expectedInnerText ,String PageName ) {
 		String actualInnerText=	we.getText();
 	  

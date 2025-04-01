@@ -6,7 +6,12 @@
 		<classes>
 			<class
 				name="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript"> </class>
-			
+				
+				
+				 <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript"/>
+				
+				
+			   
 		</classes>
 	</test>
 </suite> 
