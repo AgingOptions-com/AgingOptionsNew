@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,46 +92,65 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,  6 skipped,  </span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript" class="method navigator-link" hash-for-method="VerifyClickIDoNotHaveRealtorCheckBox">VerifyClickIDoNotHaveRealtorCheckBox</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript" class="method navigator-link" hash-for-method="VerifyUpdateRealtorDetails">VerifyUpdateRealtorDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript" class="method navigator-link" hash-for-method="VerifyCopySameDataFunctionality">VerifyCopySameDataFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript" class="method navigator-link" hash-for-method="VerifyIdONotHaveRealtorCheckBoxFunctionality">VerifyIdONotHaveRealtorCheckBoxFunctionality</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript" class="method navigator-link" hash-for-method="VerifySaveAndAddAnotherPrimaryMemberRealtorDetails">VerifySaveAndAddAnotherPrimaryMemberRealtorDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript" class="method navigator-link" hash-for-method="VerifySaveAandNextProfessional_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive">VerifySaveAandNextProfessional_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript" class="method navigator-link" hash-for-method="VerifySaveAndAddAnotherSpouseRealtorDetails">VerifySaveAndAddAnotherSpouseRealtorDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript" class="method navigator-link" hash-for-method="VerifyUpdateAndContinue_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive">VerifyUpdateAndContinue_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript" class="method navigator-link" hash-for-method="VerifySaveAndContinueSpouseRealtorDetails">VerifySaveAndContinueSpouseRealtorDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript" class="method navigator-link" hash-for-method="verifyRealtorPageOnHousingProfessional">verifyRealtorPageOnHousingProfessional</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript" class="method navigator-link" hash-for-method="VerifySaveAndProceedSpouseRealtorDetails">VerifySaveAndProceedSpouseRealtorDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript" class="method navigator-link" hash-for-method="verifyToggleButton">verifyToggleButton</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript" class="method navigator-link" hash-for-method="VerifySaveAndproceedPrimaryMemberRealtorDetails">VerifySaveAndproceedPrimaryMemberRealtorDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript" class="method navigator-link" hash-for-method="verifyaddRealtorForPraimaryMember">verifyaddRealtorForPraimaryMember</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -143,248 +162,85 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyClickIDoNotHaveRealtorCheckBox">
-                  </a> <!-- VerifyClickIDoNotHaveRealtorCheckBox -->
-                  <span class="method-name">VerifyClickIDoNotHaveRealtorCheckBox</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;custom-select-field  full-width&apos;]/div/div[@class=&apos;dropdown-icon &apos;]&quot;}
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d38ae8af191f3a81d88166d3513df492, findElement {using=xpath, value=//div[@class=&apos;custom-select-field  full-width&apos;]/div/div[@class=&apos;dropdown-icon &apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63849}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63849/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d38ae8af191f3a81d88166d3513df492
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:324)
-	at com.agingoptions.activationpage.ActivationPage.selectMarriedRelationshipOptions(ActivationPage.java:57)
-	at com.nspl.agingoptions.commoncode.CommonCode.inputMarriedUserAcitvationPageDetails(CommonCode.java:101)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:128)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeClass(BaseTest.java:66)
+                  <a name="VerifyUpdateRealtorDetails">
+                  </a> <!-- VerifyUpdateRealtorDetails -->
+                  <span class="method-name">VerifyUpdateRealtorDetails</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Test345] but found [AqucgTest345]
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:873)
+	at com.Ao.HousingPage.HousingProfessionalDetailsPage.UpdateRealtorDetails(HousingProfessionalDetailsPage.java:370)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifyUpdateRealtorDetails(HousingProfessional_RealtorTestscript.java:110)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyIdONotHaveRealtorCheckBoxFunctionality">
-                  </a> <!-- VerifyIdONotHaveRealtorCheckBoxFunctionality -->
-                  <span class="method-name">VerifyIdONotHaveRealtorCheckBoxFunctionality</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;custom-select-field  full-width&apos;]/div/div[@class=&apos;dropdown-icon &apos;]&quot;}
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d38ae8af191f3a81d88166d3513df492, findElement {using=xpath, value=//div[@class=&apos;custom-select-field  full-width&apos;]/div/div[@class=&apos;dropdown-icon &apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63849}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63849/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d38ae8af191f3a81d88166d3513df492
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:324)
-	at com.agingoptions.activationpage.ActivationPage.selectMarriedRelationshipOptions(ActivationPage.java:57)
-	at com.nspl.agingoptions.commoncode.CommonCode.inputMarriedUserAcitvationPageDetails(CommonCode.java:101)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:128)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeClass(BaseTest.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyRealtorPageOnHousingProfessional">
-                  </a> <!-- verifyRealtorPageOnHousingProfessional -->
-                  <span class="method-name">verifyRealtorPageOnHousingProfessional</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;custom-select-field  full-width&apos;]/div/div[@class=&apos;dropdown-icon &apos;]&quot;}
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d38ae8af191f3a81d88166d3513df492, findElement {using=xpath, value=//div[@class=&apos;custom-select-field  full-width&apos;]/div/div[@class=&apos;dropdown-icon &apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63849}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63849/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d38ae8af191f3a81d88166d3513df492
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:324)
-	at com.agingoptions.activationpage.ActivationPage.selectMarriedRelationshipOptions(ActivationPage.java:57)
-	at com.nspl.agingoptions.commoncode.CommonCode.inputMarriedUserAcitvationPageDetails(CommonCode.java:101)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:128)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeClass(BaseTest.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyToggleButton">
-                  </a> <!-- verifyToggleButton -->
-                  <span class="method-name">verifyToggleButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;custom-select-field  full-width&apos;]/div/div[@class=&apos;dropdown-icon &apos;]&quot;}
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d38ae8af191f3a81d88166d3513df492, findElement {using=xpath, value=//div[@class=&apos;custom-select-field  full-width&apos;]/div/div[@class=&apos;dropdown-icon &apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63849}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63849/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d38ae8af191f3a81d88166d3513df492
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:324)
-	at com.agingoptions.activationpage.ActivationPage.selectMarriedRelationshipOptions(ActivationPage.java:57)
-	at com.nspl.agingoptions.commoncode.CommonCode.inputMarriedUserAcitvationPageDetails(CommonCode.java:101)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:128)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeClass(BaseTest.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifySaveAandNextProfessional_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive">
-                  </a> <!-- VerifySaveAandNextProfessional_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive -->
-                  <span class="method-name">VerifySaveAandNextProfessional_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@id=&apos;mainBody&apos;]//div[@class=&apos;roleOptions&apos;])[1]&quot;}
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [926ae4ee1a205685d0dccc0d62f6862e, findElement {using=xpath, value=(//div[@id=&apos;mainBody&apos;]//div[@class=&apos;roleOptions&apos;])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63498/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 926ae4ee1a205685d0dccc0d62f6862e
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:324)
-	at com.nspl.agingoptions.commoncode.CommonCode.gotoClickParalegalOptions(CommonCode.java:195)
-	at com.nspl.agingoptions.commoncode.CommonCode.loginWithParalegalYopmail(CommonCode.java:279)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeClass(BaseTest.java:65)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
+                  <a name="VerifyCopySameDataFunctionality">
+                  </a> <!-- VerifyCopySameDataFunctionality -->
+                  <span class="method-name">VerifyCopySameDataFunctionality</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyUpdateAndContinue_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive">
-                  </a> <!-- VerifyUpdateAndContinue_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive -->
-                  <span class="method-name">VerifyUpdateAndContinue_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@id=&apos;mainBody&apos;]//div[@class=&apos;roleOptions&apos;])[1]&quot;}
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [926ae4ee1a205685d0dccc0d62f6862e, findElement {using=xpath, value=(//div[@id=&apos;mainBody&apos;]//div[@class=&apos;roleOptions&apos;])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63498/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 926ae4ee1a205685d0dccc0d62f6862e
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:324)
-	at com.nspl.agingoptions.commoncode.CommonCode.gotoClickParalegalOptions(CommonCode.java:195)
-	at com.nspl.agingoptions.commoncode.CommonCode.loginWithParalegalYopmail(CommonCode.java:279)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeClass(BaseTest.java:65)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
+                  <a name="VerifySaveAndAddAnotherPrimaryMemberRealtorDetails">
+                  </a> <!-- VerifySaveAndAddAnotherPrimaryMemberRealtorDetails -->
+                  <span class="method-name">VerifySaveAndAddAnotherPrimaryMemberRealtorDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySaveAndAddAnotherSpouseRealtorDetails">
+                  </a> <!-- VerifySaveAndAddAnotherSpouseRealtorDetails -->
+                  <span class="method-name">VerifySaveAndAddAnotherSpouseRealtorDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySaveAndContinueSpouseRealtorDetails">
+                  </a> <!-- VerifySaveAndContinueSpouseRealtorDetails -->
+                  <span class="method-name">VerifySaveAndContinueSpouseRealtorDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySaveAndProceedSpouseRealtorDetails">
+                  </a> <!-- VerifySaveAndProceedSpouseRealtorDetails -->
+                  <span class="method-name">VerifySaveAndProceedSpouseRealtorDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySaveAndproceedPrimaryMemberRealtorDetails">
+                  </a> <!-- VerifySaveAndproceedPrimaryMemberRealtorDetails -->
+                  <span class="method-name">VerifySaveAndproceedPrimaryMemberRealtorDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyaddRealtorForPraimaryMember">
+                  </a> <!-- verifyaddRealtorForPraimaryMember -->
+                  <span class="method-name">verifyaddRealtorForPraimaryMember</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -397,7 +253,6 @@ Session ID: 926ae4ee1a205685d0dccc0d62f6862e
 &lt;suite name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.nspl.HousingInfoPageTestcase.HousingInfoTestScript&quot;/&gt;
       &lt;class name=&quot;com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -412,7 +267,7 @@ Session ID: 926ae4ee1a205685d0dccc0d62f6862e
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -438,36 +293,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifySaveAandNextProfessional_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive')
-data.setCell(0, 2, 'com.nspl.HousingInfoPageTestcase.HousingInfoTestScript')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'VerifyUpdateRealtorDetails')
+data.setCell(0, 2, 'com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript')
+data.setCell(0, 3, 74166);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyToggleButton')
+data.setCell(1, 1, 'VerifyCopySameDataFunctionality')
 data.setCell(1, 2, 'com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 70521);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyUpdateAndContinue_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive')
-data.setCell(2, 2, 'com.nspl.HousingInfoPageTestcase.HousingInfoTestScript')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'VerifySaveAndproceedPrimaryMemberRealtorDetails')
+data.setCell(2, 2, 'com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript')
+data.setCell(2, 3, 53604);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VerifyIdONotHaveRealtorCheckBoxFunctionality')
+data.setCell(3, 1, 'VerifySaveAndProceedSpouseRealtorDetails')
 data.setCell(3, 2, 'com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 53138);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyRealtorPageOnHousingProfessional')
+data.setCell(4, 1, 'VerifySaveAndAddAnotherSpouseRealtorDetails')
 data.setCell(4, 2, 'com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 52844);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'VerifyClickIDoNotHaveRealtorCheckBox')
+data.setCell(5, 1, 'VerifySaveAndAddAnotherPrimaryMemberRealtorDetails')
 data.setCell(5, 2, 'com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 50570);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyaddRealtorForPraimaryMember')
+data.setCell(6, 2, 'com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript')
+data.setCell(6, 3, 50050);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'VerifySaveAndContinueSpouseRealtorDetails')
+data.setCell(7, 2, 'com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript')
+data.setCell(7, 3, 46789);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -482,46 +345,19 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">15 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterSuite</span>
+                <span class="ignored-method-name">verifyToggleButton</span>
                 <br/>
-                <span class="ignored-method-name">beforeSuite</span>
+                <span class="ignored-method-name">verifyRealtorPageOnHousingProfessional</span>
                 <br/>
-                <span class="ignored-method-name">afterTest</span>
+                <span class="ignored-method-name">VerifyClickIDoNotHaveRealtorCheckBox</span>
                 <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">VerifyHowManyStoriesDoesItHaveDropdownContent</span>
-                <br/>
-                <span class="ignored-method-name">VerifySelectNoCheckBox_IsYourHousingLivingIn___</span>
-                <br/>
-                <span class="ignored-method-name">VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection</span>
-                <br/>
-                <span class="ignored-method-name">VerifyOnTheScaleOfOneTwoFive_Select1</span>
-                <br/>
-                <span class="ignored-method-name">VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked</span>
-                <br/>
-                <span class="ignored-method-name">VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave</span>
-                <br/>
-                <span class="ignored-method-name">verifyHousingInformation</span>
-                <br/>
-                <span class="ignored-method-name">VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</span>
-                <br/>
-                <span class="ignored-method-name">VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked</span>
-                <br/>
-                <span class="ignored-method-name">verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____</span>
-                <br/>
-                <span class="ignored-method-name">VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</span>
+                <span class="ignored-method-name">VerifyIdONotHaveRealtorCheckBoxFunctionality</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -533,40 +369,128 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">257 ms</span>
+                <span class="method-start">306 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">324 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.verifyaddRealtorF...)</span>
+                <span class="method-start">109331 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyaddRealtorForPraimaryMember</span>
+                <span class="method-start">109341 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyaddRealtorForPraimaryMember status=SUCCESS method=HousingProfessional_Realtor...)</span>
+                <span class="method-start">159401 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndAddA...)</span>
+                <span class="method-start">160288 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifySaveAndAddAnotherPrimaryMemberRealtorDetails</span>
+                <span class="method-start">160290 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifySaveAndAddAnotherPrimaryMemberRealtorDetails status=SUCCESS method=HousingPro...)</span>
+                <span class="method-start">210865 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndproc...)</span>
+                <span class="method-start">210956 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifySaveAndproceedPrimaryMemberRealtorDetails</span>
+                <span class="method-start">210958 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifySaveAndproceedPrimaryMemberRealtorDetails status=SUCCESS method=HousingProfes...)</span>
+                <span class="method-start">264570 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndCont...)</span>
+                <span class="method-start">264632 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifySaveAndContinueSpouseRealtorDetails</span>
+                <span class="method-start">264632 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifySaveAndContinueSpouseRealtorDetails status=SUCCESS method=HousingProfessional...)</span>
+                <span class="method-start">311432 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">VerifySaveAndAddAnotherSpouseRealtorDetails</span>
+                <span class="method-start">311513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndAddA...)</span>
+                <span class="method-start">311513 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifySaveAndAddAnotherSpouseRealtorDetails status=SUCCESS method=HousingProfession...)</span>
+                <span class="method-start">364365 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">VerifySaveAndProceedSpouseRealtorDetails</span>
+                <span class="method-start">364418 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndProc...)</span>
+                <span class="method-start">364418 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifySaveAndProceedSpouseRealtorDetails status=SUCCESS method=HousingProfessional_...)</span>
+                <span class="method-start">417565 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifyCopySameDat...)</span>
+                <span class="method-start">417622 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCopySameDataFunctionality</span>
+                <span class="method-start">417624 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifyCopySameDataFunctionality status=SUCCESS method=HousingProfessional_RealtorTe...)</span>
+                <span class="method-start">488150 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifyUpdateRealt...)</span>
+                <span class="method-start">488209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">275 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">81000 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.nspl.HousingInfoPageTestcase.HousingInfoTestScript</div> <!-- chronological-class-name -->
+                <span class="method-name">VerifyUpdateRealtorDetails</span>
+                <span class="method-start">488211 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifyUpdateRealtorDetails status=FAILURE method=HousingProfessional_RealtorTestscr...)</span>
+                <span class="method-start">562384 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">562664 ms</span>
+              </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">276866 ms</span>
+                <span class="method-start">562692 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">277081 ms</span>
+                <span class="method-start">562818 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -65,5 +65,5 @@ public class HousingProfessional_realtor extends HousingProfessional_RealtorOr {
 		wt.click(highlightedtoggleButton, "Highlighted toggle button");
 		wt.click(NonHighlighted, "uncolored toggle button");
 	
-}}
-	
+}
+}

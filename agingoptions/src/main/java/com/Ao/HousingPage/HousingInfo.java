@@ -211,7 +211,7 @@ public class HousingInfo extends HousingInfoOr{
 
    }
    public void VerifySaveAndProceedToProfessionalWhenSelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive() {
-	   wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in");
+	   wt.click(IsYourHousingLivingNotSureCheckBox, "Is the house you are living in");
 	   wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On the scale of five own dropdown");
 	   wt.click(OntheScaledropDown_option2, "Option 2");
 	   wt.click(accordian, "Parent Accordian");

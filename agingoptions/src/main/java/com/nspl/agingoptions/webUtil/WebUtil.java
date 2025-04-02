@@ -1533,6 +1533,7 @@ public class WebUtil {
 
 	public void clearTextBox(WebElement webEle) {
 		try {
+			
 			webEle.clear();
 		} catch (Exception e) {
 			e.printStackTrace();

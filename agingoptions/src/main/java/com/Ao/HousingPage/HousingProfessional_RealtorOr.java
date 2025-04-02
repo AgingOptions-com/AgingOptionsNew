@@ -48,4 +48,6 @@ public class HousingProfessional_RealtorOr {
 	
 	@FindBy(xpath="//div[@class='btn-div addBorderToToggleButton ms-auto']//button[@class='view-btn ']")
 	protected WebElement NonHighlighted;
+	
+	
 }
