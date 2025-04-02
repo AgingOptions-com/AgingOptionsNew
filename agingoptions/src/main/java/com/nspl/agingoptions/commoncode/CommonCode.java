@@ -53,8 +53,12 @@ public class CommonCode extends CommonCodeOR {
 		util.sendValue(otpTB, otp, "OTP");
 		util.click(clickVerifyOtpBT, "Verify Otp button");
 		util.holdOn(Duration.ofSeconds(5));
-		util.waitUntilPresentInUI(selectAccountText, "Select Account Text");
-		util.waitUntilElementClickableAndClick(paralegalOption);
+		//util.waitUntilPresentInUI(selectAccountText, "Select Account Text");
+		try {
+			util.waitUntilElementClickableAndClick(paralegalOption);
+		}catch(Exception e) {
+			util.click(paralegalOption, "Paralegal Options");
+		}
 
 	}
 
@@ -267,4 +271,20 @@ public class CommonCode extends CommonCodeOR {
 	public void verifyPersonalInfoPage()  {
 		util.verifyInnerText(PersonalInformationIcon, "Personal Information", "Personal Information text");
 	}
+	
+	public void clickSaveContinueLaterButton() {
+		util.click(saveContinueLaterBT, "Save & Continue Later Button");
+	}
+	
+	public void clickSaveAddAnotherButton() {
+		util.click(saveAddAnotherBT, "Save & Add Another button");
+	}
+	
+	public void clickPreviousButton() {
+		util.click(previousButton, "Previous Button");
+	}
+
+
+
+
 }

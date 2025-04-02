@@ -162,7 +162,13 @@ public class PrimaryCarePhysician {
 	}
 
 	public void uncheckIDontHavePrimaryCarePhysician() {
+		util.waitUntilElementIsSelected(iDontHavePrimaryCarePhysicianCheckbox, 10);
 		util.unCheckCheckBox(iDontHavePrimaryCarePhysicianCheckbox, "I don't have Primary Care Physician");
+		try{
+			util.waitUntilElementIsDeselected(iDontHavePrimaryCarePhysicianCheckbox, 5);
+		}catch(Exception e) {
+			util.unCheckCheckBox(iDontHavePrimaryCarePhysicianCheckbox, "I don't have Primary Care Physician");
+		}
 	}
 
 	@FindBy(xpath="//p[contains(text(),'Contact Type')]/parent::div/div/div")
@@ -191,17 +197,17 @@ public class PrimaryCarePhysician {
 		util.sendValue(phoneNumberTB, cellNum, "Phone Number");
 		util.sendValue(emailTB,email , "Email");
 	}
-	
+
 	@FindBy(xpath="//h5[contains(text(),'Add another contact')]")
 	private WebElement addAnotherContactBT;
-	
+
 	public void clickAddAnotherContactButton() {
 		util.click(addAnotherContactBT, "Add Another button");
 	}
 
 	@FindBy(xpath="//input[@id='addressLine1']")
 	private WebElement addressLine1TB;
-	
+
 	public void inputAddress(String value) {
 		util.sendValue(addressLine1TB, value, "Address");
 		util.holdOn(Duration.ofSeconds(4));
@@ -210,14 +216,79 @@ public class PrimaryCarePhysician {
 		util.pressEnter();
 		util.pressTab();
 	}
-	
-	@FindBy(xpath="//button[contains(text(),'Save & Proceed to Radha')]")
+
+	@FindBy(xpath="//button[contains(text(),'Proceed')]")
 	private WebElement saveAndProceedToSpouseBT;
-	
+
 	public void clickSaveAndProceedToSpouseBT() {
 		util.click(saveAndProceedToSpouseBT, "Save & Proceed To Spouse Button");
 	}
-	
-	
+
+	@FindBy(xpath="//button[text()='Save & Continue later']")
+	private WebElement saveContinueLaterButton;
+
+	public void clickSaveContinueLateButton() {
+		util.click(saveContinueLaterButton, "Save & Continue Later Button");
+	}
+
+	public String getPrimaryCarePhysicianActualFirstName() {
+		String firstName=	util.GetAttributevalue(firstNameTB, "value");
+		return firstName;
+	}
+
+	public String getPrimaryCarePhysicianActualLastName() {
+		String lastName=	util.GetAttributevalue(lastNameTB, "value");
+		return lastName;
+	}
+
+	public String getPrimaryCarePhysicianActualSpeciality() {
+		String speciality=	util.getInnerText(specialistyDropDown);
+		return speciality;
+	}
+
+	public String getAffiliatedHospitalActualText() {
+		String actualText=	util.GetAttributevalue(affiliatedHospitalTB, "value");
+		return actualText;
+	}
+
+	public String getWebSiteLinkAcutalText() {
+		String text=	util.GetAttributevalue(websiteNameTB, "value");
+		return text;
+	}
+
+	public String getYearAsYourDoctorText() {
+		String text=	util.GetAttributevalue(yearAsYourDoctorTB, "value");
+		return text;
+	}
+
+	public String getNotesToAgentsText() {
+		String text=	util.GetAttributevalue(notesForAgentsTB, "value");
+		return text;
+	}
+
+	@FindBy(xpath="(//div[normalize-space()='Physical Address'])[1]")
+	private WebElement physicalAddressText;
+
+	public String getPhysicalAddressText() {
+		String actualText=	util.getInnerText(physicalAddressText);
+		return actualText ;
+	}
+
+	@FindBy(xpath="(//div[normalize-space()='Primary contact'])[1]")
+	private WebElement primaryContactText;
+
+	public String getPrimaryAddressText() {
+		String actualText=	util.getInnerText(primaryContactText);
+		return actualText ;
+	}
+
+	@FindBy(xpath="//button[contains(text(),'Personal Details')]")
+	private WebElement personalDetailsAccordian;
+
+	public void openPersonalDetailsAccoordian() {
+		util.openAccordion(personalDetailsAccordian, "Personal Details Accordian");
+	}
+
+
 
 }

@@ -6,27 +6,27 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases">
+      <class name="com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="TC_007_Health_LifeStyleGeneralHealthNutritionDetails"/>
+          <include name="TC_021_PrimaryMemberSpecialistSaveDetailsSaveContinueLaterButton"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases -->
+      </class> <!-- com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases -->
       <class name="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
+          <include name="TC_018_inputSpouseCarePhysicianAndSave"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
-          <include name="TC_017_inputPrimaryMemberCarePhysicianAndSave"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>

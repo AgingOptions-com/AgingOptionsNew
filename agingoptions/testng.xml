@@ -24,9 +24,9 @@
 			<class
 				name="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases">
 			</class>
-			<!--<class
-				name="com.nspl.HousingInfoPageTestcase.PrimaryCarePhysicianTestCase">
-			</class>-->
+			<class
+				name="com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases">
+			</class>
 		</classes>
 	</test>
 </suite> 

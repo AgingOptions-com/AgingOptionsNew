@@ -62,7 +62,7 @@ public class FamilyMedicalHistory {
 		util.waitUntilElementToBeClickable(familyMedicalHistorySideBarLink);
 		util.holdOn(Duration.ofSeconds(1));
 		util.waitUntilElementClickableAndClick(familyMedicalHistorySideBarLink);
-		util.clickActions(familyMedicalHistorySideBarLink, "Family Medical History Side Bar Link");
+		util.clickJavaScript(familyMedicalHistorySideBarLink, "Family Medical History Side Bar Link");
 	}
 
 	@FindBy(xpath="//button[contains(text(),'My Parent Information')]")

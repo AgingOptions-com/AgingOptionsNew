@@ -1925,4 +1925,36 @@ public class WebUtil {
 		}
 	}
 
+	public void waitUntilElementIsSelected(WebElement we, long time) {
+		try {
+			WebDriverWait wait=	new WebDriverWait(driver, Duration.ofSeconds(time));
+			wait.until(ExpectedConditions.elementToBeSelected(we));
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public void waitUntilElementIsDeselected(WebElement we, long time) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+			wait.until(ExpectedConditions.not(ExpectedConditions.elementToBeSelected(we)));
+			System.out.println("Element is deselected successfully.");
+		} catch (Exception e) {
+			System.out.println("Timeout: Element is still selected after waiting.");
+		} 
+	}
+	public void waitUntilValueIsSend(WebElement we,long time, String text) {
+		try{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+		 we.clear();
+	     we.sendKeys(text);
+		wait.until(ExpectedConditions.textToBePresentInElementValue(we, text));
+		}catch(Exception e) {
+			 System.out.println("Timeout: Text '" + text + "' was not found in the field within " + time + " seconds.");
+		}
+	}
+
+
+
+
 }
