@@ -63,6 +63,7 @@ public class Specialists extends CommonCode {
 	private WebElement firstNameTB;
 
 	public void inputFirstName(String value) {
+		util.waitUntilPresentInUI(firstNameTB, "First Name");
 		util.sendValue(firstNameTB, value, "First Name");
 	}
 
@@ -134,6 +135,18 @@ public class Specialists extends CommonCode {
 		util.click(addictionAndSubstanceAbuseCounsellingOption, "Addiction and Substance Abuse Counseling");
 	}
 
+	@FindBy(xpath="//div[@id='dropDownDivId']/li[text()='Addiction Medicine']")
+	private WebElement addictionMedicineDropDownOption;
+
+	public void selectAddictionMedicineSpeciality() {
+		util.holdOn(Duration.ofSeconds(3));
+		clickSpecialityDropDown();
+		util.waitUntilElementToBeClickable(addictionMedicineDropDownOption);
+		util.click(addictionMedicineDropDownOption, "Addiction Medicine");
+	}
+
+
+
 	@FindBy(xpath="//img[@alt='Edit Icon']")
 	private WebElement editIcon;
 
@@ -193,6 +206,122 @@ public class Specialists extends CommonCode {
 		return actualText ;
 	}
 
+	@FindBy(xpath="//td[text()='Acupuncture']/following-sibling::td//img[@alt='Edit Icon']")
+	private WebElement AcupnctureSpecialistTable;
+
+	public void clickAcupnctureSpecialistEditIcon() {
+		util.click(AcupnctureSpecialistTable, "Edit icon");
+	}
+
+	@FindBy(xpath="//div[@id='dropDownDivId']/li[text()='Acupuncture']")
+	private WebElement AcupunctureOption;
+
+	@FindBy(xpath="//div[@id='specialty']")
+	private WebElement specialistyDropDown;
+
+	public void SelectAcupunctureDDOption() {
+		util.click(specialistyDropDown, "Specialist Drop Down");
+		util.click(AcupunctureOption, "Acupuncture ");
+	}
+
+	@FindBy(xpath="//p[text()='Copy same data to spouse']/parent::div//input")
+	private WebElement copySameDataToSpouseCheckBox;
+
+	public void checkCopySameDataToSpouseCheckBox() {
+		try {
+			util.waitUntilElementIsDeselected(copySameDataToSpouseCheckBox, 10);
+			util.checkCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
+			util.waitUntilElementIsSelected(copySameDataToSpouseCheckBox, 5);
+		}catch(Exception e) {
+			util.checkCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
+		}
+	}
+
+	@FindBy(xpath="(//td[text()='Acupuncture']/following-sibling::td)[2]")
+	private WebElement acupunctureSpecialistEmail;
+
+	public String getAcupunctureSpecialistEmail() {
+		String emailText=	util.getInnerText(acupunctureSpecialistEmail);
+		return emailText;
+	}
+
+	@FindBy(xpath="//div[@id='dropDownDivId']/li[text()='Other']")
+	private WebElement otherDDOption;
+
+	public void selectOtherSpecilaistOptions() {
+		util.holdOn(Duration.ofSeconds(1));
+		util.click(specialistyDropDown, "Specialist Drop Down");
+		util.click(otherDDOption, "Other Option");
+	}
+
+	@FindBy(xpath="//input[@id='other']")
+	private WebElement otherTB;
+
+	public void inputOtherTextBox(String value) {
+		util.sendValue(otherTB, value, "Other Text Box");
+	}
+
+	public String getOtherSpecialistInputValue() {
+		String value=	util.GetAttributevalue(otherTB, "value");
+		return value;
+	}
+
+	@FindBy(xpath="//td[@class='name ps-24']/following-sibling::td[text()='Teeth Specialist']/following-sibling::td//img[@alt='Edit Icon']")
+	private WebElement teethSpecialistTableText;
+
+	public String otherSpecialistEditIcon() {
+		String text=	util.getInnerText(teethSpecialistTableText);
+		return text;
+	}
+
+	public void clickOtherTeethSpecialistEditIcon() {
+		util.waitUntilElementToBeClickable(teethSpecialistTableText);
+		util.clickJavaScript(teethSpecialistTableText, "other Specialist");
+	}
+
+	@FindBy(xpath="//td[contains(text(),'Addiction and Substance Abuse Counseling')]/following-sibling::td//img[@alt='Edit Icon']")
+	private WebElement addictionAndSubstanceAbuseCoundelingTableEditIcon;
+
+	public void clickAddictionAndSubstanceAbuseCounselingEditIcon() {
+		util.click(addictionAndSubstanceAbuseCoundelingTableEditIcon, "Addiction and Substance Abuse Counseling");
+	}
+
+	@FindBy(xpath="//td[contains(text(),'Addiction Medicine')]/following-sibling::td//img[@alt='Edit Icon']")
+	private WebElement addictionMedicineEditIcon;
+
+	public void clickAddictionMedicineEditIcon() {
+		
+		util.click(addictionMedicineEditIcon, "Addiction Medicine");
+	}
+
+	@FindBy(xpath="//button[contains(text(),'Save & Proceed to health insurance')]")
+	private WebElement saveProceedToHealthInsuranceBT;
+	
+	public void clickSaveProceedToHealthInsuranceButton() {
+		util.click(saveProceedToHealthInsuranceBT, "Save & Proceed to health insurance");
+	}
+
+	@FindBy(xpath="//div[@id='dropDownDivId']/li[text()='Addiction Psychiatry']")
+	private WebElement specialityAddictionPsychiatryDDOptions;
+	
+	public void selectAddictionPsychiatrySpecialistOptions() {
+	   util.click(specialistyDropDown, "Speciality Drop Down");
+	   util.click(specialityAddictionPsychiatryDDOptions, "Addiction Psychiatry");
+	}
+	
+	@FindBy(xpath="//td[contains(text(),'Addiction Psychiatry')]/following-sibling::td//img[@alt='Edit Icon']")
+	private WebElement addictionPsychiatryEditBT;
+	
+	public void clickAddictionPsychiatryEditBTTable() {
+		util.click(addictionPsychiatryEditBT, "Addiction Psychiatry");
+	}
+	
+	@FindBy(xpath="//div[@class='toaster_T']/following-sibling::h6")
+	private WebElement toasterMessage;
+	
+	public void waitUntilToasterMessageisHide() {
+		util.waitUntilElementIsDisappearFromThePage(toasterMessage, 0);
+	}
 
 
 }
