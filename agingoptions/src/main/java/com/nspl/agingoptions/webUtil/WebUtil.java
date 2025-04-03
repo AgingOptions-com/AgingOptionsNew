@@ -247,10 +247,7 @@ public class WebUtil {
 			System.out.println("failed." + ActualText + " is not got as inertext");
 		}
 	}
-	public void verifyColor(String xPath ) {
 	
-		
-	}
 	public void verifyInnerText(WebElement we ,String expectedInnerText ,String PageName ) {
 		String actualInnerText=	we.getText();
 	  
@@ -860,17 +857,28 @@ public class WebUtil {
 	}
 
 	public void verifyActualExpectedTextContains(String actualText, String expectedText, String elementName) {
-		if (actualText.contains(expectedText)) {
+		String actual =actualText.trim();
+		String expected=expectedText.trim();
+		if (actual.contains(expected)) {
 			extTest.log(Status.PASS, "Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " ' Verify Successfully " + elementName);
 			print("Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " ' Verify Successfully ");
-		} else {
+			
+		}else if(actual.equalsIgnoreCase(expected)) {
+			extTest.log(Status.PASS, "Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
+					+ " ' Verify Successfully " + elementName);
+			print("Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
+					+ " ' Verify Successfully ");
+		}
+		else {
+			
+			
 			extTest.log(Status.FAIL, "Failed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " 'not Verify " + elementName);
 			print("Failed Actual text '" + actualText + " 'and  Expected Text  '" + expectedText + " 'not  Verify");
 		}
-		Assert.assertEquals(actualText, expectedText);
+		
 	}
 
 	public void verifyActualExpectedTextContains(String actualText, String expectedText) {

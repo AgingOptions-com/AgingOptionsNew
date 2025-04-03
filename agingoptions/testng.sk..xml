@@ -8,9 +8,9 @@
 <!--				name="com.nspl.HousingInfoPageTestcase.HousingInfoTestScript"> </class>-->
 				
 				
-				 <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript"/>
-				
-				
+<!--				 <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript"/>-->
+				<class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript"/>
+				<class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript"/>
 			   
 		</classes>
 	</test>

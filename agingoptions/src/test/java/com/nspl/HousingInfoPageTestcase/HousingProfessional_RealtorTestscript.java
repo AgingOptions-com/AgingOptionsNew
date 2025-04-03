@@ -46,8 +46,11 @@ public void verifyRealtorPageOnHousingProfessional() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
 		util.holdOn(Duration.ofSeconds(4));
+		HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
+    	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
+    	util.holdOn(Duration.ofSeconds(3));
 	HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
-	housingProfessionalObj.addRealtorForPrimaryMember();
+	housingProfessionalObj.addProfessionalForPrimaryMember();
 	
 	}
 	@Test(priority = 6)
@@ -55,8 +58,11 @@ public void verifyRealtorPageOnHousingProfessional() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
 		util.holdOn(Duration.ofSeconds(4));	
+		HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
+    	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
+    	util.holdOn(Duration.ofSeconds(3));
 		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
-		housingProfessionalObj.SaveAndAddAnotherprimaryMemberRealtorDetails();
+		housingProfessionalObj.SaveAndAddAnotherprimaryMemberProfessionalDetails();
 	}
 	
 	@Test(priority = 7)
@@ -64,8 +70,11 @@ public void verifyRealtorPageOnHousingProfessional() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickHousingModule();	
 			util.holdOn(Duration.ofSeconds(4));	
+			HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
+	    	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
+	    	util.holdOn(Duration.ofSeconds(3));
 			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util); 
-			housingProfessionalObj.saveAndProceedPrimaryMemberRealtorDetail();
+			housingProfessionalObj.saveAndProceedPrimaryMemberProfessionalDetail();
 	 
 	 }
 	@Test(priority = 8)
@@ -73,24 +82,33 @@ public void verifyRealtorPageOnHousingProfessional() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
 		util.holdOn(Duration.ofSeconds(4));	
+		HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
+    	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
+    	util.holdOn(Duration.ofSeconds(3));
 		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
-		housingProfessionalObj.saveAndContinueRealtorDetailsForSpouse();
+		housingProfessionalObj.saveAndContinueProfessionalDetailsForSpouse();
 	}
 	@Test(priority = 9)
 	public void VerifySaveAndAddAnotherSpouseRealtorDetails() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
 		util.holdOn(Duration.ofSeconds(4));	
+		HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
+    	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
+    	util.holdOn(Duration.ofSeconds(3));
 		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
-		housingProfessionalObj.SaveAndAddAnotherSpouseRealtorDetails();
+		housingProfessionalObj.SaveAndAddAnotherSpouseProfessionalDetails();
 	}
 	@Test(priority = 10)
 	public void VerifySaveAndProceedSpouseRealtorDetails() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
 		util.holdOn(Duration.ofSeconds(4));	
+		HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
+    	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
+    	util.holdOn(Duration.ofSeconds(3));
 		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
-		housingProfessionalObj.SaveAndProceedSpouseRealtorDetails();
+		housingProfessionalObj.SaveAndProceedSpouseProfessionalDetails();
 	}
 	
 	@Test(priority = 11)
@@ -98,16 +116,22 @@ public void verifyRealtorPageOnHousingProfessional() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
 		util.holdOn(Duration.ofSeconds(4));	
+		HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
+    	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
+    	util.holdOn(Duration.ofSeconds(3));
 		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
-		housingProfessionalObj.copysamedataToSpouseRealtorDetails();
+		housingProfessionalObj.copysamedataToSpouseProfessionalDetails();
 	}
 	 @Test(priority = 12)
 	public void VerifyUpdateRealtorDetails() {
 		 LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickHousingModule();	
 			util.holdOn(Duration.ofSeconds(4));	
+			HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
+	    	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
+	    	util.holdOn(Duration.ofSeconds(3));
 			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
-			housingProfessionalObj.UpdateRealtorDetails();
+			housingProfessionalObj.UpdateProfessionalDetails();
 	}
 	
 	

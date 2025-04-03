@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript">
+      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
+          <include name="VerifyUpdateHandymanDetails"/>
           <include name="afterTest"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
-          <include name="VerifyUpdateRealtorDetails"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript -->
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -85,7 +85,7 @@ public class HousingProfessionalDetailspageOr {
    
    @FindBy(xpath="//button[text()='Save & Add Another']/following-sibling::button")
    protected WebElement SaveAndProceedTo;
-	@FindBy(xpath="//button[text()='Add Realtor']")
+	@FindBy(xpath="(//div[@class='search']/following::button)[1]")
 	protected WebElement AddRealtorButton;
 	
 	@FindBy(xpath="//input[@id='addressLine1']")
@@ -109,7 +109,7 @@ public class HousingProfessionalDetailspageOr {
 	@FindBy(xpath="(//div[@class='btn-div addBorderToToggleButton ms-auto']//button)[1]")
 	protected WebElement primaryMemberToggleButton;
 	
-	@FindBy(xpath="(//p[text()='Mortgage Brokers'])[2]")
+	@FindBy(xpath="//div[@class='header-box']//p")
 	protected WebElement mortgageBrokerinnerText;
 	
 	@FindBy(xpath="//span[text()='Realtor']")
@@ -121,4 +121,20 @@ public class HousingProfessionalDetailspageOr {
 	@FindBy(xpath="//button[text()='Update']")
 	protected WebElement UpdateButton;
 	
+	@FindBy(xpath="//span[text()='Mortgage Broker']")
+	protected WebElement MortgageBrokerSection;
+	@FindBy(xpath="//span[text()=' Legal information']")
+	protected WebElement LegalInfoInnerText;
+	
+	@FindBy(xpath="(//span[text()='Housing'])[2]")
+	protected WebElement HousingButtonUnderSetup;
+	
+	@FindBy(xpath="//span[text()='Housing Professionals']")
+	protected WebElement HousoingProfessionalsecton;
+	
+	@FindBy(xpath="//span[text()='Handyman']")
+	protected WebElement handyManSection;
+	
+	@FindBy(xpath="(//p[text()='Handyman Services'])[2]")
+	protected WebElement Handymaninnertext;
 }

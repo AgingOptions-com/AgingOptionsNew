@@ -31,7 +31,7 @@ public class LpoLandingPage {
 	private WebElement housingModule;
 	
 	public void clickHousingModule() {
-		util.holdOn(Duration.ofSeconds(3));
+		util.holdOn(Duration.ofSeconds(5));
 		util.waitUntilPresentInUI(housingModule, "Housing Module");
 		util.waitUntilElementToBeClickable(housingModule);
 		util.click(housingModule, "Housing Module");
