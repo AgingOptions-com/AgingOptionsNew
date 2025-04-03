@@ -23,6 +23,7 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 		wt.sendValue(Zipcode, "10001", "ZipCode");
 	}
 	public void verifyClient() {
+		wt.waitUntilPresentInUI(highlightedtoggleButton, "Highlighted toggle button");
 	String text =wt.getInnerText(highlightedtoggleButton);
 	wt.print("we are going to fill detail for " + text);
 	
@@ -38,6 +39,7 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 		wt.click(handyManSection, "Handyan button");
 	}
 	public void GoToClickEditIcon() {
+		wt.waitUntilPresentInUI(Editicon, "edit icon");
 		wt.click(Editicon, "Edit Icon");
 	}
 	public void verifyMortgageBroker() {
@@ -74,7 +76,6 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
     }
     
     public void addProfessionalForPrimaryMember() {
-    	wt.holdOn(Duration.ofSeconds(4));
         verifyClient();
     	verifyAddedprofessionalCountInTable();
     	goToClickAddRealtorButton();
@@ -143,6 +144,7 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
     }
     
      public void  saveAndProceedPrimaryMemberProfessionalDetail() { 
+    	 wt.click(primaryMemberToggleButton, "Primary member toggle button");
      	verifyClient();
      	verifyAddedprofessionalCountInTable();
      	goToClickAddRealtorButton();
@@ -449,7 +451,8 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
         wt.holdOn(Duration.ofSeconds(5));
       String value=  wt.GetAttributevalue(FirstName, "value");
       wt.verifyActualExpectedTextContains(value, name+updatedName, "First name");
-     	
+      wt.holdOn(Duration.ofSeconds(5));
+      wt.click(UpdateButton, "Update button");	
      	
      	
         

@@ -135,6 +135,6 @@ public class HousingProfessionalDetailspageOr {
 	@FindBy(xpath="//span[text()='Handyman']")
 	protected WebElement handyManSection;
 	
-	@FindBy(xpath="(//p[text()='Handyman Services'])[2]")
+	@FindBy(xpath="//p[text()='Handyman Services']")
 	protected WebElement Handymaninnertext;
 }

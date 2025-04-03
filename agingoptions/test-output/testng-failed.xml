@@ -7,9 +7,7 @@
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
-          <include name="VerifySaveAndproceedPrimaryMemberHandyManDetails"/>
           <include name="afterTest"/>
-          <include name="VerifyUpdateHandymanDetails"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>
@@ -18,21 +16,6 @@
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript -->
-      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="verifyToggleButton"/>
-          <include name="afterTest"/>
-          <include name="verifyaddMortgageForPraimaryMember"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="verifyMortgagePageOnHousingProfessional"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

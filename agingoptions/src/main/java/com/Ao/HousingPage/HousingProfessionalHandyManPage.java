@@ -49,7 +49,8 @@ public class HousingProfessionalHandyManPage extends HousingProfessionalHandyman
 		wt.click(HousingProfessionalButton, "Housing Professional button");
     	wt.holdOn(Duration.ofSeconds(8));
     	wt.click(HandyManSection, "Handyman Secton");
-    	wt.holdOn(Duration.ofSeconds(8));
+    	wt.holdOn(Duration.ofSeconds(6));
+    	wt.waitUntilPresentInUI(highlightedtoggleButton, "Highlighted toggle button");
 		wt.click(highlightedtoggleButton, "Highlighted toggle button");
 		wt.click(NonHighlighted, "uncolored toggle button");
 		

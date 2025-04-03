@@ -1570,7 +1570,7 @@ public class WebUtil {
 
 	public void waitUntilPresentInUI(WebElement we, String elementName) {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOf(we));
 			extTest.log(Status.PASS, " Successfull Waited for  " + elementName + " element");
 		} catch (Exception e) {
