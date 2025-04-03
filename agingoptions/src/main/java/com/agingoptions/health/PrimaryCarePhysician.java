@@ -23,6 +23,7 @@ public class PrimaryCarePhysician {
 	public void clickHealthProfessionalLK() {
 		util.waitUntilElementToBeClickable(healthProfessionalLK);
 		util.waitUntilPresentInUI(healthProfessionalLK, "Health Professional Side Bar Link");
+		util.holdOn(Duration.ofSeconds(1));
 		util.click(healthProfessionalLK, "Health Professional");
 	}
 
@@ -125,7 +126,7 @@ public class PrimaryCarePhysician {
 	public void clickSpecialityDropDown() {
 		util.click(specialistyDropDown, "Specialisty Drop Down");
 	}
-
+	
 	@FindBy(xpath="//div[@id='dropDownDivId']/li[contains(text(),'Advanced Registered Nurse Practitioner (ARNP)')]")
 	private WebElement ARNPDropDownOption;
 
@@ -231,17 +232,17 @@ public class PrimaryCarePhysician {
 		util.click(saveContinueLaterButton, "Save & Continue Later Button");
 	}
 
-	public String getPrimaryCarePhysicianActualFirstName() {
+	public String getPrimaryCarePhysicianOrSpecialistActualFirstName() {
 		String firstName=	util.GetAttributevalue(firstNameTB, "value");
 		return firstName;
 	}
 
-	public String getPrimaryCarePhysicianActualLastName() {
+	public String getPrimaryCarePhysicianOrSpecialistActualLastName() {
 		String lastName=	util.GetAttributevalue(lastNameTB, "value");
 		return lastName;
 	}
 
-	public String getPrimaryCarePhysicianActualSpeciality() {
+	public String getPrimaryCarePhysicianOrSpecialistActualSpeciality() {
 		String speciality=	util.getInnerText(specialistyDropDown);
 		return speciality;
 	}
@@ -288,6 +289,8 @@ public class PrimaryCarePhysician {
 	public void openPersonalDetailsAccoordian() {
 		util.openAccordion(personalDetailsAccordian, "Personal Details Accordian");
 	}
+
+	
 
 
 

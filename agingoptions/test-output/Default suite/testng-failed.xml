@@ -8,12 +8,11 @@
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="TC_021_PrimaryMemberSpecialistSaveDetailsSaveContinueLaterButton"/>
-          <include name="afterMethod"/>
+          <include name="TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
-          <include name="TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases -->

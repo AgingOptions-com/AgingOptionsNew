@@ -92,9 +92,9 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(10));
 		primaryCare.clickPrimaryMemberToggleButton();
 		util.holdOn(Duration.ofSeconds(4));
-		String actualFirstName=	primaryCare.getPrimaryCarePhysicianActualFirstName();
-		String actualLastName=primaryCare.getPrimaryCarePhysicianActualLastName();
-		String actualSpecialityText=primaryCare.getPrimaryCarePhysicianActualSpeciality();
+		String actualFirstName=	primaryCare.getPrimaryCarePhysicianOrSpecialistActualFirstName();
+		String actualLastName=primaryCare.getPrimaryCarePhysicianOrSpecialistActualLastName();
+		String actualSpecialityText=primaryCare.getPrimaryCarePhysicianOrSpecialistActualSpeciality();
 		String actualAffiliatedText=	primaryCare.getAffiliatedHospitalActualText();
 		String webSiteLinkActualText=primaryCare.getWebSiteLinkAcutalText();
 		String yearAsSeenActualText=    primaryCare.getYearAsYourDoctorText();    
@@ -159,9 +159,9 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(3));
 		primaryCare.clickSpouseToggleButton();
 		util.holdOn(Duration.ofSeconds(4));
-		String actualFirstName=	primaryCare.getPrimaryCarePhysicianActualFirstName();
-		String actualLastName=primaryCare.getPrimaryCarePhysicianActualLastName();
-		String actualSpecialityText=primaryCare.getPrimaryCarePhysicianActualSpeciality();
+		String actualFirstName=	primaryCare.getPrimaryCarePhysicianOrSpecialistActualFirstName();
+		String actualLastName=primaryCare.getPrimaryCarePhysicianOrSpecialistActualLastName();
+		String actualSpecialityText=primaryCare.getPrimaryCarePhysicianOrSpecialistActualSpeciality();
 		String actualAffiliatedText=	primaryCare.getAffiliatedHospitalActualText();
 		String webSiteLinkActualText=primaryCare.getWebSiteLinkAcutalText();
 		String yearAsSeenActualText=    primaryCare.getYearAsYourDoctorText();    

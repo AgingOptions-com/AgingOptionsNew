@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="0" total="23" passed="22" failed="0" skipped="0">
+<testng-results retried="4" ignored="0" total="30" passed="23" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-02T17:21:52 IST" name="Suite" finished-at="2025-04-02T17:40:24 IST" duration-ms="1111903">
+  <suite started-at="2025-04-03T17:18:40 IST" name="Suite" finished-at="2025-04-03T17:43:52 IST" duration-ms="1512335">
     <groups>
     </groups>
-    <test started-at="2025-04-02T17:21:52 IST" name="Test" finished-at="2025-04-02T17:40:24 IST" duration-ms="1111903">
+    <test started-at="2025-04-03T17:18:40 IST" name="Test" finished-at="2025-04-03T17:43:52 IST" duration-ms="1512335">
       <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:21:52 IST" name="beforeSuite" finished-at="2025-04-02T17:21:52 IST" duration-ms="257" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:18:40 IST" name="beforeSuite" finished-at="2025-04-03T17:18:40 IST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:21:52 IST" name="beforeTest" finished-at="2025-04-02T17:23:06 IST" duration-ms="73591" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:18:40 IST" name="beforeTest" finished-at="2025-04-03T17:19:48 IST" duration-ms="67903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:23:06 IST" name="beforeClass" finished-at="2025-04-02T17:23:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:19:48 IST" name="beforeClass" finished-at="2025-04-03T17:19:48 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:23:06 IST" name="beforeMethod" finished-at="2025-04-02T17:23:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:19:48 IST" name="beforeMethod" finished-at="2025-04-03T17:19:48 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,15 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_001_Health_Personal_MedicalHistoryPage()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:23:06 IST" name="TC_001_Health_Personal_MedicalHistoryPage" finished-at="2025-04-02T17:23:27 IST" duration-ms="21677" status="PASS">
+        <test-method signature="TC_001_Health_Personal_MedicalHistoryPage()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:19:48 IST" name="TC_001_Health_Personal_MedicalHistoryPage" finished-at="2025-04-03T17:20:10 IST" duration-ms="21488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_001_Health_Personal_MedicalHistoryPage -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:23:27 IST" name="afterMethod" finished-at="2025-04-02T17:23:28 IST" duration-ms="409" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:20:10 IST" name="afterMethod" finished-at="2025-04-03T17:20:10 IST" duration-ms="307" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_001_Health_Personal_MedicalHistoryPage status=SUCCESS method=MarriedUserPersonalMedicalHistoryTestCases.TC_001_Health_Personal_MedicalHistoryPage()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5] output={null}]]]>
+                <![CDATA[[TestResult name=TC_001_Health_Personal_MedicalHistoryPage status=SUCCESS method=MarriedUserPersonalMedicalHistoryTestCases.TC_001_Health_Personal_MedicalHistoryPage()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -50,11 +50,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:23:28 IST" name="TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility" finished-at="2025-04-02T17:23:45 IST" depends-on-methods="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_001_Health_Personal_MedicalHistoryPage" duration-ms="17269" status="PASS">
+        <test-method signature="TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:20:10 IST" name="TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility" finished-at="2025-04-03T17:20:27 IST" depends-on-methods="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_001_Health_Personal_MedicalHistoryPage" duration-ms="17441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:23:28 IST" name="beforeMethod" finished-at="2025-04-02T17:23:28 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:20:10 IST" name="beforeMethod" finished-at="2025-04-03T17:20:10 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,11 +65,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:23:45 IST" name="afterMethod" finished-at="2025-04-02T17:23:45 IST" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:20:27 IST" name="afterMethod" finished-at="2025-04-03T17:20:27 IST" duration-ms="29" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility status=SUCCESS method=MarriedUserPersonalMedicalHistoryTestCases.TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5] output={null}]]]>
+                <![CDATA[[TestResult name=TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility status=SUCCESS method=MarriedUserPersonalMedicalHistoryTestCases.TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -81,11 +81,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:23:45 IST" name="TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility" finished-at="2025-04-02T17:23:54 IST" depends-on-methods="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_001_Health_Personal_MedicalHistoryPage" duration-ms="8613" status="PASS">
+        <test-method signature="TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:20:27 IST" name="TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility" finished-at="2025-04-03T17:20:36 IST" depends-on-methods="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_001_Health_Personal_MedicalHistoryPage" duration-ms="8682" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:23:45 IST" name="beforeMethod" finished-at="2025-04-02T17:23:45 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:20:27 IST" name="beforeMethod" finished-at="2025-04-03T17:20:27 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,11 +96,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:23:54 IST" name="afterMethod" finished-at="2025-04-02T17:23:54 IST" duration-ms="51" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:20:36 IST" name="afterMethod" finished-at="2025-04-03T17:20:36 IST" duration-ms="62" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility status=SUCCESS method=MarriedUserPersonalMedicalHistoryTestCases.TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5] output={null}]]]>
+                <![CDATA[[TestResult name=TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility status=SUCCESS method=MarriedUserPersonalMedicalHistoryTestCases.TC_003_Health_Personal_Medical_History_EnvironmentalLifeStyleFactorsElementVisibility()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -112,11 +112,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_004_Health_personal_Medical_History_BloodTypeSelection()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:23:54 IST" name="TC_004_Health_personal_Medical_History_BloodTypeSelection" finished-at="2025-04-02T17:24:14 IST" depends-on-methods="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_001_Health_Personal_MedicalHistoryPage" duration-ms="19941" status="PASS">
+        <test-method signature="TC_004_Health_personal_Medical_History_BloodTypeSelection()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:20:36 IST" name="TC_004_Health_personal_Medical_History_BloodTypeSelection" finished-at="2025-04-03T17:20:56 IST" depends-on-methods="com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_001_Health_Personal_MedicalHistoryPage" duration-ms="20022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_004_Health_personal_Medical_History_BloodTypeSelection -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:23:54 IST" name="beforeMethod" finished-at="2025-04-02T17:23:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:20:36 IST" name="beforeMethod" finished-at="2025-04-03T17:20:36 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,11 +127,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:24:14 IST" name="afterMethod" finished-at="2025-04-02T17:24:14 IST" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:20:56 IST" name="afterMethod" finished-at="2025-04-03T17:20:56 IST" duration-ms="24" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_004_Health_personal_Medical_History_BloodTypeSelection status=SUCCESS method=MarriedUserPersonalMedicalHistoryTestCases.TC_004_Health_personal_Medical_History_BloodTypeSelection()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5] output={null}]]]>
+                <![CDATA[[TestResult name=TC_004_Health_personal_Medical_History_BloodTypeSelection status=SUCCESS method=MarriedUserPersonalMedicalHistoryTestCases.TC_004_Health_personal_Medical_History_BloodTypeSelection()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -143,26 +143,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_005_Health_personal_Medical_History_MedicalConditionElement()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:24:14 IST" name="TC_005_Health_personal_Medical_History_MedicalConditionElement" finished-at="2025-04-02T17:24:39 IST" duration-ms="25230" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:20:56 IST" name="beforeMethod" finished-at="2025-04-03T17:20:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_005_Health_personal_Medical_History_MedicalConditionElement()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_005_Health_personal_Medical_History_MedicalConditionElement()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:20:56 IST" name="TC_005_Health_personal_Medical_History_MedicalConditionElement" finished-at="2025-04-03T17:21:21 IST" duration-ms="24444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_005_Health_personal_Medical_History_MedicalConditionElement -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:24:14 IST" name="beforeMethod" finished-at="2025-04-02T17:24:14 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:21:21 IST" name="afterMethod" finished-at="2025-04-03T17:21:21 IST" duration-ms="25" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases.TC_005_Health_personal_Medical_History_MedicalConditionElement()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:24:39 IST" name="afterMethod" finished-at="2025-04-02T17:24:39 IST" duration-ms="27" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_005_Health_personal_Medical_History_MedicalConditionElement status=SUCCESS method=MarriedUserPersonalMedicalHistoryTestCases.TC_005_Health_personal_Medical_History_MedicalConditionElement()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5] output={null}]]]>
+                <![CDATA[[TestResult name=TC_005_Health_personal_Medical_History_MedicalConditionElement status=SUCCESS method=MarriedUserPersonalMedicalHistoryTestCases.TC_005_Health_personal_Medical_History_MedicalConditionElement()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -174,11 +174,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails()[pri:6, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:24:39 IST" name="TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails" finished-at="2025-04-02T17:25:01 IST" duration-ms="21986" status="PASS">
+        <test-method signature="TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails()[pri:6, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:21:21 IST" name="TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails" finished-at="2025-04-03T17:21:42 IST" duration-ms="21938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:24:39 IST" name="beforeMethod" finished-at="2025-04-02T17:24:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:21:21 IST" name="beforeMethod" finished-at="2025-04-03T17:21:21 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -189,11 +189,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:25:01 IST" name="afterMethod" finished-at="2025-04-02T17:25:01 IST" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:21:43 IST" name="afterMethod" finished-at="2025-04-03T17:21:43 IST" duration-ms="34" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails status=SUCCESS method=MarriedUserPersonalMedicalHistoryTestCases.TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails()[pri:6, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5] output={null}]]]>
+                <![CDATA[[TestResult name=TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails status=SUCCESS method=MarriedUserPersonalMedicalHistoryTestCases.TC_006_Health_Personal_Medical_History_EnvironmentalLifestyleFactorsDetails()[pri:6, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -205,29 +205,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:25:01 IST" name="afterClass" finished-at="2025-04-02T17:25:01 IST" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:21:43 IST" name="afterClass" finished-at="2025-04-03T17:21:43 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:40:24 IST" name="afterTest" finished-at="2025-04-02T17:40:24 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:43:52 IST" name="afterTest" finished-at="2025-04-03T17:43:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@1e66f1f5]" started-at="2025-04-02T17:40:24 IST" name="afterSuite" finished-at="2025-04-02T17:40:24 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases@71e9ddb4]" started-at="2025-04-03T17:43:52 IST" name="afterSuite" finished-at="2025-04-03T17:43:52 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserPersonalMedicalHistoryTestCases -->
       <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:25:01 IST" name="beforeClass" finished-at="2025-04-02T17:25:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:21:43 IST" name="beforeClass" finished-at="2025-04-03T17:21:43 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_007_Health_LifeStyleGeneralHealthNutritionDetails()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:25:01 IST" name="TC_007_Health_LifeStyleGeneralHealthNutritionDetails" finished-at="2025-04-02T17:25:32 IST" duration-ms="30777" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_007_Health_LifeStyleGeneralHealthNutritionDetails -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:25:01 IST" name="beforeMethod" finished-at="2025-04-02T17:25:01 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:21:43 IST" name="beforeMethod" finished-at="2025-04-03T17:21:43 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -238,65 +234,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:25:32 IST" name="afterMethod" finished-at="2025-04-02T17:25:32 IST" duration-ms="27" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_007_Health_LifeStyleGeneralHealthNutritionDetails status=SUCCESS method=MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:25:32 IST" name="beforeMethod" finished-at="2025-04-02T17:25:32 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_008_Health_InputSubstanceUseDetails()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="TC_008_Health_InputSubstanceUseDetails()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:25:32 IST" name="TC_008_Health_InputSubstanceUseDetails" finished-at="2025-04-02T17:28:40 IST" duration-ms="188413" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method retried="true" signature="TC_007_Health_LifeStyleGeneralHealthNutritionDetails()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:21:43 IST" name="TC_007_Health_LifeStyleGeneralHealthNutritionDetails" finished-at="2025-04-03T17:22:12 IST" duration-ms="29554" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[java.util.concurrent.TimeoutException
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0ed7441025f94eedeab767f53e2dc552, actions {actions=[org.openqa.selenium.interactions.Sequence@50930bff]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56142}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56142/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ed7441025f94eedeab767f53e2dc552]]>
+              <![CDATA[expected [There is no sedentary] but found [Yes I regular Exercise]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0ed7441025f94eedeab767f53e2dc552, actions {actions=[org.openqa.selenium.interactions.Sequence@50930bff]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56142}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56142/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ed7441025f94eedeab767f53e2dc552
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:402)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:358)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:609)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
-at com.nspl.agingoptions.webUtil.WebUtil.scrollIntoElement(WebUtil.java:714)
-at com.agingoptions.health.LifeStyle.openSubStanceUseAccordian(LifeStyle.java:274)
-at com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_008_Health_InputSubstanceUseDetails(MarriedUserLifeStyleTestCases.java:91)
+              <![CDATA[java.lang.AssertionError: expected [There is no sedentary] but found [Yes I regular Exercise]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedText(WebUtil.java:869)
+at com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails(MarriedUserLifeStyleTestCases.java:72)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -323,38 +275,135 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:385)
-... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_008_Health_InputSubstanceUseDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:28:40 IST" name="afterMethod" finished-at="2025-04-02T17:28:40 IST" duration-ms="41" status="PASS">
+        </test-method> <!-- TC_007_Health_LifeStyleGeneralHealthNutritionDetails -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:22:12 IST" name="afterMethod" finished-at="2025-04-03T17:22:12 IST" duration-ms="35" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_008_Health_InputSubstanceUseDetails status=SKIP method=MarriedUserLifeStyleTestCases.TC_008_Health_InputSubstanceUseDetails()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af] output={null}]]]>
+                <![CDATA[[TestResult name=TC_007_Health_LifeStyleGeneralHealthNutritionDetails status=SKIP method=MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_008_Health_InputSubstanceUseDetails()]]>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_008_Health_InputSubstanceUseDetails()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:28:40 IST" name="TC_008_Health_InputSubstanceUseDetails" finished-at="2025-04-02T17:30:41 IST" duration-ms="121109" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:22:12 IST" name="beforeMethod" finished-at="2025-04-03T17:22:12 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_007_Health_LifeStyleGeneralHealthNutritionDetails()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:22:12 IST" name="TC_007_Health_LifeStyleGeneralHealthNutritionDetails" finished-at="2025-04-03T17:23:39 IST" duration-ms="86784" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//textarea[@id='284'])[2]"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e8d3d707c6f88c3e82d991281de7d5d, findElement {using=xpath, value=(//textarea[@id='284'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64822}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64822/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e8d3d707c6f88c3e82d991281de7d5d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//textarea[@id='284'])[2]"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e8d3d707c6f88c3e82d991281de7d5d, findElement {using=xpath, value=(//textarea[@id='284'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64822}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64822/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e8d3d707c6f88c3e82d991281de7d5d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.clear(Unknown Source)
+at com.nspl.agingoptions.webUtil.WebUtil.sendValue(WebUtil.java:201)
+at com.agingoptions.health.LifeStyle.inputSpouseWhatIsYourWorriedTB(LifeStyle.java:173)
+at com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails(MarriedUserLifeStyleTestCases.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_007_Health_LifeStyleGeneralHealthNutritionDetails -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:23:39 IST" name="afterMethod" finished-at="2025-04-03T17:23:39 IST" duration-ms="175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_007_Health_LifeStyleGeneralHealthNutritionDetails status=FAILURE method=MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases.TC_007_Health_LifeStyleGeneralHealthNutritionDetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="TC_008_Health_InputSubstanceUseDetails()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:23:39 IST" name="TC_008_Health_InputSubstanceUseDetails" finished-at="2025-04-03T17:24:04 IST" duration-ms="24695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_008_Health_InputSubstanceUseDetails -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:28:40 IST" name="beforeMethod" finished-at="2025-04-02T17:28:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:23:39 IST" name="beforeMethod" finished-at="2025-04-03T17:23:39 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -365,11 +414,11 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:30:41 IST" name="afterMethod" finished-at="2025-04-02T17:30:41 IST" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:24:04 IST" name="afterMethod" finished-at="2025-04-03T17:24:04 IST" duration-ms="52" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_008_Health_InputSubstanceUseDetails status=SUCCESS method=MarriedUserLifeStyleTestCases.TC_008_Health_InputSubstanceUseDetails()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af] output={null}]]]>
+                <![CDATA[[TestResult name=TC_008_Health_InputSubstanceUseDetails status=SUCCESS method=MarriedUserLifeStyleTestCases.TC_008_Health_InputSubstanceUseDetails()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -381,11 +430,11 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_09_Health_InputSocialHabitsDetails()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:30:41 IST" name="TC_09_Health_InputSocialHabitsDetails" finished-at="2025-04-02T17:31:03 IST" duration-ms="22016" status="PASS">
+        <test-method signature="TC_09_Health_InputSocialHabitsDetails()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:24:04 IST" name="TC_09_Health_InputSocialHabitsDetails" finished-at="2025-04-03T17:24:26 IST" duration-ms="21927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_09_Health_InputSocialHabitsDetails -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:30:41 IST" name="beforeMethod" finished-at="2025-04-02T17:30:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:24:04 IST" name="beforeMethod" finished-at="2025-04-03T17:24:04 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -396,11 +445,11 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:31:03 IST" name="afterMethod" finished-at="2025-04-02T17:31:03 IST" duration-ms="35" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:24:26 IST" name="afterMethod" finished-at="2025-04-03T17:24:26 IST" duration-ms="36" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_09_Health_InputSocialHabitsDetails status=SUCCESS method=MarriedUserLifeStyleTestCases.TC_09_Health_InputSocialHabitsDetails()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af] output={null}]]]>
+                <![CDATA[[TestResult name=TC_09_Health_InputSocialHabitsDetails status=SUCCESS method=MarriedUserLifeStyleTestCases.TC_09_Health_InputSocialHabitsDetails()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -412,36 +461,36 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@4961f6af]" started-at="2025-04-02T17:31:03 IST" name="afterClass" finished-at="2025-04-02T17:31:03 IST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases@75db5df9]" started-at="2025-04-03T17:24:26 IST" name="afterClass" finished-at="2025-04-03T17:24:26 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases -->
       <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:31:03 IST" name="beforeMethod" finished-at="2025-04-02T17:31:03 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:31:03 IST" name="beforeClass" finished-at="2025-04-02T17:31:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:24:26 IST" name="beforeClass" finished-at="2025-04-03T17:24:26 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:31:03 IST" name="TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails" finished-at="2025-04-02T17:31:38 IST" duration-ms="34728" status="PASS">
+        <test-method signature="TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:24:26 IST" name="TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails" finished-at="2025-04-03T17:25:01 IST" duration-ms="34988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:31:38 IST" name="afterMethod" finished-at="2025-04-02T17:31:38 IST" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:24:26 IST" name="beforeMethod" finished-at="2025-04-03T17:24:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails status=SUCCESS method=MarriedUserFamilyMedicalHistoryTestCases.TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890] output={null}]]]>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:25:01 IST" name="afterMethod" finished-at="2025-04-03T17:25:01 IST" duration-ms="24" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails status=SUCCESS method=MarriedUserFamilyMedicalHistoryTestCases.TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -453,11 +502,11 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:31:38 IST" name="TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails" finished-at="2025-04-02T17:32:10 IST" duration-ms="31533" status="PASS">
+        <test-method signature="TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:25:01 IST" name="TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails" finished-at="2025-04-03T17:25:33 IST" duration-ms="31666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:31:38 IST" name="beforeMethod" finished-at="2025-04-02T17:31:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:25:01 IST" name="beforeMethod" finished-at="2025-04-03T17:25:01 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -468,11 +517,11 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:32:10 IST" name="afterMethod" finished-at="2025-04-02T17:32:10 IST" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:25:33 IST" name="afterMethod" finished-at="2025-04-03T17:25:33 IST" duration-ms="19" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails status=SUCCESS method=MarriedUserFamilyMedicalHistoryTestCases.TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890] output={null}]]]>
+                <![CDATA[[TestResult name=TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails status=SUCCESS method=MarriedUserFamilyMedicalHistoryTestCases.TC_011_Health_familyMedicalHistoryNonLivingParentInfoDetails()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -484,11 +533,11 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:32:10 IST" name="TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails" finished-at="2025-04-02T17:32:41 IST" duration-ms="31058" status="PASS">
+        <test-method signature="TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:25:33 IST" name="TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails" finished-at="2025-04-03T17:26:04 IST" duration-ms="31077" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:32:10 IST" name="beforeMethod" finished-at="2025-04-02T17:32:10 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:25:33 IST" name="beforeMethod" finished-at="2025-04-03T17:25:33 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -499,11 +548,11 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:32:41 IST" name="afterMethod" finished-at="2025-04-02T17:32:41 IST" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:26:04 IST" name="afterMethod" finished-at="2025-04-03T17:26:04 IST" duration-ms="31" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails status=SUCCESS method=MarriedUserFamilyMedicalHistoryTestCases.TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890] output={null}]]]>
+                <![CDATA[[TestResult name=TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails status=SUCCESS method=MarriedUserFamilyMedicalHistoryTestCases.TC_012_FamilyMedicalHistoryNonLivingParentInfoDetails()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -515,26 +564,26 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:32:41 IST" name="beforeMethod" finished-at="2025-04-02T17:32:41 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:32:41 IST" name="TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton" finished-at="2025-04-02T17:34:12 IST" duration-ms="91155" status="PASS">
+        <test-method signature="TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:26:04 IST" name="TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton" finished-at="2025-04-03T17:27:35 IST" duration-ms="90920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:34:12 IST" name="afterMethod" finished-at="2025-04-02T17:34:12 IST" duration-ms="53" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:26:04 IST" name="beforeMethod" finished-at="2025-04-03T17:26:04 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton status=SUCCESS method=MarriedUserFamilyMedicalHistoryTestCases.TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890] output={null}]]]>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:27:35 IST" name="afterMethod" finished-at="2025-04-03T17:27:35 IST" duration-ms="18" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton status=SUCCESS method=MarriedUserFamilyMedicalHistoryTestCases.TC_013_FamilyMedicalHistoryMyFamilyMedicalHistoryYesRadioButton()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -546,7 +595,7 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:34:12 IST" name="beforeMethod" finished-at="2025-04-02T17:34:12 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:27:35 IST" name="beforeMethod" finished-at="2025-04-03T17:27:35 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -557,15 +606,60 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:34:12 IST" name="TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton" finished-at="2025-04-02T17:34:52 IST" duration-ms="39916" status="PASS">
+        <test-method retried="true" signature="TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:27:35 IST" name="TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton" finished-at="2025-04-03T17:28:14 IST" duration-ms="39307" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1079)
+at org.testng.Assert.assertEquals(Assert.java:1043)
+at org.testng.Assert.assertEquals(Assert.java:1089)
+at com.nspl.agingoptions.webUtil.WebUtil.isSelected(WebUtil.java:1162)
+at com.agingoptions.health.FamilyMedicalHistory.dementiaCheckBoxStatus(FamilyMedicalHistory.java:408)
+at com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton(MarriedUserFamilyMedicalHistoryTestCases.java:179)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:34:52 IST" name="afterMethod" finished-at="2025-04-02T17:34:52 IST" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:28:14 IST" name="afterMethod" finished-at="2025-04-03T17:28:14 IST" duration-ms="29" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton status=SUCCESS method=MarriedUserFamilyMedicalHistoryTestCases.TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890] output={null}]]]>
+                <![CDATA[[TestResult name=TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton status=SKIP method=MarriedUserFamilyMedicalHistoryTestCases.TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -577,83 +671,159 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@5aebe890]" started-at="2025-04-02T17:34:52 IST" name="afterClass" finished-at="2025-04-02T17:34:52 IST" duration-ms="7" status="PASS">
+        <test-method signature="TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:28:14 IST" name="TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton" finished-at="2025-04-03T17:30:29 IST" duration-ms="134792" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1079)
+at org.testng.Assert.assertEquals(Assert.java:1043)
+at org.testng.Assert.assertEquals(Assert.java:1089)
+at com.nspl.agingoptions.webUtil.WebUtil.isSelected(WebUtil.java:1162)
+at com.agingoptions.health.FamilyMedicalHistory.heartDiseaseCheckBoxStatus(FamilyMedicalHistory.java:422)
+at com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton(MarriedUserFamilyMedicalHistoryTestCases.java:181)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:28:14 IST" name="beforeMethod" finished-at="2025-04-03T17:28:14 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:30:29 IST" name="afterMethod" finished-at="2025-04-03T17:30:29 IST" duration-ms="193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton status=FAILURE method=MarriedUserFamilyMedicalHistoryTestCases.TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases.TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases@707194ba]" started-at="2025-04-03T17:30:29 IST" name="afterClass" finished-at="2025-04-03T17:30:29 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases -->
       <class name="com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases">
-        <test-method signature="TC_019_PrimaryMemberSpecialistIDonHave()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:37:41 IST" name="TC_019_PrimaryMemberSpecialistIDonHave" finished-at="2025-04-02T17:38:07 IST" duration-ms="25770" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_019_PrimaryMemberSpecialistIDonHave -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:37:41 IST" name="beforeClass" finished-at="2025-04-02T17:37:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:33:23 IST" name="beforeClass" finished-at="2025-04-03T17:33:23 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:37:41 IST" name="beforeMethod" finished-at="2025-04-02T17:37:41 IST" duration-ms="0" status="PASS">
+        <test-method signature="TC_019_PrimaryMemberSpecialistIDontHave()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:33:23 IST" name="TC_019_PrimaryMemberSpecialistIDontHave" finished-at="2025-04-03T17:33:48 IST" duration-ms="25431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_019_PrimaryMemberSpecialistIDontHave -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:33:23 IST" name="beforeMethod" finished-at="2025-04-03T17:33:23 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_019_PrimaryMemberSpecialistIDonHave()]]>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_019_PrimaryMemberSpecialistIDontHave()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:38:07 IST" name="afterMethod" finished-at="2025-04-02T17:38:07 IST" duration-ms="39" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:33:48 IST" name="afterMethod" finished-at="2025-04-03T17:33:48 IST" duration-ms="24" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_019_PrimaryMemberSpecialistIDonHave status=SUCCESS method=SpecialistTestCases.TC_019_PrimaryMemberSpecialistIDonHave()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1] output={null}]]]>
+                <![CDATA[[TestResult name=TC_019_PrimaryMemberSpecialistIDontHave status=SUCCESS method=SpecialistTestCases.TC_019_PrimaryMemberSpecialistIDontHave()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_019_PrimaryMemberSpecialistIDonHave()]]>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_019_PrimaryMemberSpecialistIDontHave()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_020_SpouseSpecialistIDonHave()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:38:07 IST" name="TC_020_SpouseSpecialistIDonHave" finished-at="2025-04-02T17:38:37 IST" duration-ms="30259" status="PASS">
+        <test-method signature="TC_020_SpouseSpecialistIDontHave()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:33:48 IST" name="TC_020_SpouseSpecialistIDontHave" finished-at="2025-04-03T17:34:19 IST" duration-ms="31317" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_020_SpouseSpecialistIDonHave -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:38:07 IST" name="beforeMethod" finished-at="2025-04-02T17:38:07 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_020_SpouseSpecialistIDontHave -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:33:48 IST" name="beforeMethod" finished-at="2025-04-03T17:33:48 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_020_SpouseSpecialistIDonHave()]]>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_020_SpouseSpecialistIDontHave()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:38:37 IST" name="afterMethod" finished-at="2025-04-02T17:38:37 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:34:19 IST" name="afterMethod" finished-at="2025-04-03T17:34:19 IST" duration-ms="31" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_020_SpouseSpecialistIDonHave status=SUCCESS method=SpecialistTestCases.TC_020_SpouseSpecialistIDonHave()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1] output={null}]]]>
+                <![CDATA[[TestResult name=TC_020_SpouseSpecialistIDontHave status=SUCCESS method=SpecialistTestCases.TC_020_SpouseSpecialistIDontHave()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_020_SpouseSpecialistIDonHave()]]>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_020_SpouseSpecialistIDontHave()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_021_PrimaryMemberSpecialistSaveDetailsSaveContinueLaterButton()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:38:37 IST" name="TC_021_PrimaryMemberSpecialistSaveDetailsSaveContinueLaterButton" finished-at="2025-04-02T17:39:29 IST" duration-ms="52368" status="PASS">
+        <test-method signature="TC_021_PrimaryMemberSpecialistSaveDetailsSaveContinueLaterButton()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:34:19 IST" name="TC_021_PrimaryMemberSpecialistSaveDetailsSaveContinueLaterButton" finished-at="2025-04-03T17:35:19 IST" duration-ms="59661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_021_PrimaryMemberSpecialistSaveDetailsSaveContinueLaterButton -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:38:37 IST" name="beforeMethod" finished-at="2025-04-02T17:38:37 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:34:19 IST" name="beforeMethod" finished-at="2025-04-03T17:34:19 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -664,11 +834,11 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:39:29 IST" name="afterMethod" finished-at="2025-04-02T17:39:29 IST" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:35:19 IST" name="afterMethod" finished-at="2025-04-03T17:35:19 IST" duration-ms="21" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_021_PrimaryMemberSpecialistSaveDetailsSaveContinueLaterButton status=SUCCESS method=SpecialistTestCases.TC_021_PrimaryMemberSpecialistSaveDetailsSaveContinueLaterButton()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1] output={null}]]]>
+                <![CDATA[[TestResult name=TC_021_PrimaryMemberSpecialistSaveDetailsSaveContinueLaterButton status=SUCCESS method=SpecialistTestCases.TC_021_PrimaryMemberSpecialistSaveDetailsSaveContinueLaterButton()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -680,26 +850,26 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:39:29 IST" name="beforeMethod" finished-at="2025-04-02T17:39:29 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:39:29 IST" name="TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton" finished-at="2025-04-02T17:40:24 IST" duration-ms="54510" status="PASS">
+        <test-method signature="TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:35:19 IST" name="TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton" finished-at="2025-04-03T17:36:12 IST" duration-ms="53359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:40:24 IST" name="afterMethod" finished-at="2025-04-02T17:40:24 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:35:19 IST" name="beforeMethod" finished-at="2025-04-03T17:35:19 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton status=SUCCESS method=SpecialistTestCases.TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1] output={null}]]]>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:36:12 IST" name="afterMethod" finished-at="2025-04-03T17:36:12 IST" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton status=SUCCESS method=SpecialistTestCases.TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -711,21 +881,420 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@33c911a1]" started-at="2025-04-02T17:40:24 IST" name="afterClass" finished-at="2025-04-02T17:40:24 IST" duration-ms="6" status="PASS">
+        <test-method retried="true" signature="TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:36:12 IST" name="TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse" finished-at="2025-04-03T17:37:43 IST" duration-ms="90159" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='Acupuncture']/following-sibling::td//img[@alt='Edit Icon']"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e8d3d707c6f88c3e82d991281de7d5d, findElement {using=xpath, value=//td[text()='Acupuncture']/following-sibling::td//img[@alt='Edit Icon']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64822}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64822/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e8d3d707c6f88c3e82d991281de7d5d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='Acupuncture']/following-sibling::td//img[@alt='Edit Icon']"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e8d3d707c6f88c3e82d991281de7d5d, findElement {using=xpath, value=//td[text()='Acupuncture']/following-sibling::td//img[@alt='Edit Icon']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64822}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64822/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e8d3d707c6f88c3e82d991281de7d5d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:331)
+at com.agingoptions.health.Specialists.clickAcupnctureSpecialistEditIcon(Specialists.java:213)
+at com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse(SpecialistTestCases.java:231)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:36:12 IST" name="beforeMethod" finished-at="2025-04-03T17:36:12 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:37:43 IST" name="afterMethod" finished-at="2025-04-03T17:37:43 IST" duration-ms="33" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse status=SKIP method=SpecialistTestCases.TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:37:43 IST" name="TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse" finished-at="2025-04-03T17:39:21 IST" duration-ms="98278" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[normalize-space()='Physical Address'])[1]"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e8d3d707c6f88c3e82d991281de7d5d, findElement {using=xpath, value=(//div[normalize-space()='Physical Address'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64822}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64822/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e8d3d707c6f88c3e82d991281de7d5d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[normalize-space()='Physical Address'])[1]"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e8d3d707c6f88c3e82d991281de7d5d, findElement {using=xpath, value=(//div[normalize-space()='Physical Address'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64822}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64822/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e8d3d707c6f88c3e82d991281de7d5d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
+at com.nspl.agingoptions.webUtil.WebUtil.getInnerText(WebUtil.java:743)
+at com.agingoptions.health.PrimaryCarePhysician.getPhysicalAddressText(PrimaryCarePhysician.java:274)
+at com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse(SpecialistTestCases.java:242)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:37:43 IST" name="beforeMethod" finished-at="2025-04-03T17:37:43 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:39:21 IST" name="afterMethod" finished-at="2025-04-03T17:39:21 IST" duration-ms="204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse status=FAILURE method=SpecialistTestCases.TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse()[pri:5, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="TC_024_PrimaryMemberSpecialistSaveDetailsSaveAndProceedToSpouseButton()[pri:6, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:39:21 IST" name="TC_024_PrimaryMemberSpecialistSaveDetailsSaveAndProceedToSpouseButton" finished-at="2025-04-03T17:40:22 IST" duration-ms="61381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_024_PrimaryMemberSpecialistSaveDetailsSaveAndProceedToSpouseButton -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:39:21 IST" name="beforeMethod" finished-at="2025-04-03T17:39:21 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_024_PrimaryMemberSpecialistSaveDetailsSaveAndProceedToSpouseButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:40:22 IST" name="afterMethod" finished-at="2025-04-03T17:40:22 IST" duration-ms="29" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_024_PrimaryMemberSpecialistSaveDetailsSaveAndProceedToSpouseButton status=SUCCESS method=SpecialistTestCases.TC_024_PrimaryMemberSpecialistSaveDetailsSaveAndProceedToSpouseButton()[pri:6, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_024_PrimaryMemberSpecialistSaveDetailsSaveAndProceedToSpouseButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:40:22 IST" name="beforeMethod" finished-at="2025-04-03T17:40:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton()[pri:7, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:40:22 IST" name="TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton" finished-at="2025-04-03T17:41:48 IST" duration-ms="85777" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'Addiction Medicine')]/following-sibling::td//img[@alt='Edit Icon']"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e8d3d707c6f88c3e82d991281de7d5d, findElement {using=xpath, value=//td[contains(text(),'Addiction Medicine')]/following-sibling::td//img[@alt='Edit Icon']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64822}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64822/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e8d3d707c6f88c3e82d991281de7d5d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'Addiction Medicine')]/following-sibling::td//img[@alt='Edit Icon']"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e8d3d707c6f88c3e82d991281de7d5d, findElement {using=xpath, value=//td[contains(text(),'Addiction Medicine')]/following-sibling::td//img[@alt='Edit Icon']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AO\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64822}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64822/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e8d3d707c6f88c3e82d991281de7d5d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:331)
+at com.agingoptions.health.Specialists.clickAddictionMedicineEditIcon(Specialists.java:294)
+at com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton(SpecialistTestCases.java:367)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:41:48 IST" name="afterMethod" finished-at="2025-04-03T17:41:48 IST" duration-ms="34" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton status=SKIP method=SpecialistTestCases.TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton()[pri:7, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:41:48 IST" name="beforeMethod" finished-at="2025-04-03T17:41:48 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton()[pri:7, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:41:48 IST" name="TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton" finished-at="2025-04-03T17:42:45 IST" duration-ms="57063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:42:45 IST" name="afterMethod" finished-at="2025-04-03T17:42:45 IST" duration-ms="62" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton status=SUCCESS method=SpecialistTestCases.TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton()[pri:7, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_025_SpouseSpecialistSaveDetailsSaveAndAddAnotherButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:42:45 IST" name="beforeMethod" finished-at="2025-04-03T17:42:45 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_026_SpouseSpecialistSaveDetailsSaveAndProceedToHealthInsurance()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_026_SpouseSpecialistSaveDetailsSaveAndProceedToHealthInsurance()[pri:8, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:42:45 IST" name="TC_026_SpouseSpecialistSaveDetailsSaveAndProceedToHealthInsurance" finished-at="2025-04-03T17:43:52 IST" duration-ms="66881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_026_SpouseSpecialistSaveDetailsSaveAndProceedToHealthInsurance -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:43:52 IST" name="afterMethod" finished-at="2025-04-03T17:43:52 IST" duration-ms="39" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_026_SpouseSpecialistSaveDetailsSaveAndProceedToHealthInsurance status=SUCCESS method=SpecialistTestCases.TC_026_SpouseSpecialistSaveDetailsSaveAndProceedToHealthInsurance()[pri:8, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases.TC_026_SpouseSpecialistSaveDetailsSaveAndProceedToHealthInsurance()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases@6a2f6f80]" started-at="2025-04-03T17:43:52 IST" name="afterClass" finished-at="2025-04-03T17:43:52 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases -->
       <class name="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:34:52 IST" name="beforeClass" finished-at="2025-04-02T17:34:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:30:29 IST" name="beforeClass" finished-at="2025-04-03T17:30:29 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:34:52 IST" name="TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian" finished-at="2025-04-02T17:35:18 IST" duration-ms="25719" status="PASS">
+        <test-method signature="TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:30:29 IST" name="TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian" finished-at="2025-04-03T17:30:55 IST" duration-ms="26453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:34:52 IST" name="beforeMethod" finished-at="2025-04-02T17:34:52 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:30:29 IST" name="beforeMethod" finished-at="2025-04-03T17:30:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -736,11 +1305,11 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:35:18 IST" name="afterMethod" finished-at="2025-04-02T17:35:18 IST" duration-ms="30" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:30:55 IST" name="afterMethod" finished-at="2025-04-03T17:30:55 IST" duration-ms="20" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian status=SUCCESS method=PrimaryCarePhysicianTestCases.TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04] output={null}]]]>
+                <![CDATA[[TestResult name=TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian status=SUCCESS method=PrimaryCarePhysicianTestCases.TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian()[pri:1, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -752,11 +1321,11 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_016_SpouseIDontHavePrimaryCarePhyscian()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:35:18 IST" name="TC_016_SpouseIDontHavePrimaryCarePhyscian" finished-at="2025-04-02T17:35:43 IST" duration-ms="25301" status="PASS">
+        <test-method signature="TC_016_SpouseIDontHavePrimaryCarePhyscian()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:30:55 IST" name="TC_016_SpouseIDontHavePrimaryCarePhyscian" finished-at="2025-04-03T17:31:23 IST" duration-ms="27208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_016_SpouseIDontHavePrimaryCarePhyscian -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:35:18 IST" name="beforeMethod" finished-at="2025-04-02T17:35:18 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:30:55 IST" name="beforeMethod" finished-at="2025-04-03T17:30:55 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -767,11 +1336,11 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:35:43 IST" name="afterMethod" finished-at="2025-04-02T17:35:43 IST" duration-ms="30" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:31:23 IST" name="afterMethod" finished-at="2025-04-03T17:31:23 IST" duration-ms="37" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_016_SpouseIDontHavePrimaryCarePhyscian status=SUCCESS method=PrimaryCarePhysicianTestCases.TC_016_SpouseIDontHavePrimaryCarePhyscian()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04] output={null}]]]>
+                <![CDATA[[TestResult name=TC_016_SpouseIDontHavePrimaryCarePhyscian status=SUCCESS method=PrimaryCarePhysicianTestCases.TC_016_SpouseIDontHavePrimaryCarePhyscian()[pri:2, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -783,26 +1352,26 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_017_inputPrimaryMemberCarePhysicianAndSave()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:35:43 IST" name="TC_017_inputPrimaryMemberCarePhysicianAndSave" finished-at="2025-04-02T17:36:42 IST" duration-ms="59320" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:31:23 IST" name="beforeMethod" finished-at="2025-04-03T17:31:23 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_017_inputPrimaryMemberCarePhysicianAndSave()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_017_inputPrimaryMemberCarePhysicianAndSave()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:31:23 IST" name="TC_017_inputPrimaryMemberCarePhysicianAndSave" finished-at="2025-04-03T17:32:22 IST" duration-ms="59711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_017_inputPrimaryMemberCarePhysicianAndSave -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:35:43 IST" name="beforeMethod" finished-at="2025-04-02T17:35:43 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:32:22 IST" name="afterMethod" finished-at="2025-04-03T17:32:22 IST" duration-ms="29" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_017_inputPrimaryMemberCarePhysicianAndSave()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:36:42 IST" name="afterMethod" finished-at="2025-04-02T17:36:42 IST" duration-ms="20" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_017_inputPrimaryMemberCarePhysicianAndSave status=SUCCESS method=PrimaryCarePhysicianTestCases.TC_017_inputPrimaryMemberCarePhysicianAndSave()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04] output={null}]]]>
+                <![CDATA[[TestResult name=TC_017_inputPrimaryMemberCarePhysicianAndSave status=SUCCESS method=PrimaryCarePhysicianTestCases.TC_017_inputPrimaryMemberCarePhysicianAndSave()[pri:3, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -814,26 +1383,26 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="TC_018_inputSpouseCarePhysicianAndSave()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:36:42 IST" name="TC_018_inputSpouseCarePhysicianAndSave" finished-at="2025-04-02T17:37:41 IST" duration-ms="58400" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:32:22 IST" name="beforeMethod" finished-at="2025-04-03T17:32:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_018_inputSpouseCarePhysicianAndSave()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_018_inputSpouseCarePhysicianAndSave()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:32:22 IST" name="TC_018_inputSpouseCarePhysicianAndSave" finished-at="2025-04-03T17:33:22 IST" duration-ms="60071" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_018_inputSpouseCarePhysicianAndSave -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:36:42 IST" name="beforeMethod" finished-at="2025-04-02T17:36:42 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:33:22 IST" name="afterMethod" finished-at="2025-04-03T17:33:22 IST" duration-ms="23" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases.TC_018_inputSpouseCarePhysicianAndSave()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:37:41 IST" name="afterMethod" finished-at="2025-04-02T17:37:41 IST" duration-ms="16" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC_018_inputSpouseCarePhysicianAndSave status=SUCCESS method=PrimaryCarePhysicianTestCases.TC_018_inputSpouseCarePhysicianAndSave()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04] output={null}]]]>
+                <![CDATA[[TestResult name=TC_018_inputSpouseCarePhysicianAndSave status=SUCCESS method=PrimaryCarePhysicianTestCases.TC_018_inputSpouseCarePhysicianAndSave()[pri:4, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -845,7 +1414,7 @@ at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@65d09a04]" started-at="2025-04-02T17:37:41 IST" name="afterClass" finished-at="2025-04-02T17:37:41 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases@1190200a]" started-at="2025-04-03T17:33:22 IST" name="afterClass" finished-at="2025-04-03T17:33:23 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

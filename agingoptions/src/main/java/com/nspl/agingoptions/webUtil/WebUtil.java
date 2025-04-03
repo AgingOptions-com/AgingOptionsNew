@@ -1954,6 +1954,17 @@ public class WebUtil {
 		}
 	}
 
+	public void waitUntilElementIsDisappearFromThePage(WebElement we, long seconds) {
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+	         wait.until(ExpectedConditions.invisibilityOf(we));
+	        System.out.println("Element disappeared from the page.");
+	    } catch (StaleElementReferenceException e) {
+	        System.out.println("Element was removed from the DOM.");
+	    }  catch (Exception e) {
+	        System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
+	    }
+	}
 
 
 
