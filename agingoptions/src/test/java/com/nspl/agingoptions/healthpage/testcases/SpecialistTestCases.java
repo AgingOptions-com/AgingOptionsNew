@@ -405,7 +405,7 @@ public class SpecialistTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(5));
 		specialist.clickSpouseToggleButton();
 		specialist.clickAddSpecialistButton();
-		util.holdOn(Duration.ofSeconds(2));
+		util.holdOn(Duration.ofSeconds(4));
 		String expectedFirstName="Dr Avantika";
 		specialist.inputFirstName(expectedFirstName);
 		String expectedLastName="Sharma";

@@ -27,6 +27,9 @@
 			<class
 				name="com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases">
 			</class>
+			<class
+				name="com.nspl.agingoptions.healthpage.testcases.HealthInsuranceTestCases">
+			</class>
 		</classes>
 	</test>
 </suite> 

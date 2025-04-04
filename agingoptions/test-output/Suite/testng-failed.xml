@@ -6,45 +6,19 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases">
+      <class name="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
+          <include name="TC_018_inputSpouseCarePhysicianAndSave"/>
           <include name="beforeTest"/>
-          <include name="TC_007_Health_LifeStyleGeneralHealthNutritionDetails"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases -->
-      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases -->
-      <class name="com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="afterMethod"/>
-          <include name="TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases -->
+      </class> <!-- com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

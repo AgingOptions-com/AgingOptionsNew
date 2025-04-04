@@ -33,14 +33,14 @@ public class Specialists extends CommonCode {
 		util.checkCheckBox(iDonhaveSpecialistCheckbox, "I don’t have a Specialist");
 	}
 
-	@FindBy(xpath="(//div[@class='btn-div addBorderToToggleButton']/button)[1]")
+	@FindBy(xpath="(//div[contains(@class,'btn-div addBorderToToggleButton')]/button)[1]")
 	private WebElement primaryMemberToggleButton;
 
 	public void clickPrimaryMemberToggleButton() {
 		util.click(primaryMemberToggleButton, "Primary Member Toggle Button");
 	}
 
-	@FindBy(xpath="(//div[@class='btn-div addBorderToToggleButton']/button)[2]")
+	@FindBy(xpath="(//div[contains(@class,'btn-div addBorderToToggleButton')]/button)[2]")
 	private WebElement spouseToggleButton;
 
 	public void clickSpouseToggleButton() {
