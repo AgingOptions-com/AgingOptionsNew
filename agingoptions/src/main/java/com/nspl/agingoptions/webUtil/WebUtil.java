@@ -1975,6 +1975,36 @@ public class WebUtil {
 	        System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
 	    }
 	}
+	
+	public void uploadFile(WebElement fileUploadElement, String filePath) {
+	    try {
+	        fileUploadElement.sendKeys(filePath);  // Provide full path to the file
+	        extTest.log(Status.PASS, "File uploaded successfully: " + filePath);
+	        System.out.println("File uploaded successfully: " + filePath);
+	    } catch (Exception e) {
+	        extTest.log(Status.FAIL, "File upload failed: " + e.getMessage());
+	        System.out.println("File upload failed: " + e.getMessage());
+	        e.printStackTrace();
+	    }
+	}
+	public String convertDateFormatMMDDYYYY(String date) {
+	    try {
+	        SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
+	        SimpleDateFormat outputFormat = new SimpleDateFormat("MM-dd-yyyy");
+
+	        Date parsedDate = inputFormat.parse(date);
+	        return outputFormat.format(parsedDate);
+
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	        return null;
+	    }
+	}
+	public String convertAmountActualValue(String actual) {
+	    return actual.replaceAll(",", "").replaceAll("\\.00$", "");
+	}
+
+
 
 
 

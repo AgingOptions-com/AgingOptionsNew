@@ -4,26 +4,36 @@
   <test thread-count="5" name="Test(failed)">
     <classes>
 <<<<<<< HEAD
+      <class name="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases">
+=======
+<<<<<<< HEAD
       <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases">
 =======
       <class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript">
 >>>>>>> HousingInfo
+>>>>>>> c3cf559a2b5f580b161092b7f5cea32fe48f6d04
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
 <<<<<<< HEAD
+          <include name="TC_018_inputSpouseCarePhysicianAndSave"/>
+=======
+<<<<<<< HEAD
 =======
           <include name="afterMethod"/>
 >>>>>>> HousingInfo
+>>>>>>> c3cf559a2b5f580b161092b7f5cea32fe48f6d04
           <include name="beforeTest"/>
-          <include name="TC_007_Health_LifeStyleGeneralHealthNutritionDetails"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="verifyHandymanPageOnHousingProfessional"/>
           <include name="beforeMethod"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases -->
+=======
 <<<<<<< HEAD
       </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases -->
       <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
@@ -55,6 +65,7 @@
 =======
       </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript -->
 >>>>>>> HousingInfo
+>>>>>>> c3cf559a2b5f580b161092b7f5cea32fe48f6d04
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

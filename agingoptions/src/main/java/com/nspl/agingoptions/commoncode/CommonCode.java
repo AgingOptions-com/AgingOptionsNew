@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import com.agingoptions.activationpage.ActivationPage;
 import com.nspl.agingoptions.webUtil.DataUtil;
@@ -301,21 +302,51 @@ public class CommonCode extends CommonCodeOR {
 		util.verifyInnerText( clickToResendInnertext, "Click to resend" ,"Otp");
 		// wt.verifyUrl("https://aologinuat.agingoptions.com/Account/verifyOtp","OTP page");
 	}
-	
+
 	public void clickSaveContinueLaterButton() {
 		util.click(saveContinueLaterBT, "Save & Continue Later Button");
 	}
-	
+
 	public void clickSaveAddAnotherButton() {
 		util.click(saveAddAnotherBT, "Save & Add Another button");
 	}
-	
+
 	public void clickPreviousButton() {
 		util.click(previousButton, "Previous Button");
 	}
 
+	@FindBy(xpath="//p[text()='Copy same data to spouse']/parent::div//input")
+	private WebElement copySameDataToSpouseCheckBox;
+
+	public void checkCopySameDataToSpouseCheckBox() {
+		try {
+			util.waitUntilElementIsDeselected(copySameDataToSpouseCheckBox, 10);
+			util.checkCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
+			util.waitUntilElementIsSelected(copySameDataToSpouseCheckBox, 5);
+		}catch(Exception e) {
+			util.checkCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
+		}
+	}
+
+	@FindBy(xpath="(//div[contains(@class,'btn-div addBorderToToggleButton')]/button)[1]")
+	private WebElement primaryMemberToggleButton;
+
+	public void clickPrimaryMemberToggleButton() {
+		util.click(primaryMemberToggleButton, "Primary Member Toggle Button");
+	}
 	
+	@FindBy(xpath="(//div[contains(@class,'btn-div addBorderToToggleButton')]/button)[2]")
+	private WebElement spouseToggleButton;
 
-
+	public void clickSpouseToggleButton() {
+		util.click(spouseToggleButton, "Spouse Toggle Button");
+	}
+	
+	@FindBy(xpath="//button[contains(text(),'Proceed')]")
+	private WebElement saveAndProceedToSpouseBT;
+	
+	public void clickSaveAndProceedToSpouseBT() {
+		util.click(saveAndProceedToSpouseBT, "Save & Proceed To Spouse Button");
+	}
 
 }

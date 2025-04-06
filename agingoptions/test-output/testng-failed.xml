@@ -3,19 +3,33 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases">
+=======
       <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
+>>>>>>> c3cf559a2b5f580b161092b7f5cea32fe48f6d04
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
+<<<<<<< HEAD
+          <include name="TC_018_inputSpouseCarePhysicianAndSave"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+=======
           <include name="afterMethod"/>
           <include name="beforeTest"/>
           <include name="TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails"/>
+>>>>>>> c3cf559a2b5f580b161092b7f5cea32fe48f6d04
           <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases -->
+=======
       </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases -->
+>>>>>>> c3cf559a2b5f580b161092b7f5cea32fe48f6d04
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
