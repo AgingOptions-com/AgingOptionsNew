@@ -261,32 +261,32 @@ public class CommonCode extends CommonCodeOR {
 	}
 	public void verifyPersonalInfoPage()  {
 		util.verifyInnerText(PersonalInformationIcon, "Personal Information", "Personal Information text");
-	
+
 	}
-   public void loginWithParalegalYopmail() {
-	   
+	public void loginWithParalegalYopmail() {
+
 		util.sendValue(loginEmailTB, util.getProperty("paralegalemail"), "Login Page Email");
 		util.sendValue(loginPasswordTB, util.getProperty("paralegalPassword"), "Login Page Password");
 		util.click(universalLoginBT, "Universal Login Button");
 		verifyOtpPage();
-	  CommonCode commonpage= new CommonCode(util);
-	  commonpage.hiturlOfYopmail();
-     commonpage.Gotosearchemail(util.getProperty("paralegalemail"));
-    String otp= commonpage.GoTofindtextOfOTP();
-    commonpage.gotoinputotp(otp);
-     commonpage.GoToClickVerifyButton();
-      util.holdOn(Duration.ofSeconds(15));
-   commonpage.gotoClickParalegalOptions();
-    util.holdOn(Duration.ofSeconds(12)); }
-   
-  public void verifyOtpPage() {
-	  try {
-		Thread.sleep(Duration.ofSeconds(3));
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		CommonCode commonpage= new CommonCode(util);
+		commonpage.hiturlOfYopmail();
+		commonpage.Gotosearchemail(util.getProperty("paralegalemail"));
+		String otp= commonpage.GoTofindtextOfOTP();
+		commonpage.gotoinputotp(otp);
+		commonpage.GoToClickVerifyButton();
+		util.holdOn(Duration.ofSeconds(15));
+		commonpage.gotoClickParalegalOptions();
+		util.holdOn(Duration.ofSeconds(12)); }
+
+	public void verifyOtpPage() {
+		try {
+			Thread.sleep(Duration.ofSeconds(3));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		util.verifyInnerText( clicltoresendInnertext, "Click to resend" ,"Otp");
+		// wt.verifyUrl("https://aologinuat.agingoptions.com/Account/verifyOtp","OTP page");
 	}
-	 util.verifyInnerText( clicltoresendInnertext, "Click to resend" ,"Otp");
-	 // wt.verifyUrl("https://aologinuat.agingoptions.com/Account/verifyOtp","OTP page");
-}
 }
