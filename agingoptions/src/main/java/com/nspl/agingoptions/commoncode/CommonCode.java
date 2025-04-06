@@ -66,7 +66,7 @@ public class CommonCode extends CommonCodeOR {
 	public void searchUserParaGotoLPO(String userEmail) {
 		util.holdOn(Duration.ofSeconds(2));
 		util.sendValueWithEnter(paralegalSearchTB, userEmail, "Paralegal Search");
-		waitParalegalScreenOldDesignUntilLoaderRandering();
+		//waitParalegalScreenOldDesignUntilLoaderRandering();
 		util.holdOn(Duration.ofSeconds(5));
 		try {
 			util.waitUntilPresentInUI(paralegalSearchedUser, userEmail);
@@ -148,23 +148,18 @@ public class CommonCode extends CommonCodeOR {
 	//////////////////////////////////////////////////////////////////////////////////////////
 
 	public void hiturlOfYopmail() {
-		util.hitUrl("https://yopmail.com/en/");
+		util.nevigetUrl("https://yopmail.com/en/","Yop Mail");
 	}
 	public void searchYopEmail(String email) {
 
 		util.clearTextBox(yopmailSearchBox);
 		util.sendValue(yopmailSearchBox, email, "Email");
-
 		util.click(YopmailSearchIcon, "Search icon");
-		try {
-			Thread.sleep(Duration.ofSeconds(4));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		util.click(yopEmailRefreshIcon,"Yop Email Refresh Icon");
+		util.holdOn(Duration.ofSeconds(4));
 	}
 	public String gettextOfOTP() {
-		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		//util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		util.switchToFrameByWebElement(iFrame);
 		String text= util.getInnerText(otpText);
 //		util.nevigateAction("Otp Page").back();
@@ -276,6 +271,7 @@ public class CommonCode extends CommonCodeOR {
 		util.sendValue(loginPasswordTB, util.getProperty("paralegalPassword"), "Login Page Password");
 		util.click(universalLoginBT, "Universal Login Button");
 		CommonCode commonpage= new CommonCode(util);
+		commonpage.verifyOtpPage();
 		util.openNewTab();
 		commonpage.hiturlOfYopmail();
 		commonpage.searchYopEmail(util.getProperty("paralegalemail"));
@@ -290,7 +286,7 @@ public class CommonCode extends CommonCodeOR {
 		}catch(Exception e) {
 			util.click(paralegalOption, "Paralegal Options");
 		}
-		util.holdOn(Duration.ofSeconds(3)); }
+		util.holdOn(Duration.ofSeconds(2)); }
 
 	public void verifyOtpPage() {
 		try {
