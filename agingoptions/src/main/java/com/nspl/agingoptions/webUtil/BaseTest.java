@@ -1,6 +1,5 @@
 package com.nspl.agingoptions.webUtil;
 
-import java.io.File;
 import java.lang.reflect.Method;
 
 import org.testng.ITestResult;
@@ -48,7 +47,8 @@ public class BaseTest {
 		util.launchBrowser(util.getProperty("browserName"));
 		util.hitUrl(util.getProperty("url"));
 		CommonCode common=	new CommonCode(util);
-		common.loginAttorneyEmailPassword();
+		common.loginParalegalTutaEmailPassword();
+		//common.loginWithParalegalYopmail();
 		common.LoginWithNewMarriedUser();
 		extReports.removeTest(extTest);
 		extTest = null;
@@ -56,9 +56,9 @@ public class BaseTest {
 
 	@BeforeClass
 	public void beforeClass() {
-		extTest = extReports.createTest(getClass().getSimpleName()); // Set test name
-        util.setExtent(extTest);
-        extReports.removeTest(extTest);
+		extTest = extReports.createTest(getClass().getSimpleName()); 
+		util.setExtent(extTest);
+		extReports.removeTest(extTest);
 		extTest = null;
 	}
 

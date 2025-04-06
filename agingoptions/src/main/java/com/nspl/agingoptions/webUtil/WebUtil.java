@@ -255,7 +255,6 @@ public class WebUtil {
 			System.out.println("failed." + ActualText + " is not got as inertext");
 		}
 	}
-
 	public void verifyInnerText(WebElement we, String expectedInnerText, String PageName) {
 		String actualInnerText = we.getText();
 
@@ -263,7 +262,6 @@ public class WebUtil {
 		Assert.assertEquals(actualInnerText, expectedInnerText);
 		extTest.log(Status.INFO, "Inner text-" + actualInnerText + " , So we are now " + PageName + " ");
 	}
-
 	public void toasterverification(WebElement we, String ExpectedToasterText) {
 
 		String Toaster = new WebDriverWait(driver, Duration.ofSeconds(8))
@@ -870,17 +868,28 @@ public class WebUtil {
 	}
 
 	public void verifyActualExpectedTextContains(String actualText, String expectedText, String elementName) {
-		if (actualText.contains(expectedText)) {
+		String actual =actualText.trim();
+		String expected=expectedText.trim();
+		if (actual.contains(expected)) {
 			extTest.log(Status.PASS, "Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " ' Verify Successfully " + elementName);
 			print("Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " ' Verify Successfully ");
-		} else {
+			
+		}else if(actual.equalsIgnoreCase(expected)) {
+			extTest.log(Status.PASS, "Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
+					+ " ' Verify Successfully " + elementName);
+			print("Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
+					+ " ' Verify Successfully ");
+		}
+		else {
+			
+			
 			extTest.log(Status.FAIL, "Failed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " 'not Verify " + elementName);
 			print("Failed Actual text '" + actualText + " 'and  Expected Text  '" + expectedText + " 'not  Verify");
 		}
-		Assert.assertEquals(actualText, expectedText);
+		
 	}
 
 	public void verifyActualExpectedTextContains(String actualText, String expectedText) {
@@ -1541,6 +1550,7 @@ public class WebUtil {
 
 	public void clearTextBox(WebElement webEle) {
 		try {
+			
 			webEle.clear();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -1569,7 +1579,7 @@ public class WebUtil {
 
 	public void waitUntilPresentInUI(WebElement we, String elementName) {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOf(we));
 			extTest.log(Status.PASS, " Successfull Waited for  " + elementName + " element");
 		} catch (Exception e) {

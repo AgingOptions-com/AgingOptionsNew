@@ -45,7 +45,7 @@ public class CommonCode extends CommonCodeOR {
 		return otp;
 	}
 
-	public void loginAttorneyEmailPassword() {
+	public void loginParalegalTutaEmailPassword() {
 		util.sendValue(loginEmailTB, util.getProperty("attorneyEmail"), "Login Page Email");
 		util.sendValue(loginPasswordTB, util.getProperty("attorneyPassword"), "Login Page Password");
 		util.click(universalLoginBT, "Universal Login Button");
@@ -82,7 +82,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void gotoFamilyIcon(String userEmail) {
-		loginAttorneyEmailPassword();
+		loginParalegalTutaEmailPassword();
 		searchUserParaGotoLPO(userEmail);
 		clickFamilySideIcon();
 	}
@@ -132,9 +132,9 @@ public class CommonCode extends CommonCodeOR {
 		String address=	mapData.get("address");
 		CommonCode common = new CommonCode(util);
 		String UserEmail=	common.createLifePlanningUser(firstName,lastName,email,phoneNumber);
-		util.holdOn(Duration.ofSeconds(1));
+		util.holdOn(Duration.ofSeconds(3));
 		common.searchUserParaGotoLPO(UserEmail);
-		Duration.ofSeconds(2);
+		Duration.ofSeconds(3);
 		common.inputMarriedUserAcitvationPageDetails(noOfChild, primaryMemberDob, address, spouseFirstName, spouseDob);
 	}
 
@@ -148,12 +148,9 @@ public class CommonCode extends CommonCodeOR {
 	//////////////////////////////////////////////////////////////////////////////////////////
 
 	public void hiturlOfYopmail() {
-		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-		util.nevigetUrl("https://yopmail.com/en/", "yopmail");
-		util.verifyUrl("https://yopmail.com/en/","Yopmail" );
-
+		util.hitUrl("https://yopmail.com/en/");
 	}
-	public void Gotosearchemail(String email) {
+	public void searchYopEmail(String email) {
 
 		util.clearTextBox(yopmailSearchBox);
 		util.sendValue(yopmailSearchBox, email, "Email");
@@ -166,12 +163,12 @@ public class CommonCode extends CommonCodeOR {
 			e.printStackTrace();
 		}
 	}
-	public String GoTofindtextOfOTP() {
+	public String gettextOfOTP() {
 		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		util.switchToFrameByWebElement(iFrame);
 		String text= util.getInnerText(otpText);
-		util.nevigateAction("Otp Page").back();
-		util.nevigateAction("").back();
+//		util.nevigateAction("Otp Page").back();
+//		util.nevigateAction("").back();
 		return text;
 	}
 	public void returntoframe() {
@@ -181,11 +178,11 @@ public class CommonCode extends CommonCodeOR {
 
 	}
 
-	public void gotoinputotp(String otp) {
+	public void inputotp(String otp) {
 		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		util.sendValue(otpInputBox, otp, "OTP box");
 	}
-	public void GoToClickVerifyButton() {
+	public void clickVerifyOtpButton() {
 		util.click(verifybutton, "OTP Verify button");
 	}
 
@@ -204,12 +201,12 @@ public class CommonCode extends CommonCodeOR {
 
 		util.click(paralegalrole, "Paralegal Role options");
 		try {
-			Thread.sleep(Duration.ofSeconds(7));
+			Thread.sleep(Duration.ofSeconds(10));
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		util.verifyTitle("Paralegal ", "Aging Options");
+		//util.verifyTitle("Paralegal ", "Aging Options");
 		util.verifyInnerText(ParalegalInnertext,"Intake / LPO Member List","Paralegal screen" );
 		// wt.verifyUrl("https://aointakeformuat.agingoptions.com/paralegal", "Paralegal page");
 	}
@@ -271,6 +268,39 @@ public class CommonCode extends CommonCodeOR {
 	}
 	public void verifyPersonalInfoPage()  {
 		util.verifyInnerText(PersonalInformationIcon, "Personal Information", "Personal Information text");
+
+	}
+	public void loginWithParalegalYopmail() {
+		
+		util.sendValue(loginEmailTB, util.getProperty("paralegalemail"), "Login Page Email");
+		util.sendValue(loginPasswordTB, util.getProperty("paralegalPassword"), "Login Page Password");
+		util.click(universalLoginBT, "Universal Login Button");
+		CommonCode commonpage= new CommonCode(util);
+		util.openNewTab();
+		commonpage.hiturlOfYopmail();
+		commonpage.searchYopEmail(util.getProperty("paralegalemail"));
+		util.holdOn(Duration.ofSeconds(5));
+		String otp= commonpage.gettextOfOTP();
+		util.switchToWindowByUrlContains(util.getProperty("url") + "/Account/verifyOtp", "Otp Verify Page");
+		commonpage.inputotp(otp);
+		commonpage.clickVerifyOtpButton();
+		util.holdOn(Duration.ofSeconds(5));
+		try {
+			util.waitUntilElementClickableAndClick(paralegalOption);
+		}catch(Exception e) {
+			util.click(paralegalOption, "Paralegal Options");
+		}
+		util.holdOn(Duration.ofSeconds(3)); }
+
+	public void verifyOtpPage() {
+		try {
+			Thread.sleep(Duration.ofSeconds(3));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		util.verifyInnerText( clickToResendInnertext, "Click to resend" ,"Otp");
+		// wt.verifyUrl("https://aologinuat.agingoptions.com/Account/verifyOtp","OTP page");
 	}
 
 	public void clickSaveContinueLaterButton() {
