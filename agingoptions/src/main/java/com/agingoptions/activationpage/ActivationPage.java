@@ -1,5 +1,7 @@
 package com.agingoptions.activationpage;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -53,6 +55,7 @@ public class ActivationPage {
 
 	public void selectMarriedRelationshipOptions() {
 		util.click(RelationshipDropDown, "Relation ship drop down");
+		util.holdOn(Duration.ofSeconds(4));
 		util.click(MarriedDDOptions, "Married Options");
 	}
 	public void selectMaleAsPrimaryMember() {

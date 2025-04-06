@@ -27,6 +27,8 @@
 			<class
 				name="com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases">
 			</class>
+			<class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript"/>
+				<class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript"/>
 		</classes>
 	</test>
 </suite> 
