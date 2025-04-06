@@ -157,18 +157,21 @@ public class CommonCodeOR   {
 
 	@FindBy(xpath="//h1[text()='Personal Information']")
 	protected WebElement PersonalInformationIcon;
-	
+
 	@FindBy(xpath="//button[contains(text(),'Save & Continue later')]")
 	protected WebElement saveContinueLaterBT;
-	
+
 	@FindBy(xpath="//button[contains(text(),'Save & Add Another')]")
 	protected WebElement saveAddAnotherBT;
 
 	@FindBy(xpath="//span[contains(text(),' Previous')]")
 	protected WebElement previousButton;
-	
+
 	@FindBy(xpath="//button[text()='Click to resend']")
-	   protected WebElement clickToResendInnertext;
+	protected WebElement clickToResendInnertext;
+	
+	@FindBy(xpath="//button[@id='refresh']")
+	protected WebElement yopEmailRefreshIcon;
 
 }
 
