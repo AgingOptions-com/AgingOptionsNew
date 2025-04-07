@@ -164,7 +164,7 @@ public class CommonCodeOR   {
 	@FindBy(xpath="//button[contains(text(),'Save & Add Another')]")
 	protected WebElement saveAddAnotherBT;
 
-	@FindBy(xpath="//span[contains(text(),' Previous')]")
+	@FindBy(xpath="//span[contains(text(),'Previous')]")
 	protected WebElement previousButton;
 
 	@FindBy(xpath="//button[text()='Click to resend']")

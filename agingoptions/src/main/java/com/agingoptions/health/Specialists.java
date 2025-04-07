@@ -320,7 +320,7 @@ public class Specialists extends CommonCode {
 	private WebElement toasterMessage;
 	
 	public void waitUntilToasterMessageisHide() {
-		util.waitUntilElementIsDisappearFromThePage(toasterMessage, 0);
+		util.waitUntilElementIsDisappearFromThePage(toasterMessage, 2);
 	}
 
 
