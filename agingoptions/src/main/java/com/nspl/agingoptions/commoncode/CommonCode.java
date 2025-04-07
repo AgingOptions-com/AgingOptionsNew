@@ -37,6 +37,7 @@ public class CommonCode extends CommonCodeOR {
 		return getTutaOtpAlreadyOpenUrl();
 
 	}
+
 	public String getTutaOtpAlreadyOpenUrl() {
 		WebElement element = util.getShadowElement(shadowHost, shadowElement);
 		String otp = util.extractOTP(element);
@@ -54,10 +55,10 @@ public class CommonCode extends CommonCodeOR {
 		util.sendValue(otpTB, otp, "OTP");
 		util.click(clickVerifyOtpBT, "Verify Otp button");
 		util.holdOn(Duration.ofSeconds(5));
-		//util.waitUntilPresentInUI(selectAccountText, "Select Account Text");
+		// util.waitUntilPresentInUI(selectAccountText, "Select Account Text");
 		try {
 			util.waitUntilElementClickableAndClick(paralegalOption);
-		}catch(Exception e) {
+		} catch (Exception e) {
 			util.click(paralegalOption, "Paralegal Options");
 		}
 
@@ -66,12 +67,12 @@ public class CommonCode extends CommonCodeOR {
 	public void searchUserParaGotoLPO(String userEmail) {
 		util.holdOn(Duration.ofSeconds(2));
 		util.sendValueWithEnter(paralegalSearchTB, userEmail, "Paralegal Search");
-		//waitParalegalScreenOldDesignUntilLoaderRandering();
+		// waitParalegalScreenOldDesignUntilLoaderRandering();
 		util.holdOn(Duration.ofSeconds(5));
 		try {
 			util.waitUntilPresentInUI(paralegalSearchedUser, userEmail);
 			util.click(paralegalSearchedUser, "Paralegal screen searched user");
-		}catch(Exception e) {
+		} catch (Exception e) {
 			util.click(paralegalSearchedUser, "Paralegal screen searched user");
 		}
 		util.holdOn(Duration.ofSeconds(3));
@@ -87,11 +88,12 @@ public class CommonCode extends CommonCodeOR {
 		clickFamilySideIcon();
 	}
 
-	public String createLifePlanningUser(String firstName,String lastName,String email, String phoneNumber) {
-		String formattedNumber = "(" + phoneNumber.substring(0, 3) + ")" + phoneNumber.substring(3, 6) + "-" + phoneNumber.substring(6);
-		String userEmail=	email+util.getRandomText(8)+"@maildrop.cc";
+	public String createLifePlanningUser(String firstName, String lastName, String email, String phoneNumber) {
+		String formattedNumber = "(" + phoneNumber.substring(0, 3) + ")" + phoneNumber.substring(3, 6) + "-"
+				+ phoneNumber.substring(6);
+		String userEmail = email + util.getRandomText(8) + "@maildrop.cc";
 		util.holdOn(Duration.ofSeconds(3));
-		util.click(newRegistrationBT,"New Registration Button");
+		util.click(newRegistrationBT, "New Registration Button");
 		util.holdOn(Duration.ofSeconds(2));
 		util.sendValueWithAct(phoneNumberTB, formattedNumber, "Phone Number");
 		util.sendValue(firstNameTB, firstName, "First Name");
@@ -105,33 +107,37 @@ public class CommonCode extends CommonCodeOR {
 		util.click(registrationCloseIcon, "Registration Close Icon");
 		return userEmail;
 	}
-	public void inputMarriedUserAcitvationPageDetails(String noOfChild,String primaryMemberDob,String address,String spouseFirstName,String spouseDob ) {
-		ActivationPage actObj=	new ActivationPage(util);
+
+	public void inputMarriedUserAcitvationPageDetails(String noOfChild, String primaryMemberDob, String address,
+			String spouseFirstName, String spouseDob) {
+		ActivationPage actObj = new ActivationPage(util);
 		util.holdOn(Duration.ofSeconds(3));
 		actObj.selectMarriedRelationshipOptions();
 		actObj.selectMaleAsPrimaryMember();
 		actObj.inputNoOfChildren(noOfChild);
 		actObj.inputPrimaryMemberDob(primaryMemberDob);
-		//actObj.inputAddress(address);
+		// actObj.inputAddress(address);
 		actObj.inputSpouseFirstName(spouseFirstName);
 		actObj.inputSpouseDob(spouseDob);
+		util.holdOn(Duration.ofSeconds(1));
 		actObj.clickProceedSubmitButton();
 		util.holdOn(Duration.ofSeconds(5));
 	}
+
 	public void LoginWithNewMarriedUser() {
-		DataUtil data=	new DataUtil();
-		Map<String,String>	mapData=data.getTestCaseData("Health_001");
-		String firstName=	mapData.get("firstName");
-		String lastName=	mapData.get("lastName");
-		String email=	mapData.get("userEmail");
-		String phoneNumber=	mapData.get("phoneNumber");
-		String noOfChild=	mapData.get("noOfChild");
-		String primaryMemberDob=	mapData.get("primaryMemberDob");
-		String spouseFirstName=	mapData.get("spouseFirstName");
-		String spouseDob=	mapData.get("spouseDob");
-		String address=	mapData.get("address");
+		DataUtil data = new DataUtil();
+		Map<String, String> mapData = data.getTestCaseData("Health_001");
+		String firstName = mapData.get("firstName");
+		String lastName = mapData.get("lastName");
+		String email = mapData.get("userEmail");
+		String phoneNumber = mapData.get("phoneNumber");
+		String noOfChild = mapData.get("noOfChild");
+		String primaryMemberDob = mapData.get("primaryMemberDob");
+		String spouseFirstName = mapData.get("spouseFirstName");
+		String spouseDob = mapData.get("spouseDob");
+		String address = mapData.get("address");
 		CommonCode common = new CommonCode(util);
-		String UserEmail=	common.createLifePlanningUser(firstName,lastName,email,phoneNumber);
+		String UserEmail = common.createLifePlanningUser(firstName, lastName, email, phoneNumber);
 		util.holdOn(Duration.ofSeconds(3));
 		common.searchUserParaGotoLPO(UserEmail);
 		Duration.ofSeconds(3);
@@ -139,33 +145,38 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void waitParalegalScreenOldDesignUntilLoaderRandering() {
-		util.waitForLoaderToDisappear(By.xpath("//div[@class='spinner-border text-primary blockuiloader']"),1);
+		util.waitForLoaderToDisappear(By.xpath("//div[@class='spinner-border text-primary blockuiloader']"), 1);
 	}
+
 	public void waitNewDesignIntakeScreenUntilLoaderRandering() {
-		util.waitForLoaderToDisappear(By.xpath("//div[@id='customLoader']"),5);
+		util.waitForLoaderToDisappear(By.xpath("//div[@id='customLoader']"), 5);
 	}
 
 	//////////////////////////////////////////////////////////////////////////////////////////
 
 	public void hiturlOfYopmail() {
-		util.nevigetUrl("https://yopmail.com/en/","Yop Mail");
+		util.nevigetUrl("https://yopmail.com/en/", "Yop Mail");
 	}
+
 	public void searchYopEmail(String email) {
 
 		util.clearTextBox(yopmailSearchBox);
 		util.sendValue(yopmailSearchBox, email, "Email");
 		util.click(YopmailSearchIcon, "Search icon");
-		util.click(yopEmailRefreshIcon,"Yop Email Refresh Icon");
+		util.holdOn(Duration.ofSeconds(2));
+		util.click(yopEmailRefreshIcon, "Yop Email Refresh Icon");
 		util.holdOn(Duration.ofSeconds(4));
 	}
+
 	public String gettextOfOTP() {
-		//util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		// util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		util.switchToFrameByWebElement(iFrame);
-		String text= util.getInnerText(otpText);
-//		util.nevigateAction("Otp Page").back();
-//		util.nevigateAction("").back();
+		String text = util.getInnerText(otpText);
+		// util.nevigateAction("Otp Page").back();
+		// util.nevigateAction("").back();
 		return text;
 	}
+
 	public void returntoframe() {
 		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
 		util.nevigateAction("Otp Page").back();
@@ -177,6 +188,7 @@ public class CommonCode extends CommonCodeOR {
 		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		util.sendValue(otpInputBox, otp, "OTP box");
 	}
+
 	public void clickVerifyOtpButton() {
 		util.click(verifybutton, "OTP Verify button");
 	}
@@ -189,9 +201,10 @@ public class CommonCode extends CommonCodeOR {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		util.verifyInnerText(SignUpText, "Sign up","Sign Up");
-		//wt.verifyUrl("https://aologinuat.agingoptions.com/Account/Signup", "SignUp");
+		util.verifyInnerText(SignUpText, "Sign up", "Sign Up");
+		// wt.verifyUrl("https://aologinuat.agingoptions.com/Account/Signup", "SignUp");
 	}
+
 	public void gotoClickParalegalOptions() {
 
 		util.click(paralegalrole, "Paralegal Role options");
@@ -201,16 +214,19 @@ public class CommonCode extends CommonCodeOR {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//util.verifyTitle("Paralegal ", "Aging Options");
-		util.verifyInnerText(ParalegalInnertext,"Intake / LPO Member List","Paralegal screen" );
-		// wt.verifyUrl("https://aointakeformuat.agingoptions.com/paralegal", "Paralegal page");
+		// util.verifyTitle("Paralegal ", "Aging Options");
+		util.verifyInnerText(ParalegalInnertext, "Intake / LPO Member List", "Paralegal screen");
+		// wt.verifyUrl("https://aointakeformuat.agingoptions.com/paralegal", "Paralegal
+		// page");
 	}
+
 	public void GotoclickAdminRoleoptions() {
 
 		util.click(AdminRole, "Admin Role");
 		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		util.verifyTitle("Admin", "AO Admin");
 	}
+
 	public void GoTOClickEventCoordinatorRole() {
 
 		util.click(EventCoordinatiorRole, "Event Coordinator");
@@ -218,6 +234,7 @@ public class CommonCode extends CommonCodeOR {
 		util.verifyTitle("Counter Coordinator", "Counter-Coordinator");
 
 	}
+
 	public void GoToClickSignOnRole() {
 		util.click(SignOnRole, "Sign On");
 		try {
@@ -226,8 +243,9 @@ public class CommonCode extends CommonCodeOR {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		util.verifyInnerText(welcomemessagetextofSignOn, "View portal users here." ,"Sign on");
+		util.verifyInnerText(welcomemessagetextofSignOn, "View portal users here.", "Sign on");
 	}
+
 	public void gotoClickVerifyButtonLoginAfterSignUp() {
 
 		util.click(verifybutton, "OTP Verify button");
@@ -238,12 +256,15 @@ public class CommonCode extends CommonCodeOR {
 			e.printStackTrace();
 		}
 	}
+
 	public void gotoclickOtpButton() {
-		util.click(verifybutton, "OTP Verify button"); 
+		util.click(verifybutton, "OTP Verify button");
 	}
+
 	public void verifyToasterMessage(String Message) {
 		util.toasterverification(toasterMessage, Message);
 	}
+
 	public void VerifyBackToLogin() {
 		util.click(BackTologinLink, "Back To Login Link");
 		try {
@@ -254,6 +275,7 @@ public class CommonCode extends CommonCodeOR {
 		}
 		util.verifyInnerText(LoginText, "Login", "Login Page");
 	}
+
 	public void ToasterMessage(String WarningMessage) {
 		util.toasterverification(toasterMessage, WarningMessage);
 	}
@@ -261,32 +283,35 @@ public class CommonCode extends CommonCodeOR {
 	public void goToClickHousingButtonUnderSetUp() {
 		util.click(HousingButtonUnderSetUp, "Housing Button under SetUp Page");
 	}
-	public void verifyPersonalInfoPage()  {
+
+	public void verifyPersonalInfoPage() {
 		util.verifyInnerText(PersonalInformationIcon, "Personal Information", "Personal Information text");
 
 	}
+
 	public void loginWithParalegalYopmail() {
-		
+
 		util.sendValue(loginEmailTB, util.getProperty("paralegalemail"), "Login Page Email");
 		util.sendValue(loginPasswordTB, util.getProperty("paralegalPassword"), "Login Page Password");
 		util.click(universalLoginBT, "Universal Login Button");
-		CommonCode commonpage= new CommonCode(util);
+		CommonCode commonpage = new CommonCode(util);
 		commonpage.verifyOtpPage();
 		util.openNewTab();
 		commonpage.hiturlOfYopmail();
 		commonpage.searchYopEmail(util.getProperty("paralegalemail"));
 		util.holdOn(Duration.ofSeconds(5));
-		String otp= commonpage.gettextOfOTP();
+		String otp = commonpage.gettextOfOTP();
 		util.switchToWindowByUrlContains(util.getProperty("url") + "/Account/verifyOtp", "Otp Verify Page");
 		commonpage.inputotp(otp);
 		commonpage.clickVerifyOtpButton();
 		util.holdOn(Duration.ofSeconds(5));
 		try {
 			util.waitUntilElementClickableAndClick(paralegalOption);
-		}catch(Exception e) {
+		} catch (Exception e) {
 			util.click(paralegalOption, "Paralegal Options");
 		}
-		util.holdOn(Duration.ofSeconds(2)); }
+		util.holdOn(Duration.ofSeconds(2));
+	}
 
 	public void verifyOtpPage() {
 		try {
@@ -295,8 +320,9 @@ public class CommonCode extends CommonCodeOR {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		util.verifyInnerText( clickToResendInnertext, "Click to resend" ,"Otp");
-		// wt.verifyUrl("https://aologinuat.agingoptions.com/Account/verifyOtp","OTP page");
+		util.verifyInnerText(clickToResendInnertext, "Click to resend", "Otp");
+		// wt.verifyUrl("https://aologinuat.agingoptions.com/Account/verifyOtp","OTP
+		// page");
 	}
 
 	public void clickSaveContinueLaterButton() {
@@ -311,7 +337,7 @@ public class CommonCode extends CommonCodeOR {
 		util.click(previousButton, "Previous Button");
 	}
 
-	@FindBy(xpath="//p[text()='Copy same data to spouse']/parent::div//input")
+	@FindBy(xpath = "//p[text()='Copy same data to spouse']/parent::div//input")
 	private WebElement copySameDataToSpouseCheckBox;
 
 	public void checkCopySameDataToSpouseCheckBox() {
@@ -319,30 +345,34 @@ public class CommonCode extends CommonCodeOR {
 			util.waitUntilElementIsDeselected(copySameDataToSpouseCheckBox, 10);
 			util.checkCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
 			util.waitUntilElementIsSelected(copySameDataToSpouseCheckBox, 5);
-		}catch(Exception e) {
+		} catch (Exception e) {
 			util.checkCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
 		}
 	}
 
-	@FindBy(xpath="(//div[contains(@class,'btn-div addBorderToToggleButton')]/button)[1]")
+	@FindBy(xpath = "(//div[contains(@class,'btn-div addBorderToToggleButton')]/button)[1]")
 	private WebElement primaryMemberToggleButton;
 
 	public void clickPrimaryMemberToggleButton() {
 		util.click(primaryMemberToggleButton, "Primary Member Toggle Button");
 	}
-	
-	@FindBy(xpath="(//div[contains(@class,'btn-div addBorderToToggleButton')]/button)[2]")
+
+	@FindBy(xpath = "(//div[contains(@class,'btn-div addBorderToToggleButton')]/button)[2]")
 	private WebElement spouseToggleButton;
 
 	public void clickSpouseToggleButton() {
 		util.click(spouseToggleButton, "Spouse Toggle Button");
 	}
-	
-	@FindBy(xpath="//button[contains(text(),'Proceed')]")
+
+	@FindBy(xpath = "//button[contains(text(),'Proceed')]")
 	private WebElement saveAndProceedToSpouseBT;
-	
+
 	public void clickSaveAndProceedToSpouseBT() {
 		util.click(saveAndProceedToSpouseBT, "Save & Proceed To Spouse Button");
+	}
+
+	public void waitUntilToasterMessageisHide() {
+		util.waitUntilElementIsDisappearFromThePage(toasterMessage, 2);
 	}
 
 }
