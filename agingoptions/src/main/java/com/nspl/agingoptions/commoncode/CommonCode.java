@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import com.agingoptions.activationpage.ActivationPage;
 import com.nspl.agingoptions.webUtil.DataUtil;
@@ -44,7 +45,7 @@ public class CommonCode extends CommonCodeOR {
 		return otp;
 	}
 
-	public void loginAttorneyEmailPassword() {
+	public void loginParalegalTutaEmailPassword() {
 		util.sendValue(loginEmailTB, util.getProperty("attorneyEmail"), "Login Page Email");
 		util.sendValue(loginPasswordTB, util.getProperty("attorneyPassword"), "Login Page Password");
 		util.click(universalLoginBT, "Universal Login Button");
@@ -53,17 +54,26 @@ public class CommonCode extends CommonCodeOR {
 		util.sendValue(otpTB, otp, "OTP");
 		util.click(clickVerifyOtpBT, "Verify Otp button");
 		util.holdOn(Duration.ofSeconds(5));
-		util.waitUntilPresentInUI(selectAccountText, "Select Account Text");
-		util.waitUntilElementClickableAndClick(paralegalOption);
+		//util.waitUntilPresentInUI(selectAccountText, "Select Account Text");
+		try {
+			util.waitUntilElementClickableAndClick(paralegalOption);
+		}catch(Exception e) {
+			util.click(paralegalOption, "Paralegal Options");
+		}
 
 	}
 
 	public void searchUserParaGotoLPO(String userEmail) {
 		util.holdOn(Duration.ofSeconds(2));
 		util.sendValueWithEnter(paralegalSearchTB, userEmail, "Paralegal Search");
-		waitParalegalScreenOldDesignUntilLoaderRandering();
+		//waitParalegalScreenOldDesignUntilLoaderRandering();
 		util.holdOn(Duration.ofSeconds(5));
-		util.click(paralegalSearchedUser, "Paralegal screen searched user");
+		try {
+			util.waitUntilPresentInUI(paralegalSearchedUser, userEmail);
+			util.click(paralegalSearchedUser, "Paralegal screen searched user");
+		}catch(Exception e) {
+			util.click(paralegalSearchedUser, "Paralegal screen searched user");
+		}
 		util.holdOn(Duration.ofSeconds(3));
 	}
 
@@ -72,7 +82,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void gotoFamilyIcon(String userEmail) {
-		loginAttorneyEmailPassword();
+		loginParalegalTutaEmailPassword();
 		searchUserParaGotoLPO(userEmail);
 		clickFamilySideIcon();
 	}
@@ -138,30 +148,22 @@ public class CommonCode extends CommonCodeOR {
 	//////////////////////////////////////////////////////////////////////////////////////////
 
 	public void hiturlOfYopmail() {
-		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-		util.nevigetUrl("https://yopmail.com/en/", "yopmail");
-		util.verifyUrl("https://yopmail.com/en/","Yopmail" );
-
+		util.nevigetUrl("https://yopmail.com/en/","Yop Mail");
 	}
-	public void Gotosearchemail(String email) {
+	public void searchYopEmail(String email) {
 
 		util.clearTextBox(yopmailSearchBox);
 		util.sendValue(yopmailSearchBox, email, "Email");
-
 		util.click(YopmailSearchIcon, "Search icon");
-		try {
-			Thread.sleep(Duration.ofSeconds(4));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		util.click(yopEmailRefreshIcon,"Yop Email Refresh Icon");
+		util.holdOn(Duration.ofSeconds(4));
 	}
-	public String GoTofindtextOfOTP() {
-		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+	public String gettextOfOTP() {
+		//util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		util.switchToFrameByWebElement(iFrame);
 		String text= util.getInnerText(otpText);
-		util.nevigateAction("Otp Page").back();
-		util.nevigateAction("").back();
+//		util.nevigateAction("Otp Page").back();
+//		util.nevigateAction("").back();
 		return text;
 	}
 	public void returntoframe() {
@@ -171,11 +173,11 @@ public class CommonCode extends CommonCodeOR {
 
 	}
 
-	public void gotoinputotp(String otp) {
+	public void inputotp(String otp) {
 		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		util.sendValue(otpInputBox, otp, "OTP box");
 	}
-	public void GoToClickVerifyButton() {
+	public void clickVerifyOtpButton() {
 		util.click(verifybutton, "OTP Verify button");
 	}
 
@@ -261,32 +263,86 @@ public class CommonCode extends CommonCodeOR {
 	}
 	public void verifyPersonalInfoPage()  {
 		util.verifyInnerText(PersonalInformationIcon, "Personal Information", "Personal Information text");
-	
+
 	}
-   public void loginWithParalegalYopmail() {
-	   
+	public void loginWithParalegalYopmail() {
+		
 		util.sendValue(loginEmailTB, util.getProperty("paralegalemail"), "Login Page Email");
 		util.sendValue(loginPasswordTB, util.getProperty("paralegalPassword"), "Login Page Password");
 		util.click(universalLoginBT, "Universal Login Button");
-		verifyOtpPage();
-	  CommonCode commonpage= new CommonCode(util);
-	  commonpage.hiturlOfYopmail();
-     commonpage.Gotosearchemail(util.getProperty("paralegalemail"));
-    String otp= commonpage.GoTofindtextOfOTP();
-    commonpage.gotoinputotp(otp);
-     commonpage.GoToClickVerifyButton();
-      util.holdOn(Duration.ofSeconds(15));
-   commonpage.gotoClickParalegalOptions();
-    util.holdOn(Duration.ofSeconds(12)); }
-   
-  public void verifyOtpPage() {
-	  try {
-		Thread.sleep(Duration.ofSeconds(3));
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		CommonCode commonpage= new CommonCode(util);
+		commonpage.verifyOtpPage();
+		util.openNewTab();
+		commonpage.hiturlOfYopmail();
+		commonpage.searchYopEmail(util.getProperty("paralegalemail"));
+		util.holdOn(Duration.ofSeconds(5));
+		String otp= commonpage.gettextOfOTP();
+		util.switchToWindowByUrlContains(util.getProperty("url") + "/Account/verifyOtp", "Otp Verify Page");
+		commonpage.inputotp(otp);
+		commonpage.clickVerifyOtpButton();
+		util.holdOn(Duration.ofSeconds(5));
+		try {
+			util.waitUntilElementClickableAndClick(paralegalOption);
+		}catch(Exception e) {
+			util.click(paralegalOption, "Paralegal Options");
+		}
+		util.holdOn(Duration.ofSeconds(2)); }
+
+	public void verifyOtpPage() {
+		try {
+			Thread.sleep(Duration.ofSeconds(3));
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		util.verifyInnerText( clickToResendInnertext, "Click to resend" ,"Otp");
+		// wt.verifyUrl("https://aologinuat.agingoptions.com/Account/verifyOtp","OTP page");
 	}
-	 util.verifyInnerText( clicltoresendInnertext, "Click to resend" ,"Otp");
-	 // wt.verifyUrl("https://aologinuat.agingoptions.com/Account/verifyOtp","OTP page");
-}
+
+	public void clickSaveContinueLaterButton() {
+		util.click(saveContinueLaterBT, "Save & Continue Later Button");
+	}
+
+	public void clickSaveAddAnotherButton() {
+		util.click(saveAddAnotherBT, "Save & Add Another button");
+	}
+
+	public void clickPreviousButton() {
+		util.click(previousButton, "Previous Button");
+	}
+
+	@FindBy(xpath="//p[text()='Copy same data to spouse']/parent::div//input")
+	private WebElement copySameDataToSpouseCheckBox;
+
+	public void checkCopySameDataToSpouseCheckBox() {
+		try {
+			util.waitUntilElementIsDeselected(copySameDataToSpouseCheckBox, 10);
+			util.checkCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
+			util.waitUntilElementIsSelected(copySameDataToSpouseCheckBox, 5);
+		}catch(Exception e) {
+			util.checkCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
+		}
+	}
+
+	@FindBy(xpath="(//div[contains(@class,'btn-div addBorderToToggleButton')]/button)[1]")
+	private WebElement primaryMemberToggleButton;
+
+	public void clickPrimaryMemberToggleButton() {
+		util.click(primaryMemberToggleButton, "Primary Member Toggle Button");
+	}
+	
+	@FindBy(xpath="(//div[contains(@class,'btn-div addBorderToToggleButton')]/button)[2]")
+	private WebElement spouseToggleButton;
+
+	public void clickSpouseToggleButton() {
+		util.click(spouseToggleButton, "Spouse Toggle Button");
+	}
+	
+	@FindBy(xpath="//button[contains(text(),'Proceed')]")
+	private WebElement saveAndProceedToSpouseBT;
+	
+	public void clickSaveAndProceedToSpouseBT() {
+		util.click(saveAndProceedToSpouseBT, "Save & Proceed To Spouse Button");
+	}
+
 }

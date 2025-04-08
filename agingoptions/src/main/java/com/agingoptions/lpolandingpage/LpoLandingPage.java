@@ -36,5 +36,7 @@ public class LpoLandingPage {
 		util.waitUntilElementToBeClickable(housingModule);
 		util.click(housingModule, "Housing Module");
 	}
+	
+	
 
 }

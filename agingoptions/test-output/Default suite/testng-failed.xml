@@ -3,19 +3,41 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript">
+=======
+<<<<<<< HEAD
+      <class name="com.nspl.agingoptions.healthpage.testcases.HealthInsuranceTestCases">
+=======
+      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
+>>>>>>> c3cf559a2b5f580b161092b7f5cea32fe48f6d04
+>>>>>>> e3565749b12f5c8df1b6058fe010adc79e27dea9
         <methods>
+          <include name="TC_030SpouseAddHealthInsuranceSaveAndProccedToMedicationButton"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
+<<<<<<< HEAD
+          <include name="beforeTest"/>
+=======
+>>>>>>> c3cf559a2b5f580b161092b7f5cea32fe48f6d04
           <include name="afterMethod"/>
           <include name="beforeTest"/>
+          <include name="TC_010_Health_FamilyMedicalHistoryLivingParentInfoDetails"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
           <include name="VerifyOnTheScaleOfOneTwoFive_Select1"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.nspl.agingoptions.healthpage.testcases.HealthInsuranceTestCases -->
+=======
+      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases -->
+>>>>>>> c3cf559a2b5f580b161092b7f5cea32fe48f6d04
+>>>>>>> e3565749b12f5c8df1b6058fe010adc79e27dea9
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

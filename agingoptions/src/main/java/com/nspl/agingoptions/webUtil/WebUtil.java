@@ -70,18 +70,19 @@ public class WebUtil {
 	private ExtentTest extTest;
 	private static Properties prop;
 
-	// private static WebUtil util=new WebUtil();
-	//
-	// private WebUtil() {
-	//
-	// }
-	//
-	// public static WebUtil getObject() {
-	// if(util==null) {
-	// util=new WebUtil();
-	// }
-	// return util;
-	// }
+	private static WebUtil util = new WebUtil();
+
+	private WebUtil() {
+
+	}
+
+	public static WebUtil getObject() {
+		if (util == null) {
+			util = new WebUtil();
+		}
+		return util;
+	}
+
 	public void setExtent(ExtentTest ext) {
 		this.extTest = ext;
 	}
@@ -163,8 +164,8 @@ public class WebUtil {
 			prefs.put("profile.password_manager_enabled", false);
 			options.setExperimentalOption("prefs", prefs);
 			options.addArguments("--start-maximized");
-			options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-			driver=new EdgeDriver(options);
+			options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
+			driver = new EdgeDriver(options);
 		} else if (browserName.contains("firefox")) {
 			FirefoxOptions opt = new FirefoxOptions();
 			opt.addArguments("--start-maximized");
@@ -208,6 +209,12 @@ public class WebUtil {
 			extTest.log(Status.PASS,
 					elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
 			print(elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
+		} catch (StaleElementReferenceException e) {
+			weEle.clear();
+			js.executeScript("arguments[0].value='" + value + "'", weEle);
+			extTest.log(Status.PASS,
+					elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
+			print(elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
 		} catch (Exception e) {
 			extTest.log(Status.FAIL, elementName + " [" + value + "]not Entered  in " + elementName + " Text Box");
 			print("Failed" + elementName + " [" + value + "] not  Entered in " + elementName + " Text Box");
@@ -237,9 +244,10 @@ public class WebUtil {
 			e.printStackTrace();
 			throw e;
 		}
-		
+
 	}
-	public void verifyString( String ActualText, String ExpectedText) {
+
+	public void verifyString(String ActualText, String ExpectedText) {
 		if (ActualText.equalsIgnoreCase(ExpectedText) || ActualText.contains(ExpectedText)) {
 			System.out.println(
 					"passed: Actual text " + (ActualText) + " is matching with expected text " + (ExpectedText));
@@ -247,38 +255,38 @@ public class WebUtil {
 			System.out.println("failed." + ActualText + " is not got as inertext");
 		}
 	}
-	
-	public void verifyInnerText(WebElement we ,String expectedInnerText ,String PageName ) {
-		String actualInnerText=	we.getText();
-	  
-		verifyString( actualInnerText, expectedInnerText);
-		 Assert.assertEquals(actualInnerText, expectedInnerText);
-		 extTest.log(Status.INFO, "Inner text-" + actualInnerText + " , So we are now "+ PageName + " " );
-		}
-	public void toasterverification(WebElement we ,String ExpectedToasterText) {
+	public void verifyInnerText(WebElement we, String expectedInnerText, String PageName) {
+		String actualInnerText = we.getText();
 
-	     String Toaster = new WebDriverWait(driver, Duration.ofSeconds(8)).until(ExpectedConditions.elementToBeClickable(we)).getText();
-	     if (Toaster.contains(ExpectedToasterText)) {
-	    	 extTest.log(Status.PASS, "Toaster message verified as-" + Toaster );
-	         System.out.println("Login Failed: " + Toaster);
-	     } else {
-	    	 extTest.log(Status.FAIL, "Toaster message verified as-" + Toaster );
-	         System.out.println("Login Success:" + Toaster);
-	     }
+		verifyString(actualInnerText, expectedInnerText);
+		Assert.assertEquals(actualInnerText, expectedInnerText);
+		extTest.log(Status.INFO, "Inner text-" + actualInnerText + " , So we are now " + PageName + " ");
+	}
+	public void toasterverification(WebElement we, String ExpectedToasterText) {
+
+		String Toaster = new WebDriverWait(driver, Duration.ofSeconds(8))
+				.until(ExpectedConditions.elementToBeClickable(we)).getText();
+		if (Toaster.contains(ExpectedToasterText)) {
+			extTest.log(Status.PASS, "Toaster message verified as-" + Toaster);
+			System.out.println("Login Failed: " + Toaster);
+		} else {
+			extTest.log(Status.FAIL, "Toaster message verified as-" + Toaster);
+			System.out.println("Login Success:" + Toaster);
+		}
 	}
 
 	// ===========================================send value with Actions class
 	// method===============================
 	public void sendValueJs(WebElement weEle, String value, String elementName) {
 		try {
-			//clearTextBox(weEle);
+			// clearTextBox(weEle);
 			// actObj.sendKeys(weEle, value).build().perform();
 			js.executeScript("arguments[0].value='" + value + "'", weEle);
 			extTest.log(Status.PASS,
 					elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
 			print(elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
 		} catch (ElementNotInteractableException e) {
-			//weEle.clear();
+			// weEle.clear();
 			js.executeScript("arguments[0].value='" + value + "'", weEle);
 			extTest.log(Status.PASS,
 					elementName + " [" + value + "] Entered Successfully in " + elementName + " Text Box");
@@ -325,6 +333,10 @@ public class WebUtil {
 			js.executeScript("arguments[0].click()", weEle);
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
+		} catch (StaleElementReferenceException e) {
+			weEle.click();
+			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
+			print("Click performed Successfully on -: " + elementName);
 		} catch (Exception e) {
 			extTest.log(Status.FAIL, "Click not performed on -: " + elementName);
 			print("failed" + "Click not performed on -: " + elementName);
@@ -336,25 +348,25 @@ public class WebUtil {
 	// ===========================================click Actions
 	// method===============================
 
-
-
-	public void nevigetUrl(String url, String urlName ) {
+	public void nevigetUrl(String url, String urlName) {
 		driver.navigate().to(url);
-		extTest.log(Status.PASS, urlName +" url hitted succesfully");
+		extTest.log(Status.PASS, urlName + " url hitted succesfully");
 
 	}
+
 	public Navigation nevigateAction(String PageName) {
-		Navigation nevigateobj=	driver.navigate();
+		Navigation nevigateobj = driver.navigate();
 		extTest.log(Status.PASS, "Focus navigate on" + PageName);
 		return nevigateobj;
 	}
+
 	public void clickActions(WebElement we, String elementName) {
 		try {
 			actObj.moveToElement(we).click(we).build().perform();
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
 		} catch (ElementClickInterceptedException e) {
-			js.executeScript("arguments[0].click()",we);
+			js.executeScript("arguments[0].click()", we);
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
 		} catch (Exception e) {
@@ -367,7 +379,7 @@ public class WebUtil {
 
 	public void clickJavaScript(WebElement we, String elementName) {
 		try {
-			js.executeScript("arguments[0].click()",we);
+			js.executeScript("arguments[0].click()", we);
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
 		} catch (Exception e) {
@@ -825,8 +837,7 @@ public class WebUtil {
 		List<WebElement> listDropDownWebEle = null;
 		try {
 			select = new Select(weEle);
-			
-			
+
 			listDropDownWebEle = select.getOptions();
 			extTest.log(Status.PASS, "all selected option found in drop down");
 			print("all selected option found in drop down");
@@ -911,14 +922,14 @@ public class WebUtil {
 	// ===========================================By this method we can quit
 	// browser===============================
 
-	
-	   public void verifyUrl(String expectedUrl,String pageName) {
-			  String ActualUrl= getUrl();
-			  ActualUrl.contains(expectedUrl);
-//			 // wt.verifyString(ActualUrl, expectedUrl);
-//			  Assert.assertEquals(ActualUrl, expectedUrl);
-			  extTest.log(Status.PASS,  pageName + " Url 👉 " + ActualUrl + " matching with expected URL 👉" + expectedUrl );
-	   }
+	public void verifyUrl(String expectedUrl, String pageName) {
+		String ActualUrl = getUrl();
+		ActualUrl.contains(expectedUrl);
+		// // wt.verifyString(ActualUrl, expectedUrl);
+		// Assert.assertEquals(ActualUrl, expectedUrl);
+		extTest.log(Status.PASS, pageName + " Url 👉 " + ActualUrl + " matching with expected URL 👉" + expectedUrl);
+	}
+
 	public void quitBrowser() {
 		try {
 			driver.quit();
@@ -1149,17 +1160,15 @@ public class WebUtil {
 
 	/////////////// FOR IS SELECTED //////////////
 	public void isSelected(WebElement weEle, String radioButtonName) {
-		try {
-			boolean status = weEle.isSelected();
-			if (status == true) {
-				extTest.log(Status.PASS, radioButtonName+" is selected");
-				print(radioButtonName+" is selected");
-			} else {
-				extTest.log(Status.FAIL, radioButtonName+" is not selected");
-				print(radioButtonName+" Failed Element is not selected");
-			}}catch(Exception e) {
-				e.printStackTrace();
-			}
+		boolean status = weEle.isSelected();
+		if (status == true) {
+			extTest.log(Status.PASS, radioButtonName + " is selected");
+			print(radioButtonName + " is selected");
+		} else {
+			extTest.log(Status.FAIL, radioButtonName + " is not selected");
+			print(radioButtonName + " Failed: Element is not selected");
+		}
+		Assert.assertEquals(status, true);
 	}
 
 	///////////// for IsDisplay ///////////////
@@ -1168,7 +1177,7 @@ public class WebUtil {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOf(weEle));
 			boolean status = weEle.isDisplayed();
-			if (status==true) {
+			if (status == true) {
 				extTest.log(Status.PASS, "" + elementName + "- is displayed on the UI");
 				print(elementName + " Element is displayed");
 			} else {
@@ -1184,15 +1193,15 @@ public class WebUtil {
 			throw e;
 		}
 	}
-	
-	public void isNotDisplayed(WebElement we , String elementName) {
-		if(we.isDisplayed()==false) {
+
+	public void isNotDisplayed(WebElement we, String elementName) {
+		if (we.isDisplayed() == false) {
 			extTest.log(Status.PASS, "-" + elementName + "- is not displayed on the UI");
-			
-		}else {
+
+		} else {
 			extTest.log(Status.FAIL, "-" + elementName + "- is displayed on the UI");
 		}
-		
+
 	}
 
 	// ===========================================By this method we can get
@@ -1329,27 +1338,27 @@ public class WebUtil {
 		return otpText;
 	}
 
-	
-	public void clickRadioButton(WebElement we ,String ElementName) {
-		if (we.isSelected()==true ) {
+	public void clickRadioButton(WebElement we, String ElementName) {
+		if (we.isSelected() == true) {
 			extTest.log(Status.INFO, "Radio button is selected");
 			click(we, ElementName);
-			
+
 			click(we, ElementName);
 
-		}else {
-			if (we.isSelected()==false ) {
+		} else {
+			if (we.isSelected() == false) {
 				extTest.log(Status.INFO, "Radio button is not selected");
 				click(we, ElementName);
 			}
 		}
 	}
-	
-	public void ListSize(List<WebElement > listObj) {
-		int size =listObj.size();
-		extTest.log(Status.INFO,  size + " option is there in dropdown");
-		
+
+	public void ListSize(List<WebElement> listObj) {
+		int size = listObj.size();
+		extTest.log(Status.INFO, size + " option is there in dropdown");
+
 	}
+
 	// ===========================================By this method we can check on all
 	// check boxes===============================
 	public void checkAllCheckBoxes(List<WebElement> weList, String elementName) {
@@ -1574,7 +1583,7 @@ public class WebUtil {
 			wait.until(ExpectedConditions.visibilityOf(we));
 			extTest.log(Status.PASS, " Successfull Waited for  " + elementName + " element");
 		} catch (Exception e) {
-			extTest.log(Status.FAIL, elementName + " Failed not waited for "+elementName +" element ");
+			extTest.log(Status.FAIL, elementName + " Failed not waited for " + elementName + " element ");
 			e.printStackTrace();
 			throw e;
 		}
@@ -1694,53 +1703,60 @@ public class WebUtil {
 			throw e;
 		}
 	}
+
 	public WebElement getShadowElement(By shadowHostSelector, By elementInsideShadow) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement shadowHost = driver.findElement(shadowHostSelector);
 		SearchContext shadowRoot = (SearchContext) js.executeScript("return arguments[0].shadowRoot", shadowHost);
 		return shadowRoot.findElement(elementInsideShadow);
 	}
+
 	public String extractOTP(WebElement element) {
 		String text = element.getText();
 		Pattern pattern = Pattern.compile("\\b\\d{6}\\b");
 		Matcher matcher = pattern.matcher(text);
 		return matcher.find() ? matcher.group() : "OTP not found";
 	}
+
 	public void waitUntilElementClickableAndClick(WebElement we) {
 		try {
-			WebDriverWait wait=	new WebDriverWait(driver, Duration.ofSeconds(20));
-			WebElement element=		wait.until(ExpectedConditions.elementToBeClickable(we));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(we));
 			element.click();
-		}catch(StaleElementReferenceException e) {
+		} catch (StaleElementReferenceException e) {
 			we.click();
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
-	}
-	public void waitUntilElementToBeClickable(WebElement we) {
-		try {
-			WebDriverWait wait=	new WebDriverWait(driver, Duration.ofSeconds(20));
-			wait.until(ExpectedConditions.elementToBeClickable(we));
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
-	}
-	public void pressSpaceButton() {
-		try {
-			actObj.sendKeys(Keys.SPACE).build().perform();;
-		}catch(Exception e) {
-			e.printStackTrace();	
-		}
-	}
-	public void pressBackSpaceButton() {
-		try {
-			actObj.sendKeys(Keys.BACK_SPACE).build().perform();
-		}catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public  void clickButtonAfterCheckingEnable(WebElement we) {
+	public void waitUntilElementToBeClickable(WebElement we) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			wait.until(ExpectedConditions.elementToBeClickable(we));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void pressSpaceButton() {
+		try {
+			actObj.sendKeys(Keys.SPACE).build().perform();
+			;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void pressBackSpaceButton() {
+		try {
+			actObj.sendKeys(Keys.BACK_SPACE).build().perform();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void clickButtonAfterCheckingEnable(WebElement we) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			if (we.isEnabled()) {
@@ -1764,26 +1780,29 @@ public class WebUtil {
 			e.printStackTrace();
 		}
 	}
-	public void selectRadioButton(WebElement we,String elementName) {
+
+	public void selectRadioButton(WebElement we, String elementName) {
 		try {
-			if (we.isSelected()==false) {
+			if (we.isSelected() == false) {
 				we.click();
-				extTest.pass("Successfully selected the 'Yes' radio button of "+elementName);
-			}}
-		catch(Exception e) {
+				extTest.pass("Successfully selected the 'Yes' radio button of " + elementName);
+			}
+		} catch (Exception e) {
 			extTest.fail("Failed to select the 'Yes' radio button. Exception: " + e.getMessage());
 		}
 	}
-	public void deselectRadioButton(WebElement we,String elementName) {
+
+	public void deselectRadioButton(WebElement we, String elementName) {
 		try {
-			if (we.isSelected()==true) {
+			if (we.isSelected() == true) {
 				we.click();
-				extTest.pass("Successfully deselected the radio button of "+elementName);
-			}}
-		catch(Exception e) {
+				extTest.pass("Successfully deselected the radio button of " + elementName);
+			}
+		} catch (Exception e) {
 			extTest.fail("Failed to De-Select the radio button. Exception: " + e.getMessage());
 		}
 	}
+
 	public void openAccordion(WebElement accordion, String elementName) {
 		try {
 			// Check if the accordion is already open using the "aria-expanded" attribute
@@ -1793,7 +1812,7 @@ public class WebUtil {
 				extTest.log(Status.INFO, elementName + " accordion is already open.");
 				return;
 			}
-			accordion.click();  // Click the accordion to open
+			accordion.click(); // Click the accordion to open
 			System.out.println("Clicked on the " + elementName + " accordion to open it.");
 			extTest.log(Status.PASS, "Clicked on the " + elementName + " accordion to open it.");
 			// Wait for the accordion to expand
@@ -1801,43 +1820,51 @@ public class WebUtil {
 			wait.until(ExpectedConditions.attributeToBe(accordion, "aria-expanded", "true"));
 			System.out.println(elementName + " accordion opened successfully.");
 			extTest.log(Status.PASS, elementName + " accordion opened successfully.");
+		} catch (ElementClickInterceptedException e) {
+			System.out.println("ElementClickInterceptedException for " + elementName + ". Using JavaScript Click...");
+			extTest.log(Status.WARNING,
+					"ElementClickInterceptedException for " + elementName + ". Using JavaScript Click...");
+			((JavascriptExecutor) driver).executeScript("arguments[0].click();", accordion);
 		} catch (StaleElementReferenceException e) {
 			System.out.println("StaleElementReferenceException for " + elementName + ". Retrying...");
 			extTest.log(Status.WARNING, "StaleElementReferenceException for " + elementName + ". Retrying...");
-			openAccordion(accordion, elementName);  // Retry opening
+			openAccordion(accordion, elementName); // Retry opening
 		} catch (Exception e) {
 			System.out.println("Failed to open " + elementName + " accordion: " + e.getMessage());
 			extTest.log(Status.FAIL, "Failed to open " + elementName + " accordion: " + e.getMessage());
 		}
 	}
-	public void checkCheckBox(WebElement we,String checkboxName) {
+
+	public void checkCheckBox(WebElement we, String checkboxName) {
 		try {
-			if(we.isSelected()==false) {
+			if (we.isSelected() == false) {
 				we.click();
 				System.out.println("Successfully checked checkbox: " + checkboxName);
 				extTest.log(Status.PASS, "Successfully checked checkbox: " + checkboxName);
 			}
-		}catch(Exception e) {
+		} catch (Exception e) {
 			System.out.println("Checkbox '" + checkboxName + "' is already selected.");
 			extTest.log(Status.INFO, "Checkbox '" + checkboxName + "' is already selected.");
 		}
 	}
+
 	public void unCheckCheckBox(WebElement we, String checkboxName) {
 		try {
-			if(we.isSelected()==true) {
+			if (we.isSelected() == true) {
 				we.click();
 				System.out.println("Successfully Unchecked checkbox: " + checkboxName);
 				extTest.log(Status.PASS, "Successfully Unchecked checkbox: " + checkboxName);
 			}
-		}catch(Exception e) {
+		} catch (Exception e) {
 			System.out.println("Checkbox '" + checkboxName + "' is already unchecked.");
 			extTest.log(Status.INFO, "Checkbox '" + checkboxName + "' is already unchecked.");
 		}
 	}
+
 	public void waitUntilTextPresentInUI(WebElement we, String text) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-			wait.until(ExpectedConditions.textToBePresentInElement(we,text));
+			wait.until(ExpectedConditions.textToBePresentInElement(we, text));
 			extTest.log(Status.PASS, " Successfull Waited for  " + text + "element");
 		} catch (Exception e) {
 			extTest.log(Status.FAIL, text + " Failed not waited for particular element ");
@@ -1845,6 +1872,7 @@ public class WebUtil {
 			throw e;
 		}
 	}
+
 	public void verifyElementRadioButtonSelected(WebElement element, String elementName) {
 		try {
 			JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -1861,6 +1889,7 @@ public class WebUtil {
 			e.printStackTrace();
 		}
 	}
+
 	public boolean isRadioButtonChecked(WebElement element, String elementName) {
 		try {
 			String checkedAttribute = element.getAttribute("checked");
@@ -1880,10 +1909,12 @@ public class WebUtil {
 			return false;
 		}
 	}
+
 	/**
 	 * Waits until the loader disappears before proceeding.
 	 * 
-	 * @param loaderLocator The By locator for the loader (id, class, xpath, etc.)
+	 * @param loaderLocator    The By locator for the loader (id, class, xpath,
+	 *                         etc.)
 	 * @param timeoutInSeconds Maximum time to wait before failing
 	 */
 	public void waitForLoaderToDisappear(By loaderLocator, int timeoutInSeconds) {
@@ -1903,6 +1934,76 @@ public class WebUtil {
 			System.out.println("Loader is still visible after " + timeoutInSeconds + " seconds. " + e.getMessage());
 		}
 	}
+
+	public void waitUntilElementIsSelected(WebElement we, long time) {
+		try {
+			WebDriverWait wait=	new WebDriverWait(driver, Duration.ofSeconds(time));
+			wait.until(ExpectedConditions.elementToBeSelected(we));
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public void waitUntilElementIsDeselected(WebElement we, long time) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+			wait.until(ExpectedConditions.not(ExpectedConditions.elementToBeSelected(we)));
+			System.out.println("Element is deselected successfully.");
+		} catch (Exception e) {
+			System.out.println("Timeout: Element is still selected after waiting.");
+		} 
+	}
+	public void waitUntilValueIsSend(WebElement we,long time, String text) {
+		try{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+		 we.clear();
+	     we.sendKeys(text);
+		wait.until(ExpectedConditions.textToBePresentInElementValue(we, text));
+		}catch(Exception e) {
+			 System.out.println("Timeout: Text '" + text + "' was not found in the field within " + time + " seconds.");
+		}
+	}
+
+	public void waitUntilElementIsDisappearFromThePage(WebElement we, long seconds) {
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+	         wait.until(ExpectedConditions.invisibilityOf(we));
+	        System.out.println("Element disappeared from the page.");
+	    } catch (StaleElementReferenceException e) {
+	        System.out.println("Element was removed from the DOM.");
+	    }  catch (Exception e) {
+	        System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
+	    }
+	}
+	
+	public void uploadFile(WebElement fileUploadElement, String filePath) {
+	    try {
+	        fileUploadElement.sendKeys(filePath);  // Provide full path to the file
+	        extTest.log(Status.PASS, "File uploaded successfully: " + filePath);
+	        System.out.println("File uploaded successfully: " + filePath);
+	    } catch (Exception e) {
+	        extTest.log(Status.FAIL, "File upload failed: " + e.getMessage());
+	        System.out.println("File upload failed: " + e.getMessage());
+	        e.printStackTrace();
+	    }
+	}
+	public String convertDateFormatMMDDYYYY(String date) {
+	    try {
+	        SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
+	        SimpleDateFormat outputFormat = new SimpleDateFormat("MM-dd-yyyy");
+
+	        Date parsedDate = inputFormat.parse(date);
+	        return outputFormat.format(parsedDate);
+
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	        return null;
+	    }
+	}
+	public String convertAmountActualValue(String actual) {
+	    return actual.replaceAll(",", "").replaceAll("\\.00$", "");
+	}
+
 
 
 
