@@ -192,5 +192,6 @@ protected WebElement IDoNotHaveRealtorInnerText;
 
 @FindBy(xpath="//img[@alt='accordion']")
 protected WebElement accordian;
-
+@FindBy(xpath="//span[text()='Housing Options']")
+protected WebElement HousingOptionsection;
 }

@@ -3,19 +3,21 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript">
+      <class name="com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
+          <include name="VerifyUpdateAndContinue_SelectIsYourHouseLivingInNotsureCheckAndSelectTwoOntheScaleOfOneTwoFive"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>
+          <include name="VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave"/>
           <include name="beforeClass"/>
-          <include name="verifyHandymanPageOnHousingProfessional"/>
           <include name="beforeMethod"/>
+          <include name="VerifyOnTheScaleOfOneTwoFive_Select1"/>
         </methods>
-      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript -->
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
