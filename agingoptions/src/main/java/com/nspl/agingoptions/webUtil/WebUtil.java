@@ -2003,6 +2003,19 @@ public class WebUtil {
 	public String convertAmountActualValue(String actual) {
 	    return actual.replaceAll(",", "").replaceAll("\\.00$", "");
 	}
+	public String unformatPhoneNumber(String formattedNumber) {
+	    // Remove all non-digit characters
+	    return formattedNumber.replaceAll("\\D", "");
+	}
+	public void waitUntilPresentInUI(WebElement we, long seconds) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+			wait.until(ExpectedConditions.visibilityOf(we));
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw e;
+		}
+	}
 
 
 

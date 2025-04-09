@@ -185,7 +185,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void inputotp(String otp) {
-		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		util.holdOn(Duration.ofSeconds(2));
 		util.sendValue(otpInputBox, otp, "OTP box");
 	}
 
@@ -372,7 +372,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void waitUntilToasterMessageisHide() {
-		util.waitUntilElementIsDisappearFromThePage(toasterMessage, 2);
+		util.waitUntilElementIsDisappearFromThePage(toasterMessage, 20);
 	}
 
 }

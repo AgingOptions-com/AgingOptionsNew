@@ -37,6 +37,18 @@ public class LpoLandingPage {
 		util.click(housingModule, "Housing Module");
 	}
 	
+	@FindBy(xpath="(//span[text()='Finance'])[1]")
+	private WebElement financeSideBarLink;
+	
+	public void clickFinanceSideBarLink() {
+		util.holdOn(Duration.ofSeconds(5));
+		util.waitUntilPresentInUI(financeSideBarLink, "Finance");
+		util.waitUntilElementToBeClickable(financeSideBarLink);
+		util.click(financeSideBarLink, "Finance");
+	}
+	
+	
+	
 	
 
 }

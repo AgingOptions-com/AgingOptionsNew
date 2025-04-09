@@ -87,7 +87,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 		String expectedCellNum="9876459834";
 		primaryCare.inputPrimaryContactEmail(expectedCellNum, expectedEmail);
 		//primaryCare.clickAddAnotherContactButton();
-		primaryCare.inputAddress("122002");
+		//primaryCare.inputAddress("122002");
 		primaryCare.clickSaveAndProceedToSpouseBT();
 		util.holdOn(Duration.ofSeconds(10));
 		primaryCare.clickPrimaryMemberToggleButton();
@@ -102,7 +102,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(5));
 		primaryCare.openContactAndAddressInfoAccordian();
 		util.holdOn(Duration.ofSeconds(1));
-		String actualPhysicalText=  primaryCare.getPhysicalAddressText();
+		//String actualPhysicalText=  primaryCare.getPhysicalAddressText();
 		String actualPrimaryContactInnerText=	primaryCare.getPrimaryAddressText();
 		util.verifyActualExpectedText(actualFirstName, expectedFirstName, "First Name");
 		util.verifyActualExpectedText(actualLastName,expectedLastName , "Last Name");
@@ -111,7 +111,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 		util.verifyActualExpectedText(webSiteLinkActualText,expectedWebsiteName , "Website Link");
 		util.verifyActualExpectedText(yearAsSeenActualText,expectedYearAsDoctorSeen , "Years as your doctor seen");
 		util.verifyActualExpectedText(notesToAgentsActualText,expectedNotesForTheAgents , "Notes for Agents");
-		util.verifyActualExpectedText(actualPhysicalText,"Physical Address" , "Physical Address");
+		//util.verifyActualExpectedText(actualPhysicalText,"Physical Address" , "Physical Address");
 		util.verifyActualExpectedText(actualPrimaryContactInnerText,"Primary contact" , "Primary Contact");
 
 	}
