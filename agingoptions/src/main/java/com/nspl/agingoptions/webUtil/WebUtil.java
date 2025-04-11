@@ -257,9 +257,7 @@ public class WebUtil {
 	}
 	public void verifyInnerText(WebElement we, String expectedInnerText, String PageName) {
 		String actualInnerText = we.getText();
-
 		verifyString(actualInnerText, expectedInnerText);
-		Assert.assertEquals(actualInnerText, expectedInnerText);
 		extTest.log(Status.INFO, "Inner text-" + actualInnerText + " , So we are now " + PageName + " ");
 	}
 	public void toasterverification(WebElement we, String ExpectedToasterText) {

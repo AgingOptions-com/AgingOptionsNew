@@ -22,12 +22,9 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		handymanProfessionalObj.GoToHandymanPageOnHousingInfo();
 		util.holdOn(Duration.ofSeconds(4));
 		HousingProfessionalDetailsPage housingProfessionlObj= new HousingProfessionalDetailsPage(util);
-<<<<<<< HEAD
-        util.holdOn(Duration.ofSeconds(4));
-=======
-		util.holdOn(Duration.ofSeconds(8));
->>>>>>> e3565749b12f5c8df1b6058fe010adc79e27dea9
+		util.holdOn(Duration.ofSeconds(7));
 		housingProfessionlObj.VerifyHandymanProfessional();;
+		
 	}
 	@Test
 	public void VerifyIdONotHaveHandymanCheckBoxFunctionality() {

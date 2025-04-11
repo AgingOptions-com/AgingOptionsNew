@@ -37,6 +37,15 @@ public class LpoLandingPage {
 		util.click(housingModule, "Housing Module");
 	}
 	
+	 @FindBy(xpath="(//span[text()='Legal'])[1]")
+	 protected WebElement LegalButtonUndersetUp;
+	 
+	public void clickLegalModule() {
+		util.holdOn(Duration.ofSeconds(5));
+		util.waitUntilPresentInUI(LegalButtonUndersetUp, "Legal Module");
+		util.waitUntilElementToBeClickable(LegalButtonUndersetUp);
+		util.click(LegalButtonUndersetUp, "Legal Module");	
+	}
 	
 
 }

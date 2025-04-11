@@ -36,7 +36,7 @@ public class BaseTest {
 		extReports.setSystemInfo("OS", System.getProperty("os.name"));
 		extReports.setSystemInfo("User Name", System.getProperty("user.name"));
 		extReports.setSystemInfo("Browser", util.getProperty("browserName"));
-		extReports.setSystemInfo("Tester", "Indrajeet Bind");
+		extReports.setSystemInfo("Tester", "Satyadev Sharma");
 		extReports.setSystemInfo("Java-Verison", System.getProperty("java.version"));
 	}
 
