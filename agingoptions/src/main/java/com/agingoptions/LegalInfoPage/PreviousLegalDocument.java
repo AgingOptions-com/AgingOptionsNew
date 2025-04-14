@@ -128,13 +128,14 @@ public class PreviousLegalDocument extends PreviousLegalDocumentOr {
 		
 		
 	}
+	
 	public void uploadDocument() {
 	List<WebElement >  LisObj=wt.driver.findElements(By.xpath("//div[@class=' d-flex justify-content-end']//input[@type='file']"));
 	 for(int i=0; i<LisObj.size(); i++) {
 		WebElement FileWeb =LisObj.get(i);
 		wt.printDataInReport("File upload for Document- " + i);
 		wt.holdOn(Duration.ofSeconds(2));
-		FileWeb.sendKeys("C:\\Users\\nagai\\Downloads\\DashboardReport_27-03-2025.pdf");
+		FileWeb.sendKeys(System.getProperty("user.dir")+"\\src\\test\\resources\\DashboardReport_27-03-2025.pdf");
 		wt.holdOn(Duration.ofSeconds(3));
 			wt.driver.findElement(By.xpath("//button[text()='Confirm']")).click();
 			wt.printDataInReport("Click perform on confirm button");

@@ -80,7 +80,7 @@ public class PreviousLagalDocumentTestCases extends BaseTest {
 		    util.holdOn(Duration.ofSeconds(5));
 		    legalDocumentObj.gotoClickPreviousLegalDocumentDrawer();
 	   }
-	@Test(priority=5,enabled = false)
+	@Test(priority=5,enabled = true)
 	public void verifySaveAndContinueWithWillTypeDocuments() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
