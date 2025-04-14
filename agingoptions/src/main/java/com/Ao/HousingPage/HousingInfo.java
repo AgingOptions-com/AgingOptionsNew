@@ -241,6 +241,7 @@ public class HousingInfo extends HousingInfoOr{
 	   CommonCode cmc=new CommonCode(wt);
 		cmc.verifyToasterMessage("Your data have been updated successfully");
 
+		
    }
 }
 
