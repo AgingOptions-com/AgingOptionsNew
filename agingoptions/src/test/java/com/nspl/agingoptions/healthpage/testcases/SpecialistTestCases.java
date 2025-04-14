@@ -229,11 +229,13 @@ public class SpecialistTestCases extends BaseTest {
 		specialist.clickPreviousButton();
 		util.holdOn(Duration.ofSeconds(2));
 		specialist.clickAcupnctureSpecialistEditIcon();
+		util.holdOn(Duration.ofSeconds(2));
 		String actualFirstName=	primaryCare.getPrimaryCarePhysicianOrSpecialistActualFirstName();
 		String actualLastName=primaryCare.getPrimaryCarePhysicianOrSpecialistActualLastName();
 		String actualSpecialityText=primaryCare.getPrimaryCarePhysicianOrSpecialistActualSpeciality();
 		String actualAffiliatedText=	primaryCare.getAffiliatedHospitalActualText();
 		String webSiteLinkActualText=primaryCare.getWebSiteLinkAcutalText();
+		util.holdOn(Duration.ofSeconds(2));
 		String yearAsSeenActualText=    primaryCare.getYearAsYourDoctorText();    
 		String notesToAgentsActualText=           primaryCare.getNotesToAgentsText(); 
 		util.holdOn(Duration.ofSeconds(5));

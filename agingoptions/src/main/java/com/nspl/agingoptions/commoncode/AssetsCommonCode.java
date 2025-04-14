@@ -95,5 +95,26 @@ public class AssetsCommonCode {
 		util.DownKey();
 		util.pressEnter();
 	}
+	
+	@FindBy(xpath="//span[contains(text(),'Previous')]")
+	private WebElement previosBT;
+	
+	public void waitUntilPreviousButtonIsShown() {
+		util.waitUntilPresentInUI(previosBT, 30);
+	}
+	
+	public void waitUntilAddAssetsButtonIsShown() {
+		util.waitUntilPresentInUI(addAssetsBT, 30);
+	}
+	
+	@FindBy(xpath="//span[text()='Retirement']")
+	private WebElement retirementSideBarLink;
+
+	public void clickRetirementSideBarLink() {
+		util.click(retirementSideBarLink, "Non_Retirement");
+	}
+	
+	
+	
 
 }

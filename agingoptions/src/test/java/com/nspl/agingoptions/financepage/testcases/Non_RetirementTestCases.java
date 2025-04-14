@@ -4,7 +4,7 @@ import java.time.Duration;
 
 import org.testng.annotations.Test;
 
-import com.agingoptions.finance.Non_Retirement_Assets;
+import com.agingoptions.finance.Non_Retirement_And_RetirementPage;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
 import com.nspl.agingoptions.commoncode.AssetsCommonCode;
 import com.nspl.agingoptions.commoncode.CommonCode;
@@ -18,10 +18,12 @@ public class Non_RetirementTestCases extends BaseTest {
 		LpoLandingPage lpo=	new LpoLandingPage(util);
 		CommonCode common=		new CommonCode(util);
 		lpo.clickFinanceSideBarLink();
+		util.holdOn(Duration.ofSeconds(3));
+		util.refreshPage();
 		AssetsCommonCode assets=	new AssetsCommonCode(util);
 		assets.clickNon_RetirementSideBarLink();
 		assets.clickAddAssetButton();
-		Non_Retirement_Assets nonRetirement=	new Non_Retirement_Assets(util);
+		Non_Retirement_And_RetirementPage nonRetirement=	new Non_Retirement_And_RetirementPage(util);
 		nonRetirement.selectSavingAccountFromTypeOfAssets();
 		String expectedNameOfInstituion="Indian non-Retirement Assets";
 		nonRetirement.inputNameOfInstituion(expectedNameOfInstituion);
@@ -43,7 +45,7 @@ public class Non_RetirementTestCases extends BaseTest {
 		nonRetirement.inputCharityNameTB(expectedCharityName);
 		String expectedPercetnage="12";
 		nonRetirement.inputPercentage(expectedPercetnage);
-	//	assets.inputAddress("122002");
+		//	assets.inputAddress("122002");
 		String expectedCharityPhoneNum="7782734833";
 		util.holdOn(Duration.ofSeconds(4));
 		nonRetirement.inputCharityPhoneNumber(expectedCharityPhoneNum);
@@ -65,6 +67,7 @@ public class Non_RetirementTestCases extends BaseTest {
 		String actualOwnerSelectedText=  nonRetirement.getOwnerSelectedText();
 		String actualAccountNumberText= nonRetirement.getAccountNumberInputValue();
 		nonRetirement.openAddressAccordian();
+		util.holdOn(Duration.ofSeconds(1));
 		String actualPhoneNo=	assets.getPhoneNumberInputText();
 		String acutalEmail=		assets.getEmailInputText();
 		nonRetirement.openBeneficiaryAccordian();
@@ -102,19 +105,19 @@ public class Non_RetirementTestCases extends BaseTest {
 		AssetsCommonCode assets=	new AssetsCommonCode(util);
 		assets.clickNon_RetirementSideBarLink();
 		assets.clickAddAssetButton();
-		Non_Retirement_Assets nonRetirement=	new Non_Retirement_Assets(util);
+		Non_Retirement_And_RetirementPage nonRetirement=	new Non_Retirement_And_RetirementPage(util);
 		nonRetirement.selectMoneyMarketFundAssets();
 		String expectedNameOfInstituion="Bank of America";
 		nonRetirement.inputNameOfInstituion(expectedNameOfInstituion);
-		String expectedBalance="87454";
+		String expectedBalance="984394";
 		nonRetirement.inputBalance(expectedBalance);
 		nonRetirement.selectOwnerAsJoint();
-		String expectedAccountNumber="9987";
+		String expectedAccountNumber="8733";
 		nonRetirement.inputAccountNumber(expectedAccountNumber);
 		nonRetirement.openAddressAccordian();
-		String expectedPhoneNumber="9958764454";
+		String expectedPhoneNumber="8745874854";
 		assets.inputPhoneNumber(expectedPhoneNumber);
-		String expectedEmail="americanassets@maildrop.cc";
+		String expectedEmail="skassetsofusa@maildrop.cc";
 		assets.inputEmail(expectedEmail);
 		nonRetirement.openBeneficiaryAccordian();
 		nonRetirement.clickAddCharityButton();
@@ -135,10 +138,10 @@ public class Non_RetirementTestCases extends BaseTest {
 		nonRetirement.openDocumentUploadAccordian();
 		assets.uploadFile();
 		common.clickSaveAddAnotherButton();
-		util.holdOn(Duration.ofSeconds(2));
 		common.waitUntilToasterMessageisHide();
+		assets.waitUntilPreviousButtonIsShown();
 		common.clickPreviousButton();
-		assets.waitUntilNon_RetirementTableIsPresentInUI(40);
+		assets.waitUntilNon_RetirementTableIsPresentInUI(20);
 		nonRetirement.clickMoneyMarketEditIcon();
 		util.holdOn(Duration.ofSeconds(3));
 		String actualTypeOfAssetSelectOption=	nonRetirement.getTypeOfAssetDropDownSelectedOption();
@@ -149,6 +152,7 @@ public class Non_RetirementTestCases extends BaseTest {
 		nonRetirement.openAddressAccordian();
 		String actualPhoneNo=	assets.getPhoneNumberInputText();
 		String acutalEmail=		assets.getEmailInputText();
+		util.holdOn(Duration.ofSeconds(3));
 		nonRetirement.openBeneficiaryAccordian();
 		nonRetirement.clickEditCharityButton();
 		nonRetirement.waitUntilCharityModalIsOpen(10);
@@ -156,6 +160,7 @@ public class Non_RetirementTestCases extends BaseTest {
 		String actualCharityName=	nonRetirement.getCharityInputName();
 		String actualCharityPercentage=	nonRetirement.getCharityPercentageInputText();
 		util.holdOn(Duration.ofSeconds(2));
+		nonRetirement.waitUntilCharityModalIsOpen(10);
 		String actualCharityInputPhoneNumber=	nonRetirement.getCharityInputPhoneNumber();
 		String acutalCharityEmail=	nonRetirement.getCharityInputEmail();
 		nonRetirement.clickCharityCancelButton();
@@ -172,6 +177,7 @@ public class Non_RetirementTestCases extends BaseTest {
 		util.verifyActualExpectedText(expectedCharityEmail,acutalCharityEmail , "Charity Email");
 	}
 
+	@Test(priority=3)
 	public void FT_003Non_RetirementSaveAddProceedToRetirementButton() {
 
 		LpoLandingPage lpo=	new LpoLandingPage(util);
@@ -181,10 +187,12 @@ public class Non_RetirementTestCases extends BaseTest {
 		AssetsCommonCode assets=	new AssetsCommonCode(util);
 		assets.clickNon_RetirementSideBarLink();
 		assets.clickAddAssetButton();
-		Non_Retirement_Assets nonRetirement=	new Non_Retirement_Assets(util);
-		nonRetirement.selectMoneyMarketFundAssets();
-		String expectedNameOfInstituion="Bank of America";
+		Non_Retirement_And_RetirementPage nonRetirement=	new Non_Retirement_And_RetirementPage(util);
+		nonRetirement.selectOtherTypeOfAssets();
+		String expectedNameOfInstituion="Bank of USA";
 		nonRetirement.inputNameOfInstituion(expectedNameOfInstituion);
+		String expectedOtherTextValue="Sk assets";
+		nonRetirement.inputOtherDescription(expectedOtherTextValue);
 		String expectedBalance="87454";
 		nonRetirement.inputBalance(expectedBalance);
 		nonRetirement.selectOwnerAsJoint();
@@ -212,19 +220,22 @@ public class Non_RetirementTestCases extends BaseTest {
 		nonRetirement.clickCharitySaveButton();
 		nonRetirement.openDocumentUploadAccordian();
 		assets.uploadFile();
-		common.clickSaveAddAnotherButton();
+		nonRetirement.clickNextRetirementButton();
 		util.holdOn(Duration.ofSeconds(2));
+		assets.waitUntilAddAssetsButtonIsShown();
 		common.waitUntilToasterMessageisHide();
-		common.clickPreviousButton();
+		assets.clickNon_RetirementSideBarLink();
 		assets.waitUntilNon_RetirementTableIsPresentInUI(40);
-		nonRetirement.clickMoneyMarketEditIcon();
-		util.holdOn(Duration.ofSeconds(3));
+		nonRetirement.clickBankOfUsaEditIcon();
+		util.holdOn(Duration.ofSeconds(5));
 		String actualTypeOfAssetSelectOption=	nonRetirement.getTypeOfAssetDropDownSelectedOption();
+		String	actualOtherTextBoxValue=	nonRetirement.getOtherTextBoxInputValue();
 		String actualNameOfInstitutionValue=	nonRetirement.getNameOfInstitutionInputValue();
 		String actualBalance=nonRetirement.getBalanceInputValue();
 		String actualOwnerSelectedText=  nonRetirement.getOwnerSelectedText();
 		String actualAccountNumberText= nonRetirement.getAccountNumberInputValue();
 		nonRetirement.openAddressAccordian();
+		util.holdOn(Duration.ofSeconds(2));
 		String actualPhoneNo=	assets.getPhoneNumberInputText();
 		String acutalEmail=		assets.getEmailInputText();
 		nonRetirement.openBeneficiaryAccordian();
@@ -233,11 +244,12 @@ public class Non_RetirementTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(3));
 		String actualCharityName=	nonRetirement.getCharityInputName();
 		String actualCharityPercentage=	nonRetirement.getCharityPercentageInputText();
-		util.holdOn(Duration.ofSeconds(2));
+		util.holdOn(Duration.ofSeconds(5));
 		String actualCharityInputPhoneNumber=	nonRetirement.getCharityInputPhoneNumber();
 		String acutalCharityEmail=	nonRetirement.getCharityInputEmail();
 		nonRetirement.clickCharityCancelButton();
-		util.verifyActualExpectedText(actualTypeOfAssetSelectOption,"Money Market fund" ,"Type Of Assets" );
+		util.verifyActualExpectedText(actualTypeOfAssetSelectOption,"Other" ,"Type Of Assets" );
+		util.verifyActualExpectedText(actualOtherTextBoxValue, expectedOtherTextValue, "Other Text Box");
 		util.verifyActualExpectedText(actualNameOfInstitutionValue,expectedNameOfInstituion , "Name of institution");
 		util.verifyActualExpectedText(actualBalance,expectedBalance , "Balance");
 		util.verifyActualExpectedText(actualOwnerSelectedText,"Joint" , "Owner");
@@ -250,7 +262,7 @@ public class Non_RetirementTestCases extends BaseTest {
 		util.verifyActualExpectedText(expectedCharityEmail,acutalCharityEmail , "Charity Email");
 	}
 
-
+ 
 
 
 

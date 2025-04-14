@@ -95,6 +95,9 @@ public class CommonCode extends CommonCodeOR {
 		util.holdOn(Duration.ofSeconds(3));
 		util.click(newRegistrationBT, "New Registration Button");
 		util.holdOn(Duration.ofSeconds(2));
+		util.sendValue(countryCodeTB,"91","Country Code Drop Down" );
+		util.holdOn(Duration.ofSeconds(1));
+		util.click(countryCode91, "Country Code");
 		util.sendValueWithAct(phoneNumberTB, formattedNumber, "Phone Number");
 		util.sendValue(firstNameTB, firstName, "First Name");
 		util.sendValue(lastNameTB, lastName, "Last Name");
@@ -115,6 +118,7 @@ public class CommonCode extends CommonCodeOR {
 		actObj.selectMarriedRelationshipOptions();
 		actObj.selectMaleAsPrimaryMember();
 		actObj.inputNoOfChildren(noOfChild);
+	  //  util.click(countryCodeDropDown, "Country Drop Down");
 		actObj.inputPrimaryMemberDob(primaryMemberDob);
 		// actObj.inputAddress(address);
 		actObj.inputSpouseFirstName(spouseFirstName);

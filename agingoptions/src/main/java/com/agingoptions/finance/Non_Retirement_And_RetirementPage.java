@@ -8,11 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.nspl.agingoptions.webUtil.WebUtil;
 
-public class Non_Retirement_Assets {
+public class Non_Retirement_And_RetirementPage {
 
 	private WebUtil util;
 
-	public Non_Retirement_Assets(WebUtil util) {
+	public Non_Retirement_And_RetirementPage(WebUtil util) {
 		PageFactory.initElements(util.getDriver(), this);
 		this.util=util;
 	}
@@ -239,18 +239,103 @@ public class Non_Retirement_Assets {
 		util.click(typeOfAssetDropDown, "Type Of Asset");
 		util.click(otherDropDownOption, "Other");
 	}
-	
+
 	@FindBy(xpath="//input[@id='other']")
 	private WebElement otherTypeTextBox;
-	
+
 	public void inputOtherDescription(String value) {
 		util.sendValue(otherTypeTextBox, value, "Other Description Text box");
 	}
-	
+
 	public String getOtherDescriptionInputText() {
-	String value=	util.GetAttributevalue(otherTypeTextBox, "value");
-	return value;
+		String value=	util.GetAttributevalue(otherTypeTextBox, "value");
+		return value;
 	}
 
+	@FindBy(xpath="//td[contains(text(),'Bank of USA')]/following-sibling::td/div/img[contains(@alt,'Edit Icon')]")
+	private WebElement bankOfUsaEditIcon;
+
+	public void clickBankOfUsaEditIcon() {
+		util.click(bankOfUsaEditIcon, "Edit Icon");
+	}
+
+	public String getOtherTextBoxInputValue() {
+		String value=	util.GetAttributevalue(otherTypeTextBox, "value");
+		return value;
+	}
+
+	@FindBy(xpath="//li[contains(text(),'Traditional IRA')]")
+	private WebElement traditionalIRAOptions;
+
+	public void selectTraditionalIRAFromTypeOfRetirementDropDown() {
+		util.holdOn(Duration.ofSeconds(1));
+		util.click(typeOfAssetDropDown, "Type Of Retirement Asset");
+		util.click(traditionalIRAOptions, "Traditional IRA Options");
+	}
+
+	@FindBy(xpath="(//td[contains(text(),'Bank of America')]/following-sibling::td//img[contains(@alt,'Icon')])[2]")
+	private WebElement bankOfAmericaEditIcon;
+
+	public void clickBankOfAmericaEditIcon() {
+		util.click(bankOfAmericaEditIcon, "Traditional IRA Edit Icon");
+	}
+	
+	@FindBy(xpath="(//td[contains(text(),'Indian Retirement Assets')]/following-sibling::td//img[contains(@alt,'Icon')])[2]")
+	private WebElement indianNonRetirementAssetEditIcon;
+
+	public void clickIndianNonRetirementEditIcon() {
+		util.click(indianNonRetirementAssetEditIcon, "Indian Retirement Edit Icon");
+	}
+
+	@FindBy(xpath="//div[@id='information-table']//tbody//div[contains(@class,'dropdown-selected')]")
+	private WebElement beneficiaryDropDown;
+
+	public void clickBeneficiaryDropDown() {
+		util.click(beneficiaryDropDown, "Beneficiary Drop Down");
+	}
+
+	@FindBy(xpath="(//div[@id='dropDownDivId']/li)[1]")
+	private WebElement spouseBeneficiaryOption;
+
+	public void selectSpouseAsBeneficiary() {
+		util.holdOn(Duration.ofSeconds(1));
+		util.click(beneficiaryDropDown, "Beneficiary Drop Down");
+		util.click(spouseBeneficiaryOption, "Spouse Drop Down Options");
+	}
+
+	@FindBy(xpath="//input[contains(@class,'form-control form-control-percentage')]")
+	private WebElement beneficiaryPercentageTB;
+
+	public void inputBeneficiaryPercentageText(String value) {
+		util.sendValue(beneficiaryPercentageTB, value, "Percentage");
+	}
+
+	public String getBeneficiaryDropDownSelectedName() {
+		util.holdOn(Duration.ofSeconds(1));
+		String value=	util.getInnerText(beneficiaryDropDown);
+		return value;
+	}
+
+	public String getPercentageInputValue() {
+		String value=	util.GetAttributevalue(beneficiaryPercentageTB, "value");
+		return value;
+	}
+
+	@FindBy(xpath="(//ul[@id='dropDownDivId']/li)[1]")
+	private WebElement primaryMemberDDOption;
+
+	public void selectPrimaryMemberAsOwner() {
+		util.holdOn(Duration.ofSeconds(1));
+		util.click(ownerDropDownIcon, "Owner");
+		util.click(primaryMemberDDOption, "Primary Member");
+	}
+
+	@FindBy(xpath="//td[contains(text(),'Bank of United State Of America')]/following-sibling::td/div/img[@alt='Edit Icon']")
+	private WebElement bankOfUnitedStateOfAmericaEditIcon;
+	
+	public void clickBankOfUnitedStateOfAmericaEditIcon() {
+		util.click(bankOfUnitedStateOfAmericaEditIcon, "Bank of United State");
+	}
+	
 
 }

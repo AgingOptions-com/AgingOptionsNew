@@ -47,6 +47,16 @@ public class LpoLandingPage {
 		util.click(financeSideBarLink, "Finance");
 	}
 	
+	@FindBy(xpath="//span[contains(text(),'Legal')]")
+	private WebElement legalSideBarLink;
+	
+	public void clickLegalSideBarLink() {
+		util.holdOn(Duration.ofSeconds(5));
+		util.waitUntilPresentInUI(legalSideBarLink, "Finance");
+		util.waitUntilElementToBeClickable(legalSideBarLink);
+		util.click(legalSideBarLink, "Legal");
+	}
+	
 	
 	
 	
