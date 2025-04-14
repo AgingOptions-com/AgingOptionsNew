@@ -4,10 +4,12 @@
 	
 	<test name="Test">
 		<classes>
-		             <class name="com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript"/>
+<!--		             <class name="com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript"/>-->
 <!--				 <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript"/>-->
 <!--				<class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript"/>-->
 <!--				<class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript"/>-->
+                     <class name="com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases"/>
+                     <class name="com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript"/>
 			   
 		</classes>
 	</test>

@@ -173,5 +173,53 @@ public class PreviousLegalDocument extends PreviousLegalDocumentOr {
 		wt.verifyInnerText(DeleteConfirmationmessage, "You have a previously Will-based saved document list. Would you like to remove it?", "Delete Confirmation -: Switch Will to trust");
 		wt.click(deleteconfirmation, "Delete Confrimation");
 	}
+	
+	
+	
+	
+	public void verifyNewCommonDocument() {
+		wt.click(DoYouCurrentlyHaveLegalPlanningYesRadioButton, "Yes radio button");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.click(TrustRadioButton, "Trust radio button");
+		wt.click(addNewDocumentTypeButton, "Add new document button");
+		wt.click(AddNewDocumentDropdown, "New Document Dropdown");
+		List<String> ActualList=  actualNewCommonDocument();
+	List<WebElement> ListWebElement=	wt.driver.findElements(By.xpath("//ul[@id='dropDownDivId']//li"));
+	   for(int i=0; i<ListWebElement.size(); i++) {
+		  String ActualNewDocument= ActualList.get(i);
+		  wt.printDataInReport(ActualNewDocument);
+		String ExpectedNewDocument=   ListWebElement.get(i).getText();
+		wt.printDataInReport(ExpectedNewDocument);
+		wt.verifyActualExpectedText(ActualNewDocument, ExpectedNewDocument, "New Document list");
+		   
+	   }
+		
+	}
+	public List<String> actualNewCommonDocument() {
+	 List<String> listObj=	new LinkedList<String>();
+	 listObj.add(0, "Other");
+	 listObj.add(1, "Pre/Post-Nuptial Agreement");
+	 listObj.add(2, "Stand-Alone Safe Harbor Trust");
+	 listObj.add(3, "Directive to Attorney");
+	 listObj.add(4, "Limited Power of Attorney");
+	 listObj.add(5, "Deed");
+	 listObj.add(6, "Gun Trust");
+	 listObj.add(7, "In Case of Emergency Cards");
+	 return listObj;
+	}
+	
+	public void verifySaveAndContinueWithAddnewDocument() {
+		VerifySaveAndContinueWithWillTypeDetails();
+		wt.holdOn(Duration.ofSeconds(6));
+		wt.click(addNewDocumentTypeButton, "Add new document button");
+		wt.click(AddNewDocumentDropdown, "New Document Dropdown");
+		wt.click(OtherDocument, "Other option");
+		wt.sendValue(otherDescription, "Other", "Other  description");
+		wt.click(nextFiduciaryBeneficiryButton, "Next : fiduciary beneficiary");
+		wt.holdOn(Duration.ofSeconds(5));
+		verifyfiduciaryBeneficirypage();
+	}
+	
+	
 }
 

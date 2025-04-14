@@ -61,4 +61,12 @@ public class PreviousLegalDocumentOr {
      protected WebElement deleteconfirmation;
      @FindBy(xpath="//p[text()='You have a previously Will-based saved document list. Would you like to remove it?']")
      protected WebElement DeleteConfirmationmessage;
+     @FindBy(xpath="//span[text()='Select']")
+     protected WebElement addNewDocumentPlaaceHolder;
+     @FindBy(xpath="//img[@alt='Dropdown icon']")
+     protected WebElement AddNewDocumentDropdown;
+     @FindBy(xpath="//ul[@id='dropDownDivId']//li[text()='Other']")
+     protected WebElement OtherDocument;
+     @FindBy(xpath="//input[@id='otherLabel']")
+     protected WebElement otherDescription;
 }

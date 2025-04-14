@@ -1,5 +1,6 @@
 package com.nspl.agingoptions.webUtil;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.io.File;
@@ -887,7 +888,7 @@ public class WebUtil {
 					+ " 'not Verify " + elementName);
 			print("Failed Actual text '" + actualText + " 'and  Expected Text  '" + expectedText + " 'not  Verify");
 		}
-		
+		Assert.assertEquals(actualText, expectedText);
 	}
 
 	public void verifyActualExpectedTextContains(String actualText, String expectedText) {

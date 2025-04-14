@@ -1,223 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T17:37:30 IST" name="Default suite" finished-at="2025-04-10T17:42:45 IST" duration-ms="315024">
+  <suite started-at="2025-04-14T12:51:25 IST" name="Default suite" finished-at="2025-04-14T12:54:18 IST" duration-ms="172904">
     <groups>
     </groups>
-    <test started-at="2025-04-10T17:37:30 IST" name="Default test" finished-at="2025-04-10T17:42:45 IST" duration-ms="315024">
-      <class name="com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:37:29 IST" name="beforeSuite" finished-at="2025-04-10T17:37:30 IST" duration-ms="276" status="PASS">
+    <test started-at="2025-04-14T12:51:25 IST" name="Default test" finished-at="2025-04-14T12:54:18 IST" duration-ms="172904">
+      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@3af9c5b7]" started-at="2025-04-14T12:51:25 IST" name="beforeSuite" finished-at="2025-04-14T12:51:25 IST" duration-ms="324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:37:30 IST" name="beforeTest" finished-at="2025-04-10T17:38:50 IST" duration-ms="80394" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@3af9c5b7]" started-at="2025-04-14T12:51:25 IST" name="beforeTest" finished-at="2025-04-14T12:52:53 IST" duration-ms="87660" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:38:50 IST" name="beforeClass" finished-at="2025-04-10T17:38:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@3af9c5b7]" started-at="2025-04-14T12:52:53 IST" name="beforeClass" finished-at="2025-04-14T12:52:53 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:38:50 IST" name="beforeMethod" finished-at="2025-04-10T17:38:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@3af9c5b7]" started-at="2025-04-14T12:52:53 IST" name="beforeMethod" finished-at="2025-04-14T12:52:53 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifyWillDocument()]]>
+                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifyUpdateRealtorDetails()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyWillDocument()[pri:1, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:38:50 IST" name="verifyWillDocument" finished-at="2025-04-10T17:39:07 IST" duration-ms="16508" status="PASS">
+        <test-method signature="VerifyUpdateRealtorDetails()[pri:12, instance:com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@3af9c5b7]" started-at="2025-04-14T12:52:53 IST" name="VerifyUpdateRealtorDetails" finished-at="2025-04-14T12:54:17 IST" duration-ms="84717" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWillDocument -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:39:07 IST" name="afterMethod" finished-at="2025-04-10T17:39:07 IST" duration-ms="527" status="PASS">
+        </test-method> <!-- VerifyUpdateRealtorDetails -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@3af9c5b7]" started-at="2025-04-14T12:54:17 IST" name="afterMethod" finished-at="2025-04-14T12:54:18 IST" duration-ms="426" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyWillDocument status=SUCCESS method=PreviousLagalDocumentTestCases.verifyWillDocument()[pri:1, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyUpdateRealtorDetails status=SUCCESS method=HousingProfessional_RealtorTestscript.VerifyUpdateRealtorDetails()[pri:12, instance:com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@3af9c5b7] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifyWillDocument()]]>
+                <![CDATA[public void com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifyUpdateRealtorDetails()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="VerifySaveAndContinue_DoYouCurrentlyHaveLegalPlanning_NoCheck()[pri:2, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:39:07 IST" name="VerifySaveAndContinue_DoYouCurrentlyHaveLegalPlanning_NoCheck" finished-at="2025-04-10T17:39:28 IST" duration-ms="20509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySaveAndContinue_DoYouCurrentlyHaveLegalPlanning_NoCheck -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:39:07 IST" name="beforeMethod" finished-at="2025-04-10T17:39:07 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifySaveAndContinue_DoYouCurrentlyHaveLegalPlanning_NoCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:39:28 IST" name="afterMethod" finished-at="2025-04-10T17:39:28 IST" duration-ms="58" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifySaveAndContinue_DoYouCurrentlyHaveLegalPlanning_NoCheck status=SUCCESS method=PreviousLagalDocumentTestCases.VerifySaveAndContinue_DoYouCurrentlyHaveLegalPlanning_NoCheck()[pri:2, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifySaveAndContinue_DoYouCurrentlyHaveLegalPlanning_NoCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="VerifyTrustDocument()[pri:3, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:39:28 IST" name="VerifyTrustDocument" finished-at="2025-04-10T17:39:45 IST" duration-ms="16903" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyTrustDocument -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:39:28 IST" name="beforeMethod" finished-at="2025-04-10T17:39:28 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifyTrustDocument()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:39:45 IST" name="afterMethod" finished-at="2025-04-10T17:39:45 IST" duration-ms="64" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyTrustDocument status=SUCCESS method=PreviousLagalDocumentTestCases.VerifyTrustDocument()[pri:3, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifyTrustDocument()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="VerifySaveAndProceedFidBen_DoYouCurrentlyHaveLegalPlanning_NoCheck()[pri:4, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:39:45 IST" name="VerifySaveAndProceedFidBen_DoYouCurrentlyHaveLegalPlanning_NoCheck" finished-at="2025-04-10T17:40:11 IST" duration-ms="26696" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySaveAndProceedFidBen_DoYouCurrentlyHaveLegalPlanning_NoCheck -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:39:45 IST" name="beforeMethod" finished-at="2025-04-10T17:39:45 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifySaveAndProceedFidBen_DoYouCurrentlyHaveLegalPlanning_NoCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:40:11 IST" name="afterMethod" finished-at="2025-04-10T17:40:11 IST" duration-ms="48" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifySaveAndProceedFidBen_DoYouCurrentlyHaveLegalPlanning_NoCheck status=SUCCESS method=PreviousLagalDocumentTestCases.VerifySaveAndProceedFidBen_DoYouCurrentlyHaveLegalPlanning_NoCheck()[pri:4, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifySaveAndProceedFidBen_DoYouCurrentlyHaveLegalPlanning_NoCheck()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verifySaveAndContinueWithWillTypeDocuments()[pri:5, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:40:11 IST" name="verifySaveAndContinueWithWillTypeDocuments" finished-at="2025-04-10T17:41:26 IST" duration-ms="74946" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySaveAndContinueWithWillTypeDocuments -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:40:11 IST" name="beforeMethod" finished-at="2025-04-10T17:40:11 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifySaveAndContinueWithWillTypeDocuments()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:41:26 IST" name="afterMethod" finished-at="2025-04-10T17:41:26 IST" duration-ms="48" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySaveAndContinueWithWillTypeDocuments status=SUCCESS method=PreviousLagalDocumentTestCases.verifySaveAndContinueWithWillTypeDocuments()[pri:5, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifySaveAndContinueWithWillTypeDocuments()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:41:26 IST" name="beforeMethod" finished-at="2025-04-10T17:41:26 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifySaveAndContinueWithTrustTypeDocumentsDetails()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifySaveAndContinueWithTrustTypeDocumentsDetails()[pri:6, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:41:26 IST" name="VerifySaveAndContinueWithTrustTypeDocumentsDetails" finished-at="2025-04-10T17:42:44 IST" duration-ms="78058" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySaveAndContinueWithTrustTypeDocumentsDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:42:44 IST" name="afterMethod" finished-at="2025-04-10T17:42:45 IST" duration-ms="90" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifySaveAndContinueWithTrustTypeDocumentsDetails status=SUCCESS method=PreviousLagalDocumentTestCases.VerifySaveAndContinueWithTrustTypeDocumentsDetails()[pri:6, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifySaveAndContinueWithTrustTypeDocumentsDetails()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:42:45 IST" name="afterClass" finished-at="2025-04-10T17:42:45 IST" duration-ms="39" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@3af9c5b7]" started-at="2025-04-14T12:54:18 IST" name="afterClass" finished-at="2025-04-14T12:54:18 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:42:45 IST" name="afterTest" finished-at="2025-04-10T17:42:45 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@3af9c5b7]" started-at="2025-04-14T12:54:18 IST" name="afterTest" finished-at="2025-04-14T12:54:18 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@757277dc]" started-at="2025-04-10T17:42:45 IST" name="afterSuite" finished-at="2025-04-10T17:42:45 IST" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@3af9c5b7]" started-at="2025-04-14T12:54:18 IST" name="afterSuite" finished-at="2025-04-14T12:54:18 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases -->
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
