@@ -167,7 +167,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualCoverageEndDate, expectedInsuranceEndDate,"Coverage end date");
 		util.verifyActualExpectedText(actualBankNameText, expectedBankName, "Bank Name");
 		util.verifyActualExpectedText(acutalBankAccountNumberText, expectedAccountNumber, "Enter the Account Number");
-
+		common.clickPreviousButton();
 
 	}
 
@@ -389,7 +389,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		util.verifyActualExpectedText(acutalBankAccountNumberText, expectedAccountNumber, "Enter the Account Number");
 		common.clickPreviousButton();
 	}
-	
+
 	@Test(priority=6)
 	public void TC_032SpouseAddHealthInsuranceSaveAndProccedToMedicationButton() {
 
@@ -464,8 +464,8 @@ public class HealthInsuranceTestCases extends BaseTest {
 		util.verifyActualExpectedText(acutalBankAccountNumberText, expectedAccountNumber, "Enter the Account Number");
 		common.clickPreviousButton();
 	}
-	
-	
+
+
 
 
 }

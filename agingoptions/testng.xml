@@ -19,9 +19,6 @@
 				name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
 			</class>
 			<class
-				name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
-			</class>
-			<class
 				name="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases">
 			</class>
 			<class
@@ -34,8 +31,25 @@
 				name="com.nspl.agingoptions.healthpage.testcases.MedicationSupplementsTestCases">
 			</class>
 			
-			<!--<class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript"/>
-			<class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript"/>-->
+			<class
+				name="com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript">
+			</class>
+			<class
+				name="com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript">
+			</class>
+			<class
+				name="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript">
+			</class>
+			<class
+				name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript">
+			</class>
+			<class
+				name="com.nspl.agingoptions.financepage.testcases.Non_RetirementTestCases">
+			</class>
+			<class
+				name="com.nspl.agingoptions.financepage.testcases.RetirementTestCases">
+			</class>
+			
 
 		</classes>
 	</test>
