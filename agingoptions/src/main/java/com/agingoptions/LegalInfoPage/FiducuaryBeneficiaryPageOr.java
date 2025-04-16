@@ -73,6 +73,8 @@ public class FiducuaryBeneficiaryPageOr {
   protected WebElement AreYouDisabledWithSpecialNeedsYes;
   @FindBy(xpath="(//span[@tabindex='45'])[2]")
   protected WebElement AreYouDisabledWithSpecialNeedsNo;
+  @FindBy(xpath="//p[text()='Are you disabled / with special needs?']/parent::div//div//p[text()='Yes']")
+  protected WebElement SpecialNeedsRadioButtonYes;
   @FindBy(xpath="//img[@class='allAccordionCloseButton']")
   protected WebElement accordian;
   @FindBy(xpath="(//img[@alt='Dropdown icon'])[6]")
@@ -93,7 +95,7 @@ public class FiducuaryBeneficiaryPageOr {
   protected WebElement Zipcode;
   @FindBy(xpath="(//input[@tabindex='54'])[6]")
   protected WebElement Country;
-  @FindBy(xpath="(//div[@class=' dropdown'])[7]//div")
+  @FindBy(xpath="//p[text()='Contact Type']/parent::div//div[@class='dropdown-icon ']//img")
   protected WebElement contacttypeDropdown;
   @FindBy(xpath="//ul[@id='dropDownDivId']//li[text()='Primary']")
   protected WebElement PrimaryOptions;
@@ -121,6 +123,28 @@ public class FiducuaryBeneficiaryPageOr {
   protected WebElement IndianContact;
   @FindBy(xpath="//div[@class='css-19bb58m']//input")
   protected WebElement countrycodedropdown;
+  @FindBy(xpath="//input[@id='search']")
+  protected WebElement SearchFidBenmember;
+  @FindBy(xpath="//div[@class='d-flex justify-content-around']//img")
+  protected WebElement editIcon; 
+  @FindBy(xpath="//div[@id='common-decease_modal_main_div']//h4")
+  protected WebElement WarningMessageFidToSpecialNeed;
+  @FindBy(xpath="//div[@id='common-decease_modal_main_div']//following-sibling::div//button[text()='Yes']")
+  protected WebElement YesButtonOfWarning;
+  @FindBy(xpath="//div[@class='new-decease_modal_email_temp-textarea']//textarea")
+  protected WebElement EmailPreviewText;
+  @FindBy(xpath="//button[text()='Send']")
+  protected WebElement SendButtonOfEmailPreview;
+  @FindBy(xpath="//button[text()='Update']")
+  protected WebElement updateButton;
+  @FindBy(xpath="(//div[@class='form-check-smoke'])[2]//input")
+  protected WebElement FiduciaryCheckBoxSearchedMember;
+  @FindBy(xpath="(//label[@class='radio-label mx-2 d mt-2 mb-0 custom-checkbox'])[2]//p")
+  protected WebElement DeceasedRadioButton;
+  @FindBy(xpath="//div[text()='No Data Found']")
+  protected WebElement NoDataFoundText;
+  @FindBy(xpath="//input[@id='dob']")
+  protected WebElement DateOfBirthTB;
   
   
   

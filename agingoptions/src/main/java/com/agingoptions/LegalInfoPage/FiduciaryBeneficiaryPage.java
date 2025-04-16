@@ -1,11 +1,15 @@
 package com.agingoptions.LegalInfoPage;
 
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.nspl.agingoptions.commoncode.CommonCode;
 import com.nspl.agingoptions.webUtil.WebUtil;
 
 public class FiduciaryBeneficiaryPage  extends FiducuaryBeneficiaryPageOr{
@@ -71,13 +75,13 @@ public class FiduciaryBeneficiaryPage  extends FiducuaryBeneficiaryPageOr{
 		wt.isSelected(BeneficiaryCheckBoxInDetails, "Beneficiary Checkbox in details Page");
 		wt.click(PreviousIcon, "Previous Icon");
 	}
-	public void verifyAddFiduciary() {
+	public String verifyAddFiduciary() {
 		wt.click(FiduciaryBeneficiaryDrawer, "Fiduciary Beneficiary Drawer");
-		VerifyFidbenCount();
-       wt.click(AddAnotherButton, "Add another button");
-       wt.holdOn(Duration.ofSeconds(8));
-       wt.click(accordian, "Accordian");
-     String name = wt.getRandomText(5);
+		String preFidBenCount=	VerifyFidbenCount();
+		wt.click(AddAnotherButton, "Add another button");
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.click(accordian, "Accordian");
+		String name = wt.getRandomText(5);
 		wt.sendValue(FirstName, name, "First Name");
 		wt.sendValue(MiddleName, "sen", "Middle name");
 		wt.sendValue(LastName, "Singh", "Last Name");
@@ -86,7 +90,7 @@ public class FiduciaryBeneficiaryPage  extends FiducuaryBeneficiaryPageOr{
 		wt.sendValue(NickName, "Saras", "Nickname");
 		wt.click(Gender, "Gender");
 		wt.click(Male, "Male");
-	    wt.click(CalenderIcon, "calender icon");
+		wt.click(CalenderIcon, "calender icon");
 		wt.selectDropDownByVisibleText(selectYearDropdown, "1999", "1999 year");
 		wt.click(Date1, "1");
 		wt.click(RelationShipWithPrimaryMemberDropDown, "Relationship with primary member dropdown");
@@ -108,25 +112,170 @@ public class FiduciaryBeneficiaryPage  extends FiducuaryBeneficiaryPageOr{
 		wt.sendValue(state, "New York", "State");
 		wt.sendValue(Zipcode, "10001", "Zip code");
 		wt.sendValue(Country, "United States", "Country text box");
+		wt.holdOn(Duration.ofSeconds(3));
 		wt.clickJavaScript(contacttypeDropdown, "Contact type DropDown");
-		wt.click(PrimaryOptions, "Primary");
+		wt.clickJavaScript(PrimaryOptions, "Primary");
 		wt.click(countrycodedropdown, "country code dropdown");
 		wt.click(IndianContact, "+91 country code");
 		wt.sendValueJs(phonenumber, "9878675645", "phone number");
 		wt.sendValue(email, name+"@yopmail.com", "email");
 		wt.click(SaveAndContinueButton, "Save And continue button");
-		
+		wt.holdOn(Duration.ofSeconds(6));
+		String postAddFidBenCount=	VerifyFidbenCount();
+		wt.printDataInReport("Before add Fiduciary Beneficiary Count " + preFidBenCount);
+		wt.printDataInReport("After add Fiduciary Beneficiary Count " + postAddFidBenCount);
+		return name;
+	}
+
+	public String VerifyAddSpecialneedsmember() {
+		wt.click(FiduciaryBeneficiaryDrawer, "Fiduciary Beneficiary Drawer");
+		String preFidBenCount=	VerifyFidbenCount();
+		wt.click(AddAnotherButton, "Add another button");
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.click(accordian, "Accordian");
+		String name = wt.getRandomText(5);
+		wt.sendValue(FirstName, name, "First Name");
+		wt.sendValue(MiddleName, "sen", "Middle name");
+		wt.sendValue(LastName, "Singh", "Last Name");
+		wt.click(PrefixSuffix, "Prefix suffix dropdown");
+		wt.click(NonePrefix, "None option");
+		wt.sendValue(NickName, "Saras", "Nickname");
+		wt.click(Gender, "Gender");
+		wt.click(Male, "Male");
+		wt.click(CalenderIcon, "calender icon");
+		wt.selectDropDownByVisibleText(selectYearDropdown, "1999", "1999 year");
+		wt.click(Date1, "1");
+		wt.click(RelationShipWithPrimaryMemberDropDown, "Relationship with primary member dropdown");
+		wt.click(relationShipOption, "Aunt option");
+		wt.click(RelationShipWithSpouseDropDown, "Relationship with Spouse dropdown");
+		wt.click(relationShipOption, "Aunt option");
+		wt.click(MakeThisAsEmergencyYesRadioButton, "Yes radio");
+		wouldyoulikethispersontoreceiveSelect();
+		wt.click(isThisExtendedEmployedYesRadioButton, "Employment yes radio button");
+		wt.sendValue(occupationType, "employed", "Occupation");
+		wt.click(AreYouDisabledWithSpecialNeedsYes, "Are you disabled Yes radio button");
+		wt.click(addressTypeDropdown, "Address type dropdown");
+		wt.click(PhysicialTypeOption, "Physicial");
+		wt.sendValue(SearchAddress, "34 St - Herald Sq, New York, NY, USA", "Search Address");
+		wt.sendValue(StreetNumberAndName, "34 St - Herald Sq", "Street Number");
+		wt.sendValue(city, "New York", "City");
+		wt.sendValue(state, "New York", "State");
+		wt.sendValue(Zipcode, "10001", "Zip code");
+		wt.sendValue(Country, "United States", "Country text box");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.clickJavaScript(contacttypeDropdown, "Contact type DropDown");
+		wt.clickJavaScript(PrimaryOptions, "Primary");
+		wt.click(countrycodedropdown, "country code dropdown");
+		wt.click(IndianContact, "+91 country code");
+		wt.sendValueJs(phonenumber, "6386170217", "phone number");
+		wt.sendValue(email, name+"@yopmail.com", "email");
+		wt.click(SaveAndContinueButton, "Save And continue button");
+		wt.holdOn(Duration.ofSeconds(4));
+		String postAddFidBenCount=	VerifyFidbenCount();
+		wt.printDataInReport("Before add Fiduciary Beneficiary Count " + preFidBenCount);
+		wt.printDataInReport("After add Fiduciary Beneficiary Count " + postAddFidBenCount);
+		return name;	
 	}
 	public String VerifyFidbenCount() {
 		String text=wt.getInnerText(fid_BenCount);
-        wt.printDataInReport("Fiduciary/beneficiary Count- " + text);
-        return text;
-       }
+		wt.printDataInReport("Fiduciary/beneficiary Count- " + text);
+		return text;
+	}
 	public void wouldyoulikethispersontoreceiveSelect() {
-	List<WebElement>	ListObj=wt.driver.findElements(By.xpath("//div[@class='d-flex flex-column mb-1']//div[@class='custom-checkbox-setup  form-check']//input"));
+		List<WebElement>	ListObj=wt.driver.findElements(By.xpath("//div[@class='d-flex flex-column mb-1']//div[@class='custom-checkbox-setup  form-check']//input"));
 		for(int i=0; i<ListObj.size(); i++) {
 			ListObj.get(i).click();
+		}
+	}
+	public void verifyWhenWeMakeFiduciaryMemberspecialNeeds() {
+		String Name=verifyAddFiduciary();
+		wt.click(SearchFidBenmember, "Search bar");
+		wt.sendValueWithEnterDownKey(SearchFidBenmember, Name);
+		wt.click(editIcon, "Edit Icon");
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.scrollIntoElement(SpecialNeedsRadioButtonYes, "Special needs");
+		wt.click(SpecialNeedsRadioButtonYes, "Special needs Yes radio button");
+		wt.verifyInnerText(WarningMessageFidToSpecialNeed, "These changes should be incorporated into your legal documents. Would you like to notify your legal counsel of this update?", "Warning message text");
+		wt.click(YesButtonOfWarning, "Warning confirmation Yes");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.printDataInReport(" Read Email preview message👇👇");
+		wt.getInnerText(EmailPreviewText);
+		wt.click(SendButtonOfEmailPreview,"Send button of Email Preview");
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.click(updateButton, "Update button");
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.isSelected(FiduciaryCheckBoxSearchedMember, "Fiduciary checkbox");
+		wt.clearTextBox(SearchFidBenmember);
+	}
+	public void VerifyWhenWeMakeFiduciaryBenfeficiaryMemberDeceased() {
+		String Name=verifyAddFiduciary();
+		wt.click(SearchFidBenmember, "Search bar");
+		wt.sendValueWithEnterDownKey(SearchFidBenmember, Name);
+		wt.click(editIcon, "Edit Icon");
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.scrollIntoElement(DeceasedRadioButton, "Deceased radio button");
+		wt.click(DeceasedRadioButton, "Deceased radio button");
+		wt.verifyInnerText(WarningMessageFidToSpecialNeed, "These changes should be incorporated into your legal documents. Would you like to notify your legal counsel of this update?", "Warning message text");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.printDataInReport(" Read Warning message👇👇");
+		wt.click(YesButtonOfWarning,"Yes button of Warning");
+		wt.printDataInReport(" Read Email preview message👇👇");
+		wt.getInnerText(EmailPreviewText);
+		wt.click(SendButtonOfEmailPreview,"Send button of Email Preview");
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.click(updateButton, "Update button");
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.clearTextBox(SearchFidBenmember);
+		wt.holdOn(Duration.ofSeconds(2));
+		wt.sendValueWithEnterDownKey(SearchFidBenmember, Name);
+		wt.verifyInnerText(NoDataFoundText, "No Data Found","fiduciary beneficiary table page and deceased member has been removed");   
+		wt.clearTextBox(SearchFidBenmember);
+	}
+	public void verifyWhenWeMakeSpecialNeedsMemberFiduciary() {
+		String name=	VerifyAddSpecialneedsmember();
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.clearTextBox(SearchFidBenmember);
+		wt.click(SearchFidBenmember, "Search bar");
+		wt.sendValueWithEnterDownKey(SearchFidBenmember, name);
+		wt.click(FiduciaryCheckBoxSearchedMember, "Fiduciary check Box of special needs member");
+		CommonCode CommonCodeobj= new CommonCode(wt);
+		CommonCodeobj.verifyToasterMessage("Special Needs/ Disabled cannot be fiduciary.");
+		wt.clearTextBox(SearchFidBenmember);
+	}
+	public int VerifyAgeDifference() {
+    String value= wt.GetAttributevalue(DateOfBirthTB, "value");
+    DateTimeFormatter formatter= DateTimeFormatter.ofPattern("yyyy/mm/dd");
+    LocalDate dob=  LocalDate.parse(value,formatter);
+    int age = Period.between(dob, LocalDate.now()).getYears();
+    return age;
+    
+	}
+	public void VerifyAgeValidationForFiduciary() {
+		wt.click(FiduciaryBeneficiaryDrawer, "Fiduciary Beneficiary Drawer");
+		wt.click(AddAnotherButton, "Add another button");
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.click(accordian, "Accordian");
+		String name = wt.getRandomText(5);
+		wt.sendValue(FirstName, name, "First Name");
+		wt.sendValue(MiddleName, "sen", "Middle name");
+		wt.sendValue(LastName, "Singh", "Last Name");
+		wt.click(PrefixSuffix, "Prefix suffix dropdown");
+		wt.click(NonePrefix, "None option");
+		wt.sendValue(NickName, "Saras", "Nickname");
+		wt.click(Gender, "Gender");
+		wt.click(Male, "Male");
+		wt.click(CalenderIcon, "calender icon");
+		wt.selectDropDownByVisibleText(selectYearDropdown, "2014", "2014 year");
+		wt.click(Date1, "1");
+		wt.click(RelationShipWithPrimaryMemberDropDown, "Relationship with primary member dropdown");
+		wt.click(relationShipOption, "Aunt option");
+		wt.click(RelationShipWithSpouseDropDown, "Relationship with Spouse dropdown");
+		wt.click(relationShipOption, "Aunt option");
+	    wt.click(FiduciaryCheckBoxInDetails, "Fiduciary check box");	
+		CommonCode commonObj =	new CommonCode(wt);
+		commonObj.verifyToasterMessage("Fiduciary cannot be Minor. Please enter correct date of birth.");
 			
 		}
 	}
-}
+	
+

@@ -93,6 +93,9 @@ public class CommonCode extends CommonCodeOR {
 		util.holdOn(Duration.ofSeconds(3));
 		util.click(newRegistrationBT,"New Registration Button");
 		util.holdOn(Duration.ofSeconds(2));
+		util.click(countrycodeInputField, "Country Code input Field");
+		util.clickJavaScript(CountryCode, "Country code");
+		util.holdOn(Duration.ofSeconds(2));
 		util.sendValueWithAct(phoneNumberTB, formattedNumber, "Phone Number");
 		util.sendValue(firstNameTB, firstName, "First Name");
 		util.sendValue(lastNameTB, lastName, "Last Name");

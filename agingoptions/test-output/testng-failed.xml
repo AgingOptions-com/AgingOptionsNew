@@ -6,12 +6,14 @@
       <class name="com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript">
         <methods>
           <include name="afterClass"/>
+          <include name="VerifyWhenWeMakeSpecialNeedsMemberAsFiduciary"/>
           <include name="beforeSuite"/>
+          <include name="verifyAgeValidationForFiduciary"/>
           <include name="afterTest"/>
-          <include name="afterMethod"/>
           <include name="beforeTest"/>
-          <include name="VerifyAddFiduciaryBeneficiaryDetailsWithoutAddressAndContact"/>
+          <include name="afterMethod"/>
           <include name="afterSuite"/>
+          <include name="VerifyWhenWeMakeFiduciaryBeneficiryMemberDeceased"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>

@@ -172,6 +172,10 @@ public class CommonCodeOR   {
 	
 	@FindBy(xpath="//button[@id='refresh']")
 	protected WebElement yopEmailRefreshIcon;
+	@FindBy(xpath="//input[@Placeholder='Select country code...']")
+	protected WebElement countrycodeInputField;
+	@FindBy(xpath="//ul//li[text()='(+91) IN']")
+	protected WebElement CountryCode;
 
 }
 

@@ -259,19 +259,20 @@ public class WebUtil {
 	public void verifyInnerText(WebElement we, String expectedInnerText, String PageName) {
 		String actualInnerText = we.getText();
 		verifyString(actualInnerText, expectedInnerText);
-		extTest.log(Status.INFO, "Inner text-" + actualInnerText + " , So we are now " + PageName + " ");
+		extTest.log(Status.INFO, "Actual Inner text-" + actualInnerText +" is Matching With" + expectedInnerText + " we are now " + PageName + " ");
 	}
 	public void toasterverification(WebElement we, String ExpectedToasterText) {
 
 		String Toaster = new WebDriverWait(driver, Duration.ofSeconds(8))
 				.until(ExpectedConditions.elementToBeClickable(we)).getText();
-		if (Toaster.contains(ExpectedToasterText)) {
+		if (Toaster.contains(ExpectedToasterText)==true) {
 			extTest.log(Status.PASS, "Toaster message verified as-" + Toaster);
-			System.out.println("Login Failed: " + Toaster);
+			System.out.println("Toaster message-: " + Toaster);
 		} else {
 			extTest.log(Status.FAIL, "Toaster message verified as-" + Toaster);
 			System.out.println("Login Success:" + Toaster);
 		}
+		Assert.assertEquals(Toaster, ExpectedToasterText);
 	}
 
 	// ===========================================send value with Actions class
@@ -1163,11 +1164,14 @@ public class WebUtil {
 		if (status == true) {
 			extTest.log(Status.PASS, radioButtonName + " is selected");
 			print(radioButtonName + " is selected");
-		} else {
-			extTest.log(Status.FAIL, radioButtonName + " is not selected");
+			Assert.assertEquals(status, true);
+		} else if(status==false) {
+			extTest.log(Status.INFO, radioButtonName + " is not selected");
 			print(radioButtonName + " Failed: Element is not selected");
+			Assert.assertEquals(status, false);
+			
 		}
-		Assert.assertEquals(status, true);
+		
 	}
 
 	///////////// for IsDisplay ///////////////

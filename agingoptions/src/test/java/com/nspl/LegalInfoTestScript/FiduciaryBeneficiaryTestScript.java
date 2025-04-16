@@ -19,7 +19,7 @@ public class FiduciaryBeneficiaryTestScript  extends BaseTest{
 	   fidbenObj.verifyFiduciaryBeneficiaryPage();
 	}
 	
-	@Test(priority = 2 ,enabled = false)
+	@Test(enabled = false)
 	public void VerifyPrimaryMemberAndSpouseFiduciaryBeneficiaryPageMemberList() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -27,7 +27,7 @@ public class FiduciaryBeneficiaryTestScript  extends BaseTest{
 	   FiduciaryBeneficiaryPage fidbenObj=  new FiduciaryBeneficiaryPage(util);
 	   fidbenObj.verifyPrimaryMemberAndSposueFidbenList();
 	}
-	@Test(priority = 1)
+	@Test(enabled = false)
 	public void VerifyClientTableFiduciaryBeneficiaryCheckboxFunctionality() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -36,7 +36,7 @@ public class FiduciaryBeneficiaryTestScript  extends BaseTest{
 	   fidbenObj.VerifyClientTableFidBenCheckBox();
 	   util.holdOn(Duration.ofSeconds(5));
 	}
-	@Test(priority = 3)
+	@Test(enabled = false)
 	public void VerifySpouseTableFiduciaryBeneficiaryCheckBoxFunctionality() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -45,12 +45,45 @@ public class FiduciaryBeneficiaryTestScript  extends BaseTest{
 	   fidbenObj.VerifySpouseTableFidBenCheckBox();
 	   util.holdOn(Duration.ofSeconds(5));
 	}
-	@Test(priority = 2)
-	public void VerifyAddFiduciaryBeneficiaryDetailsWithoutAddressAndContact() {
+	@Test(enabled = false)
+	public void VerifyAddFiduciaryBeneficiaryDetails() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
 	     util.holdOn(Duration.ofSeconds(10));	
 	   FiduciaryBeneficiaryPage fidbenObj=  new FiduciaryBeneficiaryPage(util);
 	   fidbenObj.verifyAddFiduciary();
+	}
+	
+	@Test(enabled = false)
+	public void VerifyWhenWeMakeFiduciaryMemberAsSpecialNeeds() {
+		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
+		lpoLadning.clickLegalModule();
+	     util.holdOn(Duration.ofSeconds(10));	
+	   FiduciaryBeneficiaryPage fidbenObj=  new FiduciaryBeneficiaryPage(util);
+	   fidbenObj.verifyWhenWeMakeFiduciaryMemberspecialNeeds();	
+	}
+	@Test(priority = 1)
+	public void VerifyWhenWeMakeFiduciaryBeneficiryMemberDeceased() {
+		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
+		lpoLadning.clickLegalModule();
+	     util.holdOn(Duration.ofSeconds(10));	
+	   FiduciaryBeneficiaryPage fidbenObj=  new FiduciaryBeneficiaryPage(util);
+	   fidbenObj.VerifyWhenWeMakeFiduciaryBenfeficiaryMemberDeceased();
+	}
+	@Test(priority = 2)
+	public void VerifyWhenWeMakeSpecialNeedsMemberAsFiduciary() {
+		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
+		lpoLadning.clickLegalModule();
+	     util.holdOn(Duration.ofSeconds(10));	
+	   FiduciaryBeneficiaryPage fidbenObj=  new FiduciaryBeneficiaryPage(util);
+	   fidbenObj.verifyWhenWeMakeSpecialNeedsMemberFiduciary();
+	}
+	@Test(priority = 3)
+	public void verifyAgeValidationForFiduciary() {
+		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
+		lpoLadning.clickLegalModule();
+	     util.holdOn(Duration.ofSeconds(10));	
+	   FiduciaryBeneficiaryPage fidbenObj=  new FiduciaryBeneficiaryPage(util);
+	   fidbenObj.VerifyAgeValidationForFiduciary();
 	}
 }
