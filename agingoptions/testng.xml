@@ -30,8 +30,12 @@
 			<class
 				name="com.nspl.agingoptions.healthpage.testcases.HealthInsuranceTestCases">
 			</class>
-			<class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript"/>
-			<class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript"/>
+			<class
+				name="com.nspl.agingoptions.healthpage.testcases.MedicationSupplementsTestCases">
+			</class>
+			
+			<!--<class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript"/>
+			<class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript"/>-->
 
 		</classes>
 	</test>
