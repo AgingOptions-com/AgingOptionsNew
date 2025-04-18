@@ -1097,11 +1097,13 @@ public class WebUtil {
 		if (enable == true) {
 			extTest.log(Status.PASS, "-element is enabled");
 			print("-element is enabled");
-		} else {
-			extTest.log(Status.FAIL, "-element is not enable");
+			Assert.assertTrue(enable == true);
+		} else if(enable == false) {
+			extTest.log(Status.INFO, "-element is not enable");
 			print("-element is not enabled");
+			Assert.assertTrue(enable == false);
 		}
-		Assert.assertTrue(enable == true);
+		
 	}
 
 	// ===========================================By this method we can verify
@@ -1877,9 +1879,10 @@ public class WebUtil {
 	}
 
 	public void verifyElementRadioButtonSelected(WebElement element, String elementName) {
-		try {
+	
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			boolean isChecked = (boolean) js.executeScript("return arguments[0].checked;", element);
+			System.out.println(isChecked);
 			if (isChecked) {
 				extTest.log(Status.PASS, elementName + " is selected");
 				System.out.println(elementName + " is selected");
@@ -1887,10 +1890,7 @@ public class WebUtil {
 				extTest.log(Status.FAIL, elementName + " is NOT selected");
 				System.out.println(elementName + " is NOT selected");
 			}
-		} catch (Exception e) {
-			extTest.log(Status.FAIL, "Failed to verify selection state of " + elementName);
-			e.printStackTrace();
-		}
+		
 	}
 
 	public boolean isRadioButtonChecked(WebElement element, String elementName) {

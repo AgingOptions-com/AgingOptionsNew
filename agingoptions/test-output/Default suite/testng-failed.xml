@@ -3,21 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript">
+      <class name="com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript">
         <methods>
           <include name="afterClass"/>
-          <include name="VerifyWhenWeMakeSpecialNeedsMemberAsFiduciary"/>
           <include name="beforeSuite"/>
-          <include name="verifyAgeValidationForFiduciary"/>
           <include name="afterTest"/>
-          <include name="beforeTest"/>
+          <include name="VerifyLivingWillDetailsPage"/>
           <include name="afterMethod"/>
+          <include name="beforeTest"/>
           <include name="afterSuite"/>
-          <include name="VerifyWhenWeMakeFiduciaryBeneficiryMemberDeceased"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript -->
+      </class> <!-- com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
