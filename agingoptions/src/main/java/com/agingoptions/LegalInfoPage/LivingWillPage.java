@@ -55,6 +55,7 @@ public class LivingWillPage extends LivingWillPageOr {
 		wt.click(SaveAndContinueButton, "Save and Continue button");
 		
 	}
+	/////
 	public void SaveAndProceedOrganDonationDetails() {
 		wt.click(LivingWillDrawer, "Living will drawer");
 		wt.waitUntilTextPresentInUI(LivingWillHeaderMessage, "Please identify your choices for your living will.");
