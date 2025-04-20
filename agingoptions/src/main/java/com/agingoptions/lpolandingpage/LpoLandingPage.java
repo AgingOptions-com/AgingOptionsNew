@@ -37,6 +37,27 @@ public class LpoLandingPage {
 		util.click(housingModule, "Housing Module");
 	}
 	
+
+	@FindBy(xpath="(//span[text()='Finance'])[1]")
+	private WebElement financeSideBarLink;
+	
+	public void clickFinanceSideBarLink() {
+		util.holdOn(Duration.ofSeconds(5));
+		util.waitUntilPresentInUI(financeSideBarLink, "Finance");
+		util.waitUntilElementToBeClickable(financeSideBarLink);
+		util.click(financeSideBarLink, "Finance");
+	}
+	
+	@FindBy(xpath="//span[contains(text(),'Legal')]")
+	private WebElement legalSideBarLink;
+	
+	public void clickLegalSideBarLink() {
+		util.holdOn(Duration.ofSeconds(5));
+		util.waitUntilPresentInUI(legalSideBarLink, "Finance");
+		util.waitUntilElementToBeClickable(legalSideBarLink);
+		util.click(legalSideBarLink, "Legal");
+	}
+	
 	 @FindBy(xpath="(//span[text()='Legal'])[1]")
 	 protected WebElement LegalButtonUndersetUp;
 	 

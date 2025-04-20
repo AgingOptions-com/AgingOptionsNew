@@ -40,7 +40,6 @@ public class LoginPage extends LoginPageOr {
     public void GoToClickForgotPassword() {
      wt.click(forgotPasswordLink, "Forgot Password Link");
      wt.holdOn(Duration.ofSeconds(3));
-   
 	}
     public void verifyvalidLogin(String email,String password) {
     
@@ -48,7 +47,6 @@ public class LoginPage extends LoginPageOr {
 		//wt.mouseClick(passwordField);
 		//wt.clear(passwordField);
 		wt.sendValue(passwordField, password,"Passsword Field");
-	
 		wt.click(loginButton,"Login button");
 		  wt.holdOn(Duration.ofSeconds(10));
 		

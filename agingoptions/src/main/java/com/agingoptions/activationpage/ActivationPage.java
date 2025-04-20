@@ -83,14 +83,20 @@ public class ActivationPage {
 		util.pressBackSpaceButton();
 		util.DownKey();
 		util.pressEnter();
-		
+
 	}
 	public void inputSpouseDob(String primaryMemberDob) {
 		util.click(spouseDobTB, "Spouse Date Of Birth");
 		util.sendValueJs(spouseDobTB, primaryMemberDob, "Primary member Date Of Birth");
 	}
 	public void clickProceedSubmitButton() {
-		util.clickButtonAfterCheckingEnable(submitProceedBT);
+		util.scrollIntoElement(submitProceedBT, "Submit & Proceed");
+		try {
+			//util.clickButtonAfterCheckingEnable(submitProceedBT);
+			util.click(submitProceedBT, "Submit & Proceed");
+		}catch(Exception e) {
+			util.clickActions(submitProceedBT, "Submit & Proceed");
+		}
 	}
 
 

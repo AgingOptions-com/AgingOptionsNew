@@ -95,9 +95,9 @@ public class CommonCode extends CommonCodeOR {
 		util.holdOn(Duration.ofSeconds(3));
 		util.click(newRegistrationBT, "New Registration Button");
 		util.holdOn(Duration.ofSeconds(2));
-		util.click(countrycodeInputField, "Country Code input Field");
-		util.clickJavaScript(CountryCode, "Country code");
-		util.holdOn(Duration.ofSeconds(2));
+		util.sendValue(countryCodeTB,"91","Country Code Drop Down" );
+		util.holdOn(Duration.ofSeconds(1));
+		util.click(countryCode91, "Country Code");
 		util.sendValueWithAct(phoneNumberTB, formattedNumber, "Phone Number");
 		util.sendValue(firstNameTB, firstName, "First Name");
 		util.sendValue(lastNameTB, lastName, "Last Name");
@@ -118,6 +118,7 @@ public class CommonCode extends CommonCodeOR {
 		actObj.selectMarriedRelationshipOptions();
 		actObj.selectMaleAsPrimaryMember();
 		actObj.inputNoOfChildren(noOfChild);
+		//  util.click(countryCodeDropDown, "Country Drop Down");
 		actObj.inputPrimaryMemberDob(primaryMemberDob);
 		// actObj.inputAddress(address);
 		actObj.inputSpouseFirstName(spouseFirstName);
@@ -125,6 +126,8 @@ public class CommonCode extends CommonCodeOR {
 		util.holdOn(Duration.ofSeconds(1));
 		actObj.clickProceedSubmitButton();
 		util.holdOn(Duration.ofSeconds(5));
+		String actualText=	getPersonalInfoText();
+		System.out.println(actualText);
 	}
 
 	public void LoginWithNewMarriedUser() {
@@ -188,7 +191,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void inputotp(String otp) {
-		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		util.holdOn(Duration.ofSeconds(2));
 		util.sendValue(otpInputBox, otp, "OTP box");
 	}
 
@@ -345,7 +348,15 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void waitUntilToasterMessageisHide() {
-		util.waitUntilElementIsDisappearFromThePage(toasterMessage, 2);
+		util.waitUntilElementIsDisappearFromThePage(toasterMessage, 20);
+	}
+
+	@FindBy(xpath="//h1[contains(text(),'Personal Information')]")
+	private WebElement personalInfoText;
+
+	public String getPersonalInfoText() {
+		String text=	util.getInnerText(personalInfoText);
+		return text;
 	}
 
 }

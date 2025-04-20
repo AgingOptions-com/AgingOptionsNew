@@ -59,7 +59,6 @@ public class MarriedUserFamilyMedicalHistoryTestCases extends BaseTest{
 		familyMedical.clickprimaryMemberIsYourMotherLivingNoRadioBT();
 		familyMedical.clickSpouseIsYourFatherCurrentlyLivingNoRadioButton();
 		familyMedical.clickSpouseIsYourMotherLivingNoRadioBT();
-
 		String primaryFatherAgeDeathExpectedText="94";
 		familyMedical.inputPrimaryFatherAgeAtDeath(primaryFatherAgeDeathExpectedText);
 		String primaryFatherCauseOfDeathDesc="Incident";

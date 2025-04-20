@@ -223,6 +223,5 @@ public void verifyRealtorPageOnHousingProfessional() {
 			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
 			housingProfessionalObj.UpdateProfessionalDetails();
 	}
-	
-	
+
 }

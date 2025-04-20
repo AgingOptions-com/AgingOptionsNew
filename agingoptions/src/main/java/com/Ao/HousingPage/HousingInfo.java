@@ -165,9 +165,6 @@ public class HousingInfo extends HousingInfoOr{
 		List<WebElement> ListWeb=wt.driver.findElements(By.xpath("//ul[@id='dropDownDivId']//li"));
 		wt.click(HowManyStoryDoesItHave_DropDown, "How many story does it have dropdown");
 		wt.ListSize(ListWeb);
-
-
-
 	}
 	public void VerifyWhenWeSelectTWoThreeAndMore_HowManyStoryDoesItHave() throws InterruptedException {
 		wt.holdOn(Duration.ofSeconds(1));
@@ -254,6 +251,7 @@ public class HousingInfo extends HousingInfoOr{
 	   CommonCode cmc=new CommonCode(wt);
 		cmc.verifyToasterMessage("Your data have been updated successfully");
 
+		
    }
 }
 

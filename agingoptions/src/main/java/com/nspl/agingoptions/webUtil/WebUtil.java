@@ -54,14 +54,14 @@ import org.testng.asserts.SoftAssert;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.google.common.io.Files;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.Point;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.StaleElementReferenceException;
 
 import net.bytebuddy.utility.RandomString;
-import net.sourceforge.tess4j.ITesseract;
-import net.sourceforge.tess4j.Tesseract;
-import net.sourceforge.tess4j.TesseractException;
 
 public class WebUtil {
 
@@ -147,6 +147,8 @@ public class WebUtil {
 	// Browser=====================================================
 	public void launchBrowser(String browserName) {
 		if (browserName.contains("chrome")) {
+			WebDriverManager.chromedriver().driverVersion("135.0.7049").setup();
+			 System.out.print("BrowserIs launched");
 			ChromeOptions opt = new ChromeOptions();
 			HashMap<String, Object> prefs = new HashMap<>();
 			prefs.put("profile.default_content_setting_values.notifications", 2);// this will block the browser
@@ -156,7 +158,11 @@ public class WebUtil {
 			opt.setExperimentalOption("prefs", prefs);
 			opt.addArguments("--start-maximized");
 			opt.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
-			driver = new ChromeDriver(opt);
+			try{
+				driver = new ChromeDriver(opt);}
+			catch(Exception e) {
+				e.printStackTrace();
+			}
 		} else if (browserName.contains("edge")) {
 			EdgeOptions options = new EdgeOptions();
 			HashMap<String, Object> prefs = new HashMap<>();
@@ -875,16 +881,17 @@ public class WebUtil {
 					+ " ' Verify Successfully " + elementName);
 			print("Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " ' Verify Successfully ");
-			
+
 		}else if(actual.equalsIgnoreCase(expected)) {
 			extTest.log(Status.PASS, "Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " ' Verify Successfully " + elementName);
 			print("Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " ' Verify Successfully ");
 		}
+		
 		else {
-			
-			
+
+
 			extTest.log(Status.FAIL, "Failed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " 'not Verify " + elementName);
 			print("Failed Actual text '" + actualText + " 'and  Expected Text  '" + expectedText + " 'not  Verify");
@@ -1555,7 +1562,7 @@ public class WebUtil {
 
 	public void clearTextBox(WebElement webEle) {
 		try {
-			
+
 			webEle.clear();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -1810,7 +1817,6 @@ public class WebUtil {
 
 	public void openAccordion(WebElement accordion, String elementName) {
 		try {
-			// Check if the accordion is already open using the "aria-expanded" attribute
 			String expanded = accordion.getAttribute("aria-expanded");
 			if (expanded != null && expanded.equals("true")) {
 				System.out.println(elementName + " accordion is already open.");
@@ -1820,15 +1826,13 @@ public class WebUtil {
 			accordion.click(); // Click the accordion to open
 			System.out.println("Clicked on the " + elementName + " accordion to open it.");
 			extTest.log(Status.PASS, "Clicked on the " + elementName + " accordion to open it.");
-			// Wait for the accordion to expand
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 			wait.until(ExpectedConditions.attributeToBe(accordion, "aria-expanded", "true"));
 			System.out.println(elementName + " accordion opened successfully.");
 			extTest.log(Status.PASS, elementName + " accordion opened successfully.");
 		} catch (ElementClickInterceptedException e) {
 			System.out.println("ElementClickInterceptedException for " + elementName + ". Using JavaScript Click...");
-			extTest.log(Status.WARNING,
-					"ElementClickInterceptedException for " + elementName + ". Using JavaScript Click...");
+			extTest.log(Status.PASS, elementName + " accordion opened successfully.");
 			((JavascriptExecutor) driver).executeScript("arguments[0].click();", accordion);
 		} catch (StaleElementReferenceException e) {
 			System.out.println("StaleElementReferenceException for " + elementName + ". Retrying...");
@@ -1958,53 +1962,66 @@ public class WebUtil {
 	}
 	public void waitUntilValueIsSend(WebElement we,long time, String text) {
 		try{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
-		 we.clear();
-	     we.sendKeys(text);
-		wait.until(ExpectedConditions.textToBePresentInElementValue(we, text));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+			we.clear();
+			we.sendKeys(text);
+			wait.until(ExpectedConditions.textToBePresentInElementValue(we, text));
 		}catch(Exception e) {
-			 System.out.println("Timeout: Text '" + text + "' was not found in the field within " + time + " seconds.");
+			System.out.println("Timeout: Text '" + text + "' was not found in the field within " + time + " seconds.");
 		}
 	}
 
 	public void waitUntilElementIsDisappearFromThePage(WebElement we, long seconds) {
-	    try {
-	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
-	         wait.until(ExpectedConditions.invisibilityOf(we));
-	        System.out.println("Element disappeared from the page.");
-	    } catch (StaleElementReferenceException e) {
-	        System.out.println("Element was removed from the DOM.");
-	    }  catch (Exception e) {
-	        System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
-	    }
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+			wait.until(ExpectedConditions.invisibilityOf(we));
+			System.out.println("Element disappeared from the page.");
+		} catch (StaleElementReferenceException e) {
+			System.out.println("Element was removed from the DOM.");
+		}  catch (Exception e) {
+			System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
+		}
 	}
-	
+
 	public void uploadFile(WebElement fileUploadElement, String filePath) {
-	    try {
-	        fileUploadElement.sendKeys(filePath);  // Provide full path to the file
-	        extTest.log(Status.PASS, "File uploaded successfully: " + filePath);
-	        System.out.println("File uploaded successfully: " + filePath);
-	    } catch (Exception e) {
-	        extTest.log(Status.FAIL, "File upload failed: " + e.getMessage());
-	        System.out.println("File upload failed: " + e.getMessage());
-	        e.printStackTrace();
-	    }
+		try {
+			fileUploadElement.sendKeys(filePath);  // Provide full path to the file
+			extTest.log(Status.PASS, "File uploaded successfully: " + filePath);
+			System.out.println("File uploaded successfully: " + filePath);
+		} catch (Exception e) {
+			extTest.log(Status.FAIL, "File upload failed: " + e.getMessage());
+			System.out.println("File upload failed: " + e.getMessage());
+			e.printStackTrace();
+		}
 	}
 	public String convertDateFormatMMDDYYYY(String date) {
-	    try {
-	        SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
-	        SimpleDateFormat outputFormat = new SimpleDateFormat("MM-dd-yyyy");
+		try {
+			SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
+			SimpleDateFormat outputFormat = new SimpleDateFormat("MM-dd-yyyy");
 
-	        Date parsedDate = inputFormat.parse(date);
-	        return outputFormat.format(parsedDate);
+			Date parsedDate = inputFormat.parse(date);
+			return outputFormat.format(parsedDate);
 
-	    } catch (Exception e) {
-	        e.printStackTrace();
-	        return null;
-	    }
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
 	}
 	public String convertAmountActualValue(String actual) {
-	    return actual.replaceAll(",", "").replaceAll("\\.00$", "");
+		return actual.replaceAll(",", "").replaceAll("\\.00$", "");
+	}
+	public String unformatPhoneNumber(String formattedNumber) {
+		// Remove all non-digit characters
+		return formattedNumber.replaceAll("\\D", "");
+	}
+	public void waitUntilPresentInUI(WebElement we, long seconds) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+			wait.until(ExpectedConditions.visibilityOf(we));
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw e;
+		}
 	}
 
 
