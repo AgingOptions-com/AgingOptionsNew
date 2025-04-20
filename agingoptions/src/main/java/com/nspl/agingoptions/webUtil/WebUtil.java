@@ -682,7 +682,7 @@ public class WebUtil {
 	// few seconds===============================
 	public void holdOn(Duration time) {
 		try {
-			Thread.sleep(time);
+			Thread.sleep(time.toMillis()); // <-- Use toMillis()
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
