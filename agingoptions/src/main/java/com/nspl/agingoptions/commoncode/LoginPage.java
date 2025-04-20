@@ -29,7 +29,7 @@ public class LoginPage extends LoginPageOr {
 	    wt.verifyTitle("Login Page","Universal Login");
 	   }
 	  public void verifyOtpPage() {
-		  wt.holdOn(Duration.ofSeconds(4));
+		  wt.holdOn(Duration.ofSeconds(3));
 		 wt.verifyInnerText( clicltoresendInnertext, "Click to resend" ,"Otp");
 		 // wt.verifyUrl("https://aologinuat.agingoptions.com/Account/verifyOtp","OTP page");
 	  }
@@ -39,7 +39,7 @@ public class LoginPage extends LoginPageOr {
 
     public void GoToClickForgotPassword() {
      wt.click(forgotPasswordLink, "Forgot Password Link");
-     wt.holdOn(Duration.ofSeconds(4));
+     wt.holdOn(Duration.ofSeconds(3));
 	}
     public void verifyvalidLogin(String email,String password) {
     
@@ -47,9 +47,8 @@ public class LoginPage extends LoginPageOr {
 		//wt.mouseClick(passwordField);
 		//wt.clear(passwordField);
 		wt.sendValue(passwordField, password,"Passsword Field");
-	
 		wt.click(loginButton,"Login button");
-		wt.holdOn(Duration.ofSeconds(10));
+		  wt.holdOn(Duration.ofSeconds(10));
 		
     }
   

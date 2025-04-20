@@ -33,15 +33,17 @@ public class HousingInfo extends HousingInfoOr{
 		wt.verifyInnerText(OntheScaleOfOneToFiveOwnHomeInnerText, "On a scale of 1 to 5, how likely is it that you will remain in your current home? 1-Not at all, 5-Will be in my own home", "On The Scale On One Two Five.. dropdown");
 	}
 
+	public void verifyCheckNotSure_IsYourHousingLivingIn() {
+		
+			wt.click(IsYourHousingLivingNotSureCheckBox, "Is the house you are living in, the house you like to spend the rest of your life? Yes radio button");	
+
+		//	wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in, the house you like to spend the rest of your life? Yes radio button");	
+}
 	public void verifyCheckYes_IsYourHousingLivingIn() {
-		if(isYourHousingLivingYesCheckBox.isSelected()==false) {
-			wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in, the house you like to spend the rest of your life? Yes radio button");	
-
-			wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in, the house you like to spend the rest of your life? Yes radio button");	
-
-		}else 
-			wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in, the house you like to spend the rest of your life? Yes radio button");	
-	}
+	
+		wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in, the house you like to spend the rest of your life? Yes radio button");	
+}
+	
 	public void verifyHousingInformation() {
 		HousingInfo HousinginfoObj= new HousingInfo(wt);
 		HousinginfoObj.verifyHousingInformationPage();
@@ -92,8 +94,11 @@ public class HousingInfo extends HousingInfoOr{
 		wt.click(updateAndContinueButton, "Update and continue");
 		CommonCode cmc=new CommonCode(wt);
 		cmc.verifyToasterMessage("Your data have been updated successfully");
+		wt.holdOn(Duration.ofSeconds(3));
+	       wt.click(accordian,"accordian");
 	}
-	public void SaveAndProceedThedetailsWithIstheHouse_yesCheck_and_OntheScaleOnFive_Select1(String closestrelativedistanceInMiles) {
+	public void SaveAndProceedThedetailsWithIstheHouse_NotsureCheck_and_OntheScaleOnFive_Select1(String closestrelativedistanceInMiles) {
+		verifyCheckNotSure_IsYourHousingLivingIn();
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On The Scale On One To Five Own Home Drop Down");
 		wt.click(ClosestRelativeDropdown, "Closest Relative DropDown");
 		wt.click(ClosestrelativeContent, "Closest relative");
@@ -110,6 +115,10 @@ public class HousingInfo extends HousingInfoOr{
 	public void verifyHousingProfessionalPage() {
 		wt.verifyInnerText(IDoNotHaveRealtorInnerText, "I don’t have a Realtor", "Housing professional Page");
 	}
+	
+	public void gotoClickHousingOptions() {
+		wt.click(HousingOptionsection, "Housingoption section");
+	}
 	public void UpdateAndContinueTheDetailsIsTheHouseYouAreLivingWith_NoRadioButtonSelected(String RetirementPlace) {
 		wt.click(IsYourHousingLivingNoCheckBox, "Is the House You are Living In No Radio button");
 		wt.sendValue(WhereWouldYouLikeTORetireTB, RetirementPlace, "Where Would you want to retire");
@@ -123,7 +132,8 @@ public class HousingInfo extends HousingInfoOr{
 		wt.click(updateAndContinueButton, "Update and continue Button");
 		CommonCode cmc=new CommonCode(wt);
 		cmc.verifyToasterMessage("Your data have been updated successfully");
-
+		wt.holdOn(Duration.ofSeconds(3));
+       wt.click(accordian,"accordian");
 	}
 
 	public void SaveAndNextToHousingProfessional_ThedetailsTheHousingYouAreLivingWith_NoRadioButtonSelected(String RetirementPlace) {
@@ -141,22 +151,20 @@ public class HousingInfo extends HousingInfoOr{
 		wt.click(SaveAndNextProfessional, "Save And Next: professional");
 		CommonCode cmc=new CommonCode(wt);
 		cmc.verifyToasterMessage("Your data have been updated successfully");
+		wt.holdOn(Duration.ofSeconds(3));
 		verifyHousingProfessionalPage();
 
 	}
 	public void verifyHowManyStoriesDoesItHaveOptions() throws InterruptedException {
 		wt.holdOn(Duration.ofSeconds(1));
-		wt.click(IsYourHousingLivingNotSureCheckBox, "Is the housing Living With Not sure Radio Button");
-		wt.holdOn(Duration.ofSeconds(4));
+		wt.click(isYourHousingLivingYesCheckBox, "Is the housing Living With Not sure Radio Button");
+		wt.holdOn(Duration.ofSeconds(3));
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On THe Scale On five Own Drodwn ");
 		wt.click(OntheScaledropDown_option2, "Option 2");
 		wt.click(accordian, "accordian");
 		List<WebElement> ListWeb=wt.driver.findElements(By.xpath("//ul[@id='dropDownDivId']//li"));
 		wt.click(HowManyStoryDoesItHave_DropDown, "How many story does it have dropdown");
 		wt.ListSize(ListWeb);
-
-
-
 	}
 	public void VerifyWhenWeSelectTWoThreeAndMore_HowManyStoryDoesItHave() throws InterruptedException {
 		wt.holdOn(Duration.ofSeconds(1));
@@ -208,10 +216,12 @@ public class HousingInfo extends HousingInfoOr{
 	   wt.click(updateAndContinueButton, "Update and continue button");
 	   CommonCode cmc=new CommonCode(wt);
 		cmc.verifyToasterMessage("Your data have been updated successfully");
+		wt.holdOn(Duration.ofSeconds(3));
+	       wt.click(accordian,"accordian");
 
    }
    public void VerifySaveAndProceedToProfessionalWhenSelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive() {
-	   wt.click(IsYourHousingLivingNotSureCheckBox, "Is the house you are living in");
+	   wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in");
 	   wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On the scale of five own dropdown");
 	   wt.click(OntheScaledropDown_option2, "Option 2");
 	   wt.click(accordian, "Parent Accordian");
