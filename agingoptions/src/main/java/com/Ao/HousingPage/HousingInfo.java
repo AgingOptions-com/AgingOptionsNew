@@ -58,7 +58,7 @@ public class HousingInfo extends HousingInfoOr{
 		wt.click(OntheScaledropDown_option2, "option 2");
 		wt.isDisplayed(CaregiverSuitability, "CareGiver suitability text");
 		wt.isDisplayed(CurrentResidenceCharactarstics_Text, "Current residence Charactarstics");
-		Thread.sleep(Duration.ofSeconds(5));
+		wt.holdOn(Duration.ofSeconds(5));
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On the scale of One to five own Home ..dropdown");
 		wt.click(OntheScaledropDown_option3, "option 3");
 		wt.isDisplayed(CaregiverSuitability, "CareGiver suitability text");
@@ -156,9 +156,9 @@ public class HousingInfo extends HousingInfoOr{
 
 	}
 	public void verifyHowManyStoriesDoesItHaveOptions() throws InterruptedException {
-		Thread.sleep(Duration.ofSeconds(1));
+		wt.holdOn(Duration.ofSeconds(1));
 		wt.click(isYourHousingLivingYesCheckBox, "Is the housing Living With Not sure Radio Button");
-		Thread.sleep(Duration.ofSeconds(3));
+		wt.holdOn(Duration.ofSeconds(3));
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On THe Scale On five Own Drodwn ");
 		wt.click(OntheScaledropDown_option2, "Option 2");
 		wt.click(accordian, "accordian");
@@ -170,9 +170,9 @@ public class HousingInfo extends HousingInfoOr{
 
 	}
 	public void VerifyWhenWeSelectTWoThreeAndMore_HowManyStoryDoesItHave() throws InterruptedException {
-		Thread.sleep(Duration.ofSeconds(1));
+		wt.holdOn(Duration.ofSeconds(1));
 		wt.click(IsYourHousingLivingNotSureCheckBox, "Is the housing Living With Not sure Radio Button");
-		Thread.sleep(Duration.ofSeconds(1));
+		wt.holdOn(Duration.ofSeconds(1));
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On THe Scale On five Own Drodwn ");
 		wt.click(OntheScaledropDown_option2, "Option 2");
 		wt.click(accordian, "accordian");
