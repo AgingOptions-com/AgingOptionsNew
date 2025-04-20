@@ -29,12 +29,7 @@ public class LoginPage extends LoginPageOr {
 	    wt.verifyTitle("Login Page","Universal Login");
 	   }
 	  public void verifyOtpPage() {
-		  try {
-			Thread.sleep(Duration.ofSeconds(3));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		  wt.holdOn(Duration.ofSeconds(4));
 		 wt.verifyInnerText( clicltoresendInnertext, "Click to resend" ,"Otp");
 		 // wt.verifyUrl("https://aologinuat.agingoptions.com/Account/verifyOtp","OTP page");
 	  }
@@ -44,13 +39,7 @@ public class LoginPage extends LoginPageOr {
 
     public void GoToClickForgotPassword() {
      wt.click(forgotPasswordLink, "Forgot Password Link");
-     try {
-		Thread.sleep(Duration.ofSeconds(4));
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-   
+     wt.holdOn(Duration.ofSeconds(4));
 	}
     public void verifyvalidLogin(String email,String password) {
     
@@ -60,13 +49,7 @@ public class LoginPage extends LoginPageOr {
 		wt.sendValue(passwordField, password,"Passsword Field");
 	
 		wt.click(loginButton,"Login button");
-		try {
-			Thread.sleep(Duration.ofSeconds(10));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+		wt.holdOn(Duration.ofSeconds(10));
 		
     }
   

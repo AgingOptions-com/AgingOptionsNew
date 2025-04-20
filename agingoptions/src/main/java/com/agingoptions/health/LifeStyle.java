@@ -1,5 +1,6 @@
 package com.agingoptions.health;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -156,6 +157,7 @@ public class LifeStyle {
 	public void clickLifeStyleSideBarLink() {
 		util.waitUntilPresentInUI(lifeStyleSideBarLink, "Life Style Module");
 		util.waitUntilElementClickableAndClick(lifeStyleSideBarLink);
+		util.holdOn(Duration.ofSeconds(2));
 		util.click(lifeStyleSideBarLink, "Life Style Module");
 	}
 

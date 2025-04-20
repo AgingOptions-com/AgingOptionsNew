@@ -3,21 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nspl.agingoptions.financepage.testcases.RetirementTestCases">
+      <class name="com.nspl.agingoptions.financepage.testcases.RealEstateTestCases">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="FT006_RetirementNextRealEstateButton"/>
-          <include name="FT004_RetirementSaveContinueLaterButton"/>
+          <include name="FTC_009_AddRealEstateSaveAndProceedToBussinessInterestButton"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
+          <include name="FTC_007_AddRealEstateSaveContinueLaterButton"/>
           <include name="afterSuite"/>
-          <include name="FT005_RetirementSaveAddAnotherButton"/>
+          <include name="FTC_008_AddRealEstateSaveAddAnotherButton"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.financepage.testcases.RetirementTestCases -->
+      </class> <!-- com.nspl.agingoptions.financepage.testcases.RealEstateTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

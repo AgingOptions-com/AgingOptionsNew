@@ -145,7 +145,7 @@ public class HousingInfo extends HousingInfoOr{
 
 	}
 	public void verifyHowManyStoriesDoesItHaveOptions() throws InterruptedException {
-		Thread.sleep(Duration.ofSeconds(1));
+		wt.holdOn(Duration.ofSeconds(1));
 		wt.click(IsYourHousingLivingNotSureCheckBox, "Is the housing Living With Not sure Radio Button");
 		wt.holdOn(Duration.ofSeconds(4));
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On THe Scale On five Own Drodwn ");

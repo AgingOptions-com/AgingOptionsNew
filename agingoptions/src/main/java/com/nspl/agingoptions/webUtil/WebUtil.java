@@ -53,14 +53,14 @@ import org.testng.asserts.SoftAssert;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.google.common.io.Files;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.Point;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.StaleElementReferenceException;
 
 import net.bytebuddy.utility.RandomString;
-import net.sourceforge.tess4j.ITesseract;
-import net.sourceforge.tess4j.Tesseract;
-import net.sourceforge.tess4j.TesseractException;
 
 public class WebUtil {
 
@@ -146,6 +146,8 @@ public class WebUtil {
 	// Browser=====================================================
 	public void launchBrowser(String browserName) {
 		if (browserName.contains("chrome")) {
+			WebDriverManager.chromedriver().driverVersion("135.0.7049").setup();
+			 System.out.print("BrowserIs launched");
 			ChromeOptions opt = new ChromeOptions();
 			HashMap<String, Object> prefs = new HashMap<>();
 			prefs.put("profile.default_content_setting_values.notifications", 2);// this will block the browser
@@ -155,7 +157,11 @@ public class WebUtil {
 			opt.setExperimentalOption("prefs", prefs);
 			opt.addArguments("--start-maximized");
 			opt.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
-			driver = new ChromeDriver(opt);
+			try{
+				driver = new ChromeDriver(opt);}
+			catch(Exception e) {
+				e.printStackTrace();
+			}
 		} else if (browserName.contains("edge")) {
 			EdgeOptions options = new EdgeOptions();
 			HashMap<String, Object> prefs = new HashMap<>();
@@ -682,7 +688,7 @@ public class WebUtil {
 	// few seconds===============================
 	public void holdOn(Duration time) {
 		try {
-			Thread.sleep(time);
+			Thread.sleep(time.toMillis()); // <-- Use toMillis()
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

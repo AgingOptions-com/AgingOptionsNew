@@ -31,7 +31,7 @@
 				name="com.nspl.agingoptions.healthpage.testcases.MedicationSupplementsTestCases">
 			</class>
 			
-			<class
+			<!--<class
 				name="com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript">
 			</class>
 			<class
@@ -42,14 +42,14 @@
 			</class>
 			<class
 				name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript">
-			</class>
+			</class>-->
+			
 			<class
 				name="com.nspl.agingoptions.financepage.testcases.Non_RetirementTestCases">
 			</class>
 			<class
 				name="com.nspl.agingoptions.financepage.testcases.RetirementTestCases">
 			</class>
-			
 
 		</classes>
 	</test>

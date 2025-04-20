@@ -13,7 +13,7 @@ import com.nspl.agingoptions.webUtil.BaseTest;
 public class Non_RetirementTestCases extends BaseTest {
 
 	@Test(priority = 1)
-	public void FT001_Non_RetirementSaveContinueLaterButton() {
+	public void FTC01_Non_RetirementSaveContinueLaterButton() {
 
 		LpoLandingPage lpo=	new LpoLandingPage(util);
 		CommonCode common=		new CommonCode(util);
@@ -96,7 +96,7 @@ public class Non_RetirementTestCases extends BaseTest {
 	}
 
 	@Test(priority=2)
-	public void FT002_Non_RetirementSaveAddAnotherButton() {
+	public void FTC02_Non_RetirementSaveAddAnotherButton() {
 
 		LpoLandingPage lpo=	new LpoLandingPage(util);
 		CommonCode common=		new CommonCode(util);
@@ -178,7 +178,7 @@ public class Non_RetirementTestCases extends BaseTest {
 	}
 
 	@Test(priority=3)
-	public void FT_003Non_RetirementSaveAddProceedToRetirementButton() {
+	public void FTC03_Non_RetirementSaveAddProceedToRetirementButton() {
 
 		LpoLandingPage lpo=	new LpoLandingPage(util);
 		CommonCode common=		new CommonCode(util);
@@ -260,6 +260,7 @@ public class Non_RetirementTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualCharityPercentage,expectedPercetnage , "Charity Percentage");
 		util.verifyActualExpectedText(actualCharityInputPhoneNumber,expectedCharityPhoneNum , "Charity Phone Number");
 		util.verifyActualExpectedText(expectedCharityEmail,acutalCharityEmail , "Charity Email");
+		common.clickPreviousButton();
 	}
 
  

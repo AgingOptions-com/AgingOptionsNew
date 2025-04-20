@@ -6,90 +6,46 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.nspl.agingoptions.financepage.testcases.RetirementTestCases">
+      <class name="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases">
         <methods>
+          <include name="TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="FT006_RetirementNextRealEstateButton"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="FT005_RetirementSaveAddAnotherButton"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.nspl.agingoptions.financepage.testcases.RetirementTestCases -->
-      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript">
-        <methods>
-          <include name="VerifySaveAndProceedSpouseRealtorDetails"/>
-          <include name="beforeSuite"/>
+          <include name="TC_018_inputSpouseCarePhysicianAndSave"/>
           <include name="afterTest"/>
           <include name="afterMethod"/>
-          <include name="VerifySaveAndContinueSpouseRealtorDetails"/>
-          <include name="verifyaddRealtorForPraimaryMember"/>
-          <include name="VerifyCopySameDataFunctionality"/>
-          <include name="VerifySaveAndAddAnotherSpouseRealtorDetails"/>
-          <include name="afterClass"/>
-          <include name="VerifySaveAndAddAnotherPrimaryMemberRealtorDetails"/>
+          <include name="TC_017_inputPrimaryMemberCarePhysicianAndSave"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
-          <include name="VerifySaveAndproceedPrimaryMemberRealtorDetails"/>
-          <include name="VerifyUpdateRealtorDetails"/>
+          <include name="TC_016_SpouseIDontHavePrimaryCarePhyscian"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript -->
-      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript">
+      </class> <!-- com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases -->
+      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="VerifySaveAndProceedSpouseMortgageBrokerDetails"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript -->
-      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="TC_014_FamilyMedicalHistoryMyFamilyMedicalHistoryNoRadioButton"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserFamilyMedicalHistoryTestCases -->
-      <class name="com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript">
-        <methods>
-          <include name="VerifySaveAandNextProfessional_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
+          <include name="TC_007_Health_LifeStyleGeneralHealthNutritionDetails"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
-          <include name="VerifyUpdateAndContinue_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript -->
+      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases -->
       <class name="com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="TC_023_PrimarySpecialistSaveDetailsSaveAndAddAnotherButtonAndSameAsSpouse"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
+          <include name="TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton"/>
+          <include name="TC_024_PrimaryMemberSpecialistSaveDetailsSaveAndProceedToSpouseButton"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases -->

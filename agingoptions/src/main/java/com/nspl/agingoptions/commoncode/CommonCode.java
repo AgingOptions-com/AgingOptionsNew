@@ -118,7 +118,7 @@ public class CommonCode extends CommonCodeOR {
 		actObj.selectMarriedRelationshipOptions();
 		actObj.selectMaleAsPrimaryMember();
 		actObj.inputNoOfChildren(noOfChild);
-	  //  util.click(countryCodeDropDown, "Country Drop Down");
+		//  util.click(countryCodeDropDown, "Country Drop Down");
 		actObj.inputPrimaryMemberDob(primaryMemberDob);
 		// actObj.inputAddress(address);
 		actObj.inputSpouseFirstName(spouseFirstName);
@@ -126,6 +126,8 @@ public class CommonCode extends CommonCodeOR {
 		util.holdOn(Duration.ofSeconds(1));
 		actObj.clickProceedSubmitButton();
 		util.holdOn(Duration.ofSeconds(5));
+		String actualText=	getPersonalInfoText();
+		System.out.println(actualText);
 	}
 
 	public void LoginWithNewMarriedUser() {
@@ -199,12 +201,7 @@ public class CommonCode extends CommonCodeOR {
 
 	public void GoToClickSignUpLinkAndVerifySignUpPage() {
 		util.click(SignUpLink, "SignUp Link");
-		try {
-			Thread.sleep(Duration.ofSeconds(4));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		util.holdOn(Duration.ofSeconds(4));
 		util.verifyInnerText(SignUpText, "Sign up", "Sign Up");
 		// wt.verifyUrl("https://aologinuat.agingoptions.com/Account/Signup", "SignUp");
 	}
@@ -212,12 +209,7 @@ public class CommonCode extends CommonCodeOR {
 	public void gotoClickParalegalOptions() {
 
 		util.click(paralegalrole, "Paralegal Role options");
-		try {
-			Thread.sleep(Duration.ofSeconds(10));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		util.holdOn(Duration.ofSeconds(10));
 		// util.verifyTitle("Paralegal ", "Aging Options");
 		util.verifyInnerText(ParalegalInnertext, "Intake / LPO Member List", "Paralegal screen");
 		// wt.verifyUrl("https://aointakeformuat.agingoptions.com/paralegal", "Paralegal
@@ -241,24 +233,14 @@ public class CommonCode extends CommonCodeOR {
 
 	public void GoToClickSignOnRole() {
 		util.click(SignOnRole, "Sign On");
-		try {
-			Thread.sleep(Duration.ofSeconds(8));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		util.holdOn(Duration.ofSeconds(8));
 		util.verifyInnerText(welcomemessagetextofSignOn, "View portal users here.", "Sign on");
 	}
 
 	public void gotoClickVerifyButtonLoginAfterSignUp() {
 
 		util.click(verifybutton, "OTP Verify button");
-		try {
-			Thread.sleep(Duration.ofSeconds(8));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		util.holdOn(Duration.ofSeconds(8));
 	}
 
 	public void gotoclickOtpButton() {
@@ -271,12 +253,7 @@ public class CommonCode extends CommonCodeOR {
 
 	public void VerifyBackToLogin() {
 		util.click(BackTologinLink, "Back To Login Link");
-		try {
-			Thread.sleep(Duration.ofSeconds(4));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		util.holdOn(Duration.ofSeconds(4));
 		util.verifyInnerText(LoginText, "Login", "Login Page");
 	}
 
@@ -318,12 +295,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void verifyOtpPage() {
-		try {
-			Thread.sleep(Duration.ofSeconds(3));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		util.holdOn(Duration.ofSeconds(3));
 		util.verifyInnerText(clickToResendInnertext, "Click to resend", "Otp");
 		// wt.verifyUrl("https://aologinuat.agingoptions.com/Account/verifyOtp","OTP
 		// page");
@@ -377,6 +349,14 @@ public class CommonCode extends CommonCodeOR {
 
 	public void waitUntilToasterMessageisHide() {
 		util.waitUntilElementIsDisappearFromThePage(toasterMessage, 20);
+	}
+
+	@FindBy(xpath="//h1[contains(text(),'Personal Information')]")
+	private WebElement personalInfoText;
+
+	public String getPersonalInfoText() {
+		String text=	util.getInnerText(personalInfoText);
+		return text;
 	}
 
 }

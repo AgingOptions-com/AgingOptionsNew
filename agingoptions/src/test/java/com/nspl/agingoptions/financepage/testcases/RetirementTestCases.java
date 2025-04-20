@@ -16,7 +16,7 @@ import com.nspl.agingoptions.webUtil.DataUtil;
 public class RetirementTestCases extends BaseTest {
 
 	@Test(priority = 1)
-	public void FT004_RetirementSaveContinueLaterButton() {
+	public void FTC04_RetirementSaveContinueLaterButton() {
 
 		LpoLandingPage lpo = new LpoLandingPage(util);
 		CommonCode common = new CommonCode(util);
@@ -98,7 +98,7 @@ public class RetirementTestCases extends BaseTest {
 	}
 
 	@Test(priority = 2)
-	public void FT005_RetirementSaveAddAnotherButton() {
+	public void FTC05_RetirementSaveAddAnotherButton() {
 
 		LpoLandingPage lpo = new LpoLandingPage(util);
 		CommonCode common = new CommonCode(util);
@@ -172,7 +172,7 @@ public class RetirementTestCases extends BaseTest {
 	}
 
 	@Test(priority=3)
-	public void FT006_RetirementNextRealEstateButton() {
+	public void FTC06_RetirementNextRealEstateButton() {
 
 		LpoLandingPage lpo = new LpoLandingPage(util);
 		CommonCode common = new CommonCode(util);
