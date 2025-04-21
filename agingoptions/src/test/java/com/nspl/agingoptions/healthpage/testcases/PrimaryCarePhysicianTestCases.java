@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import com.agingoptions.health.PrimaryCarePhysician;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
+import com.nspl.agingoptions.commoncode.CommonCode;
 import com.nspl.agingoptions.webUtil.BaseTest;
 
 public class PrimaryCarePhysicianTestCases extends BaseTest {
@@ -15,12 +16,14 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 	public void TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian() {
 
 		LpoLandingPage lpoLanding=	new LpoLandingPage(util);
+		CommonCode common=	new CommonCode(util);
 		util.holdOn(Duration.ofSeconds(5));
 		lpoLanding.clickHealthModule();
 		PrimaryCarePhysician primaryCare=	new PrimaryCarePhysician(util);
 		util.holdOn(Duration.ofSeconds(5));
 		primaryCare.clickHealthProfessionalLK();
 		util.holdOn(Duration.ofSeconds(5));
+		common.unCheckCopySameDataToSpouseCheckBox();
 		primaryCare.checkIDontHavePrimaryCarePhysicianCheckBox();
 		primaryCare.clickProceedTOSpouseBT();
 		util.holdOn(Duration.ofSeconds(3));
@@ -33,6 +36,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 	public void TC_016_SpouseIDontHavePrimaryCarePhyscian() {
 
 		LpoLandingPage lpoLanding=	new LpoLandingPage(util);
+		CommonCode common=		new CommonCode(util);
 		util.holdOn(Duration.ofSeconds(5));
 		lpoLanding.clickHealthModule();
 		PrimaryCarePhysician primaryCare=	new PrimaryCarePhysician(util);
@@ -41,6 +45,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(1));
 		primaryCare.clickSpouseToggleButton();
 		util.holdOn(Duration.ofSeconds(2));
+		common.unCheckCopySameDataToSpouseCheckBox();
 		primaryCare.checkIDontHavePrimaryCarePhysicianCheckBox();
 		primaryCare.clickSaveProceedToSpecialistBT();
 		util.holdOn(Duration.ofSeconds(5));
@@ -55,6 +60,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 	public void TC_017_inputPrimaryMemberCarePhysicianAndSave() {
 
 		LpoLandingPage lpoLanding=	new LpoLandingPage(util);
+		CommonCode common=	new CommonCode(util);
 		util.holdOn(Duration.ofSeconds(5));
 		lpoLanding.clickHealthModule();
 		PrimaryCarePhysician primaryCare=	new PrimaryCarePhysician(util);
@@ -64,6 +70,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 		primaryCare.clickPrimaryMemberToggleButton();
 		util.holdOn(Duration.ofSeconds(5));
 		primaryCare.uncheckIDontHavePrimaryCarePhysician();
+		common.unCheckCopySameDataToSpouseCheckBox();
 		primaryCare.openPersonalDetailsAccoordian();
 		String expectedFirstName="Dr Varun";
 		primaryCare.inputFirstName(expectedFirstName);
@@ -120,6 +127,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 	public void TC_018_inputSpouseCarePhysicianAndSave() {
 
 		LpoLandingPage lpoLanding=	new LpoLandingPage(util);
+		CommonCode common=	new CommonCode(util);
 		util.holdOn(Duration.ofSeconds(5));
 		lpoLanding.clickHealthModule();
 		PrimaryCarePhysician primaryCare=	new PrimaryCarePhysician(util);
@@ -129,6 +137,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 		primaryCare.clickSpouseToggleButton();
 		util.holdOn(Duration.ofSeconds(1));
 		primaryCare.uncheckIDontHavePrimaryCarePhysician();
+	//	common.unCheckCopySameDataToSpouseCheckBox();
 		primaryCare.openPersonalDetailsAccoordian();
 		String expectedFirstName="Dr Sangeeta";
 		primaryCare.inputFirstName(expectedFirstName);

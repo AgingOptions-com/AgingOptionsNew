@@ -322,6 +322,14 @@ public class Specialists extends CommonCode {
 	public void waitUntilToasterMessageisHide() {
 		util.waitUntilElementIsDisappearFromThePage(toasterMessage, 2);
 	}
+	
+	@FindBy(xpath="//td[contains(text(),' Dr Nikita Roy')]/following-sibling::td//img[@alt='Edit Icon']")
+	private WebElement nikitaEditIcon;
+
+	public void clickNikitaRoyEditIcon() {
+		util.waitUntilElementToBeClickable(nikitaEditIcon);
+		util.click(nikitaEditIcon, "Edit Icon");
+	}
 
 
 }

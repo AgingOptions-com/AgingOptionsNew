@@ -196,5 +196,23 @@ public class AssetsCommonCode {
 		util.click(nextBusinessInterestBT, "Next: Business Interest Button");
 	}
 
+	@FindBy(xpath="(//span[contains(text(),'Business Interests')])[1]")
+	private WebElement businessInterestSideBarLink;
+
+	public void clickBusinessInterestSideBarLink() {
+		util.waitUntilElementToBeClickable(businessInterestSideBarLink);
+		util.click(businessInterestSideBarLink, "Bussiness Interest Side Bar Link");
+	}
+
+	@FindBy(xpath="//button[contains(text(),'Document Upload')]")
+	private WebElement documentUploadAccordian;
+
+	public void openDocumentUploadAccoridian() {
+		util.openAccordion(documentUploadAccordian, "Document Upload Accoridan");
+	}
+	
+	
+
+
 
 }

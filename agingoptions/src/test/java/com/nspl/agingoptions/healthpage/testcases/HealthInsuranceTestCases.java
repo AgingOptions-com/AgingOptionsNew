@@ -21,10 +21,10 @@ public class HealthInsuranceTestCases extends BaseTest {
 		lpoLanding.clickHealthModule();
 
 		HealthInsurance healthIns=	new HealthInsurance(util);
+		CommonCode common=	new CommonCode(util);
 		util.holdOn(Duration.ofSeconds(5));
 		healthIns.clickHealthInsuranceSideBarLink();
 		healthIns.clickAddHealthInsuranceButton();
-		CommonCode common=	new CommonCode(util);
 		common.checkCopySameDataToSpouseCheckBox();
 		healthIns.selectMedigapTypeFromInsuranceTypeDropDown();
 		healthIns.selectMedigapPlanAOptionsFromSupplementInsurance();
@@ -45,7 +45,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		String expectedOutOfPocketAmount="78566";
 		healthIns.inputOutOfPocketMaximum(expectedOutOfPocketAmount);
 		String expectedInsuranceStartDate="11-19-1999";
-		healthIns.inputInsuranceStartDate(expectedInsuranceStartDate);
+		common.inputInsuranceStartDate(expectedInsuranceStartDate);
 		String expectedInsuranceEndDate="10-17-2024";
 		healthIns.inputInsuranceEndDate(expectedInsuranceEndDate);
 		healthIns.clickHowAreTheExpensePaidManuallyRadioBT();
@@ -70,7 +70,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		String actualDedcuctableAmount=	healthIns.getDeductableAmountInputText();
 		String actualCoPayment=	healthIns.getCoPaymentInputText();
 		String actualOutOfPayment=	healthIns.getOutOfPaymentInputText();
-		String actualCoverateStart=	healthIns.getCoverageStartInputText();
+		String actualCoverateStart=	common.getCoverageStartInputText();
 		String actualCoverageEndDate=healthIns.getCoverageEndInputText();
 		util.verifyActualExpectedText(actualHealthInsuranceType,"Medigap" ,"Insurance type" );
 		util.verifyActualExpectedText(actualHealthSupplementInsurance,"Medigap Plan A" ,"Supplement insurance");
@@ -120,7 +120,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		String expectedOutOfPocketAmount="938";
 		healthIns.inputOutOfPocketMaximum(expectedOutOfPocketAmount);
 		String expectedInsuranceStartDate="10-15-2009";
-		healthIns.inputInsuranceStartDate(expectedInsuranceStartDate);
+		common.inputInsuranceStartDate(expectedInsuranceStartDate);
 		String expectedInsuranceEndDate="10-17-2030";
 		healthIns.inputInsuranceEndDate(expectedInsuranceEndDate);
 		String actualInsuranceCompanyOtherDescriptionText=healthIns.getInsuranceCompanyOtherDescriptionInputText();
@@ -148,7 +148,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		String actualDedcuctableAmount=	healthIns.getDeductableAmountInputText();
 		String actualCoPayment=	healthIns.getCoPaymentInputText();
 		String actualOutOfPayment=	healthIns.getOutOfPaymentInputText();
-		String actualCoverateStart=	healthIns.getCoverageStartInputText();
+		String actualCoverateStart=	common.getCoverageStartInputText();
 		String actualCoverageEndDate=healthIns.getCoverageEndInputText();
 		String actualBankNameText=	healthIns.getInputBankNameText();
 		String acutalBankAccountNumberText=	healthIns.getInputBankAccountText();
@@ -203,7 +203,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		String expectedOutOfPocketAmount="2345";
 		healthIns.inputOutOfPocketMaximum(expectedOutOfPocketAmount);
 		String expectedInsuranceStartDate="10-15-2006";
-		healthIns.inputInsuranceStartDate(expectedInsuranceStartDate);
+		common.inputInsuranceStartDate(expectedInsuranceStartDate);
 		String expectedInsuranceEndDate="10-17-2029";
 		healthIns.inputInsuranceEndDate(expectedInsuranceEndDate);
 		healthIns.uploadFile();
@@ -226,7 +226,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		String actualDedcuctableAmount=	healthIns.getDeductableAmountInputText();
 		String actualCoPayment=	healthIns.getCoPaymentInputText();
 		String actualOutOfPayment=	healthIns.getOutOfPaymentInputText();
-		String actualCoverateStart=	healthIns.getCoverageStartInputText();
+		String actualCoverateStart=	common.getCoverageStartInputText();
 		String actualCoverageEndDate=healthIns.getCoverageEndInputText();
 		util.verifyActualExpectedText(actualHealthInsuranceType,"Other" ,"Insurance type" );
 		util.verifyActualExpectedText(exectedTypeOtherText,expectedInsuranceTypeOtherText ,"Insurance type" );
@@ -275,7 +275,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		String expectedOutOfPocketAmount="78566";
 		healthIns.inputOutOfPocketMaximum(expectedOutOfPocketAmount);
 		String expectedInsuranceStartDate="11-19-2004";
-		healthIns.inputInsuranceStartDate(expectedInsuranceStartDate);
+		common.inputInsuranceStartDate(expectedInsuranceStartDate);
 		String expectedInsuranceEndDate="10-17-2029";
 		healthIns.inputInsuranceEndDate(expectedInsuranceEndDate);
 		healthIns.clickHowAreTheExpensePaidManuallyRadioBT();
@@ -297,7 +297,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		String actualDedcuctableAmount=	healthIns.getDeductableAmountInputText();
 		String actualCoPayment=	healthIns.getCoPaymentInputText();
 		String actualOutOfPayment=	healthIns.getOutOfPaymentInputText();
-		String actualCoverateStart=	healthIns.getCoverageStartInputText();
+		String actualCoverateStart=	common.getCoverageStartInputText();
 		String actualCoverageEndDate=healthIns.getCoverageEndInputText();
 		util.verifyActualExpectedText(actualHealthInsuranceType,"Medigap" ,"Insurance type" );
 		util.verifyActualExpectedText(actualHealthSupplementInsurance,"Medigap Plan A" ,"Supplement insurance");
@@ -345,7 +345,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		String expectedOutOfPocketAmount="938";
 		healthIns.inputOutOfPocketMaximum(expectedOutOfPocketAmount);
 		String expectedInsuranceStartDate="10-15-2009";
-		healthIns.inputInsuranceStartDate(expectedInsuranceStartDate);
+		common.inputInsuranceStartDate(expectedInsuranceStartDate);
 		String expectedInsuranceEndDate="10-17-2030";
 		healthIns.inputInsuranceEndDate(expectedInsuranceEndDate);
 		healthIns.clickHowAreTheExpensePaidAutoPayRadioButton();
@@ -370,7 +370,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		String actualDedcuctableAmount=	healthIns.getDeductableAmountInputText();
 		String actualCoPayment=	healthIns.getCoPaymentInputText();
 		String actualOutOfPayment=	healthIns.getOutOfPaymentInputText();
-		String actualCoverateStart=	healthIns.getCoverageStartInputText();
+		String actualCoverateStart=	common.getCoverageStartInputText();
 		String actualCoverageEndDate=healthIns.getCoverageEndInputText();
 		String actualBankNameText=	healthIns.getInputBankNameText();
 		String acutalBankAccountNumberText=	healthIns.getInputBankAccountText();
@@ -419,7 +419,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		String expectedOutOfPocketAmount="2345";
 		healthIns.inputOutOfPocketMaximum(expectedOutOfPocketAmount);
 		String expectedInsuranceStartDate="10-15-2012";
-		healthIns.inputInsuranceStartDate(expectedInsuranceStartDate);
+		common.inputInsuranceStartDate(expectedInsuranceStartDate);
 		String expectedInsuranceEndDate="10-17-2034";
 		healthIns.inputInsuranceEndDate(expectedInsuranceEndDate);
 		healthIns.clickHowAreTheExpensePaidAutoPayRadioButton();
@@ -445,7 +445,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		String actualDedcuctableAmount=	healthIns.getDeductableAmountInputText();
 		String actualCoPayment=	healthIns.getCoPaymentInputText();
 		String actualOutOfPayment=	healthIns.getOutOfPaymentInputText();
-		String actualCoverateStart=	healthIns.getCoverageStartInputText();
+		String actualCoverateStart=	common.getCoverageStartInputText();
 		String actualCoverageEndDate=healthIns.getCoverageEndInputText();
 		String actualBankNameText=	healthIns.getInputBankNameText();
 		String acutalBankAccountNumberText=	healthIns.getInputBankAccountText();
