@@ -1,12 +1,14 @@
 package com.nspl.HousingInfoPageTestcase;
 
-import java.time.Duration;
 
 import org.testng.annotations.Test;
+import java.time.Duration;
+
+
 
 import com.Ao.HousingPage.HousingInfo;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
-import com.nspl.agingoptions.commoncode.LoginPage;
+
 import com.nspl.agingoptions.webUtil.BaseTest;
 
 public class HousingOptionsTestScript extends BaseTest {
