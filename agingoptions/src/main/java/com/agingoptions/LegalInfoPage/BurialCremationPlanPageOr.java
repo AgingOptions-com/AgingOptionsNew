@@ -245,6 +245,12 @@ public class BurialCremationPlanPageOr {
     @FindBy(xpath="(//input[@id='112'])[2]")
     protected WebElement SpouseHaveYouMadeArrangement_YesRadioBT;
     
+    @FindBy(xpath="(//input[@id='113'])[1]")
+    protected WebElement ClientHaveYouMadeArrangement_NoRadioBT;
+    
+    @FindBy(xpath="(//input[@id='113'])[2]")
+    protected WebElement SpouseHaveYouMadeArrangement_NoRadioBT;
+    
     @FindBy(xpath="(//input[@id='nameOfCmp'])[2]")
     protected WebElement clientNameOfCemetry;
     
@@ -281,6 +287,12 @@ public class BurialCremationPlanPageOr {
     @FindBy(xpath="(//p[contains(text(),'Would you like to have someone')])[2]")
     protected WebElement SpouseWouldYouLikeMakeArragement_YesRadioBTVerificationMessage; 
     
+    @FindBy(xpath="(//input[@id='434'])[1]")
+    protected WebElement CLientWouldYouLikeToMakeArrangementNoRadioBT;
+    
+    @FindBy(xpath="(//input[@id='434'])[2]")
+    protected WebElement SpouseWouldYouLikeToMakeArrangementNoRadioBT;
+    
     @FindBy(xpath="//p[contains(text(),'We strongly suggest you take')]")
     protected WebElement ClientWouldYouLikeToMakeArrangment_NoRadioBTMessage;
     
@@ -293,6 +305,30 @@ public class BurialCremationPlanPageOr {
     @FindBy(xpath="(//input[@id='434'])[2]")
     protected WebElement SpouseWouldYouLikeToMakeArrangementYesRadioBt; 
     
+    @FindBy(xpath="(//input[@id='435'])[1]")
+    protected WebElement ClientWouldYouLikeToHaveSomeOneToContact_YesRadioBT;
+    
+    @FindBy(xpath="(//input[@id='435'])[2]")
+    protected WebElement SpouseWouldYouLikeToHaveSomeOneToContact_YesRadioBT;
+    
+    @FindBy(xpath="(//div[text()='We will get someone to call you'])[1]")
+    protected WebElement  ClientWouldYouLikeToHaveSomoneToContact_YesVerificationMessage;
+    
+    @FindBy(xpath="(//div[text()='We will get someone to call you'])[2]")
+    protected WebElement  SpouseWouldYouLikeToHaveSomoneToContact_YesVerificationMessage;
+    
+    @FindBy(xpath="(//input[@id='436'])[1]")
+    protected WebElement ClientWouldYouLikeToHaveContactSomeone_NoRadioBT;
+    
+    @FindBy(xpath="(//input[@id='436'])[2]")
+    protected WebElement SpouseWouldYouLikeToHaveContactSomeone_NoRadioBT;
+    
+    @FindBy(xpath="(//p[contains(text(),'We strongly suggest you take the initiative and get this')])[1]")
+    protected WebElement ClientWouldYouLikeToHaveSomeoneNoRadioBT_VerificationMessage;
+    
+    @FindBy(xpath="(//p[contains(text(),'We strongly suggest you take the initiative and get this')])[2]")
+    protected WebElement SpouseWouldYouLikeToHaveSomeoneNoRadioBT_VerificationMessage;
+    
     @FindBy(xpath="//button[text()='Save & Continue later']")
     protected WebElement SaveAndContinueBT;
     
@@ -302,4 +338,14 @@ public class BurialCremationPlanPageOr {
     @FindBy(xpath="//img[@alt='accordion']")
     protected WebElement Accordian;
     
+    @FindBy(xpath="//button[text()='Burial / Cremation plan']")
+    protected WebElement BurialCremationAccordian;
+    
+    @FindBy(xpath="//button[text()='Cemetery arrangement']")
+    protected WebElement CemetryArrangementAccordian;
+    
+    @FindBy(xpath="//button[text()='Handling of remains']")
+    protected WebElement HandlingOfRemainsAccordian;
+    
+  
 }
