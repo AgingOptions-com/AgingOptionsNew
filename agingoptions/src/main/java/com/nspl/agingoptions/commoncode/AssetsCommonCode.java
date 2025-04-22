@@ -211,6 +211,14 @@ public class AssetsCommonCode {
 		util.openAccordion(documentUploadAccordian, "Document Upload Accoridan");
 	}
 	
+	@FindBy(xpath="//span[contains(text(),'Transport Assets')]")
+	private WebElement transportAssetsSideBarLink;
+	
+	public void clickTransportAssetsSideBarLink() {
+		util.click(transportAssetsSideBarLink, "Transport Assets");
+	}
+	
+	
 	
 
 

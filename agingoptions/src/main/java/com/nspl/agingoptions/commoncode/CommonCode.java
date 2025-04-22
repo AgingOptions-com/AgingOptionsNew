@@ -382,7 +382,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void waitUntilToasterMessageisSeen() {
-		util.waitUntilElementIsAppearInThePage(toasterMessage, 30);
+		util.waitUntilElementIsAppearInThePage(toasterMessage, 40);
 	}
 	
 }

@@ -21,7 +21,7 @@ public class DataUtil {
 		Workbook wbook=null;
 //
 		try {
-			InputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\TestData.xlsx");
+			InputStream fis = getClass().getClassLoader().getResourceAsStream("TestData.xlsx");
 			wbook= new XSSFWorkbook(fis);
 		} catch (IOException e) {
 			e.printStackTrace();

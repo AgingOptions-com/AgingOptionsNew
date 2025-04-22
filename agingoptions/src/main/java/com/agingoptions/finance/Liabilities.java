@@ -124,6 +124,13 @@ public class Liabilities {
 		return text;
 	}
 	
+	@FindBy(xpath="//td[contains(text(),'Agingoptions')]/following-sibling::td/div/img[@alt='Edit Icon']")
+	private WebElement agingOptionsEditIcon;
+	
+	public void clickAgingOptionsEditIcon() {
+		util.click(agingOptionsEditIcon, "Aging Options");
+	}
+	
 
 }
 

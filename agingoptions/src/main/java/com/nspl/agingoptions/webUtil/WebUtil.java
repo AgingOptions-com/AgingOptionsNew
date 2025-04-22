@@ -444,18 +444,15 @@ public class WebUtil {
 	// ===========================================load property
 	// file===============================
 	public void loadProperty() {
-		prop = new Properties();
-		try {
-			InputStream file = new FileInputStream(
-					System.getProperty("user.dir") + "\\src\\main\\resources\\prop.properties");
-			try {
-				prop.load(file);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
+	    prop = new Properties();
+	    try (InputStream file = getClass().getClassLoader().getResourceAsStream("prop.properties")) {
+	        if (file == null) {
+	            throw new FileNotFoundException("Property file 'prop.properties' not found in the classpath");
+	        }
+	        prop.load(file);
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
 	}
 
 	// ===========================================getproperty file
