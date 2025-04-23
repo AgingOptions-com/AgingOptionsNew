@@ -124,6 +124,20 @@ public class Liabilities {
 		return text;
 	}
 	
+	@FindBy(xpath="//td[contains(text(),'Agingoptions')]/following-sibling::td/div/img[@alt='Edit Icon']")
+	private WebElement agingOptionsEditIcon;
+	
+	public void clickAgingOptionsEditIcon() {
+		util.click(agingOptionsEditIcon, "Aging Options");
+	}
+	
+	@FindBy(xpath="//td[contains(text(),'Nspl')]/following-sibling::td/div/img[@alt='Edit Icon']")
+	private WebElement nsplEditIcon;
+	
+	public void clickNsplEditIcon() {
+		util.click(nsplEditIcon, "NSPL Edit Icon");
+	}
+	
 
 }
 

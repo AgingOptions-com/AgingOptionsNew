@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.agingoptions.health.PrimaryCarePhysician;
 import com.agingoptions.health.Specialists;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
+import com.nspl.agingoptions.commoncode.CommonCode;
 import com.nspl.agingoptions.webUtil.BaseTest;
 
 public class SpecialistTestCases extends BaseTest {
@@ -72,7 +73,10 @@ public class SpecialistTestCases extends BaseTest {
 		specialist.clickSpecilistLink();
 		util.holdOn(Duration.ofSeconds(5));
 		specialist.clickPrimaryMemberToggleButton();
+		CommonCode common=	new CommonCode(util);
+		common.unCheckCopySameDataToSpouseCheckBox();
 		specialist.clickAddSpecialistButton();
+		util.holdOn(Duration.ofSeconds(1));
 		String expectedFirstName="Dr Kavya";
 		specialist.inputFirstName(expectedFirstName);
 		String expectedLastName="Verma";
@@ -136,6 +140,8 @@ public class SpecialistTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(5));
 		specialist.clickSpouseToggleButton();
 		specialist.clickAddSpecialistButton();
+		CommonCode common=	new CommonCode(util);
+		common.unCheckCopySameDataToSpouseCheckBox();
 		String expectedFirstName="Dr Nikita";
 		specialist.inputFirstName(expectedFirstName);
 		String expectedLastName="Roy";
@@ -159,7 +165,7 @@ public class SpecialistTestCases extends BaseTest {
 		primaryCare.inputPrimaryContactEmail(expectedMobileNum, expectedEmail);
 		specialist.clickSaveContinueLaterButton();
 		util.holdOn(Duration.ofSeconds(7));
-		specialist.clickEditIcon();
+		specialist.clickNikitaRoyEditIcon();
 		String actualFirstName=	primaryCare.getPrimaryCarePhysicianOrSpecialistActualFirstName();
 		String actualLastName=primaryCare.getPrimaryCarePhysicianOrSpecialistActualLastName();
 		String actualSpecialityText=primaryCare.getPrimaryCarePhysicianOrSpecialistActualSpeciality();
@@ -276,6 +282,8 @@ public class SpecialistTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(5));
 		specialist.clickPrimaryMemberToggleButton();
 		specialist.clickAddSpecialistButton();
+		CommonCode common=	new CommonCode(util);
+		common.unCheckCopySameDataToSpouseCheckBox();
 		String expectedFirstName="Dr Sandhya";
 		specialist.inputFirstName(expectedFirstName);
 		String expectedLastName="Tiwari";
@@ -343,6 +351,8 @@ public class SpecialistTestCases extends BaseTest {
 		specialist.clickSpouseToggleButton();
 		specialist.clickAddSpecialistButton();
 		util.holdOn(Duration.ofSeconds(2));
+		CommonCode common=	new CommonCode(util);
+		common.unCheckCopySameDataToSpouseCheckBox();
 		String expectedFirstName="Reenu";
 		specialist.inputFirstName(expectedFirstName);
 		String expectedLastName="Dubey";
@@ -407,6 +417,8 @@ public class SpecialistTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(5));
 		specialist.clickSpouseToggleButton();
 		specialist.clickAddSpecialistButton();
+		CommonCode common=	new CommonCode(util);
+		common.unCheckCopySameDataToSpouseCheckBox();
 		util.holdOn(Duration.ofSeconds(4));
 		String expectedFirstName="Dr Avantika";
 		specialist.inputFirstName(expectedFirstName);
