@@ -160,7 +160,7 @@ public class BusinessInterestTestCases extends BaseTest {
 		String acutalUbiNumber=	bussinessInt.getUBINumberValue();
 		String actualFederalTax=	bussinessInt.getFederalTaxIdValue();
 		String actualBusinessDescription=	bussinessInt.getBusinessDescriptionTB();
-		util.holdOn(Duration.ofSeconds(1));
+		util.holdOn(Duration.ofSeconds(3));
 		String actualOtherBusinessTextBoxValue=	bussinessInt.getOtherBusinessTypeValue();
 		bussinessInt.openOwnerCoOwnerAccordian();
 		String actualOwnerCoOwnerText=	bussinessInt.getOwnerCoOwnerInputText();

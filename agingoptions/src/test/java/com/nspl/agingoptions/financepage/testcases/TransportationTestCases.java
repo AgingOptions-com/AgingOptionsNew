@@ -1,6 +1,7 @@
 package com.nspl.agingoptions.financepage.testcases;
 
 import java.time.Duration;
+import java.util.Map;
 
 import org.testng.annotations.Test;
 
@@ -10,6 +11,7 @@ import com.agingoptions.lpolandingpage.LpoLandingPage;
 import com.nspl.agingoptions.commoncode.AssetsCommonCode;
 import com.nspl.agingoptions.commoncode.CommonCode;
 import com.nspl.agingoptions.webUtil.BaseTest;
+import com.nspl.agingoptions.webUtil.DataUtil;
 
 public class TransportationTestCases extends BaseTest {
 
@@ -136,6 +138,181 @@ public class TransportationTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualLiabilityPrimaryContactText, "Primary contact", "Contact");
 		common.clickPreviousButton();
 	}
+
+	@Test(priority=2)
+	public void FTC_014_TransportationSaveContinueLaterButton() {
+
+		CommonCode common=   new CommonCode(util);
+		LpoLandingPage lpo = new LpoLandingPage(util);
+		lpo.clickFinanceSideBarLink();
+		AssetsCommonCode assets = new AssetsCommonCode(util);
+		assets.clickAssetsSideBarLink();
+		assets.clickTransportAssetsSideBarLink();
+		TransportAssets transport=	new TransportAssets(util);
+		transport.clickAddTransportButton();
+		transport.clickBoatRadioButton();
+		transport.openAutoInformationAccordian();
+		transport.select2010FromYearMadeDropDown();
+		String expectedMake="TCS";
+		transport.inputMake(expectedMake);
+		String expectedModelNum="MDNUM9348";
+		transport.inputModelNum(expectedModelNum);
+		String expectedValue="98765";
+		transport.inputValueTB(expectedValue);
+		String expectedColor="Green";
+		transport.inputColorTB(expectedColor);
+		String expectedLicensePlate="LCNPLATE989";
+		transport.inputLicense(expectedLicensePlate);
+		String expectedVinNum="VNNUM9384";
+		transport.inputVin(expectedVinNum);
+		String expectedVehicalRegistration="10-11-2028";
+		transport.inputVehicalRegistrationExpiryDate(expectedVehicalRegistration);
+		transport.openOwnershipLoanAccordian();
+		assets.selectSpouseAsOwner();
+		transport.clickLeasedRadioButton();
+		String expectednameOfCompany="Nspl";
+		transport.inputNameOfCompany(expectednameOfCompany);
+		String expectedMonthlyAmount="9843";
+		transport.inputMonthlyAmount(expectedMonthlyAmount);
+		String expectedOutstandingBalance="83743";
+		transport.inputOutstandingBalance(expectedOutstandingBalance);
+		String expectedPayOffDate="11-19-2027";
+		transport.inputPayOffDate(expectedPayOffDate);
+		assets.openDocumentUploadAccoridian();
+		assets.uploadFile();
+		util.holdOn(Duration.ofSeconds(2));
+		common.clickSaveAddAnotherButton();
+		util.holdOn(Duration.ofSeconds(2));
+		common.waitUntilToasterMessageisSeen();
+		common.clickPreviousButton();
+		transport.clickBoatEditIcon();
+		transport.openAutoInformationAccordian();
+		util.holdOn(Duration.ofSeconds(2));
+		String actualYearMadeText=      transport.getYearMadeSelectedText();
+		String actualMakeText=transport.getMakeInputText();
+		String actualModelNumText=    transport.getModelInputText();
+		String actualValueInputText= transport.getValueInputText();
+		String actualColorInputText= transport.getColorInputText();
+		String actualLicensePlateText=transport.getLicensePlateInputText();
+		String actualVinNoInputText=        transport.getVINNoInputText();
+		String acutalVehicalRegistrationExpiryDate=     transport.getVehicalRegistrationInputText();
+		transport.openOwnershipLoanAccordian();
+		util.holdOn(Duration.ofSeconds(5));
+		String actualOwnerSelectedText=	assets.getOwnerSelectedText();
+		String actualNameOfCompanyText=		transport.getNameOfCompanyInputText();
+		String actualMonthlyText=	transport.getMonthlyAmountInputText();
+		String actualOutstandingBalanceText=	transport.getOutstandingBalanceInputText();
+		String actualPayOffDateText=	transport.getPayOffDateInputText();
+		common.clickPreviousButton();
+		DataUtil data=	new DataUtil();
+		Map<String,String> mapData=	data.getTestCaseData("Health_001");
+		String sposueFirstName=		mapData.get("spouseFirstName");
+		String spouseLastName=		mapData.get("lastName");
+		util.verifyActualExpectedText(actualYearMadeText,"2010","Year Made" );
+		util.verifyActualExpectedText(actualMakeText,expectedMake,"Make");
+		util.verifyActualExpectedText(actualModelNumText,expectedModelNum,"Model");
+		util.verifyActualExpectedText(actualValueInputText,expectedValue,"Value");
+		util.verifyActualExpectedText(actualColorInputText,expectedColor,"Color");
+		util.verifyActualExpectedText(actualLicensePlateText,expectedLicensePlate,"License Plate");
+		util.verifyActualExpectedText(actualVinNoInputText,expectedVinNum,"VIN No.");
+		util.verifyActualExpectedText(acutalVehicalRegistrationExpiryDate,expectedVehicalRegistration,"Vehical registration expiry date");
+		util.verifyActualExpectedText(actualOwnerSelectedText, sposueFirstName+" "+spouseLastName, "Owner");
+		util.verifyActualExpectedText(actualNameOfCompanyText, expectednameOfCompany, "Name Of Company");
+		util.verifyActualExpectedText(actualMonthlyText, expectedMonthlyAmount, "Monthly Amount");
+		util.verifyActualExpectedText(actualOutstandingBalanceText, expectedOutstandingBalance, "Out Standing Balance");
+		util.verifyActualExpectedText(actualPayOffDateText, expectedPayOffDate, "Pay Off Date");
+		assets.clickLiabilitiesSideBarLink();
+		Liabilities liability=      new Liabilities(util);
+		liability.clickNsplEditIcon();
+		util.holdOn(Duration.ofSeconds(2));
+		String actualTypeOfLiabilitiesText=	liability.getTypeOfLiabilitesSelectedText();
+		String actualSubTypeOfLiabilitiesText=liability.getSubTypeOfLiabilitesSelectedText();
+		String acutalNameOfLenderText=	liability.getNameOfLenderInputText();
+		String actualLiabilityPayOffDate=  liability.getPayOffDate();
+		String actualLiabilityOutStandingBalance=  liability.getOutstandingBalanceInputText();
+		String actualLiabilityMonthlyAmount= 	liability.getMonthlyAmountInputText();
+		util.verifyActualExpectedText(actualTypeOfLiabilitiesText,"Transport Assets" , "Types of liabilities*");
+		util.verifyActualExpectedText(actualSubTypeOfLiabilitiesText,"Lease" , "Sub-types of liabilities*");
+		util.verifyActualExpectedText(acutalNameOfLenderText,expectednameOfCompany , "Name of lender*");
+		util.verifyActualExpectedText(actualLiabilityPayOffDate,expectedPayOffDate , "PayOff Date");
+		util.verifyActualExpectedText(actualLiabilityOutStandingBalance,expectedOutstandingBalance , "OutStanding Balance");
+		util.verifyActualExpectedText(actualLiabilityMonthlyAmount,expectedMonthlyAmount , "Monthly Amount");
+		common.clickPreviousButton();
+
+	}
+
+	@Test(priority=3)
+	public void FTC_015_TransportationSaveContinueLaterButton() {
+
+		CommonCode common=   new CommonCode(util);
+		LpoLandingPage lpo = new LpoLandingPage(util);
+		lpo.clickFinanceSideBarLink();
+		AssetsCommonCode assets = new AssetsCommonCode(util);
+		assets.clickAssetsSideBarLink();
+		assets.clickTransportAssetsSideBarLink();
+		TransportAssets transport=	new TransportAssets(util);
+		transport.clickAddTransportButton();
+		transport.clickOtherRadioButton();
+		String expectedOtherValue="Motorcycle";
+		transport.inputOtherTransportationValue(expectedOtherValue);
+		transport.openAutoInformationAccordian();
+		transport.select2010FromYearMadeDropDown();
+		String expectedMake="TCS";
+		transport.inputMake(expectedMake);
+		String expectedModelNum="MDNUM9348";
+		transport.inputModelNum(expectedModelNum);
+		String expectedValue="98765";
+		transport.inputValueTB(expectedValue);
+		String expectedColor="Blue";
+		transport.inputColorTB(expectedColor);
+		String expectedLicensePlate="LCNP9384";
+		transport.inputLicense(expectedLicensePlate);
+		String expectedVinNum="VNN984";
+		transport.inputVin(expectedVinNum);
+		String expectedVehicalRegistration="10-11-2026";
+		transport.inputVehicalRegistrationExpiryDate(expectedVehicalRegistration);
+		transport.openOwnershipLoanAccordian();
+		assets.selectPrimaryMemberAsOwner();
+		assets.openDocumentUploadAccoridian();
+		assets.uploadFile();
+		transport.clickNextLifeInsuranceButton();
+		common.waitUntilToasterMessageisSeen();
+		assets.clickTransportAssetsSideBarLink();
+		transport.clickMotorCycleEditIcon();
+		util.holdOn(Duration.ofSeconds(4));
+		String actualOtherValue=		transport.getOtherTransportationInputValue();
+		transport.openAutoInformationAccordian();
+		util.holdOn(Duration.ofSeconds(2));
+		String actualYearMadeText=      transport.getYearMadeSelectedText();
+		String actualMakeText=transport.getMakeInputText();
+		String actualModelNumText=    transport.getModelInputText();
+		String actualValueInputText= transport.getValueInputText();
+		String actualColorInputText= transport.getColorInputText();
+		String actualLicensePlateText=transport.getLicensePlateInputText();
+		String actualVinNoInputText=        transport.getVINNoInputText();
+		String acutalVehicalRegistrationExpiryDate=     transport.getVehicalRegistrationInputText();
+		transport.openOwnershipLoanAccordian();
+		util.holdOn(Duration.ofSeconds(5));
+		String actualOwnerSelectedText=	assets.getOwnerSelectedText();
+		DataUtil data=	new DataUtil();
+		Map<String,String> mapData=	data.getTestCaseData("Health_001");
+		String primaryFirstName=		mapData.get("firstName");
+		String primaryLastName=		mapData.get("lastName");
+		util.verifyActualExpectedText(actualOtherValue,expectedOtherValue,"Other Transportation Value" );
+		util.verifyActualExpectedText(actualYearMadeText,"2010","Year Made" );
+		util.verifyActualExpectedText(actualMakeText,expectedMake,"Make");
+		util.verifyActualExpectedText(actualModelNumText,expectedModelNum,"Model");
+		util.verifyActualExpectedText(actualValueInputText,expectedValue,"Value");
+		util.verifyActualExpectedText(actualColorInputText,expectedColor,"Color");
+		util.verifyActualExpectedText(actualLicensePlateText,expectedLicensePlate,"License Plate");
+		util.verifyActualExpectedText(actualVinNoInputText,expectedVinNum,"VIN No.");
+		util.verifyActualExpectedText(acutalVehicalRegistrationExpiryDate,expectedVehicalRegistration,"Vehical registration expiry date");
+		util.verifyActualExpectedText(actualOwnerSelectedText, primaryFirstName+" "+primaryLastName, "Owner");
+		common.clickPreviousButton();
+	}
+
+
+
 
 
 

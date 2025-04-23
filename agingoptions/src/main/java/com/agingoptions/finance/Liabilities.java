@@ -131,6 +131,13 @@ public class Liabilities {
 		util.click(agingOptionsEditIcon, "Aging Options");
 	}
 	
+	@FindBy(xpath="//td[contains(text(),'Nspl')]/following-sibling::td/div/img[@alt='Edit Icon']")
+	private WebElement nsplEditIcon;
+	
+	public void clickNsplEditIcon() {
+		util.click(nsplEditIcon, "NSPL Edit Icon");
+	}
+	
 
 }
 

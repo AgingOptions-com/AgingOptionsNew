@@ -31,7 +31,7 @@ public class TransportAssets {
 		util.click(autoRadioBT, "Auto");
 	}
 
-	@FindBy(xpath="//p[contains(text(),'Boat')]/preceding-sibling::input")
+	@FindBy(xpath="//p[contains(text(),'Boat')]")
 	private WebElement boatRadioBT;
 
 	public void clickBoatRadioButton() {
@@ -45,7 +45,7 @@ public class TransportAssets {
 		util.click(planeRadioBT, "Plane");
 	}
 
-	@FindBy(xpath="//p[contains(text(),'Other')]/preceding-sibling::input")
+	@FindBy(xpath="//p[contains(text(),'Other')]")
 	private WebElement otherTransportationTypeRadioBT;
 
 	public void clickOtherRadioButton() {
@@ -135,8 +135,6 @@ public class TransportAssets {
 		util.click(ownedRadioBT, "Owned");
 	}
 
-	@FindBy(xpath="//p[contains(text(),'Leased')]/preceding-sibling::input")
-	private WebElement leasedRadioBT;
 
 	@FindBy(xpath="//span[contains(text(),'Is there a loan against this transport?')]/parent::p/parent::div//label/p[contains(text(),'Yes')]")
 	private WebElement isThereALoanYesRadioBT;
@@ -169,7 +167,7 @@ public class TransportAssets {
 		util.sendValue(interestRateTB, value, "Interest Rate");
 	}
 
-	@FindBy(xpath="//div[@id='monthlyAmount']//input")
+	@FindBy(xpath="//label[translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = 'monthly amount']/parent::div//input")
 	private WebElement monthlyAmountTB;
 
 	public void inputMonthlyAmount(String value) {
@@ -183,7 +181,7 @@ public class TransportAssets {
 		util.sendValue(outstandingBalanceTB, value, "Outstanding Balance");
 	}
 
-	@FindBy(xpath="//input[@id='payoffdate']")
+	@FindBy(xpath="//input[translate(@id, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = 'payoffdate']")
 	private WebElement payOffDate;
 
 	public void inputPayOffDate(String value) {
@@ -280,15 +278,51 @@ public class TransportAssets {
 		String text=	util.convertDateFormatMMDDYYYY(value);
 		return text;
 	}
-	
+
 	public String getLoanNoInputText() {
 		String value=	util.GetAttributevalue(loanNumberTB,"value");
 		return value;
 	}
 
+	@FindBy(xpath="//p[contains(text(),'Leased')]")
+	private WebElement leasedRadioBT;
 
+	public void clickLeasedRadioButton() {
+		util.click(leasedRadioBT, "Leased");
+	}
 
+	@FindBy(xpath="//td[contains(text(),'Boat')]/following-sibling::td/div/img[@alt='Edit Icon']")
+	private WebElement boatEditIcon;
 
+	public void clickBoatEditIcon() {
+		util.click(boatEditIcon, "Boat Edit Icon");
+	}
+
+	@FindBy(xpath="//input[@id='other']")
+	private WebElement otherTB;
+
+	public void inputOtherTransportationValue(String value) {
+		util.sendValue(otherTB, value, "Other Transportation");
+	}
+
+	public String getOtherTransportationInputValue() {
+		String value=	util.GetAttributevalue(otherTB, "value");
+		return value;
+	}
+
+	@FindBy(xpath="//button[contains(text(),'Next: Life Insurance')]")
+	private WebElement nextLifeInsuranceBT;
+
+	public void clickNextLifeInsuranceButton() {
+		util.click(nextLifeInsuranceBT, "Next: Life Insurance");
+	}
+
+	@FindBy(xpath="//td[contains(text(),'Motorcycle')]/following-sibling::td/div/img[@alt='Edit Icon']")
+	private WebElement motorCycleEditIcon;
+
+	public void clickMotorCycleEditIcon() {
+		util.click(motorCycleEditIcon, "MotorCycle Edit Icon");
+	}
 
 
 }
