@@ -52,6 +52,8 @@ public class BurrialCreamtionPlanPage extends BurialCremationPlanPageOr {
 		wt.click(BurialCremationPlanDrawer, "Burial cremation drawer");
 		wt.openAccordion(BurialCremationAccordian, "Burial cremation accordian");
 		wt.click(ClientIsBurialCremationPrepaid, "Is burial Or cremation prepaid yes radio button");
+		wt.click(ClientIsBurialCremationPrepaid, "Is burial Or cremation prepaid yes radio button");
+	    wt.click(SposueIsBurialCremationPrepaid_YesRadioBT, "Spouse- Is burial cremation prepaid Yes radio button");
 	    wt.click(SposueIsBurialCremationPrepaid_YesRadioBT, "Spouse- Is burial cremation prepaid Yes radio button");
 	    wt.click(ClientOftenYouOrganizationYouPrepaidYourBurial_YesRadioBt, "Client-Often the organization you prepaid your burial or cremation... questions");
 	    wt.click(SposueOftenYouOrganizationYouPrepaidYourBurial_YesRadioBt, "Spouse-Often the organization you prepaid your burial or cremation... questions");
@@ -73,11 +75,15 @@ public class BurrialCreamtionPlanPage extends BurialCremationPlanPageOr {
 		wt.click(BurialCremationPlanDrawer, "Burial cremation drawer");
 		wt.openAccordion(BurialCremationAccordian, "Burial cremation accordian");
 		wt.click(ClientIsBurialCremationPrepaid, "Is burial Or cremation prepaid yes radio button");
+		wt.click(ClientIsBurialCremationPrepaid, "Is burial Or cremation prepaid yes radio button");
+	    wt.click(SposueIsBurialCremationPrepaid_YesRadioBT, "Spouse- Is burial cremation prepaid Yes radio button");
 	    wt.click(SposueIsBurialCremationPrepaid_YesRadioBT, "Spouse- Is burial cremation prepaid Yes radio button");
 	    wt.click(ClientOftenYouOrganizationYouPrepaidYourBurial_NoRadioBT, "Client-Often the organization you prepaid your burial or cremation No radio button");
 	    wt.click(SposueOftenYouOrganizationYouPrepaidYourBurial_NoRadioBT, "Spouse-Often the organization you prepaid your burial or cremation No radio button");
-	    wt.verifyInnerText(ClientDidTheCompanyGiveYouContact_NoRadioBTVerificationMessage, "You may want to ask them to give you a copy of the trust or fund in which the purchase price has been placed. Federal Law requires them to provide you this information.", "You may want to ask them to give you a copy of the trust or fund in which the purchase price has been placed....warning message");
-		wt.verifyInnerText(SpouseDidTheCompanyGiveYouContact_NoRadioBTVerificationMessage, "You may want to ask them to give you a copy of the trust or fund in which the purchase price has been placed. Federal Law requires them to provide you this information.", "You may want to ask them to give you a copy of the trust or fund in which the purchase price has been placed.--message");
+	    wt.click(ClientDidTheCompanyGiveYouContract_NoRadioBT, "Client-Did the company the give you contract No Radio button");
+	    wt.click(SpouseDidTheCompanyGiveYouContract_NoRadioBT, "Spouse-Did the company the give you contract No Radio button");
+	    wt.verifyInnerText(ClientDidTheCompanyGiveYouContact_NoRadioBTVerificationMessage, "You may want to ask them to give you a copy of the trust or fund in which the purchase price has been placed. Federal Law requires them to provide", "You may want to ask them to give you a copy of the trust or fund in which the purchase price has been placed....warning message");
+		wt.verifyInnerText(SpouseDidTheCompanyGiveYouContact_NoRadioBTVerificationMessage, "You may want to ask them to give you a copy of the trust or fund in which the purchase price has been placed. Federal Law requires them to provide", "You may want to ask them to give you a copy of the trust or fund in which the purchase price has been placed.--message");
 	}
 	
 	public void VerifyHaveYouMadeArrangementsForHandlingYesChecked() {

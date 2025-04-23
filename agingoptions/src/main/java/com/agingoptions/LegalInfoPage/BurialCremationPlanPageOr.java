@@ -233,12 +233,18 @@ public class BurialCremationPlanPageOr {
     @FindBy(xpath="(//input[@id='website'])[2]")
     protected WebElement SpouseDidTheCompanyGiveYouContract_Website; 
     
-    @FindBy(xpath="(//div[contains(text(),'You may want to ask')])[1]")
+    @FindBy(xpath="(//p[text()='Did the company give you a contract?'])[1]/parent::div/following-sibling::div[@class='status-message-livingwill']")
     protected WebElement ClientDidTheCompanyGiveYouContact_NoRadioBTVerificationMessage;
     
-    @FindBy(xpath="(//div[contains(text(),'You may want to ask')])[2]")
+    @FindBy(xpath="(//p[text()='Did the company give you a contract?'])[2]/parent::div/following-sibling::div[@class='status-message-livingwill']")
     protected WebElement SpouseDidTheCompanyGiveYouContact_NoRadioBTVerificationMessage;
+    
+    @FindBy(xpath="(//input[@id='430'])[1]")
+    protected WebElement ClientDidTheCompanyGiveYouContract_NoRadioBT;
   
+    @FindBy(xpath="(//input[@id='430'])[2]")
+    protected WebElement SpouseDidTheCompanyGiveYouContract_NoRadioBT;
+    
     @FindBy(xpath="(//input[@id='112'])[1]")
     protected WebElement ClientHaveYouMadeArrangement_YesRadioBT;
     
