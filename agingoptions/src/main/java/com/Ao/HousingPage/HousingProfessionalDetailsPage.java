@@ -74,11 +74,18 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 
 	public void addProfessionalForPrimaryMember() {
 		verifyClient();
-		verifyAddedprofessionalCountInTable();
+	  String ClientMortgageCount=	verifyAddedprofessionalCountInTable();
+	  wt.click(SpousetoggleButton, "Spouse toggle button");
+	  wt.holdOn(Duration.ofSeconds(3));
+		verifyClient();
+		  String spouseMortgageCount=	verifyAddedprofessionalCountInTable();
+		  wt.holdOn(Duration.ofSeconds(2));
+		  wt.click(primaryMemberToggleButton, "Primary member toggle button");
 		goToClickAddRealtorButton();
 		wt.holdOn(Duration.ofSeconds(7));
 		wt.click(Accordian, "Accordian");
 		wt.click(Accordian, "Accordian");
+		wt.verifyElementRadioButtonSelected(samedataToSpouseCheckBox, "Same data to spouse check box");
 		String name=randomName();
 		wt.sendValue(FirstName, name, "FirstName");
 		String lastname=randomName();
@@ -99,15 +106,26 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 		wt.sendValue(Email, name+"@yopmail.com", "email");
 		wt.click(SaveAndContinueButton, "save and continue button");
 		wt.holdOn(Duration.ofSeconds(8));
-		verifyAddedprofessionalCountInTable();
-
-
+		String AfteraddedmortgageCountForClient=verifyAddedprofessionalCountInTable();
+		  wt.click(SpousetoggleButton, "Spouse toggle button");
+		  wt.holdOn(Duration.ofSeconds(4));
+	   String AfteraddSpouseMortgageCount=	   verifyAddedprofessionalCountInTable();
+	   wt.printDataInReport("Before save the details Client mortgage count -" + ClientMortgageCount);
+	   wt.printDataInReport("Before save the details Spouse mortgage count -" + spouseMortgageCount);
+	   wt.printDataInReport("After save the details Client mortgage count -" + AfteraddedmortgageCountForClient);
+	   wt.printDataInReport("After save the details Spouse mortgage count -" + AfteraddSpouseMortgageCount);
 
 
 	}
 	public void SaveAndAddAnotherprimaryMemberProfessionalDetails() {
 		verifyClient();
-		verifyAddedprofessionalCountInTable();
+		String ClientMortgageCount=verifyAddedprofessionalCountInTable();
+		 wt.click(SpousetoggleButton, "Spouse toggle button");
+		  wt.holdOn(Duration.ofSeconds(3));
+			verifyClient();
+		String spouseMortgageCount=	verifyAddedprofessionalCountInTable();
+		 wt.holdOn(Duration.ofSeconds(2));
+	  wt.click(primaryMemberToggleButton, "Primary member toggle button");
 		goToClickAddRealtorButton();
 		wt.holdOn(Duration.ofSeconds(8));
 		wt.click(Accordian, "Accordian");
@@ -134,7 +152,14 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 		wt.holdOn(Duration.ofSeconds(5));
 		wt.click(PreviousIcon, "Previous icon");
 		wt.holdOn(Duration.ofSeconds(9));
-		verifyAddedprofessionalCountInTable();
+		String AfterSaveClientMortgageCount=verifyAddedprofessionalCountInTable();
+		 wt.click(SpousetoggleButton, "Spouse toggle button");
+		  wt.holdOn(Duration.ofSeconds(4));
+	   String AfteraddSpouseMortgageCount=	   verifyAddedprofessionalCountInTable();
+	   wt.printDataInReport("Before save the details Client mortgage count -" + ClientMortgageCount);
+	   wt.printDataInReport("Before save the details Spouse mortgage count -" + spouseMortgageCount);
+	   wt.printDataInReport("After save the details Client mortgage count -" + AfterSaveClientMortgageCount);
+	   wt.printDataInReport("After save the details Spouse mortgage count -" + AfteraddSpouseMortgageCount);
 	}
 	public void gotoClickMortggeSection() {
 		wt.click(MortgageBrokerSection, "Mortgage Broker Section");
@@ -167,20 +192,21 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 		wt.sendValueJs(PhoneNumber, "9845678766", "Phone number");
 		wt.sendValue(Email, name+"@yopmail.com", "email");
 		wt.click(SaveAndProceedTo, "save and proceed to");
-		wt.holdOn(Duration.ofSeconds(15));
-		wt.click(primaryMemberToggleButton, "Primary member toggle button");
-		wt.holdOn(Duration.ofSeconds(9));
-		verifyAddedprofessionalCountInTable();
+		wt.verifyInnerText(Handymaninnertext, "Handyman Services", "Handyman page");
+		
 	}
 	public void saveAndContinueProfessionalDetailsForSpouse() {
+		verifyClient();
+		String clientMortgageCount=verifyAddedprofessionalCountInTable();
 		GotoClickSpouseToggleButton();
 		wt.holdOn(Duration.ofSeconds(3));
 		verifyClient();
-		verifyAddedprofessionalCountInTable();
+		String SpouseClient=verifyAddedprofessionalCountInTable();
 		goToClickAddRealtorButton();
 		wt.holdOn(Duration.ofSeconds(8));
 		wt.click(Accordian, "Accordian");
 		wt.click(Accordian, "Accordian");
+		wt.verifyElementRadioButtonSelected(samedataToSpouseCheckBox, "Same data to spouse Check box");
 		String name=randomName();
 		wt.sendValue(FirstName, name, "FirstName");
 		String lastname=randomName();
@@ -201,7 +227,15 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 		wt.sendValue(Email, name+"@yopmail.com", "email");
 		wt.click(SaveAndContinueButton, "save and continue button");
 		wt.holdOn(Duration.ofSeconds(8));
-		verifyAddedprofessionalCountInTable(); 
+		String SpouseCountAfterAddDetails=verifyAddedprofessionalCountInTable(); 
+		wt.click(primaryMemberToggleButton, "primary member toggle button");
+		wt.holdOn(Duration.ofSeconds(3));
+		String ClientCountAfterAddDetails=verifyAddedprofessionalCountInTable();
+		 wt.printDataInReport("Before save the details Client Professional count -" + clientMortgageCount);
+		   wt.printDataInReport("Before save the details Spouse Professional count -" + SpouseClient);
+		   wt.printDataInReport("After save the details Client Professional count -" + SpouseCountAfterAddDetails);
+		   wt.printDataInReport("After save the details Spouse professional count -" + ClientCountAfterAddDetails );
+		
 	}
 	public void SaveAndAddAnotherSpouseProfessionalDetails() {
 

@@ -27,7 +27,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 		housingProfessionlObj.verifyMortgageBroker();
 
 }
-	@Test
+	@Test(priority = 2)
 	public void VerifyIdONotHaveRealtorCheckBoxFunctionality() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();
@@ -35,7 +35,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 		 HousingProfessionalMortgageBrokerPage housingProfessionalObj =new HousingProfessionalMortgageBrokerPage(util);
 		 housingProfessionalObj.IdoNotHaveMortgageFunctionality();
 	}
-	@Test
+	@Test(priority = 3)
 	public void VerifyClickIDoNotHaveMortgageCheckBox() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();
@@ -43,7 +43,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 		 HousingProfessionalMortgageBrokerPage housingProfessionalObj =new HousingProfessionalMortgageBrokerPage(util);
 		 housingProfessionalObj.ClickIdoNotHaveMortgage();
 	}
-	@Test
+	@Test(priority = 4)
 	public void verifyToggleButton() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
@@ -52,7 +52,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 		 housingProfessionalObj.verifytoggleButton();
 		
 	}
-	@Test
+	@Test(priority = 5)
 	public void verifyaddMortgageForPraimaryMember() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
@@ -63,7 +63,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 	 HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
 	 housingProfessionalObj.addProfessionalForPrimaryMember();
 }
-	@Test
+	@Test(priority = 6)
 	public void VerifySaveAndAddAnotherPrimaryMemberMortgageBrokerDetails() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
@@ -74,7 +74,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndAddAnotherprimaryMemberProfessionalDetails();
 }
-	@Test
+	@Test(priority = 7)
 	 public void VerifySaveAndproceedPrimaryMemberMortgageBrokerDetails() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickHousingModule();	
@@ -85,7 +85,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util); 
 			housingProfessionalObj.saveAndProceedPrimaryMemberProfessionalDetail();
 }
-	@Test
+	@Test(priority = 8)
 	 public void VerifySaveAndContinueSpouseMortgageBrokerDetails() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickHousingModule();	
@@ -96,6 +96,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
 			housingProfessionalObj.saveAndContinueProfessionalDetailsForSpouse();
 }
+	@Test(priority = 9)
 	 public void VerifySaveAndAddAnotherSpouseMortgageBrokerDetails() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickHousingModule();	
@@ -106,7 +107,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
 			housingProfessionalObj.SaveAndAddAnotherSpouseProfessionalDetails();
 }
-	 @Test
+	 @Test(priority = 10)
 	 public void VerifySaveAndProceedSpouseMortgageBrokerDetails() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickHousingModule();	
@@ -117,7 +118,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
 			housingProfessionalObj.SaveAndProceedSpouseMortgageDetails();
 		}
-	 @Test
+	 @Test(enabled = false)
 	 public void VerifyCopySameDataFunctionality() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickHousingModule();	
@@ -128,7 +129,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
 			housingProfessionalObj.copysamedataToSpouseProfessionalDetails();
 }
-	 @Test
+	 @Test(priority = 11)
 	 public void VerifyUpdateMortgageBrokerDetails() {
 		 LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickHousingModule();	

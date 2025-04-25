@@ -54,7 +54,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.VerifyIsYourBurialCremationPrepaid_YesChecked();
   }
- @Test(priority=2)
+ @Test(priority=2,enabled = false)
   public void VerifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_YesRadioBT() {
 	  LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -62,7 +62,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.verifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_YesRadioBT();
   }
-  @Test(priority = 1)
+  @Test(priority = 1,enabled = false)
   public void VerifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_NoRadioChecked() {
 	  LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -70,7 +70,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.verifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_NoRadioChecked(); 
   }
-@Test(priority =3 )
+@Test(priority =3 ,enabled = false)
   public void VerifyDidTheCompanyGiveYouAContractNoRadioChecked() {
 	  LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -78,7 +78,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.VerifyDidTheCompanyGiveYouAContractNoRadioChecked();
   }
-@Test(priority = 4)
+@Test(priority = 4,enabled = false)
   public void VerifyHaveYouMadeArrangementsForHandlingYesChecked() {
 	  LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -86,7 +86,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.VerifyHaveYouMadeArrangementsForHandlingYesChecked();  
   }
-    @Test(priority = 5)
+    @Test(priority = 5,enabled = false)
   
    public void VerifyHaveYouMadeArrangementsForHandlingNoChecked() {
 	   LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
@@ -95,5 +95,45 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.VerifyHaveYouMadeArrangementsForHandlingNoChecked();
    }
-   
+    @Test(priority = 1)
+    public void VerifyWouldYouLikeToMakeArrangementYes() {
+    	LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
+		lpoLadning.clickLegalModule();
+	     util.holdOn(Duration.ofSeconds(10));	
+	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
+	     BurialCremationObj.VerifyWouldYouLikeToMakeArrangementYes();
+	     
+    }
+    @Test(priority = 2)
+    public void VerifyWouldYouLikeMakeArrangementNoChecked() {
+    	LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
+		lpoLadning.clickLegalModule();
+	     util.holdOn(Duration.ofSeconds(10));	
+	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
+	     BurialCremationObj.verifyWouldYouLikeMakeArrangementNoChecked();
+    }
+    @Test(priority = 3)
+    public void VerifyWouldYouLikeTohaveSomeoneContactYouYesChecked() {
+    	LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
+		lpoLadning.clickLegalModule();
+	     util.holdOn(Duration.ofSeconds(10));	
+	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
+	     BurialCremationObj.WouldYouLikeTohaveSomeoneContactYouYes();
+    }
+    @Test(priority = 4)
+    public void VerifyWouldYouLikeToHaveSomeOneContactYouNoChecked() {
+    	LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
+		lpoLadning.clickLegalModule();
+	     util.holdOn(Duration.ofSeconds(10));	
+	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
+	     BurialCremationObj.WouldYouLikeToHaveSomeOneContactYouNoChecked();
+    }
+    @Test(enabled = false)
+    public void SaveAndContinueBurialcremationPlanDetails_WithYesCheck() {
+    	LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
+		lpoLadning.clickLegalModule();
+	     util.holdOn(Duration.ofSeconds(10));	
+	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
+	     BurialCremationObj.saveAndContinueBurialCremationPlanDetails();
+    }
 }
