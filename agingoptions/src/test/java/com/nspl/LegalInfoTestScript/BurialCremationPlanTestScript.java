@@ -54,7 +54,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.VerifyIsYourBurialCremationPrepaid_YesChecked();
   }
- @Test(priority=2,enabled = false)
+ @Test(priority=7,enabled = false)
   public void VerifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_YesRadioBT() {
 	  LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -62,7 +62,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.verifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_YesRadioBT();
   }
-  @Test(priority = 1,enabled = false)
+  @Test(priority = 6,enabled = false)
   public void VerifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_NoRadioChecked() {
 	  LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -70,7 +70,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.verifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_NoRadioChecked(); 
   }
-@Test(priority =3 ,enabled = false)
+@Test(priority =8 ,enabled = false)
   public void VerifyDidTheCompanyGiveYouAContractNoRadioChecked() {
 	  LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -78,7 +78,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.VerifyDidTheCompanyGiveYouAContractNoRadioChecked();
   }
-@Test(priority = 4,enabled = false)
+@Test(priority = 10,enabled = false)
   public void VerifyHaveYouMadeArrangementsForHandlingYesChecked() {
 	  LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -86,7 +86,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.VerifyHaveYouMadeArrangementsForHandlingYesChecked();  
   }
-    @Test(priority = 5,enabled = false)
+    @Test(priority = 9,enabled = false)
   
    public void VerifyHaveYouMadeArrangementsForHandlingNoChecked() {
 	   LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
@@ -95,7 +95,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.VerifyHaveYouMadeArrangementsForHandlingNoChecked();
    }
-    @Test(priority = 1)
+    @Test(priority = 11)
     public void VerifyWouldYouLikeToMakeArrangementYes() {
     	LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -104,7 +104,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurialCremationObj.VerifyWouldYouLikeToMakeArrangementYes();
 	     
     }
-    @Test(priority = 2)
+    @Test(priority = 12)
     public void VerifyWouldYouLikeMakeArrangementNoChecked() {
     	LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -112,7 +112,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.verifyWouldYouLikeMakeArrangementNoChecked();
     }
-    @Test(priority = 3)
+    @Test(priority = 13)
     public void VerifyWouldYouLikeTohaveSomeoneContactYouYesChecked() {
     	LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -120,7 +120,7 @@ public class BurialCremationPlanTestScript extends BaseTest {
 	     BurrialCreamtionPlanPage BurialCremationObj  =new BurrialCreamtionPlanPage(util);
 	     BurialCremationObj.WouldYouLikeTohaveSomeoneContactYouYes();
     }
-    @Test(priority = 4)
+    @Test(priority =14)
     public void VerifyWouldYouLikeToHaveSomeOneContactYouNoChecked() {
     	LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();

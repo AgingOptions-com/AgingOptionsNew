@@ -4,7 +4,7 @@ import java.time.Duration;
 
 import org.testng.annotations.Test;
 
-import com.Ao.HousingPage.HousingProfessionalDetailsPage;
+import com.Ao.HousingPage.ProfessionalDetailsPage;
 import com.Ao.HousingPage.HousingProfessional_realtor;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
 import com.nspl.agingoptions.webUtil.BaseTest;
@@ -75,7 +75,7 @@ public void verifyRealtorPageOnHousingProfessional() {
 		HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
     	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
     	util.holdOn(Duration.ofSeconds(3));
-	HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+	ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 	housingProfessionalObj.addProfessionalForPrimaryMember();
 	
 	}
@@ -95,7 +95,7 @@ public void verifyRealtorPageOnHousingProfessional() {
 		HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
     	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
     	util.holdOn(Duration.ofSeconds(3));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndAddAnotherprimaryMemberProfessionalDetails();
 	}
 	/*[TC043]-:TestSteps and Expected result
@@ -115,8 +115,9 @@ public void verifyRealtorPageOnHousingProfessional() {
 			HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
 	    	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
 	    	util.holdOn(Duration.ofSeconds(3));
-			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util); 
+			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util); 
 			housingProfessionalObj.saveAndProceedPrimaryMemberProfessionalDetail();
+			housingProfessionalObj.verifyMortgageBroker();
 	 
 	 }
 	
@@ -136,7 +137,7 @@ public void verifyRealtorPageOnHousingProfessional() {
 		HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
     	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
     	util.holdOn(Duration.ofSeconds(3));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.saveAndContinueProfessionalDetailsForSpouse();
 	}
 	/*[TC045]-:TestSteps and Expected result
@@ -155,7 +156,7 @@ public void verifyRealtorPageOnHousingProfessional() {
 		HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
     	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
     	util.holdOn(Duration.ofSeconds(3));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndAddAnotherSpouseProfessionalDetails();
 	}
 	/*[TC046]-:TestSteps and Expected result
@@ -174,7 +175,7 @@ public void verifyRealtorPageOnHousingProfessional() {
 		HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
     	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
     	util.holdOn(Duration.ofSeconds(3));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndProceedSpouseProfessionalDetails();
 	}
 	
@@ -196,7 +197,7 @@ public void verifyRealtorPageOnHousingProfessional() {
 		HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
     	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
     	util.holdOn(Duration.ofSeconds(3));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.copysamedataToSpouseProfessionalDetails();
 	}
 	 /*[TC048]-:TestSteps and Expected result.
@@ -220,7 +221,7 @@ public void verifyRealtorPageOnHousingProfessional() {
 			HousingProfessional_realtor realtorObj=new HousingProfessional_realtor(util);
 	    	realtorObj.verifyrelatorPageOnhousingprofessionalPage();
 	    	util.holdOn(Duration.ofSeconds(3));
-			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.UpdateProfessionalDetails();
 	}
 

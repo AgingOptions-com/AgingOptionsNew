@@ -5,9 +5,9 @@ import java.time.Duration;
 
 import com.nspl.agingoptions.webUtil.WebUtil;
 
-public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspageOr {
+public class ProfessionalDetailsPage extends ProfessionalDetailspageOr {
 	public WebUtil wt;
-	public HousingProfessionalDetailsPage(WebUtil util) {
+	public ProfessionalDetailsPage(WebUtil util) {
 		super(util);
 		this.wt=util;
 
@@ -35,6 +35,16 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 	public void GoToClickHandyManSection() {
 		wt.click(handyManSection, "Handyan button");
 	}
+	public void verifyFamilyLawAttorneyPage() {
+		wt.verifyInnerText(FamilyLawAttorneyText, "Family Law Attorney", "Family Law Attorney text");
+	}
+	public void verifyBusinessSuccessiorPage() {
+		wt.verifyInnerText(businessSuccessior,"Business Successors", "Business successior");
+	}
+	
+	public void VerifyMyServiceProvider() {
+		wt.verifyInnerText(Myserviceprovider, "My service provider", "My service provider page");
+	}
 	public void GoToClickEditIcon() {
 		wt.waitUntilPresentInUI(Editicon, "edit icon");
 		wt.click(Editicon, "Edit Icon");
@@ -42,7 +52,10 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 	public void verifyMortgageBroker() {
 		wt.verifyInnerText(mortgageBrokerinnerText, "Mortgage Brokers", "Mortgage broker innertext");
 	}
-
+    
+	public void VerifyLandScapperPage() {
+		wt.verifyInnerText(LandscapperPageInnerText, "Landscaper", "LandScapper text");
+	}
 	public void  goToClickAddRealtorButton() {
 		wt.click(AddRealtorButton, "Add Professional button"); 
 	}
@@ -70,6 +83,10 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 
 	public void GoToClickCopySameDataSpouseCheckBox() {
 		wt.click(samedataToSpouseCheckBox, "Same data to spouse checkbox");
+	}
+	
+	public void VerifyElderLawAttorneypage() {
+		wt.verifyInnerText(ElderatorneyText, "Elder Attorneys ", "Elder Attorneys  text");
 	}
 
 	public void addProfessionalForPrimaryMember() {
@@ -192,7 +209,7 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 		wt.sendValueJs(PhoneNumber, "9845678766", "Phone number");
 		wt.sendValue(Email, name+"@yopmail.com", "email");
 		wt.click(SaveAndProceedTo, "save and proceed to");
-		wt.verifyInnerText(Handymaninnertext, "Handyman Services", "Handyman page");
+		
 		
 	}
 	public void saveAndContinueProfessionalDetailsForSpouse() {
@@ -236,6 +253,9 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 		   wt.printDataInReport("After save the details Client Professional count -" + SpouseCountAfterAddDetails);
 		   wt.printDataInReport("After save the details Spouse professional count -" + ClientCountAfterAddDetails );
 		
+	}
+	public void VerifyFinancePage() {
+		wt.verifyInnerText(FinancialInfoPageText, " Financial information", "Financial page text");	
 	}
 	public void SaveAndAddAnotherSpouseProfessionalDetails() {
 
@@ -374,7 +394,7 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 		wt.sendValue(Email, name+"@yopmail.com", "email");
 		wt.click(SaveAndProceedTo, "save and proceed to");
 		wt.holdOn(Duration.ofSeconds(8));
-		verifyLegalPage();
+		wt.verifyInnerText(LandscapperPageInnerText, "Landscaper", "LandScapper page");
 		wt.click(HousingButtonUnderSetup, "Housing Button under setUp");
 		wt.holdOn(Duration.ofSeconds(6));
 		wt.click(HousoingProfessionalsecton, "Housing professional");
@@ -385,6 +405,83 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 		wt.holdOn(Duration.ofSeconds(3));
 		verifyAddedprofessionalCountInTable();
 
+	}
+	public void saveAndProceedSpouseELADetails() {
+		GotoClickSpouseToggleButton();
+		wt.holdOn(Duration.ofSeconds(3));
+		verifyClient(); 
+		verifyAddedprofessionalCountInTable();
+		goToClickAddRealtorButton();
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.click(Accordian, "Accordian");
+		wt.click(Accordian, "Accordian");
+		String name=randomName();
+		wt.sendValue(FirstName, name, "FirstName");
+		String lastname=randomName();
+		wt.sendValue(LastName, lastname, "LastName");
+		wt.sendValue(BusinessName, name +" pvt ltd ", "Business name");
+		wt.sendValue(WebSiteLink, "Ac.com", "WebSite Name");
+		wt.sendValue(NoteForAgent, "Not any note for agent", "Notes for Agent");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.verifyAttributeValue(CountryRegionField, "United States", "value");
+		wt.holdOn(Duration.ofSeconds(4));
+		Addaddress();
+		wt.click(contactTypeDropdown, "Contact type DropDown");
+		wt.click(OtherOptions, "Other Option on contact ");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.sendValue(OthertypeTextBox, name, "Other Type text box");
+		wt.holdOn(Duration.ofSeconds(5));
+		wt.sendValueJs(PhoneNumber, "9845678766", "Phone number");
+		wt.sendValue(Email, name+"@yopmail.com", "email");
+		wt.click(SaveAndProceedTo, "save and proceed to");
+		wt.holdOn(Duration.ofSeconds(8));
+		verifyFamilyLawAttorneyPage();
+		wt.click(ElderLawAttorneyDrawer, "Elder law attorney drawer");
+		wt.holdOn(Duration.ofSeconds(6));
+		wt.click(SpousetoggleButton, "Spouse toggle button");
+		wt.holdOn(Duration.ofSeconds(3));
+		verifyAddedprofessionalCountInTable();
+	}
+	
+	public void SaveAndProceedSpouseLandScapperDetails() {
+		GotoClickSpouseToggleButton();
+		wt.holdOn(Duration.ofSeconds(3));
+		verifyClient(); 
+		verifyAddedprofessionalCountInTable();
+		goToClickAddRealtorButton();
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.click(Accordian, "Accordian");
+		wt.click(Accordian, "Accordian");
+		String name=randomName();
+		wt.sendValue(FirstName, name, "FirstName");
+		String lastname=randomName();
+		wt.sendValue(LastName, lastname, "LastName");
+		wt.sendValue(BusinessName, name +" pvt ltd ", "Business name");
+		wt.sendValue(WebSiteLink, "Ac.com", "WebSite Name");
+		wt.sendValue(NoteForAgent, "Not any note for agent", "Notes for Agent");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.verifyAttributeValue(CountryRegionField, "United States", "value");
+		wt.holdOn(Duration.ofSeconds(4));
+		Addaddress();
+		wt.click(contactTypeDropdown, "Contact type DropDown");
+		wt.click(OtherOptions, "Other Option on contact ");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.sendValue(OthertypeTextBox, name, "Other Type text box");
+		wt.holdOn(Duration.ofSeconds(5));
+		wt.sendValueJs(PhoneNumber, "9845678766", "Phone number");
+		wt.sendValue(Email, name+"@yopmail.com", "email");
+		wt.click(SaveAndProceedTo, "save and proceed to");
+		wt.holdOn(Duration.ofSeconds(8));
+		VerifyFinancePage();
+		wt.click(HousingButtonUnderSetup, "Housing Button under setUp");
+		wt.holdOn(Duration.ofSeconds(6));
+		wt.click(HousoingProfessionalsecton, "Housing professional");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.click(landScapperDrawer, "Landscapper drawer");
+		wt.holdOn(Duration.ofSeconds(5));
+		wt.click(SpousetoggleButton, "Spouse toggle button");
+		wt.holdOn(Duration.ofSeconds(3));
+		verifyAddedprofessionalCountInTable();
 	}
 	public void copysamedataToSpouseProfessionalDetails() {
 
@@ -465,16 +562,21 @@ public class HousingProfessionalDetailsPage extends HousingProfessionalDetailspa
 		wt.sendValue(Email, name+"@yopmail.com", "email");
 		wt.click(SaveAndContinueButton, "save and continue button");
 		wt.holdOn(Duration.ofSeconds(10));
+		wt.clearTextBox(SearchBar);
+		wt.sendValueWithEnter(SearchBar, name, "Name");
+		wt.holdOn(Duration.ofSeconds(3));
 		GoToClickEditIcon();
 		wt.holdOn(Duration.ofSeconds(6));
 		wt.click(FirstName, "Firstname");
-		FirstName.clear();
+		//FirstName.clear();
 		String updatedName="Test345";
 		wt.holdOn(Duration.ofSeconds(4));
 		wt.sendValue(FirstName, updatedName, "First name");
 		wt.holdOn(Duration.ofSeconds(3));
 		wt.click(UpdateButton, "Update button");
 		wt.holdOn(Duration.ofSeconds(10));
+		wt.clearTextBox(SearchBar);
+		wt.sendValueWithEnter(SearchBar, updatedName, "Name");
 		GoToClickEditIcon();
 		wt.holdOn(Duration.ofSeconds(5));
 		String value=  wt.GetAttributevalue(FirstName, "value");

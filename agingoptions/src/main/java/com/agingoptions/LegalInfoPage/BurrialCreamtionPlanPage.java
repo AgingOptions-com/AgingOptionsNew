@@ -117,9 +117,9 @@ public class BurrialCreamtionPlanPage extends BurialCremationPlanPageOr {
 	public void VerifyWouldYouLikeToMakeArrangementYes() {
 		wt.click(BurialCremationPlanDrawer, "Burial cremation drawer");
 		wt.openAccordion(CemetryArrangementAccordian, "cemetry arrangement accordian");
+//		wt.click(ClientHaveYouMadeArrangement_NoRadioBT, "Client-Have you made arrangements for handling of remains with any funeral....No radio button");
 		wt.click(ClientHaveYouMadeArrangement_NoRadioBT, "Client-Have you made arrangements for handling of remains with any funeral....No radio button");
-		wt.click(ClientHaveYouMadeArrangement_NoRadioBT, "Client-Have you made arrangements for handling of remains with any funeral....No radio button");
-		wt.click(SpouseHaveYouMadeArrangement_NoRadioBT, "Spouse-Have you made arrangements for handling of remains with any funeral....No radio button");
+//		wt.click(SpouseHaveYouMadeArrangement_NoRadioBT, "Spouse-Have you made arrangements for handling of remains with any funeral....No radio button");
 		wt.click(SpouseHaveYouMadeArrangement_NoRadioBT, "Spouse-Have you made arrangements for handling of remains with any funeral....No radio button");
 		wt.click(ClientWouldYouLikeToMakeArrangementYesRadioBt, "Client- Would you like to make arrangement-Yes radio button");
 		wt.click(SpouseWouldYouLikeToMakeArrangementYesRadioBt, "Spouse- Would you like to make arrangement -No radio button");
@@ -130,9 +130,11 @@ public class BurrialCreamtionPlanPage extends BurialCremationPlanPageOr {
 		wt.click(BurialCremationPlanDrawer, "Burial cremation drawer");
 		wt.openAccordion(CemetryArrangementAccordian, "cemetry arrangement accordian");
 		wt.click(ClientHaveYouMadeArrangement_NoRadioBT, "Client-Have you made arrangements for handling of remains with any funeral....No radio button");
-	   wt.click(SpouseHaveYouMadeArrangement_NoRadioBT, "Spouse-Have you made arrangements for handling of remains with any funeral....No radio button");
-	   wt.click(ClientHaveYouMadeArrangement_NoRadioBT, "Client-Have you made arrangements for handling of remains with any funeral....No radio button");
-	   wt.click(SpouseHaveYouMadeArrangement_NoRadioBT, "Spouse-Have you made arrangements for handling of remains with any funeral....No radio button");
+		wt.click(ClientHaveYouMadeArrangement_NoRadioBT, "Client-Have you made arrangements for handling of remains with any funeral....No radio button");
+		wt.click(SpouseHaveYouMadeArrangement_NoRadioBT, "Spouse-Have you made arrangements for handling of remains with any funeral....No radio button");
+		wt.click(SpouseHaveYouMadeArrangement_NoRadioBT, "Spouse-Have you made arrangements for handling of remains with any funeral....No radio button");
+//	   wt.click(ClientHaveYouMadeArrangement_NoRadioBT, "Client-Have you made arrangements for handling of remains with any funeral....No radio button");
+//	   wt.click(SpouseHaveYouMadeArrangement_NoRadioBT, "Spouse-Have you made arrangements for handling of remains with any funeral....No radio button");
 	   wt.click(CLientWouldYouLikeToMakeArrangementNoRadioBT, "Client- Would you like to make arrangement No radio button");
 		wt.click(SpouseWouldYouLikeToMakeArrangementNoRadioBT, "Spouse-Would you like to make arrangement Noradio button ");
 		wt.verifyInnerText(ClientWouldYouLikeToMakeArrangment_NoRadioBTMessage, "We strongly suggest you take the initiative and get this detail addressed.  It will go a long way to ensure that your needs are less of a burden to loved ones, and you will likely also save your estate assets in the meanwhile.", "We strongly suggest you take the initiative and get this detail addressed....warning message");

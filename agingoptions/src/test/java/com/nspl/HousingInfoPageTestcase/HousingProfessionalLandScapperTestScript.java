@@ -1,4 +1,4 @@
-package com.nspl.LegalInfoTestScript;
+package com.nspl.HousingInfoPageTestcase;
 
 import java.time.Duration;
 
@@ -6,117 +6,117 @@ import org.testng.annotations.Test;
 
 import com.Ao.HousingPage.ProfessionalDetailsPage;
 import com.Ao.HousingPage.HousingProfessionalLandScapperPage;
-import com.agingoptions.LegalInfoPage.LegalProfessionalElderLawAttorneyPage;
+import com.Ao.HousingPage.HousingProfessionalMortgageBrokerPage;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
 import com.nspl.agingoptions.webUtil.BaseTest;
 
-public class LegalProfessionalElA  extends BaseTest{
+public class HousingProfessionalLandScapperTestScript extends BaseTest{
+	
 
 	@Test(priority = 1)
-	public void VerifyElderLawAttorneyPageOnLegalProfessional() {
+	public void VerifyLandScapperPageOnHousingProfessional() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
-		lpoLadning.clickLegalModule();
+		lpoLadning.clickHousingModule();
 	     util.holdOn(Duration.ofSeconds(10));
-	     LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-	     ElaObj.GoToELAPageOnLegalProfessional();
+	     HousingProfessionalLandScapperPage landScapperObj	=new HousingProfessionalLandScapperPage(util);
+	     landScapperObj.GoToLandScapperPageOnHousingInfo();
 		 util.holdOn(Duration.ofSeconds(4));
 		ProfessionalDetailsPage housingProfessionlObj= new ProfessionalDetailsPage(util);
         util.holdOn(Duration.ofSeconds(5));
-		housingProfessionlObj.VerifyElderLawAttorneypage();
+		housingProfessionlObj.VerifyLandScapperPage();
 
 }
 	@Test(priority = 2)
-	public void VerifyIdONotHaveElderLawAttorneyFunctionality() {
+	public void VerifyIdONotHaveLandScapperCheckBoxFunctionality() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
-		lpoLadning.clickLegalModule();
+		lpoLadning.clickHousingModule();
 		  util.holdOn(Duration.ofSeconds(8));
-		  LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.IdoNotHaveELAFunctionality();
-		
+		  HousingProfessionalLandScapperPage landScapperObj	=new HousingProfessionalLandScapperPage(util);
+		     landScapperObj.IdoNotHaveLandScapperFunctionality();
 	}
 	@Test(priority = 3)
 	public void VerifyClickIDoNotHaveLandScapperCheckBox() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
-		lpoLadning.clickLegalModule();
+		lpoLadning.clickHousingModule();
 		util.holdOn(Duration.ofSeconds(8));
-		LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-	     ElaObj.ClickIdoNotHaveELA();
+		 HousingProfessionalLandScapperPage landScapperObj	=new HousingProfessionalLandScapperPage(util);
+	     landScapperObj.ClickIdoNotHaveLandscapper();
 	}
 	@Test(priority = 4)
 	public void verifyToggleButton() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
-		lpoLadning.clickLegalModule();	
+		lpoLadning.clickHousingModule();	
 		util.holdOn(Duration.ofSeconds(8));
-		LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-	     ElaObj.verifytoggleButton();
+		 HousingProfessionalLandScapperPage landScapperObj	=new HousingProfessionalLandScapperPage(util);
+	     landScapperObj.verifytoggleButton();
 		
 	}
 	@Test(priority = 5)
-	public void verifyaddElderLawAttorneyForPraimaryMember() {
+	public void verifyaddLandScapperForPraimaryMember() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
-		lpoLadning.clickLegalModule();	
+		lpoLadning.clickHousingModule();	
 		util.holdOn(Duration.ofSeconds(4));
-		LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-	     ElaObj.GoToELAPageOnLegalProfessional();
+		 HousingProfessionalLandScapperPage landScapperObj	=new HousingProfessionalLandScapperPage(util);
+	     landScapperObj.GoToLandScapperPageOnHousingInfo();
 	 util.holdOn(Duration.ofSeconds(8));
-	 ProfessionalDetailsPage ProfessionalObj=	new ProfessionalDetailsPage(util);
-	 ProfessionalObj.addProfessionalForPrimaryMember();
+	 ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
+	 housingProfessionalObj.addProfessionalForPrimaryMember();
 }
 	@Test(priority = 6)
-	public void VerifySaveAndAddAnotherPrimaryMemberElderLawAttorney() {
+	public void VerifySaveAndAddAnotherPrimaryMemberLandScapperDetails() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
-		lpoLadning.clickLegalModule();	
+		lpoLadning.clickHousingModule();	
 		util.holdOn(Duration.ofSeconds(4));	
-		LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-	     ElaObj.GoToELAPageOnLegalProfessional();
+		 HousingProfessionalLandScapperPage landScapperObj	=new HousingProfessionalLandScapperPage(util);
+	     landScapperObj.GoToLandScapperPageOnHousingInfo();
 		 util.holdOn(Duration.ofSeconds(4));
 		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndAddAnotherprimaryMemberProfessionalDetails();
 }
 	@Test(priority = 7)
-	 public void VerifySaveAndproceedPrimaryMemberElderLawAttorneyDetails() {
+	 public void VerifySaveAndproceedPrimaryMemberLandScapperDetails() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
-			lpoLadning.clickLegalModule();	
+			lpoLadning.clickHousingModule();	
 			util.holdOn(Duration.ofSeconds(4));	
-			LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.GoToELAPageOnLegalProfessional();
+			 HousingProfessionalLandScapperPage landScapperObj	=new HousingProfessionalLandScapperPage(util);
+		     landScapperObj.GoToLandScapperPageOnHousingInfo();
 			 util.holdOn(Duration.ofSeconds(4));
-			ProfessionalDetailsPage ProfessionalObj=	new ProfessionalDetailsPage(util); 
-		    ProfessionalObj.saveAndProceedPrimaryMemberProfessionalDetail();
-		    ProfessionalObj.verifyFamilyLawAttorneyPage();
+			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util); 
+			housingProfessionalObj.saveAndProceedPrimaryMemberProfessionalDetail();
+			housingProfessionalObj.VerifyFinancePage();
 }
 	@Test(priority = 8)
-	 public void VerifySaveAndContinueSpouseElderLawAttorneyDetails() {
+	 public void VerifySaveAndContinueSpouseLandScapperDetails() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
-			lpoLadning.clickLegalModule();;	
+			lpoLadning.clickHousingModule();	
 			util.holdOn(Duration.ofSeconds(4));	
-			LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.GoToELAPageOnLegalProfessional();
+			 HousingProfessionalLandScapperPage landScapperObj	=new HousingProfessionalLandScapperPage(util);
+		     landScapperObj.GoToLandScapperPageOnHousingInfo();
 			 util.holdOn(Duration.ofSeconds(4));
 			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.saveAndContinueProfessionalDetailsForSpouse();
 }
 	@Test(priority = 9)
-	 public void VerifySaveAndAddAnotherSpouseElderLawAttorneyDetails() {
+	 public void VerifySaveAndAddAnotherSpouseLandScapperDetails() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
-			lpoLadning.clickLegalModule();	
+			lpoLadning.clickHousingModule();	
 			util.holdOn(Duration.ofSeconds(4));	
-			LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.GoToELAPageOnLegalProfessional();
+			 HousingProfessionalLandScapperPage landScapperObj	=new HousingProfessionalLandScapperPage(util);
+		     landScapperObj.GoToLandScapperPageOnHousingInfo();
 			 util.holdOn(Duration.ofSeconds(4));
 			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.SaveAndAddAnotherSpouseProfessionalDetails();
 }
 	 @Test(priority = 10)
-	 public void VerifySaveAndProceedSpouseElderLawAttorneyDetails() {
+	 public void VerifySaveAndProceedSpouseLandScapperDetails() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
-			lpoLadning.clickLegalModule();;	
+			lpoLadning.clickHousingModule();	
 			util.holdOn(Duration.ofSeconds(4));	
-			LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.GoToELAPageOnLegalProfessional();
+			 HousingProfessionalLandScapperPage landScapperObj	=new HousingProfessionalLandScapperPage(util);
+		     landScapperObj.GoToLandScapperPageOnHousingInfo();
 			 util.holdOn(Duration.ofSeconds(4));
 			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
-			housingProfessionalObj.saveAndProceedSpouseELADetails();
+			housingProfessionalObj.SaveAndProceedSpouseLandScapperDetails();
 		}
 	 @Test(enabled = false)
 	 public void VerifyCopySameDataFunctionality() {
@@ -130,14 +130,16 @@ public class LegalProfessionalElA  extends BaseTest{
 			housingProfessionalObj.copysamedataToSpouseProfessionalDetails();
 }
 	 @Test(priority = 11)
-	 public void VerifyUpdateElderLawAttorneyDetails() {
+	 public void VerifyUpdateLandScappeDetails() {
 		 LpoLandingPage lpoLadning=new LpoLandingPage(util);
-			lpoLadning.clickLegalModule();;	
+			lpoLadning.clickHousingModule();	
 			util.holdOn(Duration.ofSeconds(4));	
-			LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.GoToELAPageOnLegalProfessional();
+			 HousingProfessionalLandScapperPage landScapperObj	=new HousingProfessionalLandScapperPage(util);
+		     landScapperObj.GoToLandScapperPageOnHousingInfo();
 	    	util.holdOn(Duration.ofSeconds(3));
 			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.UpdateProfessionalDetails();
 	}
 }
+
+

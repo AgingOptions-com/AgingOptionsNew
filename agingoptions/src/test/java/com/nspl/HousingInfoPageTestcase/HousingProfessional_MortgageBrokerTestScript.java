@@ -4,7 +4,7 @@ import java.time.Duration;
 
 import org.testng.annotations.Test;
 
-import com.Ao.HousingPage.HousingProfessionalDetailsPage;
+import com.Ao.HousingPage.ProfessionalDetailsPage;
 import com.Ao.HousingPage.HousingProfessionalHandyManPage;
 import com.Ao.HousingPage.HousingProfessionalMortgageBrokerPage;
 import com.Ao.HousingPage.HousingProfessional_realtor;
@@ -22,7 +22,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 	     HousingProfessionalMortgageBrokerPage MortgageBrokerObj=	new HousingProfessionalMortgageBrokerPage(util);
 		 MortgageBrokerObj.GoToMortgaePageOnHousingInfo();
 		 util.holdOn(Duration.ofSeconds(4));
-		HousingProfessionalDetailsPage housingProfessionlObj= new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionlObj= new ProfessionalDetailsPage(util);
         util.holdOn(Duration.ofSeconds(5));
 		housingProfessionlObj.verifyMortgageBroker();
 
@@ -60,7 +60,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 	 HousingProfessionalMortgageBrokerPage MortgageBrokerObj=	new HousingProfessionalMortgageBrokerPage(util);
 	 MortgageBrokerObj.GoToMortgaePageOnHousingInfo();
 	 util.holdOn(Duration.ofSeconds(8));
-	 HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+	 ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 	 housingProfessionalObj.addProfessionalForPrimaryMember();
 }
 	@Test(priority = 6)
@@ -71,7 +71,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 		 HousingProfessionalMortgageBrokerPage MortgageBrokerObj=	new HousingProfessionalMortgageBrokerPage(util);
 		 MortgageBrokerObj.GoToMortgaePageOnHousingInfo();
 		 util.holdOn(Duration.ofSeconds(4));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndAddAnotherprimaryMemberProfessionalDetails();
 }
 	@Test(priority = 7)
@@ -82,8 +82,9 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 			 HousingProfessionalMortgageBrokerPage MortgageBrokerObj=	new HousingProfessionalMortgageBrokerPage(util);
 			 MortgageBrokerObj.GoToMortgaePageOnHousingInfo();
 			 util.holdOn(Duration.ofSeconds(4));
-			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util); 
+			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util); 
 			housingProfessionalObj.saveAndProceedPrimaryMemberProfessionalDetail();
+			housingProfessionalObj.VerifyHandymanProfessional();
 }
 	@Test(priority = 8)
 	 public void VerifySaveAndContinueSpouseMortgageBrokerDetails() {
@@ -93,7 +94,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 			 HousingProfessionalMortgageBrokerPage MortgageBrokerObj=	new HousingProfessionalMortgageBrokerPage(util);
 			 MortgageBrokerObj.GoToMortgaePageOnHousingInfo();
 			 util.holdOn(Duration.ofSeconds(4));
-			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.saveAndContinueProfessionalDetailsForSpouse();
 }
 	@Test(priority = 9)
@@ -104,7 +105,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 			 HousingProfessionalMortgageBrokerPage MortgageBrokerObj=	new HousingProfessionalMortgageBrokerPage(util);
 			 MortgageBrokerObj.GoToMortgaePageOnHousingInfo();
 			 util.holdOn(Duration.ofSeconds(4));
-			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.SaveAndAddAnotherSpouseProfessionalDetails();
 }
 	 @Test(priority = 10)
@@ -115,7 +116,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 			 HousingProfessionalMortgageBrokerPage MortgageBrokerObj=	new HousingProfessionalMortgageBrokerPage(util);
 			 MortgageBrokerObj.GoToMortgaePageOnHousingInfo();
 			 util.holdOn(Duration.ofSeconds(4));
-			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.SaveAndProceedSpouseMortgageDetails();
 		}
 	 @Test(enabled = false)
@@ -126,7 +127,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 			HousingProfessionalMortgageBrokerPage MortgageBrokerObj=	new HousingProfessionalMortgageBrokerPage(util);
 			 MortgageBrokerObj.GoToMortgaePageOnHousingInfo();
 			 util.holdOn(Duration.ofSeconds(4));
-			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.copysamedataToSpouseProfessionalDetails();
 }
 	 @Test(priority = 11)
@@ -137,7 +138,7 @@ public class HousingProfessional_MortgageBrokerTestScript  extends BaseTest {
 			HousingProfessionalMortgageBrokerPage MortgageBrokerObj=	new HousingProfessionalMortgageBrokerPage(util);
 			 MortgageBrokerObj.GoToMortgaePageOnHousingInfo();
 	    	util.holdOn(Duration.ofSeconds(3));
-			HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.UpdateProfessionalDetails();
 	}
 }
