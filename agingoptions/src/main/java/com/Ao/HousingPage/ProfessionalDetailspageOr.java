@@ -167,4 +167,18 @@ public class ProfessionalDetailspageOr {
 	
 	@FindBy(xpath="//span[text()='Landscaper']")
 	protected WebElement landScapperDrawer;
+	
+	@FindBy(xpath="//span[text()='Family Law Attorney']")
+	protected WebElement familyLawAttorneyDrawer;
+	
+	@FindBy(xpath="(//span[text()='Legal'])[1]")
+	protected WebElement LegalUnderSetUpPage;
+	
+	@FindBy(xpath="//span[text()='Legal Professionals']")
+	protected WebElement LegalProfessionalDrawer;
+	
+	@FindBy(xpath="//span[text()='Tax & Business succession']")
+	protected WebElement businessSuccessiorDrawer;
+	
+	
 }

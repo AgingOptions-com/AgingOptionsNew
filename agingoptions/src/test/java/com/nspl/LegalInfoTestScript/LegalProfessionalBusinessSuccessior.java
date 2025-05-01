@@ -5,139 +5,140 @@ import java.time.Duration;
 import org.testng.annotations.Test;
 
 import com.Ao.HousingPage.ProfessionalDetailsPage;
-import com.Ao.HousingPage.HousingProfessionalLandScapperPage;
 import com.agingoptions.LegalInfoPage.FamilyLawAttorney;
-import com.agingoptions.LegalInfoPage.LegalProfessionalElderLawAttorneyPage;
+import com.agingoptions.LegalInfoPage.LegalProfessionalBusinessSuccessiorPage;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
 import com.nspl.agingoptions.webUtil.BaseTest;
 
-public class LegalProfessionalElA  extends BaseTest{
+public class LegalProfessionalBusinessSuccessior extends BaseTest {
+
 
 	@Test(priority = 1)
-	public void VerifyElderLawAttorneyPageOnLegalProfessional() {
+	public void VerifyBusinessSuccessiorPageLegalProfessional() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
 	     util.holdOn(Duration.ofSeconds(10));
-	     LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-	     ElaObj.GoToELAPageOnLegalProfessional();
+	LegalProfessionalBusinessSuccessiorPage LPBS=   new LegalProfessionalBusinessSuccessiorPage(util);
+	LPBS.GoToBusinessSuccessiorPageOnLegalProfessional();
 		 util.holdOn(Duration.ofSeconds(4));
 		ProfessionalDetailsPage housingProfessionlObj= new ProfessionalDetailsPage(util);
         util.holdOn(Duration.ofSeconds(5));
-		housingProfessionlObj.VerifyElderLawAttorneypage();
+		housingProfessionlObj.verifyBusinessSuccessiorPage();
 
 }
 	@Test(priority = 2)
-	public void VerifyIdONotHaveElderLawAttorneyFunctionality() {
+	public void VerifyIdONotHaveBusinessSuccessiorFunctionality() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
 		  util.holdOn(Duration.ofSeconds(8));
-		  LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.IdoNotHaveELAFunctionality();
+		  LegalProfessionalBusinessSuccessiorPage LPBS=   new LegalProfessionalBusinessSuccessiorPage(util);
+			LPBS.IdoNotHaveBusinessSuccessiorFunctionality();
 		
 	}
 	@Test(priority = 3)
-	public void VerifyClickIDoNotHaveLandScapperCheckBox() {
+	public void VerifyClickIDoNotHaveBusinessSuccessiorCheckBox() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
 		util.holdOn(Duration.ofSeconds(8));
-		LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-	     ElaObj.ClickIdoNotHaveELA();
+		LegalProfessionalBusinessSuccessiorPage LPBS=   new LegalProfessionalBusinessSuccessiorPage(util);
+		LPBS.ClickIdoNotHaveBusinessSuccessior();
 	}
 	@Test(priority = 4)
 	public void verifyToggleButton() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();	
 		util.holdOn(Duration.ofSeconds(8));
-		LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-	     ElaObj.verifytoggleButton();
+		LegalProfessionalBusinessSuccessiorPage LPBS=   new LegalProfessionalBusinessSuccessiorPage(util);
+		LPBS.verifytoggleButton();
 		
 	}
 	@Test(priority = 5)
-	public void verifyaddElderLawAttorneyForPraimaryMember() {
+	public void verifyaddBusinessSuccessiorForPraimaryMember() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();	
 		util.holdOn(Duration.ofSeconds(4));
-		LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-	     ElaObj.GoToELAPageOnLegalProfessional();
+		LegalProfessionalBusinessSuccessiorPage LPBS=   new LegalProfessionalBusinessSuccessiorPage(util);
+		LPBS.GoToBusinessSuccessiorPageOnLegalProfessional();
 	 util.holdOn(Duration.ofSeconds(8));
 	 ProfessionalDetailsPage ProfessionalObj=	new ProfessionalDetailsPage(util);
 	 ProfessionalObj.addProfessionalForPrimaryMember();
 }
 	@Test(priority = 6)
-	public void VerifySaveAndAddAnotherPrimaryMemberElderLawAttorney() {
+	public void VerifySaveAndAddAnotherPrimaryMemberBusinessSuccessior() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();	
 		util.holdOn(Duration.ofSeconds(4));	
-		LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-	     ElaObj.GoToELAPageOnLegalProfessional();
+		LegalProfessionalBusinessSuccessiorPage LPBS=   new LegalProfessionalBusinessSuccessiorPage(util);
+		LPBS.GoToBusinessSuccessiorPageOnLegalProfessional();
 		 util.holdOn(Duration.ofSeconds(4));
 		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndAddAnotherprimaryMemberProfessionalDetails();
 }
 	@Test(priority = 7)
-	 public void VerifySaveAndproceedPrimaryMemberElderLawAttorneyDetails() {
+	 public void VerifySaveAndproceedPrimaryMemberBusinessSuccessiorDetails() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickLegalModule();	
 			util.holdOn(Duration.ofSeconds(4));	
-			LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.GoToELAPageOnLegalProfessional();
+			LegalProfessionalBusinessSuccessiorPage LPBS=   new LegalProfessionalBusinessSuccessiorPage(util);
+			LPBS.GoToBusinessSuccessiorPageOnLegalProfessional();
 			 util.holdOn(Duration.ofSeconds(4));
 			ProfessionalDetailsPage ProfessionalObj=	new ProfessionalDetailsPage(util); 
 		    ProfessionalObj.saveAndProceedPrimaryMemberProfessionalDetail();
-		    ProfessionalObj.verifyFamilyLawAttorneyPage();
+		    ProfessionalObj.VerifyMyServiceProvider();
+		    util.holdOn(Duration.ofSeconds(4));
+		    ProfessionalObj.GotoClickLegalSectonUnderSetUpPage();
 }
 	@Test(priority = 8)
-	 public void VerifySaveAndContinueSpouseElderLawAttorneyDetails() {
+	 public void VerifySaveAndContinueSpouseBusinessSuccessiorDetails() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickLegalModule();;	
 			util.holdOn(Duration.ofSeconds(4));	
-			LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.GoToELAPageOnLegalProfessional();
+			LegalProfessionalBusinessSuccessiorPage LPBS=   new LegalProfessionalBusinessSuccessiorPage(util);
+			LPBS.GoToBusinessSuccessiorPageOnLegalProfessional();
 			 util.holdOn(Duration.ofSeconds(4));
 			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.saveAndContinueProfessionalDetailsForSpouse();
 }
 	@Test(priority = 9)
-	 public void VerifySaveAndAddAnotherSpouseElderLawAttorneyDetails() {
+	 public void VerifySaveAndAddAnotherSpouseBusinessSuccessiorDetails() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickLegalModule();	
-			util.holdOn(Duration.ofSeconds(4));	
-			LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.GoToELAPageOnLegalProfessional();
+			LegalProfessionalBusinessSuccessiorPage LPBS=   new LegalProfessionalBusinessSuccessiorPage(util);
+			LPBS.GoToBusinessSuccessiorPageOnLegalProfessional();
 			 util.holdOn(Duration.ofSeconds(4));
 			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.SaveAndAddAnotherSpouseProfessionalDetails();
 }
 	 @Test(priority = 10)
-	 public void VerifySaveAndProceedSpouseElderLawAttorneyDetails() {
+	 public void VerifySaveAndProceedSpouseBusinessSuccessiorDetails() {
 			LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickLegalModule();;	
 			util.holdOn(Duration.ofSeconds(4));	
-			LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.GoToELAPageOnLegalProfessional();
+			LegalProfessionalBusinessSuccessiorPage LPBS=   new LegalProfessionalBusinessSuccessiorPage(util);
+			LPBS.GoToBusinessSuccessiorPageOnLegalProfessional();
 			 util.holdOn(Duration.ofSeconds(4));
 			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
-			housingProfessionalObj.saveAndProceedSpouseELADetails();
+			housingProfessionalObj.saveAndProceedSpouseBusinessSuccessiorDetails();
 		}
 	
-	 @Test(priority = 11)
-	 public void VerifyUpdateElderLawAttorneyDetails() {
+	 @Test(priority = 12)
+	 public void VerifyUpdateBusinessSuccessiorDetails() {
 		 LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickLegalModule();;	
 			util.holdOn(Duration.ofSeconds(4));	
-			LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.GoToELAPageOnLegalProfessional();
+			LegalProfessionalBusinessSuccessiorPage LPBS=   new LegalProfessionalBusinessSuccessiorPage(util);
+			LPBS.GoToBusinessSuccessiorPageOnLegalProfessional();
 	    	util.holdOn(Duration.ofSeconds(3));
 			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.UpdateProfessionalDetails();
 	}
-	 @Test(priority = 12)
-	 public void VerifyClientElderLawAttorneyDetailsWithUncheckCopySamedataTospouseCheckBox() {
+	 @Test(priority = 11)
+	 public void VerifyClientBusinessSuccessiorDetailsWithUncheckCopySamedataTospouseCheckBox() {
 		 LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickLegalModule();;	
 			util.holdOn(Duration.ofSeconds(4));	
-			LegalProfessionalElderLawAttorneyPage  ElaObj= new   LegalProfessionalElderLawAttorneyPage(util);
-		     ElaObj.GoToELAPageOnLegalProfessional();
+			LegalProfessionalBusinessSuccessiorPage LPBS=   new LegalProfessionalBusinessSuccessiorPage(util);
+			LPBS.GoToBusinessSuccessiorPageOnLegalProfessional();
 	    	util.holdOn(Duration.ofSeconds(3));
 			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.VerifyClientProfessionalDetailsWithUncheckCopySamedataTospouseCheckBox();

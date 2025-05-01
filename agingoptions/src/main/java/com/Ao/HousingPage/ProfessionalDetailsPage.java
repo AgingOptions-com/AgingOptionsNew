@@ -202,10 +202,8 @@ public class ProfessionalDetailsPage extends ProfessionalDetailspageOr {
 		wt.holdOn(Duration.ofSeconds(4));
 		Addaddress();
 		wt.click(contactTypeDropdown, "Contact type DropDown");
-		wt.click(OtherOptions, "Other Option on contact ");
+		wt.click(primaryContactOptions, "primary Option on contact ");
 		wt.holdOn(Duration.ofSeconds(3));
-		wt.sendValue(OthertypeTextBox, name, "Other Type text box");
-		wt.holdOn(Duration.ofSeconds(5));
 		wt.sendValueJs(PhoneNumber, "9845678766", "Phone number");
 		wt.sendValue(Email, name+"@yopmail.com", "email");
 		wt.click(SaveAndProceedTo, "save and proceed to");
@@ -442,7 +440,85 @@ public class ProfessionalDetailsPage extends ProfessionalDetailspageOr {
 		wt.holdOn(Duration.ofSeconds(3));
 		verifyAddedprofessionalCountInTable();
 	}
+	public void saveAndProceedSpouseFamilyLawAttorneyDetails() {
+		GotoClickSpouseToggleButton();
+		wt.holdOn(Duration.ofSeconds(3));
+		verifyClient(); 
+		verifyAddedprofessionalCountInTable();
+		goToClickAddRealtorButton();
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.click(Accordian, "Accordian");
+		wt.click(Accordian, "Accordian");
+		String name=randomName();
+		wt.sendValue(FirstName, name, "FirstName");
+		String lastname=randomName();
+		wt.sendValue(LastName, lastname, "LastName");
+		wt.sendValue(BusinessName, name +" pvt ltd ", "Business name");
+		wt.sendValue(WebSiteLink, "Ac.com", "WebSite Name");
+		wt.sendValue(NoteForAgent, "Not any note for agent", "Notes for Agent");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.verifyAttributeValue(CountryRegionField, "United States", "value");
+		wt.holdOn(Duration.ofSeconds(4));
+		Addaddress();
+		wt.click(contactTypeDropdown, "Contact type DropDown");
+		wt.click(OtherOptions, "Other Option on contact ");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.sendValue(OthertypeTextBox, name, "Other Type text box");
+		wt.holdOn(Duration.ofSeconds(5));
+		wt.sendValueJs(PhoneNumber, "9845678766", "Phone number");
+		wt.sendValue(Email, name+"@yopmail.com", "email");
+		wt.click(SaveAndProceedTo, "save and proceed to");
+		wt.holdOn(Duration.ofSeconds(8));
+		verifyBusinessSuccessiorPage();
+		wt.click(familyLawAttorneyDrawer, "family law attorney drawer");
+		wt.holdOn(Duration.ofSeconds(6));
+		wt.click(SpousetoggleButton, "Spouse toggle button");
+		wt.holdOn(Duration.ofSeconds(3));
+		verifyAddedprofessionalCountInTable();
+	}
+	public void GotoClickLegalSectonUnderSetUpPage() {
+		wt.click(LegalUnderSetUpPage, "Legal under SetUp page");
+	}
 	
+	public void saveAndProceedSpouseBusinessSuccessiorDetails() {
+		GotoClickSpouseToggleButton();
+		wt.holdOn(Duration.ofSeconds(3));
+		verifyClient(); 
+		verifyAddedprofessionalCountInTable();
+		goToClickAddRealtorButton();
+		wt.holdOn(Duration.ofSeconds(8));
+		wt.click(Accordian, "Accordian");
+		wt.click(Accordian, "Accordian");
+		String name=randomName();
+		wt.sendValue(FirstName, name, "FirstName");
+		String lastname=randomName();
+		wt.sendValue(LastName, lastname, "LastName");
+		wt.sendValue(BusinessName, name +" pvt ltd ", "Business name");
+		wt.sendValue(WebSiteLink, "Ac.com", "WebSite Name");
+		wt.sendValue(NoteForAgent, "Not any note for agent", "Notes for Agent");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.verifyAttributeValue(CountryRegionField, "United States", "value");
+		wt.holdOn(Duration.ofSeconds(4));
+		Addaddress();
+		wt.click(contactTypeDropdown, "Contact type DropDown");
+		wt.click(OtherOptions, "Other Option on contact ");
+		wt.holdOn(Duration.ofSeconds(3));
+		wt.sendValue(OthertypeTextBox, name, "Other Type text box");
+		wt.holdOn(Duration.ofSeconds(5));
+		wt.sendValueJs(PhoneNumber, "9845678766", "Phone number");
+		wt.sendValue(Email, name+"@yopmail.com", "email");
+		wt.click(SaveAndProceedTo, "save and proceed to");
+		wt.holdOn(Duration.ofSeconds(8));
+		VerifyMyServiceProvider();
+		wt.click(LegalUnderSetUpPage, "Legal Button under setuppage");
+		wt.holdOn(Duration.ofSeconds(5));
+		wt.click(LegalProfessionalDrawer, "Legal professional drawer");
+		wt.holdOn(Duration.ofSeconds(5));
+		wt.click(businessSuccessiorDrawer, "Business successior drawer");
+		wt.click(SpousetoggleButton, "Spouse toggle button");
+		wt.holdOn(Duration.ofSeconds(3));
+		verifyAddedprofessionalCountInTable();
+	}
 	public void SaveAndProceedSpouseLandScapperDetails() {
 		GotoClickSpouseToggleButton();
 		wt.holdOn(Duration.ofSeconds(3));
@@ -535,7 +611,6 @@ public class ProfessionalDetailsPage extends ProfessionalDetailspageOr {
 	}
 
 	public void UpdateProfessionalDetails() {
-
 		verifyClient();
 		verifyAddedprofessionalCountInTable();
 		goToClickAddRealtorButton();
@@ -576,7 +651,7 @@ public class ProfessionalDetailsPage extends ProfessionalDetailspageOr {
 		wt.click(UpdateButton, "Update button");
 		wt.holdOn(Duration.ofSeconds(10));
 		wt.clearTextBox(SearchBar);
-		wt.sendValueWithEnter(SearchBar, updatedName, "Name");
+		wt.sendValueWithEnter(SearchBar, name+updatedName, "Name");
 		GoToClickEditIcon();
 		wt.holdOn(Duration.ofSeconds(5));
 		String value=  wt.GetAttributevalue(FirstName, "value");
@@ -584,5 +659,52 @@ public class ProfessionalDetailsPage extends ProfessionalDetailspageOr {
 		wt.holdOn(Duration.ofSeconds(5));
 		wt.click(UpdateButton, "Update button");	
 
+	}
+	
+	public void VerifyClientProfessionalDetailsWithUncheckCopySamedataTospouseCheckBox() {
+		verifyClient();
+		  String ClientMortgageCount=	verifyAddedprofessionalCountInTable();
+		  wt.click(SpousetoggleButton, "Spouse toggle button");
+		  wt.holdOn(Duration.ofSeconds(3));
+			verifyClient();
+			  String spouseMortgageCount=	verifyAddedprofessionalCountInTable();
+			  wt.holdOn(Duration.ofSeconds(2));
+			  wt.click(primaryMemberToggleButton, "Primary member toggle button");
+			goToClickAddRealtorButton();
+			wt.holdOn(Duration.ofSeconds(7));
+			wt.click(Accordian, "Accordian");
+			wt.click(Accordian, "Accordian");
+			wt.verifyElementRadioButtonSelected(samedataToSpouseCheckBox, "Same data to spouse check box");
+			wt.click(samedataToSpouseCheckBox, "Same data to spouse check box");
+			String name=randomName();
+			wt.sendValue(FirstName, name, "FirstName");
+			String lastname=randomName();
+			wt.sendValue(LastName, lastname, "LastName");
+			wt.sendValue(BusinessName, name +" pvt ltd ", "Business name");
+			wt.sendValue(WebSiteLink, "Ac.com", "WebSite Name");
+			wt.sendValue(NoteForAgent, "Not any note for agent", "Notes for Agent");
+			wt.holdOn(Duration.ofSeconds(3));
+			wt.verifyAttributeValue(CountryRegionField, "United States", "value");
+			wt.holdOn(Duration.ofSeconds(4));
+			Addaddress();
+			wt.click(contactTypeDropdown, "Contact type DropDown");
+			wt.click(OtherOptions, "Other Option on contact ");
+			wt.holdOn(Duration.ofSeconds(3));
+			wt.sendValue(OthertypeTextBox, name, "Other Type text box");
+			wt.holdOn(Duration.ofSeconds(5));
+			wt.sendValueJs(PhoneNumber, "9845678766", "Phone number");
+			wt.sendValue(Email, name+"@yopmail.com", "email");
+		String ProceedbuttonText=	wt.getInnerText(SaveAndProceedTo);
+		wt.printDataInReport("Proceed button text-" + ProceedbuttonText );
+			wt.click(SaveAndProceedTo, "save and proceed to spouse button");
+			wt.holdOn(Duration.ofSeconds(8));
+			String SpouseProfessionalCount=verifyAddedprofessionalCountInTable();
+			  wt.click(primaryMemberToggleButton, "Primary member toggle button");
+			  wt.holdOn(Duration.ofSeconds(4));
+		   String AfteraddClientMortgageCount=	   verifyAddedprofessionalCountInTable();
+		   wt.printDataInReport("Before save the details Client mortgage count -" + ClientMortgageCount);
+		   wt.printDataInReport("Before save the details Spouse mortgage count -" + spouseMortgageCount);
+		   wt.printDataInReport("After save the details Client mortgage count -" + AfteraddClientMortgageCount );
+		   wt.printDataInReport("After save the details Spouse mortgage count -" +  SpouseProfessionalCount);
 	}
 }
