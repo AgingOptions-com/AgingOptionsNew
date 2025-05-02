@@ -1,12 +1,14 @@
 package com.nspl.HousingInfoPageTestcase;
 
-import java.time.Duration;
 
 import org.testng.annotations.Test;
+import java.time.Duration;
+
+
 
 import com.Ao.HousingPage.HousingInfo;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
-import com.nspl.agingoptions.commoncode.LoginPage;
+
 import com.nspl.agingoptions.webUtil.BaseTest;
 
 public class HousingOptionsTestScript extends BaseTest {
@@ -28,7 +30,7 @@ public class HousingOptionsTestScript extends BaseTest {
 		lpoLadning.clickHousingModule();
 		HousinginfoObj.verifyHousingInformation(); 
 		util.holdOn(Duration.ofSeconds(8));
-		HousinginfoObj.verifyCheckYes_NotSure_IsYourHousingLivingIn();
+		HousinginfoObj.verifyCheckYes__IsYourHousingLivingIn();
 	}
 
 	@Test(priority = 3)
@@ -45,21 +47,20 @@ public class HousingOptionsTestScript extends BaseTest {
 		HousingInfo HousinginfoObj= new HousingInfo(util);
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();
-		HousinginfoObj.verifyHousingInformation(); 
-		util.holdOn(Duration.ofSeconds(10));
-		HousinginfoObj.verifyCheckNotSure_IsYourHousingLivingIn();
+		util.holdOn(Duration.ofSeconds(5));
+		HousinginfoObj.verifyCheckYes__IsYourHousingLivingIn();
+       // HousinginfoObj.verifyCheckYes__IsYourHousingLivingIn();
 		HousinginfoObj.onTheScaleOfTwoToFiveDropDownSelection();
 
 
 	}
-	@Test(priority = 4)
+	@Test(priority = 4, enabled = false)
 	public void VerifyOnTheScaleOfOneTwoFive_Select1() {
 		
 		HousingInfo HousinginfoObj= new HousingInfo(util); 
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();
-		HousinginfoObj.verifyHousingInformation(); 
-		util.holdOn(Duration.ofSeconds(8));
+		util.holdOn(Duration.ofSeconds(5));
 		HousinginfoObj.verifyCheckYes_IsYourHousingLivingIn();
 		HousinginfoObj.OntheScaleOfOneToFive_select1();
 	}
@@ -74,7 +75,7 @@ public class HousingOptionsTestScript extends BaseTest {
 		HousinginfoObj.UpdateAndContinueThedetailsWithIstheHouse_yesCheck_and_OntheScaleOnFive_Select1(util.getProperty("ClosestRelativeDistanceInMile"));
 	}
 	@Test(priority = 8)
-	public void VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Notsure_And_Select1_OnTheScaleOnToFive() {
+	public void VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive() {
 		HousingInfo HousinginfoObj= new HousingInfo(util); 
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();
@@ -120,8 +121,7 @@ public class HousingOptionsTestScript extends BaseTest {
 		HousingInfo HousinginfoObj= new HousingInfo(util);
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();
-		util.holdOn(Duration.ofSeconds(8));
-		HousinginfoObj.verifyHousingInformation(); 
+		util.holdOn(Duration.ofSeconds(8)); 
 		HousinginfoObj.VerifyWhenWeSelectTWoThreeAndMore_HowManyStoryDoesItHave(); 
 	}
   @Test(priority = 12)

@@ -4,7 +4,7 @@ import java.time.Duration;
 
 import org.testng.annotations.Test;
 
-import com.Ao.HousingPage.HousingProfessionalDetailsPage;
+import com.Ao.HousingPage.ProfessionalDetailsPage;
 import com.Ao.HousingPage.HousingProfessionalHandyManPage;
 import com.Ao.HousingPage.HousingProfessionalMortgageBrokerPage;
 import com.Ao.HousingPage.HousingProfessional_realtor;
@@ -21,7 +21,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		HousingProfessionalHandyManPage handymanProfessionalObj=   new HousingProfessionalHandyManPage(util);
 		handymanProfessionalObj.GoToHandymanPageOnHousingInfo();
 		util.holdOn(Duration.ofSeconds(4));
-		HousingProfessionalDetailsPage housingProfessionlObj= new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionlObj= new ProfessionalDetailsPage(util);
 		util.holdOn(Duration.ofSeconds(7));
 		housingProfessionlObj.VerifyHandymanProfessional();;
 		
@@ -59,7 +59,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		HousingProfessionalHandyManPage housingHandyManObj=	 new HousingProfessionalHandyManPage(util);
 		housingHandyManObj.GoToHandymanPageOnHousingInfo();
 		util.holdOn(Duration.ofSeconds(7));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.addProfessionalForPrimaryMember();
 	}
 	@Test
@@ -70,7 +70,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		HousingProfessionalHandyManPage housingHandyManObj=	 new HousingProfessionalHandyManPage(util);
 		housingHandyManObj.GoToHandymanPageOnHousingInfo();
 		util.holdOn(Duration.ofSeconds(4));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndAddAnotherprimaryMemberProfessionalDetails();
 	}
 	@Test
@@ -81,8 +81,9 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		HousingProfessionalHandyManPage housingHandyManObj=	 new HousingProfessionalHandyManPage(util);
 		housingHandyManObj.GoToHandymanPageOnHousingInfo();
 		util.holdOn(Duration.ofSeconds(6));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util); 
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util); 
 		housingProfessionalObj.saveAndProceedPrimaryMemberProfessionalDetail();
+		housingProfessionalObj.VerifyLandScapperPage();
 	}
 	@Test
 	public void VerifySaveAndContinueSpouseHandymanDetails() {
@@ -92,7 +93,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		HousingProfessionalHandyManPage housingHandyManObj=	 new HousingProfessionalHandyManPage(util);
 		housingHandyManObj.GoToHandymanPageOnHousingInfo();
 		util.holdOn(Duration.ofSeconds(4));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.saveAndContinueProfessionalDetailsForSpouse();
 	}
 	@Test
@@ -103,7 +104,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		HousingProfessionalHandyManPage housingHandyManObj=	 new HousingProfessionalHandyManPage(util);
 		housingHandyManObj.GoToHandymanPageOnHousingInfo();
 		util.holdOn(Duration.ofSeconds(4));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndAddAnotherSpouseProfessionalDetails();
 	}
 	@Test(enabled = false)
@@ -114,7 +115,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		HousingProfessionalHandyManPage housingHandyManObj=	 new HousingProfessionalHandyManPage(util);
 		housingHandyManObj.GoToHandymanPageOnHousingInfo();
 		util.holdOn(Duration.ofSeconds(4));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndProceedSpouseHandyManDetails();
 	}
 	@Test
@@ -125,7 +126,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		HousingProfessionalHandyManPage housingHandyManObj=	 new HousingProfessionalHandyManPage(util);
 		housingHandyManObj.GoToHandymanPageOnHousingInfo();
 		util.holdOn(Duration.ofSeconds(4));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.copysamedataToSpouseProfessionalDetails();
 	}
 	@Test
@@ -136,7 +137,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		HousingProfessionalHandyManPage housingHandyManObj=	 new HousingProfessionalHandyManPage(util);
 		housingHandyManObj.GoToHandymanPageOnHousingInfo();
 		util.holdOn(Duration.ofSeconds(3));
-		HousingProfessionalDetailsPage housingProfessionalObj=	new HousingProfessionalDetailsPage(util);
+		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.UpdateProfessionalDetails();
 	}
 }

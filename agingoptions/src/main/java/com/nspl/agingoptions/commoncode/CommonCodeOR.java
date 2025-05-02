@@ -65,7 +65,7 @@ public class CommonCodeOR   {
 	@FindBy(xpath="(//span[text()='Family'])[1]")
 	protected WebElement familySideIcon;
 
-	@FindBy(xpath="//button[contains(text(),'+ New Registration')]")
+	@FindBy(xpath="(//div[@class='NewRegImg mt-lg-0'])[1]//img")
 	protected WebElement newRegistrationBT;
 
 	@FindBy(xpath="//input[@id='firstName']")

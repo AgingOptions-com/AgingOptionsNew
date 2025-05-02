@@ -873,7 +873,7 @@ public class WebUtil {
 	public void verifyActualExpectedTextContains(String actualText, String expectedText, String elementName) {
 		String actual =actualText.trim();
 		String expected=expectedText.trim();
-		if (actual.contains(expected)) {
+		if (actual.equalsIgnoreCase(expected)) {
 			extTest.log(Status.PASS, "Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " ' Verify Successfully " + elementName);
 			print("Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText

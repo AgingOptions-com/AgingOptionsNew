@@ -6,9 +6,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.nspl.agingoptions.webUtil.WebUtil;
 
-public class HousingProfessionalDetailspageOr {
+public class ProfessionalDetailspageOr {
 
-	public HousingProfessionalDetailspageOr(WebUtil wt) {
+	public ProfessionalDetailspageOr(WebUtil wt) {
 		PageFactory.initElements(wt.getDriver(), this);
 		
 		
@@ -135,6 +135,50 @@ public class HousingProfessionalDetailspageOr {
 	@FindBy(xpath="//span[text()='Handyman']")
 	protected WebElement handyManSection;
 	
+	@FindBy(xpath="(//p[text()='Landscaper'])[2]")
+	protected WebElement LandscapperPageInnerText;
+	
 	@FindBy(xpath="//p[text()='Handyman Services']")
 	protected WebElement Handymaninnertext;
+	
+	@FindBy(xpath="//span[text()=' Financial information']")
+	protected WebElement FinancialInfoPageText;
+	
+	@FindBy(xpath="(//p[text()='Landscaper'])[2]")
+	protected WebElement LandScapperPageText;
+	
+	@FindBy(xpath="//input[@placeholder='Search']")
+	protected WebElement SearchBar;
+	
+	@FindBy(xpath="//p[text()='Elder Attorneys ']")
+	protected WebElement ElderatorneyText;
+	
+	@FindBy(xpath="(//p[text()='Family Law Attorney'])[2]")
+	protected WebElement FamilyLawAttorneyText;
+	
+	@FindBy(xpath="//p[text()='Business Successors']")
+	protected WebElement businessSuccessior;
+	
+	@FindBy(xpath="//span[text()='My service provider']")
+	protected WebElement Myserviceprovider;
+	
+	@FindBy(xpath="//span[text()='Elder Law Attorney']")
+	protected WebElement ElderLawAttorneyDrawer;
+	
+	@FindBy(xpath="//span[text()='Landscaper']")
+	protected WebElement landScapperDrawer;
+	
+	@FindBy(xpath="//span[text()='Family Law Attorney']")
+	protected WebElement familyLawAttorneyDrawer;
+	
+	@FindBy(xpath="(//span[text()='Legal'])[1]")
+	protected WebElement LegalUnderSetUpPage;
+	
+	@FindBy(xpath="//span[text()='Legal Professionals']")
+	protected WebElement LegalProfessionalDrawer;
+	
+	@FindBy(xpath="//span[text()='Tax & Business succession']")
+	protected WebElement businessSuccessiorDrawer;
+	
+	
 }
