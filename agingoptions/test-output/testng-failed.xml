@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.nspl.agingoptions.financepage.testcases.RealEstateTestCases">
+      <class name="com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases">
         <methods>
           <include name="afterClass"/>
+          <include name="verifySaveAndContinueWithAddNewDocument"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="FTC_009_AddRealEstateSaveAndProceedToBussinessInterestButton"/>
-          <include name="afterMethod"/>
           <include name="beforeTest"/>
-          <include name="FTC_007_AddRealEstateSaveContinueLaterButton"/>
+          <include name="afterMethod"/>
           <include name="afterSuite"/>
-          <include name="FTC_008_AddRealEstateSaveAddAnotherButton"/>
+          <include name="verifySaveAndContinueWithWillTypeDocuments"/>
+          <include name="beforeClass"/>
+          <include name="verifyNewCommonDocumentList"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases -->
+      <class name="com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript">
+        <methods>
+          <include name="afterClass"/>
+          <include name="VerifyWhenWeMakeSpecialNeedsMemberAsFiduciary"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="verifyAgeValidationForFiduciary"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="VerifyWhenWeMakeFiduciaryBeneficiryMemberDeceased"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.financepage.testcases.RealEstateTestCases -->
+      </class> <!-- com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
