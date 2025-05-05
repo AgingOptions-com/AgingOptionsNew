@@ -26,6 +26,10 @@ import java.util.concurrent.TimeoutException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import javax.activation.DataHandler;
+import javax.activation.FileDataSource;
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.ElementNotInteractableException;
@@ -2020,18 +2024,22 @@ public class WebUtil {
 			throw e;
 		}
 	}
-	public void waitUntilElementIsAppearInThePage(WebElement we, long seconds) {
-		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
-			wait.until(ExpectedConditions.visibilityOf(we));
-			System.out.println("Element disappeared from the page.");
-		} catch (StaleElementReferenceException e) {
-			System.out.println("Element was removed from the DOM.");
-		}  catch (Exception e) {
-			System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
-		}
-	}
+// <<<<<<< HousingInfo
+  
+// =======
+// 	public void waitUntilElementIsAppearInThePage(WebElement we, long seconds) {
+// 		try {
+// 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+// 			wait.until(ExpectedConditions.visibilityOf(we));
+// 			System.out.println("Element disappeared from the page.");
+// 		} catch (StaleElementReferenceException e) {
+// 			System.out.println("Element was removed from the DOM.");
+// 		}  catch (Exception e) {
+// 			System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
+// 		}
+// 	}
 
+// >>>>>>> master
 
 
 
