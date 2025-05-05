@@ -448,18 +448,15 @@ public class WebUtil {
 	// ===========================================load property
 	// file===============================
 	public void loadProperty() {
-		prop = new Properties();
-		try {
-			InputStream file = new FileInputStream(
-					System.getProperty("user.dir") + "\\src\\main\\resources\\prop.properties");
-			try {
-				prop.load(file);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
+	    prop = new Properties();
+	    try (InputStream file = getClass().getClassLoader().getResourceAsStream("prop.properties")) {
+	        if (file == null) {
+	            throw new FileNotFoundException("Property file 'prop.properties' not found in the classpath");
+	        }
+	        prop.load(file);
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
 	}
 
 	// ===========================================getproperty file
@@ -2027,7 +2024,22 @@ public class WebUtil {
 			throw e;
 		}
 	}
+// <<<<<<< HousingInfo
   
+// =======
+// 	public void waitUntilElementIsAppearInThePage(WebElement we, long seconds) {
+// 		try {
+// 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+// 			wait.until(ExpectedConditions.visibilityOf(we));
+// 			System.out.println("Element disappeared from the page.");
+// 		} catch (StaleElementReferenceException e) {
+// 			System.out.println("Element was removed from the DOM.");
+// 		}  catch (Exception e) {
+// 			System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
+// 		}
+// 	}
+
+// >>>>>>> master
 
 
 

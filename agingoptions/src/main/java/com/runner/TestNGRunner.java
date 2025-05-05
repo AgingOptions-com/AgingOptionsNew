@@ -14,10 +14,14 @@ import org.testng.TestNG;
 public class TestNGRunner {
 
 	public static void main(String[] args) {
-		  TestNG testng = new TestNG();
-		  String suite = System.getProperty("user.dir") + File.separator + "testng.xml";
-		  testng.setTestSuites(Collections.singletonList(suite));
-		  testng.run();
-		}
+	    TestNG testng = new TestNG();
+
+	    // Go one level up from the current directory (target) to find testng.xml
+	    String suite = System.getProperty("user.dir") + File.separator + ".." + File.separator + "testng.xml";
+
+	    testng.setTestSuites(Collections.singletonList(suite));
+	    testng.run();
+	}
+
 
 }

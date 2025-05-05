@@ -358,5 +358,31 @@ public class CommonCode extends CommonCodeOR {
 		String text=	util.getInnerText(personalInfoText);
 		return text;
 	}
+	public void unCheckCopySameDataToSpouseCheckBox() {
+		try {
+			util.holdOn(Duration.ofSeconds(1));
+			util.unCheckCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
+			util.waitUntilElementIsDeselected(copySameDataToSpouseCheckBox, 10);
+		} catch (Exception e) {
+			util.unCheckCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
+		}
+	}
+	
+	@FindBy(xpath="//input[@id='insStartDate']")
+	private WebElement coverageStartDateTB;
 
+	public void inputInsuranceStartDate(String value) {
+		util.sendValue(coverageStartDateTB, value, "Coverage start date");
+	}
+	
+	public String getCoverageStartInputText() {
+		String value=	  util.GetAttributevalue(coverageStartDateTB, "value");
+		String date=	util.convertDateFormatMMDDYYYY(value);
+		return date;
+	}
+
+	public void waitUntilToasterMessageisSeen() {
+		util.waitUntilElementIsAppearInThePage(toasterMessage, 40);
+	}
+	
 }

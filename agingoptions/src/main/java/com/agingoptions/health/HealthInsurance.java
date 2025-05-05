@@ -117,12 +117,7 @@ public class HealthInsurance {
 		util.sendValue(outOfPocketMaximumTB, value, "Out of pocket maximum");
 	}
 
-	@FindBy(xpath="//input[@id='insStartDate']")
-	private WebElement coverageStartDateTB;
-
-	public void inputInsuranceStartDate(String value) {
-		util.sendValue(coverageStartDateTB, value, "Coverage start date");
-	}
+	
 
 	@FindBy(xpath="//input[@id='insEndDate']")
 	private WebElement coverageEndDateTB;
@@ -237,12 +232,6 @@ public class HealthInsurance {
 		String value=	  util.GetAttributevalue(outOfPocketMaximumTB, "value");
 		String amount=	util.convertAmountActualValue(value);
 		return amount;
-	}
-
-	public String getCoverageStartInputText() {
-		String value=	  util.GetAttributevalue(coverageStartDateTB, "value");
-		String date=	util.convertDateFormatMMDDYYYY(value);
-		return date;
 	}
 
 	public String getCoverageEndInputText() {
