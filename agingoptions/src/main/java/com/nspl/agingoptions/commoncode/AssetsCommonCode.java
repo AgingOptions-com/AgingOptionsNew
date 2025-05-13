@@ -83,7 +83,7 @@ public class AssetsCommonCode {
 		return actualValue;
 	}
 
-	@FindBy(xpath="//p[text()='Address']/following-sibling::input")
+	@FindBy(xpath="//p[     translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ*', 'abcdefghijklmnopqrstuvwxyz') = 'address' ]/following-sibling::input")
 	private WebElement addressTB;
 
 	public void inputAddress(String value) {
@@ -94,6 +94,7 @@ public class AssetsCommonCode {
 		util.DownKey();
 		util.DownKey();
 		util.pressEnter();
+		util.holdOn(Duration.ofSeconds(1));
 		util.DownKey();
 		util.DownKey();
 		util.pressEnter();
@@ -210,16 +211,49 @@ public class AssetsCommonCode {
 	public void openDocumentUploadAccoridian() {
 		util.openAccordion(documentUploadAccordian, "Document Upload Accoridan");
 	}
-	
+
 	@FindBy(xpath="//span[contains(text(),'Transport Assets')]")
 	private WebElement transportAssetsSideBarLink;
-	
+
 	public void clickTransportAssetsSideBarLink() {
 		util.click(transportAssetsSideBarLink, "Transport Assets");
 	}
-	
-	
-	
+
+	@FindBy(xpath="//div[@id='CustomSubSideBarLinks-sidebar']//span[contains(text(),'Life Insurance')]")
+	private WebElement lifeInsuranceSidebarLink;
+
+	public void clickLifeInsuranceSidebarLink() {
+		util.click(lifeInsuranceSidebarLink, "Life Insurance");
+	}
+
+	@FindBy(xpath="//span[contains(text(),'Long-Term Care Policy')]")
+	private WebElement longTermCarePolicySideBarLink;
+
+	public void clickLongTermCarePolicySideBarLink() {
+		util.click(longTermCarePolicySideBarLink, "Long-Term Care Policy");
+	}
+
+	@FindBy(xpath="//button[contains(text(),'Add Policy')]")
+	private WebElement addPolicyBT;
+
+	public void clickAddPolicyButton() {
+		util.click(addPolicyBT, "Add Policy Button");
+	}
+
+	@FindBy(xpath="//span[contains(text(),'Future Expectations')]")
+	private WebElement futureExpectationSideBarLink;
+
+	public void clickFutureExpecationSideBarLink() {
+		util.click(futureExpectationSideBarLink, "Future Expecation Side Bar Link");
+	}
+
+    @FindBy(xpath="//span[contains(text(),'Income')]")
+    private WebElement incomeSideBarLink;
+    
+    public void clickIncomeSideBarLink() {
+    	util.click(incomeSideBarLink, "Income");
+    }
+
 
 
 
