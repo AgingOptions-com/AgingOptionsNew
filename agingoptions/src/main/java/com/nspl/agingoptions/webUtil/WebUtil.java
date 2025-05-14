@@ -1,16 +1,14 @@
 package com.nspl.agingoptions.webUtil;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.io.File;
-import java.io.FileInputStream;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.NoSuchFileException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -22,12 +20,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
-import java.util.concurrent.TimeoutException;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.activation.DataHandler;
-import javax.activation.FileDataSource;
+
 
 
 import org.openqa.selenium.By;
@@ -130,8 +127,19 @@ public class WebUtil {
 	// mode=====================================================
 	public void launchBrowserHeadlessMode(String browserName) {
 		if (browserName.contains("chrome")) {
+			WebDriverManager.chromedriver().driverVersion("136.0.7103.49").setup();
+//			WebDriverManager.chromedriver().driverVersion("136.0.7103.49").setup();
+			 System.out.print("BrowserIs launched");
 			ChromeOptions opt = new ChromeOptions();
-			opt.addArguments("--headless");
+			HashMap<String, Object> prefs = new HashMap<>();
+			prefs.put("profile.default_content_setting_values.notifications", 2);// this will block the browser
+			// notification
+			prefs.put("credentials_enable_service", false);// this and below code will block the save password pop-up
+			prefs.put("profile.password_manager_enabled", false);
+			opt.setExperimentalOption("prefs", prefs);
+			opt.addArguments("--start-maximized");
+			 opt.addArguments("--remote-allow-origins=*");
+			opt.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
 			driver = new ChromeDriver(opt);
 		} else if (browserName.contains("edge")) {
 			EdgeOptions opt = new EdgeOptions();
@@ -151,7 +159,7 @@ public class WebUtil {
 	// Browser=====================================================
 	public void launchBrowser(String browserName) {
 		if (browserName.contains("chrome")) {
-			WebDriverManager.chromedriver().driverVersion("135.0.7049").setup();
+			WebDriverManager.chromedriver().driverVersion("136.0.7103.49").setup();
 			 System.out.print("BrowserIs launched");
 			ChromeOptions opt = new ChromeOptions();
 			HashMap<String, Object> prefs = new HashMap<>();
@@ -161,6 +169,7 @@ public class WebUtil {
 			prefs.put("profile.password_manager_enabled", false);
 			opt.setExperimentalOption("prefs", prefs);
 			opt.addArguments("--start-maximized");
+			 opt.addArguments("--remote-allow-origins=*");
 			opt.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
 			try{
 				driver = new ChromeDriver(opt);}
@@ -2027,19 +2036,19 @@ public class WebUtil {
 // <<<<<<< HousingInfo
   
 // =======
-// 	public void waitUntilElementIsAppearInThePage(WebElement we, long seconds) {
-// 		try {
-// 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
-// 			wait.until(ExpectedConditions.visibilityOf(we));
-// 			System.out.println("Element disappeared from the page.");
-// 		} catch (StaleElementReferenceException e) {
-// 			System.out.println("Element was removed from the DOM.");
-// 		}  catch (Exception e) {
-// 			System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
-// 		}
-// 	}
+	public void waitUntilElementIsAppearInThePage(WebElement we, long seconds) {
+ 		try {
+ 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+ 			wait.until(ExpectedConditions.visibilityOf(we));
+ 			System.out.println("Element disappeared from the page.");
+ 		} catch (StaleElementReferenceException e) {
+ 			System.out.println("Element was removed from the DOM.");
+ 		}  catch (Exception e) {
+ 			System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
+		}
+ 	}
 
-// >>>>>>> master
+
 
 
 

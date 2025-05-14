@@ -44,11 +44,11 @@ public class BaseTest {
 	public void beforeTest() {
 		extTest = extReports.createTest("Dummy");
 		util.setExtent(extTest);
-		util.launchBrowser(util.getProperty("browserName"));
+		util.launchBrowserHeadlessMode(util.getProperty("browserName"));
 		util.hitUrl(util.getProperty("url"));
 		CommonCode common=	new CommonCode(util);
-		common.loginParalegalTutaEmailPassword();
-		//common.loginWithParalegalYopmail();
+//		common.loginParalegalTutaEmailPassword();
+		common.loginWithParalegalYopmail();
 		common.LoginWithNewMarriedUser();
 		extReports.removeTest(extTest);
 		extTest = null;

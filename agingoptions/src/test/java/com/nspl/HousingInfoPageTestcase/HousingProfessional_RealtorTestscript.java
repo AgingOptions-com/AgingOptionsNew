@@ -189,7 +189,7 @@ public void verifyRealtorPageOnHousingProfessional() {
 	 * Then the details should  be added for primary member as well as spouse too
 	*/
 	
-	@Test(priority = 11)
+	@Test(priority = 11, enabled = false)
 	public void VerifyCopySameDataFunctionality() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	

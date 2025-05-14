@@ -68,5 +68,14 @@ public class LpoLandingPage {
 		util.click(LegalButtonUndersetUp, "Legal Module");	
 	}
 	
+	@FindBy(xpath="(//span[text()='My Service Providers'])[1]")
+	protected WebElement MyServiceProviderSectionUndersetUpPage; 
+	
+	public void ClickMyServiceProvider() {
+		util.holdOn(Duration.ofSeconds(5));
+		util.waitUntilPresentInUI(MyServiceProviderSectionUndersetUpPage, "My service provider");
+		util.waitUntilElementToBeClickable(MyServiceProviderSectionUndersetUpPage);
+		util.click(MyServiceProviderSectionUndersetUpPage, "My service provider Module");	
+	}
 
 }

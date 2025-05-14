@@ -74,6 +74,7 @@ public class HousingInfo extends HousingInfoOr{
 
 	}
 	public void OntheScaleOfOneToFive_select1() {
+		 wt.openAccordion(LivingArrangementAccordian, "Living Arrangement Accordian");
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On the scale of One to five own Home ..dropdown");
 		wt.click(OntheScaledropDown_option1, "option 1");
 		wt.isNotDisplayed(CaregiverSuitability, "CareGiver suitability text");
@@ -82,6 +83,7 @@ public class HousingInfo extends HousingInfoOr{
 		assertObj.assertAll();
 	}
 	public void UpdateAndContinueThedetailsWithIstheHouse_yesCheck_and_OntheScaleOnFive_Select1(String closestrelativedistanceInMiles) {
+		 wt.openAccordion(LivingArrangementAccordian, "Living Arrangement Accordian");
 		verifyCheckYes_IsYourHousingLivingIn();
 		verifyCheckYes_IsYourHousingLivingIn();
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On The Scale On One To Five Own Home Drop Down");
@@ -94,9 +96,10 @@ public class HousingInfo extends HousingInfoOr{
 		wt.click(WouldYouConsiderToMovingRetirementCommunity_Yes, "would you consider to moving retirement community radio button");
 		wt.click(updateAndContinueButton, "Update and continue");
 		wt.holdOn(Duration.ofSeconds(3));
-	       wt.click(accordian,"accordian");
+	     
 	}
 	public void SaveAndProceedThedetailsWithIstheHouse_NotsureCheck_and_OntheScaleOnFive_Select1(String closestrelativedistanceInMiles) {
+		 wt.openAccordion(LivingArrangementAccordian, "Living Arrangement Accordian");
 		verifyCheckYes_IsYourHousingLivingIn();
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On The Scale On One To Five Own Home Drop Down");
 		wt.click(ClosestRelativeDropdown, "Closest Relative DropDown");
@@ -118,6 +121,7 @@ public class HousingInfo extends HousingInfoOr{
 		wt.click(HousingOptionsection, "Housingoption section");
 	}
 	public void UpdateAndContinueTheDetailsIsTheHouseYouAreLivingWith_NoRadioButtonSelected(String RetirementPlace) {
+		  wt.openAccordion(LivingArrangementAccordian, "Living Arrangement Accordian");
 		wt.click(IsYourHousingLivingNoCheckBox, "Is the House You are Living In No Radio button");
 		wt.sendValue(WhereWouldYouLikeTORetireTB, RetirementPlace, "Where Would you want to retire");
 		wt.click(ClosestRelativeDropdown, "Closest relative dropdown");
@@ -135,6 +139,7 @@ public class HousingInfo extends HousingInfoOr{
 	}
 
 	public void SaveAndNextToHousingProfessional_ThedetailsTheHousingYouAreLivingWith_NoRadioButtonSelected(String RetirementPlace) {
+		 wt.openAccordion(LivingArrangementAccordian, "Living Arrangement Accordian");
 		wt.clickRadioButton(IsYourHousingLivingNoCheckBox, "Is the House You are Living In No Radio button");
 		wt.clearTextBox(WhereWouldYouLikeTORetireTB);
 		wt.sendValue(WhereWouldYouLikeTORetireTB, RetirementPlace, "Where Would you want to retire");
@@ -151,6 +156,7 @@ public class HousingInfo extends HousingInfoOr{
 
 	}
 	public void verifyHowManyStoriesDoesItHaveOptions() throws InterruptedException {
+		 wt.openAccordion(LivingArrangementAccordian, "Living Arrangement Accordian");
 		wt.holdOn(Duration.ofSeconds(1));
 		wt.click(isYourHousingLivingYesCheckBox, "Is the housing Living With Not sure Radio Button");
 		wt.holdOn(Duration.ofSeconds(3));
@@ -169,6 +175,7 @@ public class HousingInfo extends HousingInfoOr{
 	 
 	}
 	public void VerifyWhenWeSelectTWoThreeAndMore_HowManyStoryDoesItHave() throws InterruptedException {
+		 wt.openAccordion(LivingArrangementAccordian, "Living Arrangement Accordian");
 		wt.holdOn(Duration.ofSeconds(1));
 		wt.click(isYourHousingLivingYesCheckBox, "Is the housing Living With yes Radio Button");
 		wt.click(isYourHousingLivingYesCheckBox, "Is the housing Living With yes sure Radio Button");
@@ -190,6 +197,7 @@ public class HousingInfo extends HousingInfoOr{
 		wt.isDisplayed(WhatFloorIsLaundryOn_InnerText, "What floor is laundry on text box");
 	}  
    public void VerifyUpdateAndContinueWhenSelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive(String ClosestrelativeDistance) {
+	   wt.openAccordion(LivingArrangementAccordian, "Living Arrangement Accordian");
 	   wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in");
 	   wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in");
 	   wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On the scale of five own dropdown");
@@ -225,6 +233,7 @@ public class HousingInfo extends HousingInfoOr{
 
    }
    public void VerifySaveAndProceedToProfessionalWhenSelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive() {
+	   wt.openAccordion(LivingArrangementAccordian, "Living Arrangement Accordian");
 	   wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in");
 	   wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in");
 	   wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On the scale of five own dropdown");

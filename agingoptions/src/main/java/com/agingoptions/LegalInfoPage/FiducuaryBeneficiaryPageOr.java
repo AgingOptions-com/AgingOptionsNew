@@ -63,15 +63,15 @@ public class FiducuaryBeneficiaryPageOr {
   protected WebElement RelationShipWithSpouseDropDown;
   @FindBy(xpath="//div[@id='custom-textarea-field']//textarea")
   protected WebElement PlaceOfBirthTB;
-  @FindBy(xpath="(//span[@tabindex='26'])[1]")
+  @FindBy(xpath="(//p[text()='Yes'])[3]/preceding-sibling::span")
   protected WebElement MakeThisAsEmergencyYesRadioButton;
-  @FindBy(xpath="(//span[@tabindex='39'])[1]")
+  @FindBy(xpath="(//p[text()='Yes'])[2]/preceding-sibling::span")
   protected WebElement isThisExtendedEmployedYesRadioButton;
-  @FindBy(xpath="(//span[@tabindex='39'])[2]")
+  @FindBy(xpath="(//p[text()='No'])[2]/preceding-sibling::span")
   protected WebElement isThisExtendedEmployedNoRadioButton;
-  @FindBy(xpath="(//span[@tabindex='45'])[1]")
+  @FindBy(xpath="(//p[text()='Yes'])[1]/preceding-sibling::span")
   protected WebElement AreYouDisabledWithSpecialNeedsYes;
-  @FindBy(xpath="(//span[@tabindex='45'])[2]")
+  @FindBy(xpath="(//p[text()='No'])[1]/preceding-sibling::span")
   protected WebElement AreYouDisabledWithSpecialNeedsNo;
   @FindBy(xpath="//p[text()='Are you disabled / with special needs?']/parent::div//div//p[text()='Yes']")
   protected WebElement SpecialNeedsRadioButtonYes;
@@ -139,7 +139,7 @@ public class FiducuaryBeneficiaryPageOr {
   protected WebElement updateButton;
   @FindBy(xpath="(//div[@class='form-check-smoke'])[2]//input")
   protected WebElement FiduciaryCheckBoxSearchedMember;
-  @FindBy(xpath="(//label[@class='radio-label mx-2 d mt-2 mb-0 custom-checkbox'])[2]//p")
+  @FindBy(xpath="//p[text()='Deceased']/preceding-sibling::span")
   protected WebElement DeceasedRadioButton;
   @FindBy(xpath="//div[text()='No Data Found']")
   protected WebElement NoDataFoundText;

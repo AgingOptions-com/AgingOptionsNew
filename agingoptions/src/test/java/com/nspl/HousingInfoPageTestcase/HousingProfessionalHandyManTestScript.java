@@ -26,7 +26,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		housingProfessionlObj.VerifyHandymanProfessional();;
 		
 	}
-	@Test
+	@Test(priority = 2)
 	public void VerifyIdONotHaveHandymanCheckBoxFunctionality() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();
@@ -34,7 +34,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		HousingProfessionalHandyManPage housingHandyManObj=	 new HousingProfessionalHandyManPage(util);
 		housingHandyManObj.IdoNotHavehandymanFunctionality();
 	}
-	@Test
+	@Test(priority = 3 )
 	public void VerifyClickIDoNotHaveHandymanCheckBox() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();
@@ -42,7 +42,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		HousingProfessionalHandyManPage housingHandyManObj=	 new HousingProfessionalHandyManPage(util);
 		housingHandyManObj.ClickIdoNotHaveHandyman();
 	}
-	@Test
+	@Test(priority = 11)
 	public void verifyToggleButton() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
@@ -51,7 +51,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		housingHandyManObj.verifytoggleButton();
 
 	}
-	@Test
+	@Test(priority = 4)
 	public void verifyaddHandymanForPraimaryMember() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
@@ -62,7 +62,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.addProfessionalForPrimaryMember();
 	}
-	@Test
+	@Test(priority = 5)
 	public void VerifySaveAndAddAnotherPrimaryMemberHandymanDetails() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
@@ -73,7 +73,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndAddAnotherprimaryMemberProfessionalDetails();
 	}
-	@Test
+	@Test(priority = 6)
 	public void VerifySaveAndproceedPrimaryMemberHandyManDetails() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
@@ -85,7 +85,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		housingProfessionalObj.saveAndProceedPrimaryMemberProfessionalDetail();
 		housingProfessionalObj.VerifyLandScapperPage();
 	}
-	@Test
+	@Test(priority = 7)
 	public void VerifySaveAndContinueSpouseHandymanDetails() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
@@ -96,7 +96,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.saveAndContinueProfessionalDetailsForSpouse();
 	}
-	@Test
+	@Test(priority = 8)
 	public void VerifySaveAndAddAnotherSpouseHandymanDetails() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
@@ -107,7 +107,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndAddAnotherSpouseProfessionalDetails();
 	}
-	@Test(enabled = false)
+	@Test(priority = 9)
 	public void VerifySaveAndProceedSpouseHandymanDetails() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
@@ -118,7 +118,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.SaveAndProceedSpouseHandyManDetails();
 	}
-	@Test
+	@Test(enabled = false)
 	public void VerifyCopySameDataFunctionality() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	
@@ -129,7 +129,7 @@ public class HousingProfessionalHandyManTestScript extends BaseTest {
 		ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 		housingProfessionalObj.copysamedataToSpouseProfessionalDetails();
 	}
-	@Test
+	@Test(priority = 10)
 	public void VerifyUpdateHandymanDetails() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	

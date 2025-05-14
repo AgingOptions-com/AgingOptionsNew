@@ -282,7 +282,7 @@ public class CommonCode extends CommonCodeOR {
 		commonpage.searchYopEmail(util.getProperty("paralegalemail"));
 		util.holdOn(Duration.ofSeconds(5));
 		String otp = commonpage.gettextOfOTP();
-		util.switchToWindowByUrlContains(util.getProperty("url") + "/Account/verifyOtp", "Otp Verify Page");
+		util.switchToWindowByUrlContains(util.getProperty("url")+ "/Account/verifyOtp", "Otp Verify Page");
 		commonpage.inputotp(otp);
 		commonpage.clickVerifyOtpButton();
 		util.holdOn(Duration.ofSeconds(5));

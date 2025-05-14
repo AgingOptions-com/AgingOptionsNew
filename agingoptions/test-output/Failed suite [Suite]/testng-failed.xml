@@ -1,12 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.nspl.agingoptions.webUtil.MyAnnotationTransformer"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)(failed)">
     <classes>
-      <class name="com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases">
+      <class name="com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="VerifyUpdateBusinessSuccessiorDetails"/>
+        </methods>
+      </class> <!-- com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior -->
+      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="VerifyUpdateHandymanDetails"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="verifyToggleButton"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript -->
+      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="VerifyUpdateRealtorDetails"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript -->
+      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
@@ -15,40 +52,76 @@
           <include name="afterMethod"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
-          <include name="TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton"/>
-          <include name="TC_024_PrimaryMemberSpecialistSaveDetailsSaveAndProceedToSpouseButton"/>
+          <include name="VerifyUpdateLandScappeDetails"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases -->
-      <class name="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases">
-        <methods>
-          <include name="TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian"/>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="TC_018_inputSpouseCarePhysicianAndSave"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="TC_017_inputPrimaryMemberCarePhysicianAndSave"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="TC_016_SpouseIDontHavePrimaryCarePhyscian"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases -->
-      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases">
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript -->
+      <class name="com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
+          <include name="VerifyUpdateAndContinue_SelectIsYourHouseLivingInNotsureCheckAndSelectTwoOntheScaleOfOneTwoFive"/>
           <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="TC_007_Health_LifeStyleGeneralHealthNutritionDetails"/>
           <include name="afterMethod"/>
+          <include name="beforeTest"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases -->
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript -->
+      <class name="com.nspl.LegalInfoTestScript.LegalProfessionalElA">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="VerifyUpdateElderLawAttorneyDetails"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.LegalInfoTestScript.LegalProfessionalElA -->
+      <class name="com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts">
+        <methods>
+          <include name="afterClass"/>
+          <include name="VerifyUpdateFamilyLawAttorneyDetails"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts -->
+      <class name="com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="verifyClickNoRadioButton_DoYouCurrentlyhaveLegalPlanning"/>
+          <include name="verifyNewCommonDocumentList"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases -->
+      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="VerifyUpdateMortgageBrokerDetails"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript -->
     </classes>
   </test> <!-- Test(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Suite]] -->

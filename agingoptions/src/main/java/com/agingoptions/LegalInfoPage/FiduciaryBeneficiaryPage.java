@@ -33,7 +33,7 @@ public class FiduciaryBeneficiaryPage  extends FiducuaryBeneficiaryPageOr{
 		wt.printDataInReport("Primary Member fiduciary beneficiary");
 		for(int i=0; i<ListObj.size(); i++) {
 			String fiduciaryBeneficirypageMember=ListObj.get(i).getText();
-			wt.print(i+"."+fiduciaryBeneficirypageMember);
+			wt.printDataInReport(i+"."+fiduciaryBeneficirypageMember);
 		}
 		wt.click(spousetogglebuttontext, "Spouse toggle button");
 		String Spousetext=	wt.getInnerText(spousetogglebuttontext);
@@ -48,7 +48,7 @@ public class FiduciaryBeneficiaryPage  extends FiducuaryBeneficiaryPageOr{
 		wt.click(SpouseTablebenCheckbox, "Spouse Table Beneficiary check box");
 		wt.click(SpouseTablefidCheckBox, "Spouse fiduciary check box");
 		wt.click(ProceedtoButton, "Proceed to spouse button");
-		wt.holdOn(Duration.ofSeconds(5));
+		wt.holdOn(Duration.ofSeconds(8));
 		wt.click(primaryMemberToggleButton, "Primary member toggle button");
 		wt.click(ClientSpouseEditIcon, "Edit icon");
 		wt.holdOn(Duration.ofSeconds(5));
@@ -210,6 +210,7 @@ public class FiduciaryBeneficiaryPage  extends FiducuaryBeneficiaryPageOr{
 	public void VerifyWhenWeMakeFiduciaryBenfeficiaryMemberDeceased() {
 		String Name=verifyAddFiduciary();
 		wt.click(SearchFidBenmember, "Search bar");
+		wt.clearTextBox(SearchFidBenmember);
 		wt.sendValueWithEnterDownKey(SearchFidBenmember, Name);
 		wt.click(editIcon, "Edit Icon");
 		wt.holdOn(Duration.ofSeconds(8));

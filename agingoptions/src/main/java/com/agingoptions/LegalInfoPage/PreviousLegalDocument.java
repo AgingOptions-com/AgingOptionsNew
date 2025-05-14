@@ -179,9 +179,7 @@ public class PreviousLegalDocument extends PreviousLegalDocumentOr {
 	
 	
 	public void verifyNewCommonDocument() {
-		wt.click(DoYouCurrentlyHaveLegalPlanningYesRadioButton, "Yes radio button");
-		wt.holdOn(Duration.ofSeconds(3));
-		wt.click(TrustRadioButton, "Trust radio button");
+		//wt.click(TrustRadioButton, "Trust radio button");
 		wt.click(addNewDocumentTypeButton, "Add new document button");
 		wt.click(AddNewDocumentDropdown, "New Document Dropdown");
 		List<String> ActualList=  actualNewCommonDocument();

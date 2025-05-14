@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
+<td>Tests passed/Failed/Skipped:</td><td>119/14/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun May 04 22:21:59 IST 2025</td>
+<td>Started on:</td><td>Mon May 12 12:19:56 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55568 ms)</td>
+<tr><td>Total time:</td><td>6349 seconds (6349359 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,51 +76,894 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.beforeTest()'><b>beforeTest</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace127702987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace127702987'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.VerifyUpdateHandymanDetails()'><b>VerifyUpdateHandymanDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript</td>
+<td><div><pre>java.lang.AssertionError: expected [test345] but found [Jsohbtest345]
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:909)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.UpdateProfessionalDetails(ProfessionalDetailsPage.java:659)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.VerifyUpdateHandymanDetails(HousingProfessionalHandyManTestScript.java:141)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace968394264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace968394264'><pre>java.lang.AssertionError: expected [test345] but found [Jsohbtest345]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:909)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.UpdateProfessionalDetails(ProfessionalDetailsPage.java:659)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.VerifyUpdateHandymanDetails(HousingProfessionalHandyManTestScript.java:141)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>90</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript@f381794</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.VerifyUpdateFamilyLawAttorneyDetails()'><b>VerifyUpdateFamilyLawAttorneyDetails</b><br>Test class: com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts</td>
+<td><div><pre>java.lang.AssertionError: expected [test345] but found [Isxiltest345]
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:909)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.UpdateProfessionalDetails(ProfessionalDetailsPage.java:659)
+	at com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.VerifyUpdateFamilyLawAttorneyDetails(FamilyLawAttorneyTestScripts.java:132)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace969760269", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace969760269'><pre>java.lang.AssertionError: expected [test345] but found [Isxiltest345]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:909)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.UpdateProfessionalDetails(ProfessionalDetailsPage.java:659)
+	at com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.VerifyUpdateFamilyLawAttorneyDetails(FamilyLawAttorneyTestScripts.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>90</td>
+<td>com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts@44a7bfbc</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.VerifyUpdateAndContinue_SelectIsYourHouseLivingInNotsureCheckAndSelectTwoOntheScaleOfOneTwoFive()'><b>VerifyUpdateAndContinue_SelectIsYourHouseLivingInNotsureCheckAndSelectTwoOntheScaleOfOneTwoFive</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@id=&apos;dropDownDivId&apos;]//li&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//ul[@id=&apos;dropDownDivId&apos;]//li}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:348)
+	at com.Ao.HousingPage.HousingInfo.VerifyUpdateAndContinueWhenSelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive(HousingInfo.java:207)
+	at com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.VerifyUpdateAndContinue_SelectIsYourHouseLivingInNotsureCheckAndSelectTwoOntheScaleOfOneTwoFive(HousingOptionsTestScript.java:133)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace990984112", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace990984112'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@id=&apos;dropDownDivId&apos;]//li&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//ul[@id=&apos;dropDownDivId&apos;]//li}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:348)
+	at com.Ao.HousingPage.HousingInfo.VerifyUpdateAndContinueWhenSelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive(HousingInfo.java:207)
+	at com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.VerifyUpdateAndContinue_SelectIsYourHouseLivingInNotsureCheckAndSelectTwoOntheScaleOfOneTwoFive(HousingOptionsTestScript.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>54</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript@4a668b6e</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalElA.VerifyUpdateElderLawAttorneyDetails()'><b>VerifyUpdateElderLawAttorneyDetails</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalElA</td>
+<td><div><pre>java.lang.AssertionError: expected [test345] but found [Ymzustest345]
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:909)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.UpdateProfessionalDetails(ProfessionalDetailsPage.java:659)
+	at com.nspl.LegalInfoTestScript.LegalProfessionalElA.VerifyUpdateElderLawAttorneyDetails(LegalProfessionalElA.java:132)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace823704921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace823704921'><pre>java.lang.AssertionError: expected [test345] but found [Ymzustest345]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:909)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.UpdateProfessionalDetails(ProfessionalDetailsPage.java:659)
+	at com.nspl.LegalInfoTestScript.LegalProfessionalElA.VerifyUpdateElderLawAttorneyDetails(LegalProfessionalElA.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>91</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalElA@152aa092</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndProceedSpouseRealtorDetails()'><b>VerifySaveAndProceedSpouseRealtorDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Realtors&apos;]&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//p[text()=&apos;Realtors&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyInnerText(WebUtil.java:279)
+	at com.Ao.HousingPage.HousingProfessional_realtor.verifyRealtorPage(HousingProfessional_realtor.java:29)
+	at com.Ao.HousingPage.HousingProfessional_realtor.verifyrelatorPageOnhousingprofessionalPage(HousingProfessional_realtor.java:35)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndProceedSpouseRealtorDetails(HousingProfessional_RealtorTestscript.java:176)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace246761244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace246761244'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Realtors&apos;]&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//p[text()=&apos;Realtors&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyInnerText(WebUtil.java:279)
+	at com.Ao.HousingPage.HousingProfessional_realtor.verifyRealtorPage(HousingProfessional_realtor.java:29)
+	at com.Ao.HousingPage.HousingProfessional_realtor.verifyrelatorPageOnhousingprofessionalPage(HousingProfessional_realtor.java:35)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndProceedSpouseRealtorDetails(HousingProfessional_RealtorTestscript.java:176)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>49</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@6f27a732</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifyClickNoRadioButton_DoYouCurrentlyhaveLegalPlanning()'><b>verifyClickNoRadioButton_DoYouCurrentlyhaveLegalPlanning</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Is your plan a Will based or a Trust (Revocable Living Trust) based plan?&apos;]&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//p[text()=&apos;Is your plan a Will based or a Trust (Revocable Living Trust) based plan?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyInnerText(WebUtil.java:279)
+	at com.agingoptions.LegalInfoPage.PreviousLegalDocument.verifyNoRadioButton_DoYouCurrentlyhaveLegalPlanning(PreviousLegalDocument.java:51)
+	at com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifyClickNoRadioButton_DoYouCurrentlyhaveLegalPlanning(PreviousLagalDocumentTestCases.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1036412587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1036412587'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Is your plan a Will based or a Trust (Revocable Living Trust) based plan?&apos;]&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//p[text()=&apos;Is your plan a Will based or a Trust (Revocable Living Trust) based plan?&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyInnerText(WebUtil.java:279)
+	at com.agingoptions.LegalInfoPage.PreviousLegalDocument.verifyNoRadioButton_DoYouCurrentlyhaveLegalPlanning(PreviousLegalDocument.java:51)
+	at com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifyClickNoRadioButton_DoYouCurrentlyhaveLegalPlanning(PreviousLagalDocumentTestCases.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>59</td>
+<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@7e9131d5</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.verifyToggleButton()'><b>verifyToggleButton</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;btn-div addBorderToToggleButton ms-auto&apos;]//button[@class=&apos;view-btn active selectedToglleBorder&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.nspl.agingoptions.webUtil.WebUtil.waitUntilPresentInUI(WebUtil.java:1605)
+	at com.Ao.HousingPage.HousingProfessionalHandyManPage.verifytoggleButton(HousingProfessionalHandyManPage.java:53)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.verifyToggleButton(HousingProfessionalHandyManTestScript.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;btn-div addBorderToToggleButton ms-auto&apos;]//button[@class=&apos;view-btn active selectedToglleBorder&apos;]&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//div[@class=&apos;btn-div addBorderToToggleButton ms-auto&apos;]//button[@class=&apos;view-btn active selectedToglleBorder&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 31 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace322648725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace322648725'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;btn-div addBorderToToggleButton ms-auto&apos;]//button[@class=&apos;view-btn active selectedToglleBorder&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.nspl.agingoptions.webUtil.WebUtil.waitUntilPresentInUI(WebUtil.java:1605)
+	at com.Ao.HousingPage.HousingProfessionalHandyManPage.verifytoggleButton(HousingProfessionalHandyManPage.java:53)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.verifyToggleButton(HousingProfessionalHandyManTestScript.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;btn-div addBorderToToggleButton ms-auto&apos;]//button[@class=&apos;view-btn active selectedToglleBorder&apos;]&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//div[@class=&apos;btn-div addBorderToToggleButton ms-auto&apos;]//button[@class=&apos;view-btn active selectedToglleBorder&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 31 more
+</pre></div></td>
+<td>107</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript@f381794</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.VerifyClientTableFiduciaryBeneficiaryCheckboxFunctionality()'><b>VerifyClientTableFiduciaryBeneficiaryCheckboxFunctionality</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;btn-div addBorderToToggleButton ms-auto&apos;]//button)[1]&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=(//div[@class=&apos;btn-div addBorderToToggleButton ms-auto&apos;]//button)[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:348)
+	at com.agingoptions.LegalInfoPage.FiduciaryBeneficiaryPage.VerifyClientTableFidBenCheckBox(FiduciaryBeneficiaryPage.java:52)
+	at com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.VerifyClientTableFiduciaryBeneficiaryCheckboxFunctionality(FiduciaryBeneficiaryTestScript.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace311451326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace311451326'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;btn-div addBorderToToggleButton ms-auto&apos;]//button)[1]&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=(//div[@class=&apos;btn-div addBorderToToggleButton ms-auto&apos;]//button)[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:348)
+	at com.agingoptions.LegalInfoPage.FiduciaryBeneficiaryPage.VerifyClientTableFidBenCheckBox(FiduciaryBeneficiaryPage.java:52)
+	at com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.VerifyClientTableFiduciaryBeneficiaryCheckboxFunctionality(FiduciaryBeneficiaryTestScript.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>63</td>
+<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@2e1d27ba</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifyUpdateRealtorDetails()'><b>VerifyUpdateRealtorDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Realtors&apos;]&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//p[text()=&apos;Realtors&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyInnerText(WebUtil.java:279)
+	at com.Ao.HousingPage.HousingProfessional_realtor.verifyRealtorPage(HousingProfessional_realtor.java:29)
+	at com.Ao.HousingPage.HousingProfessional_realtor.verifyrelatorPageOnhousingprofessionalPage(HousingProfessional_realtor.java:35)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifyUpdateRealtorDetails(HousingProfessional_RealtorTestscript.java:222)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1247678383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1247678383'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Realtors&apos;]&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//p[text()=&apos;Realtors&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyInnerText(WebUtil.java:279)
+	at com.Ao.HousingPage.HousingProfessional_realtor.verifyRealtorPage(HousingProfessional_realtor.java:29)
+	at com.Ao.HousingPage.HousingProfessional_realtor.verifyrelatorPageOnhousingprofessionalPage(HousingProfessional_realtor.java:35)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifyUpdateRealtorDetails(HousingProfessional_RealtorTestscript.java:222)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>49</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@6f27a732</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndAddAnotherSpouseRealtorDetails()'><b>VerifySaveAndAddAnotherSpouseRealtorDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;other&apos;]&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//input[@id=&apos;other&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.clear(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.sendValue(WebUtil.java:221)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.SaveAndAddAnotherSpouseProfessionalDetails(ProfessionalDetailsPage.java:283)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndAddAnotherSpouseRealtorDetails(HousingProfessional_RealtorTestscript.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1133794432", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1133794432'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;other&apos;]&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//input[@id=&apos;other&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.clear(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.sendValue(WebUtil.java:221)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.SaveAndAddAnotherSpouseProfessionalDetails(ProfessionalDetailsPage.java:283)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndAddAnotherSpouseRealtorDetails(HousingProfessional_RealtorTestscript.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>76</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@6f27a732</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifyNewCommonDocumentList()'><b>verifyNewCommonDocumentList</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;AddNewButton text-center align-items-center&apos;]//span&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//div[@class=&apos;AddNewButton text-center align-items-center&apos;]//span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:348)
+	at com.agingoptions.LegalInfoPage.PreviousLegalDocument.verifyNewCommonDocument(PreviousLegalDocument.java:183)
+	at com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifyNewCommonDocumentList(PreviousLagalDocumentTestCases.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace743943553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace743943553'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;AddNewButton text-center align-items-center&apos;]//span&quot;}
+  (Session info: chrome=136.0.7103.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52f7b4f2723a7715da6e1c76a6f38314, findElement {using=xpath, value=//div[@class=&apos;AddNewButton text-center align-items-center&apos;]//span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.49 (031848bc6ad0..., userDataDir: C:\Users\nagai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54182/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52f7b4f2723a7715da6e1c76a6f38314
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:348)
+	at com.agingoptions.LegalInfoPage.PreviousLegalDocument.verifyNewCommonDocument(PreviousLegalDocument.java:183)
+	at com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifyNewCommonDocumentList(PreviousLagalDocumentTestCases.java:105)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -136,156 +979,40 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>55</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@7e9131d5</td></tr>
 <tr>
-<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.beforeClass()'><b>beforeClass</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@d35dea7</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@d35dea7</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@d35dea7</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.afterClass()'><b>afterClass</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@d35dea7</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.afterClass()'><b>afterClass</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@d35dea7</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@d35dea7</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.afterTest()'><b>afterTest</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.beforeMethod()'><b>beforeMethod</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.beforeClass()'><b>beforeClass</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@d35dea7</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.afterMethod()'><b>afterMethod</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
-<td></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@d35dea7</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.VerifyWhenWeMakeSpecialNeedsMemberAsFiduciary()'><b>VerifyWhenWeMakeSpecialNeedsMemberAsFiduciary</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace846072718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace846072718'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.VerifyUpdateBusinessSuccessiorDetails()'><b>VerifyUpdateBusinessSuccessiorDetails</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior</td>
+<td><div><pre>java.lang.AssertionError: expected [test345] but found [Psnfotest345]
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:909)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.UpdateProfessionalDetails(ProfessionalDetailsPage.java:659)
+	at com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.VerifyUpdateBusinessSuccessiorDetails(LegalProfessionalBusinessSuccessior.java:133)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1349402229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1349402229'><pre>java.lang.AssertionError: expected [test345] but found [Psnfotest345]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:909)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.UpdateProfessionalDetails(ProfessionalDetailsPage.java:659)
+	at com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.VerifyUpdateBusinessSuccessiorDetails(LegalProfessionalBusinessSuccessior.java:133)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -300,54 +1027,41 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@d35dea7</td></tr>
+<td>91</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior@4ef37659</td></tr>
 <tr>
-<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.verifyAgeValidationForFiduciary()'><b>verifyAgeValidationForFiduciary</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace878205641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace878205641'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.VerifyUpdateMortgageBrokerDetails()'><b>VerifyUpdateMortgageBrokerDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript</td>
+<td><div><pre>java.lang.AssertionError: expected [test345] but found [Vttqgtest345]
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:909)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.UpdateProfessionalDetails(ProfessionalDetailsPage.java:659)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.VerifyUpdateMortgageBrokerDetails(HousingProfessional_MortgageBrokerTestScript.java:142)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace354559453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace354559453'><pre>java.lang.AssertionError: expected [test345] but found [Vttqgtest345]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:909)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.UpdateProfessionalDetails(ProfessionalDetailsPage.java:659)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.VerifyUpdateMortgageBrokerDetails(HousingProfessional_MortgageBrokerTestScript.java:142)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
@@ -362,256 +1076,661 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@d35dea7</td></tr>
+<td>87</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript@6c779568</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.VerifyUpdateLandScappeDetails()'><b>VerifyUpdateLandScappeDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript</td>
+<td><div><pre>java.lang.AssertionError: expected [test345] but found [Bqv2wtest345]
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:909)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.UpdateProfessionalDetails(ProfessionalDetailsPage.java:659)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.VerifyUpdateLandScappeDetails(HousingProfessionalLandScapperTestScript.java:141)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1286037944", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1286037944'><pre>java.lang.AssertionError: expected [test345] but found [Bqv2wtest345]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.nspl.agingoptions.webUtil.WebUtil.verifyActualExpectedTextContains(WebUtil.java:909)
+	at com.Ao.HousingPage.ProfessionalDetailsPage.UpdateProfessionalDetails(ProfessionalDetailsPage.java:659)
+	at com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.VerifyUpdateLandScappeDetails(HousingProfessionalLandScapperTestScript.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>88</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript@2cdd0d4b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndAddAnotherPrimaryMemberRealtorDetails()'><b>VerifySaveAndAddAnotherPrimaryMemberRealtorDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript</td>
+<td></td>
+<td>67</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@6f27a732</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyHaveYouMadeArrangementsForHandlingYesChecked()'><b>VerifyHaveYouMadeArrangementsForHandlingYesChecked</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>15</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.verifyaddHandymanForPraimaryMember()'><b>verifyaddHandymanForPraimaryMember</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript</td>
+<td></td>
+<td>73</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript@f381794</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.VerifyBusinessSuccessiorPageLegalProfessional()'><b>VerifyBusinessSuccessiorPageLegalProfessional</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior</td>
+<td></td>
+<td>32</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior@4ef37659</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.VerifySelectNoCheckBox_IsYourHousingLivingIn___()'><b>VerifySelectNoCheckBox_IsYourHousingLivingIn___</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript</td>
+<td></td>
+<td>5</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript@4a668b6e</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.verifyaddBusinessSuccessiorForPraimaryMember()'><b>verifyaddBusinessSuccessiorForPraimaryMember</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior</td>
+<td></td>
+<td>77</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior@4ef37659</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.VerifySaveAndAddAnotherSpouseFamilyLawAttorneyDetails()'><b>VerifySaveAndAddAnotherSpouseFamilyLawAttorneyDetails</b><br>Test class: com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts</td>
+<td></td>
+<td>67</td>
+<td>com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts@44a7bfbc</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive()'><b>VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript</td>
+<td></td>
+<td>19</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript@4a668b6e</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.VerifySaveAndAddAnotherSpouseLandScapperDetails()'><b>VerifySaveAndAddAnotherSpouseLandScapperDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript</td>
+<td></td>
+<td>66</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript@2cdd0d4b</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.VerifyWhenWeMakeFiduciaryMemberAsSpecialNeeds()'><b>VerifyWhenWeMakeFiduciaryMemberAsSpecialNeeds</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
+<td></td>
+<td>72</td>
+<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@2e1d27ba</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.VerifyClickIDoNotHaveFamilyLawAttorneyCheckBox()'><b>VerifyClickIDoNotHaveFamilyLawAttorneyCheckBox</b><br>Test class: com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts</td>
+<td></td>
+<td>22</td>
+<td>com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts@44a7bfbc</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts.VerifyOrganDonationDetailsPage()'><b>VerifyOrganDonationDetailsPage</b><br>Test class: com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts</td>
+<td></td>
+<td>15</td>
+<td>com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts@2525ff7e</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyWouldYouLikeToMakeArrangementYes()'><b>VerifyWouldYouLikeToMakeArrangementYes</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>16</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.VerifySaveAndContinueSpouseFamilyLawAttorneyDetails()'><b>VerifySaveAndContinueSpouseFamilyLawAttorneyDetails</b><br>Test class: com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts</td>
+<td></td>
+<td>65</td>
+<td>com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts@44a7bfbc</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript.SaveAndContinueIWantMaximumTreatmentNo()'><b>SaveAndContinueIWantMaximumTreatmentNo</b><br>Test class: com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript</td>
+<td></td>
+<td>15</td>
+<td>com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript@61d6015a</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifyWillDocument()'><b>verifyWillDocument</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
+<td></td>
+<td>16</td>
+<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@7e9131d5</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript.VerifySaveAndProceedLivingWillDetails()'><b>VerifySaveAndProceedLivingWillDetails</b><br>Test class: com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript</td>
+<td></td>
+<td>21</td>
+<td>com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript@61d6015a</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.VerifySaveAndAddAnotherPrimaryMemberLandScapperDetails()'><b>VerifySaveAndAddAnotherPrimaryMemberLandScapperDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript</td>
+<td></td>
+<td>76</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript@2cdd0d4b</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.VerifySaveAndProceedSpouseBusinessSuccessiorDetails()'><b>VerifySaveAndProceedSpouseBusinessSuccessiorDetails</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior</td>
+<td></td>
+<td>76</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior@4ef37659</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts.VerifyDoYouWishToBeAnOrganDonnerYes()'><b>VerifyDoYouWishToBeAnOrganDonnerYes</b><br>Test class: com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts</td>
+<td></td>
+<td>95</td>
+<td>com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts@2525ff7e</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalElA.verifyToggleButton()'><b>verifyToggleButton</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalElA</td>
+<td></td>
+<td>17</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalElA@152aa092</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.VerifySaveAndAddAnotherSpouseHandymanDetails()'><b>VerifySaveAndAddAnotherSpouseHandymanDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript</td>
+<td></td>
+<td>67</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript@f381794</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript.SaveAndContinueIWantMaximumTreatMentYes()'><b>SaveAndContinueIWantMaximumTreatMentYes</b><br>Test class: com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript</td>
+<td></td>
+<td>15</td>
+<td>com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript@61d6015a</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.VerifyClickIDoNotHaveLandScapperCheckBox()'><b>VerifyClickIDoNotHaveLandScapperCheckBox</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript</td>
+<td></td>
+<td>28</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript@2cdd0d4b</td></tr>
 <tr>
 <td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifySaveAndContinueWithAddNewDocument()'><b>verifySaveAndContinueWithAddNewDocument</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1595362770", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1595362770'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
+<td></td>
+<td>88</td>
+<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@7e9131d5</td></tr>
 <tr>
-<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifySaveAndContinueWithWillTypeDocuments()'><b>verifySaveAndContinueWithWillTypeDocuments</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1769042905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1769042905'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.verifyaddLandScapperForPraimaryMember()'><b>verifyaddLandScapperForPraimaryMember</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript</td>
+<td></td>
+<td>70</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript@2cdd0d4b</td></tr>
 <tr>
-<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifyNewCommonDocumentList()'><b>verifyNewCommonDocumentList</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace45320991", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace45320991'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@b2c9a9c</td></tr>
+<td title='com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.VerifyFamilyLawAttorneyPageOnLegalProfessional()'><b>VerifyFamilyLawAttorneyPageOnLegalProfessional</b><br>Test class: com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts</td>
+<td></td>
+<td>31</td>
+<td>com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts@44a7bfbc</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalElA.VerifyClickIDoNotHaveLandScapperCheckBox()'><b>VerifyClickIDoNotHaveLandScapperCheckBox</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalElA</td>
+<td></td>
+<td>22</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalElA@152aa092</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.VerifySaveAndproceedPrimaryMemberFamilyLawAttorneyDetails()'><b>VerifySaveAndproceedPrimaryMemberFamilyLawAttorneyDetails</b><br>Test class: com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts</td>
+<td></td>
+<td>53</td>
+<td>com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts@44a7bfbc</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked()'><b>VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript</td>
+<td></td>
+<td>13</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript@4a668b6e</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript.VerifyLivingWillDetailsPage()'><b>VerifyLivingWillDetailsPage</b><br>Test class: com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript</td>
+<td></td>
+<td>20</td>
+<td>com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript@61d6015a</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.VerifyPrimaryMemberAndSpouseFiduciaryBeneficiaryPageMemberList()'><b>VerifyPrimaryMemberAndSpouseFiduciaryBeneficiaryPageMemberList</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
+<td></td>
+<td>15</td>
+<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@2e1d27ba</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.VerifySaveAndProceedSpouseLandScapperDetails()'><b>VerifySaveAndProceedSpouseLandScapperDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript</td>
+<td></td>
+<td>118</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript@2cdd0d4b</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.VerifySaveAandNextProfessional_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive()'><b>VerifySaveAandNextProfessional_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript</td>
+<td></td>
+<td>40</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript@4a668b6e</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.VerifyClickIDoNotHaveHandymanCheckBox()'><b>VerifyClickIDoNotHaveHandymanCheckBox</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript</td>
+<td></td>
+<td>27</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript@f381794</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifyDoYouCurrentlyLegalPlanningQuestions()'><b>verifyDoYouCurrentlyLegalPlanningQuestions</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
+<td></td>
+<td>17</td>
+<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@7e9131d5</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.VerifySpouseTableFiduciaryBeneficiaryCheckBoxFunctionality()'><b>VerifySpouseTableFiduciaryBeneficiaryCheckBoxFunctionality</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
+<td></td>
+<td>42</td>
+<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@2e1d27ba</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalElA.verifyaddElderLawAttorneyForPraimaryMember()'><b>verifyaddElderLawAttorneyForPraimaryMember</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalElA</td>
+<td></td>
+<td>71</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalElA@152aa092</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.VerifySaveAndContinueSpouseBusinessSuccessiorDetails()'><b>VerifySaveAndContinueSpouseBusinessSuccessiorDetails</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior</td>
+<td></td>
+<td>64</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior@4ef37659</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyWhenWeCheckedCremationRadioButton()'><b>VerifyWhenWeCheckedCremationRadioButton</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>15</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalElA.VerifySaveAndproceedPrimaryMemberElderLawAttorneyDetails()'><b>VerifySaveAndproceedPrimaryMemberElderLawAttorneyDetails</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalElA</td>
+<td></td>
+<td>52</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalElA@152aa092</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifySaveAndContinue_DoYouCurrentlyHaveLegalPlanning_NoCheck()'><b>VerifySaveAndContinue_DoYouCurrentlyHaveLegalPlanning_NoCheck</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
+<td></td>
+<td>20</td>
+<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@7e9131d5</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyIsYourBurialCremationPrepaid_YesChecked()'><b>VerifyIsYourBurialCremationPrepaid_YesChecked</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>15</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.VerifySaveAndproceedPrimaryMemberLandScapperDetails()'><b>VerifySaveAndproceedPrimaryMemberLandScapperDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript</td>
+<td></td>
+<td>52</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript@2cdd0d4b</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.verifyAgeValidationForFiduciary()'><b>verifyAgeValidationForFiduciary</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
+<td></td>
+<td>27</td>
+<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@2e1d27ba</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked()'><b>VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript</td>
+<td></td>
+<td>21</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript@4a668b6e</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts.VerifySaveAndProceedDoYouWishToBeAnOrganDonnerNo()'><b>VerifySaveAndProceedDoYouWishToBeAnOrganDonnerNo</b><br>Test class: com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts</td>
+<td></td>
+<td>95</td>
+<td>com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts@2525ff7e</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.verifyToggleButton()'><b>verifyToggleButton</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript</td>
+<td></td>
+<td>22</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript@6c779568</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.VerifySaveAndproceedPrimaryMemberHandyManDetails()'><b>VerifySaveAndproceedPrimaryMemberHandyManDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript</td>
+<td></td>
+<td>52</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript@f381794</td></tr>
 <tr>
 <td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.VerifyWhenWeMakeFiduciaryBeneficiryMemberDeceased()'><b>VerifyWhenWeMakeFiduciaryBeneficiryMemberDeceased</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1526453607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1526453607'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//div[@class=&apos;NewRegImg mt-lg-0&apos;])[1]//img
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.nspl.agingoptions.webUtil.WebUtil.click(WebUtil.java:335)
-	at com.nspl.agingoptions.commoncode.CommonCode.createLifePlanningUser(CommonCode.java:96)
-	at com.nspl.agingoptions.commoncode.CommonCode.LoginWithNewMarriedUser(CommonCode.java:146)
-	at com.nspl.agingoptions.webUtil.BaseTest.beforeTest(BaseTest.java:52)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@d35dea7</td></tr>
+<td></td>
+<td>74</td>
+<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@2e1d27ba</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifySaveAndContinueWithTrustTypeDocumentsDetails()'><b>VerifySaveAndContinueWithTrustTypeDocumentsDetails</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
+<td></td>
+<td>76</td>
+<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@7e9131d5</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.VerifyLandScapperPageOnHousingProfessional()'><b>VerifyLandScapperPageOnHousingProfessional</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript</td>
+<td></td>
+<td>31</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript@2cdd0d4b</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript.verifyIWantMaximumTreatmentCheckedAsNo()'><b>verifyIWantMaximumTreatmentCheckedAsNo</b><br>Test class: com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript</td>
+<td></td>
+<td>15</td>
+<td>com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript@61d6015a</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalElA.VerifyElderLawAttorneyPageOnLegalProfessional()'><b>VerifyElderLawAttorneyPageOnLegalProfessional</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalElA</td>
+<td></td>
+<td>31</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalElA@152aa092</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.VerifyClickIDoNotHaveMortgageCheckBox()'><b>VerifyClickIDoNotHaveMortgageCheckBox</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript</td>
+<td></td>
+<td>27</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript@6c779568</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive()'><b>VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript</td>
+<td></td>
+<td>18</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript@4a668b6e</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.VerifyIdONotHaveRealtorCheckBoxFunctionality()'><b>VerifyIdONotHaveRealtorCheckBoxFunctionality</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript</td>
+<td></td>
+<td>26</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript@6c779568</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript.verifyIWantMaximumTreatmentCheckedAsYes()'><b>verifyIWantMaximumTreatmentCheckedAsYes</b><br>Test class: com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript</td>
+<td></td>
+<td>16</td>
+<td>com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript@61d6015a</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.VerifyHowManyStoriesDoesItHaveDropdownContent()'><b>VerifyHowManyStoriesDoesItHaveDropdownContent</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript</td>
+<td></td>
+<td>18</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript@4a668b6e</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyWouldYouLikeToHaveSomeOneContactYouNoChecked()'><b>VerifyWouldYouLikeToHaveSomeOneContactYouNoChecked</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>18</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.verifyToggleButton()'><b>verifyToggleButton</b><br>Test class: com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts</td>
+<td></td>
+<td>17</td>
+<td>com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts@44a7bfbc</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.VerifyIdONotHaveLandScapperCheckBoxFunctionality()'><b>VerifyIdONotHaveLandScapperCheckBoxFunctionality</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript</td>
+<td></td>
+<td>26</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript@2cdd0d4b</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts.VerifySaveAndContinueWishToDonateYourBodyForScientificResearch_Yes()'><b>VerifySaveAndContinueWishToDonateYourBodyForScientificResearch_Yes</b><br>Test class: com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts</td>
+<td></td>
+<td>95</td>
+<td>com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts@2525ff7e</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalElA.VerifySaveAndContinueSpouseElderLawAttorneyDetails()'><b>VerifySaveAndContinueSpouseElderLawAttorneyDetails</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalElA</td>
+<td></td>
+<td>66</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalElA@152aa092</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.VerifyIdONotHaveHandymanCheckBoxFunctionality()'><b>VerifyIdONotHaveHandymanCheckBoxFunctionality</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript</td>
+<td></td>
+<td>26</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript@f381794</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndContinueSpouseRealtorDetails()'><b>VerifySaveAndContinueSpouseRealtorDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript</td>
+<td></td>
+<td>53</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@6f27a732</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.VerifySaveAndContinueSpouseLandScapperDetails()'><b>VerifySaveAndContinueSpouseLandScapperDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript</td>
+<td></td>
+<td>64</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript@2cdd0d4b</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.VerifySaveAndproceedPrimaryMemberBusinessSuccessiorDetails()'><b>VerifySaveAndproceedPrimaryMemberBusinessSuccessiorDetails</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior</td>
+<td></td>
+<td>68</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior@4ef37659</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.VerifySaveAndproceedPrimaryMemberMortgageBrokerDetails()'><b>VerifySaveAndproceedPrimaryMemberMortgageBrokerDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript</td>
+<td></td>
+<td>49</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript@6c779568</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalElA.VerifySaveAndAddAnotherSpouseElderLawAttorneyDetails()'><b>VerifySaveAndAddAnotherSpouseElderLawAttorneyDetails</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalElA</td>
+<td></td>
+<td>68</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalElA@152aa092</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifyTrustDocument()'><b>VerifyTrustDocument</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
+<td></td>
+<td>16</td>
+<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@7e9131d5</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.VerifySaveAndProceedSpouseFamilyLawAttorneyDetails()'><b>VerifySaveAndProceedSpouseFamilyLawAttorneyDetails</b><br>Test class: com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts</td>
+<td></td>
+<td>70</td>
+<td>com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts@44a7bfbc</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.VerifySaveAndProceedSpouseMortgageBrokerDetails()'><b>VerifySaveAndProceedSpouseMortgageBrokerDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript</td>
+<td></td>
+<td>65</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript@6c779568</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.VerifyIdONotHaveFamilyLawAttorneyFunctionality()'><b>VerifyIdONotHaveFamilyLawAttorneyFunctionality</b><br>Test class: com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts</td>
+<td></td>
+<td>21</td>
+<td>com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts@44a7bfbc</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.VerifySaveAndAddAnotherPrimaryMemberBusinessSuccessior()'><b>VerifySaveAndAddAnotherPrimaryMemberBusinessSuccessior</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior</td>
+<td></td>
+<td>83</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior@4ef37659</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_NoRadioChecked()'><b>VerifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_NoRadioChecked</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>16</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.VerifySaveAndContinueSpouseMortgageBrokerDetails()'><b>VerifySaveAndContinueSpouseMortgageBrokerDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript</td>
+<td></td>
+<td>61</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript@6c779568</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection()'><b>VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript</td>
+<td></td>
+<td>28</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript@4a668b6e</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.VerifyClientFamilyLawAttorneyDetailsWithUncheckCopySamedataTospouseCheckBox()'><b>VerifyClientFamilyLawAttorneyDetailsWithUncheckCopySamedataTospouseCheckBox</b><br>Test class: com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts</td>
+<td></td>
+<td>67</td>
+<td>com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts@44a7bfbc</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyBurialCremationPlanPage()'><b>VerifyBurialCremationPlanPage</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>15</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifyClickYesRadioButton_DoYouCurrentlyhaveLegalPlanning()'><b>VerifyClickYesRadioButton_DoYouCurrentlyhaveLegalPlanning</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
+<td></td>
+<td>19</td>
+<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@7e9131d5</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_YesRadioBT()'><b>VerifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_YesRadioBT</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>16</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.verifyaddFamilyLawAttorneyForPraimaryMember()'><b>verifyaddFamilyLawAttorneyForPraimaryMember</b><br>Test class: com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts</td>
+<td></td>
+<td>73</td>
+<td>com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts@44a7bfbc</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifySaveAndContinueWithWillTypeDocuments()'><b>verifySaveAndContinueWithWillTypeDocuments</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
+<td></td>
+<td>78</td>
+<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@7e9131d5</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.verifyaddMortgageForPraimaryMember()'><b>verifyaddMortgageForPraimaryMember</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript</td>
+<td></td>
+<td>68</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript@6c779568</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.verifyMortgagePageOnHousingProfessional()'><b>verifyMortgagePageOnHousingProfessional</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript</td>
+<td></td>
+<td>31</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript@6c779568</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.VerifySaveAndProceedSpouseHandymanDetails()'><b>VerifySaveAndProceedSpouseHandymanDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript</td>
+<td></td>
+<td>117</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript@f381794</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyDidTheCompanyGiveYouAContractNoRadioChecked()'><b>VerifyDidTheCompanyGiveYouAContractNoRadioChecked</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>16</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.VerifyWhenWeMakeSpecialNeedsMemberAsFiduciary()'><b>VerifyWhenWeMakeSpecialNeedsMemberAsFiduciary</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
+<td></td>
+<td>50</td>
+<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@2e1d27ba</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.VerifyIdONotHaveBusinessSuccessiorFunctionality()'><b>VerifyIdONotHaveBusinessSuccessiorFunctionality</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior</td>
+<td></td>
+<td>22</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior@4ef37659</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript.verifyToggleButton()'><b>verifyToggleButton</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript</td>
+<td></td>
+<td>22</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript@2cdd0d4b</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.VerifySaveAndAddAnotherPrimaryMemberHandymanDetails()'><b>VerifySaveAndAddAnotherPrimaryMemberHandymanDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript</td>
+<td></td>
+<td>75</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript@f381794</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.VerifySaveAndAddAnotherSpouseBusinessSuccessiorDetails()'><b>VerifySaveAndAddAnotherSpouseBusinessSuccessiorDetails</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior</td>
+<td></td>
+<td>64</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior@4ef37659</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalElA.VerifySaveAndAddAnotherPrimaryMemberElderLawAttorney()'><b>VerifySaveAndAddAnotherPrimaryMemberElderLawAttorney</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalElA</td>
+<td></td>
+<td>77</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalElA@152aa092</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts.VerifySaveAndAddAnotherPrimaryMemberFamilyLawAttorney()'><b>VerifySaveAndAddAnotherPrimaryMemberFamilyLawAttorney</b><br>Test class: com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts</td>
+<td></td>
+<td>77</td>
+<td>com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts@44a7bfbc</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.verifyHandymanPageOnHousingProfessional()'><b>verifyHandymanPageOnHousingProfessional</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript</td>
+<td></td>
+<td>32</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript@f381794</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyDoYouHaveBurialPlotCheckNoRadioButton()'><b>VerifyDoYouHaveBurialPlotCheckNoRadioButton</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>16</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalElA.VerifySaveAndProceedSpouseElderLawAttorneyDetails()'><b>VerifySaveAndProceedSpouseElderLawAttorneyDetails</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalElA</td>
+<td></td>
+<td>72</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalElA@152aa092</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.VerifySaveAndAddAnotherSpouseMortgageBrokerDetails()'><b>VerifySaveAndAddAnotherSpouseMortgageBrokerDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript</td>
+<td></td>
+<td>65</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript@6c779568</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyWouldYouLikeMakeArrangementNoChecked()'><b>VerifyWouldYouLikeMakeArrangementNoChecked</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>16</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.VerifySaveAndproceedPrimaryMemberRealtorDetails()'><b>VerifySaveAndproceedPrimaryMemberRealtorDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript</td>
+<td></td>
+<td>43</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@6f27a732</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.VerifyClickIDoNotHaveBusinessSuccessiorCheckBox()'><b>VerifyClickIDoNotHaveBusinessSuccessiorCheckBox</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior</td>
+<td></td>
+<td>24</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior@4ef37659</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyHaveYouMadeArrangementsForHandlingNoChecked()'><b>VerifyHaveYouMadeArrangementsForHandlingNoChecked</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>17</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyDoYouHaveBurialPlotCheckYesRadio()'><b>VerifyDoYouHaveBurialPlotCheckYesRadio</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>17</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts.VerifySaveAndContinueDoYouWishToBeAnOrganDonnerYes()'><b>VerifySaveAndContinueDoYouWishToBeAnOrganDonnerYes</b><br>Test class: com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts</td>
+<td></td>
+<td>95</td>
+<td>com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts@2525ff7e</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____()'><b>verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript</td>
+<td></td>
+<td>16</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript@4a668b6e</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave()'><b>VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript</td>
+<td></td>
+<td>23</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript@4a668b6e</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.verifyLegalInfoPage()'><b>verifyLegalInfoPage</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
+<td></td>
+<td>15</td>
+<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@7e9131d5</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript.VerifyAddFiduciaryBeneficiaryDetails()'><b>VerifyAddFiduciaryBeneficiaryDetails</b><br>Test class: com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript</td>
+<td></td>
+<td>42</td>
+<td>com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript@2e1d27ba</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript.VerifyWouldYouLikeTohaveSomeoneContactYouYesChecked()'><b>VerifyWouldYouLikeTohaveSomeoneContactYouYesChecked</b><br>Test class: com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript</td>
+<td></td>
+<td>16</td>
+<td>com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript@524d6d96</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.verifyToggleButton()'><b>verifyToggleButton</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior</td>
+<td></td>
+<td>18</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior@4ef37659</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript.verifyHousingInformation()'><b>verifyHousingInformation</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript</td>
+<td></td>
+<td>5</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript@4a668b6e</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior.VerifyClientBusinessSuccessiorDetailsWithUncheckCopySamedataTospouseCheckBox()'><b>VerifyClientBusinessSuccessiorDetailsWithUncheckCopySamedataTospouseCheckBox</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior</td>
+<td></td>
+<td>68</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior@4ef37659</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalElA.VerifyIdONotHaveElderLawAttorneyFunctionality()'><b>VerifyIdONotHaveElderLawAttorneyFunctionality</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalElA</td>
+<td></td>
+<td>21</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalElA@152aa092</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.LegalProfessionalElA.VerifyClientElderLawAttorneyDetailsWithUncheckCopySamedataTospouseCheckBox()'><b>VerifyClientElderLawAttorneyDetailsWithUncheckCopySamedataTospouseCheckBox</b><br>Test class: com.nspl.LegalInfoTestScript.LegalProfessionalElA</td>
+<td></td>
+<td>66</td>
+<td>com.nspl.LegalInfoTestScript.LegalProfessionalElA@152aa092</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript.VerifySaveAndContinueSpouseHandymanDetails()'><b>VerifySaveAndContinueSpouseHandymanDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript</td>
+<td></td>
+<td>63</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript@f381794</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript.verifyaddRealtorForPraimaryMember()'><b>verifyaddRealtorForPraimaryMember</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript</td>
+<td></td>
+<td>58</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript@6f27a732</td></tr>
+<tr>
+<td title='com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases.VerifySaveAndProceedFidBen_DoYouCurrentlyHaveLegalPlanning_NoCheck()'><b>VerifySaveAndProceedFidBen_DoYouCurrentlyHaveLegalPlanning_NoCheck</b><br>Test class: com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases</td>
+<td></td>
+<td>26</td>
+<td>com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases@7e9131d5</td></tr>
+<tr>
+<td title='com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript.VerifySaveAndAddAnotherPrimaryMemberMortgageBrokerDetails()'><b>VerifySaveAndAddAnotherPrimaryMemberMortgageBrokerDetails</b><br>Test class: com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript</td>
+<td></td>
+<td>73</td>
+<td>com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript@6c779568</td></tr>
 </table><p>
 </body>
 </html>

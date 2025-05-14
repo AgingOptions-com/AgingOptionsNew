@@ -13,6 +13,8 @@ public class HousingProfessional_RealtorOr {
 	 PageFactory.initElements(wt.getDriver(), this);
 	}
 	
+	@FindBy(xpath="//span[text()='Realtor']")
+	protected WebElement RealtorDrawer;
 	
 	@FindBy(xpath="//span[text()='Housing Professionals']")
 	protected WebElement HousingProfessionalButton;
