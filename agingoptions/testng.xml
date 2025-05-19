@@ -45,8 +45,30 @@
 			</class>
              <class
 				name="com.nspl.agingoptions.financepage.testcases.TransportationTestCases">
-			</class>			
-			
+			</class>	
+			<class
+				name="com.nspl.agingoptions.financepage.testcases.LifeInsuranceTestCases">
+			</class>
+			<class
+				name="com.nspl.agingoptions.financepage.testcases.LongTermCarePolicyTestCases">
+			</class>
+			<class
+				name="com.nspl.agingoptions.financepage.testcases.FutureExpectationTestCases">
+			</class>
+			<class
+				name="com.nspl.agingoptions.financepage.testcases.LiabilitiesTestCases">
+			</class>
+			<class
+				name="com.nspl.agingoptions.financepage.testcases.MonthlyIncomeTestCases">
+			</class>
+			<class
+				name="com.nspl.agingoptions.financepage.testcases.CurrentExpenseTestCases">
+			</class>
+			<class
+				name="com.nspl.agingoptions.financepage.testcases.TaxInfoTestCases">
+			</class>
+		
+		
 		</classes>
 	</test>
 </suite> 

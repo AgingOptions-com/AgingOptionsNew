@@ -1,9 +1,11 @@
 package com.nspl.agingoptions.commoncode;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -247,14 +249,45 @@ public class AssetsCommonCode {
 		util.click(futureExpectationSideBarLink, "Future Expecation Side Bar Link");
 	}
 
-    @FindBy(xpath="//span[contains(text(),'Income')]")
-    private WebElement incomeSideBarLink;
-    
-    public void clickIncomeSideBarLink() {
-    	util.click(incomeSideBarLink, "Income");
-    }
+	@FindBy(xpath="//span[contains(text(),'Income')]")
+	private WebElement incomeSideBarLink;
 
+	public void clickIncomeSideBarLink() {
+		util.click(incomeSideBarLink, "Income");
+	}
 
+	@FindBy(xpath="//span[contains(text(),'Current Expenses')]")
+	private WebElement currentExpenseSideBarLK;
+
+	public void clickCurrentExpenseSideBarLink() {
+		util.click(currentExpenseSideBarLK, "Current Expenses");
+	}
+
+	@FindBy(xpath="//span[contains(text(),'Tax Information')]")
+	private WebElement taxInfoSideBarLink;
+	
+	public void clickTaxInfoSidebarLink() {
+		util.click(taxInfoSideBarLink, "Tax Information");
+	}
+
+	@FindBy(xpath="//span[contains(text(),'Financial Professionals')]")
+	private WebElement financialProfessionalSideBarLink;
+	
+	public void clickFinancialProfessionalSideBarLink() {
+		util.click(financialProfessionalSideBarLink, "Financial Professional");
+	}
+	
+	@FindBy(xpath="//input[@name='iDontHaveOne']")
+	private WebElement iDontHavePrimaryCarePhysicianCheckbox;
+
+	public void checkIDontHaveCheckBox() {
+		util.waitUntilElementToBeClickable(iDontHavePrimaryCarePhysicianCheckbox);
+		util.checkCheckBox(iDontHavePrimaryCarePhysicianCheckbox, "I Don't have primary Care Physician");
+	}
+
+	public void iDontHaveCheckboxStatus() {
+		util.isSelected(iDontHavePrimaryCarePhysicianCheckbox, "I don’t have a Financial Advisor?");
+	}
 
 
 }
