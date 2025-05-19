@@ -8,47 +8,43 @@
     <classes>
       <class name="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases">
         <methods>
-          <include name="TC_015_PrimaryMemberIDontHavePrimaryCarePhyscian"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
-          <include name="TC_018_inputSpouseCarePhysicianAndSave"/>
           <include name="afterTest"/>
-          <include name="afterMethod"/>
-          <include name="TC_017_inputPrimaryMemberCarePhysicianAndSave"/>
           <include name="beforeTest"/>
+          <include name="TC_017_inputPrimaryMemberCarePhysicianAndSave"/>
+          <include name="afterMethod"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
-          <include name="TC_016_SpouseIDontHavePrimaryCarePhyscian"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases -->
-      <class name="com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases">
+      <class name="com.nspl.agingoptions.financepage.testcases.LifeInsuranceTestCases">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
-          <include name="TC_007_Health_LifeStyleGeneralHealthNutritionDetails"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
+          <include name="FTC_021_SpouseLifeInsuranceNextLongTermCarePolicyButton"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.MarriedUserLifeStyleTestCases -->
-      <class name="com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases">
+      </class> <!-- com.nspl.agingoptions.financepage.testcases.LifeInsuranceTestCases -->
+      <class name="com.nspl.agingoptions.financepage.testcases.RetirementTestCases">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
+          <include name="FTC06_RetirementNextRealEstateButton"/>
           <include name="afterTest"/>
-          <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="beforeTest"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
-          <include name="TC_022_SpouseSpecialistSaveDetailsSaveAndContinueButton"/>
-          <include name="TC_024_PrimaryMemberSpecialistSaveDetailsSaveAndProceedToSpouseButton"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.SpecialistTestCases -->
+      </class> <!-- com.nspl.agingoptions.financepage.testcases.RetirementTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

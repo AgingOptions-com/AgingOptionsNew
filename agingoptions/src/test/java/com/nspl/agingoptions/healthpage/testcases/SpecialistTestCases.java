@@ -38,7 +38,7 @@ public class SpecialistTestCases extends BaseTest {
 
 	@Test(priority=2)
 	public void TC_020_SpouseSpecialistIDontHave() {
-         
+
 		LpoLandingPage lpoLanding=	new LpoLandingPage(util);
 		util.holdOn(Duration.ofSeconds(5));
 		lpoLanding.clickHealthModule();
@@ -283,10 +283,11 @@ public class SpecialistTestCases extends BaseTest {
 		specialist.clickPrimaryMemberToggleButton();
 		specialist.clickAddSpecialistButton();
 		CommonCode common=	new CommonCode(util);
-		common.unCheckCopySameDataToSpouseCheckBox();
 		String expectedFirstName="Dr Sandhya";
 		specialist.inputFirstName(expectedFirstName);
 		String expectedLastName="Tiwari";
+		common.clickCopySameDataCheckbox();
+		common.unCheckCopySameDataToSpouseCheckBox();
 		specialist.inputLastName(expectedLastName);
 		specialist.selectOtherSpecilaistOptions();
 		util.holdOn(Duration.ofSeconds(2));
@@ -332,7 +333,7 @@ public class SpecialistTestCases extends BaseTest {
 		util.verifyActualExpectedText(yearAsSeenActualText,expectedYearAsSeen , "Years as your doctor seen");
 		util.verifyActualExpectedText(notesToAgentsActualText,expectedNotesForAgent , "Notes for Agents");
 		util.verifyActualExpectedText(actualPrimaryContactInnerText,"Primary contact" , "Primary Contact");
-
+		common.clickPreviousButton();
 	}
 
 	@Test(priority=7)
@@ -352,6 +353,7 @@ public class SpecialistTestCases extends BaseTest {
 		specialist.clickAddSpecialistButton();
 		util.holdOn(Duration.ofSeconds(2));
 		CommonCode common=	new CommonCode(util);
+		common.clickCopySameDataCheckbox();
 		common.unCheckCopySameDataToSpouseCheckBox();
 		String expectedFirstName="Reenu";
 		specialist.inputFirstName(expectedFirstName);
@@ -377,6 +379,7 @@ public class SpecialistTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(7));
 		specialist.clickPreviousButton();
 		specialist.clickAddictionMedicineEditIcon();
+		util.holdOn(Duration.ofSeconds(3));
 		String actualFirstName=	primaryCare.getPrimaryCarePhysicianOrSpecialistActualFirstName();
 		String actualLastName=primaryCare.getPrimaryCarePhysicianOrSpecialistActualLastName();
 		String actualSpecialityText=primaryCare.getPrimaryCarePhysicianOrSpecialistActualSpeciality();
@@ -399,9 +402,9 @@ public class SpecialistTestCases extends BaseTest {
 		specialist.clickPreviousButton();
 		specialist.clickSpouseToggleButton();
 		util.holdOn(Duration.ofSeconds(2));
-          
+
 	}
-	
+
 	@Test(priority=8)
 	public void TC_026_SpouseSpecialistSaveDetailsSaveAndProceedToHealthInsurance() {
 
@@ -447,7 +450,7 @@ public class SpecialistTestCases extends BaseTest {
 		specialist.clickSpecilistLink();
 		util.holdOn(Duration.ofSeconds(2));
 		specialist.clickSpouseToggleButton();
-	
+
 		util.holdOn(Duration.ofSeconds(7));
 		specialist.clickAddictionPsychiatryEditBTTable();
 		String actualFirstName=	primaryCare.getPrimaryCarePhysicianOrSpecialistActualFirstName();
@@ -472,7 +475,7 @@ public class SpecialistTestCases extends BaseTest {
 		specialist.clickPreviousButton();
 		specialist.clickSpouseToggleButton();
 		util.holdOn(Duration.ofSeconds(2));
-          
+
 	}
 
 
