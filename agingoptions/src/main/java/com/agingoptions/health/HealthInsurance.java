@@ -330,7 +330,7 @@ public class HealthInsurance {
 		util.sendValue(insuranceTypeOtherTextBox, value, "Insurance Type");
 	}
 
-	@FindBy(xpath="//ul[@id='dropDownDivId']/li[text()='Quaterly']")
+	@FindBy(xpath="//ul[@id='dropDownDivId']/li[text()='Quarterly']")
 	private WebElement quaterlyOption;
 
 	public void selectQuaterlyPremiumFrequency() {
@@ -338,7 +338,7 @@ public class HealthInsurance {
 		util.click(quaterlyOption, "Quaterly Premium Frequency");
 	}
 
-	@FindBy(xpath="//td[text()='Quaterly']/following-sibling::td/div/img[@alt='Edit Icon']")
+	@FindBy(xpath="//td[text()='Quarterly']/following-sibling::td/div/img[@alt='Edit Icon']")
 	private WebElement typeOfPlanOtherQuaterlyEditIcon;
 
 	public void clickQuaterlyEditIcon() {

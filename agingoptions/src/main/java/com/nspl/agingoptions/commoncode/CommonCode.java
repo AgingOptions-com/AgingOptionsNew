@@ -360,7 +360,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 	public void unCheckCopySameDataToSpouseCheckBox() {
 		try {
-			util.holdOn(Duration.ofSeconds(1));
+			util.holdOn(Duration.ofSeconds(2));
 			util.unCheckCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
 			util.waitUntilElementIsDeselected(copySameDataToSpouseCheckBox, 10);
 		} catch (Exception e) {

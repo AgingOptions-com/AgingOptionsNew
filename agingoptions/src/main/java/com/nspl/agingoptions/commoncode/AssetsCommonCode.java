@@ -288,6 +288,12 @@ public class AssetsCommonCode {
 	public void iDontHaveCheckboxStatus() {
 		util.isSelected(iDontHavePrimaryCarePhysicianCheckbox, "I don’t have a Financial Advisor?");
 	}
+	
+	@FindBy(xpath="//span[contains(text(),'Accountant')]")
+	private WebElement accountantSideBarLink;
+
+	public void clickAccountantSideBarLink() {
+		util.click(accountantSideBarLink, "Accountant");}
 
 
 }

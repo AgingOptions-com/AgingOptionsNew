@@ -80,7 +80,7 @@ public class LongTermCarePolicyTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualInsuranceCompanySelectedText,"Nationwide Group","Insurance provider");
 		util.verifyActualExpectedText(acutalPolicyNumberInputText,expectedPolicyNumber,"Policy Number");
 		util.verifyActualExpectedText(expectedPolicyStartDate,actualPolicyStartDateText,"Policy Start Date");
-		util.verifyActualExpectedText(actualPremiumFrequncyText,"Quaterly","Premium Frequency");
+		util.verifyActualExpectedText(actualPremiumFrequncyText,"Quarterly","Premium Frequency");
 		util.verifyActualExpectedText(premiumAmountExpectedText,acutalPremiumAmountText,"Premium Amount");
 		util.verifyActualExpectedText(actualWhenWasThePremiumIncreaseText,expectedPremiumIncreaseDate,"When was the last premium increased");
 		util.verifyActualExpectedText(acutalDailyBenefitAmount,expectedDailyBenefitAmount,"Daily benefit amount-nursing home");
@@ -156,7 +156,7 @@ public class LongTermCarePolicyTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualInsuranceCompanySelectedText,"USAA Group","Insurance provider");
 		util.verifyActualExpectedText(acutalPolicyNumberInputText,expectedPolicyNumber,"Policy Number");
 		util.verifyActualExpectedText(expectedPolicyStartDate,actualPolicyStartDateText,"Policy Start Date");
-		util.verifyActualExpectedText(actualPremiumFrequncyText,"Quaterly","Premium Frequency");
+		util.verifyActualExpectedText(actualPremiumFrequncyText,"Quarterly","Premium Frequency");
 		util.verifyActualExpectedText(premiumAmountExpectedText,acutalPremiumAmountText,"Premium Amount");
 		util.verifyActualExpectedText(actualWhenWasThePremiumIncreaseText,expectedPremiumIncreaseDate,"When was the last premium increased");
 		util.verifyActualExpectedText(acutalDailyBenefitAmount,expectedDailyBenefitAmount,"Daily benefit amount-nursing home");
@@ -239,7 +239,7 @@ public class LongTermCarePolicyTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualInsuranceCompanySelectedText,"Other","Insurance provider");
 		util.verifyActualExpectedText(acutalPolicyNumberInputText,expectedPolicyNumber,"Policy Number");
 		util.verifyActualExpectedText(expectedPolicyStartDate,actualPolicyStartDateText,"Policy Start Date");
-		util.verifyActualExpectedText(actualPremiumFrequncyText,"Quaterly","Premium Frequency");
+		util.verifyActualExpectedText(actualPremiumFrequncyText,"Quarterly","Premium Frequency");
 		util.verifyActualExpectedText(premiumAmountExpectedText,acutalPremiumAmountText,"Premium Amount");
 		util.verifyActualExpectedText(actualInsuranceProvderOtherValue,expectedOtherTypeOfPolicyValue,"Type Of Policy Other");
 		util.verifyActualExpectedText(actualTypeOfPolicyOtherValue,insuranceProviderOtherValue,"Insurance Provider Other");
@@ -318,7 +318,7 @@ public class LongTermCarePolicyTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualInsuranceCompanySelectedText,"Nationwide Group","Insurance provider");
 		util.verifyActualExpectedText(acutalPolicyNumberInputText,expectedPolicyNumber,"Policy Number");
 		util.verifyActualExpectedText(expectedPolicyStartDate,actualPolicyStartDateText,"Policy Start Date");
-		util.verifyActualExpectedText(actualPremiumFrequncyText,"Quaterly","Premium Frequency");
+		util.verifyActualExpectedText(actualPremiumFrequncyText,"Quarterly","Premium Frequency");
 		util.verifyActualExpectedText(premiumAmountExpectedText,acutalPremiumAmountText,"Premium Amount");
 		util.verifyActualExpectedText(actualWhenWasThePremiumIncreaseText,expectedPremiumIncreaseDate,"When was the last premium increased");
 		util.verifyActualExpectedText(acutalDailyBenefitAmount,expectedDailyBenefitAmount,"Daily benefit amount-nursing home");
@@ -394,7 +394,7 @@ public class LongTermCarePolicyTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualInsuranceCompanySelectedText,"USAA Group","Insurance provider");
 		util.verifyActualExpectedText(acutalPolicyNumberInputText,expectedPolicyNumber,"Policy Number");
 		util.verifyActualExpectedText(expectedPolicyStartDate,actualPolicyStartDateText,"Policy Start Date");
-		util.verifyActualExpectedText(actualPremiumFrequncyText,"Quaterly","Premium Frequency");
+		util.verifyActualExpectedText(actualPremiumFrequncyText,"Quarterly","Premium Frequency");
 		util.verifyActualExpectedText(premiumAmountExpectedText,acutalPremiumAmountText,"Premium Amount");
 		util.verifyActualExpectedText(actualWhenWasThePremiumIncreaseText,expectedPremiumIncreaseDate,"When was the last premium increased");
 		util.verifyActualExpectedText(acutalDailyBenefitAmount,expectedDailyBenefitAmount,"Daily benefit amount-nursing home");
@@ -479,7 +479,7 @@ public class LongTermCarePolicyTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualInsuranceCompanySelectedText,"Other","Insurance provider");
 		util.verifyActualExpectedText(acutalPolicyNumberInputText,expectedPolicyNumber,"Policy Number");
 		util.verifyActualExpectedText(expectedPolicyStartDate,actualPolicyStartDateText,"Policy Start Date");
-		util.verifyActualExpectedText(actualPremiumFrequncyText,"Quaterly","Premium Frequency");
+		util.verifyActualExpectedText(actualPremiumFrequncyText,"Quarterly","Premium Frequency");
 		util.verifyActualExpectedText(premiumAmountExpectedText,acutalPremiumAmountText,"Premium Amount");
 		util.verifyActualExpectedText(actualInsuranceProvderOtherValue,expectedOtherTypeOfPolicyValue,"Type Of Policy Other");
 		util.verifyActualExpectedText(actualTypeOfPolicyOtherValue,insuranceProviderOtherValue,"Insurance Provider Other");

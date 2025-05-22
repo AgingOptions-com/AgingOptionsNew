@@ -37,15 +37,15 @@
 			<class
 				name="com.nspl.agingoptions.financepage.testcases.RetirementTestCases">
 			</class>
-				<class
+			<class
 				name="com.nspl.agingoptions.financepage.testcases.RealEstateTestCases">
 			</class>
 			<class
 				name="com.nspl.agingoptions.financepage.testcases.BusinessInterestTestCases">
 			</class>
-             <class
+			<class
 				name="com.nspl.agingoptions.financepage.testcases.TransportationTestCases">
-			</class>	
+			</class>
 			<class
 				name="com.nspl.agingoptions.financepage.testcases.LifeInsuranceTestCases">
 			</class>
@@ -67,8 +67,16 @@
 			<class
 				name="com.nspl.agingoptions.financepage.testcases.TaxInfoTestCases">
 			</class>
-		
-		
+			<class
+				name="com.nspl.agingoptions.financepage.testcases.FinancialAdvisorTestCases">
+			</class>
+			<class
+				name="com.nspl.agingoptions.financepage.testcases.AccountantTestCases">
+			</class>
+			<class
+				name="com.nspl.agingoptions.financepage.testcases.BookKeeperTestCases">
+			</class>
+
 		</classes>
 	</test>
 </suite> 

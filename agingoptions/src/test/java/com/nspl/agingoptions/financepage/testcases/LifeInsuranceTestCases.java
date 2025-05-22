@@ -84,7 +84,7 @@ public class LifeInsuranceTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualPolicyStartDate, expectedPolicyStartDateValue, "Policy start date");
 		util.verifyActualExpectedText(actualPolicyEndDate, expectedPolicyEndDateValue, "Policy End date");
 		util.verifyActualExpectedText(actualPremiumAmountText, expectedPremiumAmountValue, "Premium amount");
-		util.verifyActualExpectedText(actualPremiumFrequncyAmount, "Quaterly", "Premium frequency");
+		util.verifyActualExpectedText(actualPremiumFrequncyAmount, "Quarterly", "Premium frequency");
 		util.verifyActualExpectedText(actualCashValueText, expectedCashValue, "Cash value");
 		util.verifyActualExpectedText(actualDeathBenefitText, expectedDeathBenfitValue, "Death benefit");
 		util.verifyActualExpectedText(actualBeneficiaryText, spouseFirstName + " " + lastName, "Death benefit");
@@ -163,7 +163,7 @@ public class LifeInsuranceTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualPolicyStartDate, expectedPolicyStartDateValue, "Policy start date");
 		util.verifyActualExpectedText(actualPolicyEndDate, expectedPolicyEndDateValue, "Policy End date");
 		util.verifyActualExpectedText(actualPremiumAmountText, expectedPremiumAmountValue, "Premium amount");
-		util.verifyActualExpectedText(actualPremiumFrequncyAmount, "Quaterly", "Premium frequency");
+		util.verifyActualExpectedText(actualPremiumFrequncyAmount, "Quarterly", "Premium frequency");
 		util.verifyActualExpectedText(actualCashValueText, expectedCashValue, "Cash value");
 		util.verifyActualExpectedText(actualDeathBenefitText, expectedDeathBenfitValue, "Death benefit");
 		// util.verifyActualExpectedText(actualBeneficiaryText,spouseFirstName+"
@@ -250,7 +250,7 @@ public class LifeInsuranceTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualPolicyStartDate, expectedPolicyStartDateValue, "Policy start date");
 		util.verifyActualExpectedText(actualPolicyEndDate, expectedPolicyEndDateValue, "Policy End date");
 		util.verifyActualExpectedText(actualPremiumAmountText, expectedPremiumAmountValue, "Premium amount");
-		util.verifyActualExpectedText(actualPremiumFrequncyAmount, "Quaterly", "Premium frequency");
+		util.verifyActualExpectedText(actualPremiumFrequncyAmount, "Quarterly", "Premium frequency");
 		util.verifyActualExpectedText(actualCashValueText, expectedCashValue, "Cash value");
 		util.verifyActualExpectedText(actualDeathBenefitText, expectedDeathBenfitValue, "Death benefit");
 
@@ -324,7 +324,7 @@ public class LifeInsuranceTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualPolicyStartDate, expectedPolicyStartDateValue, "Policy start date");
 		util.verifyActualExpectedText(actualPolicyEndDate, expectedPolicyEndDateValue, "Policy End date");
 		util.verifyActualExpectedText(actualPremiumAmountText, expectedPremiumAmountValue, "Premium amount");
-		util.verifyActualExpectedText(actualPremiumFrequncyAmount, "Quaterly", "Premium frequency");
+		util.verifyActualExpectedText(actualPremiumFrequncyAmount, "Quarterly", "Premium frequency");
 		util.verifyActualExpectedText(actualCashValueText, expectedCashValue, "Cash value");
 		util.verifyActualExpectedText(actualDeathBenefitText, expectedDeathBenfitValue, "Death benefit");
 		// util.verifyActualExpectedText(actualBeneficiaryText,spouseFirstName+"
@@ -401,7 +401,7 @@ public class LifeInsuranceTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualPolicyStartDate, expectedPolicyStartDateValue, "Policy start date");
 		util.verifyActualExpectedText(actualPolicyEndDate, expectedPolicyEndDateValue, "Policy End date");
 		util.verifyActualExpectedText(actualPremiumAmountText, expectedPremiumAmountValue, "Premium amount");
-		util.verifyActualExpectedText(actualPremiumFrequncyAmount, "Quaterly", "Premium frequency");
+		util.verifyActualExpectedText(actualPremiumFrequncyAmount, "Quarterly", "Premium frequency");
 		util.verifyActualExpectedText(actualCashValueText, expectedCashValue, "Cash value");
 		util.verifyActualExpectedText(actualDeathBenefitText, expectedDeathBenfitValue, "Death benefit");
 		common.clickPreviousButton();
@@ -481,7 +481,7 @@ public class LifeInsuranceTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualPolicyStartDate, expectedPolicyStartDateValue, "Policy start date");
 		util.verifyActualExpectedText(actualPolicyEndDate, expectedPolicyEndDateValue, "Policy End date");
 		util.verifyActualExpectedText(actualPremiumAmountText, expectedPremiumAmountValue, "Premium amount");
-		util.verifyActualExpectedText(actualPremiumFrequncyAmount, "Quaterly", "Premium frequency");
+		util.verifyActualExpectedText(actualPremiumFrequncyAmount, "Quarterly", "Premium frequency");
 		util.verifyActualExpectedText(actualCashValueText, expectedCashValue, "Cash value");
 		util.verifyActualExpectedText(actualDeathBenefitText, expectedDeathBenfitValue, "Death benefit");
 		common.clickPreviousButton();

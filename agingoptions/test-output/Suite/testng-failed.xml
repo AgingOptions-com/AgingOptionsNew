@@ -6,20 +6,7 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="TC_017_inputPrimaryMemberCarePhysicianAndSave"/>
-          <include name="afterMethod"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.nspl.agingoptions.healthpage.testcases.PrimaryCarePhysicianTestCases -->
-      <class name="com.nspl.agingoptions.financepage.testcases.LifeInsuranceTestCases">
+      <class name="com.nspl.agingoptions.financepage.testcases.TaxInfoTestCases">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
@@ -27,24 +14,11 @@
           <include name="afterMethod"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="FTC_021_SpouseLifeInsuranceNextLongTermCarePolicyButton"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.nspl.agingoptions.financepage.testcases.LifeInsuranceTestCases -->
-      <class name="com.nspl.agingoptions.financepage.testcases.RetirementTestCases">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="FTC06_RetirementNextRealEstateButton"/>
-          <include name="afterTest"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
+          <include name="FTC_036_PrimaryMemberInputTax2023SaveAndProceedToSpouseBT"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.financepage.testcases.RetirementTestCases -->
+      </class> <!-- com.nspl.agingoptions.financepage.testcases.TaxInfoTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
