@@ -4,9 +4,9 @@ import java.time.Duration;
 
 import org.testng.annotations.Test;
 
-import com.Ao.HousingPage.ProfessionalDetailsPage;
 import com.Ao.HousingPage.HousingProfessionalLandScapperPage;
 import com.Ao.HousingPage.HousingProfessionalMortgageBrokerPage;
+import com.Ao.HousingPage.ProfessionalDetailsPage;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
 import com.nspl.agingoptions.webUtil.BaseTest;
 

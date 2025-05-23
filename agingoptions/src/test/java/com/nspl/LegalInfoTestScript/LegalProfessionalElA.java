@@ -4,8 +4,8 @@ import java.time.Duration;
 
 import org.testng.annotations.Test;
 
-import com.Ao.HousingPage.ProfessionalDetailsPage;
 import com.Ao.HousingPage.HousingProfessionalLandScapperPage;
+import com.Ao.HousingPage.ProfessionalDetailsPage;
 import com.agingoptions.LegalInfoPage.FamilyLawAttorney;
 import com.agingoptions.LegalInfoPage.LegalProfessionalElderLawAttorneyPage;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
