@@ -181,7 +181,7 @@ protected WebElement IsThereBedRoomOnMainFloor_TB;
 @FindBy(xpath="//input[@id='62']")
 protected WebElement WhatFloorIslaundryOn_TB;
 
-@FindBy(xpath="//button[text()='Update & Continue later']")
+@FindBy(xpath="(//div[@class='d-flex justify-content-between mt-3 mb-4']//button)[1]")
 protected WebElement updateAndContinueButton;
 
 @FindBy(xpath="//button[text()='Save & Next: Housing Professionals']")

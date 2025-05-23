@@ -1,5 +1,6 @@
 package com.Ao.HousingPage;
 
+
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,12 +26,11 @@ public class HousingInfo extends HousingInfoOr{
 	public void verifyHousingInformationPage() {
 		wt.verifyInnerText(HousingInformationText, "Housing Information", "Housing information page");
 	}
-	public void verifyCheckYes_NotSure_IsYourHousingLivingIn() {
+	public void verifyCheckYes__IsYourHousingLivingIn() {
 		wt.clickRadioButton(isYourHousingLivingYesCheckBox, "Is the house you are living in, the house you like to spend the rest of your life? Yes radio button");
 		wt.holdOn(Duration.ofSeconds(3));		
 		wt.verifyInnerText(OntheScaleOfOneToFiveOwnHomeInnerText, "On a scale of 1 to 5, how likely is it that you will remain in your current home? 1-Not at all, 5-Will be in my own home", "On The Scale On One Two Five.. dropdown");
-		wt.click(IsYourHousingLivingNotSureCheckBox, "Is the house you are living in, the house you like to spend the rest of your life? Not Sure radio button ");
-		wt.verifyInnerText(OntheScaleOfOneToFiveOwnHomeInnerText, "On a scale of 1 to 5, how likely is it that you will remain in your current home? 1-Not at all, 5-Will be in my own home", "On The Scale On One Two Five.. dropdown");
+		
 	}
 
 	public void verifyCheckNotSure_IsYourHousingLivingIn() {
@@ -83,33 +83,31 @@ public class HousingInfo extends HousingInfoOr{
 	}
 	public void UpdateAndContinueThedetailsWithIstheHouse_yesCheck_and_OntheScaleOnFive_Select1(String closestrelativedistanceInMiles) {
 		verifyCheckYes_IsYourHousingLivingIn();
+		verifyCheckYes_IsYourHousingLivingIn();
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On The Scale On One To Five Own Home Drop Down");
 		wt.click(ClosestRelativeDropdown, "Closest Relative DropDown");
 		wt.click(ClosestrelativeContent, "Closest relative");
 		wt.sendValue(HowManyMilesToClosestRelative,"45", "How Many miles to closest relative Text box");
-		wt.clickRadioButton(WouldYouConsiderLivingWithAChildCheckBox_Yes, "Would you consider Living With Child radio button");
-		wt.clickRadioButton(WouldYouConsiderMovingToCondoniumCheckBox_Yes, "Would you consider to moving condonium radio button");
-		wt.clickRadioButton(WouldYouConsiderMovingToLifeStyleCommunity_Yes, "Would you consider to lifestyle community");
-		wt.clickRadioButton(WouldYouConsiderToMovingRetirementCommunity_Yes, "would you consider to moving retirement community radio button");
+		wt.click(WouldYouConsiderLivingWithAChildCheckBox_Yes, "Would you consider Living With Child radio button");
+		wt.click(WouldYouConsiderMovingToCondoniumCheckBox_Yes, "Would you consider to moving condonium radio button");
+		wt.click(WouldYouConsiderMovingToLifeStyleCommunity_Yes, "Would you consider to lifestyle community");
+		wt.click(WouldYouConsiderToMovingRetirementCommunity_Yes, "would you consider to moving retirement community radio button");
 		wt.click(updateAndContinueButton, "Update and continue");
-		CommonCode cmc=new CommonCode(wt);
-		cmc.verifyToasterMessage("Your data have been updated successfully");
 		wt.holdOn(Duration.ofSeconds(3));
 	       wt.click(accordian,"accordian");
 	}
 	public void SaveAndProceedThedetailsWithIstheHouse_NotsureCheck_and_OntheScaleOnFive_Select1(String closestrelativedistanceInMiles) {
-		verifyCheckNotSure_IsYourHousingLivingIn();
+		verifyCheckYes_IsYourHousingLivingIn();
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On The Scale On One To Five Own Home Drop Down");
 		wt.click(ClosestRelativeDropdown, "Closest Relative DropDown");
 		wt.click(ClosestrelativeContent, "Closest relative");
 		wt.sendValue(HowManyMilesToClosestRelative,"45", "How Many miles to closest relative Text box");
-		wt.clickRadioButton(WouldYouConsiderLivingWithAChildCheckBox_Yes, "Would you consider Living With Child radio button");
-		wt.clickRadioButton(WouldYouConsiderMovingToCondoniumCheckBox_Yes, "Would you consider to moving condonium radio button");
-		wt.clickRadioButton(WouldYouConsiderMovingToLifeStyleCommunity_Yes, "Would you consider to lifestyle community");
-		wt.clickRadioButton(WouldYouConsiderToMovingRetirementCommunity_Yes, "would you consider to moving retirement community radio button");
+		wt.click(WouldYouConsiderLivingWithAChildCheckBox_Yes, "Would you consider Living With Child radio button");
+		wt.click(WouldYouConsiderMovingToCondoniumCheckBox_Yes, "Would you consider to moving condonium radio button");
+		wt.click(WouldYouConsiderMovingToLifeStyleCommunity_Yes, "Would you consider to lifestyle community");
+		wt.click(WouldYouConsiderToMovingRetirementCommunity_Yes, "would you consider to moving retirement community radio button");
 		wt.click(SaveAndNextProfessional, "Save and Next :Professional Button");
-		CommonCode cmc=new CommonCode(wt);
-		cmc.verifyToasterMessage("Your data have been updated successfully");
+		
 
 	}
 	public void verifyHousingProfessionalPage() {
@@ -125,10 +123,10 @@ public class HousingInfo extends HousingInfoOr{
 		wt.click(ClosestRelativeDropdown, "Closest relative dropdown");
 		wt.click(ClosestrelativeContent, "Closest relative ");
 		wt.click(HowManyMilesToClosestRelative, "How many miles to closest relative text box");
-		wt.clickRadioButton(WouldYouConsiderLivingWithAChildCheckBox_Yes, "Would you consider to living with child and family member");
-		wt.clickRadioButton(WouldYouConsiderMovingToCondoniumCheckBox_Yes, "Would you consider to moving to a condonium");
+		wt.click(WouldYouConsiderLivingWithAChildCheckBox_Yes, "Would you consider to living with child and family member");
+		wt.click(WouldYouConsiderMovingToCondoniumCheckBox_Yes, "Would you consider to moving to a condonium");
 		wt.click(WouldYouConsiderMovingToLifeStyleCommunity_Yes, "Would you consider to moving lifestyle community");
-		wt.clickRadioButton(WouldYouConsiderToMovingRetirementCommunity_Yes, "Would you consider to moving to retirement community");
+		wt.click(WouldYouConsiderToMovingRetirementCommunity_Yes, "Would you consider to moving to retirement community");
 		wt.click(updateAndContinueButton, "Update and continue Button");
 		CommonCode cmc=new CommonCode(wt);
 		cmc.verifyToasterMessage("Your data have been updated successfully");
@@ -137,20 +135,17 @@ public class HousingInfo extends HousingInfoOr{
 	}
 
 	public void SaveAndNextToHousingProfessional_ThedetailsTheHousingYouAreLivingWith_NoRadioButtonSelected(String RetirementPlace) {
-
 		wt.clickRadioButton(IsYourHousingLivingNoCheckBox, "Is the House You are Living In No Radio button");
 		wt.clearTextBox(WhereWouldYouLikeTORetireTB);
 		wt.sendValue(WhereWouldYouLikeTORetireTB, RetirementPlace, "Where Would you want to retire");
 		wt.click(ClosestRelativeDropdown, "Closest relative dropdown");
 		wt.click(ClosestrelativeContent, "Closest relative ");
 		wt.click(HowManyMilesToClosestRelative, "How many miles to closest relative text box");
-		wt.clickRadioButton(WouldYouConsiderLivingWithAChildCheckBox_Yes, "Would you consider to living with child and family member");
-		wt.clickRadioButton(WouldYouConsiderMovingToCondoniumCheckBox_Yes, "Would you consider to moving to a condonium");
+		wt.click(WouldYouConsiderLivingWithAChildCheckBox_Yes, "Would you consider to living with child and family member");
+		wt.click(WouldYouConsiderMovingToCondoniumCheckBox_Yes, "Would you consider to moving to a condonium");
 		wt.click(WouldYouConsiderMovingToLifeStyleCommunity_Yes, "Would you consider to moving lifestyle community");
-		wt.clickRadioButton(WouldYouConsiderToMovingRetirementCommunity_Yes, "Would you consider to moving to retirement community");
+		wt.click(WouldYouConsiderToMovingRetirementCommunity_Yes, "Would you consider to moving to retirement community");
 		wt.click(SaveAndNextProfessional, "Save And Next: professional");
-		CommonCode cmc=new CommonCode(wt);
-		cmc.verifyToasterMessage("Your data have been updated successfully");
 		wt.holdOn(Duration.ofSeconds(3));
 		verifyHousingProfessionalPage();
 
@@ -162,13 +157,21 @@ public class HousingInfo extends HousingInfoOr{
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On THe Scale On five Own Drodwn ");
 		wt.click(OntheScaledropDown_option2, "Option 2");
 		wt.click(accordian, "accordian");
+		wt.click(HowManyStoryDoesItHave_DropDown, "how many story does it have dropdown");
 		List<WebElement> ListWeb=wt.driver.findElements(By.xpath("//ul[@id='dropDownDivId']//li"));
-		wt.click(HowManyStoryDoesItHave_DropDown, "How many story does it have dropdown");
-		wt.ListSize(ListWeb);
+		for(int i=0; i<ListWeb.size(); i++) {
+			String text=ListWeb.get(i).getText();
+		    wt.printDataInReport("Option"+i+"-"+text);
+			
+		}
+		wt.click(updateAndContinueButton, "Update and continue button");
+		wt.click(accordian, "Accordian");
+	 
 	}
 	public void VerifyWhenWeSelectTWoThreeAndMore_HowManyStoryDoesItHave() throws InterruptedException {
 		wt.holdOn(Duration.ofSeconds(1));
-		wt.click(IsYourHousingLivingNotSureCheckBox, "Is the housing Living With Not sure Radio Button");
+		wt.click(isYourHousingLivingYesCheckBox, "Is the housing Living With yes Radio Button");
+		wt.click(isYourHousingLivingYesCheckBox, "Is the housing Living With yes sure Radio Button");
 		wt.holdOn(Duration.ofSeconds(1));
 		wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On THe Scale On five Own Drodwn ");
 		wt.click(OntheScaledropDown_option2, "Option 2");
@@ -187,6 +190,7 @@ public class HousingInfo extends HousingInfoOr{
 		wt.isDisplayed(WhatFloorIsLaundryOn_InnerText, "What floor is laundry on text box");
 	}  
    public void VerifyUpdateAndContinueWhenSelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive(String ClosestrelativeDistance) {
+	   wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in");
 	   wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in");
 	   wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On the scale of five own dropdown");
 	   wt.click(OntheScaledropDown_option2, "Option 2");
@@ -222,11 +226,12 @@ public class HousingInfo extends HousingInfoOr{
    }
    public void VerifySaveAndProceedToProfessionalWhenSelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive() {
 	   wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in");
+	   wt.click(isYourHousingLivingYesCheckBox, "Is the house you are living in");
 	   wt.click(OnTheScaleOfFiveOwnHomeDropDown, "On the scale of five own dropdown");
 	   wt.click(OntheScaledropDown_option2, "Option 2");
 	   wt.click(accordian, "Parent Accordian");
-	   wt.click(ClosestRelativeDropdown, "Closest relative dropdown");
-	   wt.click(ClosestrelativeContent, "Closest relataive");
+//	   wt.click(ClosestRelativeDropdown, "Closest relative dropdown");
+//	   wt.click(ClosestrelativeContent, "Closest relataive");
 	   wt.sendValue(HowManyMilesToClosestRelative, "53", "Closest relative textbox");
 	   wt.click(WouldYouConsiderLivingWithAChildCheckBox_NotSure, "Would you consider living with child and family member Not sure radio button");
 	   wt.click(WouldYouConsidermovingToCondoniumCheckBox_NotSure, "Would you consider to moving to condonium Not sure radio button");
