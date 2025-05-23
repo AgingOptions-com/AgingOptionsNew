@@ -4,8 +4,6 @@ package com.nspl.HousingInfoPageTestcase;
 import org.testng.annotations.Test;
 import java.time.Duration;
 
-
-
 import com.Ao.HousingPage.HousingInfo;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
 
