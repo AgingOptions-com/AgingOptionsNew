@@ -2034,8 +2034,5 @@ public class WebUtil {
 		}
 	}
 
-<<<<<<< HEAD
 
-=======
->>>>>>> fc9139160fa8997a38dbc6a92c4d76744cdb234e
 }

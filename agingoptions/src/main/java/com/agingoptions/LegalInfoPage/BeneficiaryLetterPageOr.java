@@ -12,7 +12,7 @@ public class BeneficiaryLetterPageOr {
 		PageFactory.initElements(wt.getDriver(), this);
 		}
 	
-	@FindBy(xpath="//span[text()='Beneficiary Letter']")
+	@FindBy(xpath ="//span[text()='Beneficiary Letter']")
 	protected WebElement beneficiaryLetterDrawer; 
 	
 	@FindBy(xpath="//p[text()='Assets:']")
