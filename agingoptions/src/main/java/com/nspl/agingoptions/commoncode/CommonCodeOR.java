@@ -106,12 +106,45 @@ public class CommonCodeOR   {
 
 	@FindBy(xpath="//p//strong")
 	protected WebElement otpText; 
-
+	
+	@FindBy(xpath="//p[text()='Matter No.']/following-sibling::input")
+	protected WebElement matterNumber;
+	
+	@FindBy(xpath="//p[text()='What are your planning objectives?']/following-sibling::textarea")
+	protected WebElement whatAreYourPlanningObjective;
+	
+	@FindBy(xpath="(//p[text()='Does your spouse live with you?']/parent::div//label//p)[1]")
+	protected WebElement DoesYouSpouseLiveWithYouYesRadioBT;
+	
+	@FindBy(xpath="(//p[text()='Does your spouse live with you?']/parent::div//label//p)[2]")
+	protected WebElement DoesYouSpouseLiveWithYouNoRadioBT;
+	
 	@FindBy(xpath="//iframe[@id='ifmail']")
 	protected WebElement iFrame; 
 
 	@FindBy (xpath="//input[@id='first']")
 	protected WebElement otpInputBox;
+	
+	@FindBy(xpath="//p[text()='Search address']/following-sibling::input")
+	protected WebElement SearchAddress;
+	
+	@FindBy(xpath="//p[text()='Street number and name*']/following-sibling::input")
+	protected WebElement StreetNumber;
+	
+	@FindBy(xpath="//p[text()='Apt/Suite']/following-sibling::input")
+	protected WebElement aptSuite;
+	
+	@FindBy(xpath="//p[text()='City*']/following-sibling::input")
+	protected WebElement City;
+	
+	@FindBy(xpath="//p[text()='State*']/following-sibling::input")
+	protected WebElement state;
+	
+	@FindBy(xpath="//p[text()='Zip code*']/following-sibling::input")
+	protected WebElement ZipCode;
+	
+	@FindBy(xpath="//p[text()='Country*']/following-sibling::input")
+	protected WebElement country;
 
 	@FindBy(xpath="//button[@type='submit']")
 	protected WebElement verifybutton;

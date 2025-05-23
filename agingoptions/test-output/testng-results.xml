@@ -1,161 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-14T15:23:02 IST" name="Default suite" finished-at="2025-05-14T15:28:32 IST" duration-ms="330849">
+  <suite started-at="2025-05-22T16:32:07 IST" name="Default suite" finished-at="2025-05-22T16:33:49 IST" duration-ms="102098">
     <groups>
     </groups>
-    <test started-at="2025-05-14T15:23:02 IST" name="Default test" finished-at="2025-05-14T15:28:32 IST" duration-ms="330849">
-      <class name="com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:23:01 IST" name="beforeSuite" finished-at="2025-05-14T15:23:02 IST" duration-ms="491" status="PASS">
+    <test started-at="2025-05-22T16:32:07 IST" name="Default test" finished-at="2025-05-22T16:33:49 IST" duration-ms="102098">
+      <class name="com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:32:07 IST" name="beforeSuite" finished-at="2025-05-22T16:32:07 IST" duration-ms="393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:23:02 IST" name="beforeTest" finished-at="2025-05-14T15:24:28 IST" duration-ms="85910" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:32:07 IST" name="beforeTest" finished-at="2025-05-22T16:33:35 IST" duration-ms="88007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:24:28 IST" name="beforeClass" finished-at="2025-05-14T15:24:28 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:35 IST" name="beforeClass" finished-at="2025-05-22T16:33:35 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:24:28 IST" name="beforeMethod" finished-at="2025-05-14T15:24:28 IST" duration-ms="2" status="PASS">
+        <test-method signature="VerifyAreYouSpecialNeedsYes()[pri:1, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:35 IST" name="VerifyAreYouSpecialNeedsYes" finished-at="2025-05-22T16:33:40 IST" duration-ms="4667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAreYouSpecialNeedsYes -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:35 IST" name="beforeMethod" finished-at="2025-05-22T16:33:35 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript.VerifyAddOtherTypeProfessional()]]>
+                <![CDATA[public void com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase.VerifyAreYouSpecialNeedsYes()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifyAddOtherTypeProfessional()[pri:1, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:24:28 IST" name="VerifyAddOtherTypeProfessional" finished-at="2025-05-14T15:25:26 IST" duration-ms="58441" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyAddOtherTypeProfessional -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:25:26 IST" name="afterMethod" finished-at="2025-05-14T15:25:27 IST" duration-ms="705" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:40 IST" name="afterMethod" finished-at="2025-05-22T16:33:40 IST" duration-ms="382" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyAddOtherTypeProfessional status=SUCCESS method=MyServiceProviderTestScript.VerifyAddOtherTypeProfessional()[pri:1, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyAreYouSpecialNeedsYes status=SUCCESS method=PersonalInformationTestcase.VerifyAreYouSpecialNeedsYes()[pri:1, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript.VerifyAddOtherTypeProfessional()]]>
+                <![CDATA[public void com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase.VerifyAreYouSpecialNeedsYes()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:25:27 IST" name="beforeMethod" finished-at="2025-05-14T15:25:27 IST" duration-ms="1" status="PASS">
+        <test-method signature="VerifyAreYouPlanningToRetireOverSeasYes()[pri:2, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:40 IST" name="VerifyAreYouPlanningToRetireOverSeasYes" finished-at="2025-05-22T16:33:45 IST" duration-ms="4491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAreYouPlanningToRetireOverSeasYes -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:40 IST" name="beforeMethod" finished-at="2025-05-22T16:33:40 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript.VerifySaveAndproceedToProfessionalDetails()]]>
+                <![CDATA[public void com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase.VerifyAreYouPlanningToRetireOverSeasYes()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifySaveAndproceedToProfessionalDetails()[pri:2, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:25:27 IST" name="VerifySaveAndproceedToProfessionalDetails" finished-at="2025-05-14T15:26:25 IST" duration-ms="58618" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySaveAndproceedToProfessionalDetails -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:26:25 IST" name="afterMethod" finished-at="2025-05-14T15:26:25 IST" duration-ms="61" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:45 IST" name="afterMethod" finished-at="2025-05-22T16:33:45 IST" duration-ms="17" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifySaveAndproceedToProfessionalDetails status=SUCCESS method=MyServiceProviderTestScript.VerifySaveAndproceedToProfessionalDetails()[pri:2, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyAreYouPlanningToRetireOverSeasYes status=SUCCESS method=PersonalInformationTestcase.VerifyAreYouPlanningToRetireOverSeasYes()[pri:2, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript.VerifySaveAndproceedToProfessionalDetails()]]>
+                <![CDATA[public void com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase.VerifyAreYouPlanningToRetireOverSeasYes()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:26:25 IST" name="beforeMethod" finished-at="2025-05-14T15:26:25 IST" duration-ms="1" status="PASS">
+        <test-method signature="VerifyAreYouUSVeteranYes()[pri:3, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:45 IST" name="VerifyAreYouUSVeteranYes" finished-at="2025-05-22T16:33:49 IST" duration-ms="4416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAreYouUSVeteranYes -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:45 IST" name="beforeMethod" finished-at="2025-05-22T16:33:45 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript.VerifySaveAndAddAnotherProfessional()]]>
+                <![CDATA[public void com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase.VerifyAreYouUSVeteranYes()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifySaveAndAddAnotherProfessional()[pri:3, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:26:25 IST" name="VerifySaveAndAddAnotherProfessional" finished-at="2025-05-14T15:27:26 IST" duration-ms="60738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySaveAndAddAnotherProfessional -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:27:26 IST" name="afterMethod" finished-at="2025-05-14T15:27:26 IST" duration-ms="59" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:49 IST" name="afterMethod" finished-at="2025-05-22T16:33:49 IST" duration-ms="47" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifySaveAndAddAnotherProfessional status=SUCCESS method=MyServiceProviderTestScript.VerifySaveAndAddAnotherProfessional()[pri:3, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyAreYouUSVeteranYes status=SUCCESS method=PersonalInformationTestcase.VerifyAreYouUSVeteranYes()[pri:3, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript.VerifySaveAndAddAnotherProfessional()]]>
+                <![CDATA[public void com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase.VerifyAreYouUSVeteranYes()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:27:26 IST" name="beforeMethod" finished-at="2025-05-14T15:27:26 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript.VerifySaveProfessionalDetailsWithCopySameDataToSpouseUnchecked()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifySaveProfessionalDetailsWithCopySameDataToSpouseUnchecked()[pri:4, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:27:26 IST" name="VerifySaveProfessionalDetailsWithCopySameDataToSpouseUnchecked" finished-at="2025-05-14T15:28:32 IST" duration-ms="66131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySaveProfessionalDetailsWithCopySameDataToSpouseUnchecked -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:28:32 IST" name="afterMethod" finished-at="2025-05-14T15:28:32 IST" duration-ms="56" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifySaveProfessionalDetailsWithCopySameDataToSpouseUnchecked status=SUCCESS method=MyServiceProviderTestScript.VerifySaveProfessionalDetailsWithCopySameDataToSpouseUnchecked()[pri:4, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript.VerifySaveProfessionalDetailsWithCopySameDataToSpouseUnchecked()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:28:32 IST" name="afterClass" finished-at="2025-05-14T15:28:32 IST" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:49 IST" name="afterClass" finished-at="2025-05-22T16:33:49 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:28:32 IST" name="afterTest" finished-at="2025-05-14T15:28:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:49 IST" name="afterTest" finished-at="2025-05-22T16:33:49 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript@5c671d7f]" started-at="2025-05-14T15:28:33 IST" name="afterSuite" finished-at="2025-05-14T15:28:33 IST" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase@1757cd72]" started-at="2025-05-22T16:33:49 IST" name="afterSuite" finished-at="2025-05-22T16:33:49 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.nspl.MyServiceProviderTestScript.MyServiceProviderTestScript -->
+      </class> <!-- com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

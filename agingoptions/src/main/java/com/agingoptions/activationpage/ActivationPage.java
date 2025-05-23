@@ -67,7 +67,7 @@ public class ActivationPage {
 		util.sendValueJs(primaryMemberDobTB, primaryMemberDob, "Primary member Date Of Birth");
 	}
 	public void inputNoOfChildren(String noOfChild) {
-		util.sendValueJs(noOfChildTB, noOfChild, "Number of child ");
+		util.sendValue(noOfChildTB, noOfChild, "Number of child ");
 	}
 	public void inputSpouseFirstName(String spouseFirstName) {
 		util.sendValue(spouseFirstNameTB, spouseFirstName, "Spouse First Name");

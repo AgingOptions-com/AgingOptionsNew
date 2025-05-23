@@ -112,18 +112,30 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void inputMarriedUserAcitvationPageDetails(String noOfChild, String primaryMemberDob, String address,
-			String spouseFirstName, String spouseDob) {
+			String spouseFirstName, String spouseDob,String matterNo, String PlanningObjective) {
 		ActivationPage actObj = new ActivationPage(util);
 		util.holdOn(Duration.ofSeconds(3));
 		actObj.selectMarriedRelationshipOptions();
-		actObj.selectMaleAsPrimaryMember();
 		actObj.inputNoOfChildren(noOfChild);
+		util.holdOn(Duration.ofSeconds(3));
+		actObj.selectMaleAsPrimaryMember();
+	
 		//  util.click(countryCodeDropDown, "Country Drop Down");
 		actObj.inputPrimaryMemberDob(primaryMemberDob);
-		// actObj.inputAddress(address);
+		 //actObj.inputAddress(address);
+		util.sendValue(SearchAddress, "34 Fairview Road, Canton, MA, USA", "Search address");
+		util.sendValue(StreetNumber, "34 Fairview Road", "Street Number and name");
+		util.sendValue(City, "Canton", "City");
+		util.sendValue(state, "Massachusetts", "State");
+		util.sendValue(ZipCode, "02021-1720", "Zipcode");
+		util.sendValue(country, "United States", "country");
 		actObj.inputSpouseFirstName(spouseFirstName);
 		actObj.inputSpouseDob(spouseDob);
 		util.holdOn(Duration.ofSeconds(1));
+		util.sendValue(matterNumber,matterNo , "Matter Number text bix");
+		util.sendValue(whatAreYourPlanningObjective, PlanningObjective, "Planning objective text box");
+		util.click(DoesYouSpouseLiveWithYouYesRadioBT, "Does your spouse live with you");
+		util.holdOn(Duration.ofSeconds(2));
 		actObj.clickProceedSubmitButton();
 		util.holdOn(Duration.ofSeconds(5));
 		String actualText=	getPersonalInfoText();
@@ -142,14 +154,39 @@ public class CommonCode extends CommonCodeOR {
 		String spouseFirstName = mapData.get("spouseFirstName");
 		String spouseDob = mapData.get("spouseDob");
 		String address = mapData.get("address");
+		String matterNumber=mapData.get("matterNumber");
+		String PlanningObjective=mapData.get("PlanningObjective");
 		CommonCode common = new CommonCode(util);
 		String UserEmail = common.createLifePlanningUser(firstName, lastName, email, phoneNumber);
 		util.holdOn(Duration.ofSeconds(3));
 		common.searchUserParaGotoLPO(UserEmail);
 		Duration.ofSeconds(3);
-		common.inputMarriedUserAcitvationPageDetails(noOfChild, primaryMemberDob, address, spouseFirstName, spouseDob);
+		common.inputMarriedUserAcitvationPageDetails(noOfChild, primaryMemberDob, address, spouseFirstName, spouseDob,matterNumber,PlanningObjective);
 	}
 
+	
+	public Map<String, String> LoginWithNewMarriedUser1() {
+		DataUtil data = new DataUtil();
+		Map<String, String> mapData = data.getTestCaseData("Health_001");
+		String firstName = mapData.get("firstName");
+		String lastName = mapData.get("lastName");
+		String email = mapData.get("userEmail");
+		String phoneNumber = mapData.get("phoneNumber");
+		String noOfChild = mapData.get("noOfChild");
+		String primaryMemberDob = mapData.get("primaryMemberDob");
+		String spouseFirstName = mapData.get("spouseFirstName");
+		String spouseDob = mapData.get("spouseDob");
+		String address = mapData.get("address");
+		String matterNumber=mapData.get("matterNumber");
+		String PlanningObjective=mapData.get("PlanningObjective");
+		CommonCode common = new CommonCode(util);
+//		String UserEmail = common.createLifePlanningUser(firstName, lastName, email, phoneNumber);
+//		util.holdOn(Duration.ofSeconds(3));
+//		common.searchUserParaGotoLPO(UserEmail);
+//		Duration.ofSeconds(3);
+//		common.inputMarriedUserAcitvationPageDetails(noOfChild, primaryMemberDob, address, spouseFirstName, spouseDob,matterNumber,PlanningObjective);
+		return mapData;
+	}
 	public void waitParalegalScreenOldDesignUntilLoaderRandering() {
 		util.waitForLoaderToDisappear(By.xpath("//div[@class='spinner-border text-primary blockuiloader']"), 1);
 	}

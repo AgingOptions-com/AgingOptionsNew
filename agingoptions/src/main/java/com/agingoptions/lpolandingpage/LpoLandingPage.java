@@ -77,5 +77,13 @@ public class LpoLandingPage {
 		util.waitUntilElementToBeClickable(MyServiceProviderSectionUndersetUpPage);
 		util.click(MyServiceProviderSectionUndersetUpPage, "My service provider Module");	
 	}
+	
+	@FindBy(xpath="(//span[text()='Personal Info'])[1]")
+	protected WebElement PersonalInfoButton;
+	
+	public void ClickPersonalInfoModule() {
+		util.holdOn(Duration.ofSeconds(4));
+		util.click(PersonalInfoButton, "Personal info button");
+	}
 
 }
