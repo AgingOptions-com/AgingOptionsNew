@@ -211,7 +211,7 @@ public class RealEstateTestCases extends BaseTest {
 		String secondMortgageExpectedEmail="sampleadjuctablerate@maildrop.cc";  
 		realEstate.inputLendersEmail(secondMortgageExpectedEmail);
 		realEstate.clickLenderInfoSaveButton();
-		util.holdOn(Duration.ofSeconds(1));
+		util.holdOn(Duration.ofSeconds(3));
 		//this code will add line of mortgage in the debt against properties in the real estate and reflect in the liabilites
 		realEstate.checkLineOfMortgageButton();
 		String lineOfCrediteExpectedLenderName="Dummy FHA Loan";

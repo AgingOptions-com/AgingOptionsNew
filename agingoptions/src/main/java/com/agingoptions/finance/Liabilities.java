@@ -1,5 +1,7 @@
 package com.agingoptions.finance;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -123,22 +125,103 @@ public class Liabilities {
 		String text=	util.getInnerText(liabilitiesPrimaryContactText);
 		return text;
 	}
-	
+
 	@FindBy(xpath="//td[contains(text(),'Agingoptions')]/following-sibling::td/div/img[@alt='Edit Icon']")
 	private WebElement agingOptionsEditIcon;
-	
+
 	public void clickAgingOptionsEditIcon() {
 		util.click(agingOptionsEditIcon, "Aging Options");
 	}
-	
+
 	@FindBy(xpath="//td[contains(text(),'Nspl')]/following-sibling::td/div/img[@alt='Edit Icon']")
 	private WebElement nsplEditIcon;
-	
+
 	public void clickNsplEditIcon() {
 		util.click(nsplEditIcon, "NSPL Edit Icon");
 	}
-	
 
+	@FindBy(xpath="//button[contains(text(),'Add Liability')]")
+	private WebElement addLiabilityBT;
+
+	public void clickAddLiabilityButton() {
+		util.click(addLiabilityBT, "Add Liability");
+	}
+
+	@FindBy(xpath="//p[contains(text(),'Types of liabilities*')]/parent::div//span")
+	private WebElement typeOfLiabilitiesDropDown;
+
+	@FindBy(xpath="//li[contains(text(),'Credit Cards')]")
+	private WebElement creditCardTypeOfLiabilities;
+
+	public void selectCreditCardTypeOfLiabilities() {
+		util.holdOn(Duration.ofSeconds(1));
+		util.click(typeOfLiabilitiesDropDown, "Types of liabilities");
+		util.click(creditCardTypeOfLiabilities, "Credit Card");
+	}
+
+	@FindBy(xpath="//td[contains(text(),'Credit Cards')]//following-sibling::td//img[@alt='Edit Icon']")
+	private WebElement creditCardEditIcon;
+
+	public void clickCreditCardEditIcon() {
+		util.click(creditCardEditIcon, "Credit Cards");
+	}
+
+	public String getTypeOfLiabilitiesSelectedText() {
+		String text=	util.getInnerText(typeOfLiabilitiesDropDown);
+		return text;
+	}
+	
+	@FindBy(xpath="//li[contains(text(),'Other')]")
+	private WebElement otherTypeOfLiabilities;
+
+	public void selectOtherTypeOfLiabilities() {
+		util.holdOn(Duration.ofSeconds(1));
+		util.click(typeOfLiabilitiesDropDown, "Types of liabilities");
+		util.click(otherTypeOfLiabilities, "Other Type Of Liabilities");
+	}
+
+	@FindBy(xpath="//input[@id='other']")
+	private WebElement typeOfLiabilitiesOtherTB;
+	
+	public void inputTypeOfLiabilitiesOtherTextBoxValue(String value) {
+		util.sendValue(typeOfLiabilitiesOtherTB, value, "Type Of Liabilities Other Text Box");
+	}
+	
+	public String getOtherTypeOfLiabilityTextBoxValue() {
+	String actualTypeOfLiabilityOtherValue=	util.GetAttributevalue(typeOfLiabilitiesOtherTB, "value");
+	return actualTypeOfLiabilityOtherValue;
+	}
+
+	@FindBy(xpath="//td[contains(text(),'Legal responsibility')]//following-sibling::td//img[@alt='Edit Icon']")
+	private WebElement legalResponsibilityEditIcon;
+
+	public void clickLegalResponsibilityEditIcon() {
+		util.click(legalResponsibilityEditIcon, "Other Edit Icon");
+	}
+	
+	@FindBy(xpath="//li[contains(text(),'Student Loan')]")
+	private WebElement studentLoanTypeOfLiabilities;
+
+	public void selectStudentLoanTypeOfLiabilities() {
+		util.holdOn(Duration.ofSeconds(1));
+		util.click(typeOfLiabilitiesDropDown, "Types of liabilities");
+		util.click(studentLoanTypeOfLiabilities, "Student Loan");
+	}
+	
+	@FindBy(xpath="//button[contains(text(),'Save & Proceed to Income')]")
+	private WebElement saveProceedToIncomeBT;
+	
+	public void clickSaveProceedToIncomeButton() {
+		util.click(saveProceedToIncomeBT, "Save & Proceed to Income");
+	}
+	
+	@FindBy(xpath="//td[contains(text(),'Student Loan')]//following-sibling::td//img[@alt='Edit Icon']")
+	private WebElement studentLoanEditIcon;
+
+	public void clickStudentLoanEditIcon() {
+		util.click(studentLoanEditIcon, "Student Loan");
+	}
+	
 }
 
 

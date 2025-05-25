@@ -65,14 +65,14 @@ public class RealEstatePage {
 		util.sendValue(currentValueTB, value, "Current Value");
 	}
 
-	@FindBy(xpath="(//div[@class='d-flex flex-column']/label)[1]/input")
+	@FindBy(xpath="//label[(text()='Mortgage')]/input")
 	private WebElement mortgageCheckbox;
 
 	public void checkMortgageCheckBox() {
 		util.checkCheckBox(mortgageCheckbox, "Mortgage");
 	}
 
-	@FindBy(xpath="//p[contains(text(),'Name of Lender*')]/following-sibling::input")
+	@FindBy(xpath="//p[translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = 'name of lender*']/following-sibling::input")
 	private WebElement nameOfLenderTB;
 
 	public void inputNameOfLender(String value) {
@@ -94,7 +94,7 @@ public class RealEstatePage {
 		util.sendValue(loanNumberTB, value, "Loan Number");
 	}
 
-	@FindBy(xpath="//label[contains(text(),'Monthly Amount')]/parent::div/div/input")
+	@FindBy(xpath="//label[contains(translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'monthly amount')]/parent::div/div/input")
 	private WebElement monthlyAmountTB;
 
 	public void inputMonthlyAmount(String value) {
@@ -108,7 +108,7 @@ public class RealEstatePage {
 		util.sendValue(interestRateTB, value, "Interest Rate");
 	}
 
-	@FindBy(xpath="//label[contains(text(),'Outstanding Balance')]/parent::div/div/input")
+	@FindBy(xpath="//label[contains(translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'outstanding balance')]/parent::div/div/input")
 	private WebElement outstandingBalanceTB;
 
 	public void inputOutstandingBalance(String value) {
@@ -193,6 +193,7 @@ public class RealEstatePage {
 	private WebElement lenderInfoMortgageEditIcon;
 
 	public void lenderInfoMortgageEditIcon() {
+		util.holdOn(Duration.ofSeconds(1));
 		util.click(lenderInfoMortgageEditIcon,"Lender Info Mortgage Edit Icon" );
 	}
 
@@ -321,14 +322,14 @@ public class RealEstatePage {
 		return text;
 	}
 
-	@FindBy(xpath="(//div[@class='d-flex flex-column']/label)[2]/input")
+	@FindBy(xpath="//label[(text()='2nd Mortgage')]/input")
 	private WebElement secondMortgageBT;
 
 	public void check2ndMortgageButton() {
 		util.checkCheckBox(secondMortgageBT, "2nd Mortgage Button");
 	}
 
-	@FindBy(xpath="(//div[@class='d-flex flex-column']/label)[3]/input")
+	@FindBy(xpath="//label[(text()='Line of Credit')]/input")
 	private WebElement lineOfMortgageCheckBox;
 
 	public void checkLineOfMortgageButton() {
@@ -338,7 +339,7 @@ public class RealEstatePage {
 
 	}
 
-	@FindBy(xpath="(//div[@class='d-flex flex-column']/label)[4]/input")
+	@FindBy(xpath="//label[(text()='Other')]/input")
 	private WebElement otherMortgageCheckBox;
 
 	public void checkOtherMortgageButton() {

@@ -233,7 +233,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualPolicyName,expectedPolicyName ,"Policy Name");
 		util.verifyActualExpectedText(actualPolicyNum,expectedPolicyNumber ,"Policy number");
 		util.verifyActualExpectedText(actualGroupNum,expecteGroupNumber ,"Group number");
-		util.verifyActualExpectedText(actualPremiumFrequency,"Quaterly" ,"Premium Frequency");
+		util.verifyActualExpectedText(actualPremiumFrequency,"Quarterly" ,"Premium Frequency");
 		util.verifyActualExpectedText(actualPremiumAmount,expectedPremiumAmount ,"Premium amount");
 		util.verifyActualExpectedText(actualDedcuctableAmount,actualDeductibleAmount ,"Deductable amount");
 		util.verifyActualExpectedText(actualCoPayment,expectedCoPayment ,"Co Payment");
@@ -305,7 +305,7 @@ public class HealthInsuranceTestCases extends BaseTest {
 		util.verifyActualExpectedText(actualPolicyName,expectedPolicyName ,"Policy Name");
 		util.verifyActualExpectedText(actualPolicyNum,expectedPolicyNumber ,"Policy number");
 		util.verifyActualExpectedText(actualGroupNum,expecteGroupNumber ,"Group number");
-		util.verifyActualExpectedText(actualPremiumFrequency,"Quaterly" ,"Premium Frequency");
+		util.verifyActualExpectedText(actualPremiumFrequency,"Quarterly" ,"Premium Frequency");
 		util.verifyActualExpectedText(actualPremiumAmount,expectedPremiumAmount ,"Premium amount");
 		util.verifyActualExpectedText(actualDedcuctableAmount,actualDeductibleAmount ,"Deductable amount");
 		util.verifyActualExpectedText(actualCoPayment,expectedCoPayment ,"Co Payment");
