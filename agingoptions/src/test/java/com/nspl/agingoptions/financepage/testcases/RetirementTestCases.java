@@ -62,7 +62,7 @@ public class RetirementTestCases extends BaseTest {
 		assets.clickSaveContinueLaterButton();
 		assets.waitUntilNon_RetirementTableIsPresentInUI(40);
 		nonRetirement.clickIndianNonRetirementEditIcon();
-		util.holdOn(Duration.ofSeconds(5));
+		util.holdOn(Duration.ofSeconds(3));
 		String actualTypeOfAssetSelectOption = nonRetirement.getTypeOfAssetDropDownSelectedOption();
 		String actualNameOfInstitutionValue = nonRetirement.getNameOfInstitutionInputValue();
 		String actualBalance = nonRetirement.getBalanceInputValue();

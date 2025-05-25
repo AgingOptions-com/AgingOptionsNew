@@ -175,6 +175,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public String gettextOfOTP() {
+		// util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		util.switchToFrameByWebElement(iFrame);
 		String text = util.getInnerText(otpText);
 		// util.nevigateAction("Otp Page").back();
@@ -183,6 +184,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void returntoframe() {
+		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
 		util.nevigateAction("Otp Page").back();
 		util.nevigateAction("").back();
 
@@ -217,12 +219,14 @@ public class CommonCode extends CommonCodeOR {
 	public void GotoclickAdminRoleoptions() {
 
 		util.click(AdminRole, "Admin Role");
+		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		util.verifyTitle("Admin", "AO Admin");
 	}
 
 	public void GoTOClickEventCoordinatorRole() {
 
 		util.click(EventCoordinatiorRole, "Event Coordinator");
+		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		util.verifyTitle("Counter Coordinator", "Counter-Coordinator");
 
 	}
@@ -311,10 +315,6 @@ public class CommonCode extends CommonCodeOR {
 
 	@FindBy(xpath = "//p[text()='Copy same data to spouse']/parent::div//input")
 	private WebElement copySameDataToSpouseCheckBox;
-	
-	public void clickCopySameDataCheckbox() {
-		util.click(copySameDataToSpouseCheckBox, "Copy Same Data Spouse");
-	}
 
 	public void checkCopySameDataToSpouseCheckBox() {
 		try {
@@ -360,7 +360,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 	public void unCheckCopySameDataToSpouseCheckBox() {
 		try {
-			util.holdOn(Duration.ofSeconds(2));
+			util.holdOn(Duration.ofSeconds(1));
 			util.unCheckCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
 			util.waitUntilElementIsDeselected(copySameDataToSpouseCheckBox, 10);
 		} catch (Exception e) {
@@ -384,12 +384,5 @@ public class CommonCode extends CommonCodeOR {
 	public void waitUntilToasterMessageisSeen() {
 		util.waitUntilElementIsAppearInThePage(toasterMessage, 40);
 	}
-	
-	public void selectPhysicalAddressFromAddressType() {
-		util.holdOn(Duration.ofSeconds(1));
-		util.click(addressTypeDropDown, "Address Type");
-		util.click(physicalAddressDropDownOption, "Physical Address");
-	}
-	
 	
 }

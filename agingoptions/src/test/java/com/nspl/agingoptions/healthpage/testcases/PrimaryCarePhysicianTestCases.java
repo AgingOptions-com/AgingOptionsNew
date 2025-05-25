@@ -92,7 +92,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 		primaryCare.openContactAndAddressInfoAccordian();
 		String expectedEmail="varungupta238@maildrop.cc";
 		String expectedCellNum="9876459834";
-		primaryCare.inputPrimaryContactEmailMobileNo(expectedCellNum, expectedEmail);
+		primaryCare.inputPrimaryContactEmail(expectedCellNum, expectedEmail);
 		//primaryCare.clickAddAnotherContactButton();
 		//primaryCare.inputAddress("122002");
 		primaryCare.clickSaveAndProceedToSpouseBT();
@@ -110,7 +110,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 		primaryCare.openContactAndAddressInfoAccordian();
 		util.holdOn(Duration.ofSeconds(1));
 		//String actualPhysicalText=  primaryCare.getPhysicalAddressText();
-		String actualPrimaryContactInnerText=	primaryCare.getPrimaryContactText();
+		String actualPrimaryContactInnerText=	primaryCare.getPrimaryAddressText();
 		util.verifyActualExpectedText(actualFirstName, expectedFirstName, "First Name");
 		util.verifyActualExpectedText(actualLastName,expectedLastName , "Last Name");
 		util.verifyActualExpectedText(actualSpecialityText,"Advanced Registered Nurse Practitioner (ARNP)" , "Speciality");
@@ -159,7 +159,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 		primaryCare.openContactAndAddressInfoAccordian();
 		String expectedEmail="sangeetasharma9893@maildrop.cc";
 		String expectedCellNum="7098659877";
-		primaryCare.inputPrimaryContactEmailMobileNo(expectedCellNum, expectedEmail);
+		primaryCare.inputPrimaryContactEmail(expectedCellNum, expectedEmail);
 		//primaryCare.clickAddAnotherContactButton();
 		primaryCare.inputAddress("122002");
 		primaryCare.clickSaveProceedToSpecialistBT();
@@ -179,7 +179,7 @@ public class PrimaryCarePhysicianTestCases extends BaseTest {
 		primaryCare.openContactAndAddressInfoAccordian();
 		util.holdOn(Duration.ofSeconds(1));
 		String actualPhysicalText=  primaryCare.getPhysicalAddressText();
-		String actualPrimaryContactInnerText=	primaryCare.getPrimaryContactText();
+		String actualPrimaryContactInnerText=	primaryCare.getPrimaryAddressText();
 		util.verifyActualExpectedText(actualFirstName, expectedFirstName, "First Name");
 		util.verifyActualExpectedText(actualLastName,expectedLastName , "Last Name");
 		util.verifyActualExpectedText(actualSpecialityText,"Advanced Registered Nurse Practitioner (ARNP)" , "Speciality");

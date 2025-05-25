@@ -158,12 +158,5 @@ public class MedicationSupplementsPage {
 	public void clickSaveProceedToHousingButton() {
 		util.click(saveProceedToHousing, "Save & Proceed To Spouse Button");
 	}
-	
-	@FindBy(xpath="(//button[contains(text(),'Add Medication')])[2]")
-	private WebElement spouseAddMedicationButton;
-	
-	public void clickSpouseAddMedictionButton() {
-		util.click(spouseAddMedicationButton, "Spouse Add medication");
-	}
 
 }

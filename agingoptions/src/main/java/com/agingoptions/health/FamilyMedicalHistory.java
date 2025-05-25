@@ -134,7 +134,7 @@ public class FamilyMedicalHistory {
 		util.sendValue(spouseFatherAgeDeathTB, value,"Primary Member Father’s age at death");
 	}
 
-	@FindBy(xpath="(//p[contains(text(),'Father’s cause of death')])[1]/following-sibling::input")
+	@FindBy(xpath="(//p[text()='Father’s cause of death'])[1]/following-sibling::input")
 	private WebElement primaryFathersCauseOfDeathTB;
 
 	public void inputPrimaryMemberFatherCauseOfDeath(String value) {

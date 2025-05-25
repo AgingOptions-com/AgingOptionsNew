@@ -24,8 +24,8 @@ public class MarriedUserFamilyMedicalHistoryTestCases extends BaseTest{
 		util.holdOn(Duration.ofSeconds(5));
 		String primaryMemberFatherExpectedAge="79";
 		familyMedical.inputPrimaryMemberFathersCurrentAge(primaryMemberFatherExpectedAge);
-		String primaryMemberMotherExpectedAge="84";
-		familyMedical.inputPrimaryMemberMotherCurrentAge(primaryMemberMotherExpectedAge);
+		String primaryMemberSpouseExpectedAge="84";
+		familyMedical.inputPrimaryMemberMotherCurrentAge(primaryMemberSpouseExpectedAge);
 		String spouseFatherExpectedAge="77";
 		familyMedical.inputSpouseFathersCurrentAge(spouseFatherExpectedAge);
 		String spouseMotherExpectedAge="82";
@@ -35,11 +35,11 @@ public class MarriedUserFamilyMedicalHistoryTestCases extends BaseTest{
 		familyMedical.clickFamilyMedicalHistorySideBarLink();
 		util.holdOn(Duration.ofSeconds(3));
 		String primaryFatherActualText=      familyMedical.getPrimaryFatherCurrentAgeInputText();
-		String primaryMotherActualText=      familyMedical.getPrimarySpouseCurrentAgeInputText();
+		String primarySpouseActualText=      familyMedical.getPrimarySpouseCurrentAgeInputText();
 		String spouseFatherActualText=      familyMedical.getSpouseFatherCurrentAgeInputText();
 		String spouseMotherActualText=     familyMedical.getSpouseMotherCurrentAgeInputText();
 		util.verifyActualExpectedText(primaryMemberFatherExpectedAge,primaryFatherActualText ,"Primary Member Father’s current age" );
-		util.verifyActualExpectedText(primaryMemberMotherExpectedAge,primaryMotherActualText ,"Primary Member Mother's current age" );
+		util.verifyActualExpectedText(primaryMemberSpouseExpectedAge,primarySpouseActualText ,"Primary Member Mother's current age" );
 		util.verifyActualExpectedText(spouseFatherExpectedAge,spouseFatherActualText , "Spouse Father’s current age");
 		util.verifyActualExpectedText(spouseMotherExpectedAge,spouseMotherActualText ,"Spouse Mother's Current Age" );
 
@@ -67,7 +67,7 @@ public class MarriedUserFamilyMedicalHistoryTestCases extends BaseTest{
 		familyMedical.inputSpouseFatherAgeAtDeath(spouseFatherAgeDeathExpectedText);
 		String spouseFatherCauseOfDeathDescExpectedText="Dementia";
 		familyMedical.inputSpouseFatherCauseOfDeath(spouseFatherCauseOfDeathDescExpectedText);
-		String PrimaryMotherAgeAtDeathExpectedText="89";
+		String PrimaryMotherAgeAtDeathExpectedText="94";
 		familyMedical.inputprimaryMemberMothersAgeAtDeathTB(PrimaryMotherAgeAtDeathExpectedText);
 		String primarMotherCauseOfDeathDesc="Due to Illness";
 		familyMedical.inputPrimaryMemberMothersCauseAtDeath(primarMotherCauseOfDeathDesc);
@@ -78,7 +78,7 @@ public class MarriedUserFamilyMedicalHistoryTestCases extends BaseTest{
 		familyMedical.clickSaveProceedToPrimaryCarePhysicianBT();
 		util.holdOn(Duration.ofSeconds(10));
 		familyMedical.clickFamilyMedicalHistorySideBarLink();
-		util.holdOn(Duration.ofSeconds(5));
+		util.holdOn(Duration.ofSeconds(4));
 		String primaryFatherAgeDeathActualText=	familyMedical.getPrimaryMemberFatherAgeAtDeathActualText();
 		String spouseFatherAgeAtDeathActualText=	familyMedical.getSpouseFatherAgeAtDeathActualText();
 		String primaryFatherCauseOfDeathActualText=	familyMedical.getPrimaryMemberFatherCauseOfDeathActualText();
@@ -87,6 +87,7 @@ public class MarriedUserFamilyMedicalHistoryTestCases extends BaseTest{
 		String spouseMotherAgeAtDeathActualText=	familyMedical.getSpouseMotherAgeAtDeathActualText();
 		String primaryMemberMotherCauseOfDeathActualText=	familyMedical.getPrimaryMemberMotherCauseOfDeathActualText();
 		String spouseMotherCauseOfDeathActualText=	familyMedical.getSpouseMotherCauseOfDeathActualText();
+
 		util.verifyActualExpectedText(primaryFatherAgeDeathActualText,primaryFatherAgeDeathExpectedText ,"Primary Member Father’s age at death");
 		util.verifyActualExpectedText(spouseFatherAgeAtDeathActualText,spouseFatherAgeDeathExpectedText ,"Spouse Father’s age at death");
 		util.verifyActualExpectedText(primaryFatherCauseOfDeathActualText,primaryFatherCauseOfDeathDesc ,"Primary Father’s age at death");

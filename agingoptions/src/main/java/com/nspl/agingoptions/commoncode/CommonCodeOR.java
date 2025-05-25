@@ -65,7 +65,7 @@ public class CommonCodeOR   {
 	@FindBy(xpath="(//span[text()='Family'])[1]")
 	protected WebElement familySideIcon;
 
-	@FindBy(xpath="//div[@class='NewRegImg mt-lg-0']/img[@alt='NewReg']")
+	@FindBy(xpath="(//div[@class='NewRegImg mt-lg-0'])[1]//img")
 	protected WebElement newRegistrationBT;
 
 	@FindBy(xpath="//input[@id='firstName']")
@@ -158,7 +158,7 @@ public class CommonCodeOR   {
 	@FindBy(xpath="//h1[text()='Personal Information']")
 	protected WebElement PersonalInformationIcon;
 
-	@FindBy(xpath="//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'save and continue later')        or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'save & continue later')]")
+	@FindBy(xpath="//button[contains(text(),'Save & Continue later')]")
 	protected WebElement saveContinueLaterBT;
 
 	@FindBy(xpath="//button[contains(text(),'Save & Add Another')]")
@@ -169,25 +169,19 @@ public class CommonCodeOR   {
 
 	@FindBy(xpath="//button[text()='Click to resend']")
 	protected WebElement clickToResendInnertext;
-
+	
 	@FindBy(xpath="//button[@id='refresh']")
 	protected WebElement yopEmailRefreshIcon;
-
+	
 	@FindBy(xpath="(//label[contains(text(),'Cell  Number')]/parent::div//input)[1]")
 	protected WebElement countryCodeTB;
-
+	
 	@FindBy(xpath="//div[@class='css-1dimb5e-singleValue']")
 	protected WebElement countryCodeDropDown;
 
 	@FindBy(xpath="//li[contains(text(),'(+91) IN')]")
 	protected WebElement countryCode91;
-
-	@FindBy(xpath="//p[contains(text(),'Address Type')]/parent::div//span")
-	protected WebElement addressTypeDropDown;
-
-	@FindBy(xpath="//li[contains(text(),'Physical')]")
-	protected WebElement physicalAddressDropDownOption;
-
+	
 }
 
 
