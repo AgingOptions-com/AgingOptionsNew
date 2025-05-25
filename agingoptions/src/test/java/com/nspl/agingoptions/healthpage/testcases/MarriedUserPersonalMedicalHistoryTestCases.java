@@ -41,6 +41,7 @@ public class MarriedUserPersonalMedicalHistoryTestCases extends BaseTest {
 	public void TC_002_Health_Personal_Medical_History_MedicalConditionsElementVisibility() {
 
 		PersonalMedicalHistory personal = new PersonalMedicalHistory(util);
+		util.holdOn(Duration.ofSeconds(4));
 		personal.primaryMemberDementiaAlzheimerStatus();
 		personal.spouseDementiaAlzheimerStatus();
 		personal.primaryMemberParkinsonTextStatus();

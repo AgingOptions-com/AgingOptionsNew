@@ -3,6 +3,21 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="com.nspl.agingoptions.financepage.testcases.TaxInfoTestCases">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="FTC_036_PrimaryMemberInputTax2023SaveAndProceedToSpouseBT"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.agingoptions.financepage.testcases.TaxInfoTestCases -->
+=======
       <class name="com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases">
         <methods>
           <include name="afterClass"/>
@@ -33,6 +48,7 @@
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript -->
+>>>>>>> fc9139160fa8997a38dbc6a92c4d76744cdb234e
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
