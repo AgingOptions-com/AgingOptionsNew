@@ -188,6 +188,11 @@ public class CommonCodeOR   {
 	@FindBy(xpath="//li[contains(text(),'Physical')]")
 	protected WebElement physicalAddressDropDownOption;
 
+	@FindBy(xpath="//button[contains(text(),'Activate Client')]/following-sibling::div//span[@class='slider']")
+	protected WebElement activateClientLPOToggleButton;
+	
+
+	
 }
 
 

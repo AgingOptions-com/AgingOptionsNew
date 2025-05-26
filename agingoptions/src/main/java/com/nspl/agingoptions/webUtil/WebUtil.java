@@ -332,7 +332,7 @@ public class WebUtil {
 			weEle.click();
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
-		} catch (ElementNotInteractableException e) {
+		} catch (ElementClickInterceptedException e) {
 			js.executeScript("arguments[0].click()", weEle);
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
