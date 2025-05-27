@@ -11,7 +11,7 @@ import com.nspl.agingoptions.webUtil.BaseTest;
 
 public class FileCabinetParalegalTestCases extends BaseTest {
 
-	@Test
+	@Test(priority=1)
 	public void FTC_061_EstatePlanningPrimaryMemberDocsUploadFunctionality() {
 
 		LpoLandingPage lpo = new LpoLandingPage(util);
@@ -94,6 +94,74 @@ public class FileCabinetParalegalTestCases extends BaseTest {
 		String spoueActualFileType = fileCabinet.getUploadedFileDocumentType();
 		util.verifyActualExpectedText(spoueActualFileType, "Gun Trust", "Spouse Gun Trust");
 	}
+	
+	@Test(priority=4)
+	public void FTC_064_LifePlanFeeAgreementDocsUploadFunctionality() {
+
+		LpoLandingPage lpo = new LpoLandingPage(util);
+		CommonCode common = new CommonCode(util);
+		util.refreshPage();
+		util.holdOn(Duration.ofSeconds(5));
+		lpo.clickFileCabinetSideBarLink();
+		FileCabinetParalegal fileCabinet = new FileCabinetParalegal(util);
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.clickFeeAgreementOtherFormsTab();
+		fileCabinet.clickCurrentLink();
+		fileCabinet.clickUploadYourFileButton();
+		fileCabinet.selectAnnualMaintananceDocs();
+		fileCabinet.selectPrimaryMemberBelongsTODD();
+		String expectedDateOfSignOff = "11-09-2024";
+		fileCabinet.inputDateOfSignOff(expectedDateOfSignOff);
+		fileCabinet.selectYesRadioButtonAsEmergencyDocument();
+		fileCabinet.uploadFile();
+		fileCabinet.clickFileCabinetSaveButton();
+		fileCabinet.clickCancelButton();
+		util.holdOn(Duration.ofSeconds(2));
+		String actualFileType = fileCabinet.getUploadedFileDocumentType();
+		util.verifyActualExpectedText(actualFileType, "Annual Maintenance Agreement", "Annual Maintenance Agreement");
+	}
+	
+	@Test(priority = 5)
+	public void FTC_065_LifePlanFeeAgreementDocsArchivedFunctionality() {
+
+		LpoLandingPage lpo = new LpoLandingPage(util);
+		CommonCode common = new CommonCode(util);
+		util.refreshPage();
+		util.holdOn(Duration.ofSeconds(5));
+		lpo.clickFileCabinetSideBarLink();
+		FileCabinetParalegal fileCabinet = new FileCabinetParalegal(util);
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.clickFeeAgreementOtherFormsTab();
+		fileCabinet.clickCurrentLink();
+		fileCabinet.clickUploadYourFileButton();
+		fileCabinet.selectAnnualMaintananceDocs();
+		fileCabinet.selectPrimaryMemberBelongsTODD();
+		String expectedDateOfSignOff = "11-09-2024";
+		fileCabinet.inputDateOfSignOff(expectedDateOfSignOff);
+		fileCabinet.selectYesRadioButtonAsEmergencyDocument();
+		fileCabinet.uploadFile();
+		fileCabinet.clickFileCabinetSaveButton();
+		fileCabinet.clickCancelButton();
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.clickFeeAgreementOtherFormsTab();
+		fileCabinet.clickCurrentLink();
+		fileCabinet.clickUploadYourFileButton();
+		fileCabinet.selectAnnualMaintananceDocs();
+		fileCabinet.selectPrimaryMemberBelongsTODD();
+		 expectedDateOfSignOff = "12-11-2023";
+		fileCabinet.inputDateOfSignOff(expectedDateOfSignOff);
+		fileCabinet.selectYesRadioButtonAsEmergencyDocument();
+		fileCabinet.uploadFile();
+		fileCabinet.clickFileCabinetSaveButton();
+		fileCabinet.clickCancelButton();
+		String currentActualFileType = fileCabinet.getUploadedFileDocumentType();
+		fileCabinet.clickArchivedFile();
+		String archivedActualFileType = fileCabinet.getUploadedFileDocumentType();
+		util.verifyActualExpectedText(currentActualFileType, archivedActualFileType, "Annual Maintenance Agreement");
+	}
+	
+	
+	
 	
 
 }

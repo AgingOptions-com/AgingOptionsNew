@@ -166,6 +166,34 @@ public class FileCabinetParalegal {
 		util.click(fileTypeDropDown, "File Type");
 		util.click(gunTrustDDOption, "Gun Trust");
 	}
+	
+	@FindBy(xpath="//span[contains(text(),'Fee Agreement & Other Forms')]")
+	private WebElement feeAgreementOtherFromsTab;
+	
+	public void clickFeeAgreementOtherFormsTab() {
+		util.click(feeAgreementOtherFromsTab, "Fee Agreement & Other Forms");
+	}
 
+	@FindBy(xpath="//h3[contains(text(),'Annual Maintenance Agreement')]")
+	private WebElement annualMaintananceDocsOption;
+	
+	public void selectAnnualMaintananceDocs() {
+			util.click(fileTypeDropDown, "File Type");
+			util.click(annualMaintananceDocsOption, "Annual Maintenance Agreement");
+	}
+	
+	@FindBy(xpath="//button[@id='DropdownForFiles']")
+	private WebElement threeDotIcon;
+	
+	public void click3DotIcon() {
+		util.click(threeDotIcon, "3 Dot Icon");
+	}
+	
+	@FindBy(xpath="//button[contains(text(),'Archived')]")
+	private WebElement archivedFileLK;
+	
+	public void clickArchivedFile() {
+		util.click(archivedFileLK, "Archived");
+	}
 
 }

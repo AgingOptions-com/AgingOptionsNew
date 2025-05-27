@@ -191,7 +191,8 @@ public class CommonCodeOR   {
 	@FindBy(xpath="//button[contains(text(),'Activate Client')]/following-sibling::div//span[@class='slider']")
 	protected WebElement activateClientLPOToggleButton;
 	
-
+    @FindBy(xpath="//span[@data-off='Intake']")
+    protected WebElement LPOToggleText;
 	
 }
 
