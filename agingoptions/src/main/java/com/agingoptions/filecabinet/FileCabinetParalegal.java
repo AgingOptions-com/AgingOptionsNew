@@ -195,5 +195,61 @@ public class FileCabinetParalegal {
 	public void clickArchivedFile() {
 		util.click(archivedFileLK, "Archived");
 	}
+	
+	@FindBy(xpath="//p[text()='Finance']")
+	private WebElement financeDrawer;
+	
+	public void clickFinanceDrawer() {
+		util.click(financeDrawer, "Finance Drawer");
+	}
+	
+	@FindBy(xpath="//span[contains(text(),'Edit')]")
+	private WebElement editIcon;
+	
+	public void clickEditIcon() {
+		util.click(editIcon, "Edit Icon");
+	}
+	
+	public String getYouWantIncludeThisAnEmergencyContactSelectedText() {
+	String text=	util.GetAttributevalue(emergencyDocumentDDIcon, "value");
+	return text;
+	}
+	
+	@FindBy(xpath="//input[@id='clientsDocVisibility']")
+	private WebElement clientDocVisibleEle;
+	
+	public String getClientDocumentVisibleSelectedText() {
+	String text=	util.GetAttributevalue(clientDocVisibleEle, "value");
+	return text;
+	}
 
+	@FindBy(xpath="//button[text()='Update']")
+	private WebElement updateBT;
+	
+	public void clickUpdateButton() {
+		util.click(updateBT, "Update");
+	}
+	
+	@FindBy(xpath="(//p[contains(text(),'Belongs to*')]/parent::div//div[@class='options'])[2]/h3")
+	private WebElement spouseBelongsToDD;
+
+	public void selectSpouseBelongsTODD() {
+		util.click(belongsToDD, "Belongs to*");
+		util.click(spouseBelongsToDD, "Spouse Member");
+	}
+	
+	@FindBy(xpath="//p[text()='Health']")
+	private WebElement healthDrawer;
+	
+	public void clickHealthDrawer() {
+		util.click(healthDrawer, "Health");
+	}
+	
+	@FindBy(xpath="//p[text()='Housing']")
+	private WebElement housingDrawer;
+	
+	public void clickHousingDrawer() {
+		util.click(housingDrawer, "Housing");
+	}
+	
 }

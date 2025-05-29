@@ -94,7 +94,7 @@ public class FileCabinetParalegalTestCases extends BaseTest {
 		String spoueActualFileType = fileCabinet.getUploadedFileDocumentType();
 		util.verifyActualExpectedText(spoueActualFileType, "Gun Trust", "Spouse Gun Trust");
 	}
-	
+
 	@Test(priority=4)
 	public void FTC_064_LifePlanFeeAgreementDocsUploadFunctionality() {
 
@@ -120,7 +120,7 @@ public class FileCabinetParalegalTestCases extends BaseTest {
 		String actualFileType = fileCabinet.getUploadedFileDocumentType();
 		util.verifyActualExpectedText(actualFileType, "Annual Maintenance Agreement", "Annual Maintenance Agreement");
 	}
-	
+
 	@Test(priority = 5)
 	public void FTC_065_LifePlanFeeAgreementDocsArchivedFunctionality() {
 
@@ -148,7 +148,7 @@ public class FileCabinetParalegalTestCases extends BaseTest {
 		fileCabinet.clickUploadYourFileButton();
 		fileCabinet.selectAnnualMaintananceDocs();
 		fileCabinet.selectPrimaryMemberBelongsTODD();
-		 expectedDateOfSignOff = "12-11-2023";
+		expectedDateOfSignOff = "12-11-2023";
 		fileCabinet.inputDateOfSignOff(expectedDateOfSignOff);
 		fileCabinet.selectYesRadioButtonAsEmergencyDocument();
 		fileCabinet.uploadFile();
@@ -159,9 +159,175 @@ public class FileCabinetParalegalTestCases extends BaseTest {
 		String archivedActualFileType = fileCabinet.getUploadedFileDocumentType();
 		util.verifyActualExpectedText(currentActualFileType, archivedActualFileType, "Annual Maintenance Agreement");
 	}
+
+	@Test(priority=6)
+	public void FTC_066_PrimaryMemberFinanceDrawerFileUploadFunctionality() {
+
+		LpoLandingPage lpo = new LpoLandingPage(util);
+		CommonCode common = new CommonCode(util);
+		util.refreshPage();
+		util.holdOn(Duration.ofSeconds(5));
+		lpo.clickFileCabinetSideBarLink();
+		FileCabinetParalegal fileCabinet = new FileCabinetParalegal(util);
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.clickFinanceDrawer();
+		fileCabinet.clickUploadYourFileButton();
+		fileCabinet.selectPrimaryMemberBelongsTODD();
+		fileCabinet.selectYesRadioButtonAsEmergencyDocument();
+		fileCabinet.uploadFile();
+		fileCabinet.clickFileCabinetSaveButton();
+		fileCabinet.clickCancelButton();
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.click3DotIcon();
+		fileCabinet.clickEditIcon();
+		String actualEmergencySelectedText=fileCabinet.getYouWantIncludeThisAnEmergencyContactSelectedText();
+		String actualClientDocsVisibleText=fileCabinet.getClientDocumentVisibleSelectedText();
+        fileCabinet.clickUpdateButton();
+		util.verifyActualExpectedText(actualEmergencySelectedText, "Yes", "You want to include this as an Emergency Document");
+		util.verifyActualExpectedText(actualClientDocsVisibleText, "Yes", "Will this document's be visible to the client");
+	}
+
+	@Test(priority=7)
+	public void FTC_067_SpouseFinanceDrawerFileUploadFunctionality() {
+
+		LpoLandingPage lpo = new LpoLandingPage(util);
+		CommonCode common = new CommonCode(util);
+		util.refreshPage();
+		util.holdOn(Duration.ofSeconds(5));
+		lpo.clickFileCabinetSideBarLink();
+		FileCabinetParalegal fileCabinet = new FileCabinetParalegal(util);
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.clickFinanceDrawer();
+		fileCabinet.clickSpouseToggleButton();
+		fileCabinet.clickUploadYourFileButton();
+		fileCabinet.selectSpouseBelongsTODD();
+		fileCabinet.selectYesRadioButtonAsEmergencyDocument();
+		fileCabinet.uploadFile();
+		fileCabinet.clickFileCabinetSaveButton();
+		fileCabinet.clickCancelButton();
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.click3DotIcon();
+		fileCabinet.clickEditIcon();
+		String actualEmergencySelectedText=fileCabinet.getYouWantIncludeThisAnEmergencyContactSelectedText();
+		String actualClientDocsVisibleText=fileCabinet.getClientDocumentVisibleSelectedText();
+        fileCabinet.clickUpdateButton();
+		util.verifyActualExpectedText(actualEmergencySelectedText, "Yes", "You want to include this as an Emergency Document");
+		util.verifyActualExpectedText(actualClientDocsVisibleText, "Yes", "Will this document's be visible to the client");
+	}
+
+	@Test(priority = 8)
+	public void FTC_068_PrimaryHealthDrawerFileUploadFunctionality() {
+
+		LpoLandingPage lpo = new LpoLandingPage(util);
+		CommonCode common = new CommonCode(util);
+		util.refreshPage();
+		util.holdOn(Duration.ofSeconds(5));
+		lpo.clickFileCabinetSideBarLink();
+		FileCabinetParalegal fileCabinet = new FileCabinetParalegal(util);
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.clickHealthDrawer();
+		
+		fileCabinet.clickUploadYourFileButton();
+		fileCabinet.selectPrimaryMemberBelongsTODD();
+		fileCabinet.selectYesRadioButtonAsEmergencyDocument();
+		fileCabinet.uploadFile();
+		fileCabinet.clickFileCabinetSaveButton();
+		fileCabinet.clickCancelButton();
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.click3DotIcon();
+		fileCabinet.clickEditIcon();
+		String actualEmergencySelectedText=fileCabinet.getYouWantIncludeThisAnEmergencyContactSelectedText();
+		String actualClientDocsVisibleText=fileCabinet.getClientDocumentVisibleSelectedText();
+        fileCabinet.clickUpdateButton();
+		util.verifyActualExpectedText(actualEmergencySelectedText, "Yes", "You want to include this as an Emergency Document");
+		util.verifyActualExpectedText(actualClientDocsVisibleText, "Yes", "Will this document's be visible to the client");
+	}
 	
+	@Test(priority=9)
+	public void FTC_069_SpouseHealthDrawerFileUploadFunctionality() {
+
+		LpoLandingPage lpo = new LpoLandingPage(util);
+		CommonCode common = new CommonCode(util);
+		util.refreshPage();
+		util.holdOn(Duration.ofSeconds(5));
+		lpo.clickFileCabinetSideBarLink();
+		FileCabinetParalegal fileCabinet = new FileCabinetParalegal(util);
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.clickHealthDrawer();
+		fileCabinet.clickSpouseToggleButton();
+		fileCabinet.clickUploadYourFileButton();
+		util.holdOn(Duration.ofSeconds(2));
+		fileCabinet.selectSpouseBelongsTODD();
+		fileCabinet.selectYesRadioButtonAsEmergencyDocument();
+		fileCabinet.uploadFile();
+		fileCabinet.clickFileCabinetSaveButton();
+		fileCabinet.clickCancelButton();
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.click3DotIcon();
+		fileCabinet.clickEditIcon();
+		String actualEmergencySelectedText=fileCabinet.getYouWantIncludeThisAnEmergencyContactSelectedText();
+		String actualClientDocsVisibleText=fileCabinet.getClientDocumentVisibleSelectedText();
+        fileCabinet.clickUpdateButton();
+		util.verifyActualExpectedText(actualEmergencySelectedText, "Yes", "You want to include this as an Emergency Document");
+		util.verifyActualExpectedText(actualClientDocsVisibleText, "Yes", "Will this document's be visible to the client");
+	}
+
+	@Test(priority=10)
+	public void FTC_070_PrimaryHousingDrawerFileUploadFunctionality() {
+
+		LpoLandingPage lpo = new LpoLandingPage(util);
+		CommonCode common = new CommonCode(util);
+		util.refreshPage();
+		util.holdOn(Duration.ofSeconds(5));
+		lpo.clickFileCabinetSideBarLink();
+		FileCabinetParalegal fileCabinet = new FileCabinetParalegal(util);
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.clickHousingDrawer();
+		
+		fileCabinet.clickUploadYourFileButton();
+		fileCabinet.selectPrimaryMemberBelongsTODD();
+		fileCabinet.selectYesRadioButtonAsEmergencyDocument();
+		fileCabinet.uploadFile();
+		fileCabinet.clickFileCabinetSaveButton();
+		fileCabinet.clickCancelButton();
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.click3DotIcon();
+		fileCabinet.clickEditIcon();
+		String actualEmergencySelectedText=fileCabinet.getYouWantIncludeThisAnEmergencyContactSelectedText();
+		String actualClientDocsVisibleText=fileCabinet.getClientDocumentVisibleSelectedText();
+        fileCabinet.clickUpdateButton();
+		util.verifyActualExpectedText(actualEmergencySelectedText, "Yes", "You want to include this as an Emergency Document");
+		util.verifyActualExpectedText(actualClientDocsVisibleText, "Yes", "Will this document's be visible to the client");
+	}
 	
-	
+	@Test(priority=11)
+	public void FTC_071_SpouseHousingDrawerFileUploadFunctionality() {
+
+		LpoLandingPage lpo = new LpoLandingPage(util);
+		CommonCode common = new CommonCode(util);
+		util.refreshPage();
+		util.holdOn(Duration.ofSeconds(5));
+		lpo.clickFileCabinetSideBarLink();
+		FileCabinetParalegal fileCabinet = new FileCabinetParalegal(util);
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.clickHousingDrawer();
+		fileCabinet.clickSpouseToggleButton();
+		fileCabinet.clickUploadYourFileButton();
+		util.holdOn(Duration.ofSeconds(2));
+		fileCabinet.selectSpouseBelongsTODD();
+		fileCabinet.selectYesRadioButtonAsEmergencyDocument();
+		fileCabinet.uploadFile();
+		fileCabinet.clickFileCabinetSaveButton();
+		fileCabinet.clickCancelButton();
+		util.holdOn(Duration.ofSeconds(5));
+		fileCabinet.click3DotIcon();
+		fileCabinet.clickEditIcon();
+		String actualEmergencySelectedText=fileCabinet.getYouWantIncludeThisAnEmergencyContactSelectedText();
+		String actualClientDocsVisibleText=fileCabinet.getClientDocumentVisibleSelectedText();
+        fileCabinet.clickUpdateButton();
+		util.verifyActualExpectedText(actualEmergencySelectedText, "Yes", "You want to include this as an Emergency Document");
+		util.verifyActualExpectedText(actualClientDocsVisibleText, "Yes", "Will this document's be visible to the client");
+	}
 	
 
 }
