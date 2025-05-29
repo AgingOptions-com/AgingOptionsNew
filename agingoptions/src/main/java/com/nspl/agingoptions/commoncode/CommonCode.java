@@ -67,13 +67,21 @@ public class CommonCode extends CommonCodeOR {
 	public void searchUserParaGotoLPO(String userEmail) {
 		util.holdOn(Duration.ofSeconds(2));
 		util.sendValueWithEnter(paralegalSearchTB, userEmail, "Paralegal Search");
-		// waitParalegalScreenOldDesignUntilLoaderRandering();
 		util.holdOn(Duration.ofSeconds(5));
 		try {
 			util.waitUntilPresentInUI(paralegalSearchedUser, userEmail);
+			util.holdOn(Duration.ofSeconds(5));		
+			 util.click(activateClientLPOToggleButton, "LPO Toggle Button");
+			 util.holdOn(Duration.ofSeconds(5));
+			 util.waitUntilPresentInUI(LPOToggleText, "LPO");
+			 util.holdOn(Duration.ofSeconds(3));
 			util.click(paralegalSearchedUser, "Paralegal screen searched user");
 		} catch (Exception e) {
+			util.holdOn(Duration.ofSeconds(5));
+			 util.click(activateClientLPOToggleButton, "LPO Toggle Button");
 			util.click(paralegalSearchedUser, "Paralegal screen searched user");
+		}finally {
+			
 		}
 		util.holdOn(Duration.ofSeconds(3));
 	}

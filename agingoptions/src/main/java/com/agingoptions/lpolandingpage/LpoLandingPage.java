@@ -68,5 +68,15 @@ public class LpoLandingPage {
 		util.click(LegalButtonUndersetUp, "Legal Module");	
 	}
 	
+	@FindBy(xpath="(//span[contains(text(),'File Cabinet')])[1]")
+	private WebElement fileCabinetSideBarLink;
+	
+	public void clickFileCabinetSideBarLink() {
+		util.holdOn(Duration.ofSeconds(5));
+		util.waitUntilPresentInUI(fileCabinetSideBarLink, "File Cabinet");
+		util.waitUntilElementToBeClickable(fileCabinetSideBarLink);
+		util.click(fileCabinetSideBarLink, "File Cabinet Side Bar Link");
+	}
+	
 
 }
