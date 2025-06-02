@@ -76,6 +76,10 @@
 			<class
 				name="com.nspl.agingoptions.financepage.testcases.BookKeeperTestCases">
 			</class>
+			<class
+				name="com.agingoptions.filecabinet.testcases.FileCabinetParalegalTestCases">
+			</class>
+			
 
 		</classes>
 	</test>
