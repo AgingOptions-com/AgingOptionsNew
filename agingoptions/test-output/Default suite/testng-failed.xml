@@ -3,7 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase">
+      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript">
         <methods>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
@@ -12,10 +12,10 @@
           <include name="beforeTest"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
-          <include name="SpousemaritalStatusDisable"/>
+          <include name="VerifyUpdateLandScappeDetails"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.PersonalInfo.PersonalInformationTestcase -->
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
