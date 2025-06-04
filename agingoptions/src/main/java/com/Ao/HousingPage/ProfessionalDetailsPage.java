@@ -159,6 +159,7 @@ public class ProfessionalDetailsPage extends ProfessionalDetailspageOr {
 		wt.holdOn(Duration.ofSeconds(4));
 		Addaddress();
 		wt.click(contactTypeDropdown, "Contact type DropDown");
+		wt.holdOn(Duration.ofSeconds(2));
 		wt.click(OtherOptions, "Other Option on contact ");
 		wt.holdOn(Duration.ofSeconds(3));
 		wt.sendValue(OthertypeTextBox, name, "Other Type text box");
@@ -638,24 +639,23 @@ public class ProfessionalDetailsPage extends ProfessionalDetailspageOr {
 		wt.click(SaveAndContinueButton, "save and continue button");
 		wt.holdOn(Duration.ofSeconds(10));
 		wt.clearTextBox(SearchBar);
-		wt.sendValueWithEnter(SearchBar, name, "Name");
+		wt.sendValueWithEnter(SearchBar, name.toUpperCase(), "Name");
 		wt.holdOn(Duration.ofSeconds(3));
 		GoToClickEditIcon();
 		wt.holdOn(Duration.ofSeconds(6));
 		wt.click(FirstName, "Firstname");
-		//FirstName.clear();
-		String updatedName="Test345";
+		String updatedName="test345".toUpperCase();
 		wt.holdOn(Duration.ofSeconds(4));
-		wt.sendValue(FirstName, updatedName, "First name");
+		wt.sendValue(FirstName, name+updatedName.toUpperCase(), "First name");
 		wt.holdOn(Duration.ofSeconds(3));
 		wt.click(UpdateButton, "Update button");
-		wt.holdOn(Duration.ofSeconds(10));
+		wt.holdOn(Duration.ofSeconds(8));
 		wt.clearTextBox(SearchBar);
-		wt.sendValueWithEnter(SearchBar, name+updatedName, "Name");
+		wt.sendValueWithEnter(SearchBar, (name+updatedName).toUpperCase(), "Name");
 		GoToClickEditIcon();
 		wt.holdOn(Duration.ofSeconds(5));
 		String value=  wt.GetAttributevalue(FirstName, "value");
-		wt.verifyActualExpectedTextContains(value, name+updatedName, "First name");
+		wt.verifyActualExpectedTextContains(value.toUpperCase(), (name+updatedName).toUpperCase(), "First name");
 		wt.holdOn(Duration.ofSeconds(5));
 		wt.click(UpdateButton, "Update button");	
 
@@ -707,4 +707,6 @@ public class ProfessionalDetailsPage extends ProfessionalDetailspageOr {
 		   wt.printDataInReport("After save the details Client mortgage count -" + AfteraddClientMortgageCount );
 		   wt.printDataInReport("After save the details Spouse mortgage count -" +  SpouseProfessionalCount);
 	}
+	
+	
 }

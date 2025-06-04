@@ -97,7 +97,7 @@ public class SpecialistTestCases extends BaseTest {
 		primaryCare.inputAddress("122002");
 		String expectedMobileNum="9238492934";
 		String expectedEmail="kavayaverma934@maildrop.cc";
-		primaryCare.inputPrimaryContactEmailMobileNo(expectedMobileNum, expectedEmail);
+		primaryCare.inputPrimaryContactEmail(expectedMobileNum, expectedEmail);
 		specialist.clickSaveContinueLaterButton();
 		util.holdOn(Duration.ofSeconds(10));
 		specialist.clickEditIcon();
@@ -112,7 +112,7 @@ public class SpecialistTestCases extends BaseTest {
 		primaryCare.openContactAndAddressInfoAccordian();
 		util.holdOn(Duration.ofSeconds(1));
 		String actualPhysicalText=  primaryCare.getPhysicalAddressText();
-		String actualPrimaryContactInnerText=	primaryCare.getPrimaryContactText();
+		String actualPrimaryContactInnerText=	primaryCare.getPrimaryAddressText();
 		util.verifyActualExpectedText(actualFirstName, expectedFirstName, "First Name");
 		util.verifyActualExpectedText(actualLastName,expectedLastName , "Last Name");
 		util.verifyActualExpectedText(actualSpecialityText,"Addiction and Substance Abuse Counseling" , "Speciality");
@@ -162,7 +162,7 @@ public class SpecialistTestCases extends BaseTest {
 		primaryCare.inputAddress("122002");
 		String expectedMobileNum="9485454544";
 		String expectedEmail="nikitaroy934@maildrop.cc";
-		primaryCare.inputPrimaryContactEmailMobileNo(expectedMobileNum, expectedEmail);
+		primaryCare.inputPrimaryContactEmail(expectedMobileNum, expectedEmail);
 		specialist.clickSaveContinueLaterButton();
 		util.holdOn(Duration.ofSeconds(7));
 		specialist.clickNikitaRoyEditIcon();
@@ -177,7 +177,7 @@ public class SpecialistTestCases extends BaseTest {
 		primaryCare.openContactAndAddressInfoAccordian();
 		util.holdOn(Duration.ofSeconds(1));
 		String actualPhysicalText=  primaryCare.getPhysicalAddressText();
-		String actualPrimaryContactInnerText=	primaryCare.getPrimaryContactText();
+		String actualPrimaryContactInnerText=	primaryCare.getPrimaryAddressText();
 		util.verifyActualExpectedText(actualFirstName, expectedFirstName, "First Name");
 		util.verifyActualExpectedText(actualLastName,expectedLastName , "Last Name");
 		util.verifyActualExpectedText(actualSpecialityText,"Addiction and Substance Abuse Counseling" , "Speciality");
@@ -229,7 +229,7 @@ public class SpecialistTestCases extends BaseTest {
 		primaryCare.inputAddress("122002");
 		String expectedMobileNum="8734837498";
 		String expectedEmail="sonamyadav934@maildrop.cc";
-		primaryCare.inputPrimaryContactEmailMobileNo(expectedMobileNum, expectedEmail);
+		primaryCare.inputPrimaryContactEmail(expectedMobileNum, expectedEmail);
 		specialist.clickSaveAddAnotherButton();
 		util.holdOn(Duration.ofSeconds(7));
 		specialist.clickPreviousButton();
@@ -248,7 +248,7 @@ public class SpecialistTestCases extends BaseTest {
 		primaryCare.openContactAndAddressInfoAccordian();
 		util.holdOn(Duration.ofSeconds(1));
 		String actualPhysicalText=  primaryCare.getPhysicalAddressText();
-		String actualPrimaryContactInnerText=	primaryCare.getPrimaryContactText();
+		String actualPrimaryContactInnerText=	primaryCare.getPrimaryAddressText();
 		util.verifyActualExpectedText(actualFirstName, expectedFirstName, "First Name");
 		util.verifyActualExpectedText(actualLastName,expectedLastName , "Last Name");
 		util.verifyActualExpectedText(actualSpecialityText,"Acupuncture" , "Speciality");
@@ -305,7 +305,7 @@ public class SpecialistTestCases extends BaseTest {
 		primaryCare.openContactAndAddressInfoAccordian();
 		String expectedMobileNum="9894839493";
 		String expectedEmail="sandhyatiwari934@maildrop.cc";
-		primaryCare.inputPrimaryContactEmailMobileNo(expectedMobileNum, expectedEmail);
+		primaryCare.inputPrimaryContactEmail(expectedMobileNum, expectedEmail);
 		specialist.clickProceedToSpouseBT();
 		util.holdOn(Duration.ofSeconds(7));
 		specialist.clickPrimaryMemberToggleButton();
@@ -322,7 +322,7 @@ public class SpecialistTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(3));
 		primaryCare.openContactAndAddressInfoAccordian();
 		util.holdOn(Duration.ofSeconds(1));
-		String actualPrimaryContactInnerText=	primaryCare.getPrimaryContactText();
+		String actualPrimaryContactInnerText=	primaryCare.getPrimaryAddressText();
 		util.verifyActualExpectedText(actualFirstName, expectedFirstName, "First Name");
 		util.verifyActualExpectedText(actualLastName,expectedLastName , "Last Name");
 		util.verifyActualExpectedText(actualSpecialityText,"Other" , "Speciality");
@@ -372,7 +372,7 @@ public class SpecialistTestCases extends BaseTest {
 		primaryCare.openContactAndAddressInfoAccordian();
 		String expectedMobileNum="8734837498";
 		String expectedEmail="reenudubey677@maildrop.cc";
-		primaryCare.inputPrimaryContactEmailMobileNo(expectedMobileNum, expectedEmail);
+		primaryCare.inputPrimaryContactEmail(expectedMobileNum, expectedEmail);
 		specialist.clickSaveAddAnotherButton();
 		util.holdOn(Duration.ofSeconds(7));
 		specialist.clickPreviousButton();
@@ -387,7 +387,7 @@ public class SpecialistTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(5));
 		primaryCare.openContactAndAddressInfoAccordian();
 		util.holdOn(Duration.ofSeconds(1));
-		String actualPrimaryContactInnerText=	primaryCare.getPrimaryContactText();
+		String actualPrimaryContactInnerText=	primaryCare.getPrimaryAddressText();
 		util.verifyActualExpectedText(actualFirstName, expectedFirstName, "First Name");
 		util.verifyActualExpectedText(actualLastName,expectedLastName , "Last Name");
 		util.verifyActualExpectedText(actualSpecialityText,"Addiction Medicine" , "Speciality");
@@ -439,7 +439,7 @@ public class SpecialistTestCases extends BaseTest {
 		primaryCare.openContactAndAddressInfoAccordian();
 		String expectedMobileNum="9384398434";
 		String expectedEmail="avantikasharma677@maildrop.cc";
-		primaryCare.inputPrimaryContactEmailMobileNo(expectedMobileNum, expectedEmail);
+		primaryCare.inputPrimaryContactEmail(expectedMobileNum, expectedEmail);
 		specialist.clickSaveProceedToHealthInsuranceButton();
 		specialist.waitUntilToasterMessageisHide();
 		primaryCare.clickHealthProfessionalLK();
@@ -460,7 +460,7 @@ public class SpecialistTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(5));
 		primaryCare.openContactAndAddressInfoAccordian();
 		util.holdOn(Duration.ofSeconds(1));
-		String actualPrimaryContactInnerText=	primaryCare.getPrimaryContactText();
+		String actualPrimaryContactInnerText=	primaryCare.getPrimaryAddressText();
 		util.verifyActualExpectedText(actualFirstName, expectedFirstName, "First Name");
 		util.verifyActualExpectedText(actualLastName,expectedLastName , "Last Name");
 		util.verifyActualExpectedText(actualSpecialityText,"Addiction Psychiatry" , "Speciality");

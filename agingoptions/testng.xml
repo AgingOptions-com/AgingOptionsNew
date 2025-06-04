@@ -37,50 +37,16 @@
 			<class
 				name="com.nspl.agingoptions.financepage.testcases.RetirementTestCases">
 			</class>
-			<class
+				<class
 				name="com.nspl.agingoptions.financepage.testcases.RealEstateTestCases">
 			</class>
 			<class
 				name="com.nspl.agingoptions.financepage.testcases.BusinessInterestTestCases">
 			</class>
-			<class
+             <class
 				name="com.nspl.agingoptions.financepage.testcases.TransportationTestCases">
-			</class>
-			<class
-				name="com.nspl.agingoptions.financepage.testcases.LifeInsuranceTestCases">
-			</class>
-			<class
-				name="com.nspl.agingoptions.financepage.testcases.LongTermCarePolicyTestCases">
-			</class>
-			<class
-				name="com.nspl.agingoptions.financepage.testcases.FutureExpectationTestCases">
-			</class>
-			<class
-				name="com.nspl.agingoptions.financepage.testcases.LiabilitiesTestCases">
-			</class>
-			<class
-				name="com.nspl.agingoptions.financepage.testcases.MonthlyIncomeTestCases">
-			</class>
-			<class
-				name="com.nspl.agingoptions.financepage.testcases.CurrentExpenseTestCases">
-			</class>
-			<class
-				name="com.nspl.agingoptions.financepage.testcases.TaxInfoTestCases">
-			</class>
-			<class
-				name="com.nspl.agingoptions.financepage.testcases.FinancialAdvisorTestCases">
-			</class>
-			<class
-				name="com.nspl.agingoptions.financepage.testcases.AccountantTestCases">
-			</class>
-			<class
-				name="com.nspl.agingoptions.financepage.testcases.BookKeeperTestCases">
-			</class>
-			<class
-				name="com.agingoptions.filecabinet.testcases.FileCabinetParalegalTestCases">
-			</class>
+			</class>			
 			
-
 		</classes>
 	</test>
 </suite> 

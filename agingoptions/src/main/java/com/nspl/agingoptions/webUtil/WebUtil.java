@@ -3,9 +3,12 @@ package com.nspl.agingoptions.webUtil;
 import static org.testng.Assert.assertTrue;
 
 import java.io.File;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -17,8 +20,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
@@ -120,8 +127,19 @@ public class WebUtil {
 	// mode=====================================================
 	public void launchBrowserHeadlessMode(String browserName) {
 		if (browserName.contains("chrome")) {
+			WebDriverManager.chromedriver().driverVersion("136.0.7103.49").setup();
+//			WebDriverManager.chromedriver().driverVersion("136.0.7103.49").setup();
+			 System.out.print("BrowserIs launched");
 			ChromeOptions opt = new ChromeOptions();
-			opt.addArguments("--headless");
+			HashMap<String, Object> prefs = new HashMap<>();
+			prefs.put("profile.default_content_setting_values.notifications", 2);// this will block the browser
+			// notification
+			prefs.put("credentials_enable_service", false);// this and below code will block the save password pop-up
+			prefs.put("profile.password_manager_enabled", false);
+			opt.setExperimentalOption("prefs", prefs);
+			opt.addArguments("--start-maximized");
+			 opt.addArguments("--remote-allow-origins=*");
+			opt.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
 			driver = new ChromeDriver(opt);
 		} else if (browserName.contains("edge")) {
 			EdgeOptions opt = new EdgeOptions();
@@ -141,8 +159,8 @@ public class WebUtil {
 	// Browser=====================================================
 	public void launchBrowser(String browserName) {
 		if (browserName.contains("chrome")) {
-			WebDriverManager.chromedriver().driverVersion("135.0.7049").setup();
-			System.out.print("BrowserIs launched");
+			WebDriverManager.chromedriver().driverVersion("136.0.7103.49").setup();
+			 System.out.print("BrowserIs launched");
 			ChromeOptions opt = new ChromeOptions();
 			HashMap<String, Object> prefs = new HashMap<>();
 			prefs.put("profile.default_content_setting_values.notifications", 2);// this will block the browser
@@ -151,10 +169,11 @@ public class WebUtil {
 			prefs.put("profile.password_manager_enabled", false);
 			opt.setExperimentalOption("prefs", prefs);
 			opt.addArguments("--start-maximized");
+			 opt.addArguments("--remote-allow-origins=*");
 			opt.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
-			try {
-				driver = new ChromeDriver(opt);
-			} catch (Exception e) {
+			try{
+				driver = new ChromeDriver(opt);}
+			catch(Exception e) {
 				e.printStackTrace();
 			}
 		} else if (browserName.contains("edge")) {
@@ -256,19 +275,16 @@ public class WebUtil {
 			System.out.println("failed." + ActualText + " is not got as inertext");
 		}
 	}
-
 	public void verifyInnerText(WebElement we, String expectedInnerText, String PageName) {
 		String actualInnerText = we.getText();
 		verifyString(actualInnerText, expectedInnerText);
-		extTest.log(Status.INFO, "Actual Inner text-" + actualInnerText + " is Matching With" + expectedInnerText
-				+ " we are now " + PageName + " ");
+		extTest.log(Status.INFO, "Actual Inner text-" + actualInnerText +" is Matching With" + expectedInnerText + " we are now " + PageName + " ");
 	}
-
 	public void toasterverification(WebElement we, String ExpectedToasterText) {
 
 		String Toaster = new WebDriverWait(driver, Duration.ofSeconds(8))
 				.until(ExpectedConditions.elementToBeClickable(we)).getText();
-		if (Toaster.contains(ExpectedToasterText) == true) {
+		if (Toaster.contains(ExpectedToasterText)==true) {
 			extTest.log(Status.PASS, "Toaster message verified as-" + Toaster);
 			System.out.println("Toaster message-: " + Toaster);
 		} else {
@@ -332,7 +348,7 @@ public class WebUtil {
 			weEle.click();
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
-		} catch (ElementClickInterceptedException e) {
+		} catch (ElementNotInteractableException e) {
 			js.executeScript("arguments[0].click()", weEle);
 			extTest.log(Status.PASS, "Click performed Successfully on -: " + elementName);
 			print("Click performed Successfully on -: " + elementName);
@@ -441,15 +457,15 @@ public class WebUtil {
 	// ===========================================load property
 	// file===============================
 	public void loadProperty() {
-		prop = new Properties();
-		try (InputStream file = getClass().getClassLoader().getResourceAsStream("prop.properties")) {
-			if (file == null) {
-				throw new FileNotFoundException("Property file 'prop.properties' not found in the classpath");
-			}
-			prop.load(file);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+	    prop = new Properties();
+	    try (InputStream file = getClass().getClassLoader().getResourceAsStream("prop.properties")) {
+	        if (file == null) {
+	            throw new FileNotFoundException("Property file 'prop.properties' not found in the classpath");
+	        }
+	        prop.load(file);
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
 	}
 
 	// ===========================================getproperty file
@@ -868,22 +884,23 @@ public class WebUtil {
 	}
 
 	public void verifyActualExpectedTextContains(String actualText, String expectedText, String elementName) {
-		String actual = actualText.trim();
-		String expected = expectedText.trim();
+		String actual =actualText.trim();
+		String expected=expectedText.trim();
 		if (actual.equalsIgnoreCase(expected)) {
 			extTest.log(Status.PASS, "Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " ' Verify Successfully " + elementName);
 			print("Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " ' Verify Successfully ");
 
-		} else if (actual.equalsIgnoreCase(expected)) {
+		}else if(actual.equalsIgnoreCase(expected)) {
 			extTest.log(Status.PASS, "Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " ' Verify Successfully " + elementName);
 			print("Passed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " ' Verify Successfully ");
 		}
-
+		
 		else {
+
 
 			extTest.log(Status.FAIL, "Failed Actual text '" + actualText + "'and  Expected Text  '" + expectedText
 					+ " 'not Verify " + elementName);
@@ -1098,12 +1115,12 @@ public class WebUtil {
 			extTest.log(Status.PASS, "-element is enabled");
 			print("-element is enabled");
 			Assert.assertTrue(enable == true);
-		} else if (enable == false) {
+		} else if(enable == false) {
 			extTest.log(Status.INFO, "-element is not enable");
 			print("-element is not enabled");
 			Assert.assertTrue(enable == false);
 		}
-
+		
 	}
 
 	// ===========================================By this method we can verify
@@ -1167,13 +1184,13 @@ public class WebUtil {
 			extTest.log(Status.PASS, radioButtonName + " is selected");
 			print(radioButtonName + " is selected");
 			Assert.assertEquals(status, true);
-		} else if (status == false) {
+		} else if(status==false) {
 			extTest.log(Status.INFO, radioButtonName + " is not selected");
 			print(radioButtonName + " Failed: Element is not selected");
 			Assert.assertEquals(status, false);
-
+			
 		}
-
+		
 	}
 
 	///////////// for IsDisplay ///////////////
@@ -1876,18 +1893,18 @@ public class WebUtil {
 	}
 
 	public void verifyElementRadioButtonSelected(WebElement element, String elementName) {
-
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		boolean isChecked = (boolean) js.executeScript("return arguments[0].checked;", element);
-		System.out.println(isChecked);
-		if (isChecked) {
-			extTest.log(Status.PASS, elementName + " is selected");
-			System.out.println(elementName + " is selected");
-		} else {
-			extTest.log(Status.FAIL, elementName + " is NOT selected");
-			System.out.println(elementName + " is NOT selected");
-		}
-
+	
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			boolean isChecked = (boolean) js.executeScript("return arguments[0].checked;", element);
+			System.out.println(isChecked);
+			if (isChecked) {
+				extTest.log(Status.PASS, elementName + " is selected");
+				System.out.println(elementName + " is selected");
+			} else {
+				extTest.log(Status.FAIL, elementName + " is NOT selected");
+				System.out.println(elementName + " is NOT selected");
+			}
+		
 	}
 
 	public boolean isRadioButtonChecked(WebElement element, String elementName) {
@@ -1937,13 +1954,13 @@ public class WebUtil {
 
 	public void waitUntilElementIsSelected(WebElement we, long time) {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+			WebDriverWait wait=	new WebDriverWait(driver, Duration.ofSeconds(time));
 			wait.until(ExpectedConditions.elementToBeSelected(we));
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-
 	public void waitUntilElementIsDeselected(WebElement we, long time) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
@@ -1951,16 +1968,15 @@ public class WebUtil {
 			System.out.println("Element is deselected successfully.");
 		} catch (Exception e) {
 			System.out.println("Timeout: Element is still selected after waiting.");
-		}
+		} 
 	}
-
-	public void waitUntilValueIsSend(WebElement we, long time, String text) {
-		try {
+	public void waitUntilValueIsSend(WebElement we,long time, String text) {
+		try{
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
 			we.clear();
 			we.sendKeys(text);
 			wait.until(ExpectedConditions.textToBePresentInElementValue(we, text));
-		} catch (Exception e) {
+		}catch(Exception e) {
 			System.out.println("Timeout: Text '" + text + "' was not found in the field within " + time + " seconds.");
 		}
 	}
@@ -1972,14 +1988,14 @@ public class WebUtil {
 			System.out.println("Element disappeared from the page.");
 		} catch (StaleElementReferenceException e) {
 			System.out.println("Element was removed from the DOM.");
-		} catch (Exception e) {
+		}  catch (Exception e) {
 			System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
 		}
 	}
 
 	public void uploadFile(WebElement fileUploadElement, String filePath) {
 		try {
-			fileUploadElement.sendKeys(filePath); // Provide full path to the file
+			fileUploadElement.sendKeys(filePath);  // Provide full path to the file
 			extTest.log(Status.PASS, "File uploaded successfully: " + filePath);
 			System.out.println("File uploaded successfully: " + filePath);
 		} catch (Exception e) {
@@ -1988,7 +2004,6 @@ public class WebUtil {
 			e.printStackTrace();
 		}
 	}
-
 	public String convertDateFormatMMDDYYYY(String date) {
 		try {
 			SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -2002,16 +2017,13 @@ public class WebUtil {
 			return null;
 		}
 	}
-
 	public String convertAmountActualValue(String actual) {
 		return actual.replaceAll(",", "").replaceAll("\\.00$", "");
 	}
-
 	public String unformatPhoneNumber(String formattedNumber) {
 		// Remove all non-digit characters
 		return formattedNumber.replaceAll("\\D", "");
 	}
-
 	public void waitUntilPresentInUI(WebElement we, long seconds) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
@@ -2021,18 +2033,23 @@ public class WebUtil {
 			throw e;
 		}
 	}
-
+// <<<<<<< HousingInfo
+  
+// =======
 	public void waitUntilElementIsAppearInThePage(WebElement we, long seconds) {
-		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
-			wait.until(ExpectedConditions.visibilityOf(we));
-			System.out.println("Element disappeared from the page.");
-		} catch (StaleElementReferenceException e) {
-			System.out.println("Element was removed from the DOM.");
-		} catch (Exception e) {
-			System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
+ 		try {
+ 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+ 			wait.until(ExpectedConditions.visibilityOf(we));
+ 			System.out.println("Element disappeared from the page.");
+ 		} catch (StaleElementReferenceException e) {
+ 			System.out.println("Element was removed from the DOM.");
+ 		}  catch (Exception e) {
+ 			System.out.println("Timeout: Element did not disappear within " + seconds + " seconds.");
 		}
-	}
-	
-	
+ 	}
+
+
+
+
+
 }

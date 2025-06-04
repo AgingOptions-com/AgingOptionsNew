@@ -46,10 +46,10 @@ public class HealthInsurance {
 		util.click(medigapOptions,"Medigap");
 	}
 
-	@FindBy(xpath="//p[contains(text(),'Insurance company') or contains(text(),'Insurance provider')]/parent::div/div/div")
+	@FindBy(xpath="//div[@id='insComId']")
 	private WebElement insuranceCompanyDD;
 
-	@FindBy(xpath="//li[contains(text(),'Allstate Ins Group')]")
+	@FindBy(xpath="//div[@id='dropDownDivId']/li[text()='Allstate Ins Group']")
 	private WebElement allStateInsGroupOptions;
 
 	public void selectAllStateInsGroupFromInsuranceCompanyDD() {
@@ -57,14 +57,14 @@ public class HealthInsurance {
 		util.click(allStateInsGroupOptions, "All State Ins Group");
 	}
 
-	@FindBy(xpath="//p[contains(text(),'Policy/Plan name')]/following-sibling::input")
+	@FindBy(xpath="//input[@id='insName']")
 	private WebElement policyNameTB;
 
 	public void inputPolicyName(String value) {
 		util.sendValue(policyNameTB, value, "Policy/Plan Name");
 	}
 
-	@FindBy(xpath="//p[contains(text(),'Policy number')]/following-sibling::input")
+	@FindBy(xpath="//input[@id='insCardPath1']")
 	private WebElement policyNumberTB;
 
 	public void inputPolicyNumber(String value) {
@@ -78,7 +78,7 @@ public class HealthInsurance {
 		util.sendValue(groupNumberTB, value, "Group Number");
 	}
 
-	@FindBy(xpath="//p[contains(text(),'Premium frequency')]/parent::div/div//div/span")
+	@FindBy(xpath="//div[@id='premiumFrePerYear']/preceding-sibling::div/span")
 	private WebElement premiumFrequencyDD;
 
 	@FindBy(xpath="//ul[@id='dropDownDivId']/li[text()='Single']")
@@ -89,7 +89,7 @@ public class HealthInsurance {
 		util.click(singlePremiumFrequency, "Single Premium Frequency");
 	}
 
-	@FindBy(xpath="//label[contains(text(),'Premium amount')]/parent::div//input")
+	@FindBy(xpath="//div[@id='premiumAmt']/input")
 	private WebElement premiumAmountTB;
 
 	public void inputPremiumAmount(String value) {
@@ -255,7 +255,7 @@ public class HealthInsurance {
 		util.click(privateTypeInsuranceText, "Private type");
 	}
 
-	@FindBy(xpath="//li[contains(text(),'Other')]")
+	@FindBy(xpath="//div[@id='dropDownDivId']/li[text()='Other']")
 	private WebElement otherInsuranceCompanyOptions;
 
 	public void selectOtherInsuranceCompany() {
@@ -263,7 +263,7 @@ public class HealthInsurance {
 		util.click(otherInsuranceCompanyOptions, "Other");
 	}
 
-	@FindBy(xpath="//p[contains(text(),'Insurance company')]/parent::div/parent::div/following-sibling::div//input[@id='other']")
+	@FindBy(xpath="//p[text()='Insurance company']/parent::div/parent::div/following-sibling::div//input")
 	private WebElement insuranceCompanyOtherTB;
 
 	public void inputInsuranceCompanyOtherTextBoxValue(String value) {
@@ -330,7 +330,7 @@ public class HealthInsurance {
 		util.sendValue(insuranceTypeOtherTextBox, value, "Insurance Type");
 	}
 
-	@FindBy(xpath="//ul[@id='dropDownDivId']/li[text()='Quarterly']")
+	@FindBy(xpath="//ul[@id='dropDownDivId']/li[text()='Quaterly']")
 	private WebElement quaterlyOption;
 
 	public void selectQuaterlyPremiumFrequency() {
@@ -338,7 +338,7 @@ public class HealthInsurance {
 		util.click(quaterlyOption, "Quaterly Premium Frequency");
 	}
 
-	@FindBy(xpath="//td[text()='Quarterly']/following-sibling::td/div/img[@alt='Edit Icon']")
+	@FindBy(xpath="//td[text()='Quaterly']/following-sibling::td/div/img[@alt='Edit Icon']")
 	private WebElement typeOfPlanOtherQuaterlyEditIcon;
 
 	public void clickQuaterlyEditIcon() {
@@ -371,29 +371,6 @@ public class HealthInsurance {
 	public void clickDentalTypeEditIconInTable() {
 		util.click(dentalTypeEditIconTable, "Dental Type Edit Icon");
 	}
-	
-	@FindBy(xpath="//li[contains(text(),'Chubb INA Group')]")
-	private WebElement chubbInaGroupOptions;
 
-	public void selectChubbInaGroupFromInsuranceCompanyDD() {
-		util.click(insuranceCompanyDD, "Insurance Company");
-		util.click(chubbInaGroupOptions, "Chubb INA Group");
-	}
-	
-	@FindBy(xpath="//li[contains(text(),'USAA Group')]")
-	private WebElement usaaGroupOptions;
-
-	public void selectUSAAGroupFromInsuranceCompanyDD() {
-		util.click(insuranceCompanyDD, "Insurance Company");
-		util.click(usaaGroupOptions, "All State Ins Group");
-	}
-	
-	@FindBy(xpath="//li[contains(text(),'Nationwide Group')]")
-	private WebElement nationwideGroupOptions;
-
-	public void selectNationWideGroupFromInsuranceCompanyDD() {
-		util.click(insuranceCompanyDD, "Insurance Company");
-		util.click(nationwideGroupOptions, "Nationwide Group");
-	}
 
 }

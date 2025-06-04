@@ -4,8 +4,8 @@ import java.time.Duration;
 
 import org.testng.annotations.Test;
 
-import com.Ao.HousingPage.HousingProfessionalLandScapperPage;
 import com.Ao.HousingPage.ProfessionalDetailsPage;
+import com.Ao.HousingPage.HousingProfessionalLandScapperPage;
 import com.agingoptions.LegalInfoPage.FamilyLawAttorney;
 import com.agingoptions.LegalInfoPage.LegalProfessionalElderLawAttorneyPage;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
@@ -120,7 +120,7 @@ public class LegalProfessionalElA  extends BaseTest{
 			housingProfessionalObj.saveAndProceedSpouseELADetails();
 		}
 	
-	 @Test(priority = 11)
+	 @Test(priority = 12)
 	 public void VerifyUpdateElderLawAttorneyDetails() {
 		 LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickLegalModule();;	
@@ -131,7 +131,7 @@ public class LegalProfessionalElA  extends BaseTest{
 			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.UpdateProfessionalDetails();
 	}
-	 @Test(priority = 12)
+	 @Test(priority = 11  )
 	 public void VerifyClientElderLawAttorneyDetailsWithUncheckCopySamedataTospouseCheckBox() {
 		 LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickLegalModule();;	

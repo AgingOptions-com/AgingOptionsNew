@@ -150,7 +150,6 @@ public class Non_RetirementTestCases extends BaseTest {
 		String actualOwnerSelectedText=  nonRetirement.getOwnerSelectedText();
 		String actualAccountNumberText= nonRetirement.getAccountNumberInputValue();
 		nonRetirement.openAddressAccordian();
-		util.holdOn(Duration.ofSeconds(1));
 		String actualPhoneNo=	assets.getPhoneNumberInputText();
 		String acutalEmail=		assets.getEmailInputText();
 		util.holdOn(Duration.ofSeconds(3));

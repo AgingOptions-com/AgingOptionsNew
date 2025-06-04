@@ -1,37 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.nspl.agingoptions.webUtil.MyAnnotationTransformer"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.nspl.agingoptions.financepage.testcases.TaxInfoTestCases">
+      <class name="com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts">
         <methods>
           <include name="afterClass"/>
+          <include name="VerifySaveAndContinueWishToDonateYourBodyForScientificResearch_Yes"/>
           <include name="beforeSuite"/>
+          <include name="VerifyOrganDonationDetailsPage"/>
           <include name="afterTest"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
+          <include name="VerifyDoYouWishToBeAnOrganDonnerYes"/>
+          <include name="VerifySaveAndProceedDoYouWishToBeAnOrganDonnerNo"/>
           <include name="afterSuite"/>
-          <include name="FTC_036_PrimaryMemberInputTax2023SaveAndProceedToSpouseBT"/>
           <include name="beforeClass"/>
+          <include name="VerifySaveAndContinueDoYouWishToBeAnOrganDonnerYes"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.financepage.testcases.TaxInfoTestCases -->
-      <class name="com.nspl.agingoptions.financepage.testcases.Non_RetirementTestCases">
+      </class> <!-- com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts -->
+      <class name="com.nspl.LegalInfoTestScript.LegalProfessionalElA">
         <methods>
-          <include name="afterClass"/>
+          <include name="VerifyIdONotHaveElderLawAttorneyFunctionality"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="FTC02_Non_RetirementSaveAddAnotherButton"/>
-          <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="VerifyClickIDoNotHaveLandScapperCheckBox"/>
+          <include name="verifyToggleButton"/>
+          <include name="VerifySaveAndAddAnotherPrimaryMemberElderLawAttorney"/>
+          <include name="VerifySaveAndProceedSpouseElderLawAttorneyDetails"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="VerifyUpdateElderLawAttorneyDetails"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="VerifySaveAndContinueSpouseElderLawAttorneyDetails"/>
+          <include name="VerifySaveAndproceedPrimaryMemberElderLawAttorneyDetails"/>
+          <include name="VerifyClientElderLawAttorneyDetailsWithUncheckCopySamedataTospouseCheckBox"/>
+          <include name="beforeMethod"/>
+          <include name="VerifyElderLawAttorneyPageOnLegalProfessional"/>
+          <include name="verifyaddElderLawAttorneyForPraimaryMember"/>
+          <include name="VerifySaveAndAddAnotherSpouseElderLawAttorneyDetails"/>
+        </methods>
+      </class> <!-- com.nspl.LegalInfoTestScript.LegalProfessionalElA -->
+      <class name="com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="VerifyFamilyLawAttorneyPageOnLegalProfessional"/>
+          <include name="afterTest"/>
+          <include name="verifyToggleButton"/>
+          <include name="afterMethod"/>
+          <include name="VerifySaveAndproceedPrimaryMemberFamilyLawAttorneyDetails"/>
+          <include name="VerifySaveAndProceedSpouseFamilyLawAttorneyDetails"/>
+          <include name="VerifySaveAndAddAnotherPrimaryMemberFamilyLawAttorney"/>
+          <include name="VerifyClientFamilyLawAttorneyDetailsWithUncheckCopySamedataTospouseCheckBox"/>
+          <include name="afterClass"/>
+          <include name="VerifyUpdateFamilyLawAttorneyDetails"/>
+          <include name="VerifySaveAndContinueSpouseFamilyLawAttorneyDetails"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="verifyaddFamilyLawAttorneyForPraimaryMember"/>
+          <include name="VerifyIdONotHaveFamilyLawAttorneyFunctionality"/>
+          <include name="VerifySaveAndAddAnotherSpouseFamilyLawAttorneyDetails"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="VerifyClickIDoNotHaveFamilyLawAttorneyCheckBox"/>
+        </methods>
+      </class> <!-- com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts -->
+      <class name="com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript">
+        <methods>
+          <include name="VerifyWhenWeCheckedCremationRadioButton"/>
+          <include name="VerifyWouldYouLikeTohaveSomeoneContactYouYesChecked"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="VerifyBurialCremationPlanPage"/>
+          <include name="VerifyDoYouHaveBurialPlotCheckYesRadio"/>
+          <include name="VerifyDoYouHaveBurialPlotCheckNoRadioButton"/>
+          <include name="VerifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_NoRadioChecked"/>
+          <include name="VerifyDidTheCompanyGiveYouAContractNoRadioChecked"/>
+          <include name="afterClass"/>
+          <include name="VerifyWouldYouLikeMakeArrangementNoChecked"/>
+          <include name="VerifyHaveYouMadeArrangementsForHandlingNoChecked"/>
+          <include name="VerifyOftenTheOrganizationYouPrepaidYourBurialAndCremation_YesRadioBT"/>
+          <include name="VerifyWouldYouLikeToHaveSomeOneContactYouNoChecked"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="VerifyWouldYouLikeToMakeArrangementYes"/>
+          <include name="beforeMethod"/>
+          <include name="VerifyHaveYouMadeArrangementsForHandlingYesChecked"/>
+          <include name="VerifyIsYourBurialCremationPrepaid_YesChecked"/>
+        </methods>
+      </class> <!-- com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript -->
+      <class name="com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior">
+        <methods>
+          <include name="VerifySaveAndProceedSpouseBusinessSuccessiorDetails"/>
+          <include name="beforeSuite"/>
+          <include name="verifyaddBusinessSuccessiorForPraimaryMember"/>
+          <include name="VerifyClickIDoNotHaveBusinessSuccessiorCheckBox"/>
+          <include name="afterTest"/>
+          <include name="VerifyIdONotHaveBusinessSuccessiorFunctionality"/>
+          <include name="afterMethod"/>
+          <include name="verifyToggleButton"/>
+          <include name="VerifyBusinessSuccessiorPageLegalProfessional"/>
+          <include name="VerifySaveAndproceedPrimaryMemberBusinessSuccessiorDetails"/>
+          <include name="VerifySaveAndContinueSpouseBusinessSuccessiorDetails"/>
+          <include name="VerifySaveAndAddAnotherPrimaryMemberBusinessSuccessior"/>
+          <include name="afterClass"/>
+          <include name="VerifyClientBusinessSuccessiorDetailsWithUncheckCopySamedataTospouseCheckBox"/>
+          <include name="beforeTest"/>
+          <include name="VerifySaveAndAddAnotherSpouseBusinessSuccessiorDetails"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="VerifyUpdateBusinessSuccessiorDetails"/>
+        </methods>
+      </class> <!-- com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior -->
+      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript">
+        <methods>
+          <include name="VerifySaveAndProceedSpouseRealtorDetails"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="VerifySaveAndContinueSpouseRealtorDetails"/>
+          <include name="verifyaddRealtorForPraimaryMember"/>
+          <include name="VerifySaveAndAddAnotherSpouseRealtorDetails"/>
+          <include name="afterClass"/>
+          <include name="VerifySaveAndAddAnotherPrimaryMemberRealtorDetails"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="VerifySaveAndproceedPrimaryMemberRealtorDetails"/>
+          <include name="VerifyUpdateRealtorDetails"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript -->
+      <class name="com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases">
+        <methods>
+          <include name="VerifyTrustDocument"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="VerifyClickYesRadioButton_DoYouCurrentlyhaveLegalPlanning"/>
+          <include name="verifyDoYouCurrentlyLegalPlanningQuestions"/>
+          <include name="afterMethod"/>
+          <include name="VerifySaveAndContinueWithTrustTypeDocumentsDetails"/>
+          <include name="verifyClickNoRadioButton_DoYouCurrentlyhaveLegalPlanning"/>
+          <include name="VerifySaveAndProceedFidBen_DoYouCurrentlyHaveLegalPlanning_NoCheck"/>
+          <include name="VerifySaveAndContinue_DoYouCurrentlyHaveLegalPlanning_NoCheck"/>
+          <include name="afterClass"/>
+          <include name="verifySaveAndContinueWithAddNewDocument"/>
+          <include name="verifyLegalInfoPage"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="verifySaveAndContinueWithWillTypeDocuments"/>
+          <include name="beforeClass"/>
+          <include name="verifyNewCommonDocumentList"/>
+          <include name="beforeMethod"/>
+          <include name="verifyWillDocument"/>
+        </methods>
+      </class> <!-- com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases -->
+      <class name="com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="SaveAndContinueIWantMaximumTreatmentNo"/>
+          <include name="verifyIWantMaximumTreatmentCheckedAsNo"/>
+          <include name="SaveAndContinueIWantMaximumTreatMentYes"/>
+          <include name="verifyIWantMaximumTreatmentCheckedAsYes"/>
+          <include name="afterClass"/>
+          <include name="VerifyLivingWillDetailsPage"/>
+          <include name="beforeTest"/>
+          <include name="VerifySaveAndProceedLivingWillDetails"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.nspl.agingoptions.financepage.testcases.Non_RetirementTestCases -->
+      </class> <!-- com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript -->
+      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript">
+        <methods>
+          <include name="verifyToggleButton"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="VerifySaveAndproceedPrimaryMemberLandScapperDetails"/>
+          <include name="verifyaddLandScapperForPraimaryMember"/>
+          <include name="afterMethod"/>
+          <include name="VerifyClickIDoNotHaveLandScapperCheckBox"/>
+          <include name="VerifyLandScapperPageOnHousingProfessional"/>
+          <include name="VerifySaveAndAddAnotherSpouseLandScapperDetails"/>
+          <include name="afterClass"/>
+          <include name="VerifySaveAndProceedSpouseLandScapperDetails"/>
+          <include name="VerifyIdONotHaveLandScapperCheckBoxFunctionality"/>
+          <include name="beforeTest"/>
+          <include name="VerifySaveAndAddAnotherPrimaryMemberLandScapperDetails"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="VerifyUpdateLandScappeDetails"/>
+          <include name="beforeMethod"/>
+          <include name="VerifySaveAndContinueSpouseLandScapperDetails"/>
+        </methods>
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript -->
+      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="verifyToggleButton"/>
+          <include name="verifyaddMortgageForPraimaryMember"/>
+          <include name="VerifySaveAndContinueSpouseMortgageBrokerDetails"/>
+          <include name="afterMethod"/>
+          <include name="VerifySaveAndAddAnotherPrimaryMemberMortgageBrokerDetails"/>
+          <include name="verifyMortgagePageOnHousingProfessional"/>
+          <include name="VerifySaveAndproceedPrimaryMemberMortgageBrokerDetails"/>
+          <include name="VerifyClickIDoNotHaveMortgageCheckBox"/>
+          <include name="afterClass"/>
+          <include name="VerifySaveAndProceedSpouseMortgageBrokerDetails"/>
+          <include name="VerifyIdONotHaveRealtorCheckBoxFunctionality"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="VerifySaveAndAddAnotherSpouseMortgageBrokerDetails"/>
+          <include name="beforeClass"/>
+          <include name="VerifyUpdateMortgageBrokerDetails"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript -->
+      <class name="com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript">
+        <methods>
+          <include name="VerifySpouseTableFiduciaryBeneficiaryCheckBoxFunctionality"/>
+          <include name="beforeSuite"/>
+          <include name="VerifyPrimaryMemberAndSpouseFiduciaryBeneficiaryPageMemberList"/>
+          <include name="afterTest"/>
+          <include name="VerifyAddFiduciaryBeneficiaryDetails"/>
+          <include name="afterMethod"/>
+          <include name="VerifyClientTableFiduciaryBeneficiaryCheckboxFunctionality"/>
+          <include name="VerifyWhenWeMakeSpecialNeedsMemberAsFiduciary"/>
+          <include name="afterClass"/>
+          <include name="verifyAgeValidationForFiduciary"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="VerifyWhenWeMakeFiduciaryBeneficiryMemberDeceased"/>
+          <include name="VerifyWhenWeMakeFiduciaryMemberAsSpecialNeeds"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript -->
+      <class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript">
+        <methods>
+          <include name="VerifyIdONotHaveHandymanCheckBoxFunctionality"/>
+          <include name="VerifySaveAndproceedPrimaryMemberHandyManDetails"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="VerifySaveAndAddAnotherSpouseHandymanDetails"/>
+          <include name="VerifySaveAndAddAnotherPrimaryMemberHandymanDetails"/>
+          <include name="VerifySaveAndContinueSpouseHandymanDetails"/>
+          <include name="afterClass"/>
+          <include name="VerifyUpdateHandymanDetails"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="VerifyClickIDoNotHaveHandymanCheckBox"/>
+          <include name="beforeClass"/>
+          <include name="verifyHandymanPageOnHousingProfessional"/>
+          <include name="verifyToggleButton"/>
+          <include name="beforeMethod"/>
+          <include name="VerifySaveAndProceedSpouseHandymanDetails"/>
+          <include name="verifyaddHandymanForPraimaryMember"/>
+        </methods>
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript -->
+      <class name="com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="VerifySaveAndContinueTheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive"/>
+          <include name="afterTest"/>
+          <include name="VerifyOnTheScaleOfOneTwoFiveOwnHomeDropDownSelection"/>
+          <include name="afterMethod"/>
+          <include name="VerifySaveAndNextToprofessional_TheDetailsWithIstheHouseYouAreliving_Yes_And_Select1_OnTheScaleOnToFive"/>
+          <include name="VerifySaveAndNextToProfessional_IsTheHousingYouAreLivingWithNoRadioButtonChecked"/>
+          <include name="VerifyHowManyStoriesDoesItHaveDropdownContent"/>
+          <include name="VerifySaveAandNextProfessional_SelectIsYourHouseLivingInYesCheckAndSelectTwoOntheScaleOfOneTwoFive"/>
+          <include name="afterClass"/>
+          <include name="VerifyUpdateAndContinue_SelectIsYourHouseLivingInNotsureCheckAndSelectTwoOntheScaleOfOneTwoFive"/>
+          <include name="verifySelectYesorNotSureCheckBox_IsYourHouseLivingIn____"/>
+          <include name="beforeTest"/>
+          <include name="VerifyWhenWeSelectTwoThreeMoreOption_HowManyStoryDoesItHave"/>
+          <include name="afterSuite"/>
+          <include name="VerifyUpdateAndContinue_IsTheHousingYouAreLivingWithNoRadioButtonChecked"/>
+          <include name="beforeClass"/>
+          <include name="verifyHousingInformation"/>
+          <include name="beforeMethod"/>
+          <include name="VerifySelectNoCheckBox_IsYourHousingLivingIn___"/>
+        </methods>
+      </class> <!-- com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

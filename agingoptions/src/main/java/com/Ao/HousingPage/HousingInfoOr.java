@@ -13,16 +13,19 @@ public HousingInfoOr (WebUtil wt) {
 	PageFactory.initElements(wt.getDriver(),this);
 	
 }
+@FindBy(xpath="//button[text()='Living Arrangements Preferences']")
+protected WebElement LivingArrangementAccordian;
+
 @FindBy (xpath=" // span[text()='Housing Information']")
 protected WebElement HousingInformationText;
 
-@FindBy(xpath="(//div[@class='d-flex flex-column']//p[text()='Yes'])[1]")
+@FindBy(xpath="(//label[@class='radio-label mt-2 mb-2  custom-checkbox'])[1]//span")
 protected WebElement isYourHousingLivingYesCheckBox;
 
-@FindBy(xpath="(//div[@class='d-flex flex-column']//p[text()='No'])[1]")
+@FindBy(xpath="(//label[@class='radio-label mt-2 mb-2 mx-2 custom-checkbox'])[1]//span")
 protected WebElement IsYourHousingLivingNoCheckBox;
 
-@FindBy(xpath="(//div[@class='d-flex flex-column']//p[text()='Not Sure'])[1]")
+@FindBy(xpath="(//label[@class='radio-label mt-2 mb-2 mx-2 custom-checkbox'])[2]//span")
 protected WebElement IsYourHousingLivingNotSureCheckBox;
 
 @FindBy(xpath="//p[contains(text(),'On a scale of 1 to 5, how likely is it that you will remain in your current home? 1-Not at all, 5-Will be in my ')]")

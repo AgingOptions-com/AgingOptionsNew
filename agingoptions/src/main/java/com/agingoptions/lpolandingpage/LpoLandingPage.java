@@ -68,15 +68,22 @@ public class LpoLandingPage {
 		util.click(LegalButtonUndersetUp, "Legal Module");	
 	}
 	
-	@FindBy(xpath="(//span[contains(text(),'File Cabinet')])[1]")
-	private WebElement fileCabinetSideBarLink;
+	@FindBy(xpath="(//span[text()='My Service Providers'])[1]")
+	protected WebElement MyServiceProviderSectionUndersetUpPage; 
 	
-	public void clickFileCabinetSideBarLink() {
+	public void ClickMyServiceProvider() {
 		util.holdOn(Duration.ofSeconds(5));
-		util.waitUntilPresentInUI(fileCabinetSideBarLink, "File Cabinet");
-		util.waitUntilElementToBeClickable(fileCabinetSideBarLink);
-		util.click(fileCabinetSideBarLink, "File Cabinet Side Bar Link");
+		util.waitUntilPresentInUI(MyServiceProviderSectionUndersetUpPage, "My service provider");
+		util.waitUntilElementToBeClickable(MyServiceProviderSectionUndersetUpPage);
+		util.click(MyServiceProviderSectionUndersetUpPage, "My service provider Module");	
 	}
 	
+	@FindBy(xpath="(//span[text()='Personal Info'])[1]")
+	protected WebElement PersonalInfoButton;
+	
+	public void ClickPersonalInfoModule() {
+		util.holdOn(Duration.ofSeconds(4));
+		util.click(PersonalInfoButton, "Personal info button");
+	}
 
 }

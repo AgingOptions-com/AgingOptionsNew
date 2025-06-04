@@ -41,7 +41,7 @@ public class PreviousLegalDocumentOr {
 	protected WebElement LegalButtonUndersetUp;
 	 @FindBy(xpath="//p[text()='Is your plan a Will based or a Trust (Revocable Living Trust) based plan?']")
 	 protected WebElement isYouPlanWillBaseOrTrustbaseText;
-     @FindBy(xpath="//div[@class='AddNewButton text-center align-items-center']")
+     @FindBy(xpath="//div[@class='AddNewButton text-center align-items-center']//span")
      protected WebElement addNewDocumentTypeButton;
      @FindBy(xpath="(//img[@alt='Delete Icon'])[1]")
      protected WebElement FirstDeleteButton;

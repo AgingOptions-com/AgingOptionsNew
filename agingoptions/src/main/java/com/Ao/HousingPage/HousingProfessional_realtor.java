@@ -22,6 +22,7 @@ public class HousingProfessional_realtor extends HousingProfessional_RealtorOr {
 	
   public void GotoClickHousingProfeesionalSection() {
 	  wt.click(HousingProfessionalButton, "Housing professional section");
+	 
   }
 	
   public void verifyRealtorPage() {
@@ -30,6 +31,7 @@ public class HousingProfessional_realtor extends HousingProfessional_RealtorOr {
   }
 	public void verifyrelatorPageOnhousingprofessionalPage() {
 		GotoClickHousingProfeesionalSection();
+		wt.click(RealtorDrawer, "realtor drawer");
         verifyRealtorPage();
 	}
 	public void IdoNotHaveRealtorFunctionality() {

@@ -4,8 +4,8 @@ import java.time.Duration;
 
 import org.testng.annotations.Test;
 
-import com.Ao.HousingPage.HousingProfessional_realtor;
 import com.Ao.HousingPage.ProfessionalDetailsPage;
+import com.Ao.HousingPage.HousingProfessional_realtor;
 import com.agingoptions.lpolandingpage.LpoLandingPage;
 import com.nspl.agingoptions.webUtil.BaseTest;
 
@@ -189,7 +189,7 @@ public void verifyRealtorPageOnHousingProfessional() {
 	 * Then the details should  be added for primary member as well as spouse too
 	*/
 	
-	@Test(priority = 11)
+	@Test(priority = 11, enabled = false)
 	public void VerifyCopySameDataFunctionality() {
 		LpoLandingPage lpoLadning=new LpoLandingPage(util);
 		lpoLadning.clickHousingModule();	

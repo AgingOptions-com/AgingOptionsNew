@@ -120,7 +120,7 @@ public class FamilyLawAttorneyTestScripts extends BaseTest {
 			housingProfessionalObj.saveAndProceedSpouseFamilyLawAttorneyDetails();
 		}
 	
-	 @Test(priority = 11)
+	 @Test(priority = 12)
 	 public void VerifyUpdateFamilyLawAttorneyDetails() {
 		 LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickLegalModule();;	
@@ -131,7 +131,7 @@ public class FamilyLawAttorneyTestScripts extends BaseTest {
 			ProfessionalDetailsPage housingProfessionalObj=	new ProfessionalDetailsPage(util);
 			housingProfessionalObj.UpdateProfessionalDetails();
 	}
-	 @Test(priority = 12)
+	 @Test(priority = 11)
 	 public void VerifyClientFamilyLawAttorneyDetailsWithUncheckCopySamedataTospouseCheckBox() {
 		 LpoLandingPage lpoLadning=new LpoLandingPage(util);
 			lpoLadning.clickLegalModule();;	

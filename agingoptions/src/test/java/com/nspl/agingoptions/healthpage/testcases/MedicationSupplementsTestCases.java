@@ -95,7 +95,7 @@ public class MedicationSupplementsTestCases extends BaseTest {
 	}
 
 	@Test(priority=3)
-	public void TC_035_PrimaryMemberMedicationSaveAndProceedHousingButton() {
+	public void TC_035_PrimaryMemberMedicationSaveAndProceedToSpouseButton() {
 
 		LpoLandingPage lpo=	new LpoLandingPage(util);
 		util.refreshPage();
@@ -118,8 +118,8 @@ public class MedicationSupplementsTestCases extends BaseTest {
 		CommonCode common=	new CommonCode(util);
 		common.clickSaveAndProceedToSpouseBT();
 		util.holdOn(Duration.ofSeconds(3));
-        lpo.clickHealthModule();
-        medication.clickMedicationSupplmentsSideBarLink();
+		common.clickPrimaryMemberToggleButton();
+		util.holdOn(Duration.ofSeconds(2));
 		medication.clickAbelcetMedicationEditIcon();
 		String medicationTypeActualText=	medication.getMedicationTypeDropDownSelectedText();
 		String actualDosageText=		medication.getDosageInputText();
@@ -145,10 +145,9 @@ public class MedicationSupplementsTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(5));
 		CommonCode common=	new CommonCode(util);
 		MedicationSupplementsPage medication=	new MedicationSupplementsPage(util);
-
 		medication.clickMedicationSupplmentsSideBarLink();
-
-		medication.clickSpouseAddMedictionButton();
+		common.clickSpouseToggleButton();
+		medication.clickAddMedictionButton();
 		medication.selectAbcavirSulfateMedicationType();
 		String expectedDosage="220MG";
 		medication.inputDosage(expectedDosage);
@@ -158,7 +157,7 @@ public class MedicationSupplementsTestCases extends BaseTest {
 		medication.inputTiming(expectedTiming);
 		String expectedNotes="You have to take this timily.";
 		medication.inputNote(expectedNotes);
-		lpo.clickHealthModule();
+
 		common.clickSaveContinueLaterButton();
 		medication.clickAbcavirMedicationEditIcon();
 		String medicationTypeActualText=	medication.getMedicationTypeDropDownSelectedText();
@@ -186,7 +185,8 @@ public class MedicationSupplementsTestCases extends BaseTest {
 		util.holdOn(Duration.ofSeconds(5));
 		MedicationSupplementsPage medication=	new MedicationSupplementsPage(util);
 		medication.clickMedicationSupplmentsSideBarLink();
-		medication.clickSpouseAddMedictionButton();
+		common.clickSpouseToggleButton();
+		medication.clickAddMedictionButton();
 		medication.selectOtherMedicationTypeDropDown();
 		String expectedOtherMedicationTextValue="Paracetamol Medicine";
 		util.holdOn(Duration.ofSeconds(1));
@@ -231,7 +231,8 @@ public class MedicationSupplementsTestCases extends BaseTest {
 		CommonCode common=	new CommonCode(util);
 		MedicationSupplementsPage medication=	new MedicationSupplementsPage(util);
 		medication.clickMedicationSupplmentsSideBarLink();
-		medication.clickSpouseAddMedictionButton();
+		common.clickSpouseToggleButton();
+		medication.clickAddMedictionButton();
 		medication.clickAbelcetMedicationTypeDropDown();
 		util.holdOn(Duration.ofSeconds(1));
 		String expectedDosage="5 MG";
@@ -243,11 +244,12 @@ public class MedicationSupplementsTestCases extends BaseTest {
 		String expectedNotes="You have to take this 1 time per week.";
 		medication.inputNote(expectedNotes);
 		medication.clickSaveProceedToHousingButton();
-		common.waitUntilToasterMessageisSeen();
+		common.waitUntilToasterMessageisHide();
 		util.holdOn(Duration.ofSeconds(3));
 		lpo.clickHealthModule();
 		util.holdOn(Duration.ofSeconds(2));
 		medication.clickMedicationSupplmentsSideBarLink();
+		common.clickSpouseToggleButton();
 		util.holdOn(Duration.ofSeconds(2));
 		medication.clickAbelcetMedicationEditIcon();
 		String medicationTypeActualText=	medication.getMedicationTypeDropDownSelectedText();

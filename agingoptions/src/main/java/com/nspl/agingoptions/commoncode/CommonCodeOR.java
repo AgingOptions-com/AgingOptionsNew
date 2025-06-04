@@ -65,7 +65,7 @@ public class CommonCodeOR   {
 	@FindBy(xpath="(//span[text()='Family'])[1]")
 	protected WebElement familySideIcon;
 
-	@FindBy(xpath="//div[@class='NewRegImg mt-lg-0']/img[@alt='NewReg']")
+	@FindBy(xpath="(//div[@class='NewRegImg mt-lg-0'])[1]//img")
 	protected WebElement newRegistrationBT;
 
 	@FindBy(xpath="//input[@id='firstName']")
@@ -106,12 +106,45 @@ public class CommonCodeOR   {
 
 	@FindBy(xpath="//p//strong")
 	protected WebElement otpText; 
-
+	
+	@FindBy(xpath="//p[text()='Matter No.']/following-sibling::input")
+	protected WebElement matterNumber;
+	
+	@FindBy(xpath="//p[text()='What are your planning objectives?']/following-sibling::textarea")
+	protected WebElement whatAreYourPlanningObjective;
+	
+	@FindBy(xpath="(//p[text()='Does your spouse live with you?']/parent::div//label//p)[1]")
+	protected WebElement DoesYouSpouseLiveWithYouYesRadioBT;
+	
+	@FindBy(xpath="(//p[text()='Does your spouse live with you?']/parent::div//label//p)[2]")
+	protected WebElement DoesYouSpouseLiveWithYouNoRadioBT;
+	
 	@FindBy(xpath="//iframe[@id='ifmail']")
 	protected WebElement iFrame; 
 
 	@FindBy (xpath="//input[@id='first']")
 	protected WebElement otpInputBox;
+	
+	@FindBy(xpath="//p[text()='Search address']/following-sibling::input")
+	protected WebElement SearchAddress;
+	
+	@FindBy(xpath="//p[text()='Street number and name*']/following-sibling::input")
+	protected WebElement StreetNumber;
+	
+	@FindBy(xpath="//p[text()='Apt/Suite']/following-sibling::input")
+	protected WebElement aptSuite;
+	
+	@FindBy(xpath="//p[text()='City*']/following-sibling::input")
+	protected WebElement City;
+	
+	@FindBy(xpath="//p[text()='State*']/following-sibling::input")
+	protected WebElement state;
+	
+	@FindBy(xpath="//p[text()='Zip code*']/following-sibling::input")
+	protected WebElement ZipCode;
+	
+	@FindBy(xpath="//p[text()='Country*']/following-sibling::input")
+	protected WebElement country;
 
 	@FindBy(xpath="//button[@type='submit']")
 	protected WebElement verifybutton;
@@ -158,7 +191,7 @@ public class CommonCodeOR   {
 	@FindBy(xpath="//h1[text()='Personal Information']")
 	protected WebElement PersonalInformationIcon;
 
-	@FindBy(xpath="//button[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'save and continue later')        or contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'save & continue later')]")
+	@FindBy(xpath="//button[contains(text(),'Save & Continue later')]")
 	protected WebElement saveContinueLaterBT;
 
 	@FindBy(xpath="//button[contains(text(),'Save & Add Another')]")
@@ -169,30 +202,18 @@ public class CommonCodeOR   {
 
 	@FindBy(xpath="//button[text()='Click to resend']")
 	protected WebElement clickToResendInnertext;
-
+	
 	@FindBy(xpath="//button[@id='refresh']")
 	protected WebElement yopEmailRefreshIcon;
-
+	
 	@FindBy(xpath="(//label[contains(text(),'Cell  Number')]/parent::div//input)[1]")
 	protected WebElement countryCodeTB;
-
+	
 	@FindBy(xpath="//div[@class='css-1dimb5e-singleValue']")
 	protected WebElement countryCodeDropDown;
 
 	@FindBy(xpath="//li[contains(text(),'(+91) IN')]")
 	protected WebElement countryCode91;
-
-	@FindBy(xpath="//p[contains(text(),'Address Type')]/parent::div//span")
-	protected WebElement addressTypeDropDown;
-
-	@FindBy(xpath="//li[contains(text(),'Physical')]")
-	protected WebElement physicalAddressDropDownOption;
-
-	@FindBy(xpath="//button[contains(text(),'Activate Client')]/following-sibling::div//span[@class='slider']")
-	protected WebElement activateClientLPOToggleButton;
-	
-    @FindBy(xpath="//span[@data-off='Intake']")
-    protected WebElement LPOToggleText;
 	
 }
 

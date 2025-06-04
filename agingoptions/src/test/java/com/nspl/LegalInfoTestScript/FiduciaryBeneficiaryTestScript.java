@@ -10,7 +10,7 @@ import com.nspl.agingoptions.webUtil.BaseTest;
 
 public class FiduciaryBeneficiaryTestScript  extends BaseTest{
    
-	@Test(enabled =false )
+	@Test(priority = 1, enabled = false) 
 	public void VerifyFiduciaryBeneficiaryPage() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -19,7 +19,7 @@ public class FiduciaryBeneficiaryTestScript  extends BaseTest{
 	   fidbenObj.verifyFiduciaryBeneficiaryPage();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 2)
 	public void VerifyPrimaryMemberAndSpouseFiduciaryBeneficiaryPageMemberList() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -27,7 +27,7 @@ public class FiduciaryBeneficiaryTestScript  extends BaseTest{
 	   FiduciaryBeneficiaryPage fidbenObj=  new FiduciaryBeneficiaryPage(util);
 	   fidbenObj.verifyPrimaryMemberAndSposueFidbenList();
 	}
-	@Test(enabled = false)
+	@Test(priority = 3)
 	public void VerifyClientTableFiduciaryBeneficiaryCheckboxFunctionality() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -36,7 +36,7 @@ public class FiduciaryBeneficiaryTestScript  extends BaseTest{
 	   fidbenObj.VerifyClientTableFidBenCheckBox();
 	   util.holdOn(Duration.ofSeconds(5));
 	}
-	@Test(enabled = false)
+	@Test(priority = 4)
 	public void VerifySpouseTableFiduciaryBeneficiaryCheckBoxFunctionality() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -45,7 +45,7 @@ public class FiduciaryBeneficiaryTestScript  extends BaseTest{
 	   fidbenObj.VerifySpouseTableFidBenCheckBox();
 	   util.holdOn(Duration.ofSeconds(5));
 	}
-	@Test(enabled = false)
+	@Test(priority = 5)
 	public void VerifyAddFiduciaryBeneficiaryDetails() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -54,7 +54,7 @@ public class FiduciaryBeneficiaryTestScript  extends BaseTest{
 	   fidbenObj.verifyAddFiduciary();
 	}
 	
-	@Test(enabled = false)
+	@Test(priority = 6)
 	public void VerifyWhenWeMakeFiduciaryMemberAsSpecialNeeds() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -62,7 +62,7 @@ public class FiduciaryBeneficiaryTestScript  extends BaseTest{
 	   FiduciaryBeneficiaryPage fidbenObj=  new FiduciaryBeneficiaryPage(util);
 	   fidbenObj.verifyWhenWeMakeFiduciaryMemberspecialNeeds();	
 	}
-	@Test(priority = 1)
+	@Test(priority = 7)
 	public void VerifyWhenWeMakeFiduciaryBeneficiryMemberDeceased() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -70,7 +70,7 @@ public class FiduciaryBeneficiaryTestScript  extends BaseTest{
 	   FiduciaryBeneficiaryPage fidbenObj=  new FiduciaryBeneficiaryPage(util);
 	   fidbenObj.VerifyWhenWeMakeFiduciaryBenfeficiaryMemberDeceased();
 	}
-	@Test(priority = 2)
+	@Test(priority = 8)
 	public void VerifyWhenWeMakeSpecialNeedsMemberAsFiduciary() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();
@@ -78,7 +78,7 @@ public class FiduciaryBeneficiaryTestScript  extends BaseTest{
 	   FiduciaryBeneficiaryPage fidbenObj=  new FiduciaryBeneficiaryPage(util);
 	   fidbenObj.verifyWhenWeMakeSpecialNeedsMemberFiduciary();
 	}
-	@Test(priority = 3)
+	@Test(priority = 9)
 	public void verifyAgeValidationForFiduciary() {
 		LpoLandingPage lpoLadning=	    new LpoLandingPage(util);
 		lpoLadning.clickLegalModule();

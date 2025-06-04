@@ -67,21 +67,13 @@ public class CommonCode extends CommonCodeOR {
 	public void searchUserParaGotoLPO(String userEmail) {
 		util.holdOn(Duration.ofSeconds(2));
 		util.sendValueWithEnter(paralegalSearchTB, userEmail, "Paralegal Search");
+		// waitParalegalScreenOldDesignUntilLoaderRandering();
 		util.holdOn(Duration.ofSeconds(5));
 		try {
 			util.waitUntilPresentInUI(paralegalSearchedUser, userEmail);
-			util.holdOn(Duration.ofSeconds(5));		
-			 util.click(activateClientLPOToggleButton, "LPO Toggle Button");
-			 util.holdOn(Duration.ofSeconds(5));
-			 util.waitUntilPresentInUI(LPOToggleText, "LPO");
-			 util.holdOn(Duration.ofSeconds(3));
 			util.click(paralegalSearchedUser, "Paralegal screen searched user");
 		} catch (Exception e) {
-			util.holdOn(Duration.ofSeconds(5));
-			 util.click(activateClientLPOToggleButton, "LPO Toggle Button");
 			util.click(paralegalSearchedUser, "Paralegal screen searched user");
-		}finally {
-			
 		}
 		util.holdOn(Duration.ofSeconds(3));
 	}
@@ -120,18 +112,30 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void inputMarriedUserAcitvationPageDetails(String noOfChild, String primaryMemberDob, String address,
-			String spouseFirstName, String spouseDob) {
+			String spouseFirstName, String spouseDob,String matterNo, String PlanningObjective) {
 		ActivationPage actObj = new ActivationPage(util);
 		util.holdOn(Duration.ofSeconds(3));
 		actObj.selectMarriedRelationshipOptions();
-		actObj.selectMaleAsPrimaryMember();
 		actObj.inputNoOfChildren(noOfChild);
+		util.holdOn(Duration.ofSeconds(3));
+		actObj.selectMaleAsPrimaryMember();
+	
 		//  util.click(countryCodeDropDown, "Country Drop Down");
 		actObj.inputPrimaryMemberDob(primaryMemberDob);
-		// actObj.inputAddress(address);
+		 //actObj.inputAddress(address);
+		util.sendValue(SearchAddress, "34 Fairview Road, Canton, MA, USA", "Search address");
+		util.sendValue(StreetNumber, "34 Fairview Road", "Street Number and name");
+		util.sendValue(City, "Canton", "City");
+		util.sendValue(state, "Massachusetts", "State");
+		util.sendValue(ZipCode, "02021-1720", "Zipcode");
+		util.sendValue(country, "United States", "country");
 		actObj.inputSpouseFirstName(spouseFirstName);
 		actObj.inputSpouseDob(spouseDob);
 		util.holdOn(Duration.ofSeconds(1));
+		util.sendValue(matterNumber,matterNo , "Matter Number text bix");
+		util.sendValue(whatAreYourPlanningObjective, PlanningObjective, "Planning objective text box");
+		util.click(DoesYouSpouseLiveWithYouYesRadioBT, "Does your spouse live with you");
+		util.holdOn(Duration.ofSeconds(2));
 		actObj.clickProceedSubmitButton();
 		util.holdOn(Duration.ofSeconds(5));
 		String actualText=	getPersonalInfoText();
@@ -150,14 +154,39 @@ public class CommonCode extends CommonCodeOR {
 		String spouseFirstName = mapData.get("spouseFirstName");
 		String spouseDob = mapData.get("spouseDob");
 		String address = mapData.get("address");
+		String matterNumber=mapData.get("matterNumber");
+		String PlanningObjective=mapData.get("PlanningObjective");
 		CommonCode common = new CommonCode(util);
 		String UserEmail = common.createLifePlanningUser(firstName, lastName, email, phoneNumber);
 		util.holdOn(Duration.ofSeconds(3));
 		common.searchUserParaGotoLPO(UserEmail);
 		Duration.ofSeconds(3);
-		common.inputMarriedUserAcitvationPageDetails(noOfChild, primaryMemberDob, address, spouseFirstName, spouseDob);
+		common.inputMarriedUserAcitvationPageDetails(noOfChild, primaryMemberDob, address, spouseFirstName, spouseDob,matterNumber,PlanningObjective);
 	}
 
+	
+	public Map<String, String> LoginWithNewMarriedUser1() {
+		DataUtil data = new DataUtil();
+		Map<String, String> mapData = data.getTestCaseData("Health_001");
+		String firstName = mapData.get("firstName");
+		String lastName = mapData.get("lastName");
+		String email = mapData.get("userEmail");
+		String phoneNumber = mapData.get("phoneNumber");
+		String noOfChild = mapData.get("noOfChild");
+		String primaryMemberDob = mapData.get("primaryMemberDob");
+		String spouseFirstName = mapData.get("spouseFirstName");
+		String spouseDob = mapData.get("spouseDob");
+		String address = mapData.get("address");
+		String matterNumber=mapData.get("matterNumber");
+		String PlanningObjective=mapData.get("PlanningObjective");
+		CommonCode common = new CommonCode(util);
+//		String UserEmail = common.createLifePlanningUser(firstName, lastName, email, phoneNumber);
+//		util.holdOn(Duration.ofSeconds(3));
+//		common.searchUserParaGotoLPO(UserEmail);
+//		Duration.ofSeconds(3);
+//		common.inputMarriedUserAcitvationPageDetails(noOfChild, primaryMemberDob, address, spouseFirstName, spouseDob,matterNumber,PlanningObjective);
+		return mapData;
+	}
 	public void waitParalegalScreenOldDesignUntilLoaderRandering() {
 		util.waitForLoaderToDisappear(By.xpath("//div[@class='spinner-border text-primary blockuiloader']"), 1);
 	}
@@ -183,6 +212,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public String gettextOfOTP() {
+		// util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		util.switchToFrameByWebElement(iFrame);
 		String text = util.getInnerText(otpText);
 		// util.nevigateAction("Otp Page").back();
@@ -191,6 +221,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 
 	public void returntoframe() {
+		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
 		util.nevigateAction("Otp Page").back();
 		util.nevigateAction("").back();
 
@@ -225,12 +256,14 @@ public class CommonCode extends CommonCodeOR {
 	public void GotoclickAdminRoleoptions() {
 
 		util.click(AdminRole, "Admin Role");
+		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		util.verifyTitle("Admin", "AO Admin");
 	}
 
 	public void GoTOClickEventCoordinatorRole() {
 
 		util.click(EventCoordinatiorRole, "Event Coordinator");
+		util.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		util.verifyTitle("Counter Coordinator", "Counter-Coordinator");
 
 	}
@@ -286,7 +319,7 @@ public class CommonCode extends CommonCodeOR {
 		commonpage.searchYopEmail(util.getProperty("paralegalemail"));
 		util.holdOn(Duration.ofSeconds(5));
 		String otp = commonpage.gettextOfOTP();
-		util.switchToWindowByUrlContains(util.getProperty("url") + "/Account/verifyOtp", "Otp Verify Page");
+		util.switchToWindowByUrlContains(util.getProperty("url")+ "/Account/verifyOtp", "Otp Verify Page");
 		commonpage.inputotp(otp);
 		commonpage.clickVerifyOtpButton();
 		util.holdOn(Duration.ofSeconds(5));
@@ -319,10 +352,6 @@ public class CommonCode extends CommonCodeOR {
 
 	@FindBy(xpath = "//p[text()='Copy same data to spouse']/parent::div//input")
 	private WebElement copySameDataToSpouseCheckBox;
-	
-	public void clickCopySameDataCheckbox() {
-		util.click(copySameDataToSpouseCheckBox, "Copy Same Data Spouse");
-	}
 
 	public void checkCopySameDataToSpouseCheckBox() {
 		try {
@@ -368,7 +397,7 @@ public class CommonCode extends CommonCodeOR {
 	}
 	public void unCheckCopySameDataToSpouseCheckBox() {
 		try {
-			util.holdOn(Duration.ofSeconds(2));
+			util.holdOn(Duration.ofSeconds(1));
 			util.unCheckCheckBox(copySameDataToSpouseCheckBox, "Copy Same Data To Spouse");
 			util.waitUntilElementIsDeselected(copySameDataToSpouseCheckBox, 10);
 		} catch (Exception e) {
@@ -392,12 +421,5 @@ public class CommonCode extends CommonCodeOR {
 	public void waitUntilToasterMessageisSeen() {
 		util.waitUntilElementIsAppearInThePage(toasterMessage, 40);
 	}
-	
-	public void selectPhysicalAddressFromAddressType() {
-		util.holdOn(Duration.ofSeconds(1));
-		util.click(addressTypeDropDown, "Address Type");
-		util.click(physicalAddressDropDownOption, "Physical Address");
-	}
-	
 	
 }

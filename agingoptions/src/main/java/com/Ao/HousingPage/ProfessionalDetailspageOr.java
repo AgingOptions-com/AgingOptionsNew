@@ -13,6 +13,8 @@ public class ProfessionalDetailspageOr {
 		
 		
 	}
+	@FindBy(xpath="//span[text()='Realtor']")
+	protected WebElement realtorDrawer; 
 	
 	@FindBy(xpath="//input[@id='fName']")
 	protected WebElement FirstName;
