@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	
+	<test name="Test">
+		<classes>
+           <class name="com.nspl.HousingInfoPageTestcase.HousingOptionsTestScript"/>
+				 <class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_RealtorTestscript"/>
+				<class name="com.nspl.HousingInfoPageTestcase.HousingProfessional_MortgageBrokerTestScript"/>
+				<class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalHandyManTestScript"/>
+				<class name="com.nspl.HousingInfoPageTestcase.HousingProfessionalLandScapperTestScript"/>
+                 <class name="com.nspl.LegalInfoTestScript.PreviousLagalDocumentTestCases"/>
+                 <class name="com.nspl.LegalInfoTestScript.FiduciaryBeneficiaryTestScript"/>
+                  <class name="com.nspl.LegalInfoTestScript.LivingWillDetailsTestSript"/>   
+                   <class name="com.nspl.LegalInfoTestScript.OrganDonationDetailsTestSripts"/> 
+                   <class name="com.nspl.LegalInfoTestScript.BurialCremationPlanTestScript"/> 
+                   <class name="com.nspl.LegalInfoTestScript.LegalProfessionalElA"/> 
+                   <class name="com.nspl.LegalInfoTestScript.FamilyLawAttorneyTestScripts"/> 
+                   <class name="com.nspl.LegalInfoTestScript.LegalProfessionalBusinessSuccessior"/> 
+			   
+		</classes>
+	</test>
+</suite> 
+ 
